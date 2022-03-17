@@ -1,0 +1,1 @@
+This repository is the public one in re-organizing quant bio bootcamp and lab mateirals; it will contain all of the materials to render the website, as well as any materials students will need for lectures and assignments
