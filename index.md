@@ -6,7 +6,7 @@ layout: default
 ## CMDB Quantitative Biology Bootcamp 2022
 
 ### Logistics
-- [Syllabus](syllabus/bootcamp/index.html)
+- [Syllabus](resources/syllabi/bootcamp/index.html)
 - Five day intensive bootcamp geared towards getting everyone up to speed with basic computational skills
 - <span class="text-danger">**NO** other classes, meetings, lab work, lab meetings, etc.</span>
 - In person, UTL398.
@@ -62,6 +62,7 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
 
 TBD
 
+<!--
 ### Useful Goodies
 
 #### Unix and Git
@@ -83,3 +84,4 @@ TBD
 * [NumPy](http://docs.scipy.org/doc/numpy/reference/index.html#reference)
 * [Pandas](http://pandas.pydata.org/pandas-docs/stable/)
   - e.g. [read_csv](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html?highlight=read_csv)
+-->
