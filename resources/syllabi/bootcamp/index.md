@@ -63,7 +63,7 @@ Table of Contents
 | Rajiv McCoy    | [rajiv.mccoy@jhu.edu](mailto:rajiv.mccoy@jhu.edu)     |
 | Michael Sauria | [msauria1@jhu.edu](mailto:msauria1@jhu.edu)        |
 | Frederick Tan  | [tan@carnegiescience.edu](mailto:tan@carnegiescience.edu) |
-{:.table.table-striped.well.width.80%}
+{:.table.table-striped.well.width:40%}
 
 <a name="TAs"></a>
 
