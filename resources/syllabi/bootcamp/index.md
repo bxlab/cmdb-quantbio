@@ -1,40 +1,61 @@
-# AS.020.607&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CMDB Quantitative Biology Bootcamp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fall 2022
+<header>
+<h1>
+    AS.020.607
+    <span style="float:right;">
+        Fall 2022
+    </span>
+    <center>
+       CMDB Quantitative Biology Bootcamp
+    </center>
+</h1>
+</header>
 
-## Table of Contents
+Table of Contents
+=================
 
-[Instructors](#Instructors)<br />
-[Teaching Assistants](#TAs)<br />
-[Class Meetings](#ClassMeetings)<br />
-[Course Website](#CourseWebsite)<br />
-[Course Description](#Description)<br />
-[Specific Objectives](#Objectives)<br />
-[Study Materials](#StudyMats)<br />
-[What To Bring](#WhatToBring)<br />
-[Course Format](#Format)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;[Attendance](#Attendance)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;[Types of Sessions](#Sessions)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Interactive Lecture](#FormatInter)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Assignments](#FormatExercise)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Small Group Sessions](#FormatSmallGroup)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;[Daily Schedule](#DaySchedule)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;[Daily Reflections](#Reflections)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;[Food](#Food)<br />
-[Asking for Help](#Help)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;[Do It](#DOIT)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;[Generally How](#GenerallyHow)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;[Googling](#Googling)<br />
-[Grading](#Grading)<br />
-[Feedback](#Feedback)<br />
-[Academic Integrity & Ethics](#Integrity)<br />
-[Code of Conduct](#CodeofConduct)<br />
-[The Pandemic](#Pandemic)<br />
-[Technology](#Technology)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;[Platforms](#Platforms)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;[Laptops](#Laptops)<br />
-[Full Bootcamp Schedule](#WeekSchedule)<br />
+* [Instructors](#Instructors)<br />
+* [Teaching Assistants](#TAs)<br />
+* [Class Meetings](#ClassMeetings)<br />
+* [Course Website](#CourseWebsite)<br />
+* [Course Description](#Description)<br />
+* [Specific Objectives](#Objectives)<br />
+* [Study Materials](#StudyMats)<br />
+* [What To Bring](#WhatToBring)<br />
+* [Course Format](#Format)<br />
+  * [Attendance](#Attendance)<br />
+  * [Types of Sessions](#Sessions)<br />
+    * [Interactive Lecture](#FormatInter)<br />
+    * [Assignments](#FormatExercise)<br />
+    * [Small Group Sessions](#FormatSmallGroup)<br />
+    * [Asynchronous](#FormatAsynch)<br />
+  * [Daily Schedule](#DaySchedule)<br />
+  * [Daily Reflections](#Reflections)<br />
+  * [Food](#Food)<br />
+* [Asking for Help](#Help)<br />
+  * [Do It](#DOIT)<br />
+  * [Generally How](#GenerallyHow)<br />
+  * [Googling](#Googling)<br />
+* [Grading](#Grading)<br />
+* [Feedback](#Feedback)<br />
+* [Academic Integrity & Ethics](#Integrity)<br />
+* [Code of Conduct](#CodeofConduct)<br />
+* [The Pandemic](#Pandemic)<br />
+* [Technology](#Technology)<br />
+  * [Platforms](#Platforms)<br />
+  * [Laptops](#Laptops)<br />
+* [Full Bootcamp Schedule](#WeekSchedule)<br />
 
-# AS.020.607&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CMDB Quantitative Biology Bootcamp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fall 2022
-
+<header>
+<h1>
+    AS.020.607
+    <span style="float:right;">
+        Fall 2022
+    </span>
+    <center>
+       CMDB Quantitative Biology Bootcamp
+    </center>
+</h1>
+</header>
 <a name="Instructors"></a>
 
 | Instructor | Email |
@@ -42,7 +63,7 @@
 | Rajiv McCoy    | [rajiv.mccoy@jhu.edu](mailto:rajiv.mccoy@jhu.edu)     |
 | Michael Sauria | [msauria1@jhu.edu](mailto:msauria1@jhu.edu)        |
 | Frederick Tan  | [tan@carnegiescience.edu](mailto:tan@carnegiescience.edu) |
-{:.table.table-striped.well}
+{:.table.table-striped.well.width.80%}
 
 <a name="TAs"></a>
 
