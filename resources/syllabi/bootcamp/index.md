@@ -240,7 +240,7 @@ All time are ET.
 |   9:00 - 9:30  | Overview                     | Homework Exercise Small Group Discussions | Homework Exercise Small Group Discussions | Homework Exercise Small Group Discussions | Homework Exercise Small Group Discussions |
 |   9:30 - 11:00  | The Unix Shell | Biological Data Parsing with Python | Review | Reproducibility and GitHub | Statistical Modeling |
 |   11:00 - 11:45  | Lunch    |  Lunch   | Lunch    | Lunch   | Lunch |
-|   11:45 - 1:45  | Exploring Biological Data Files | Annotate and Debug a File Parser  | Data Exploration and Visualization | Research Parasites (aka How to ~Steal~ Reuse Other People’s Code) | TBA |
+|   11:45 - 1:45  | Exploring Biological Data Files | Annotate and Debug a File Parser  | Data Exploration and Visualization | Research Parasites (aka How to ~~Steal~~ Reuse Other People’s Code) | TBA |
 |    1:45 - 2:00   | Break | Break | Break  | Break | Break  |
 |    2:00 - 2:30   | Lunch Exercise Small Group Discussions | Lunch Exercise Small Group Discussions | Data Exploration and Visualization (cont.) | Lunch Exercise Small Group Discussions | Lunch Exercise Small Group Discussions |
 |    2:30 - 4:00   | Program Documentation, Online Resources, and Debugging  | Biological Data Parsing with Python (cont.) | --- | Random Simulations  | Review |

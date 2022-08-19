@@ -1,5 +1,5 @@
 ---
-title: CMDB Bootcamp 2022
+title: CMDB Quantitative Biology 2022
 layout: default
 ---
 
@@ -7,7 +7,7 @@ layout: default
 
 ### Logistics
 - [Syllabus](resources/syllabi/bootcamp/index.html)
-- Five day intensive bootcamp geared towards getting everyone up to speed with basic computational skills
+- Five day intensive bootcamp geared towards getting everyone up to speed with basic computational skills.
 - <span class="text-danger">**NO** other classes, meetings, lab work, lab meetings, etc.</span>
 - In person, UTL398.
 - Please wear a face mask and bring headphones
@@ -25,7 +25,7 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
 |   9:00 - 9:30  | Overview                     | Homework Exercise Small Group Discussions | Homework Exercise Small Group Discussions | Homework Exercise Small Group Discussions | Homework Exercise Small Group Discussions |
 |   9:30 - 11:00  | The Unix Shell | Biological Data Parsing with Python | Review | Reproducibility and GitHub | Statistical Modeling |
 |   11:00 - 11:45  | Lunch    |  Lunch   | Lunch    | Lunch   | Lunch |
-|   11:45 - 1:45  | Exploring Biological Data Files | Annotate and Debug a File Parser  | Data Exploration and Visualization | Research Parasites (aka How to ~Steal~ Reuse Other People’s Code) | TBA |
+|   11:45 - 1:45  | Exploring Biological Data Files | Annotate and Debug a File Parser  | Data Exploration and Visualization | Research Parasites (aka How to ~~Steal~~ Reuse Other People’s Code) | TBA |
 |    1:45 - 2:00   | Break | Break | Break  | Break | Break  |
 |    2:00 - 2:30   | Lunch Exercise Small Group Discussions | Lunch Exercise Small Group Discussions | Data Exploration and Visualization (cont.) | Lunch Exercise Small Group Discussions | Lunch Exercise Small Group Discussions |
 |    2:30 - 4:00   | Program Documentation, Online Resources, and Debugging  | Biological Data Parsing with Python (cont.) | --- | Random Simulations  | Review |
@@ -51,12 +51,13 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
 ## CMDB Quantitative Biology Lab 2022
 
 ### Logistics
-- Syllabus TBD
-- Extension of Bootcamp ...
-- <span class="text-danger">**NO** other classes, meetings, lab work, lab meetings, etc.</span>
-- In person, Library room needs filled in.
+- Syllabus: TBD
+- This one day a week course builds upon the foundations of Quantitative Biology Bootcamp, reinforcing and expanding upon mathematical and computational methods for analysis of biological data.
+- In person, BLC 5015
+- 1 - 3:30 pm, Fridays
 - Please wear a face mask and bring headphones
-- Time of class needs filled in.
+- Assignments must be submitted within one week to your `qbb2022-answers` repository
+
 
 ### Schedule
 
