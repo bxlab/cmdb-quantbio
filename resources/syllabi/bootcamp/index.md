@@ -13,6 +13,7 @@
 <details open>
 <summary><b>Table of Contents</b></summary>
 
+
 * [Instructors](#Instructors)<br />
 * [Teaching Assistants](#TAs)<br />
 * [Class Meetings](#ClassMeetings)<br />
@@ -45,6 +46,7 @@
   * [Platforms](#Platforms)<br />
   * [Laptops](#Laptops)<br />
 * [Full Bootcamp Schedule](#WeekSchedule)<br />
+
 
 </details>
 
