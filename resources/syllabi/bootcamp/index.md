@@ -1,3 +1,29 @@
+details {
+  font: 16px "Open Sans", Calibri, sans-serif;
+  width: 620px;
+}
+
+details > summary {
+  padding: 2px 6px;
+  width: 15em;
+  background-color: #ddd;
+  border: none;
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+}
+
+details > p {
+  border-radius: 0 0 10px 10px;
+  background-color: #ddd;
+  padding: 2px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px black;
+}
+
+details[open] > summary {
+  background-color: #ccf;
+}
+
 <header>
 <h1>
     AS.020.607
@@ -10,7 +36,7 @@
 </h1>
 </header>
 
-<details><summary><b>Table of Contents</b></summary>
+<details open><summary><b>Table of Contents</b></summary>
 <ul>
   <li><a href="#Instructors">Instructors</a></li>
   <li><a href="#TAs">Teaching Assistants</a></li>
