@@ -222,13 +222,13 @@ The course is broken into four main <b>types of sessions</b>
       </ul>
       <li>Small groups will be assigned daily and group membership rotated throughout the week. The students within each small group will be assigned roles for that day</li>
         <ul>
-        <li>Manager: makes sure that all have the opportunity to engage in the discussion or peer-presentations.</li>
-        <li>Questioner: generates questions, asking for clarification or pushing back in order to strengthen a presentation.</li>
-        <li>Recorder: writes down/types/records important information, overall conclusions, or questions.</li>
-        <li>Spokesperson: if asked, summarizes or restates the team's conclusions, questions, or answers for the whole class outside of the small group.</li>
-        <li>Time Keeper: given an end time, keeps group on task and on time.</li>
-        <li>Reflector: verifies that any required prompts or agenda items have been discussed and have resulted in a consensus conclusion(s) or question(s).</li>
-        <li>Note: For groups with only 5 members, the Time Keeper and Reflector roles will be merged.</li>
+          <li>Manager: makes sure that all have the opportunity to engage in the discussion or peer-presentations.</li>
+          <li>Questioner: generates questions, asking for clarification or pushing back in order to strengthen a presentation.</li>
+          <li>Recorder: writes down/types/records important information, overall conclusions, or questions.</li>
+          <li>Spokesperson: if asked, summarizes or restates the team's conclusions, questions, or answers for the whole class outside of the small group.</li>
+          <li>Time Keeper: given an end time, keeps group on task and on time.</li>
+          <li>Reflector: verifies that any required prompts or agenda items have been discussed and have resulted in a consensus conclusion(s) or question(s).</li>
+          <li>Note: For groups with only 5 members, the Time Keeper and Reflector roles will be merged.</li>
         </ul>
     </ul>
   <li><a name="FormatAsynch"></a><ins><b>Asynchronous</b> Sessions</ins></li>
@@ -327,7 +327,7 @@ We ask students to write <b>daily reflections</b> and turn them in <a href="http
   </ul>
 
 <a name="Help"></a>
-<header><h2>Asking for Help></h2></header>
+<header><h2>Asking for Help</h2></header>
 <a name="DOIT"></a>
 We both expect and encourage you to ask questions and request help throughout this course. Everyone is learning and there is no shame in having questions, not understanding what an instructor has said or typed, or needing to debug your code. Therefore, <b>please ask questions</b> about whatever, whenever you need to. We’ve written up guidelines below on how you can ask for help during each type of session.
 
@@ -418,67 +418,67 @@ All time are ET.
 </tr>
 <tr>
   <th>9:00 - 9:30</th>
-  <th>Overview</th>
-  <th>Homework Exercise Small Group Discussions</th>
-  <th>Homework Exercise Small Group Discussions</th>
-  <th>Homework Exercise Small Group Discussions</th>
-  <th>Homework Exercise Small Group Discussions</th>
+  <td>Overview</td>
+  <td>Homework Exercise Small Group Discussions</td>
+  <td>Homework Exercise Small Group Discussions</td>
+  <td>Homework Exercise Small Group Discussions</td>
+  <td>Homework Exercise Small Group Discussions</td>
 </tr>
 <tr>
   <th>9:30 - 11</th>
-  <th>The Unix Shell</th>
-  <th>Biological Data Parsing with Python</th>
-  <th>Review</th>
-  <th>Reproducibility and GitHub</th>
-  <th>Statistical Modeling</th>
+  <td>The Unix Shell</td>
+  <td>Biological Data Parsing with Python</td>
+  <td>Review</td>
+  <td>Reproducibility and GitHub</td>
+  <td>Statistical Modeling</td>
 </tr>
 <tr>
   <th>11:00 - 11:45</th>
-  <th>Lunch</th>
-  <th>Lunch</th>
-  <th>Lunch</th>
-  <th>Lunch</th>
-  <th>Lunch</th>
+  <td>Lunch</td>
+  <td>Lunch</td>
+  <td>Lunch</td>
+  <td>Lunch</td>
+  <td>Lunch</td>
 </tr>
 <tr>
   <th>11:45 - 1:45</th>
-  <th>Exploring Biological Data Files</th>
-  <th>Annotate and Debug a File Parser</th>
-  <th>Data Exploration and Visualization</th>
-  <th>Research Parasites (aka How to <s>Steal</s> Reuse Other People’s Code)</th>
-  <th>TBA</th>
+  <td>Exploring Biological Data Files</td>
+  <td>Annotate and Debug a File Parser</td>
+  <td>Data Exploration and Visualization</td>
+  <td>Research Parasites (aka How to <s>Steal</s> Reuse Other People’s Code)</td>
+  <td>TBA</td>
 </tr>
 <tr>
   <th>1:45 - 2:00</th>
-  <th>Break</th>
-  <th>Break</th>
-  <th>Break</th>
-  <th>Break</th>
-  <th>Break</th>
+  <td>Break</td>
+  <td>Break</td>
+  <td>Break</td>
+  <td>Break</td>
+  <td>Break</td>
 </tr>
 <tr>
   <th>2:00 - 2:30</th>
-  <th>Lunch Exercise Small Group Discussions</th>
-  <th>Lunch Exercise Small Group Discussions</th>
-  <th>Data Exploration and Visualization (cont.)</th>
-  <th>Lunch Exercise Small Group Discussions</th>
-  <th>Lunch Exercise Small Group Discussions</th>
+  <td>Lunch Exercise Small Group Discussions</td>
+  <td>Lunch Exercise Small Group Discussions</td>
+  <td>Data Exploration and Visualization (cont.)</td>
+  <td>Lunch Exercise Small Group Discussions</td>
+  <td>Lunch Exercise Small Group Discussions</td>
 </tr>
 <tr>
   <th>2:30 - 4:00</th>
-  <th>Program Documentation, Online Resources, and Debugging</th>
-  <th>Biological Data Parsing with Python (cont.)</th>
-  <th>---</th>
-  <th>Random Simulations</th>
-  <th>Review</th>
+  <td>Program Documentation, Online Resources, and Debugging</td>
+  <td>Biological Data Parsing with Python (cont.)</td>
+  <td>---</td>
+  <td>Random Simulations</td>
+  <td>Review</td>
 </tr>
 <tr>
   <th>Homework (wrap up 7pm)</th>
-  <th>Genome Arithmetic</th>
-  <th>TBA</th>
-  <th>TBA</th>
-  <th>Visualizing Simulation Results and Power</th>
-  <th>---</th>
+  <td>Genome Arithmetic</td>
+  <td>TBA</td>
+  <td>TBA</td>
+  <td>Visualizing Simulation Results and Power</td>
+  <td>---</td>
 </tr>
 </table>
 
