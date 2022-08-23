@@ -10,10 +10,8 @@
 </h1>
 </header>
 
-<details><summary> **Table of Contents** </summary>
-
-Table of Contents
-=================
+<details open>
+<summary><b>Table of Contents</b></summary>
 
 * [Instructors](#Instructors)<br />
 * [Teaching Assistants](#TAs)<br />
