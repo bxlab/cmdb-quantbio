@@ -65,7 +65,7 @@
 
 <a name="Instructors"></a>
 
-<table class="table table-striped.well">
+<table class="table table-striped">
  <tr>
    <th>Instructor</th>
    <th>Email</th>
@@ -86,7 +86,7 @@
 
 <a name="TAs"></a>
 
-<table class="table table-striped.well">
+<table class="table table-striped">
  <tr>
    <th>Teaching Assistant</th>
    <th>Email</th>
@@ -182,7 +182,7 @@ Please be on time for course activities. Your attendance is expected at all time
 
 <a name="Sessions"></a>
 <header>
-  <h3>Types of Sessions</h2>
+  <h3>Types of Sessions</h3>
 </header>
 
 The course is broken into four main <b>types of sessions</b>
