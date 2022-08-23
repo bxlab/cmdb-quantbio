@@ -10,53 +10,49 @@
 </h1>
 </header>
 
-<details open>
-<summary><b>Table of Contents</b></summary>
-
+<details><summary><b>Table of Contents</b></summary>
 <ul>
-  <li> <a href="#Instructors">Instructors</a></li>
-  <li> <a href="#TAs">Teaching Assistants</a></li>
-  <li>[Class Meetings](#ClassMeetings)</li>
-  <li>[Course Website](#CourseWebsite)</li>
-  <li>[Course Description](#Description)</li>
-  <li>[Specific Objectives](#Objectives)</li>
-  <li>[Study Materials](#StudyMats)</li>
-  <li>[Prep Work](#PrepWork)</li>
-  <li>[What To Bring](#WhatToBring)</li>
-  <li>[Course Format](#Format)</li>
+  <li><a href="#Instructors">Instructors</a></li>
+  <li><a href="#TAs">Teaching Assistants</a></li>
+  <li><a href="#ClassMeetings">Class Meetings</a></li>
+  <li><a href="#CourseWebsite">Course Website</a></li>
+  <li><a href="#Description">Course Description</a></li>
+  <li><a href="#Objectives">Specific Objectives</a></li>
+  <li><a href="#StudyMats">Study Materials</a></li>
+  <li><a href="#PrepWork">Prep Work</a></li>
+  <li><a href="#WhatToBring">What To Bring</a></li>
+  <li><a href="#Format">Course Format</a></li>
     <ul>
-      <li>[Attendance](#Attendance)</li>
-      <li>[Types of Sessions](#Sessions)<li>
+      <li><a href="#Attendance">Attendance</a></li>
+      <li><a href="#Sessions">Types of Sessions</a><li>
         <ul>
-          <li>[Interactive Lecture](#FormatInter)</li>
-          <li>[Assignments](#FormatExercise)</li>
-          <li>[Small Group Sessions](#FormatSmallGroup)</li>
-          <li>[Asynchronous](#FormatAsynch)</li>
+          <li><a href="#FormatInter">Interactive Lecture</a></li>
+          <li><a href="#FormatExercise">Assignments</a></li>
+          <li><a href="#FormatSmallGroup">Small Group Sessions</a></li>
+          <li><a href="#FormatAsynch">Asynchronous</a></li>
         </ul>
-      <li>Daily Schedule](#DaySchedule)</li>
-      <li>[Daily Reflections](#Reflections)</li>
-      <li>[Food](#Food)</li>
+      <li><a href="#DaySchedule">Daily Schedule</a></li>
+      <li><a href="#Reflections">Daily Reflections</a></li>
+      <li><a href="#Food">Food</a></li>
     </ul>
-  <li>[Asking for Help](#Help)</li>
+  <li><a href="#Help">Asking for Help</a></li>
     <ul>
-      <li>[Do It](#DOIT)</li>
-      <li>[Generally How](#GenerallyHow)</li>
-      <li>[Googling](#Googling)</li>
+      <li><a href="#DOIT">Do It</a></li>
+      <li><a href="#GenerallyHow">Generally How</a></li>
+      <li><a href="#Googling">Googling</a></li>
     </ul>
-  <li>[Grading](#Grading)</li>
-  <li>[Feedback](#Feedback)</li>
-  <li>[Academic Integrity & Ethics](#Integrity)</li>
-  <li>[Code of Conduct](#CodeofConduct)</li>
-  <li>[The Pandemic](#Pandemic)</li>
-  <li>[Technology](#Technology)</li>
+  <li><a href="#Grading">Grading</a></li>
+  <li><a href="#Feedback">Feedback</a></li>
+  <li><a href="#Integrity">Academic Integrity & Ethics</a></li>
+  <li><a href="#CodeofConduct">Code of Conduct</a></li>
+  <li><a href="#Pandemic">The Pandemic</a></li>
+  <li><a href="#Technology">Technology</a></li>
     <ul>
-      <li>[Platforms](#Platforms)</li>
-      <li>[Laptops](#Laptops)</li>
+      <li><a href="#Platforms">Platforms</a></li>
+      <li><a href="#Laptops">Laptops</a></li>
     </ul>
-  <li>[Full Bootcamp Schedule](#WeekSchedule)</li>
-</ul>
-
-</details>
+  <li><a href="#WeekSchedule">Full Bootcamp Schedule</a></li>
+</ul></details>
 
 <a name="Instructors"></a>
 
