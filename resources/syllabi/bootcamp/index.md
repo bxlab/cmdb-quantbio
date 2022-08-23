@@ -15,7 +15,7 @@
 
 <ul>
   <li> <a href="#Instructors">Instructors</a></li>
-  <li>[Teaching Assistants](#TAs)</li>
+  <li> <a href="#TAs">Teaching Assistants</a></li>
   <li>[Class Meetings](#ClassMeetings)</li>
   <li>[Course Website](#CourseWebsite)</li>
   <li>[Course Description](#Description)</li>
@@ -54,20 +54,23 @@
       <li>[Laptops](#Laptops)</li>
     </ul>
   <li>[Full Bootcamp Schedule](#WeekSchedule)</li>
-
+</ul>
 
 </details>
 
 <a name="Instructors"></a>
+
 
 | Instructor | Email |
 | :----------------- | :---------------------- |
 | Rajiv McCoy    | [rajiv.mccoy@jhu.edu](mailto:rajiv.mccoy@jhu.edu)     |
 | Michael Sauria | [msauria1@jhu.edu](mailto:msauria1@jhu.edu)        |
 | Frederick Tan  | [tan@carnegiescience.edu](mailto:tan@carnegiescience.edu) |
-{:.table.table-striped.well.width:40%}
+{:.table.table-striped.well}
+
 
 <a name="TAs"></a>
+
 
 | Teaching Assistant | Email |
 | :----------------- | :---------------------- |
@@ -76,6 +79,7 @@
 | Dylan Taylor   | [dtaylo95@jhu.edu](mailto:dtaylo95@jhu.edu) |
 | Andrew Bortvin | [abortvi2@jhu.edu](mailto:abortvi2@jhu.edu) |
 {:.table.table-striped.well}
+
 
 <a name="ClassMeetings"></a>
 **Class Meetings**<br />
