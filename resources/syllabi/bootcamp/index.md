@@ -326,81 +326,160 @@ We ask students to write <b>daily reflections</b> and turn them in <a href="http
     <li>Students will eat primarily outside.</li>
   </ul>
 
-<a name="Help"></a><a name="DOIT"></a>
-## Asking for Help
-We both expect and encourage you to ask questions and request help throughout this course. Everyone is learning and there is no shame in having questions, not understanding what an instructor has said or typed, or needing to debug your code. Therefore, **please ask questions** about whatever, whenever you need to. We’ve written up guidelines below on how you can ask for help during each type of session.
+<a name="Help"></a>
+<header><h2>Asking for Help></h2></header>
+<a name="DOIT"></a>
+We both expect and encourage you to ask questions and request help throughout this course. Everyone is learning and there is no shame in having questions, not understanding what an instructor has said or typed, or needing to debug your code. Therefore, <b>please ask questions</b> about whatever, whenever you need to. We’ve written up guidelines below on how you can ask for help during each type of session.
 
 <a name="GenerallyHow"></a>
-* For most **live-coding sessions**, the Lead Instructor will solicit **Check Ins**, asking students to respond to a poll about whether they are ready to move on to the next section using sticky notes.
-    * Use a **green sticky note** if you’re following along and are ready to move on.
-    * Use a **yellow sticky note** if you're working and need more time, but are not ready to move on and do not need assistance yet.
-    * Use a **pink sticky note** if you need assistance.
-* If the Lead Instructor prompts the class to ask or answer questions verbally, please raise your hand to be courteous.
-* If you experience problems you cannot fix in a live-coding session, outside of solicited check ins, still display a pink sticky note, and a TA will assist you. However, depending on the problem, and what will be required to fix it, TAs may suggest that you continue to pay attention and follow along as best as you can, aiding in fixing at a later stopping point.
-* You can also slack questions to TAs, instructors, or in channels.
-* During **Small Group Peer-Presentations**, **please do not interrupt other students**. You may slack any TA or instructor during the presentation, but it is likely in your best interest to wait until questions or comments are solicited by the group facilitator.
+<ul>
+  <li>For most <b>live-coding sessions</b>, the Lead Instructor will solicit <b>Check Ins</b>, asking students to respond to a poll about whether they are ready to move on to the next section using sticky notes.</li>
+    <ul>
+      <li>Use a <b>green sticky note</b> if you’re following along and are ready to move on.</li>
+      <li>Use a <b>yellow sticky note</b> if you're working and need more time, but are not ready to move on and do not need assistance yet</li>
+      <li>Use a <b>pink sticky note</b> if you need assistance.</li>
+    </ul>
+  <li>If the Lead Instructor prompts the class to ask or answer questions verbally, please raise your hand to be courteous.</li>
+  <li> If you experience problems you cannot fix in a live-coding session, outside of solicited check ins, still display a pink sticky note, and a TA will assist you. However, depending on the problem, and what will be required to fix it, TAs may suggest that you continue to pay attention and follow along as best as you can, aiding in fixing at a later stopping point</li>
+  <li>You can also slack questions to TAs, instructors, or in channels.</li>
+  <li>During <b>Small Group Sessions</b>, <b>please do not interrupt other students</b>. You may slack any TA or instructor during the presentation, but it is likely in your best interest to wait until questions or comments are solicited by the group facilitator.</li>
+</ul>
 
 <a name="Googling"></a>
-### Googling
-**Googling** is always an acceptable way to find answers or help, and we encourage you to utilize it extensively. If you adopt a solution following a Google search, make sure you understand what you incorporate, rather than just copy/pasting without comprehension of the logic or code. Please see the [Academic Integrity & Ethics](#Integrity) syllabus section for more on this.
+<header><h3>Googling</h3></header>
+<b>Googling</b> is always an acceptable way to find answers or help, and we encourage you to utilize it extensively. If you adopt a solution following a Google search, make sure you understand what you incorporate, rather than just copy/pasting without comprehension of the logic or code. Please see the <a href="#Integrity">Academic Integrity & Ethics</a> syllabus section for more on this.
 
 <a name="Grading"></a>
-## Grading
-The grading for this course is based on **reasonable completion**. For each lunch and homework exercise session, students will be advised which exercises are required and which are advanced or optional. Additionally, students will be asked to upload certain scripts and results (outputs or plots, etc.) to their personal Github repositories, qbb2022-answers. For lunch exercises, these materials should be pushed to the repository by the end of the lunch exercise session. For homework exercises, these materials should be pushed to the repository by the beginning of the next morning session.<br /><br />
+<header><h2>Grading</h2></header>
+The grading for this course is based on <b>reasonable completion</b>. For each lunch and homework exercise session, students will be advised which exercises are required and which are advanced or optional. Additionally, students will be asked to upload certain scripts and results (outputs or plots, etc.) to their personal Github repositories, qbb2022-answers. For lunch exercises, these materials should be pushed to the repository by the end of the lunch exercise session. For homework exercises, these materials should be pushed to the repository by the beginning of the next morning session.<br /><br />
 
 TAs will verify that the student’s submitted work shows a reasonable level of individual effort. Finally, students will have one week post-bootcamp to submit any leftover materials. Letter grades will be assigned in line with the level of completion. While student presentations and the content of daily reflections will not affect grades in any way, failure to turn in daily reflections has the potential to lower the final grade.<br /><br />
 
 General guidelines for letter grade assignments:
-  * A (excellent): 90-100% completion
-  * B (passing): 80-90% completion
-  * C or lower (not passing): <80% completion
+  <ul>
+    <li>A (excellent): 90-100% completion</li>
+    <li>B (passing): 80-90% completion</li>
+    <li>C or lower (not passing): <80% completion</li>
+  </ul>
 
 <a name="Feedback"></a>
-TAs and instructors will push individualized feedback to the student repositories throughout the week. This feedback is not a grade, but may be used by students to anticipate their level of completion and likely grade.  
+<header><h2>Feedback</h2></header>
+
+TAs and instructors will push individualized feedback to the student repositories throughout the week. This feedback is not a grade, but may be used by students to anticipate their level of completion and likely grade.  FILL IN MORE
 
 <a name="Integrity"></a>
-## Academic Integrity & Ethics
+<header><h2>Academic Integrity & Ethics</h2></header>
+
 Academic and scientific institutions and research depend on honesty and integrity. You should be completing your lunch and homework exercises and your work should not plagiarize others -- including group partners, presenters, and strangers posting to online forums or blogs. You and your partner should be working together, but both persons should be writing and turning in unique, individualized code. Note your scripts and analysis may follow the same logic steps and even have tidbits of the same code, but no one person should be writing the solution the whole group uses character for character. Additionally, you should understand every line of code you write, are given and use, or find online and incorporate. If asked to, you should be able to explain exactly what your code is doing. Another aspect is properly acknowledging the source of  borrowed code. Understanding can be cultivated and acknowledgement implemented by writing both inline and multiline comments (which is a terrific practice in general). Relatedly, don’t give someone code to copy and paste. Make sure any recipient can explain back to you any gifted code. See the university’s guidelines on plagiarism for details and contact a TA with any questions.
 
 <a name="CodeofConduct"></a>
-## Code of Conduct
+<header><h2>Code of Conduct</h2></header>
+
 We are committed to creating a welcoming, inclusive, and harassment-free environment for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), political beliefs/leanings, or technology choices. We do not tolerate harassment in any form. This code of conduct applies to all course participants, including instructors and TAs, and to all modes of interaction and communication.<br /><br />
 
 All class participants agree to:
-  * **Be considerate and polite**. Bootcamp is a stressful and sometimes frustrating week for everyone. In addition, the collaborative nature of this course means it is essential that students are respectful of each other’s questions and points of confusion. Remember that you all are coming into this program with a wide range of coding backgrounds. A community where people feel uncomfortable is not conducive for learning.
-  * **Work together cooperatively**. Be kind when giving feedback on your classmates’ code, and make an effort to help if they are stuck. You will gain much more from explaining concepts to someone else than you will from rushing through the assignments on your own.
-  * **Refrain from demeaning, discriminatory, or harassing behavior and speech**. Harassment includes, but is not limited to: deliberate intimidation; stalking; unwanted photography or recording; sustained or willful disruption of talks or other events; inappropriate physical contact; use of sexual or discriminatory imagery, comments, or jokes; and unwelcome sexual attention. If you feel that someone has harassed you or otherwise treated you inappropriately, please alert one of the instructors or TAs.
-  * **Refrain from advocating for, or encouraging, negative behavior**. And, if someone asks you to stop, then stop. Alert an instructor or TA if you notice a dangerous situation, someone in distress, or violations of this code of conduct, no matter how inconsequential it seems.
+  <ul>
+    <li><b>Be considerate and polite</b>. Bootcamp is a stressful and sometimes frustrating week for everyone. In addition, the collaborative nature of this course means it is essential that students are respectful of each other’s questions and points of confusion. Remember that you all are coming into this program with a wide range of coding backgrounds. A community where people feel uncomfortable is not conducive for learning.</li>
+    <li><b>Work together cooperatively</b>. Be kind when giving feedback on your classmates’ code, and make an effort to help if they are stuck. You will gain much more from explaining concepts to someone else than you will from rushing through the assignments on your own.</li>
+    <li><b>Refrain from demeaning, discriminatory, or harassing behavior and speech</b>. Harassment includes, but is not limited to: deliberate intimidation; stalking; unwanted photography or recording; sustained or willful disruption of talks or other events; inappropriate physical contact; use of sexual or discriminatory imagery, comments, or jokes; and unwelcome sexual attention. If you feel that someone has harassed you or otherwise treated you inappropriately, please alert one of the instructors or TAs.</li>
+    <li><b>Refrain from advocating for, or encouraging, negative behavior</b>. And, if someone asks you to stop, then stop. Alert an instructor or TA if you notice a dangerous situation, someone in distress, or violations of this code of conduct, no matter how inconsequential it seems.</li>
+  </ul>
 
 <a name="Pandemic"></a>
-## The Pandemic
-We know that this is one of the least ideal situations in which to be starting your first year of grad school and taking an intensive week-long coding course. Our plan is to be as understanding as possible about grading, attendance, and any issues that come up. Please don’t hesitate to reach out to an instructor or TA, and we will do our best to accommodate you however we can.<br /><br /> When in the classroom, **please wear a face mask** except when drinking.
+<header><h2>The Pandemic</h2></header>
+
+We know that this is one of the least ideal situations in which to be starting your first year of grad school and taking an intensive week-long coding course. Our plan is to be as understanding as possible about grading, attendance, and any issues that come up. Please don’t hesitate to reach out to an instructor or TA, and we will do our best to accommodate you however we can.<br /><br /> When in the classroom, <b>please wear a face mask</b> except when drinking.
 
 <a name="Technology"></a>
-## Technology
+<header><h2>Technology</h2></header>
 
 <a name="Platforms"></a>
-### Platforms
-Several **platforms** will be utilized for communication and distribution of information. These include Github, Slack, Google Forms, etc. Instructions and walkthroughs are provided for students to sign up for accounts through Github and Slack. If for any reason you do not have access to one of these accounts, please contact a TA.
+<header><h3>Platforms</h3></header>
+
+Several <b>platforms</b> will be utilized for communication and distribution of information. These include GitHub, Slack, Google Forms, etc. Instructions and walkthroughs are provided for students to sign up for accounts through GitHub and Slack. If for any reason you do not have access to one of these accounts, please contact a TA.
 
 <a name="Laptops"></a>
-### Laptops
-We provide **laptops** with pre-configured software and data. Students must sign a Macbook Pro Agreement Form upon pickup of the laptop. Note these laptops are to be returned to the Biology office by the end of the spring semester (date specified on the agreement form). Software issues should be communicated to TAs promptly. In contrast, report any hardware issues to the Biology office.
+<header><h3>Laptops</h3></header>
+We <b>provide laptops</b> with pre-configured software and data. Students must sign a Macbook Pro Agreement Form upon pickup of the laptop. Note these laptops are to be returned to the Biology office by the end of the spring semester (date specified on the agreement form). Software issues should be communicated to TAs promptly. In contrast, report any hardware issues to the Biology office.
 
 <a name="WeekSchedule"></a>
-## Full Bootcamp Schedule
+<header><h2>Full Bootcamp Schedule</h2></header>
 All time are ET.
 
-|                | Monday | Tuesday | Wednesday | Thursday | Friday |
-|:---------------:|:--------------------------------------:|:---------------------------------------:|:------------------------------------:|:---------------------------------------:|:--------------------------------------:|
-|   9:00 - 9:30  | Overview                     | Homework Exercise Small Group Discussions | Homework Exercise Small Group Discussions | Homework Exercise Small Group Discussions | Homework Exercise Small Group Discussions |
-|   9:30 - 11:00  | The Unix Shell | Biological Data Parsing with Python | Review | Reproducibility and GitHub | Statistical Modeling |
-|   11:00 - 11:45  | Lunch    |  Lunch   | Lunch    | Lunch   | Lunch |
-|   11:45 - 1:45  | Exploring Biological Data Files | Annotate and Debug a File Parser  | Data Exploration and Visualization | Research Parasites (aka How to ~~Steal~~ Reuse Other People’s Code) | TBA |
-|    1:45 - 2:00   | Break | Break | Break  | Break | Break  |
-|    2:00 - 2:30   | Lunch Exercise Small Group Discussions | Lunch Exercise Small Group Discussions | Data Exploration and Visualization (cont.) | Lunch Exercise Small Group Discussions | Lunch Exercise Small Group Discussions |
-|    2:30 - 4:00   | Program Documentation, Online Resources, and Debugging  | Biological Data Parsing with Python (cont.) | --- | Random Simulations  | Review |
-|     Homework     | Genome Arithmetic  | TBA | TBA | Visualizing Simulation Results and Power | --- |
-{:.table.table-striped.well}
 
-Although the course formally starts at 9 am ET, please **arrive by 8:45 am**.
+<table class="table table-striped">
+<tr>
+  <th></th>
+  <th>Monday</th>
+  <th>Tuesday</th>
+  <th>Wednesday</th>
+  <th>Thursday</th>
+  <th>Friday</th>
+</tr>
+<tr>
+  <th>9:00 - 9:30</th>
+  <th>Overview</th>
+  <th>Homework Exercise Small Group Discussions</th>
+  <th>Homework Exercise Small Group Discussions</th>
+  <th>Homework Exercise Small Group Discussions</th>
+  <th>Homework Exercise Small Group Discussions</th>
+</tr>
+<tr>
+  <th>9:30 - 11</th>
+  <th>The Unix Shell</th>
+  <th>Biological Data Parsing with Python</th>
+  <th>Review</th>
+  <th>Reproducibility and GitHub</th>
+  <th>Statistical Modeling</th>
+</tr>
+<tr>
+  <th>11:00 - 11:45</th>
+  <th>Lunch</th>
+  <th>Lunch</th>
+  <th>Lunch</th>
+  <th>Lunch</th>
+  <th>Lunch</th>
+</tr>
+<tr>
+  <th>11:45 - 1:45</th>
+  <th>Exploring Biological Data Files</th>
+  <th>Annotate and Debug a File Parser</th>
+  <th>Data Exploration and Visualization</th>
+  <th>Research Parasites (aka How to <s>Steal</s> Reuse Other People’s Code)</th>
+  <th>TBA</th>
+</tr>
+<tr>
+  <th>1:45 - 2:00</th>
+  <th>Break</th>
+  <th>Break</th>
+  <th>Break</th>
+  <th>Break</th>
+  <th>Break</th>
+</tr>
+<tr>
+  <th>2:00 - 2:30</th>
+  <th>Lunch Exercise Small Group Discussions</th>
+  <th>Lunch Exercise Small Group Discussions</th>
+  <th>Data Exploration and Visualization (cont.)</th>
+  <th>Lunch Exercise Small Group Discussions</th>
+  <th>Lunch Exercise Small Group Discussions</th>
+</tr>
+<tr>
+  <th>2:30 - 4:00</th>
+  <th>Program Documentation, Online Resources, and Debugging</th>
+  <th>Biological Data Parsing with Python (cont.)</th>
+  <th>---</th>
+  <th>Random Simulations</th>
+  <th>Review</th>
+</tr>
+<tr>
+  <th>Homework (wrap up 7pm)</th>
+  <th>Genome Arithmetic</th>
+  <th>TBA</th>
+  <th>TBA</th>
+  <th>Visualizing Simulation Results and Power</th>
+  <th>---</th>
+</tr>
+</table>
+
+Although the course formally starts at 9 am ET, please <b>arrive by 8:45 am</b>.
