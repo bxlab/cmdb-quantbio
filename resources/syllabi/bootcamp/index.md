@@ -242,7 +242,6 @@ The course is broken into four main <b>types of sessions</b>
 
 Most sessions will be separated by breaks, however, sometimes a break will be given in the middle of an interactive lecture. We will let you know this in advance. However, the <b>daily schedule</b> will generally be:
 
-
 <table class="table table-striped" style="width:50%">
  <tr>
    <th>Morning</th>
@@ -279,6 +278,7 @@ Most sessions will be separated by breaks, however, sometimes a break will be gi
   <td>Break</td>
   <td>7:00</td>
   <td>Wrap Up</td>
+ </tr>
 </table>
 
 On Wednesday morning and Friday afternoon, the <b>Interactive</b> sessions will be replaced with the <b>Review Small Group</b> discussions described above.
@@ -293,7 +293,7 @@ We ask students to write <b>daily reflections</b> and turn them in <a href="http
   </ol>
 
 
-We expect these reflections to be short, but <b>respond to each of the following prompts</b>:<br />
+<br />We expect these reflections to be short, but <b>respond to each of the following prompts</b>:<br />
   <ul>
     <li>What did I struggle with today?</li>
     <li>What did I achieve today?</li>
@@ -301,19 +301,19 @@ We expect these reflections to be short, but <b>respond to each of the following
   </ul>
 
 
-If you have specific material you know you would like covered in a review session, please also respond to the non-required prompt:<br />
+<br />If you have specific material you know you would like covered in a review session, please also respond to the non-required prompt:<br />
   <ul>
     <li>What from today (if anything) would you like to review in a review session?</li>
   </ul>
 
 
-Finally, if you would like to provide constructive critiques of the course or that day's material, please respond to the final, non-required prompt:<br />
+<br />Finally, if you would like to provide constructive critiques of the course or that day's material, please respond to the final, non-required prompt:<br />
   <ul>
     <li>Suggestions or constructive critiques:</li>
   </ul>
 
 
-Notes on reflections:<br />
+<br />Notes on reflections:<br />
   <ul>
     <li>As long as reflections attempt to respond to the above prompts, the content of the reflection will not affect a student’s grade in any way. See the <a href="#Grading">Grading></a> section for further clarification.</li>
     <li>We aim to keep reflections confidential. As such, only instructors, TAs, and the student will have access to a student’s reflections</li>
