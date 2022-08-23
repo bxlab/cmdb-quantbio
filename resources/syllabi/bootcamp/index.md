@@ -1,29 +1,3 @@
-details {
-  font: 16px "Open Sans", Calibri, sans-serif;
-  width: 620px;
-}
-
-details > summary {
-  padding: 2px 6px;
-  width: 15em;
-  background-color: #ddd;
-  border: none;
-  box-shadow: 3px 3px 4px black;
-  cursor: pointer;
-}
-
-details > p {
-  border-radius: 0 0 10px 10px;
-  background-color: #ddd;
-  padding: 2px 6px;
-  margin: 0;
-  box-shadow: 3px 3px 4px black;
-}
-
-details[open] > summary {
-  background-color: #ccf;
-}
-
 <header>
 <h1>
     AS.020.607
@@ -38,10 +12,13 @@ details[open] > summary {
 
 <details open><summary><b>Table of Contents</b></summary>
 <ul>
-  <li><a href="#Instructors">Instructors</a></li>
-  <li><a href="#TAs">Teaching Assistants</a></li>
-  <li><a href="#ClassMeetings">Class Meetings</a></li>
-  <li><a href="#CourseWebsite">Course Website</a></li>
+  <li><a href="#Contact">Logistics & Contact</a></li>
+  <ul>
+    <li><a href="#Instructors">Instructors</a></li>
+    <li><a href="#TAs">Teaching Assistants</a></li>
+    <li><a href="#ClassMeetings">Class Meetings</a></li>
+    <li><a href="#CourseWebsite">Course Website</a></li>
+  </ul>
   <li><a href="#Description">Course Description</a></li>
   <li><a href="#Objectives">Specific Objectives</a></li>
   <li><a href="#StudyMats">Study Materials</a></li>
@@ -80,50 +57,100 @@ details[open] > summary {
   <li><a href="#WeekSchedule">Full Bootcamp Schedule</a></li>
 </ul></details>
 
+
+<a name="Contact"></a>
+<header>
+  <h2> Logistics & Contact Information</h2>
+</header>
+
 <a name="Instructors"></a>
 
-
-| Instructor | Email |
-| :----------------- | :---------------------- |
-| Rajiv McCoy    | [rajiv.mccoy@jhu.edu](mailto:rajiv.mccoy@jhu.edu)     |
-| Michael Sauria | [msauria1@jhu.edu](mailto:msauria1@jhu.edu)        |
-| Frederick Tan  | [tan@carnegiescience.edu](mailto:tan@carnegiescience.edu) |
-{:.table.table-striped.well}
-
+<table class=table-striped.well>
+ <tr>
+   <th>Instructor</th>
+   <th>Email</th>
+ </tr>
+ <tr>
+   <td>Rajiv McCoy</td>
+   <td><a href="mailto:rajiv.mccoy@jhu.edu">rajiv.mccoy@jhu.edu</a></td>
+ </tr>
+ <tr>
+   <td>Michael Sauria</td>
+   <td><a href="mailto:msauria1@jhu.edu">msauria1@jhu.edu</a></td>
+ </tr>
+ <tr>
+  <td>Frederick Tan</td>
+  <td><a href="mailto:tan@carnegiescience.edu">tan@carnegiescience.edu</a></td>
+ </tr>
+</table>
 
 <a name="TAs"></a>
 
-
-| Teaching Assistant | Email |
-| :----------------- | :---------------------- |
-| Kate Weaver    | [kweave23@jhu.edu](mailto:kweave23@jhu.edu) |
-| Steph Yan      | [syan@jhu.edu](mailto:syan@jh.edu)     |
-| Dylan Taylor   | [dtaylo95@jhu.edu](mailto:dtaylo95@jhu.edu) |
-| Andrew Bortvin | [abortvi2@jhu.edu](mailto:abortvi2@jhu.edu) |
-{:.table.table-striped.well}
+<table class=table-striped.well>
+ <tr>
+   <th>Teaching Assistant</th>
+   <th>Email</th>
+ </tr>
+ <tr>
+   <td>Kate Weaver</td>
+   <td><a href="mailto:kweave23@jhu.edu">kweave23@jhu.edu</a></td>
+ </tr>
+ <tr>
+   <td>Steph Yan</td>
+   <td><a href="mailto:syan@jhu.edu">syan@jhu.edu</a></td>
+ </tr>
+ <tr>
+  <td>Dylan Taylor</td>
+  <td><a href="mailto:dtaylo95@jhu.edu">dtaylo95@jhu.edu</a></td>
+ </tr>
+ <tr>
+  <td>Andrew Bortvin</td>
+  <td><a href="mailto:abortvi2@jhu.edu">abortvi2@jhu.edu</a></td>
+ </tr>
+</table>
 
 
 <a name="ClassMeetings"></a>
-**Class Meetings**<br />
+
+<a name="Contact"></a>
+<header>
+  <h3>Class Meetings</h3>
+</header>
+
 Mon, Aug 29, 2022 - Fri, Sept 2, 2022<br />
 8:45 A.M. ET - 7 P.M. ET, In Person, UTL398<br />
 
 <a name="CourseWebsite"></a>
-**Course Website**<br />
-[http://bxlab.github.io/cmdb-quantbio/](http://bxlab.github.io/cmdb-quantbio/)
+
+<a name="Contact"></a>
+<header>
+  <h3>Course Website</h3>
+</header>
+
+<a href="http://bxlab.github.io/cmdb-quantbio/">http://bxlab.github.io/cmdb-quantbio/</a>
 
 <a name="Description"></a>
-### Course Description
+
+<a name="Contact"></a>
+<header>
+  <h2>Course Description</h2>
+</header>
+
 Quantitative and computational methods are increasingly essential to all sub-disciplines of modern biological research. The goal of this intensive week-long “boot camp” is to empower students with the fundamental skills to apply these methods, as well as connect them to resources for further developing their knowledge and abilities. The class starts at 9 am with formal instruction ending at 4 pm daily. The course demonstrates the importance of version control, documentation, testing, and other methods for enhancing reproducibility, reliability, and usability of software. This is achieved through live coding sessions and use of learning exercises, where for the majority of the class, students perform data analysis to address biological questions and reinforce core bioinformatic concepts. Upon completing the course, students should be comfortable using and writing software to work with large-scale biological data. The motivation of this goal is to **develop computational and statistical competence** in preparation for courses, rotations, thesis research, and careers. Rather than blindly outsourcing bioinformatic components of their work, **students will be empowered** to understand methodological details and their associated advantages and limitations. This will in turn advance the broader goal of rigor in experimental design, promoting robust and unbiased results.
 
 <a name="Objectives"></a>
-### Specific Objectives
-  * Develop **comfort** working within a UNIX environment and at the command line to build and run programs
-  * Develop **confidence** using Python and its extended ecosystem of tools for bioinformatic data analysis and visualization
-  * Develop **knowledge** of standard bioinformatic file formats and where they fit within the context of a project
-  * Develop **appreciation** for and **practice** of concise and transparent presentation of data
-  * Develop **fluency** in basic statistical tests, associated assumptions, and interpretation of their output
-  * Develop **good habits for ensuring reproducible research**
+
+<a name="Contact"></a>
+<header>
+  <h2>Specific Objectives</h2>
+</header>
+
+  * Develop <b>comfort</b> working within a UNIX environment and at the command line to build and run programs
+  * Develop <b>confidence</b> using Python and its extended ecosystem of tools for bioinformatic data analysis and visualization
+  * Develop <b>knowledge</b> of standard bioinformatic file formats and where they fit within the context of a project
+  * Develop <b>appreciation</b> for and <b>practice</b> of concise and transparent presentation of data
+  * Develop <b>fluency</b> in basic statistical tests, associated assumptions, and interpretation of their output
+  * Develop <b>good habits for ensuring reproducible research</b>
 
 <a name="StudyMats"></a>
 ### Study Materials
