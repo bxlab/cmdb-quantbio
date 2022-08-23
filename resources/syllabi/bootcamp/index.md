@@ -64,6 +64,7 @@
 </header>
 
 <a name="Instructors"></a>
+<header><h3>Instructors</h3></header>
 
 <table class="table table-striped" style="width:40%">
  <tr>
@@ -85,7 +86,7 @@
 </table>
 
 <a name="TAs"></a>
-
+<header><h3> Teaching Assistants </h3></header>
 <table class="table table-striped" style="width:40%">
  <tr>
    <th>Teaching Assistant</th>
@@ -153,6 +154,15 @@ Quantitative and computational methods are increasingly essential to all sub-dis
 
 This course does not have a required text. Any lecture notes, slides, and interactive coding scripts/notebooks will be made available on the course website.
 
+<a name="PrepWork"></a>
+<header>
+  <h2>Prep Work</h2>
+</header>
+
+FILL IN MORE
+
+The prep work <a href="https://kweav.github.io/prepwork_revamp/introduction.html"> can be accessed at this site</a>.
+
 <a name="WhatToBring"></a>
 <header>
   <h2>What to Bring</h2>
@@ -208,19 +218,23 @@ The course is broken into four main <b>types of sessions</b>
       <li>We will utilize cooperative small groups discussion sessions for content reviews and peer-presentations.</li>
       <ul>
         <li>For peer-presentations, students will explain to one another their approaches to solving exercises. TAs or instructors may provide feedback, and invite questions and discussion among the whole group on alternative approaches and solutions. Presentations are <b>ungraded</b>.</li>
-        <li>For review sessions, students will be asked to</li>
+        <li>For review sessions, students will be asked to FILL IN MORE</li>
       </ul>
       <li>Small groups will be assigned daily and group membership rotated throughout the week. The students within each small group will be assigned roles for that day</li>
         <ul>
         <li>Manager: makes sure that all have the opportunity to engage in the discussion or peer-presentations.</li>
-        <li>Time Keeper: given an end time, keeps group on task and on time.</li>
+        <li>Questioner: generates questions, asking for clarification or pushing back in order to strengthen a presentation.</li>
         <li>Recorder: writes down/types/records important information, overall conclusions, or questions.</li>
         <li>Spokesperson: if asked, summarizes or restates the team's conclusions, questions, or answers for the whole class outside of the small group.</li>
+        <li>Time Keeper: given an end time, keeps group on task and on time.</li>
         <li>Reflector: verifies that any required prompts or agenda items have been discussed and have resulted in a consensus conclusion(s) or question(s).</li>
-        <li>Questioner: generates questions, asking for clarification or pushing back in order to strengthen a presentation.</li>
+        <li>Note: For groups with only 5 members, the Time Keeper and Reflector roles will be merged.</li>
         </ul>
     </ul>
-  <li><a name="Asynchronous"></a>  <ins><b>Asynchronous</b> Sessions</ins></li>
+  <li><a name="FormatAsynch"></a><ins><b>Asynchronous</b> Sessions</ins></li>
+    <ul>
+      <li>Asynchronous material FILL IN MORE</li>
+    </ul>
 </ol>
 
 <a name="DaySchedule"></a>
@@ -229,14 +243,43 @@ The course is broken into four main <b>types of sessions</b>
 Most sessions will be separated by breaks, however, sometimes a break will be given in the middle of an interactive lecture. We will let you know this in advance. However, the <b>daily schedule</b> will generally be:
 
 
-| Morning |    | Afternoon |     |
-|: - :|: - :|: - :|: - :|
-| 9:00 | Small group discussions | 2:00 | Small group discussions |
-| 9:30 | Interactive (with break) | 2:30 | Interactive (with break) |
-| 11:00 | Lunch | -- | -- |
-| 11:45 | Exercises | 4:00 | Exercises |
-|  1:45 | Break | 7:00 | Wrap Up |
-{:.table.table-striped.well}
+<table class="table table-striped" style="width:50%">
+ <tr>
+   <th>Morning</th>
+   <th></th>
+   <th>Afternoon</th>
+   <th></th>
+ </tr>
+ <tr>
+   <td>9:00</td>
+   <td>Small group discussions</td>
+   <td>2:00</td>
+   <td>Small group discussions</td>
+ </tr>
+ <tr>
+   <td>9:30</td>
+   <td>Interactive</td>
+   <td>2:30</td>
+   <td>Interactive</td>
+ </tr>
+ <tr>
+  <td>11:00</td>
+  <td>Lunch</td>
+  <td>--</td>
+  <td>--</td>
+ </tr>
+ <tr>
+  <td>11:45</td>
+  <td>Exercises</td>
+  <td>4:00</td>
+  <td>Exercises</td>
+ </tr>
+ <tr>
+  <td>1:45</td>
+  <td>Break</td>
+  <td>7:00</td>
+  <td>Wrap Up</td>
+</table>
 
 On Wednesday morning and Friday afternoon, the <b>Interactive</b> sessions will be replaced with the <b>Review Small Group</b> discussions described above.
 
@@ -249,6 +292,7 @@ We ask students to write <b>daily reflections</b> and turn them in <a href="http
     <li>This practice directly cultivates good habits in reproducible analysis and keeping a lab notebook.</li>
   </ol>
 
+
 We expect these reflections to be short, but <b>respond to each of the following prompts</b>:<br />
   <ul>
     <li>What did I struggle with today?</li>
@@ -256,15 +300,18 @@ We expect these reflections to be short, but <b>respond to each of the following
     <li>What's one lingering question or thought from today?</li>
   </ul>
 
+
 If you have specific material you know you would like covered in a review session, please also respond to the non-required prompt:<br />
   <ul>
     <li>What from today (if anything) would you like to review in a review session?</li>
   </ul>
 
+
 Finally, if you would like to provide constructive critiques of the course or that day's material, please respond to the final, non-required prompt:<br />
   <ul>
     <li>Suggestions or constructive critiques:</li>
   </ul>
+
 
 Notes on reflections:<br />
   <ul>
