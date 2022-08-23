@@ -24,7 +24,7 @@
   <li><a href="#Format">Course Format</a></li>
     <ul>
       <li><a href="#Attendance">Attendance</a></li>
-      <li><a href="#Sessions">Types of Sessions</a><li>
+      <li><a href="#Sessions">Types of Sessions</a></li>
         <ul>
           <li><a href="#FormatInter">Interactive Lecture</a></li>
           <li><a href="#FormatExercise">Assignments</a></li>
