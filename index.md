@@ -3,10 +3,10 @@ title: CMDB Quantitative Biology 2022
 layout: default
 ---
 
-<a name="Bootcamp"></a>
 ## CMDB Quantitative Biology Bootcamp 2022
 
 ### Logistics
+- [Prep Work](https://kweav.github.io/prepwork_revamp/introduction.html)
 - [Syllabus](resources/syllabi/bootcamp/index.html)
 - Five day intensive bootcamp geared towards getting everyone up to speed with basic computational skills.
 - <span class="text-danger">**NO** other classes, meetings, lab work, lab meetings, etc.</span>
@@ -14,6 +14,7 @@ layout: default
 - Please wear a face mask and bring headphones
 - Please arrive by 8:45am ET
 - Lunch and an afternoon snack will be provided
+
 
 ### Schedule
 All times in ET<br /><br />
@@ -48,7 +49,6 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
 
 -->
 
-<a name="Lab"></a>
 ## CMDB Quantitative Biology Lab 2022
 
 ### Logistics
@@ -61,7 +61,23 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
 
 ### Schedule
 
-TBD
+| Week | Date | Instructor          | Topic                                                          |
+| :--: | :--: | :-----------------: | :------------------------------------------------------------: |
+|  1   | 9/9  | Mike Schatz (Guest) | Genome Assembly                                                |
+|  2   | 9/16 | Dylan Taylor (Guest)| Alignment                                                      |
+|  3   | 9/23 | Rajiv McCoy         | Variant Calling                                                |
+|  4   | 9/30 | Rajiv McCoy         | GWAS                                                           |
+|  5   | 10/7 | Mike Sauria         | ChIP-Seq                                                       |
+|  6   | 10/14| Mike Sauria         | 3D Genome                                                      |
+|  7   | 10/21| No class            | Retreat                                                        |
+|  8   | 10/28| Mike Sauria         | Single Molecule Sequencing and DNA Modifications               |
+|  9   | 11/4 | Rajiv McCoy         | Bulk RNA-Seq                                                   |
+|  10  | 11/11| Kate Weaver (Guest) | Machine Learning and Applications in mRNA Expression Prediction|
+|  11  | 11/18| Rajiv McCoy         | Single-Cell RNA-Seq                                            |
+|  12  | 11/25| No class            | Thanksgiving Break                                             |
+|  13  | 12/2 | Mike Sauria         | Motif Finding                                                  |
+|  14  | 12/9 | Rajiv McCoy         | Population Genetics                                            |
+{:.table.table-striped.well}
 
 <!--
 ### Useful Goodies

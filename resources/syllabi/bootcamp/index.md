@@ -13,39 +13,47 @@
 <details open>
 <summary><b>Table of Contents</b></summary>
 
-
-* [Instructors](#Instructors)<br />
-* [Teaching Assistants](#TAs)<br />
-* [Class Meetings](#ClassMeetings)<br />
-* [Course Website](#CourseWebsite)<br />
-* [Course Description](#Description)<br />
-* [Specific Objectives](#Objectives)<br />
-* [Study Materials](#StudyMats)<br />
-* [Prep Work](#PrepWork)<br />
-* [What To Bring](#WhatToBring)<br />
-* [Course Format](#Format)<br />
-  * [Attendance](#Attendance)<br />
-  * [Types of Sessions](#Sessions)<br />
-    * [Interactive Lecture](#FormatInter)<br />
-    * [Assignments](#FormatExercise)<br />
-    * [Small Group Sessions](#FormatSmallGroup)<br />
-    * [Asynchronous](#FormatAsynch)<br />
-  * [Daily Schedule](#DaySchedule)<br />
-  * [Daily Reflections](#Reflections)<br />
-  * [Food](#Food)<br />
-* [Asking for Help](#Help)<br />
-  * [Do It](#DOIT)<br />
-  * [Generally How](#GenerallyHow)<br />
-  * [Googling](#Googling)<br />
-* [Grading](#Grading)<br />
-* [Feedback](#Feedback)<br />
-* [Academic Integrity & Ethics](#Integrity)<br />
-* [Code of Conduct](#CodeofConduct)<br />
-* [The Pandemic](#Pandemic)<br />
-* [Technology](#Technology)<br />
-  * [Platforms](#Platforms)<br />
-  * [Laptops](#Laptops)<br />
-* [Full Bootcamp Schedule](#WeekSchedule)<br />
+<ul>
+  <li> <a href="#Instructors">Instructors</a></li>
+  <li>[Teaching Assistants](#TAs)</li>
+  <li>[Class Meetings](#ClassMeetings)</li>
+  <li>[Course Website](#CourseWebsite)</li>
+  <li>[Course Description](#Description)</li>
+  <li>[Specific Objectives](#Objectives)</li>
+  <li>[Study Materials](#StudyMats)</li>
+  <li>[Prep Work](#PrepWork)</li>
+  <li>[What To Bring](#WhatToBring)</li>
+  <li>[Course Format](#Format)</li>
+    <ul>
+      <li>[Attendance](#Attendance)</li>
+      <li>[Types of Sessions](#Sessions)<li>
+        <ul>
+          <li>[Interactive Lecture](#FormatInter)</li>
+          <li>[Assignments](#FormatExercise)</li>
+          <li>[Small Group Sessions](#FormatSmallGroup)</li>
+          <li>[Asynchronous](#FormatAsynch)</li>
+        </ul>
+      <li>Daily Schedule](#DaySchedule)</li>
+      <li>[Daily Reflections](#Reflections)</li>
+      <li>[Food](#Food)</li>
+    </ul>
+  <li>[Asking for Help](#Help)</li>
+    <ul>
+      <li>[Do It](#DOIT)</li>
+      <li>[Generally How](#GenerallyHow)</li>
+      <li>[Googling](#Googling)</li>
+    </ul>
+  <li>[Grading](#Grading)</li>
+  <li>[Feedback](#Feedback)</li>
+  <li>[Academic Integrity & Ethics](#Integrity)</li>
+  <li>[Code of Conduct](#CodeofConduct)</li>
+  <li>[The Pandemic](#Pandemic)</li>
+  <li>[Technology](#Technology)</li>
+    <ul>
+      <li>[Platforms](#Platforms)</li>
+      <li>[Laptops](#Laptops)</li>
+    </ul>
+  <li>[Full Bootcamp Schedule](#WeekSchedule)</li>
 
 
 </details>
@@ -76,7 +84,7 @@ Mon, Aug 29, 2022 - Fri, Sept 2, 2022<br />
 
 <a name="CourseWebsite"></a>
 **Course Website**<br />
-[http://bxlab.github.io/cmdb-quantbio/](http://bxlab.github.io/cmdb-bootcamp/)
+[http://bxlab.github.io/cmdb-quantbio/](http://bxlab.github.io/cmdb-quantbio/)
 
 <a name="Description"></a>
 ### Course Description

@@ -33,7 +33,7 @@ Fridays, Sept 9, 2022 - Dec 9, 2022<br />
 
 <a name="CourseWebsite"></a>
 **Course Website**<br />
-[http://bxlab.github.io/cmdb-quantbio/](http://bxlab.github.io/cmdb-lab/)
+[http://bxlab.github.io/cmdb-quantbio/](http://bxlab.github.io/cmdb-quantbio/)
 
 <a name="Description"></a>
 ### Course Description
@@ -107,3 +107,23 @@ All class participants agree to:
 <a name="Pandemic"></a>
 ## The Pandemic
 We know that this is one of the least ideal situations in which to be starting your first year of grad school and taking an intensive coding course. Our plan is to be as understanding as possible about grading, attendance, and any issues that come up. Please don’t hesitate to reach out to an instructor or TA if you are having issues, and we will do our best to accommodate you however we can.
+
+<a name="WeeklySchedule"></a>
+## Weekly Schedule
+
+| Week | Date | Instructor          | Topic                                                          |
+| :--: | :--: | :-----------------: | :------------------------------------------------------------: |
+|  1   | 9/9  | Mike Schatz (Guest) | Genome Assembly                                                |
+|  2   | 9/16 | Dylan Taylor (Guest)| Alignment                                                      |
+|  3   | 9/23 | Rajiv McCoy         | Variant Calling                                                |
+|  4   | 9/30 | Rajiv McCoy         | GWAS                                                           |
+|  5   | 10/7 | Mike Sauria         | ChIP-Seq                                                       |
+|  6   | 10/14| Mike Sauria         | 3D Genome                                                      |
+|  7   | 10/21| No class            | Retreat                                                        |
+|  8   | 10/28| Mike Sauria         | Single Molecule Sequencing and DNA Modifications               |
+|  9   | 11/4 | Rajiv McCoy         | Bulk RNA-Seq                                                   |
+|  10  | 11/11| Kate Weaver (Guest) | Machine Learning and Applications in mRNA Expression Prediction|
+|  11  | 11/18| Rajiv McCoy         | Single-Cell RNA-Seq                                            |
+|  12  | 11/25| No class            | Thanksgiving Break                                             |
+|  13  | 12/2 | Mike Sauria         | Motif Finding                                                  |
+|  14  | 12/9 | Rajiv McCoy         | Population Genetics                                            |
