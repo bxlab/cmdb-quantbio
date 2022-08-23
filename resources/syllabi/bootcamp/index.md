@@ -65,7 +65,7 @@
 
 <a name="Instructors"></a>
 
-<table class=table-striped>
+<table class="table-striped.well">
  <tr>
    <th>Instructor</th>
    <th>Email</th>
@@ -86,7 +86,7 @@
 
 <a name="TAs"></a>
 
-<table class=table-striped>
+<table class="table-striped.well">
  <tr>
    <th>Teaching Assistant</th>
    <th>Email</th>
