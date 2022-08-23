@@ -65,7 +65,7 @@
 
 <a name="Instructors"></a>
 
-<table class="table-striped.well">
+<table class="table table-striped.well">
  <tr>
    <th>Instructor</th>
    <th>Email</th>
@@ -86,7 +86,7 @@
 
 <a name="TAs"></a>
 
-<table class="table-striped.well">
+<table class="table table-striped.well">
  <tr>
    <th>Teaching Assistant</th>
    <th>Email</th>
@@ -111,8 +111,6 @@
 
 
 <a name="ClassMeetings"></a>
-
-<a name="Contact"></a>
 <header>
   <h3>Class Meetings</h3>
 </header>
@@ -121,8 +119,6 @@ Mon, Aug 29, 2022 - Fri, Sept 2, 2022<br />
 8:45 A.M. ET - 7 P.M. ET, In Person, UTL398<br />
 
 <a name="CourseWebsite"></a>
-
-<a name="Contact"></a>
 <header>
   <h3>Course Website</h3>
 </header>
@@ -130,8 +126,6 @@ Mon, Aug 29, 2022 - Fri, Sept 2, 2022<br />
 <a href="http://bxlab.github.io/cmdb-quantbio/">http://bxlab.github.io/cmdb-quantbio/</a>
 
 <a name="Description"></a>
-
-<a name="Contact"></a>
 <header>
   <h2>Course Description</h2>
 </header>
@@ -139,8 +133,6 @@ Mon, Aug 29, 2022 - Fri, Sept 2, 2022<br />
 Quantitative and computational methods are increasingly essential to all sub-disciplines of modern biological research. The goal of this intensive week-long “boot camp” is to empower students with the fundamental skills to apply these methods, as well as connect them to resources for further developing their knowledge and abilities. The class starts at 9 am with formal instruction ending at 4 pm daily. The course demonstrates the importance of version control, documentation, testing, and other methods for enhancing reproducibility, reliability, and usability of software. This is achieved through live coding sessions and use of learning exercises, where for the majority of the class, students perform data analysis to address biological questions and reinforce core bioinformatic concepts. Upon completing the course, students should be comfortable using and writing software to work with large-scale biological data. The motivation of this goal is to <b>develop computational and statistical competence</b> in preparation for courses, rotations, thesis research, and careers. Rather than blindly outsourcing bioinformatic components of their work, <b>students will be empowered</b> to understand methodological details and their associated advantages and limitations. This will in turn advance the broader goal of rigor in experimental design, promoting robust and unbiased results.
 
 <a name="Objectives"></a>
-
-<a name="Contact"></a>
 <header>
   <h2>Specific Objectives</h2>
 </header>
@@ -152,57 +144,83 @@ Quantitative and computational methods are increasingly essential to all sub-dis
   <li> Develop <b>appreciation</b> for and <b>practice</b> of concise and transparent presentation of data </li>
   <li> Develop <b>fluency</b> in basic statistical tests, associated assumptions, and interpretation of their output </li>
   <li> Develop <b>good habits for ensuring reproducible research</b> </li>
+</ul>
 
 <a name="StudyMats"></a>
-### Study Materials
+<header>
+  <h2>Study Materials</h2>
+</header>
+
 This course does not have a required text. Any lecture notes, slides, and interactive coding scripts/notebooks will be made available on the course website.
 
 <a name="WhatToBring"></a>
-### What to Bring
-  * Headphones with inline mic
-  * Face mask
+<header>
+  <h2>What to Bring</h2>
+</header>
+
+<ul>
+  <li>Headphones with inline mic </li>
+  <li> Face mask </li>
+</ul>
 
 <a name="Format"></a>
-## Course Format
+<header>
+  <h2>Course Format</h2>
+</header>
+
 
 <a name="Attendance"></a>
-### Attendance
-Due to the interactive nature of this course, there is a policy that students **should not participate in any other meetings, courses, or lab work throughout the week**. As a core CMDB course, bootcamp should take priority. If a student foresees attendance conflicts, they should contact a TA immediately so that this policy can be communicated to the necessary parties.<br />
+<header>
+  <h3>Attendance</h3>
+</header>
 
-This course will be held in person. <br /><br />
+Due to the interactive nature of this course, there is a policy that students <b>should not participate in any other meetings, courses, or lab work throughout the week</b>. As a core CMDB course, bootcamp should take priority. If a student foresees attendance conflicts, they should contact a TA immediately so that this policy can be communicated to the necessary parties.<br />
+
+This course will be held in person. <br />
 
 Please be on time for course activities. Your attendance is expected at all times. Please let us know about any emergencies, family responsibilities, illness, etc. that may prevent attendance, and we will work to accommodate reasonable requests. If you're ill, don't come into class; contact us, there will be no penalty, and we will make arrangements.
 
 <a name="Sessions"></a>
-### Types of Sessions
-The course is broken into four main **types of sessions**
+<header>
+  <h3>Types of Sessions</h2>
+</header>
 
-<a name="FormatInter"></a>
-1. <ins>**Interactive** Lecture & **Live-Coding** Sessions</ins>
-    * These sessions will consist of interactive lectures and instructor-guided live-coding examples, which introduce and expand on material for the exercise sessions that occur directly afterward. Instructors will give lectures synchronously and TAs will be available to provide support.
-    * The instructor will pause periodically to invite questions, let students catch up, and solicit sticky-note check-ins. See the next syllabus section, [Asking for help](#Help), on more specific information pertaining to questions and debugging in these sessions.
-    * All scripts or notebooks used by instructors from these sessions will be made available on the course website through GitHub.
-<a name="FormatExercise"></a>
-2. <ins>**Exercise** Sessions (Lunch and Homework)</ins>
-    * These sessions will be hosted by TAs.
-    * Students are encouraged to work in groups with their table partners. While groups are expected to have very similar answers, students should put in individualized effort and strive to understand every line of code and analysis step they take. See the [Academic Integrity & Ethics](#Integrity) syllabus section for more information.
-    * Course-wide announcements and updates during these sessions will be posted to Slack.
-    * See the next syllabus section, [Asking for help](#Help), on more specific information pertaining to questions and debugging in these sessions.
-<a name="FormatSmallGroup"></a>
-3. <ins>**Small Group Discussion** Sessions</ins>
-    * These sessions will be facilitated by TAs and instructors.
-    * We will utilize cooperative small groups discussion sessions for content reviews and peer-presentations.
-      * For peer-presentations, students will explain to one another their approaches to solving exercises. TAs or instructors may provide feedback, and invite questions and discussion among the whole group on alternative approaches and solutions. Presentations are **ungraded**.
-      * For review sessions, students will be asked to
-    * Small groups will be assigned daily and group membership rotated throughout the week. The students within each small group will be assigned roles for that day.
-      * Manager: makes sure that all have the opportunity to engage in the discussion or peer-presentations.
-      * Time Keeper: given an end time, keeps group on task and on time.
-      * Recorder: writes down/types/records important information, overall conclusions, or questions.
-      * Spokesperson: if asked, summarizes or restates the team's conclusions, questions, or answers for the whole class outside of the small group.
-      * Reflector: verifies that any required prompts or agenda items have been discussed and have resulted in a consensus conclusion(s) or question(s).
-      * Questioner: generates questions, asking for clarification or pushing back in order to strengthen a presentation.
-<a name="Asynchronous"></a>      
-4. <ins>**Asynchronous** Sessions</ins>
+The course is broken into four main <b>types of sessions</b>
+
+
+<ol>
+  <li><a name="FormatInter"></a><ins><b>Interactive</b> Lecture & <b>Live-Coding</b> Sessions</ins></li>
+    <ul>
+      <li>These sessions will consist of interactive lectures and instructor-guided live-coding examples, which introduce and expand on material for the exercise sessions that occur directly afterward. Instructors will give lectures synchronously and TAs will be available to provide support.</li>
+      <li>The instructor will pause periodically to invite questions, let students catch up, and solicit sticky-note check-ins. See the next syllabus section, <a href="#Help">Asking for help</a>, on more specific information pertaining to questions and debugging in these sessions</li>
+      <li>All scripts or notebooks used by instructors from these sessions will be made available on the course website through GitHub.</li>
+    </ul>
+  <li><a name="FormatExercise"></a><ins>**Exercise** Sessions (Lunch and Homework)</ins>
+    <ul>
+      <li>These sessions will be hosted by TAs.</li>
+      <li>Students are encouraged to work in groups with their table partners. While groups are expected to have very similar answers, students should put in individualized effort and strive to understand every line of code and analysis step they take. See the <a href="#Integrity">Academic Integrity & Ethics</a> syllabus section for more information</li>
+      <li>Course-wide announcements and updates during these sessions will be posted to Slack.</li>
+      <li>See the next syllabus section, <a href="#Help">Asking for help</a>, on more specific information pertaining to questions and debugging in these sessions.</li>
+    </ul>
+  <li><a name="FormatSmallGroup"></a><ins><b>Small Group Discussion</b> Sessions</ins></li>
+    <ul>
+      <li>These sessions will be facilitated by TAs and instructors.</li>
+      <li>We will utilize cooperative small groups discussion sessions for content reviews and peer-presentations.</li>
+      <ul>
+        <li>For peer-presentations, students will explain to one another their approaches to solving exercises. TAs or instructors may provide feedback, and invite questions and discussion among the whole group on alternative approaches and solutions. Presentations are <b>ungraded</b>.</li>
+        <li>For review sessions, students will be asked to</li>
+      </ul>
+      <li>Small groups will be assigned daily and group membership rotated throughout the week. The students within each small group will be assigned roles for that day</li>
+        <ul>
+        <li>Manager: makes sure that all have the opportunity to engage in the discussion or peer-presentations.</li>
+        <li>Time Keeper: given an end time, keeps group on task and on time.</li>
+        <li>Recorder: writes down/types/records important information, overall conclusions, or questions.</li>
+        <li>Spokesperson: if asked, summarizes or restates the team's conclusions, questions, or answers for the whole class outside of the small group.</li>
+        <li>Reflector: verifies that any required prompts or agenda items have been discussed and have resulted in a consensus conclusion(s) or question(s).</li>
+        <li>Questioner: generates questions, asking for clarification or pushing back in order to strengthen a presentation.</li>
+        </ul>
+    </ul>
+    <li><a name="Asynchronous"></a>  <ins><b>Asynchronous</b> Sessions</ins></li>
 
 <a name="DaySchedule"></a>
 ### Daily Schedule
