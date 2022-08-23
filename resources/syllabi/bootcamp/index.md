@@ -50,17 +50,6 @@ Table of Contents
 
 </details>
 
-<header>
-<h1>
-    AS.020.607
-    <span style="float:right;">
-        Fall 2022
-    </span>
-    <center>
-       CMDB Quantitative Biology Bootcamp
-    </center>
-</h1>
-</header>
 <a name="Instructors"></a>
 
 | Instructor | Email |
