@@ -65,7 +65,7 @@
 
 <a name="Instructors"></a>
 
-<table class=table-striped.well>
+<table class=table-striped>
  <tr>
    <th>Instructor</th>
    <th>Email</th>
@@ -86,7 +86,7 @@
 
 <a name="TAs"></a>
 
-<table class=table-striped.well>
+<table class=table-striped>
  <tr>
    <th>Teaching Assistant</th>
    <th>Email</th>
@@ -136,7 +136,7 @@ Mon, Aug 29, 2022 - Fri, Sept 2, 2022<br />
   <h2>Course Description</h2>
 </header>
 
-Quantitative and computational methods are increasingly essential to all sub-disciplines of modern biological research. The goal of this intensive week-long “boot camp” is to empower students with the fundamental skills to apply these methods, as well as connect them to resources for further developing their knowledge and abilities. The class starts at 9 am with formal instruction ending at 4 pm daily. The course demonstrates the importance of version control, documentation, testing, and other methods for enhancing reproducibility, reliability, and usability of software. This is achieved through live coding sessions and use of learning exercises, where for the majority of the class, students perform data analysis to address biological questions and reinforce core bioinformatic concepts. Upon completing the course, students should be comfortable using and writing software to work with large-scale biological data. The motivation of this goal is to **develop computational and statistical competence** in preparation for courses, rotations, thesis research, and careers. Rather than blindly outsourcing bioinformatic components of their work, **students will be empowered** to understand methodological details and their associated advantages and limitations. This will in turn advance the broader goal of rigor in experimental design, promoting robust and unbiased results.
+Quantitative and computational methods are increasingly essential to all sub-disciplines of modern biological research. The goal of this intensive week-long “boot camp” is to empower students with the fundamental skills to apply these methods, as well as connect them to resources for further developing their knowledge and abilities. The class starts at 9 am with formal instruction ending at 4 pm daily. The course demonstrates the importance of version control, documentation, testing, and other methods for enhancing reproducibility, reliability, and usability of software. This is achieved through live coding sessions and use of learning exercises, where for the majority of the class, students perform data analysis to address biological questions and reinforce core bioinformatic concepts. Upon completing the course, students should be comfortable using and writing software to work with large-scale biological data. The motivation of this goal is to <b>develop computational and statistical competence</b> in preparation for courses, rotations, thesis research, and careers. Rather than blindly outsourcing bioinformatic components of their work, <b>students will be empowered</b> to understand methodological details and their associated advantages and limitations. This will in turn advance the broader goal of rigor in experimental design, promoting robust and unbiased results.
 
 <a name="Objectives"></a>
 
@@ -145,12 +145,13 @@ Quantitative and computational methods are increasingly essential to all sub-dis
   <h2>Specific Objectives</h2>
 </header>
 
-  * Develop <b>comfort</b> working within a UNIX environment and at the command line to build and run programs
-  * Develop <b>confidence</b> using Python and its extended ecosystem of tools for bioinformatic data analysis and visualization
-  * Develop <b>knowledge</b> of standard bioinformatic file formats and where they fit within the context of a project
-  * Develop <b>appreciation</b> for and <b>practice</b> of concise and transparent presentation of data
-  * Develop <b>fluency</b> in basic statistical tests, associated assumptions, and interpretation of their output
-  * Develop <b>good habits for ensuring reproducible research</b>
+<ul>
+  <li> Develop <b>comfort</b> working within a UNIX environment and at the command line to build and run programs </li>
+  <li> Develop <b>confidence</b> using Python and its extended ecosystem of tools for bioinformatic data analysis and visualization </li>
+  <li> Develop <b>knowledge</b> of standard bioinformatic file formats and where they fit within the context of a project </li>
+  <li> Develop <b>appreciation</b> for and <b>practice</b> of concise and transparent presentation of data </li>
+  <li> Develop <b>fluency</b> in basic statistical tests, associated assumptions, and interpretation of their output </li>
+  <li> Develop <b>good habits for ensuring reproducible research</b> </li>
 
 <a name="StudyMats"></a>
 ### Study Materials
