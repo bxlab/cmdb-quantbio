@@ -10,6 +10,7 @@
 </h1>
 </header>
 
+<details><summary>Table of Contents</summary>
 Table of Contents
 =================
 
@@ -45,6 +46,7 @@ Table of Contents
   * [Platforms](#Platforms)
   * [Laptops](#Laptops)
 * [Full Bootcamp Schedule](#WeekSchedule)
+</details>
 
 <header>
 <h1>
