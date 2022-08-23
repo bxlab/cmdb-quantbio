@@ -315,7 +315,7 @@ We ask students to write <b>daily reflections</b> and turn them in <a href="http
 
 <br />Notes on reflections:<br />
   <ul>
-    <li>As long as reflections attempt to respond to the above prompts, the content of the reflection will not affect a student’s grade in any way. See the <a href="#Grading">Grading></a> section for further clarification.</li>
+    <li>As long as reflections attempt to respond to the above prompts, the content of the reflection will not affect a student’s grade in any way. See the <a href="#Grading">Grading</a> section for further clarification.</li>
     <li>We aim to keep reflections confidential. As such, only instructors, TAs, and the student will have access to a student’s reflections</li>
   </ul>
 
