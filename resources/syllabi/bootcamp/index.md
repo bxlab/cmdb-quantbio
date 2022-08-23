@@ -13,37 +13,38 @@
 Table of Contents
 =================
 
-* [Instructors](#Instructors)<br />
-* [Teaching Assistants](#TAs)<br />
-* [Class Meetings](#ClassMeetings)<br />
-* [Course Website](#CourseWebsite)<br />
-* [Course Description](#Description)<br />
-* [Specific Objectives](#Objectives)<br />
-* [Study Materials](#StudyMats)<br />
-* [What To Bring](#WhatToBring)<br />
-* [Course Format](#Format)<br />
-  * [Attendance](#Attendance)<br />
-  * [Types of Sessions](#Sessions)<br />
-    * [Interactive Lecture](#FormatInter)<br />
-    * [Assignments](#FormatExercise)<br />
-    * [Small Group Sessions](#FormatSmallGroup)<br />
-    * [Asynchronous](#FormatAsynch)<br />
-  * [Daily Schedule](#DaySchedule)<br />
-  * [Daily Reflections](#Reflections)<br />
-  * [Food](#Food)<br />
-* [Asking for Help](#Help)<br />
-  * [Do It](#DOIT)<br />
-  * [Generally How](#GenerallyHow)<br />
-  * [Googling](#Googling)<br />
-* [Grading](#Grading)<br />
-* [Feedback](#Feedback)<br />
-* [Academic Integrity & Ethics](#Integrity)<br />
-* [Code of Conduct](#CodeofConduct)<br />
-* [The Pandemic](#Pandemic)<br />
-* [Technology](#Technology)<br />
-  * [Platforms](#Platforms)<br />
-  * [Laptops](#Laptops)<br />
-* [Full Bootcamp Schedule](#WeekSchedule)<br />
+* [Instructors](#Instructors)
+* [Teaching Assistants](#TAs)
+* [Class Meetings](#ClassMeetings)
+* [Course Website](#CourseWebsite)
+* [Course Description](#Description)
+* [Specific Objectives](#Objectives)
+* [Study Materials](#StudyMats)
+* [Prep Work](#PrepWork)
+* [What To Bring](#WhatToBring)
+* [Course Format](#Format)
+  * [Attendance](#Attendance)
+  * [Types of Sessions](#Sessions)
+    * [Interactive Lecture](#FormatInter)
+    * [Assignments](#FormatExercise)
+    * [Small Group Sessions](#FormatSmallGroup)
+    * [Asynchronous](#FormatAsynch)
+  * [Daily Schedule](#DaySchedule)
+  * [Daily Reflections](#Reflections)
+  * [Food](#Food)
+* [Asking for Help](#Help)
+  * [Do It](#DOIT)
+  * [Generally How](#GenerallyHow)
+  * [Googling](#Googling)
+* [Grading](#Grading)
+* [Feedback](#Feedback)
+* [Academic Integrity & Ethics](#Integrity)
+* [Code of Conduct](#CodeofConduct)
+* [The Pandemic](#Pandemic)
+* [Technology](#Technology)
+  * [Platforms](#Platforms)
+  * [Laptops](#Laptops)
+* [Full Bootcamp Schedule](#WeekSchedule)
 
 <header>
 <h1>

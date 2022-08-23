@@ -3,6 +3,7 @@ title: CMDB Quantitative Biology 2022
 layout: default
 ---
 
+<a name="Bootcamp"></a>
 ## CMDB Quantitative Biology Bootcamp 2022
 
 ### Logistics
@@ -13,7 +14,6 @@ layout: default
 - Please wear a face mask and bring headphones
 - Please arrive by 8:45am ET
 - Lunch and an afternoon snack will be provided
-<!--- - [Join Slack](https://join.slack.com/t/jhu-cmdb/shared_invite/enQtNjk2MDQ3OTM3ODEwLTZhMzY5NjI1ZTgwYjUzZWU3Nzc4NGFhZTRkYjBjODdlN2U4YjkwZGRmYWY4YThiYmY1MGJiOGZjYmMxYTEzYjY) --->
 
 ### Schedule
 All times in ET<br /><br />
@@ -48,16 +48,16 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
 
 -->
 
+<a name="Lab"></a>
 ## CMDB Quantitative Biology Lab 2022
 
 ### Logistics
-- Syllabus: TBD
+- [Syllabus](resources/syllabi/lab/index.html)
 - This one day a week course builds upon the foundations of Quantitative Biology Bootcamp, reinforcing and expanding upon mathematical and computational methods for analysis of biological data.
 - In person, BLC 5015
 - 1 - 3:30 pm, Fridays
 - Please wear a face mask and bring headphones
 - Assignments must be submitted within one week to your `qbb2022-answers` repository
-
 
 ### Schedule
 
