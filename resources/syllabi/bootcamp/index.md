@@ -65,7 +65,7 @@
 
 <a name="Instructors"></a>
 
-<table class="table table-striped">
+<table class="table table-striped" style="width:40%">
  <tr>
    <th>Instructor</th>
    <th>Email</th>
@@ -86,7 +86,7 @@
 
 <a name="TAs"></a>
 
-<table class="table table-striped">
+<table class="table table-striped" style="width:40%">
  <tr>
    <th>Teaching Assistant</th>
    <th>Email</th>
@@ -195,7 +195,7 @@ The course is broken into four main <b>types of sessions</b>
       <li>The instructor will pause periodically to invite questions, let students catch up, and solicit sticky-note check-ins. See the next syllabus section, <a href="#Help">Asking for help</a>, on more specific information pertaining to questions and debugging in these sessions</li>
       <li>All scripts or notebooks used by instructors from these sessions will be made available on the course website through GitHub.</li>
     </ul>
-  <li><a name="FormatExercise"></a><ins>**Exercise** Sessions (Lunch and Homework)</ins>
+  <li><a name="FormatExercise"></a><ins><b>Exercise</b> Sessions (Lunch and Homework)</ins>
     <ul>
       <li>These sessions will be hosted by TAs.</li>
       <li>Students are encouraged to work in groups with their table partners. While groups are expected to have very similar answers, students should put in individualized effort and strive to understand every line of code and analysis step they take. See the <a href="#Integrity">Academic Integrity & Ethics</a> syllabus section for more information</li>
@@ -220,11 +220,13 @@ The course is broken into four main <b>types of sessions</b>
         <li>Questioner: generates questions, asking for clarification or pushing back in order to strengthen a presentation.</li>
         </ul>
     </ul>
-    <li><a name="Asynchronous"></a>  <ins><b>Asynchronous</b> Sessions</ins></li>
+  <li><a name="Asynchronous"></a>  <ins><b>Asynchronous</b> Sessions</ins></li>
+</ol>
 
 <a name="DaySchedule"></a>
-### Daily Schedule
-Most sessions will be separated by breaks, however, sometimes a break will be given in the middle of an interactive lecture. We will let you know this in advance. However, the **daily schedule** will generally be:
+<header><h3>Daily Schedule</h3></header>
+
+Most sessions will be separated by breaks, however, sometimes a break will be given in the middle of an interactive lecture. We will let you know this in advance. However, the <b>daily schedule</b> will generally be:
 
 
 | Morning |    | Afternoon |     |
@@ -236,34 +238,46 @@ Most sessions will be separated by breaks, however, sometimes a break will be gi
 |  1:45 | Break | 7:00 | Wrap Up |
 {:.table.table-striped.well}
 
-On Wednesday morning and Friday afternoon, the **Interactive** sessions will be replaced with the **Review Small Group** discussions described above.
+On Wednesday morning and Friday afternoon, the <b>Interactive</b> sessions will be replaced with the <b>Review Small Group</b> discussions described above.
 
 <a name="Reflections"></a>
-### Daily Reflections
-We ask students to write **daily reflections** and turn them in [through Google Forms](https://forms.gle/kPy6BiZDb9SQfSsW7) by **7pm ET**. Reflections should focus on the current day. The purpose of reflections is threefold.
-1. First, these reflections allow for students to offer constructive critiques of the course.
-2. Second, we believe this exercise has the potential to grow a student’s understanding and confidence as they purposefully reflect and see their improvement.
-3. Third, this practice directly cultivates good habits in reproducible analysis and keeping a lab notebook.
+<header><h3>Daily Reflections</h3></header>
+We ask students to write <b>daily reflections</b> and turn them in <a href="https://forms.gle/kPy6BiZDb9SQfSsW7">through Google Forms</a> by <b>7pm ET</b>. Reflections should focus on the current day. The purpose of reflections is threefold.<br />
+  <ol>
+    <li> These reflections allow for students to offer constructive critiques of the course.</li>
+    <li> We believe this exercise has the potential to grow a student’s understanding and confidence as they purposefully reflect and see their improvement.</li>
+    <li>This practice directly cultivates good habits in reproducible analysis and keeping a lab notebook.</li>
+  </ol>
 
-We expect these reflections to be short, but **respond to each of the following prompts**:
-  * What did I struggle with today?
-  * What did I achieve today?
-  * What's one lingering question or thought from today?
+We expect these reflections to be short, but <b>respond to each of the following prompts</b>:<br />
+  <ul>
+    <li>What did I struggle with today?</li>
+    <li>What did I achieve today?</li>
+    <li>What's one lingering question or thought from today?</li>
+  </ul>
 
-If you have specific material you know you would like covered in a review session, please also respond to the non-required prompt:
-  * What from today (if anything) would you like to review in a review session?
+If you have specific material you know you would like covered in a review session, please also respond to the non-required prompt:<br />
+  <ul>
+    <li>What from today (if anything) would you like to review in a review session?</li>
+  </ul>
 
-Finally, if you would like to provide constructive critiques of the course or that day's material, please respond to the final, non-required prompt:
-  * Suggestions or constructive critiques:
+Finally, if you would like to provide constructive critiques of the course or that day's material, please respond to the final, non-required prompt:<br />
+  <ul>
+    <li>Suggestions or constructive critiques:</li>
+  </ul>
 
-Notes on reflections:
-  * As long as reflections attempt to respond to the above prompts, the content of the reflection will not affect a student’s grade in any way. See the [Grading](#Grading) section for further clarification.
-  * We aim to keep reflections confidential. As such, only instructors, TAs, and the student will have access to a student’s reflections.
+Notes on reflections:<br />
+  <ul>
+    <li>As long as reflections attempt to respond to the above prompts, the content of the reflection will not affect a student’s grade in any way. See the <a href="#Grading">Grading></a> section for further clarification.</li>
+    <li>We aim to keep reflections confidential. As such, only instructors, TAs, and the student will have access to a student’s reflections</li>
+  </ul>
 
 <a name="Food"></a>
-### Food
-  * Lunch and an afternoon snack will be provided every day.
-  * Students will eat primarily outside.
+<header><h3>Food</h3></header>
+  <ul>
+    <li>Lunch and an afternoon snack will be provided every day.</li>
+    <li>Students will eat primarily outside.</li>
+  </ul>
 
 <a name="Help"></a><a name="DOIT"></a>
 ## Asking for Help
