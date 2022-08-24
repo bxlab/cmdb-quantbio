@@ -71,7 +71,7 @@ Use `MUMmer` for whole genome alignment.
 
 ## Submission
 
-The solutions to the above questions should be submitted as a markdown or text file on Github, in your `qbb2022-answers` repo. For each question, label each subproblem, and include both the exact commands you used, as well as the actual answer. Include any requested figures. 
+The solutions to the above questions should be submitted as a markdown or text file on Github, in your `qbb2022-answers` repo. For each question, label each subproblem, and include both the exact commands you used, as well as the actual answer. Submit any requested figures as well. 
 
 
 ## Resources
@@ -82,12 +82,7 @@ The solutions to the above questions should be submitted as a markdown or text f
 $ fastqc /path/to/reads.fq
 ```
 
-If you have problems, make sure java is installed (`sudo apt-get install default-jre`)
-
-
 #### [Jellyfish](http://www.genome.umd.edu/jellyfish.html) - Fast Kmer Counting
-
-Note Jellyfish requires a 64-bit operating system. Download the package and compile it like this:
 
 ```
 $ jellyfish count -m 21 -C -s 1000000 /path/to/reads*.fq
