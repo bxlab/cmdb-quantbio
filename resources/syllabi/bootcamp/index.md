@@ -159,7 +159,7 @@ This course does not have a required text. Any lecture notes, slides, and intera
   <h2>Prep Work</h2>
 </header>
 
-We have developed a prep work module that is designed to teach fundamental skills in scripting using Bash and Python. Prep work consists of readings, short activities, and coding exercises and in total is expected to take approximately 15 hours to complete. These assignments are designed both to build a technical skillset and to introduce the logic of how programmers approach solving complex problems. Prep work must be completed prior to the start of the semester, as all course materials build directly on the skills developed in these assignments. 
+We have developed a prep work module that is designed to teach fundamental skills in scripting using Bash and Python. Prep work consists of readings, short activities, and coding exercises and in total is expected to take approximately 15 hours to complete. These assignments are designed both to build a technical skillset and to introduce the logic of how programmers approach solving complex problems. Prep work must be completed prior to the start of the semester, as all course materials build directly on the skills developed in these assignments.
 
 The prep work <a href="https://kweav.github.io/prepwork_revamp/introduction.html"> can be accessed at this site</a>.
 
@@ -366,7 +366,7 @@ General guidelines for letter grade assignments:
 <a name="Feedback"></a>
 <header><h2>Feedback</h2></header>
 
-TAs and instructors will push individualized feedback to the student repositories throughout the week. This feedback is not a grade, but may be used by students to anticipate their level of completion and likely grade. After receiving feedback, students will have the opportunity to revise and complete assignments prior to final submission. 
+TAs and instructors will push individualized feedback to the student repositories throughout the week. This feedback is not a grade, but may be used by students to anticipate their level of completion and likely grade. After receiving feedback, students will have the opportunity to revise and complete assignments prior to final submission.
 
 <a name="Integrity"></a>
 <header><h2>Academic Integrity & Ethics</h2></header>
@@ -444,7 +444,7 @@ All time are ET.
 <tr>
   <th>11:45 - 1:45</th>
   <td>Exploring Biological Data Files</td>
-  <td>Annotate and Debug a File Parser</td>
+  <td>Extend and Annotate a File Parser</td>
   <td>Data Exploration and Visualization</td>
   <td>Research Parasites (aka How to <s>Steal</s> Reuse Other People’s Code)</td>
   <td>TBA</td>
@@ -476,7 +476,7 @@ All time are ET.
 <tr>
   <th>Homework (wrap up 7pm)</th>
   <td>Genome Arithmetic</td>
-  <td>TBA</td>
+  <td>Mapping across Databases</td>
   <td>TBA</td>
   <td>Visualizing Simulation Results and Power</td>
   <td>---</td>
