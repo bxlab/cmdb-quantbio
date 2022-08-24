@@ -207,7 +207,7 @@ The course is broken into four main <b>types of sessions</b>
       <li>The instructor will pause periodically to invite questions, let students catch up, and solicit sticky-note check-ins. See the next syllabus section, <a href="#Help">Asking for help</a>, on more specific information pertaining to questions and debugging in these sessions</li>
       <li>All scripts or notebooks used by instructors from these sessions will be made available on the course website through GitHub.</li>
     </ul>
-  <li><a name="FormatExercise"></a><ins><b>Exercise</b> Sessions (Lunch and Homework)</ins>
+  <li><a name="FormatExercise"></a><ins><b>Exercise</b> Sessions (Lunch and Homework)</ins></li>
     <ul>
       <li>These sessions will be hosted by TAs.</li>
       <li>Students are encouraged to work in groups with their table partners. While groups are expected to have very similar answers, students should put in individualized effort and strive to understand every line of code and analysis step they take. See the <a href="#Integrity">Academic Integrity & Ethics</a> syllabus section for more information</li>
