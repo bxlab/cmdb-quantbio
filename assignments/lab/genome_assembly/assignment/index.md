@@ -20,7 +20,9 @@ Finally, keep track of all commands that you use in a text or markdown file. You
 Download the reads and reference genome from:
 [https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/genome_assembly/extra_data/asm.tgz](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/genome_assembly/extra_data/asm.tgz). You can click the link, or you can use `wget`.
 
-Note I have provided both paired-end and mate-pairs reads (see included README for details).
+After downloading the zipped folder, you'll need to extract it with `tar -zxvf <filename.tgz>`
+
+Note we have provided both paired-end and mate-pairs reads (see included README for details).
 Make sure to look at all of the reads for the coverage analysis and kmer analysis, as well as in the assembly.
 
 ## Assignment
@@ -67,9 +69,9 @@ Use `MUMmer` for whole genome alignment.
 - Question 5d. What is the secret message? [Hint: Run the provided script `dna-decode.py` to decode the string from 5c.]
 
 
-## Submissions to Github
+## Submission
 
-The solutions to the above questions should be submitted as a markdown or text file on Github, in your `qbb2020-answers` repo. Include any requested figures within the markdown file, or push them separately to Github. Make sure to clearly label each of the subproblems and give the exact commands you used for solving the question.
+The solutions to the above questions should be submitted as a markdown or text file on Github, in your `qbb2022-answers` repo. For each question, label each subproblem, and include both the exact commands you used, as well as the actual answer. Include any requested figures. 
 
 
 ## Resources
