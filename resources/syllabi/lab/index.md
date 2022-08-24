@@ -78,7 +78,7 @@ Topics are intergated with the curricula for concurrent core courses in molecula
   <ul>
     <li>genome assembly and variant discovery, problems with well-established quantitative theory and upon which a wide array of downstream genomic analyses depend.</li>
     <li>genetic association studies, aimed at uncovering the genetic basis of phenotypic variation for complex traits.</li>
-    <li>sequence alignment, a long-standing computational challenge that is foundational to evolutionary studies.
+    <li>sequence alignment, a long-standing computational challenge that is foundational to evolutionary studies.</li>
     <li>functional genomic data, such as ChIP-seq, and bisulfite-seq, which provide insight into mechanisms of gene regulation.</li>
     <li>motif-finding and genome segmentation, methods for deciphering the logic of gene regulation encoded in the DNA sequence and epigenetic modifications.</li>
     <li>bulk and single-cell RNA-seq, including testing for gene expression responses to varying experimental conditions, changes in gene expression throughout development, and identifying marker genes that are up or downregulated in particular cell lineages.</li>
@@ -86,7 +86,7 @@ Topics are intergated with the curricula for concurrent core courses in molecula
   </ul>
 
 
-<br />Upon completing the course, students should have the background to develop reproducible bioinformatic workflows tailored to their research questions, as well as familiarity with resources for expanding upon these skills.   
+Upon completing the course, students should have the background to develop reproducible bioinformatic workflows tailored to their research questions, as well as familiarity with resources for expanding upon these skills.   
 
 <a name="Objectives"></a>
 <header>
