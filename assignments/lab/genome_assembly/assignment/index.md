@@ -11,11 +11,6 @@ Slides are available here: [GenomeAssembly.pdf](https://github.com/bxlab/qbb2021
 In this assignment, you are given a set of unassembled reads from a mysterious pathogen that contains a
 secret message encoded someplace in the genome. The secret message will be recognizable as a novel insertion of sequence not found in the reference. Your task is to assess the quality of the reads, assemble the genome, identify, and decode the secret message. If all goes well the secret message should decode into a recognizable english text, otherwise doublecheck your coordinates and try again.
 
-Some of the tools you will need to use only run in a linux or mac environment. Several have been pre-installed on your laptop. However, **you will need to install 3 new packages. Please run the following commands:**
-
-`conda install -c bioconda jellyfish`
-`conda install spades mummer`
-
 For tips on how to run the tools that you need for this assignment, look in the `Resources` section below.
 
 Finally, keep track of all commands that you use in a text or markdown file. You will need to submit this along with any graphs or images.
