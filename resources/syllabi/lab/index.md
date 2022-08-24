@@ -74,6 +74,7 @@ Fridays, Sept 9, 2022 - Dec 9, 2022<br />
 This course builds upon the foundations of Quantitative Biology Bootcamp, reinforcing and expanding upon mathematical and computational methods for analysis of biological data. Weekly meetings of this 2.5-hour course are organized as active-learning modules focused on diverse areas of genomics. Students perform guided research with real genomic data, uploading their results and code to repositories where they receive feedback.
 
 Topics are intergated with the curricula for concurrent core courses in molecular biology and cell biology, with datasets and analysis goals aimed at diverse topics in these fields. Examples of such topics include:
+
   <ul>
     <li>genome assembly and variant discovery, problems with well-established quantitative theory and upon which a wide array of downstream genomic analyses depend.</li>
     <li>genetic association studies, aimed at uncovering the genetic basis of phenotypic variation for complex traits.</li>
@@ -84,7 +85,8 @@ Topics are intergated with the curricula for concurrent core courses in molecula
     <li>Hi-C data to gain insight into the three-dimensional organization of the genome and its role in gene regulation.</li>
   </ul>
 
-Upon completing the course, students should have the background to develop reproducible bioinformatic workflows tailored to their research questions, as well as familiarity with resources for expanding upon these skills.   
+
+<br />Upon completing the course, students should have the background to develop reproducible bioinformatic workflows tailored to their research questions, as well as familiarity with resources for expanding upon these skills.   
 
 <a name="Objectives"></a>
 <header>
