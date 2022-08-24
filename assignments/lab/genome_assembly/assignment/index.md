@@ -4,7 +4,7 @@ Due Date: Thursday, Sept. 15, 2022 @ 11:59pm <br>
 
 ## Lecture
 
-Slides are available here: [GenomeAssembly.pdf](https://github.com/bxlab/qbb2021/raw/main/week1/GenomeAssembly.pdf)
+Slides are available here: [GenomeAssembly.pdf](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/genome_assembly/slides_asynchronous_or_livecoding_resources/GenomeAssembly.pdf)
 
 ## Assignment Overview
 
@@ -15,15 +15,17 @@ For tips on how to run the tools that you need for this assignment, look in the 
 
 Finally, keep track of all commands that you use in a text or markdown file. You will need to submit this along with any graphs or images.
 
-## Assignment
-
-#### Question 1. Coverage Analysis
+## Data
 
 Download the reads and reference genome from:
-[https://github.com/bxlab/qbb2021/raw/main/week1/asm.tgz](https://github.com/bxlab/qbb2021/raw/main/week1/asm.tgz)
+[https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/genome_assembly/extra_data/asm.tgz](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/genome_assembly/extra_data/asm.tgz). You can click the link, or you can use `wget`.
 
 Note I have provided both paired-end and mate-pairs reads (see included README for details).
 Make sure to look at all of the reads for the coverage analysis and kmer analysis, as well as in the assembly.
+
+## Assignment
+
+#### Question 1. Coverage Analysis
 
 - Question 1a. How long is the reference genome? [Hint: Try `samtools faidx`]
 - Question 1b. How many reads are provided and how long are they? Make sure to measure each file separately [Hint: Try `FastQC`]
