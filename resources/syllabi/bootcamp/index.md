@@ -218,7 +218,7 @@ The course is broken into four main <b>types of sessions</b>
       <li>We will utilize cooperative small groups discussion sessions for content reviews and peer-presentations.</li>
       <ul>
         <li>For peer-presentations, students will explain to one another their approaches to solving exercises. TAs or instructors may provide feedback, and invite questions and discussion among the whole group on alternative approaches and solutions. Presentations are <b>ungraded</b>.</li>
-        <li>For review sessions, students will be asked to For review sessions, students will be asked to explain to one another computational methods and concepts covered in class. Students can ask questions about specific topics or assignments for which they would like additional practice. TAs will be present to help guide the discussion. Review sessions are <b>ungraded</b></li>
+        <li>For review sessions, students will be asked to explain to one another computational methods and concepts covered in class. Students can ask questions about specific topics or assignments for which they would like additional practice. TAs will be present to help guide the discussion. Review sessions are <b>ungraded</b></li>
       </ul>
       <li>Small groups will be assigned daily and group membership rotated throughout the week. The students within each small group will be assigned roles for that day</li>
         <ul>
