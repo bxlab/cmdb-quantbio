@@ -4,7 +4,7 @@ Due Date: Thursday, Sept. 15, 2022 @ 11:59pm <br>
 
 ## Lecture
 
-Slides are available here: [GenomeAssembly.pdf](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/genome_assembly/slides_asynchronous_or_livecoding_resources/GenomeAssembly.pdf)
+Slides are available here: `~/cmdb-quantbio/assignments/lab/genome_assembly/slides_asynchronous_or_livecoding_resources/GenomeAssembly.pdf`
 
 ## Assignment Overview
 
@@ -17,10 +17,9 @@ Finally, keep track of all commands that you use in a text or markdown file. You
 
 ## Data
 
-Download the reads and reference genome from:
-[https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/genome_assembly/extra_data/asm.tgz](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/genome_assembly/extra_data/asm.tgz). You can click the link, or you can use `wget`.
+The reads and reference genome are in a zipped folder here: `~/cmdb-quantbio/assignments/lab/genome_assembly/extra_data/asm.tgz`. Copy this file to your `answers` directory for this assignment.
 
-After downloading the zipped folder, you'll need to extract it with `tar -zxvf <filename.tgz>`
+After copying the zipped folder, you'll need to extract it with `tar -zxvf <filename.tgz>`. Then you can remove the zipped folder with `rm <filename.tgz>`.
 
 Note we have provided both paired-end and mate-pairs reads (see included README for details).
 Make sure to look at all of the reads for the coverage analysis and kmer analysis, as well as in the assembly.
