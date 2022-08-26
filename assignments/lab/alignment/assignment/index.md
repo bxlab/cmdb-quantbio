@@ -1,17 +1,17 @@
-# Assignment 7: Global and Local Alignment
-Assignment Date: Friday, Oct. 22, 2021 <br>
-Due Date: Friday, Oct. 29, 2021 @ 1pm ET <br>
+# Assignment 2: Sequence Alignment
+Assignment Date: Friday, Sept. 16, 2022 <br>
+Due Date: Friday, Sept. 23, 2022 @ 1:00pm ET <br>
 
-## Lecture
+## Lecture and Live
 
-[Lecture slides](https://docs.google.com/presentation/d/1IRm-2vsaJLWN2YV0us_UHHwVVDEfrvXu8zW-9zc0Jec/edit?usp=sharing)
+**Slides** are available here: [Lecture slides](https://docs.google.com/presentation/d/1IRm-2vsaJLWN2YV0us_UHHwVVDEfrvXu8zW-9zc0Jec/edit?usp=sharing)
 
-Live-coding blank notebook: `wget https://github.com/bxlab/qbb2021/raw/main/week7/needleman-wunsch_livecoding_empty.py`
+**Blank Live-coding script** is available here: `~/cmdb-quantbio/assignments/lab/alignment/slides_asynchronous_or_livecoding_resources/needleman-wunsch_livecoding_empty.py`
 
-Live-coding master notebook: `wget https://github.com/bxlab/qbb2021/raw/main/week7/needleman-wunsch_livecoding_master.py`
+**Master Live-coding script** is available here: `~/cmdb-quantbio/assignments/lab/alignment/slides_asynchronous_or_livecoding_resources/needleman-wunsch_livecoding_master.py`
 
 
-## Basic Exercises: The Needleman-Wunsch Algorithm
+## Assignment Overview
 
 The goal of today's lab is to implement the Needleman-Wunsch algorithm we discussed during class in a Python script. You will then use your implementation to align two DNA sequences, and then to align two protein sequences. Given our discussion regarding chromosome capture in previous lectures, you'll be aligning the CTCF gene between human and mouse genomes. Specifically, you will align both CTCF nucleotide and amino acid sequences from [GENCODE](https://www.gencodegenes.org/) (GENCODE version 38 for human and GENCODE version M27 for mouse).
 
@@ -29,24 +29,18 @@ You'll run your script twice:
 
 **NOTE**: The DNA sequences are fairly long, and as such the DNA alignment may take a few minutes to run. We recommend testing your code with the protein alignment first, and then running the DNA alignment when you're confident it's working.
 
-### Getting your data
+## Data
 
-Everything you need for this assignment is located [here](https://github.com/bxlab/qbb2021/raw/main/week7/needleman-wunsch.tar.gz) in a tarball. Download it. To extract it, run the following command: `tar -xzf needleman-wunsch.tar.gz`. You should get 4 files:
+Everything you need for this assignment is in a zipped folder here: `~/cmdb-quantbio/assignments/lab/alignment/extra_data/needleman-wunsch.tar.gz`. Copy this file to the `answers` directory you made for this assignment.
+
+After copying the zipped folder, you'll need to extract it with `tar -zxvf <filename.tar.gz>`. You should get 4 files:
 1. CTCF_38_M27_AA.faa
 2. CTCF_38_M27_DNA.fna
 3. BLOSUM62.txt
 4. HOXD70.txt
 
 
-### Submitting your assignment
-
-For this assignment, you should submit four things:
-1. Your Needleman-Wunsch Python Script
-2. A text file containing your DNA sequence alignment
-3. A text file containing your amino acid sequence alignment
-4. A markdown or text file detailing the number of gaps and alignment score for both of the above alignments
-
-### Building your script
+## Assignment
 
 #### Step 1: Read in your parameters
 
@@ -73,3 +67,12 @@ Use the traceback matrix to find the optimal alignment between the two sequences
 #### Step 5: Write the alignment to the output
 
 Write the alignment to the output file specified in the command line, and print out the additional information requested.
+
+
+### Submission
+
+For this assignment, you should submit four things:
+1. Your Needleman-Wunsch Python Script
+2. A text file containing your DNA sequence alignment
+3. A text file containing your amino acid sequence alignment
+4. A markdown or text file detailing the number of gaps and alignment score for both of the above alignments

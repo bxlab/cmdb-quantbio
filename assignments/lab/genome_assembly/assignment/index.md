@@ -1,10 +1,10 @@
 # Assignment 1: Genome Assembly
 Assignment Date: Friday, Sept. 9, 2022 <br>
-Due Date: Thursday, Sept. 15, 2022 @ 11:59pm <br>
+Due Date: Friday, Sept. 16, 2022 @ 1:00pm ET<br>
 
 ## Lecture
 
-Slides are available here: `~/cmdb-quantbio/assignments/lab/genome_assembly/slides_asynchronous_or_livecoding_resources/GenomeAssembly.pdf`
+**Slides** are available here: `~/cmdb-quantbio/assignments/lab/genome_assembly/slides_asynchronous_or_livecoding_resources/GenomeAssembly.pdf`
 
 ## Assignment Overview
 
@@ -17,9 +17,17 @@ Finally, keep track of all commands that you use in a text or markdown file. You
 
 ## Data
 
-The reads and reference genome are in a zipped folder here: `~/cmdb-quantbio/assignments/lab/genome_assembly/extra_data/asm.tgz`. Copy this file to your `answers` directory for this assignment.
+The reads and reference genome are in a zipped folder here: `~/cmdb-quantbio/assignments/lab/genome_assembly/extra_data/asm.tgz`. Copy this file to the `answers` directory you made for this assignment.
 
-After copying the zipped folder, you'll need to extract it with `tar -zxvf <filename.tgz>`. Then you can remove the zipped folder with `rm <filename.tgz>`.
+After copying the zipped folder, you'll need to extract it with `tar -zxvf <filename.tgz>`. You should get 7 files:
+1. dna-decode.py
+2. frag180.1.fq
+3. frag180.2.fq
+4. jump2k.1.fq
+5. jump2k.2.fq
+6. README
+7. ref.fa
+
 
 Note we have provided both paired-end and mate-pairs reads (see included README for details).
 Make sure to look at all of the reads for the coverage analysis and kmer analysis, as well as in the assembly.
