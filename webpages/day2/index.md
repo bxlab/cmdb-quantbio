@@ -1,6 +1,6 @@
 # Bootcamp Day 2
 
-## Morning
+## Morning - Practical Python part 1
 
 Learning objectives
 
@@ -15,4 +15,14 @@ Slides can be found [here](https://docs.google.com/presentation/d/1iNL_Wm9A6v_G7
 
 --------------------
 
-## Afternoon
+## Afternoon - Practical Python part 2
+
+Learning objectives
+
+  - Create and alter dictionaries and sets
+  - View and access the contents of a dictionary
+  - Know how to read a VCF file
+
+  This will be an interactive live-coding lesson.
+
+Slides can be found [here](https://docs.google.com/presentation/d/198ZpMgaLxHwKI7cnEwTynmGfbD9rHSrEaOQgN402brU/edit?usp=sharing)
