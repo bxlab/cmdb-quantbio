@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import sys
 
 def parse_bed(fname):
@@ -12,8 +13,12 @@ def parse_bed(fname):
         if line.startswith("#"):
             continue
         fields = line.rstrip().split()
+        fieldN = len(fields)
+        if fieldN < 3:
+            print(f"Line {i} appears malformed", file=sys.stderr)
+            continue
         try:
-            for j in range(min(len(field_types), 3)):
+            for j in range(min(len(field_types), len(fields))):
                 fields[j] = field_types[j](fields[j])
             bed.append(fields)
         except:

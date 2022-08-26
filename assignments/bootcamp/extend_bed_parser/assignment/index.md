@@ -11,21 +11,31 @@ Learning objectives
 
 ## Instructions
 
-1. Prepare day2-lunch/README.md
+1. Prepare day2-lunch
 
     a. Create a `/Users/cmdb/qbb2022-answers/day2-lunch` directory
 
-    b. Use TextMate.app to create a README.md file in the new `day2-lunch` directory
-    
-    c. Add the following line plus your answer to excercise 2 to `README.md`:
+    b. Make a working copy of the test data `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/extend_bed_parser/extra_data/hg38_gencodev41_chr21.bed` in your `day2-lunch` directory.
+
+    c. Use TextMate.app to create a README.md file in the new `day2-lunch` directory
+
+    d. Add the following line to your `README.md`:
 
     ```
     # QBB2022 - Day 2 - Lunch Excercises Submission
     ```
 
-2. Make a working copy of the test data `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/extend_bed_parser/extra_data/hg38_gencodev41_chr21.bed` into your `day2-lunch` directory.
+       Also add your answer from excercises 1 and 2 to your `README.md`. 
 
-3. Submit `README.md`, your bed parser script, and your analysis script by pushing them to your `QBB2022-answers` repo on [github.com](http://www.github.com). Submit each part as you finish it rather than waiting until the end. **DO NOT** git add the bed file.
+2. Submit the following to your `QBB2022-answers` repo on [github.com](http://www.github.com). Submit the `README.md` everytime you make an addition and each script as you finish it rather than waiting until the end.
+
+    - Extended bed parser script from exercise 1
+
+    - `README.md` with answers to excercises
+
+    - Analysis script from excercise 2
+
+**DO NOT** git add the bed file.
 
     ```
     git add FILENAME
@@ -33,32 +43,47 @@ Learning objectives
     git push
     ```
 
-4. Verify that the file appears on [github.com](https://www.github.com)
+3. Verify that your files appears in your repo on [github.com](https://www.github.com)
 
 ## Excercises
 
 1. Extend your BED parser
 
-    Create a copy of the script we produced during the live-coding lecture, `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/extend_bed_parser/slides_asynchronous_or_livecoding_resources/bed_parser.py`. This will serve as your starting point for the assignment. Given what you learned in the lecture and the information provided in the [BED documentation](https://samtools.github.io/hts-specs/BEDv1.pdf), create a bed parser capable of handling bed3-bed9 and bed12-formatted files. Your script should include the following features:
+    Create a copy of the script we produced during the live-coding lecture, `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/extend_bed_parser/slides_asynchronous_or_livecoding_resources/bed_parser.py`. This will serve as your starting point for the assignment. In the interactive lecture, if we could not correctly convert data within a line to the expected data types, then the line was malformed. Now you are going to extend this parser to check for several other conditions in addition to successful data type conversion.
 
-    - Fully commented
-    - All fields of the correct data type for each entry
-    - Parser is a single function that can be imported in another script
-    - Report the number of incorrect entries, if any, using `sys.stderr` when loading is complete
+    - Check that the number of fields is appropriate. Your script should allow for files with bed3, bed4, bed5, bed6, bed7, bed8, bed9, and bed12 formatting, but not lines that follow bed10 and bed11 formatting as these entries are prohibited
 
-    For correctly typing the data, you should make sure that comma-separated lines are converted into lists with entries of the correct data type. Make special note of the fact that UCSC adds an extra comma on the blockSizes and blockStarts lists which needs to be stripped. Your parser should not allow bed10 or bed11 entries, as these are forbidden. It should also make sure that the lengths of blockSizes and blockStarts match blockCount.
+    - For bed9 and bed12 formatted files, verify that comma-separated entries are converted into lists whose entries are of the correct data type
 
-    For reporting the number of malformed entries, report this only if the number is greater than zero. This will replace printing a line for each malformed entry. Record the number of malformed records in `README.md`.
+    - For bed9, verify that there are 3 integers for the itemRGB entries make special note of the fact that UCSC adds an extra comma on the blockSizes and blockStarts lists which needs to be stripped
+
+    - For bed12, make sure that the lengths of blockSizes and blockStarts match blockCount
+
+    Make sure your script adheres to the following:
+
+    - Is fully commented
+
+    - The parser remains a single function that can be imported into another script
+
+    - The parser still returns the `bed` list
+
+    - Rather than printing each incorrectly-formatted line, if the number of incorrect or malformed entries is greater than 0, this number is reported using `sys.stderr` after the file has been completely loaded.
+
+    You can find additional format information provided in the [BED documentation](https://samtools.github.io/hts-specs/BEDv1.pdf).
 
 2. Analyze a gene BED file
 
-    You will need to create a second script to perform an analysis of a gene BED file to look at exon counts. Your script should do the following:
+    Find the median number of exons for genes in the BED file you made a working copy of in the Instructions section.. Recall that for each gene, the exons are displayed as blocks, and so the number of exons would be the number of blocks.
+
+    You will need to create a second script to perform this analysis. Your script should do the following:
 
     - Import your BED parser function
-    - Load and store a bed file
+
+    - Load a BED file
+
     - Find the median number of exons for genes in the BED file you copied under the instructions
 
-    Here's a hint: for each gene the exons are displayed as blocks. In order to import things from a script (as opposed to a module/library), you just need to reference the script's name without the file extension and the script needs to be in the same directory as the file importing it. Assuming that your parser script was named `myBedParser.py`, you would import it as follows:
+    In order to import things from a script (as opposed to a module/library), you just need to reference the script's name without the file extension and the script needs to be in the same directory as the file importing it. Assuming that your parser script was named `myBedParser.py`, you would import it as follows:
 
     ```
     import myBedParser

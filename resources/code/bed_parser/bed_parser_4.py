@@ -10,7 +10,11 @@ def parse_bed(fname):
         if line.startswith("#"):
             continue
         fields = line.rstrip().split("\t")
-        for j in range(min(len(field_types), len(fields))):
+        fieldN = len(fields)
+        if fieldN < 3:
+            print(f"Line {i} appears malformed", file=sys.stderr)
+            continue
+        for j in range(min(len(field_types), fieldN)):
             fields[j] = field_types[j](fields[j])
         bed.append(fields)
     fs.close()
