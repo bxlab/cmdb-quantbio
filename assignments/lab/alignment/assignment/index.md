@@ -69,10 +69,14 @@ Use the traceback matrix to find the optimal alignment between the two sequences
 Write the alignment to the output file specified in the command line, and print out the additional information requested.
 
 
-### Submission
+## Submission
 
 For this assignment, you should submit four things:
 1. Your Needleman-Wunsch Python Script
 2. A text file containing your DNA sequence alignment
 3. A text file containing your amino acid sequence alignment
 4. A markdown or text file detailing the number of gaps in each sequence (including leading and trailing gaps) and alignment score for both of the above alignments
+
+## Just for fun
+
+If you finish early and you want to try something a little bit harder, try to implement the Smith-Waterman algorithm for local alignment in a new script. 
