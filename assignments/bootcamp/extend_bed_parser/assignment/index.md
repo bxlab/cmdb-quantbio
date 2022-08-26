@@ -25,9 +25,9 @@ Learning objectives
     # QBB2022 - Day 2 - Lunch Excercises Submission
     ```
 
-       Also add your answer from excercises 1 and 2 to your `README.md`. 
+    e. Later, also add your answers from exercise 2 to your `README.md`.
 
-2. Submit the following to your `QBB2022-answers` repo on [github.com](http://www.github.com). Submit the `README.md` everytime you make an addition and each script as you finish it rather than waiting until the end.
+2. Submit the following to your `qbb2022-answers` repo on [github.com](http://www.github.com). Submit the `README.md` everytime you make an addition and each script as you finish it rather than waiting until the end.
 
     - Extended bed parser script from exercise 1
 
@@ -35,7 +35,7 @@ Learning objectives
 
     - Analysis script from excercise 2
 
-**DO NOT** git add the bed file.
+    - **DO NOT** git add the bed file.
 
     ```
     git add FILENAME
@@ -55,9 +55,11 @@ Learning objectives
 
     - For bed9 and bed12 formatted files, verify that comma-separated entries are converted into lists whose entries are of the correct data type
 
-    - For bed9, verify that there are 3 integers for the itemRGB entries make special note of the fact that UCSC adds an extra comma on the blockSizes and blockStarts lists which needs to be stripped
+      - For bed9, verify that there are 3 integers for the itemRGB entries.
 
-    - For bed12, make sure that the lengths of blockSizes and blockStarts match blockCount
+      - Make special note of the fact that UCSC adds an extra comma on the blockSizes and blockStarts lists which needs to be stripped
+
+      - For bed12, make sure that the lengths of blockSizes and blockStarts match blockCount
 
     Make sure your script adheres to the following:
 
@@ -73,7 +75,7 @@ Learning objectives
 
 2. Analyze a gene BED file
 
-    Find the median number of exons for genes in the BED file you made a working copy of in the Instructions section.. Recall that for each gene, the exons are displayed as blocks, and so the number of exons would be the number of blocks.
+    Find the median number of exons for genes in the BED file you made a working copy of in the Instructions section. Recall that for each gene, the exons are displayed as blocks, and so the number of exons would be the number of blocks.
 
     You will need to create a second script to perform this analysis. Your script should do the following:
 
@@ -97,5 +99,6 @@ Learning objectives
     bed_parser()
     ```
 
-    Record the median number of exons in `README.md`.
-
+    Record the following in `README.md`.
+      - the number of malformed entries within the test data bed file.
+      - the median number of exons for genes within the test data bed file.
