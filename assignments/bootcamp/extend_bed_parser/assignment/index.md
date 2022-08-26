@@ -22,7 +22,7 @@ Learning objectives
     d. Add the following line to your `README.md`:
 
     ```
-    # QBB2022 - Day 2 - Lunch Excercises Submission
+    # QBB2022 - Day 2 - Lunch Exercises Submission
     ```
 
     e. Later, also add your answers from exercise 2 to your `README.md`.
