@@ -15,20 +15,6 @@ Due Date: Friday, Sept. 23, 2022 @ 1:00pm ET <br>
 
 The goal of today's lab is to implement the Needleman-Wunsch algorithm we discussed during class in a Python script. You will then use your implementation to align two DNA sequences, and then to align two protein sequences. Given our discussion regarding chromosome capture in previous lectures, you'll be aligning the CTCF gene between human and mouse genomes. Specifically, you will align both CTCF nucleotide and amino acid sequences from [GENCODE](https://www.gencodegenes.org/) (GENCODE version 38 for human and GENCODE version M27 for mouse).
 
-Write a script to perform global alignment between two sequences using a given scoring matrix and gap penalty. Your script will take four inputs:
-1. A FASTA-style file containing two sequences to align
-2. A text file containing the scoring matrix you'd like to use for this alignment
-3. The penalty for gaps in your alignment
-4. The filepath to write your alignment to
-
-Additionally, your script should print out the number of gaps in the first sequence, the number of gaps in the second sequence, and the score of the final alignment.
-
-You'll run your script twice:
-1. Align the CTCF DNA transcript sequences from human and mouse using the [HOXD70](https://pubmed.ncbi.nlm.nih.gov/11928468/) scoring matrix and a gap penalty of 300.
-2. Align the CTCF amino acid sequences from human and mouse using the [BLOSUM62](https://www.pnas.org/content/89/22/10915) scoring matrix and a gap penalty of 10.
-
-**NOTE**: The DNA sequences are fairly long, and as such the DNA alignment may take a few minutes to run. We recommend testing your code with the protein alignment first, and then running the DNA alignment when you're confident it's working.
-
 ## Data
 
 Everything you need for this assignment is in a zipped folder here: `~/cmdb-quantbio/assignments/lab/alignment/extra_data/needleman-wunsch.tar.gz`. Copy this file to the `answers` directory you made for this assignment.
@@ -41,6 +27,20 @@ After copying the zipped folder, you'll need to extract it with `tar -zxvf <file
 
 
 ## Assignment
+
+Write a script to perform global alignment between two sequences using a given scoring matrix and gap penalty. Your script will take four inputs:
+1. A FASTA-style file containing two sequences to align
+2. A text file containing the scoring matrix you'd like to use for this alignment
+3. The penalty for gaps in your alignment
+4. The filepath to write your alignment to
+
+Additionally, your script should print out the number of gaps in the first sequence, the number of gaps in the second sequence, and the score of the final alignment.
+
+You'll run your script twice:
+1. Align the CTCF DNA transcript sequences from human and mouse using the [HOXD70](https://pubmed.ncbi.nlm.nih.gov/11928468/) scoring matrix and a gap penalty of **300**.
+2. Align the CTCF amino acid sequences from human and mouse using the [BLOSUM62](https://www.pnas.org/content/89/22/10915) scoring matrix and a gap penalty of **10**.
+
+**NOTE**: The DNA sequences are fairly long, and as such the DNA alignment may take a few minutes to run. We recommend testing your code with the protein alignment first, and then running the DNA alignment when you're confident it's working.
 
 #### Step 1: Read in your parameters
 
@@ -75,4 +75,4 @@ For this assignment, you should submit four things:
 1. Your Needleman-Wunsch Python Script
 2. A text file containing your DNA sequence alignment
 3. A text file containing your amino acid sequence alignment
-4. A markdown or text file detailing the number of gaps and alignment score for both of the above alignments
+4. A markdown or text file detailing the number of gaps in each sequence (including leading and trailing gaps) and alignment score for both of the above alignments
