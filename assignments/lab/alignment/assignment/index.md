@@ -46,7 +46,7 @@ You'll run your script twice:
 
 Use `sys.argv` to read in the parameters you need to run your script from the command line. When reading in the fasta file, it will probably be useful to use the `FASTAReader` function you made during Bootcamp. Either `import` that function, or just copy it into your script.
 
-For the scoring matrix, it makes sense to store it in either a pandas dataframe or a numpy array
+For the scoring matrix, it probably makes sense to store it in a numpy array
 
 #### Step 2: Initializing matrices
 
