@@ -51,6 +51,6 @@ Add each of your answers to `qbb2022-answers/day4-lunch`.  Please `git push` aft
 
 A. Modify workflow to create a single plot e.g. multiple series or subpanels
 
-B. Browse the commit history at github.com and explain what was wrong with the initial bp calculation.  Checkout the original calculation, re-run the workflow, and document the original bp coverage caluclations.
+B. Browse the commit history at github.com and explain what was wrong with the initial bp calculation.  Checkout the original calculation, re-run the workflow, and document the original bp coverage calculations.
 
 C. Finish [git-game](https://github.com/git-game/git-game) (and also [git-game-v2](https://github.com/git-game/git-game-v2))
