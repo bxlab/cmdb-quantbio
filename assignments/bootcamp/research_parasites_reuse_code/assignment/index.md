@@ -21,20 +21,21 @@ Add each of your answers to `qbb2022-answers/day4-lunch`.  Please `git push` aft
 
     Add the following to your `day4-lunch/README.md` file:
 
-    - Portion of `do_all.sh` output that reports how many bp each feature covers
-    - Strategy to confirm that reproduced plots are the same as in the `cache/` directory
+    - Portion of `do_all.sh` output (not script) that reports how many bp each feature covers
+    - One or more strategies to confirm that reproduced plots are the same as in the `cache/` directory
     - Three other `gene_type`s present in the GENCODE .gtf that you find interesting and why 
 
 2. Modify workflow
 
-    Within the `cmdb-plot-vcfs/` directory:
+    Work inside the `cmdb-plot-vcfs/` directory to:
 
     - Improve individual plots e.g. log scale, same y-axis, title
     - Create lncRNA.chr21.bed.vcf.png plot
 
-    Within the `day4-lunch/` directory:
+    Change into the `day4-lunch/` directory and:
 
-    - Commit the improved plots and files you modified
+    - Copy over the improved plots and files you modified
+    - Commit only these plots and files
     - Describe possible trends among plots in `README.md`
 
 3. Create documentation
@@ -46,6 +47,23 @@ Add each of your answers to `qbb2022-answers/day4-lunch`.  Please `git push` aft
     - Dependencies -- software requirements
     - Description -- how it works (bullet points or prose)
     - Output -- example output
+
+    Look to other documentation like [bedtools](https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html) for inspiration
+    
+    ```
+    SYNOPSIS
+        bxlab/cmdb-plot-vcfs -- ...
+
+    USAGE
+        bash do_all.sh <thing1> ...
+
+        <thing1>   ...
+
+    DESCRIPTION
+        1. Create .bed files for features of interest
+            - Run subset_regions.sh Bash script
+            - Use grep to ...
+    ```
 
 ## Just for fun
 
