@@ -17,7 +17,7 @@ Add each of your answers to `qbb2022-answers/day4-lunch`.  Please `git push` aft
 
 ## Exercises
 
-1. Reproduce plots using https://github.com/bxlab/cmdb-plot-vcfs
+1. Reproduce plots using [bxlab/cmdb-plot-vcfs](https://github.com/bxlab/cmdb-plot-vcfs)
 
     Add the following to your `day4-lunch/README.md` file:
 
@@ -32,7 +32,7 @@ Add each of your answers to `qbb2022-answers/day4-lunch`.  Please `git push` aft
     - Improve individual plots e.g. log scale, same y-axis, title
     - Create lncRNA.chr21.bed.vcf.png plot
 
-    Within `day4-lunch/` directory:
+    Within the `day4-lunch/` directory:
 
     - Commit the improved plots and files you modified
     - Describe possible trends among plots in `README.md`
@@ -53,4 +53,4 @@ A. Modify workflow to create a single plot e.g. multiple series or subpanels
 
 B. Browse the commit history at github.com and explain what was wrong with the initial bp calculation.  Checkout the original calculation, re-run the workflow, and document the original bp coverage caluclations.
 
-C. Finish https://github.com/git-game/git-game (and also https://github.com/git-game/git-game-v2)
+C. Finish [git-game](https://github.com/git-game/git-game) (and also [git-game-v2](https://github.com/git-game/git-game-v2))
