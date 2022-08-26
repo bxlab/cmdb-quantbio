@@ -11,7 +11,7 @@ layout: default
 - Five day intensive bootcamp geared towards getting everyone up to speed with basic computational skills.
 - <span class="text-danger">**NO** other classes, meetings, lab work, lab meetings, etc.</span>
 - In person, UTL398.
-- Please wear a face mask and bring headphones
+- Please wear a face mask and bring headphones or earbuds
 - Please arrive by 8:45am ET
 - Lunch and an afternoon snack will be provided
 
@@ -56,7 +56,7 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
 - This one day a week course builds upon the foundations of Quantitative Biology Bootcamp, reinforcing and expanding upon mathematical and computational methods for analysis of biological data.
 - In person, BLC 5015
 - 1 - 3:30 pm, Fridays
-- Please wear a face mask and bring headphones
+- Please wear a face mask and bring headphones or earbuds
 - Assignments must be submitted within one week to your `qbb2022-answers` repository
 
 ### Schedule

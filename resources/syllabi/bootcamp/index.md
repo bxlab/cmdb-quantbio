@@ -183,7 +183,7 @@ The prep work <a href="https://kweav.github.io/prepwork_revamp/introduction.html
 </header>
 
 <ul>
-  <li>Headphones with inline mic </li>
+  <li>Headphones or earbuds </li>
   <li> Face mask </li>
 </ul>
 
