@@ -88,11 +88,13 @@ Within your README, record
   * Which combination of marks occurred most frequently?
   * The commands that you used to answer all of these questions
 
+
 ## Advanced Exercise 2 (optional)
 
-In the interactive lecture, we found the average inter-variant distance for biallelic variants on chromosome 21. Using that `awk` command as reference, build and use the appropriate input file to find the average inter-variant distance for biallelic variants on chromosome 21 which occur within human genes.
+In the interactive lecture, we saw that a handful of bedtools subcommands didn't have an online manual. Pick any one of these and can you find information or resources that describe how the tool works?
 
-
+<!--
 ## Advanced Exercise 3 (optional)
 
-In the interactive lecture, we saw that a handful of bedtools subcommands didn't have an online manual. Pick any one of these and can you find information or resources that describe how the tool works?
+In the interactive lecture, we found the average inter-variant distance for biallelic variants on chromosome 21. Using that `awk` command as reference, build and use the appropriate input file to find the average inter-variant distance for biallelic variants on chromosome 21 which occur within human genes.
+-->
