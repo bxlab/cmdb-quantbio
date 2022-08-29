@@ -52,7 +52,7 @@ It is often of interest for biologists to find the closest gene to some variant 
   * Finally, use the output to answer the following questions. Record the answers and the commands you used to find the answers in your README.
     * How many variants are returned and how many unique genes are returned? How many variants on average are therefore connected to a gene with `bedtools closest`?
 
-## Exercise 4
+## Exercise 4 -- Now an advanced, optional exercise
 
 You've been given a script `exercise4.sh` which intends to first use `bedtools intersect` in order to find the genes that intersect with H3K27ac in naive B cells and the genes that intersect with H3K9me3 in naive B cells. It saves the output of each of these intersections into separate files. Then the script intends to perform a comparison between the two resulting gene/histone mark intersection files, reporting any genes that uniquely intersect with H3K27ac but never intersect with H3K9me3 within naive B cells.
 
@@ -65,7 +65,7 @@ Using the usage statement provided at the beginning of the script (`exercise4.sh
   * What were the syntax errors and what was the logic error?
   * What is the output of the script when it follows its intended goal
 
-## Exercise 5
+## Exercise 5 -- Now an advanced, optional exercise
 
 In the `~/data/bed_files` directory, you have bedgraph files for 6 different Histone marks (H3K27ac, H3K27me3, H3K36me3, H3K4me1, H3K4me3, and H3K9me3) and 3 different cell types (CD4, CD8, and naive B cells).
 
