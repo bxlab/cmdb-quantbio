@@ -8,10 +8,14 @@
 
 [Slides: day1-morning, 1000 Genomes, and UNIX](https://docs.google.com/presentation/d/1ajY-xOQA9IVuB9wwxLui9UDKDKnlX3lxbo9un7XFjbE)
 
-<!--
+
 ## Lunch Assignment: Exploring Biological Data Files
 
 [Lunch Assignment](https://bxlab.github.io/cmdb-quantbio/assignments/bootcamp/unix_biodata_exploration/assignment/)
+
+<!--
+## Small Group Assignments for Lunch Assignment
+
 
 ## Program Documentation, Online Resources, and Debugging
 
