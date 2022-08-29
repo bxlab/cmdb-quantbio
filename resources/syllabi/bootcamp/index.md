@@ -230,7 +230,7 @@ The course is broken into four main <b>types of sessions</b>
           <li>Spokesperson: if asked, summarizes or restates the team's conclusions, questions, or answers for the whole class outside of the small group.</li>
           <li>Time Keeper: given an end time, keeps group on task and on time.</li>
           <li>Reflector: verifies that any required prompts or agenda items have been discussed and have resulted in a consensus conclusion(s) or question(s).</li>
-          <li>Note: For groups with only 5 members, the Time Keeper and Reflector roles will be merged.</li>
+          <li>Note: For groups with only 5 members, the Time Keeper and Reflector roles will be merged. In addition, for groups with only 4 members, the Recorder and Spokesperson roles are merged.</li>
         </ul>
     </ul>
   <li><a name="FormatAsynch"></a><ins><b>Asynchronous</b> Sessions</ins></li>
