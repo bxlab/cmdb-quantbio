@@ -37,7 +37,7 @@ What's the most common alternate allele for a Cytosine reference allele for vari
 
   * Use the `~/data/vcf_files/random_snippet.vcf` file as the variant informations for this problem.
   * To define promoter like regions of the genome, use the provided chromHMM segmentation in `~/data/bed_files/chromHMM.E116_15_coreMarks_hg38lift_stateno.chr21.bed` and consult [this resource](https://egg2.wustl.edu/roadmap/web_portal/chr_state_learning.html#core_15state).
-  * Using these resources, does it seem objectively easy or standardized to define promoter like regions?
+  * Using this segmentation, do promoters appear to be clearly and objectively defined?
   * Use both `bedtools` and `awk` to answer this question. Record any reasoning, as well as your commands and output in your README file.
   * Finally, do the observed results lead you to any biological observations, hypotheses, or conclusions?
 
@@ -67,18 +67,9 @@ Using the usage statement provided at the beginning of the script (`exercise4.sh
 
 ## Exercise 5
 
-In the `~/data/bed_files` directory, you have bedgraph files for 6 different Histone marks (H3K27ac, H3K27me3, H3K36me3, H3K4me1, H3K4me3, and H3K9me3) and 3 different cell types (CD4, CD8, and naive B cells). Within just the CD4 cell files, use the appropriate `bedtools` subcommand to see which regions share some or all of these marks. Save your output with an informative header so that you can further explore the results.
+In the `~/data/bed_files` directory, you have bedgraph files for 6 different Histone marks (H3K27ac, H3K27me3, H3K36me3, H3K4me1, H3K4me3, and H3K9me3) and 3 different cell types (CD4, CD8, and naive B cells).
 
-Within your REAMDE, record
-
-  * How many regions had some amount of overlap between the 6 histone marks?
-  * How many regions were marked by all 6 histone marks?
-  * Which combination of marks occurred most frequently?
-  * The commands that you used to answer all of these questions
-
-## Exercise 6
-
-Using the bedgraph files in `~/data/bed_files` again, use the appropriate `bedtools` subcommand to find the regions that are marked by H3K36me3 in CD8 cells, but not by H3K36me3 in CD4 cells and not by H3K36me3 in naive B cells. If there is any overlap, do not consider the CD8 region to be unique.
+Use the appropriate files and `bedtools` subcommand to find the regions that are marked by H3K36me3 in CD8 cells, but not by H3K36me3 in CD4 cells and not by H3K36me3 in naive B cells. If there is any overlap, do not consider the CD8 region to be unique.
 
 Within your README, record
 
@@ -88,9 +79,20 @@ Within your README, record
 
 ## Advanced Exercise 1 (optional)
 
+Using the bedgraph files in `~/data/bed_files` again, specifically, within just the CD4 cell files, use the appropriate `bedtools` subcommand to see which regions share some or all of these marks. Save your output with an informative header so that you can further explore the results.
+
+Within your REAMDE, record
+
+  * How many regions had some amount of overlap between the 6 histone marks?
+  * How many regions were marked by all 6 histone marks?
+  * Which combination of marks occurred most frequently?
+  * The commands that you used to answer all of these questions
+
+## Advanced Exercise 2 (optional)
+
 In the interactive lecture, we found the average inter-variant distance for biallelic variants on chromosome 21. Using that `awk` command as reference, build and use the appropriate input file to find the average inter-variant distance for biallelic variants on chromosome 21 which occur within human genes.
 
 
-## Advanced Exercise 2 (optional)
+## Advanced Exercise 3 (optional)
 
 In the interactive lecture, we saw that a handful of bedtools subcommands didn't have an online manual. Pick any one of these and can you find information or resources that describe how the tool works?
