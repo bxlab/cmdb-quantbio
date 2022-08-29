@@ -38,7 +38,7 @@ Biological and Bioinformatic Analysis Learning Objectives
 
 ## Homework Assignment: Genome Arithmetic
 
-[Homework Assignment](https://bxlab.github.io/cmdb-quantbio/assignments/bootcamp/unix_biodata_exploration/assignment/)
+[Homework Assignment](https://bxlab.github.io/cmdb-quantbio/assignments/bootcamp/bedtools_genome_arithmetic/assignment)
 
 
 ## Daily Reflection
