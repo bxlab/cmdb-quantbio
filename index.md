@@ -14,7 +14,7 @@ layout: default
 - Please wear a face mask and bring headphones or earbuds
 - Please arrive by 8:45am ET
 - Lunch and an afternoon snack will be provided
-
+- Zoom meeting ID (check Slack for passcode or full link to join): 929 0650 3074
 
 ### Schedule
 All times in ET<br /><br />
