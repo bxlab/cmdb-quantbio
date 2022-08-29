@@ -33,15 +33,16 @@ Biological and Bioinformatic Analysis Learning Objectives
 - Understand ways we relate biological data to each other by localizing data to regions in the genome
 - Explore annotations of the genome and what they communicate about different genomic regions
 
-<!--
+
 [Lecture Notes](https://bxlab.github.io/cmdb-quantbio/assignments/bootcamp/bedtools_genome_arithmetic/slides_asynchronous_or_livecoding_resources)
 
 ## Homework Assignment: Genome Arithmetic
 
 [Homework Assignment](https://bxlab.github.io/cmdb-quantbio/assignments/bootcamp/unix_biodata_exploration/assignment/)
 
+
 ## Daily Reflection
 
 Please fill out [this google form](https://forms.gle/kPy6BiZDb9SQfSsW7) this evening after class.
 
--->
+
