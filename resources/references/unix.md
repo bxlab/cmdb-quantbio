@@ -77,3 +77,52 @@ layout: default
 | `>>` | append output to an existing file                      |
 | `<`  | use file as input                                      |
 {:.table.table-striped}
+
+#### bash scripts
+
+#### awk
+
+`awk` can be used to `cat` a file, or return all of its contents, but it can also be used to subset and only print parts of a file. Specific lines or specific columns based on some condition.
+
+`awk` expressions use single quotation marks and curly braces.
+
+**Print the whole file:**
+
+`awk '{print}' input_file`
+
+**Print specific columns:**
+
+This example will print just the 1st, 3rd, and 5th columns of every line of the input file.
+
+`awk '{print $1,$3,$5}' input_file`
+
+**Checking a condition:**
+
+If you want to print a line only if a column contains a specific value, then you would use an if conditional statement within the awk expression.
+
+This example will only print a line from the input_file if the value in the first column is "chr21".
+
+`awk '{if ($1 == "chr21") {print}}' input_file`
+
+**Passing a variable:**
+
+If you want to use a variable that is predefined within a script within your awk command, you have to set the identity of that variable with the `-v` flag. Variables set within a script can't be referenced within the single parentheses of the `awk` expression. In the example below, a line will be printed if the first column has "apple" in it.
+
+```
+FRUIT="apple"
+awk -v fruit=$FRUIT '{if ($1 == fruit) {print}}' input_file
+```
+
+**Specifying the delimiter or field separator of output:**
+
+This example sets the output field separator (OFS) to make the printed output tab-delimited ("\t")
+
+```
+awk 'BEGIN{OFS="\t"} {print}' input_file
+```
+
+This example sets the output field separator (OFS) to make the printed output (only the first 3 columns of the input files) separated by a comma (",")
+
+```
+awk 'BEGIN{OFS=","} {print $1,$2,$3}' input_file
+```
