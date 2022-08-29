@@ -81,7 +81,7 @@ Within your README, record
 
 Using the bedgraph files in `~/data/bed_files` again, specifically, within just the CD4 cell files, use the appropriate `bedtools` subcommand to see which regions share some or all of these marks. Save your output with an informative header so that you can further explore the results.
 
-Within your REAMDE, record
+Within your README, record
 
   * How many regions had some amount of overlap between the 6 histone marks?
   * How many regions were marked by all 6 histone marks?
