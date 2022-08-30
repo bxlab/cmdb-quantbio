@@ -25,7 +25,7 @@ Learning objectives
 
 2. Make a working copy of the test data `/Users/cmdb/data/vcf_files/random_snippet.vcf` into your `day2-homework` directory.
 
-3. Make a working copy of the dbSnp data `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/annotating_and_writing_variants/slides_asynchronous_or_livecoding_resources/dbSNP_snippet.vcf` into your `day2-homework` directory.
+3. Make a working copy of the dbSnp data `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/annotating_and_writing_variants/extra_data/dbSNP_snippet.vcf` into your `day2-homework` directory.
 
 4. Submit `README.md`, your commented VCF parser script, your analysis script, and your annotated VCF file by pushing them to your `QBB2022-answers` repo on [github.com](http://www.github.com). Submit each part as you finish it rather than waiting until the end. **DO NOT** git add the original VCF file. In order to git add your annotated VCF file, you will need to add `--force` before the file name since VCF files are listed in `.gitignore` as files not to commit.
 
@@ -41,7 +41,7 @@ Learning objectives
 
 1. Comment the VCF parser
 
-    a. Create a copy of the script we produced during the live-coding lecture, `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/annotating_and_writing_variants/slides_asynchronous_or_livecoding_resources/vcf_parser.py`
+    a. Create a copy of the script we produced during the live-coding lecture, `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/annotating_and_writing_variants/slides_asynchronous_or_livecoding_resources/vcfParser.py`
 
     b. Comment each block of code and explain what it is doing and why
 
