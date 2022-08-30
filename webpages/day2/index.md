@@ -23,12 +23,12 @@ Slides can be found [here](https://docs.google.com/presentation/d/1iNL_Wm9A6v_G7
 
 [Lunch Assignment](https://bxlab.github.io/cmdb-quantbio/assignments/bootcamp/extend_bed_parser/assignment/)
 
-
-<!--
 ## Small Group Assignments for Lunch Assignment
 
+[Small group assignments for discussion of lunch exercises](https://github.com/bxlab/cmdb-quantbio/blob/main/resources/small_group_assignments/small_group_day2_lunch.md)
 
 
+<!--
 ## Afternoon - Practical Python part 2
 
 Learning objectives
