@@ -25,7 +25,7 @@ Learning objectives
 
 2. Make a working copy of the test data `/Users/cmdb/data/vcf_files/random_snippet.vcf` into your `day2-homework` directory.
 
-3. Make a working copy of the dbSnp data `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/annotating_and_writing_variants/slides_asynchronous_or_livecoding_resources/dbSnp_snippet.vcf` into your `day2-homework` directory.
+3. Make a working copy of the dbSnp data `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/annotating_and_writing_variants/slides_asynchronous_or_livecoding_resources/dbSNP_snippet.vcf` into your `day2-homework` directory.
 
 4. Submit `README.md`, your commented VCF parser script, your analysis script, and your annotated VCF file by pushing them to your `QBB2022-answers` repo on [github.com](http://www.github.com). Submit each part as you finish it rather than waiting until the end. **DO NOT** git add the original VCF file. In order to git add your annotated VCF file, you will need to add `--force` before the file name since VCF files are listed in `.gitignore` as files not to commit.
 
@@ -40,20 +40,30 @@ Learning objectives
 ## Excercises
 
 1. Comment the VCF parser
-    Identify what each block of code is doing and why.
+
+    a. Create a copy of the script we produced during the live-coding lecture, `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/annotating_and_writing_variants/slides_asynchronous_or_livecoding_resources/vcf_parser.py`
+
+    b. Comment each block of code and explain what it is doing and why
 
 2. Annotate a VCF file with SNP labels
 
-    Create a copy of the script we produced during the live-coding lecture, `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/annotating_and_writing_variants/slides_asynchronous_or_livecoding_resources/vcf_parser.py`. Create a script that uses the labels from the `dbSnp_snippet.vcf` file and applies them to the correct SNP records in `random_snippet.vcf`. Your script should include the following features:
+    Create an analysis script that will import your VCF parser, load both the 1KGP genomes (`random_snippet.vcf`) and dbSNP (`dbSNP_snippet.vcf`) VCF files, and then annotate the 1KGP variants with the IDs from the dbSNP file, when appropriate. Your script should include the following features:
 
     - Fully commented
-    - Loads the records from `dbSnp_snippet.vcf` and creates a dictionary of positions and labels
-    - Labels all records from `random_snippet.vcf` with correct label, if it exists
-
-3. Report the number of records from `random_snippet.vcf` that don't have a label
+    - Loads the records from `dbSNP_snippet.vcf` and `random_snippet.vcf`
+    - Creates a dictionary of positions and IDs from the dbSNP file
+    - Replaces the ID in each record from `random_snippet.vcf` with the correct label, if it exists, from your dbSNP dictionary
+    - Finds and reports the number of `random_snippet.vcf` records that do not have a corresponding ID in your dbSNP ID dictionary
 
     Record the number of unlabeled records in `README.md`.
 
-4. Write the first 100 **labeled** records from `random_snipett.vcf` to a file
+3. Write the first 100 **labeled** records from `random_snipett.vcf` to a file
 
-    Use your parsed vcf records list for this part, **not the original file** (i.e. don't pull correctly formatted lines from the original file for your output). Write only a single header line with the column labels (i.e. the last line of the original header). Also, make sure that each record is formatted correctly (matching the format of the original file). Include this functionality in your annotation script (excercise 2).
+    Use your parsed and annotated `random_snippet.vcf` records list for this part, **not the original file** (i.e. don't pull correctly formatted lines from the original file for your output). Your code should have the following features:
+
+    - Writes only a single header line with the column labels (i.e. the last line of the original header).
+    - Correctly formats each record (matching the format of the original file)
+    - Writes only the first 100 lines that have IDs taken from `dbSNP_snippet.vcf`
+
+    You can choose how your code writes to a file, either by printing to sys.stdout and using `>` to put the output into a file or using `open(fname, 'w')` to write to a file within your script. If you use the first one, you can still have your script report the number of unannotated records using `sys.stderr`.
+    
