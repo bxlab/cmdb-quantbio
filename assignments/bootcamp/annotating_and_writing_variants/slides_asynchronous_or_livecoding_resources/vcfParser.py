@@ -21,7 +21,7 @@ def parse_vcf(fname):
 
     for h, line in enumerate(fs):
         if line.startswith("#"):
-            if True:#try:
+            try:
                 if line.startswith("##FORMAT"):
                     fields = line.split("=<")[1].rstrip(">\r\n") + ","
                     i = 0
@@ -29,11 +29,12 @@ def parse_vcf(fname):
                     in_string = False
                     while i < len(fields):
                         if fields[i] == "," and not in_string:
-                            name, value = fields[start:i].split('=')
-                            if name == "ID":
-                                ID = value
-                            elif name == "Description":
-                                desc = value
+                            if fields[start:i].count("=") == 1:
+                                name, value = fields[start:i].split('=')
+                                if name == "ID":
+                                    ID = value
+                                elif name == "Description":
+                                    desc = value
                             start = i + 1
                         elif fields[i] == '"':
                             in_string = not in_string
@@ -63,8 +64,8 @@ def parse_vcf(fname):
                 elif line.startswith('#CHROM'):
                     fields = line.lstrip("#").rstrip().split("\t")
                     vcf.append(fields)
-            #except:
-            #    raise RuntimeError("Malformed header")
+            except:
+                raise RuntimeError("Malformed header")
         else:
             try:
                 fields = line.rstrip().split("\t")
