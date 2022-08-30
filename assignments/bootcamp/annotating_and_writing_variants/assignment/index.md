@@ -7,7 +7,7 @@ Learning objectives
   - Clearly identify what each part of your code is doing and why
   - Utilize your VCF parser in a separate script to load VCF records
   - Create a mapping dictionary from a file of source-target pairs
-  - Write a formatted text output file 
+  - Write a formatted text output file
 
 ## Instructions
 
@@ -16,7 +16,7 @@ Learning objectives
     a. Create a `/Users/cmdb/qbb2022-answers/day2-homework` directory
 
     b. Use TextMate.app to create a README.md file in the new `day2-homework` directory
-    
+
     c. Add the following line plus your answer to excercise 2 to `README.md`:
 
     ```
@@ -37,7 +37,7 @@ Learning objectives
 
 5. Verify that the file appears on [github.com](https://www.github.com)
 
-## Excercises
+## Exercises
 
 1. Comment the VCF parser
 
@@ -57,7 +57,11 @@ Learning objectives
 
     Record the number of unlabeled records in `README.md`.
 
-3. Write the first 100 **labeled** records from `random_snipett.vcf` to a file
+***
+
+## Advanced Exercises
+
+1. Write the first 100 **labeled** records from `random_snippet.vcf` to a file
 
     Use your parsed and annotated `random_snippet.vcf` records list for this part, **not the original file** (i.e. don't pull correctly formatted lines from the original file for your output). Your code should have the following features:
 
@@ -66,4 +70,3 @@ Learning objectives
     - Writes only the first 100 lines that have IDs taken from `dbSNP_snippet.vcf`
 
     You can choose how your code writes to a file, either by printing to sys.stdout and using `>` to put the output into a file or using `open(fname, 'w')` to write to a file within your script. If you use the first one, you can still have your script report the number of unannotated records using `sys.stderr`.
-    
