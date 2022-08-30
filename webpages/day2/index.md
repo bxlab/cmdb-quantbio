@@ -2,6 +2,10 @@
 
 ## Morning - Practical Python part 1
 
+### Small Group Assignments for Review 
+
+[Group assignments](https://github.com/bxlab/cmdb-quantbio/blob/main/resources/small_group_assignments/small_group_day1_evening.md)
+
 Learning objectives
 
   - Create and edit lists in Python
