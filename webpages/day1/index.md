@@ -8,7 +8,7 @@
 
 [Slides: day1-morning, 1000 Genomes, and UNIX](https://docs.google.com/presentation/d/1ajY-xOQA9IVuB9wwxLui9UDKDKnlX3lxbo9un7XFjbE)
 
-[Zoom of lecture (no audio)](https://livejohnshopkins.sharepoint.com/:f:/s/qbb2021/EmHN35YakD1En4gQRdPbCikB-Ncb9KvW9ROZSqlDnwF3Vw?e=KCzJgH)
+[Zoom recording of lecture (no audio)](https://livejohnshopkins.sharepoint.com/:f:/s/qbb2021/EmHN35YakD1En4gQRdPbCikB-Ncb9KvW9ROZSqlDnwF3Vw?e=KCzJgH)
 
 ## Lunch Assignment: Exploring Biological Data Files
 
@@ -39,7 +39,7 @@ Biological and Bioinformatic Analysis Learning Objectives
 
 [Scripts used in livecoding](https://github.com/bxlab/cmdb-quantbio/tree/main/assignments/bootcamp/bedtools_genome_arithmetic/slides_asynchronous_or_livecoding_resources)
 
-[Zoom of lecture](https://livejohnshopkins.sharepoint.com/:f:/s/qbb2021/EpOeBbBOy91PvMOaS2Uyp44BDS6vC1uiOzbfdJvMf28LYA?e=0DtNdR)
+[Zoom recording of lecture](https://livejohnshopkins.sharepoint.com/:f:/s/qbb2021/EpOeBbBOy91PvMOaS2Uyp44BDS6vC1uiOzbfdJvMf28LYA?e=0DtNdR)
 
 ## Homework Assignment: Genome Arithmetic
 
