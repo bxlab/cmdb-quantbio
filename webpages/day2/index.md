@@ -27,8 +27,8 @@ Slides can be found [here](https://docs.google.com/presentation/d/1iNL_Wm9A6v_G7
 
 [Small group assignments for discussion of lunch exercises](https://github.com/bxlab/cmdb-quantbio/blob/main/resources/small_group_assignments/small_group_day2_lunch.md)
 
+--------------------
 
-<!--
 ## Afternoon - Practical Python part 2
 
 Learning objectives
@@ -48,4 +48,3 @@ Slides can be found [here](https://docs.google.com/presentation/d/198ZpMgaLxHwKI
 ## Daily Reflection
 
 Please fill out [this google form](https://forms.gle/kPy6BiZDb9SQfSsW7) this evening after class.
---->
