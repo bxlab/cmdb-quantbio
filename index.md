@@ -21,7 +21,7 @@ All times in ET<br /><br />
 All day-specific links for assignments, recordings, etc. can be found by clicking the link for the day below.
 
 
-|                | [Monday](webpages/day1/index.html) | [Tuesday](webpages/day2/index.md) | Wednesday | Thursday |Friday |
+|                | [Monday](webpages/day1/index.html) | [Tuesday](webpages/day2/index.html) | Wednesday | Thursday |Friday |
 |:---------------:|:--------------------------------------:|:---------------------------------------:|:------------------------------------:|:---------------------------------------:|:--------------------------------------:|
 |   9:00 - 9:30  | Overview                     | Homework Exercise Small Group Discussions | Homework Exercise Small Group Discussions | Homework Exercise Small Group Discussions | Homework Exercise Small Group Discussions |
 |   9:30 - 11:00  | The Unix Shell | Biological Data Parsing with Python | Review | Reproducibility and GitHub | Statistical Modeling |
