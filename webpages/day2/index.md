@@ -1,10 +1,12 @@
 # Bootcamp Day 2
 
-## Morning - Practical Python part 1
-
-### Small Group Assignments for Review 
+## Small Group Assignments for Review 
 
 [Group assignments](https://github.com/bxlab/cmdb-quantbio/blob/main/resources/small_group_assignments/small_group_day1_evening.md)
+
+<!---
+
+## Morning - Practical Python part 1
 
 Learning objectives
 
@@ -16,7 +18,7 @@ Learning objectives
 This will be an interactive live-coding lesson.
 
 Slides can be found [here](https://docs.google.com/presentation/d/1iNL_Wm9A6v_G77TrS9Zii8W3Tdex92MTW57eKRajtBw/edit?usp=sharing)
-<!---
+
 --------------------
 
 ## Afternoon - Practical Python part 2
