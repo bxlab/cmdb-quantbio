@@ -7,6 +7,7 @@
 * Emily Meier
 * Charlie Millard
 * Emma Troisi
+* Jared Grooms
 
 ### With Dylan
 * Sienna Casciato
@@ -15,6 +16,7 @@
 * Jiaxin Li
 * Kaven Konda
 * Nick Wong
+* Evan Lawrence
 
 ### With Fred
 * Cat Brown
@@ -22,19 +24,14 @@
 * Evan Schlesinger
 * Emma Steinson
 * Ailin Zhou
-
-### With Kate
 * Mingxuan Chi
-* Paul Elizalde
-* Jared Grooms
-* Evan Lawrence
 * Abby Molnar
-* Emily Shen
 
-### With Rajiv
+### With Mike
 * Ayse Ecer
 * Sebastian Khan
 * Yijun Liao
 * Christina Park
 * Kelvin Runnels
-
+* Paul Elizalde
+* Emily Shen
