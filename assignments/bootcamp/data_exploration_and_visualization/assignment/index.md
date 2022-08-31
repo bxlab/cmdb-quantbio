@@ -36,7 +36,7 @@ e. Verify that your files were successfully uploaded to your online repository o
 
 ## Exercise 3
 
-* Use the unix `join` command to intersect the `plink.eigenvec` file with the metadata for those same samples stored in `integrated_call_samples.panel`. Output this joined table to a new file. (Read the documentation for `join`! Hint: you will also need `sort`.)
+* Use the unix `join` command to intersect the `plink.eigenvec` file with the metadata for those same samples stored in `integrated_call_samples.panel`. Output this joined table to a new file. (Read the documentation for `join`! **Hint:** for `join` to work, both files need to be sorted on the field you will use to join and both files also have to have the same delimiter character.)
 * Read the above file into a numpy array. 
 * Use these data to color the plot of PC1 vs. PC2 according to population, superpopulation, and sex (3 separate plots).
 * Label the axes of each figure as PC1 and PC2, as appropriate.
@@ -47,4 +47,3 @@ e. Verify that your files were successfully uploaded to your online repository o
 * Try plotting the first three principal components together on a 3D scatter plot.
 * See https://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html
 * NOTE: Never put a figure like this in a (2D) paper! 3D plots are only potentially useful if you can animate or rotate them.
-
