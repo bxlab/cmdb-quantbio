@@ -52,4 +52,5 @@ e. Verify that your files were successfully uploaded to your online repository o
 
 ## Optional exercise
 
-* Using any of the the metadata files in `/Users/cmdb/data/metadata_and_txt_files/`, develop your own visualizations to convey a point of your choosing. For example, using data in `integrated_call_samples.panel`, you could create a "stacked bar plot" to compare the sex ratio within different superpopulations (https://matplotlib.org/stable/gallery/lines_bars_and_markers/bar_stacked.html).
+* Using any of the the metadata files in `/Users/cmdb/data/metadata_and_txt_files/`, develop your own visualizations to convey a point of your choosing.
+* For example, using data in `integrated_call_samples.panel`, you could create a "stacked bar plot" to compare the sex ratio within different superpopulations (see https://matplotlib.org/stable/gallery/lines_bars_and_markers/bar_stacked.html).
