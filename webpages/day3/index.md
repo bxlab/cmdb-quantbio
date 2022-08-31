@@ -23,9 +23,11 @@
 
 <!--
 [Lunch interactive live coding scripts]()
+-->
 
 [Afternoon lecture slide](https://docs.google.com/presentation/d/12NU8ORj0mzwhomQsTHLvprr3MircPyFcXwFjiEEZGlg/edit?usp=sharing)
 
+<!--
 [Afternoon interactive live coding scripts]()
 
 ## Homework Assignment: Principal Component Analysis
