@@ -479,7 +479,7 @@ All time are ET.
   <th>Homework (wrap up 7pm)</th>
   <td>Genome Arithmetic</td>
   <td>Mapping across Databases</td>
-  <td>TBA</td>
+  <td>Principal Component Analysis</td>
   <td>Visualizing Simulation Results and Power</td>
   <td>---</td>
 </tr>

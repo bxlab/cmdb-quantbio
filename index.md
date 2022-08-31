@@ -30,7 +30,7 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
 |    1:45 - 2:00   | Break | Break | Break  | Break | Break  |
 |    2:00 - 2:30   | Lunch Exercise Small Group Discussions | Lunch Exercise Small Group Discussions | Data Exploration and Visualization (cont.) | Lunch Exercise Small Group Discussions | Lunch Exercise Small Group Discussions |
 |    2:30 - 4:00   | Program Documentation, Online Resources, and Debugging  | Biological Data Parsing with Python (cont.) | --- | Random Simulations  | Review |
-|     Homework     | Genome Arithmetic  | Mapping across databases | TBA | Visualizing Simulation Results and Power | --- |
+|     Homework     | Genome Arithmetic  | Mapping across databases | Principal Component Analysis | Visualizing Simulation Results and Power | --- |
 {:.table.table-striped.well}
 
 <!--- Recall that a link looks like [Friday](day5/index.html) --->
