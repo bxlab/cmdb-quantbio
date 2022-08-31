@@ -27,7 +27,7 @@ e. Verify that your files were successfully uploaded to your online repository o
 
 ## Exercise 2
 
-* Using numpy, read in the principal component coordinates for each sample. (In linear algebra terms, these are the first and second eigenvectors of the covariance matrix, and are therefore stored in the `plink.eigenvec` output file).
+* Using the numpy `genfromtxt` function, read in the principal component coordinates for each sample. (In linear algebra terms, these are the first and second eigenvectors of the covariance matrix, and are therefore stored in the `plink.eigenvec` output file).
 * Create a scatter plot using the first vs. second principal component coordinates for your samples.  Your figure should have 2548 total data points.
 * Repeat the step above, but plotting the first vs. third principal component.
 * Label the axes of each figure as PC1, PC2, or PC3, as appropriate.
