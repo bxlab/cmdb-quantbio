@@ -16,11 +16,17 @@
 
 ## Morning - Review
 
-<!--
+
 ## Interactive Lecture: Data Exploration and Visualization
 
-[Lunch interactive live coding lecture notes or scripts]
-[Afternoon interactive live coding lecture notes or scripts]
+[Lunch lecture slides](https://docs.google.com/presentation/d/1Mdbuu7tqigtajC9GzbKE0xOP-6kG_tngg4zC4LHT4So/edit?usp=sharing)
+
+<!--
+[Lunch interactive live coding scripts]()
+
+[Afternoon lecture slide](https://docs.google.com/presentation/d/12NU8ORj0mzwhomQsTHLvprr3MircPyFcXwFjiEEZGlg/edit?usp=sharing)
+
+[Afternoon interactive live coding scripts]()
 
 ## Homework Assignment: Principal Component Analysis
 
