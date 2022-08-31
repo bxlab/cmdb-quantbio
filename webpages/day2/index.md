@@ -17,6 +17,8 @@ This will be an interactive live-coding lesson.
 
 Slides can be found [here](https://docs.google.com/presentation/d/1iNL_Wm9A6v_G77TrS9Zii8W3Tdex92MTW57eKRajtBw/edit?usp=sharing)
 
+[Zoom recording of lecture](https://livejohnshopkins.sharepoint.com/:f:/s/qbb2021/ErQoIN4SDW5LgEcuNwG0MgMBQq9rMvs_0oTqvNorYDHe4g?e=uzsWiY)
+
 --------------------
 
 ## Lunch Assignment: Extend and Annotate a File Parser
@@ -40,6 +42,8 @@ Learning objectives
   This will be an interactive live-coding lesson.
 
 Slides can be found [here](https://docs.google.com/presentation/d/198ZpMgaLxHwKI7cnEwTynmGfbD9rHSrEaOQgN402brU/edit?usp=sharing)
+
+[Zoom recording of lecture](https://livejohnshopkins.sharepoint.com/:f:/s/qbb2021/EgPOEhR7ygFLuwG2ZwOQBRUBFd3GPEm9DLf_nKlFQDNShw?e=Bc6i4w)
 
 ## Homework Assignment: Mapping across databases
 
