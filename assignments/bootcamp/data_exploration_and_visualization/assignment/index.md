@@ -6,7 +6,7 @@ a. Create a `/Users/cmdb/qbb2022-answers/day3-homework` directory.
 
 b. Use TextMate.app to create a `README.md` file in the new `day3-homework` directory.
 
-c. Add the following line to `README.md` and save the file. Record your answers to exercises throughout the homework assignment within README.md
+c. Add the following line to `README.md` and save the file. Record the code you used and answers to questions within `README.md`.
 
 ```
 # QBB2022 - Day 3 - Homework Exercises Submission
