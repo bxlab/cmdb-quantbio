@@ -22,7 +22,7 @@ e. Verify that your files were successfully uploaded to your online repository o
 
 ## Exercise 1
 
-* Using PLINK, perform principal components analysis on the genotype data stored in `/Users/cmdb/data/vcf_files/ALL.chr21.shapeit2_integrated_v1a.GRCh38.20181129.phased.vcf.gz`. Look at the PLINK documentation / Google examples of how to perform PCA with PLINK.
+* Using PLINK, perform principal components analysis on the genotype data stored in `/Users/cmdb/data/vcf_files/ALL.chr21.shapeit2_integrated_v1a.GRCh38.20181129.phased.vcf.gz`. Look at the PLINK documentation / Google examples of how to perform PCA with PLINK. Only have PLINK return the first 3 principal components.
 * Record the code you used to perform PCA above in your README.md file.
 
 ## Exercise 2
