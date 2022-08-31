@@ -1,5 +1,5 @@
 # Bootcamp Day 3
-
+<!--
 ## Install git-lfs
 
 * Visit [this website](https://git-lfs.github.com/)
@@ -9,6 +9,7 @@
 * Then type `sudo ./install.sh` and press <return>
 * Enter your laptop's password
 * Finally, verify that the install was successful by typing `git lfs install` and pressing <return>. If you don't see "> Git LFS initialized.", please alert a TA or instructor.
+-->
 
 ## Small Group Assignments for Homework Discussion
 
@@ -21,17 +22,12 @@
 
 [Lunch lecture slides](https://docs.google.com/presentation/d/1Mdbuu7tqigtajC9GzbKE0xOP-6kG_tngg4zC4LHT4So/edit?usp=sharing)
 
-<!--
-[Lunch interactive live coding scripts]()
--->
-
 [Afternoon lecture slide](https://docs.google.com/presentation/d/12NU8ORj0mzwhomQsTHLvprr3MircPyFcXwFjiEEZGlg/edit?usp=sharing)
 
-<!--
-[Afternoon interactive live coding scripts]()
+[Interactive live coding scripts](https://github.com/bxlab/cmdb-quantbio/tree/main/assignments/bootcamp/data_exploration_and_visualization/slides_asynchronous_or_livecoding_resources)
 
-[Zoom recording of lecture]()
--->
+[Zoom recording of lecture](https://livejohnshopkins.sharepoint.com/:f:/s/qbb2021/Eq7NdqKQylNLuPvXoIpaZ80B8rfZ1PlAXAWGMZ231QMoaA?e=dFetrQ)
+
 
 ## Homework Assignment: Principal Component Analysis
 
