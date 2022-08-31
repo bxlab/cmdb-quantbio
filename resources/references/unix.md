@@ -118,7 +118,7 @@ awk -v fruit=$FRUIT '{if ($1 == fruit) {print}}' input_file
 This example sets the output field separator (OFS) to make the printed output tab-delimited ("\t")
 
 ```
-awk 'BEGIN{OFS="\t"} {print}' input_file
+awk 'BEGIN{OFS="\t"} {$1=$1; print}' input_file
 ```
 
 This example sets the output field separator (OFS) to make the printed output (only the first 3 columns of the input files) separated by a comma (",")
