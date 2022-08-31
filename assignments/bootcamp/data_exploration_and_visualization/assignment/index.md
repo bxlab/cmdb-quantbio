@@ -36,7 +36,7 @@ e. Verify that your files were successfully uploaded to your online repository o
 
 ## Exercise 3
 
-* Use the unix `join` command to intersect the `plink.eigenvec` file with the metadata for those same samples stored in `/Users/cmdb/data/metadata_and_txt_files/integrated_call_samples.panel`. Output this joined table to a new file. (Read the documentation for `join`! **Hint:** for `join` to work, both files need to be sorted on the field you will use to join and both files also have to have the same delimiter character.)
+* Use the unix `join` command to intersect the `plink.eigenvec` file with the metadata for those same samples stored in `/Users/cmdb/data/metadata_and_txt_files/integrated_call_samples.panel`. Output this joined table to a new file. (Read the documentation for `join`! **Hint:** for `join` to work, both files need to be sorted on the field you will use to join, and both files also have to have the same delimiter character.)
 * Read the above file into a numpy array. 
 * Use these data to color the plot of PC1 vs. PC2 according to population, superpopulation, and sex (3 separate plots).
 * Add a legend to each plot to explain the colors.
