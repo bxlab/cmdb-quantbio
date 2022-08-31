@@ -30,6 +30,9 @@
 <!--
 [Afternoon interactive live coding scripts]()
 
+[Zoom recording of lecture]()
+-->
+
 ## Homework Assignment: Principal Component Analysis
 
 [Homework Assignment](https://bxlab.github.io/cmdb-quantbio/assignments/bootcamp/data_exploration_and_visualization/assignment/)
@@ -37,4 +40,3 @@
 ## Daily Reflection
 
 Please fill out [this google form](https://forms.gle/kPy6BiZDb9SQfSsW7) this evening after class.
--->
