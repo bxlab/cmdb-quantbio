@@ -18,12 +18,11 @@ Fill out **[this quick survey](https://forms.gle/RrSWEn1ZAM9P4aSWA)** so that we
 
 [Lunch Assignment](https://bxlab.github.io/cmdb-quantbio/assignments/bootcamp/research_parasites_reuse_code/assignment/)
 
-<!--
-
 ## Small Group Assignments for Lunch Assignment Discussion
 
-[Small group assignments for discussion of lunch exercises]()
+[Small group assignments for discussion of lunch exercises](https://github.com/bxlab/cmdb-quantbio/blob/main/resources/small_group_assignments/small_group_day4_lunch.md)
 
+<!--
 
 ## Afternoon - Random Simulations
 
