@@ -29,7 +29,8 @@ Add each of your answers to `qbb2022-answers/day4-lunch`.  Please `git push` aft
 
     Work inside the `cmdb-plot-vcfs/` directory to:
 
-    - Improve individual plots e.g. log scale, same y-axis view limits, title
+    - Improve individual plots e.g. log transform data, set same y-axis view limits, add titles
+        - [Strategies](https://stats.stackexchange.com/questions/1444/how-should-i-transform-non-negative-data-including-zeros) to deal with AC data that includes zeros
     - Create lncRNA.chr21.bed.vcf.png plot
 
     Change into the `day4-lunch/` directory and:
