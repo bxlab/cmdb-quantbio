@@ -26,15 +26,9 @@ Fill out **[this quick survey](https://forms.gle/RrSWEn1ZAM9P4aSWA)** so that we
 
 ## Afternoon - Random Simulations
 
-Computational Learning Objectives
--
+[Lecture Slides](https://docs.google.com/presentation/d/1acqu1fxTuRCT33KlCiHfMba7U0eRBqmLHjPafABAeqQ/edit?usp=sharing)
 
-Biological and Bioinformatic Analysis Learning Objectives
--
-
-[Lecture Notes]()
-
-[Scripts used in livecoding]()
+[Scripts used in livecoding](https://github.com/bxlab/cmdb-quantbio/tree/main/assignments/bootcamp/random_simulation_visualization/slides_asynchronous_or_livecoding_resources)
 
 [Zoom recording of lecture]()
 
