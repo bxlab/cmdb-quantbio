@@ -4,7 +4,7 @@
 
 Data are taken from Halldorsson, B. V., Palsson, G., Stefansson, O. A., Jonsson, H., Hardarson, M. T., Eggertsson, H. P., ... & Gudjonsson, S. A. (2019). Characterizing mutagenic effects of recombination through a sequence-level genetic map. Science, 363(6425). [link](https://science.sciencemag.org/content/363/6425/eaau1043.abstract)
 
-### Exercise 1: Wrangle and load the data
+### Exercise 1: Wrangle the data with Unix
 
 1. Read the abstract from the above paper to understand the context of the datasets we will be using. The relevant data are stored in two files:
 * information about the number and parental origin of each de novo mutation detected in an offspring individual (i.e. "proband"), stored in `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/statistical_modeling/extra_data/aau1043_dnm.csv`
@@ -14,9 +14,9 @@ Data are taken from Halldorsson, B. V., Palsson, G., Stefansson, O. A., Jonsson,
 
 3. Use the Unix `join` command to combine the above dataset that you created with the dataset containing ages of the mother and father of each proband (`aau1043_parental_age.csv`) at the probands time of birth.
 
-4. Use numpy `genfromtxt` to load the "joined" data from step 3 into a numpy array. Note that the `Names = True` option to genfromtxt obtains column names from the first line of the file (see genfromtxt documentation).
+### Exercise 2: Fit and interpret linear regression models with Python
 
-### Exercise 2: Fit and interpret linear regression models
+4. Use numpy `genfromtxt` to load the "joined" data from step 3 into a numpy array. Note that the `Names = True` option to genfromtxt obtains column names from the first line of the file (see genfromtxt documentation).
 
 5. Use matplotlib to plot:
 * the count of maternal de novo mutations vs. maternal age
