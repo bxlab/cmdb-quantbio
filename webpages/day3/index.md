@@ -13,7 +13,7 @@
 
 ## Small Group Assignments for Homework Discussion
 
-[Group assignments](https://github.com/bxlab/cmdb-quantbio/blob/main/resources/small_group_assignments/small_group_day2_evening.md)
+[Group assignments](https://github.com/bxlab/cmdb-quantbio/blob/main/resources/small_group_assignments/small_group_day3_evening.md)
 
 ## Morning - Review
 
