@@ -12,11 +12,13 @@ Fill out **[this quick survey](https://forms.gle/RrSWEn1ZAM9P4aSWA)** so that we
 
 <!--
 [Zoom recording of lecture]()
-
+-->
 
 ## Lunch Assignment: Research Parasites (aka How to ~Steal~ Reuse Other People’s Code)
 
 [Lunch Assignment](https://bxlab.github.io/cmdb-quantbio/assignments/bootcamp/research_parasites_reuse_code/assignment/)
+
+<!--
 
 ## Small Group Assignments for Lunch Assignment Discussion
 
