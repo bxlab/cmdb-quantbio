@@ -29,7 +29,7 @@ Add each of your answers to `qbb2022-answers/day4-lunch`.  Please `git push` aft
 
     Work inside the `cmdb-plot-vcfs/` directory to:
 
-    - Improve individual plots e.g. log scale, same y-axis, title
+    - Improve individual plots e.g. log scale, same y-axis view limits, title
     - Create lncRNA.chr21.bed.vcf.png plot
 
     Change into the `day4-lunch/` directory and:
