@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 import numpy
-from scipy.stats import binom_test
+from scipy.stats import binomtest
 import matplotlib.pyplot as plt
-import seaborn as sns
+import seaborn
 from statsmodels.stats.multitest import multipletests
 
 def simulate_coin_toss(n_tosses, prob_heads = 0.5, seed=None):
