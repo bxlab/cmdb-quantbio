@@ -9,8 +9,8 @@ Data are taken from Halldorsson, B. V., Palsson, G., Stefansson, O. A., Jonsson,
 1. Read the abstract from the above paper to understand the context of the datasets we will be using.
 
 2. Use numpy `genfromtxt` to load two datasets from this paper:
-* information about the number and parental origin of each de novo mutation detected in an offspring individual (i.e. "proband"), stored in `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/statistical_modeling/extra_data/aau1043_dnm.tsv`
-* ages of the parents of each proband, stored in `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/statistical_modeling/extra_data/aau1043_parental_age.tsv`
+* information about the number and parental origin of each de novo mutation detected in an offspring individual (i.e. "proband"), stored in `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/statistical_modeling/extra_data/aau1043_dnm.csv`
+* ages of the parents of each proband, stored in `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/statistical_modeling/extra_data/aau1043_parental_age.csv`
 * Note that the `Names = True` option to `genfromtxt` obtains column names from the first line of the file (see `genfromtxt` documentation).
 
 3. Count the number of de novo mutations per proband. The `Phase_combined` column records the inferred parent of origin of the de novo mutation. Break the counts of de novo mutations down into maternally inherited, paternally inherited, and total de novo mutations (including of unknown parental origin). Store these counts in a new numpy array with the fields: `Proband_id`, `pat_dnm`, `mat_dnm`, `tot_dnm`.
