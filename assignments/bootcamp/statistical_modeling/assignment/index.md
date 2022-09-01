@@ -19,8 +19,8 @@ Data are taken from Halldorsson, B. V., Palsson, G., Stefansson, O. A., Jonsson,
 4. Use numpy `genfromtxt` to load the "joined" data from step 3 into a numpy array. Use the `Names = ` option to give your fields informative names.
 
 5. Use matplotlib to plot:
-* the count of maternal de novo mutations vs. maternal age
-* the count of paternal de novo mutations vs. paternal age
+* the count of maternal de novo mutations vs. maternal age (upload as `ex2_a.png`)
+* the count of paternal de novo mutations vs. paternal age (upload as `ex2_b.png`)
 
 6. Use ordinary least squares `smf.ols()` to test for an association between maternal age and maternally inherited de novo mutations.
 * Is this relationship significant?
