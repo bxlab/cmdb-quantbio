@@ -4,18 +4,17 @@
 
 Data are taken from Halldorsson, B. V., Palsson, G., Stefansson, O. A., Jonsson, H., Hardarson, M. T., Eggertsson, H. P., ... & Gudjonsson, S. A. (2019). Characterizing mutagenic effects of recombination through a sequence-level genetic map. Science, 363(6425). [link](https://science.sciencemag.org/content/363/6425/eaau1043.abstract)
 
-### Exercise 1: Load and wrangle the data
+### Exercise 1: Wrangle and load the data
 
-1. Read the abstract from the above paper to understand the context of the datasets we will be using.
-
-2. Use numpy `genfromtxt` to load two datasets from this paper:
+1. Read the abstract from the above paper to understand the context of the datasets we will be using. The relevant data are stored in two files:
 * information about the number and parental origin of each de novo mutation detected in an offspring individual (i.e. "proband"), stored in `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/statistical_modeling/extra_data/aau1043_dnm.csv`
 * ages of the parents of each proband, stored in `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/statistical_modeling/extra_data/aau1043_parental_age.csv`
-* Note that the `Names = True` option to `genfromtxt` obtains column names from the first line of the file (see `genfromtxt` documentation).
 
-3. Count the number of de novo mutations per proband. The `Phase_combined` column records the inferred parent of origin of the de novo mutation. Break the counts of de novo mutations down into maternally inherited, paternally inherited, and total de novo mutations (including of unknown parental origin). Store these counts in a new numpy array with the fields: `Proband_id`, `pat_dnm`, `mat_dnm`, `tot_dnm`.
+2. Starting with the data in `aau1043_dnm.csv`, use Unix commands (think back to day 1) to count the number of de novo mutations per proband. The `Phase_combined` column records the inferred parent of origin of each de novo mutation. Break the counts of de novo mutations down into maternally inherited, paternally inherited, and total de novo mutations (including of unknown parental origin). Store these counts in a **new file** with fields containing: proband ID, number of paternally inherited de novo mutations for that proband, nmber of maternally inherited de novo mutations for that proband, total number of de novo mutations for that proband.
 
-4. Use Unix join (this would require writing the above data to a new file and working outside of Python) or a numpy function with similar joining abilities to combine the above dataset that you created with the dataset containing maternal and paternal ages.
+3. Use the Unix `join` command to combine the above dataset that you created with the dataset containing ages of the mother and father of each proband (`aau1043_parental_age.csv`) at the probands time of birth.
+
+4. Use numpy `genfromtxt` to load the "joined" data from step 3 into a numpy array. Note that the `Names = True` option to genfromtxt obtains column names from the first line of the file (see genfromtxt documentation).
 
 ### Exercise 2: Fit and interpret linear regression models
 
