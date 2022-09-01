@@ -6,6 +6,8 @@
 
 ## Morning - Reproducibility and GitHub
 
+Fill out **[this quick survey](https://forms.gle/RrSWEn1ZAM9P4aSWA)** so that we can gauge your comfort level with the topics we've covered so far.
+
 <!-- [Slides: reproducible research, conda, and git](https://docs.google.com/presentation/d/17WPtDhfMPvVYyd0VJPk0qSuAudoJJbfqZnC9_8vDfn4/edit)
 
 [Zoom recording of lecture]()
