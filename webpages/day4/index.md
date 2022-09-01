@@ -22,12 +22,13 @@ Fill out **[this quick survey](https://forms.gle/RrSWEn1ZAM9P4aSWA)** so that we
 
 [Small group assignments for discussion of lunch exercises](https://github.com/bxlab/cmdb-quantbio/blob/main/resources/small_group_assignments/small_group_day4_lunch.md)
 
-<!--
+
 
 ## Afternoon - Random Simulations
 
 [Lecture Slides](https://docs.google.com/presentation/d/1acqu1fxTuRCT33KlCiHfMba7U0eRBqmLHjPafABAeqQ/edit?usp=sharing)
 
+<!--
 [Scripts used in livecoding](https://github.com/bxlab/cmdb-quantbio/tree/main/assignments/bootcamp/random_simulation_visualization/slides_asynchronous_or_livecoding_resources)
 
 [Zoom recording of lecture]()
