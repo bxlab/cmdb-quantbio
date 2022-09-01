@@ -16,7 +16,7 @@ Data are taken from Halldorsson, B. V., Palsson, G., Stefansson, O. A., Jonsson,
 
 ### Exercise 2: Fit and interpret linear regression models with Python
 
-4. Use numpy `genfromtxt` to load the "joined" data from step 3 into a numpy array. Note that the `Names = True` option to genfromtxt obtains column names from the first line of the file (see genfromtxt documentation).
+4. Use numpy `genfromtxt` to load the "joined" data from step 3 into a numpy array. Use the `Names = ` option to give your fields informative names.
 
 5. Use matplotlib to plot:
 * the count of maternal de novo mutations vs. maternal age
