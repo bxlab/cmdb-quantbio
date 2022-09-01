@@ -27,8 +27,8 @@ Data are taken from Halldorsson, B. V., Palsson, G., Stefansson, O. A., Jonsson,
 * What is the size of this relationship?
 
 7. Use ordinary least squares `smf.ols()` to test for an association between paternal age and paternally inherited de novo mutations.
-- Is this relationship significant?
-- What is the size of this relationship?
+* Is this relationship significant?
+* What is the size of this relationship?
 
 8. Plot a histogram of the number of maternal de novo mutations and paternal de novo mutations per proband on a single plot with semi-transparency.
 
