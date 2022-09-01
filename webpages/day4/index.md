@@ -14,6 +14,8 @@ Fill out **[this quick survey](https://forms.gle/RrSWEn1ZAM9P4aSWA)** so that we
 [Zoom recording of lecture]()
 -->
 
+***
+
 ## Lunch Assignment: Research Parasites (aka How to ~Steal~ Reuse Other People’s Code)
 
 [Lunch Assignment](https://bxlab.github.io/cmdb-quantbio/assignments/bootcamp/research_parasites_reuse_code/assignment/)
@@ -22,17 +24,19 @@ Fill out **[this quick survey](https://forms.gle/RrSWEn1ZAM9P4aSWA)** so that we
 
 [Small group assignments for discussion of lunch exercises](https://github.com/bxlab/cmdb-quantbio/blob/main/resources/small_group_assignments/small_group_day4_lunch.md)
 
-
+***
 
 ## Afternoon - Random Simulations
 
 [Lecture Slides](https://docs.google.com/presentation/d/1acqu1fxTuRCT33KlCiHfMba7U0eRBqmLHjPafABAeqQ/edit?usp=sharing)
 
-<!--
 [Scripts used in livecoding](https://github.com/bxlab/cmdb-quantbio/tree/main/assignments/bootcamp/random_simulation_visualization/slides_asynchronous_or_livecoding_resources)
 
+<!--
 [Zoom recording of lecture]()
+-->
 
+***
 
 ## Homework Assignment: Visualizing Simulation Results and Power
 
@@ -40,4 +44,4 @@ Fill out **[this quick survey](https://forms.gle/RrSWEn1ZAM9P4aSWA)** so that we
 
 ## Daily Reflection
 
-Please fill out [this google form](https://forms.gle/kPy6BiZDb9SQfSsW7) this evening after class. -->
+Please fill out [this google form](https://forms.gle/kPy6BiZDb9SQfSsW7) this evening after class.
