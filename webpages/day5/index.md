@@ -8,7 +8,9 @@
 
 Linear regression slides can be found [here](https://docs.google.com/presentation/d/1GRB69Vd9T0Rc7USsuP80GVWdpxa5KWKoT_iWX30gOe0/edit#slide=id.p)
 
-<!-- 
+Live-coding script can be found [here](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/bootcamp/statistical_modeling/slides_asynchronous_or_livecoding_resources/penguins.py)
+
+<!--
 
 Multiple testing correction and error slides can be found [here](https://docs.google.com/presentation/d/1epGZMvVK6CY2OLVt4EXsLjt07KY8EFc-09DU16JQskE/edit#slide=id.p)
 
@@ -20,7 +22,7 @@ Multiple testing correction and error slides can be found [here](https://docs.go
 
 [Lunch Assignment](https://bxlab.github.io/cmdb-quantbio/assignments/bootcamp/statistical_modeling/assignment/)
 
-<!-- 
+<!--
 
 ## Small Group Assignments for Lunch Assignment
 
