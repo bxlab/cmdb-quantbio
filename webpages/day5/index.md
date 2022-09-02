@@ -22,11 +22,9 @@ Multiple testing correction and error slides can be found [here](https://docs.go
 
 [Lunch Assignment](https://bxlab.github.io/cmdb-quantbio/assignments/bootcamp/statistical_modeling/assignment/)
 
-<!--
+## Small Group Assignments for Lunch Review
 
-## Small Group Assignments for Lunch Assignment
-
-[Small group assignments for discussion of lunch exercises]()
+[Small group assignments for discussion of lunch exercises](https://github.com/bxlab/cmdb-quantbio/blob/main/resources/small_group_assignments/small_group_day5_lunch.md)
 
 ## Afternoon - Review!
 
@@ -34,4 +32,4 @@ Multiple testing correction and error slides can be found [here](https://docs.go
 
 ## Daily Reflection
 
-Please fill out [this google form](https://forms.gle/kPy6BiZDb9SQfSsW7) this evening after class. -->
+Please fill out [this google form](https://forms.gle/kPy6BiZDb9SQfSsW7) this evening after class.
