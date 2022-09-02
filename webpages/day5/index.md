@@ -6,8 +6,9 @@
 
 ## Morning - Statistical Modeling
 
-<!-- Slides can be found [here]()
+Slides can be found [here](https://docs.google.com/presentation/d/1GRB69Vd9T0Rc7USsuP80GVWdpxa5KWKoT_iWX30gOe0/edit#slide=id.p)
 
+<!-- 
 [Zoom recording of lecture]()
 
 ## Lunch Assignment: Linear Regression
