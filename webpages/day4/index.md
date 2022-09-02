@@ -10,9 +10,7 @@ Fill out **[this quick survey](https://forms.gle/RrSWEn1ZAM9P4aSWA)** so that we
 
 [Slides: reproducible research, conda, and git](https://docs.google.com/presentation/d/17WPtDhfMPvVYyd0VJPk0qSuAudoJJbfqZnC9_8vDfn4/edit)
 
-<!--
-[Zoom recording of lecture]()
--->
+[Zoom recording of lecture](https://livejohnshopkins.sharepoint.com/:f:/s/qbb2021/EiQUQ8yP-d9JorwlDkHr5V0B5hRnZk26AIoG4m4GpSXEBw?e=QrnsvT)
 
 ## Lunch Assignment: Research Parasites (aka How to ~~Steal~~ Reuse Other People’s Code)
 
@@ -28,9 +26,7 @@ Fill out **[this quick survey](https://forms.gle/RrSWEn1ZAM9P4aSWA)** so that we
 
 [Scripts used in livecoding](https://github.com/bxlab/cmdb-quantbio/tree/main/assignments/bootcamp/random_simulation_visualization/slides_asynchronous_or_livecoding_resources)
 
-<!--
-[Zoom recording of lecture]()
--->
+[Zoom recording of lecture](https://livejohnshopkins.sharepoint.com/:f:/s/qbb2021/EqzsHdejBTBGhug2nY98ghcBA_37QALc1hF5VFO3riOQlA?e=2yZsvy)
 
 ## Homework Assignment: Visualizing Simulation Results and Power
 
