@@ -1,6 +1,6 @@
 # Bootcamp Day 5
 
-## Small Group Assignments for Review
+## Small Group Assignments for Homework Review
 
 [Group assignments](https://github.com/bxlab/cmdb-quantbio/blob/main/resources/small_group_assignments/small_group_day4_evening.md)
 
