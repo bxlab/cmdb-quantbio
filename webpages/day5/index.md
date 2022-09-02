@@ -14,9 +14,13 @@ Multiple testing correction and error slides can be found [here](https://docs.go
 
 [Zoom recording of lecture]()
 
+-->
+
 ## Lunch Assignment: Linear Regression
 
 [Lunch Assignment](https://bxlab.github.io/cmdb-quantbio/assignments/bootcamp/statistical_modeling/assignment/)
+
+<!-- 
 
 ## Small Group Assignments for Lunch Assignment
 
