@@ -10,13 +10,7 @@ Linear regression slides can be found [here](https://docs.google.com/presentatio
 
 Live-coding script can be found [here](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/bootcamp/statistical_modeling/slides_asynchronous_or_livecoding_resources/penguins.py)
 
-<!--
-
-Multiple testing correction and error slides can be found [here](https://docs.google.com/presentation/d/1epGZMvVK6CY2OLVt4EXsLjt07KY8EFc-09DU16JQskE/edit#slide=id.p)
-
-[Zoom recording of lecture]()
-
--->
+[Zoom recording of lecture](https://livejohnshopkins.sharepoint.com/:f:/s/qbb2021/Es3AxvH7VWxFrAG4Pu-EolQBf9q6I1l-kKkTPxCHycsweQ?e=xHrJgy)
 
 ## Lunch Assignment: Linear Regression
 
