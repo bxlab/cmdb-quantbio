@@ -8,18 +8,17 @@ Due Date: Friday, Sept. 16, 2022 @ 1:00pm ET<br>
 
 ## Assignment Overview
 
-In this assignment, you are given a set of unassembled reads from a mysterious pathogen that contains a
-secret message encoded someplace in the genome. The secret message will be recognizable as a novel insertion of sequence not found in the reference. Your task is to assess the quality of the reads, assemble the genome, identify, and decode the secret message. If all goes well the secret message should decode into a recognizable english text, otherwise doublecheck your coordinates and try again.
+In this assignment, you will first implement a short programming exercise and then perform a genomic analysis from short read data. For the genomic analysis you are given a set of unassembled reads from a mysterious pathogen that contains a secret message encoded someplace in the genome. The secret message will be recognizable as a novel insertion of sequence not found in the reference. Your task is to assemble the genome, then identify and decode the secret message. If all goes well, the secret message should decode into recognizable english text, otherwise double-check your coordinates and try again.
 
 For tips on how to run the tools that you need for this assignment, look in the `Resources` section below.
 
-Finally, keep track of all commands that you use in a text or markdown file. You will need to submit this along with any graphs or images.
+Finally, keep track of all commands that you use in a README markdown file. You will need to submit this along with any graphs or images.
 
 ## Data
 
-The reads and reference genome are in a zipped folder here: `~/cmdb-quantbio/assignments/lab/genome_assembly/extra_data/asm.tgz`. Copy this file to the `answers` directory you made for this assignment.
+The reads and reference genome are in a zipped folder here: `~/cmdb-quantbio/assignments/lab/genome_assembly/extra_data/asm.tar.gz`. Copy this file to the `answers` directory you made for this assignment.
 
-After copying the zipped folder, you'll need to extract it with `tar -zxvf <filename.tgz>`. You should get 7 files:
+After copying the zipped folder, you'll need to extract it with `tar -zxvf <filename.tar.gz>`. You should get 7 files:
 1. dna-decode.py
 2. frag180.1.fq
 3. frag180.2.fq
@@ -28,52 +27,43 @@ After copying the zipped folder, you'll need to extract it with `tar -zxvf <file
 6. README
 7. ref.fa
 
-
 Note we have provided both paired-end and mate-pairs reads (see included README for details).
-Make sure to look at all of the reads for the coverage analysis and kmer analysis, as well as in the assembly.
 
 ## Assignment
 
-#### Question 1. Coverage Analysis
+#### Question 1. Coverage simulator
 
-- Question 1a. How long is the reference genome? [Hint: Try `samtools faidx`]
-- Question 1b. How many reads are provided and how long are they? Make sure to measure each file separately [Hint: Try `FastQC`]
-- Question 1c. How much coverage do you expect to have? [Hint: A little arthmetic]
-- Question 1d. Plot the average quality value across the length of the reads [We want a screenshot from `FastQC`]
+- Question 1.1. How many 100bp reads are needed to sequence a 1Mbp genome to 5x coverage? How many are needed for 15x coverage? 
 
-#### Question 2. Kmer Analysis
+- Question 1.2. Write a program to simulate sequencing 5x coverage of a 1Mbp genome with 100bp reads and plot the histogram of coverage. Note you do not need to actually output the sequences of the reads, you can just randomly sample positions in the genome and record the coverage. You do not need to consider the strand of each read. The start position of each read should have a uniform random probabilty at each possible starting position (1 through 999,901). You can record the coverage in an array of 1M positions. Overlay the histogram with a Poisson distribution with lambda=5
 
-Use `Jellyfish` to count the 21-mers in the reads data. Make sure to use the "-C" flag to count cannonical kmers,
-otherwise your analysis will not correctly account for the fact that your reads come from either strand of DNA.
+- Question 1.3. Using the histogram from Q1.2, how much of the genome has not been sequenced (has 0x coverage)? How well does this match Poisson expectations?
 
-- Question 2a. How many kmers occur exactly 50 times? [Hint: try `jellyfish histo`]
-- Question 2b. What are the top 10 most frequently occurring kmers [Hint: try `jellyfish dump` along with `sort` and `head`]
-- Question 2c. What is the estimated genome size based on the kmer frequencies? [Hint: upload the jellyfish histogram to [GenomeScope](http://genomescope.org) and report the min "Genome Haploid Length" in the "Results" section]
-- Question 2d. How well does the GenomeScope genome size estimate compare to the reference genome? [Hint: In a sentence or two]
+- Question 1.4. Now repeat the analysis with 15x coverage: 1. simulate the appropriate number of reads, 2. make a histogram, 3. overlay a Poisson distribution with lambda=15, 4. compute the number of bases with 0x coverage, and 5. evaluate how well it matches the Poisson expectation.
 
-#### Question 3. De novo assembly
+#### Question 2. De novo assembly
 
-Assemble the reads using `Spades`. Spades will *not* run on Windows you must use a linux or mac environment.
+Assemble the reads using `Spades`. <!---Spades will *not* run on Windows you must use a linux or mac environment.-->
 
-- Question 3a. How many contigs were produced? [Hint: try `grep -c '>' contigs.fasta`]
-- Question 3b. What is the total length of the contigs? [Hint: try `samtools faidx`, plus a short script if necessary]
-- Question 3c. What is the size of your largest contig? [Hint: check `samtools faidx` plus `sort -n`]
-- Question 3d. What is the contig N50 size? [Hint: Write a short script if necessary]
+- Question 2.1. How many contigs were produced? [Hint: try `grep -c '>' contigs.fasta`]
+- Question 2.2. What is the total length of the contigs? [Hint: try `samtools faidx`, plus a short script if necessary]
+- Question 2.3. What is the size of your largest contig? [Hint: check `samtools faidx` plus `sort -n`]
+- Question 2.4. What is the contig N50 size? [Hint: Write a short script if necessary]
 
-#### Question 4. Whole Genome Alignment
+#### Question 3. Whole Genome Alignment
 
 Use `MUMmer` for whole genome alignment.
 
-- Question 4a. What is the average identify of your assembly compared to the reference? [Hint: try `dnadiff`]
-- Question 4b. What is the length of the longest alignment [Hint: try `nucmer` and `show-coords`]
-- Question 4c. How many insertions and deletions are in the assembly? [Hint: try `dnadiff`]
+- Question 3.1. What is the average identify of your assembly compared to the reference? [Hint: try `dnadiff`]
+- Question 3.2. What is the length of the longest alignment [Hint: try `nucmer` and `show-coords`]
+- Question 3.3. How many insertions and deletions are in the assembly? [Hint: try `dnadiff`]
 
-#### Question 5. Decoding the insertion
+#### Question 4. Decoding the insertion
 
-- Question 5a. What is the position of the insertion in your assembly? Provide the corresponding position in the reference. [Hint: try `show-coords`]
-- Question 5b. How long is the novel insertion? [Hint: try `show-coords`]
-- Question 5c. What is the DNA sequence of the encoded message? [Hint: try `samtools faidx` to extract the insertion]
-- Question 5d. What is the secret message? [Hint: Run the provided script `dna-decode.py` to decode the string from 5c.]
+- Question 4.1. What is the position of the insertion in your assembly? Provide the corresponding position in the reference. [Hint: try `show-coords`]
+- Question 4.2. How long is the novel insertion? [Hint: try `show-coords`]
+- Question 4.3. What is the DNA sequence of the encoded message? [Hint: try `samtools faidx` to extract the insertion]
+- Question 4.4. What is the secret message? [Hint: Run the provided script `dna-decode.py` to decode the string from 4.3.]
 
 
 ## Submission
@@ -82,23 +72,6 @@ The solutions to the above questions should be submitted as a markdown or text f
 
 
 ## Resources
-
-#### [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) - Raw read quality assessment
-
-```
-$ fastqc /path/to/reads.fq
-```
-
-#### [Jellyfish](http://www.genome.umd.edu/jellyfish.html) - Fast Kmer Counting
-
-```
-$ jellyfish count -m 21 -C -s 1000000 /path/to/reads*.fq
-$ jellyfish histo mer_counts.jf > reads.histo
-```
-
-#### [GenomeScope](http://www.genomescope.org/) - Analyze Kmer Profile to determine genome size and other properties
-
-GenomeScope is a web-based tool so there is nothing to install. Hooray! Just make sure to use the `-C` when running jellyfish count so that the reads are correctly processed.
 
 ####  [Spades](http://cab.spbu.ru/software/spades/) - Short Read Assembler.
 
