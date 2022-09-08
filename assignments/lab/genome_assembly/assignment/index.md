@@ -43,7 +43,7 @@ Note we have provided both paired-end and mate-pairs reads (see included README 
 
 - **Question 1.3**. Using the histogram from Q1.2, how much of the genome has not been sequenced (has 0x coverage)? How well does this match Poisson expectations?
 
-- **Question 1.4**. Now repeat the analysis with 15x coverage: 1. simulate the appropriate number of reads, 2. make a histogram, 3. overlay a Poisson distribution with lambda=15, 4. compute the number of bases with 0x coverage, and 5. evaluate how well it matches the Poisson expectation.<br>
+- **Question 1.4**. Now repeat the analysis with 15x coverage: 1. simulate the appropriate number of reads, 2. make a histogram, 3. overlay a Poisson distribution with lambda=15, 4. compute the number of bases with 0x coverage, and 5. evaluate how well it matches the Poisson expectation.<br><br>
 
 #### Question 2. De novo assembly
 
@@ -55,7 +55,7 @@ Assemble the reads using `Spades`. <!---Spades will *not* run on Windows you mus
 
 - **Question 2.3**. What is the size of your largest contig? [Hint: check `samtools faidx` plus `sort -n`]
 
-- **Question 2.4**. What is the contig N50 size? [Hint: Write a short script if necessary]<br>
+- **Question 2.4**. What is the contig N50 size? [Hint: Write a short script if necessary]<br><br>
 
 #### Question 3. Whole Genome Alignment
 
@@ -65,7 +65,7 @@ Use `MUMmer` for whole genome alignment.
 
 - **Question 3.2**. What is the length of the longest alignment [Hint: try `nucmer` and `show-coords`]
 
-- **Question 3.3**. How many insertions and deletions are in the assembly? [Hint: try `dnadiff`]<br>
+- **Question 3.3**. How many insertions and deletions are in the assembly? [Hint: try `dnadiff`]<br><br>
 
 #### Question 4. Decoding the insertion
 
