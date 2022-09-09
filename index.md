@@ -63,7 +63,7 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
 
 | Week | Date | Instructor          | Topic                                                          |
 | :--: | :--: | :-----------------: | :------------------------------------------------------------: |
-|  1   | 9/9  | Mike Schatz (Guest) | Genome Assembly                                                |
+|  1   | 9/9  | Mike Schatz (Guest) | [Genome Assembly](webpages/week1/index.html)                   |
 |  2   | 9/16 | Dylan Taylor (Guest)| Alignment                                                      |
 |  3   | 9/23 | Rajiv McCoy         | Variant Calling                                                |
 |  4   | 9/30 | Rajiv McCoy         | GWAS                                                           |

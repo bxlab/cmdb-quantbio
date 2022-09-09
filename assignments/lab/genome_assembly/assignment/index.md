@@ -2,12 +2,6 @@
 Assignment Date: Friday, Sept. 9, 2022 <br>
 Due Date: Friday, Sept. 16, 2022 @ 1:00pm ET<br>
 
-
-## Lecture
-
-**Slides** are available here: `~/cmdb-quantbio/assignments/lab/genome_assembly/slides_asynchronous_or_livecoding_resources/GenomeAssembly.pdf`
-
-
 ## Assignment Overview
 
 In this assignment, you will first implement a short programming exercise and then perform a genomic analysis from short read data. For the genomic analysis you are given a set of unassembled reads from a mysterious pathogen that contains a secret message encoded someplace in the genome. The secret message will be recognizable as a novel insertion of sequence not found in the reference. Your task is to assemble the genome, then identify and decode the secret message. If all goes well, the secret message should decode into recognizable english text, otherwise double-check your coordinates and try again.
@@ -37,7 +31,7 @@ Note we have provided both paired-end and mate-pairs reads (see included README 
 
 #### Question 1. Coverage simulator
 
-- **Question 1.1**. How many 100bp reads are needed to sequence a 1Mbp genome to 5x coverage? How many are needed for 15x coverage? 
+- **Question 1.1**. How many 100bp reads are needed to sequence a 1Mbp genome to 5x coverage? How many are needed for 15x coverage?
 
 - **Question 1.2**. Write a program to simulate sequencing 5x coverage of a 1Mbp genome with 100bp reads and plot the histogram of coverage. Note you do not need to actually output the sequences of the reads, you can just randomly sample positions in the genome and record the coverage. You do not need to consider the strand of each read. The start position of each read should have a uniform random probabilty at each possible starting position (1 through 999,901). You can record the coverage in an array of 1M positions. Overlay the histogram with a Poisson distribution with lambda=5
 
@@ -47,7 +41,7 @@ Note we have provided both paired-end and mate-pairs reads (see included README 
 
 #### Question 2. De novo assembly
 
-Assemble the reads using `Spades`. <!---Spades will *not* run on Windows you must use a linux or mac environment.-->
+Using the data described in the [Data section above](#data), assemble the reads using `Spades`. <!---Spades will *not* run on Windows you must use a linux or mac environment.-->
 
 - **Question 2.1**. How many contigs were produced? [Hint: try `grep -c '>' contigs.fasta`]
 
@@ -85,7 +79,7 @@ The solutions to the above questions should be submitted to Github, in your `wee
 2. A README markdown file containing the commands you ran and the answers for each question (don't copy your script for question 1 into the README). For each question, label each subproblem, and include both the exact commands you used, as well as the actual answer.
 3. The two histograms from questions 1.2 and 1.4.
 
-Make sure you **do not** submit any of the files from `asm.tar.gz`. 
+Make sure you **do not** submit any of the files from `asm.tar.gz`.
 
 
 ## Resources
