@@ -13,9 +13,9 @@ Create a directory called `week1-homework` in your `qbb2022-asnwers` directory. 
 
 ## Data
 
-The reads and reference genome are in a zipped folder here: `~/cmdb-quantbio/assignments/lab/genome_assembly/extra_data/asm.tar.gz`. Copy this file to the `week1-homework` directory you made for this assignment.
+The reads and reference genome are in a zipped folder here: `~/cmdb-quantbio/assignments/lab/genome_assembly/extra_data/asm.tgz`. Copy this file to the `week1-homework` directory you made for this assignment.
 
-After copying the zipped folder, you'll need to extract it with `tar -zxvf <filename.tar.gz>`. You should get 7 files:
+After copying the zipped folder, you'll need to extract it with `tar -zxvf <filename.tgz>`. You should get 7 files:
 1. dna-decode.py
 2. frag180.1.fq
 3. frag180.2.fq
