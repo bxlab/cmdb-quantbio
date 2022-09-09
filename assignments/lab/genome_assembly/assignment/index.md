@@ -37,11 +37,12 @@ Note we have provided both paired-end and mate-pairs reads (see included README 
 
 ***
 <details><summary> HINTS: </summary>
-
-* To simulate reads, you can think about randomly sampling positions in the genome using a uniform distribution. Specifically, you can sample just the start positions of the reads. (For a genome of length 1Mbp, and reads of length 100, the possible start positions are 0 through 999,900). We would recommend taking a look at `numpy.random.randint`.<br />
-* How many reads do you want to simulate? Consider your answer to Question 1.1<br />
-* Remember that you want to output an array where you’ll be storing the coverage at each base in the genome. With your randomly generated start positions, for each start position you’ll want to record that a read covers it and some number of other positions (which other positions?). <br />
-* For the poisson distribution, you’ll need to find the probability of getting a certain coverage *given an expected average coverage (lambda)*. This is called the probability mass function (PMF) of the poisson distribution. Feel free to code this yourself using the appropriate equation, or you can take a look at `scipy.stats.poisson.pmf`. Note that this will give you the *probability* of observing each coverage. What do we need to do to transform these probabilities into a frequency count comparable to those in our histogram?
+<ul>
+  <li> To simulate reads, you can think about randomly sampling positions in the genome using a uniform distribution. Specifically, you can sample just the start positions of the reads. (For a genome of length 1Mbp, and reads of length 100, the possible start positions are 0 through 999,900). We would recommend taking a look at `numpy.random.randint`.</li>
+  <li> How many reads do you want to simulate? Consider your answer to Question 1.1</li>
+  <li> Remember that you want to output an array where you’ll be storing the coverage at each base in the genome. With your randomly generated start positions, for each start position you’ll want to record that a read covers it and some number of other positions (which other positions?). </li>
+  <li> For the poisson distribution, you’ll need to find the probability of getting a certain coverage *given an expected average coverage (lambda)*. This is called the probability mass function (PMF) of the poisson distribution. Feel free to code this yourself using the appropriate equation, or you can take a look at `scipy.stats.poisson.pmf`. Note that this will give you the *probability* of observing each coverage. What do we need to do to transform these probabilities into a frequency count comparable to those in our histogram?</li>
+</ul>
 
 </details>
 ***
@@ -52,8 +53,10 @@ Note we have provided both paired-end and mate-pairs reads (see included README 
 ***
 <details><summary> HINTS: </summary>
 
-* Can you find the indices in the coverage array that are equal to 0? How would you count how many of these indices there are?
-* You can use your output from running `scipy.stats.poisson.pmf` to find the probability of observing a coverage of 0 and then transform this probability into an expected frequency count
+<ul>
+  <li>Can you find the indices in the coverage array that are equal to 0? How would you count how many of these indices there are?</li>
+  <li>You can use your output from running `scipy.stats.poisson.pmf` to find the probability of observing a coverage of 0 and then transform this probability into an expected frequency count</li>
+</ul>
 
 </details>
 ***
