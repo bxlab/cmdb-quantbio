@@ -1,5 +1,5 @@
 # Bootcamp Day 3
-<!--
+
 ## Install git-lfs
 
 * Visit [this website](https://git-lfs.github.com/)
@@ -9,7 +9,6 @@
 * Then type `sudo ./install.sh` and press <return>
 * Enter your laptop's password
 * Finally, verify that the install was successful by typing `git lfs install` and pressing <return>. If you don't see "> Git LFS initialized.", please alert a TA or instructor.
--->
 
 ## Small Group Assignments for Homework Discussion
 
