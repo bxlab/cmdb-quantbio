@@ -2,7 +2,7 @@
 
 ## Lecture -- Mike Schatz (Guest)
 
-Recording of lecture -- will be linked soon
+[Recording of lecture](https://livejohnshopkins.sharepoint.com/:v:/s/qbb2021/EX4LcpDQNPtMkIorUoTI3r8Bh0JG1NmNYXfV_UwwAzpVZw?e=qO3A0G)
 
 [Slides from lecture](https://media.githubusercontent.com/media/bxlab/cmdb-quantbio/main/assignments/lab/genome_assembly/slides_asynchronous_or_livecoding_resources/GenomeAssembly.pdf)
 
