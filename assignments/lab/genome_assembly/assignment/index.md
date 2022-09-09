@@ -33,11 +33,37 @@ Note we have provided both paired-end and mate-pairs reads (see included README 
 
 - **Question 1.1**. How many 100bp reads are needed to sequence a 1Mbp genome to 5x coverage? How many are needed for 15x coverage?
 
-- **Question 1.2**. Write a program to simulate sequencing 5x coverage of a 1Mbp genome with 100bp reads and plot the histogram of coverage. Note you do not need to actually output the sequences of the reads, you can just randomly sample positions in the genome and record the coverage. You do not need to consider the strand of each read. The start position of each read should have a uniform random probabilty at each possible starting position (1 through 999,901). You can record the coverage in an array of 1M positions. Overlay the histogram with a Poisson distribution with lambda=5
+- **Question 1.2**. Write a program (in Python) to **simulate sequencing 5x coverage of a 1Mbp genome with 100bp reads**.  The output of this simulation should be an array of length 1 million, where each element in the array is the coverage at that base (i.e. a count of the number of reads that overlapped that base’s position). You do not actually need to consider the sequence of the genome or the strand of the reads. Using this array, plot a histogram of the coverage. Then, overlay the histogram with a Poisson distribution with lambda=5.
 
-- **Question 1.3**. Using the histogram from Q1.2, how much of the genome has not been sequenced (has 0x coverage)? How well does this match Poisson expectations?
+***
+<details><summary> HINTS: </summary>
 
-- **Question 1.4**. Now repeat the analysis with 15x coverage: 1. simulate the appropriate number of reads, 2. make a histogram, 3. overlay a Poisson distribution with lambda=15, 4. compute the number of bases with 0x coverage, and 5. evaluate how well it matches the Poisson expectation.<br><br>
+* To simulate reads, you can think about randomly sampling positions in the genome using a uniform distribution. Specifically, you can sample just the start positions of the reads. (For a genome of length 1Mbp, and reads of length 100, the possible start positions are 0 through 999,900). We would recommend taking a look at `numpy.random.randint`.<br />
+* How many reads do you want to simulate? Consider your answer to Question 1.1<br />
+* Remember that you want to output an array where you’ll be storing the coverage at each base in the genome. With your randomly generated start positions, for each start position you’ll want to record that a read covers it and some number of other positions (which other positions?). <br />
+* For the poisson distribution, you’ll need to find the probability of getting a certain coverage *given an expected average coverage (lambda)*. This is called the probability mass function (PMF) of the poisson distribution. Feel free to code this yourself using the appropriate equation, or you can take a look at `scipy.stats.poisson.pmf`. Note that this will give you the *probability* of observing each coverage. What do we need to do to transform these probabilities into a frequency count comparable to those in our histogram?
+
+</details>
+***
+
+
+- **Question 1.3**. Using your output array of coverages from Q1.2, how much of the genome (e.g., how many base pairs) has not been sequenced (has 0x coverage)? How well does this match Poisson expectations?
+
+***
+<details><summary> HINTS: </summary>
+
+* Can you find the indices in the coverage array that are equal to 0? How would you count how many of these indices there are?
+* You can use your output from running `scipy.stats.poisson.pmf` to find the probability of observing a coverage of 0 and then transform this probability into an expected frequency count
+
+</details>
+***
+
+- **Question 1.4**. Now repeat the analysis with 15x coverage: <br />
+1. simulate the appropriate number of reads and compute coverage,<br />
+2. make a histogram, <br />
+3. overlay a Poisson distribution with lambda=15,<br />
+4. compute the number of bases with 0x coverage, and<br />
+5. evaluate how well it matches the Poisson expectation.<br><br>
 
 #### Question 2. De novo assembly
 
