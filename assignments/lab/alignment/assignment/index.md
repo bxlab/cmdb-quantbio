@@ -52,7 +52,6 @@ input_sequences = readFASTA(open(<fasta_file>))
 
 seq1_id, sequence1 = input_sequences[0]
 seq2_id, sequence2 = input_sequences[1]
-
 ```
 
 For the scoring matrix, it probably makes sense to store it in a numpy array
