@@ -157,3 +157,29 @@ for i in range(1, len(sequence1)+1): # loop through rows
 #====================#
 
 print(F_matrix)
+
+
+#=========================#
+# A primer on while loops #
+#=========================#
+
+# While loops are a useful tool in Python (and most other languages)
+# that allows you to continue doing a process until some condition
+# stops being met. If we want, we can have them mimic a for loop:
+
+# Let's make a for loop that prints out the integers from 0 to 10
+# (non-inclusive)
+for i in range(0, 10, 1):
+	print(i)
+
+# We can do the exact same thing with a while loop
+i = 0
+while i < 10:
+	print(i)
+	i += 1 # increment i
+
+# While loops can also let us easily go backwards
+i = 9
+while i >= 0:
+	print(i)
+	i -= 1 # decrement i
