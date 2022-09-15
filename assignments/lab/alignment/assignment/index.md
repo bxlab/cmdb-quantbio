@@ -13,11 +13,11 @@ Due Date: Friday, Sept. 23, 2022 @ 1:00pm ET <br>
 
 ## Assignment Overview
 
-The goal of today's lab is to implement the Needleman-Wunsch algorithm we discussed during class in a Python script. You will then use your implementation to align two DNA sequences, and then to align two protein sequences. Given our discussion regarding chromosome capture in previous lectures, you'll be aligning the CTCF gene between human and mouse genomes. Specifically, you will align both CTCF nucleotide and amino acid sequences from [GENCODE](https://www.gencodegenes.org/) (GENCODE version 38 for human and GENCODE version M27 for mouse).
+The goal of today's lab is to implement the Needleman-Wunsch algorithm we discussed during class in a Python script. You will then use your implementation to align two DNA sequences, and then to align two protein sequences. For the assignment, you'll be aligning the CTCF gene between human and mouse genomes. Specifically, you will align both CTCF nucleotide and amino acid sequences from [GENCODE](https://www.gencodegenes.org/) (GENCODE version 38 for human and GENCODE version M27 for mouse).
 
 ## Data
 
-Everything you need for this assignment is in a zipped folder here: `~/cmdb-quantbio/assignments/lab/alignment/extra_data/needleman-wunsch.tar.gz`. Copy this file to the `answers` directory you made for this assignment.
+All the data you need for this assignment is in a zipped folder here: `~/cmdb-quantbio/assignments/lab/alignment/extra_data/needleman-wunsch.tar.gz`. Copy this file to the `answers` directory you made for this assignment.
 
 After copying the zipped folder, you'll need to extract it with `tar -zxvf <filename.tar.gz>`. You should get 4 files:
 1. CTCF_38_M27_AA.faa
@@ -25,6 +25,7 @@ After copying the zipped folder, you'll need to extract it with `tar -zxvf <file
 3. BLOSUM62.txt
 4. HOXD70.txt
 
+You'll be working FASTA files in today's lab. This is the standard file format used to store nucleotide and amino acid sequences, and there's a good chance you'll encounter this format again in your Ph.D. (read more [here](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp)). Unfortunately, reading these files into Python in a meaningful way is not a trivial task, so we've put together some code to make this easier. Copy the `~/cmdb-quantbio/resources/code/fasta.py` file into your current assignment directory. In your python script for this assignment, you can import the `readFASTA`  function using `from fasta import readFASTA`. If you're interested in how this function works, you're certainly encouraged to take a look at it in the `fasta.py` file.
 
 ## Assignment
 
@@ -40,11 +41,19 @@ You'll run your script twice:
 1. Align the CTCF DNA transcript sequences from human and mouse using the [HOXD70](https://pubmed.ncbi.nlm.nih.gov/11928468/) scoring matrix and a gap penalty of **300**.
 2. Align the CTCF amino acid sequences from human and mouse using the [BLOSUM62](https://www.pnas.org/content/89/22/10915) scoring matrix and a gap penalty of **10**.
 
-**NOTE**: The DNA sequences are fairly long, and as such the DNA alignment may take a few minutes to run. We recommend testing your code with the protein alignment first, and then running the DNA alignment when you're confident it's working.<br><br>
+**NOTE**: The DNA sequences are fairly long, and as such the DNA alignment may take a few minutes to run. We recommend testing your code with the protein alignment first (or even just a couple of small test sequences), and then running the DNA alignment when you're confident it's working.<br><br>
 
 #### Step 1: Read in your parameters
 
-Use `sys.argv` to read in the parameters you need to run your script from the command line. When reading in the fasta file, it will probably be useful to use the `FASTAReader` function you made during Bootcamp. Either `import` that function, or just copy it into your script.
+Use `sys.argv` to read in the parameters you need to run your script from the command line. When reading in the fasta file, you can use `readFASTA` to store the sequence ids and sequences as follows:
+
+```
+input_sequences = readFASTA(open(<fasta_file>))
+
+seq1_id, sequence1 = input_sequences[0]
+seq2_id, sequence2 = input_sequences[1]
+
+```
 
 For the scoring matrix, it probably makes sense to store it in a numpy array
 
@@ -66,7 +75,7 @@ Use the traceback matrix to find the optimal alignment between the two sequences
 
 #### Step 5: Write the alignment to the output
 
-Write the alignment to the output file specified in the command line, and print out the additional information requested.
+Write the alignment to the output file specified in the command line, and print out the additional information requested (the number of gaps in each sequence and the score of the  alignment).
 
 
 ## Submission
