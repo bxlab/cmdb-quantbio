@@ -54,19 +54,19 @@ seq1_id, sequence1 = input_sequences[0]
 seq2_id, sequence2 = input_sequences[1]
 ```
 
-For the scoring matrix, it probably makes sense to store it in a numpy array.<br>
+For the scoring matrix, it probably makes sense to store it in a numpy array.<br><br>
 
 #### Step 2: Initializing matrices
 
 You'll need two matrices to carry out the Needleman-Wunsch algorithm: an F-matrix that stores the score of each "optimal" sub-alignment (this is the one we created in class), as well as a traceback matrix that allows you to determine the optimal global alignment (as a path through this matrix). Initialize two empty matrices for these purposes.
 
-*HINT*: With sequence 1 of length *m* and sequence 2 of length *n*, both matrices should be of size (*m+1*)×(*n+1*), to account for potential leading gaps in either sequence.<br>
+*HINT*: With sequence 1 of length *m* and sequence 2 of length *n*, both matrices should be of size (*m+1*)×(*n+1*), to account for potential leading gaps in either sequence.<br><br>
 
 #### Step 3: Populating the matrices
 
 Follow the steps of the needleman-wunsch algorithm discussed in class to populate the two matrices.
 
-When generating the traceback matrix: if at any point there is a tie between aligning, a gap in sequence 1, or a gap in sequence 2, resolve the tie in the order (aligning -> gap in sequence 1 -> gap in sequence 2).<br>
+When generating the traceback matrix: if at any point there is a tie between aligning, a gap in sequence 1, or a gap in sequence 2, resolve the tie in the order (aligning -> gap in sequence 1 -> gap in sequence 2).<br><br>
 
 #### Step 4: Find the optimal alignment
 
@@ -77,7 +77,7 @@ Sequence 1 alignment: '--TACGA-TTA'
 Sequence 2 alignment: 'ATTA--ACTTA'
 ```
 
-*HINT*: A `while` loop will probably be helpful for this part.<br>
+*HINT*: A `while` loop will probably be helpful for this part.<br><br>
 
 #### Step 5: Write the alignment to the output
 
