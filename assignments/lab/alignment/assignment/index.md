@@ -58,7 +58,7 @@ For the scoring matrix, it probably makes sense to store it in a numpy array
 
 #### Step 2: Initializing matrices
 
-You'll need two matrices to carry out the Needleman-Wunsch algorithm: an F-matrix that stores the score of each "optimal" sub-alignment, and a traceback matrix that allows you to determine the optimal global alignment (as a path through this matrix). Initialize two empty matrices for these purposes.
+You'll need two matrices to carry out the Needleman-Wunsch algorithm: an F-matrix that stores the score of each "optimal" sub-alignment (this is the one we created in class), as well as a traceback matrix that allows you to determine the optimal global alignment (as a path through this matrix). Initialize two empty matrices for these purposes.
 
 *Hint*: With sequence 1 of length *m* and sequence 2 of length *n*, both matrices should be of size (*m+1*)×(*n+1*), to account for potential leading gaps in either sequence.
 
@@ -70,7 +70,14 @@ When generating the traceback matrix: if at any point there is a tie between ali
 
 #### Step 4: Find the optimal alignment
 
-Use the traceback matrix to find the optimal alignment between the two sequences. Start at the bottom right corner and follow a path backwards through the traceback matrix until you reach the top left of the matrix. You should end up with two strings of the same length, one for each sequence. Gaps in the sequences should be denoted with a hyphen (`-`).
+Use the traceback matrix to find the optimal alignment between the two sequences. Start at the bottom right corner and follow a path backwards through the traceback matrix until you reach the top left of the matrix, building the alignment as you go. You should end up with two strings of the same length, one for each sequence. Gaps in the sequences should be denoted with a hyphen (`-`). For example, if your input sequences were `TACGATTA` and `ATTAACTTA` your final alignment might look something like:
+
+```
+Sequence 1 alignment: '--TACGA-TTA'
+Sequence 2 alignment: 'ATTA--ACTTA'
+```
+
+*HINT*: A `while` loop will probably be helpful for this part.
 
 #### Step 5: Write the alignment to the output
 
