@@ -8,12 +8,12 @@ Due Date: Friday, Sept. 23, 2022 @ 1:00pm ET <br>
 
 **Blank Live-coding script** is available here: `~/cmdb-quantbio/assignments/lab/alignment/slides_asynchronous_or_livecoding_resources/needleman-wunsch_livecoding_empty.py`
 
-**Master Live-coding script** is available here: `~/cmdb-quantbio/assignments/lab/alignment/slides_asynchronous_or_livecoding_resources/needleman-wunsch_livecoding_master.py`
+**Master Live-coding script** is available here: `~/cmdb-quantbio/assignments/lab/alignment/slides_asynchronous_or_livecoding_resources/needleman-wunsch_livecoding_master.py`<br><br>
 
 
 ## Assignment Overview
 
-The goal of today's lab is to implement the Needleman-Wunsch algorithm we discussed during class in a Python script. You will then use your implementation to align two DNA sequences, and then to align two protein sequences. For the assignment, you'll be aligning the CTCF gene between human and mouse genomes. Specifically, you will align both CTCF nucleotide and amino acid sequences from [GENCODE](https://www.gencodegenes.org/) (GENCODE version 38 for human and GENCODE version M27 for mouse).
+The goal of today's lab is to implement the Needleman-Wunsch algorithm we discussed during class in a Python script. You will then use your implementation to align two DNA sequences, and then to align two protein sequences. For the assignment, you'll be aligning the CTCF gene between human and mouse genomes. Specifically, you will align both CTCF nucleotide and amino acid sequences from [GENCODE](https://www.gencodegenes.org/) (GENCODE version 38 for human and GENCODE version M27 for mouse).<br><br>
 
 ## Data
 
@@ -25,7 +25,7 @@ After copying the zipped folder, you'll need to extract it with `tar -zxvf <file
 3. BLOSUM62.txt
 4. HOXD70.txt
 
-You'll be working FASTA files in today's lab. This is the standard file format used to store nucleotide and amino acid sequences, and there's a good chance you'll encounter this format again in your Ph.D. (read more [here](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp)). Unfortunately, reading these files into Python in a meaningful way is not a trivial task, so we've put together some code to make this easier. Copy the `~/cmdb-quantbio/resources/code/fasta.py` file into your current assignment directory. In your python script for this assignment, you can import the `readFASTA`  function using `from fasta import readFASTA`. If you're interested in how this function works, you're certainly encouraged to take a look at it in the `fasta.py` file.
+You'll be working FASTA files in today's lab. This is the standard file format used to store nucleotide and amino acid sequences, and there's a good chance you'll encounter this format again in your Ph.D. (read more [here](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp)). Unfortunately, reading these files into Python in a meaningful way is not a trivial task, so we've put together some code to make this easier. Copy the `~/cmdb-quantbio/resources/code/fasta.py` file into your current assignment directory. In your python script for this assignment, you can import the `readFASTA`  function using `from fasta import readFASTA`. If you're interested in how this function works, you're certainly encouraged to take a look at it in the `fasta.py` file.<br><br>
 
 ## Assignment
 
@@ -81,7 +81,7 @@ Sequence 2 alignment: 'ATTA--ACTTA'
 
 #### Step 5: Write the alignment to the output
 
-Write the alignment to the output file specified in the command line, and print out the additional information requested (the number of gaps in each sequence and the score of the  alignment).
+Write the alignment to the output file specified in the command line, and print out the additional information requested (the number of gaps in each sequence and the score of the  alignment).<br><br>
 
 
 ## Submission
@@ -90,7 +90,7 @@ For this assignment, you should submit four things:
 1. Your Needleman-Wunsch Python Script
 2. A text file containing your DNA sequence alignment
 3. A text file containing your amino acid sequence alignment
-4. A markdown or text file detailing the number of gaps in each sequence (including leading and trailing gaps) and alignment score for both of the above alignments
+4. A markdown or text file detailing the number of gaps in each sequence (including leading and trailing gaps) and alignment score for both of the above alignments<br><br>
 
 ## Just for fun
 
