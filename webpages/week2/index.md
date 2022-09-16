@@ -2,6 +2,8 @@
 
 ## Lecture -- Dylan Taylor (Guest)
 
+[Recording of lecture](https://livejohnshopkins.sharepoint.com/:v:/s/qbb2021/EWdkrjRs655DsICem-VdJtQB-GSznegima47-rW06O4z9w?e=YFNl9P)
+
 [Slides from lecture](https://docs.google.com/presentation/d/1IRm-2vsaJLWN2YV0us_UHHwVVDEfrvXu8zW-9zc0Jec/edit?usp=sharing)
 
 ## Live-coding
