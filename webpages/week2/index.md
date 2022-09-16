@@ -8,7 +8,7 @@
 
 Before you copy the live-coding scripts into your homework directory, navigate to `~/cmdb-quantbio/` and do a `git pull`. After that's finished, you can copy the scripts into your homework directory. Do NOT edit the files in `~/cmdb-quantbio/`. Copy them into `qbb2022-answers/day2-homework/` and work with the copies.
 
-Live-coding blank script: `~/cmdb-quantbio/assignments/lab/alignment/slides_asynchronous_or_livecoding_resources/needleman-wunsch_livecoding_empty.py`
+Live-coding blank script: `~/cmdb-quantbio/assignments/lab/alignment/slides_asynchronous_or_livecoding_resources/needleman-wunsch_livecoding_empty.py` <br /><br />
 Live-coding master script: `~/cmdb-quantbio/assignments/lab/alignment/slides_asynchronous_or_livecoding_resources/needleman-wunsch_livecoding_master.py`
 
 ## Homework Assignment
