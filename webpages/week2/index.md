@@ -2,6 +2,15 @@
 
 ## Lecture -- Dylan Taylor (Guest)
 
+[Slides from lecture](https://docs.google.com/presentation/d/1IRm-2vsaJLWN2YV0us_UHHwVVDEfrvXu8zW-9zc0Jec/edit?usp=sharing)
+
+## Live-coding
+
+Before you copy the live-coding scripts into your homework directory, navigate to `~/cmdb-quantbio/` and do a `git pull`. After that's finished, you can copy the scripts into your homework directory. Do NOT edit the files in `~/cmdb-quantbio/`. Copy them into `qbb2022-answers/day2-homework/` and work with the copies.
+
+Live-coding blank script: `~/cmdb-quantbio/assignments/lab/alignment/slides_asynchronous_or_livecoding_resources/needleman-wunsch_livecoding_empty.py`
+Live-coding master script: `~/cmdb-quantbio/assignments/lab/alignment/slides_asynchronous_or_livecoding_resources/needleman-wunsch_livecoding_master.py`
+
 ## Applied Paper Example
 
 [Check out this paper by GPP student Katherine Huffer where they compare TRP channel proteins through structure-based and sequence-based alignment methods](https://pubmed.ncbi.nlm.nih.gov/32804077/)
