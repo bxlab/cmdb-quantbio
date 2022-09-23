@@ -18,7 +18,7 @@ The following zip file contains ten sets of single-end Illumina sequencing reads
 /Users/cmdb/cmdb-quantbio/assignments/lab/variant_calling/extra_data/BYxRM.tar.gz
 ```
 
-Make a working copy of this file within your weekly homework directory and then unzip the file using the following command.
+Make a working copy of this file within your weekly homework directory. Then, in your homework directory, unzip the copied file using the following command.
 
 ```
 tar -xvzf BYxRM.tar.gz
