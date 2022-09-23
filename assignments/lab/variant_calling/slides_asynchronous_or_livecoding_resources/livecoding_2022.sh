@@ -10,7 +10,7 @@ do
 	-R "@RG\tID:${SAMPLE}\tSM:${SAMPLE}" \
 	-t 4 \
 	-o ${SAMPLE}.sam \
-	c_elegans.PRJNA13758.WS283.genomic.fa.gz ${SAMPLE}_1.fastq.gz ${SAMPLE}_2.fastq.gz
+	c_elegans.PRJNA13758.WS283.genomic.fa.gz ${SAMPLE}_1.subset.fastq.gz ${SAMPLE}_2.subset.fastq.gz
 done
 
 for SAMPLE in SRR16356854 SRR16356855 SRR16356856
