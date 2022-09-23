@@ -4,9 +4,9 @@
 
 Recording of lecture
 
-Slides
+[Slides](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/lab/variant_calling/slides_asynchronous_or_livecoding_resources/20220923_qblab_variant_calling.pptx?raw=true)
 
-Interactive coding scripts
+[Interactive coding scripts](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/lab/variant_calling/slides_asynchronous_or_livecoding_resources/livecoding_2022.sh)
 
 ## Homework Assignment
 
