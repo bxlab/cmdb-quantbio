@@ -2,9 +2,15 @@
 
 ## Lecture -- Rajiv McCoy
 
+Recording of lecture
+
+Slides
+
+Interactive coding scripts
 
 ## Homework Assignment
 
+[Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/variant_calling/assignment/)
 
 ## Applied Paper Example
 
