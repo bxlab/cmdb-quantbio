@@ -2,7 +2,7 @@
 Assignment Date: Friday, Sept. 16, 2022 <br>
 Due Date: Friday, Sept. 23, 2022 @ 1:00pm ET <br>
 
-## Lecture and Live
+## Lecture and Live-Coding
 
 **Slides** are available here: [Lecture slides](https://docs.google.com/presentation/d/1IRm-2vsaJLWN2YV0us_UHHwVVDEfrvXu8zW-9zc0Jec/edit?usp=sharing)
 
