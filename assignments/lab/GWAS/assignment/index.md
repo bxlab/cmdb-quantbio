@@ -37,7 +37,7 @@ You shouldn't be pushing any of these files to your remote repo, so update your 
 
 1. Create a `README.md` file where you'll record all of the commands you used for this assignment.
 2. Using `plink`, perform PCA on the genotypes of the cell lines. **Output at least the top 10 principal components.** Then, visualize genetic relatedness between the cell lines by plotting the first two components. You'll need to submit this figure, as well as the commands you used to generate the principal components in your `README.md`.
-3. Visualize the allele frequency spectrum by plotting a histogram of allele frequencies. You'll need to submit this figure, as well as the commands you used to generate the AFs in your `READMME.md`.
+3. Visualize the allele frequency spectrum by plotting a histogram of allele frequencies. You'll need to submit this figure, as well as the commands you used to generate the AFs in your `README.md`.
   - The vcf file we're using does not have an `INFO` field, so you'll need to calculate AF yourself. You can do this in Python, but `plink` can perform this calculation as well, which may be easier. Your choice.
 4. Using `plink`, perform quantitative association testing for each phenotype. Use the top 10 principal components (eigenvectors) as covariates in your analysis, to adjust for non-independence due to relatedness. Record the commands you used in your `README.md`
   - Be sure to use the `--allow-no-sex` option
