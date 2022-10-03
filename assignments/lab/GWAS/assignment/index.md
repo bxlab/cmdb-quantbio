@@ -12,7 +12,7 @@ Slides are available here: [Lecture Slides](https://github.com/bxlab/cmdb-quantb
 
 One of the central goals of human genetics is clarifying the relationship between genotypes and phenotypes. Genome-wide association studies (GWAS) emerged around 20 years ago as a useful approach for discovering genetic variation that underlies variation in human traits. At their core, GWAS involve fitting linear models to test for relationships between polymorphisms (often SNPs) and phenotypes using data from large samples of individuals.
 
-Genotypes of nearby SNPs are correlated--a phenomenon termed "linkage disequilibrium" or "LD". This is both a blessing and a curse for GWAS. On one hand, LD means that we need not genotype every SNP to discover associations. We merely need to genotype "tag SNPs" that segregate in LD with variants that causally influence the phenotype. On the other hand, this also means that even when we find a signficant association, it is often challenging to disentangle the causal gene and/or variant that drives the association.
+Genotypes of nearby SNPs are correlated--a phenomenon termed "linkage disequilibrium" or "LD". This is both a blessing and a curse for GWAS. On one hand, LD means that we need not genotype every SNP to discover associations. We merely need to genotype "tag SNPs" that segregate in LD with variants that causally influence the phenotype. On the other hand, this also means that even when we find a signficant association, it is often challenging to disentangle the causal gene and/or variant that drives the association..
 
 ## Assignment Overview
 
@@ -40,7 +40,7 @@ You shouldn't be pushing any of these files to your remote repo, so update your 
 <li> Using <code>plink</code> perform PCA on the genotypes of the cell lines. <b>Output at least the top 10 principal components.</b> Then, visualize genetic relatedness between the cell lines by plotting the first two components. You'll need to submit this figure, as well as the commands you used to generate the principal components in your <code>README.md</code>.
 <li>Visualize the allele frequency spectrum by plotting a histogram of allele frequencies. You'll need to submit this figure, as well as the commands you used to generate the AFs in your <code>README.md</code>.
   <ul style="list-style-type:'- '">
-    <li>The vcf file we're using does not have an `INFO` field, so you'll need to calculate AF yourself. You can do this in Python, but <code>plink</code> can perform this calculation as well, which may be easier. Your choice.
+    <li>The vcf file we're using does not have an `INFO` field, so you'll need to calculate AF yourself. You can do this in Python, but <code>plink</code> can perform this calculation as well, which may be easier. Your choice.</li>
   </ul>
 <li> Using <code>plink</code>, perform quantitative association testing for each phenotype. Use the top 10 principal components (eigenvectors) as covariates in your analysis, to adjust for non-independence due to relatedness. Record the commands you used in your <code>README.md</code>.
   <ul style="list-style-type:'- '">
