@@ -35,21 +35,35 @@ You shouldn't be pushing any of these files to your remote repo, so update your 
 
 ## Assignment
 
-1. Create a `README.md` file where you'll record all of the commands you used for this assignment.
+<ol>
+<li> Create a <code>README.md</code> file where you'll record all of the commands you used for this assignment.
+<li> Using <code>plink</code> perform PCA on the genotypes of the cell lines. <b>Output at least the top 10 principal components.</b> Then, visualize genetic relatedness between the cell lines by plotting the first two components. You'll need to submit this figure, as well as the commands you used to generate the principal components in your <code>README.md</code>.
+<li>Visualize the allele frequency spectrum by plotting a histogram of allele frequencies. You'll need to submit this figure, as well as the commands you used to generate the AFs in your <code>README.md</code>.
+    <ul style="list-style-type:'- '"><li>The vcf file we're using does not have an `INFO` field, so you'll need to calculate AF yourself. You can do this in Python, but <code>plink</code> can perform this calculation as well, which may be easier. Your choice.</ul>
+<li> Using <code>plink</code>, perform quantitative association testing for each phenotype. Use the top 10 principal components (eigenvectors) as covariates in your analysis, to adjust for non-independence due to relatedness. Record the commands you used in your <code>README.md</code>.
+    <ul style="list-style-type:'- '">
+    <li> Be sure to use the <code>--allow-no-sex</code> option
+    <li> You may find this portion of the <code>plink</code> <a href="https://zzz.bwh.harvard.edu/plink/anal.shtml">documentation</a> helpful  for performing association testing on each of the phenotypes.
+    <li>
+    <details><summary> HINT: </summary>
+    <code>plink --vcf genotypes.vcf --linear --pheno &lt;phenotype.txt&gt; --covar &lt;pca.eigenvec&gt; --allow-no-sex --out &lt;phenotype_gwas_results&gt;</code>
+    </details>
+    </ul>
+<li> For each phenotype, produce a Manhattan plot. In the Manhattan plot, highlight SNPs with p-values less than 10<sup>-5</sup> in a different color. You'll need to submit this figure.
+<li> Choose one of the traits for which you performed GWAS. For the top associated SNP, visualize the effect size by creating a boxplot of the phenotype stratified by genotype.
+<li> For the top loci associated with each of the phenotypes, use the <a href="http://genome.ucsc.edu/cgi-bin/hgGateway">UCSC Genome Browser</a> to investigate the potential causal genes in the region. Note that the reference genome build being used here is hg18. (How could you figure this out if you didn't know?). Summarize your results in your <code>README.md</code>.
+</ol>
+
+<!-- 1. Create a `README.md` file where you'll record all of the commands you used for this assignment.
 2. Using `plink`, perform PCA on the genotypes of the cell lines. **Output at least the top 10 principal components.** Then, visualize genetic relatedness between the cell lines by plotting the first two components. You'll need to submit this figure, as well as the commands you used to generate the principal components in your `README.md`.
 3. Visualize the allele frequency spectrum by plotting a histogram of allele frequencies. You'll need to submit this figure, as well as the commands you used to generate the AFs in your `README.md`.
   - The vcf file we're using does not have an `INFO` field, so you'll need to calculate AF yourself. You can do this in Python, but `plink` can perform this calculation as well, which may be easier. Your choice.
 4. Using `plink`, perform quantitative association testing for each phenotype. Use the top 10 principal components (eigenvectors) as covariates in your analysis, to adjust for non-independence due to relatedness. Record the commands you used in your `README.md`
   - Be sure to use the `--allow-no-sex` option
   - You may find this portion of the [`plink` documentation](https://zzz.bwh.harvard.edu/plink/anal.shtml) helpful for performing association testing on each of the phenotypes.
-
-<details><summary> HINT: </summary>
-<code>plink --vcf genotypes.vcf --linear --pheno phenotype.txt --covar pca.eigenvec --allow-no-sex --out phenotype_gwas_results</code>
-</details>
-
 5. For each phenotype, produce a Manhattan plot. In the Manhattan plot, highlight SNPs with p-values less than 10<sup>-5</sup> in a different color. You'll need to submit this figure.
 6. Choose one of the traits for which you performed GWAS. For the top associated SNP, visualize the effect size by creating a boxplot of the phenotype stratified by genotype.
-7. For the top loci associated with each of the phenotypes, use the UCSC Genome Browser (http://genome.ucsc.edu/cgi-bin/hgGateway) to investigate the potential causal genes in the region. Note that the reference genome build being used here is hg18. (How could you figure this out if you didn't know?). Summarize your results in your `README.md`.
+7. For the top loci associated with each of the phenotypes, use the UCSC Genome Browser (http://genome.ucsc.edu/cgi-bin/hgGateway) to investigate the potential causal genes in the region. Note that the reference genome build being used here is hg18. (How could you figure this out if you didn't know?). Summarize your results in your `README.md`. -->
 
 ### Hints
 
