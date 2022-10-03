@@ -44,7 +44,6 @@ You shouldn't be pushing any of these files to your remote repo, so update your 
     <ul style="list-style-type:'- '">
     <li> Be sure to use the <code>--allow-no-sex</code> option
     <li> You may find this portion of the <code>plink</code> <a href="https://zzz.bwh.harvard.edu/plink/anal.shtml">documentation</a> helpful  for performing association testing on each of the phenotypes.
-    <li>
     <details><summary> HINT: </summary>
     <code>plink --vcf genotypes.vcf --linear --pheno &lt;phenotype.txt&gt; --covar &lt;pca.eigenvec&gt; --allow-no-sex --out &lt;phenotype_gwas_results&gt;</code>
     </details>
