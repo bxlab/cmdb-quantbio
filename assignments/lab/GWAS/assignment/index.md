@@ -12,7 +12,7 @@ Slides are available here: [Lecture Slides](https://github.com/bxlab/cmdb-quantb
 
 One of the central goals of human genetics is clarifying the relationship between genotypes and phenotypes. Genome-wide association studies (GWAS) emerged around 20 years ago as a useful approach for discovering genetic variation that underlies variation in human traits. At their core, GWAS involve fitting linear models to test for relationships between polymorphisms (often SNPs) and phenotypes using data from large samples of individuals.
 
-Genotypes of nearby SNPs are correlated--a phenomenon termed "linkage disequilibrium" or "LD". This is both a blessing and a curse for GWAS. On one hand, LD means that we need not genotype every SNP to discover associations. We merely need to genotype "tag SNPs" that segregate in LD with variants that causally influence the phenotype. On the other hand, this also means that even when we find a signficant association, it is often challenging to disentangle the causal gene and/or variant that drives the association.
+Genotypes of nearby SNPs are correlated--a phenomenon termed "linkage disequilibrium" or "LD". This is both a blessing and a curse for GWAS. On one hand, LD means that we need not genotype every SNP to discover associations. We merely need to genotype "tag SNPs" that segregate in LD with variants that causally influence the phenotype. On the other hand, this also means that even when we find a signficant association, it is often challenging to disentangle the causal gene and/or variant that drives the association..
 
 ## Assignment Overview
 
