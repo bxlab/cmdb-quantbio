@@ -12,7 +12,7 @@ Slides are available here: [Lecture Slides](https://github.com/bxlab/cmdb-quantb
 
 One of the central goals of human genetics is clarifying the relationship between genotypes and phenotypes. Genome-wide association studies (GWAS) emerged around 20 years ago as a useful approach for discovering genetic variation that underlies variation in human traits. At their core, GWAS involve fitting linear models to test for relationships between polymorphisms (often SNPs) and phenotypes using data from large samples of individuals.
 
-Genotypes of nearby SNPs are correlated--a phenomenon termed "linkage disequilibrium" or "LD". This is both a blessing and a curse for GWAS. On one hand, LD means that we need not genotype every SNP to discover associations. We merely need to genotype "tag SNPs" that segregate in LD with variants that causally influence the phenotype. On the other hand, this also means that even when we find a signficant association, it is often challenging to disentangle the causal gene and/or variant that drives the association..
+Genotypes of nearby SNPs are correlated--a phenomenon termed "linkage disequilibrium" or "LD". This is both a blessing and a curse for GWAS. On one hand, LD means that we need not genotype every SNP to discover associations. We merely need to genotype "tag SNPs" that segregate in LD with variants that causally influence the phenotype. On the other hand, this also means that even when we find a signficant association, it is often challenging to disentangle the causal gene and/or variant that drives the association.
 
 ## Assignment Overview
 
@@ -42,11 +42,11 @@ You shouldn't be pushing any of these files to your remote repo, so update your 
 4. Using `plink`, perform quantitative association testing for each phenotype. Use the top 10 principal components (eigenvectors) as covariates in your analysis, to adjust for non-independence due to relatedness. Record the commands you used in your `README.md`
   - Be sure to use the `--allow-no-sex` option
   - You may find this portion of the [`plink` documentation](https://zzz.bwh.harvard.edu/plink/anal.shtml) helpful for performing association testing on each of the phenotypes.
-***
+
 <details><summary> HINT: </summary>
-`plink --vcf genotypes.vcf --linear --pheno <phenotype.txt> --covar <pca.eigenvec> --allow-no-sex --out <phenotype_gwas_results>`
+<code>plink --vcf genotypes.vcf --linear --pheno phenotype.txt --covar pca.eigenvec --allow-no-sex --out phenotype_gwas_results</code>
 </details>
-***
+
 5. For each phenotype, produce a Manhattan plot. In the Manhattan plot, highlight SNPs with p-values less than 10<sup>-5</sup> in a different color. You'll need to submit this figure.
 6. Choose one of the traits for which you performed GWAS. For the top associated SNP, visualize the effect size by creating a boxplot of the phenotype stratified by genotype.
 7. For the top loci associated with each of the phenotypes, use the UCSC Genome Browser (http://genome.ucsc.edu/cgi-bin/hgGateway) to investigate the potential causal genes in the region. Note that the reference genome build being used here is hg18. (How could you figure this out if you didn't know?). Summarize your results in your `README.md`.
