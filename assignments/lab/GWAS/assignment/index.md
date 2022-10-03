@@ -42,9 +42,11 @@ You shouldn't be pushing any of these files to your remote repo, so update your 
 4. Using `plink`, perform quantitative association testing for each phenotype. Use the top 10 principal components (eigenvectors) as covariates in your analysis, to adjust for non-independence due to relatedness. Record the commands you used in your `README.md`
   - Be sure to use the `--allow-no-sex` option
   - You may find this portion of the [`plink` documentation](https://zzz.bwh.harvard.edu/plink/anal.shtml) helpful for performing association testing on each of the phenotypes.
+  ***
   <details><summary> HINT: </summary>
   `plink --vcf genotypes.vcf --linear --pheno <phenotype.txt> --covar <pca.eigenvec> --allow-no-sex --out <phenotype_gwas_results>`
   </details>
+  ***
 5. For each phenotype, produce a Manhattan plot. In the Manhattan plot, highlight SNPs with p-values less than 10<sup>-5</sup> in a different color. You'll need to submit this figure.
 6. Choose one of the traits for which you performed GWAS. For the top associated SNP, visualize the effect size by creating a boxplot of the phenotype stratified by genotype.
 7. For the top loci associated with each of the phenotypes, use the UCSC Genome Browser (http://genome.ucsc.edu/cgi-bin/hgGateway) to investigate the potential causal genes in the region. Note that the reference genome build being used here is hg18. (How could you figure this out if you didn't know?). Summarize your results in your `README.md`.
