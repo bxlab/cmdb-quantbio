@@ -2,7 +2,7 @@
 
 ## Lecture -- Mike Sauria
 
-Slides -- to be linked
+[Lecture Slides](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/ChIP-seq/slides_asynchronous_or_livecoding_resources/ChIPseq_and_Motif_Finding.pdf)
 
 [Recording of lecture](https://livejohnshopkins.sharepoint.com/:v:/s/qbb2021/EfRsg8kSyFdIpt-jSWdtseoBbgDa5eOQDmOSTLCupB-c3A?e=CBl8JX)
 
