@@ -152,7 +152,7 @@ Finally, you will compare your discovered motifs against known motifs to see if 
 3. **Examine the `tomtom` .html results file in your web browser to see what sorts of matches were found**
 4. **Pull out all matches to “KLF4” and “SOX2' from the tomtom.tsv file in the `tomtom` output folder, saving these matches to a separate file.**
 
-## Submision
+## Submission
 
 For this assignment you should submit five things: 
 1. Record of command line commands for the assignment
