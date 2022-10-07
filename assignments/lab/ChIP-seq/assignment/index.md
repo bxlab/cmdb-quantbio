@@ -40,7 +40,7 @@ You should now have 8 files:
 - D0_H3K27ac_treat.bdg
 - D2_H3K27ac_treat.bdg
 
-These datasets include only data for chromosome 17.
+The bam files contain reads mapped against the mouse genome mm10 and come from two ChIP-seq replicates targeting Sox2 and their corresponding controls. The BED file is the filtered peak calls from the Klf4 ChIP-seq data. The three bedgraph files are normalized pileups of Klf4 and two H3K27ac ChIP-seq treatment conditions. The D0 and D2 refer to day 0 and day 2 post induction. These datasets include only data for chromosome 17.
 
 #### Mapping reads
 
@@ -48,50 +48,58 @@ Reads have been mapped to the mm10 genome for you for time's sake.
 
 #### Filtering reads
 
-You will be following the protocol described in the paper so filter aligned reads, keeping only those with a quality score of 10 or greater.
+You will be following the protocol described in the paper to filter aligned reads, keeping only those with a quality score of 10 or greater.
 
-1. Filter reads using `samtools view` to only include quality scores >= 10.
+- **Filter reads using `samtools view` to only include quality scores >= 10.**
 
 #### Calling peaks
 
-You will use `macs2` to call peaks which is preloaded on your computer. `macs2` has several modes of operation, but the one you will use is called `callpeak`.
+You will use `macs2` to call peaks. `macs2` is preloaded on your computer and has several modes of operation. You will use is called `callpeak`.
 
-Remember that you do not need to provide all of the optional parameters. For `macs2`, you definitely want to provide the target and control (input) samples. It is also typically important to provide a parameter for the effective genome size (since you are only using data from chr17, what is your effective genome size?). Otherwise, the defaults should work reasonably well here. If the enrichment by the antibody was poor, you would need to consider the `mfold` and `extsize` parameters (but more likely, back to the lab). You should also use the `-B` parameter to create a bedgraph of read pileups for the treatment and control conditions.
+Remember that you do not need to provide all of the optional parameters. For `macs2`, you definitely want to provide the target and control (input) samples. It is also typically important to provide a parameter for the effective genome size (since you are only using data from chr17, what is your effective genome size?). Otherwise, the defaults should work reasonably well here. If the enrichment by the antibody was poor, you would need to consider the `mfold` and `extsize` parameters (but more likely, back to the lab). You should also use the `-B` parameter to create a bedgraph of read pileups for the treatment and control conditions. This will be used for plotting in a later step.
 
 `macs2` will write several output files to a directory that you specify. The file containing the peaks has the extension `narrowPeak`. This is an extended BED format, where the first six fields are standard BED. There will also be a pair of files with the read pileups suffixed with `_treat_pileup.bdg` and `control_lambda.bdg`. These include a chromosome, start and stop position, and the normalized number of reads covering the bases in that range (each range is associated with a single score)
 
-2. Run `macs2` to produce a list of peaks for each condition in [BED format](https://bedtools.readthedocs.io/en/latest/content/general-usage.html).
+- **Run `macs2` to produce a list of peaks for each condition in [BED format](https://bedtools.readthedocs.io/en/latest/content/general-usage.html).**
 
 #### Intersecting peaks
 
-Because there were many false positive peaks in their ChIP-seq data, the paper protocol intersected the two replicate peak calls, keeping only those that overlapped. You should be pretty familiar with doing this with `bedtools` now. It doesn't matter which file you keep peaks from, R1 or R2.
+Because the researchers suspected there were many false positives peaks called in their ChIP-seq data, the paper protocol intersected the two replicate peak call sets and kept only those which overlapped. These are the `.narrowPeak` files in your `macs2` output folder. Use `bedtools` to do this. Because you want the intersection or the peaks found in both files, the order of your files doesn’t matter.
 
-3. Intersect peaks and create a file of peaks appearing in both Sox2 replicates.
+- **Intersect peaks and create a file of peaks appearing in both Sox2 replicates.**
 
 #### Colocalization of Sox2 and Klf4
 
-The paper shows that the vast majority of Klf4 peaks are also bound by Sox2. While your numbers will be different since you are only looking at chromosome 17, see if your data give a similar percentage of overlap. Make sure you are using the intersected set of Sox2 peaks.
+The paper shows that the vast majority of Klf4 peaks are also bound by Sox2. While your numbers will be different since you are only looking at chromosome 17, see if your data give a similar percentage of overlap. Make sure you are using the intersected set of Sox2 peaks. You can use `bedtools` for this task.
 
-4. Find the number of total peaks and overlapping peaks for Klf4 and Sox2 in your data. What is the percentage of Klf4 peaks colocalized with Sox2?
+- **Find the number of total peaks and overlapping peaks for Klf4 and Sox2 in your data. What is the percentage of Klf4 peaks colocalized with Sox2?**
 
 #### Plot
 
-Next, you will recreate the plot in figure 6K (the read pileup tracks only). You have been provided with two python scripts in the `assignments/lab/ChIP-seq/extra_data` folder. These are a python script for scaling the bedgraph files for proper display and a python function for loading in and binning the bedgraph files, returning the coordinates of each bin's midpoint and the sum of read counts for that bin. The bin positions and values are cropped to only those falling in the genomic window shown in the paper's figure. Note that the coordinates you will be looking at are not the same as in the figure as the paper mapped data to mm9 while you are using mm10. I have already lifted the coordinates over for you.
+Next, you will recreate the read pileup tracks from figure 6K. You have been provided with two python scripts in the `assignments/lab/ChIP-seq/extra_data` folder to help with this. One script is meant for scaling the bedgraph files. It does this by adjusting each value such that the mean signal is one read per base. The other script has a function that loads in and bins the bedgraph file data, returning the coordinates of each bin’s midpoint and the sum of read counts for that bin. Further, the returned bin positions and values are cropped to include only those falling in the genomic window shown in the paper’s figure. (Note: when you look at these positions, they will not be the same as what you see in the figure because the paper mapped the reads to the mm9 genome, while you mapped to the more recent build mm10. I have already lifted the coordinates over for you so that the coordinates you see correspond to the paper’s mm9 locations).
 
-Before plotting or cropping the data, you will need to scale the bedgraph files so they are directly comparable with each other. This is done by adjust each value such that the mean signal is one read per base. To run the scaling script, use the following command:
+While you used both of your replicates to determine true peaks, you will only need one of the treatment bedgraph files for plotting. Combining them in a sensible way is not a productive use of time for this assignment and makes little difference for the region being plotted. You may select the bedgraph from either Sox2 replicate.
+
+Before plotting or cropping the data, you will need to scale the bedgraph files so they are directly comparable with each other. To run the scaling script, use the following command:
 
 ```
 python scale_bdg.py <original_bdg> <scaled_bdg>
 ```
 
-Loading these files take a bit of time, so I suggest you create a cropped version of each of the bedgraphs after scaling but before plotting. You can crop the files using the command:
+Loading the bedgraph files into Python for plotting takes a bit of time, so I’ve also provided you with an `awk` command to crop your data files. Specifically this is cropping/subsetting your data to only include values falling within the plotting window. Since the data are already scaled, you can discard the points outside the plotting range without causing issues.
 
-```
-awk '{ if ($2 < 35502055 && $3 > 35507055) print $0}'
-```
+Everything you’ve done so far focuses on processing the Sox2 data. Now you’ll use your processed Sox2 data as well as the Klf4, day 0 H3K27ac, and day 2 H3K27ac data that I preprocessed for you. To plot, you will want to scale the bedgraph files so they are comparable to each other, crop the scaled files so they don’t take forever to load, load the scaled and cropped data with the provided function, and then produce a 4 panel plot displaying the data.
 
-5. Produce a 4 panel plot like the one in figure 6K with appropriate scaling and track labels.
-
+1. **Scale each of your 4 bedgraph files so they are directly comparable to each other. To run the provided scaling script on one bedgraph file, use the following command:**
+  ```
+  python scale_bdg.py <input_bdg_filename> <output_scaled_bdg_filename>
+  ```
+2. **Crop the files using this command for each file:**
+  ```
+  awk '{ if ($2 < 35502055 && $3 > 35507055) print $0 }' <input_scaled_bdg_filename> > <output_scaled_and_cropped_bdg_filename>
+  ```
+3. **Create a python script which uses the provided function in bdg_loader.py to load the scaled and cropped bedgraph files**
+4. **Within that python script, write code to produce and save a 4 panel plot like the one in figure 6K. Add appropriate track labels. If you want to have the tracks filled in like the original figure, you can look up how to use the *fill_between* function in matplotlib.**
 
 ### Part 2: Motif discovery
 
@@ -101,25 +109,48 @@ You will now attempt to discover the sequences that are being bound by under the
 
 You should use your combined Sox2 `.narrowPeak` file for this section.
 
-Also, we want to be able to compare any discovered motifs against known motifs. Download the latest version of [MEME motif databases](https://meme-suite.org/meme/meme-software/Databases/motifs/motif_databases.12.23.tgz).
+Also, you want to be able to compare any discovered motifs against known motifs. Download the latest version of [MEME motif databases](https://meme-suite.org/meme/meme-software/Databases/motifs/motif_databases.12.23.tgz).
 
 #### Motif finding
 
-Motif finding is computationally intensive, so you want to enrich for signal. I would suggest passing only the 300 strongest ChIP-seq peaks to MEME (you can pass more, but it will take more time, and passing weak peaks will make the motif(s) more difficult to find). This means you will need to sort by the score column (5th) and keep only the first 300 lines. You will need to get the sequences corresponding to the peaks you have found. The mouse genome FASTA file is already on your computer at `/Users/cmdb/data/genomes/mm10.fa`. You can use `samtools faidx` to extract sequence from a FASTA file but you need a specially formatted region file. You can use the following `awk` command to convert a bed file into the proper format:
+You will now find the sequences that are being bound by Sox2. For this we will use `meme-chip`, which is a suite of many programs. Again, this should already be installed on your computer, although it is in its own conda environment. To activate it, use the command:
 
 ```
-awk '{ printf "%s:%i-%i\n", $1, $2, $3 }'
+conda activate meme
 ```
 
-6. Using `meme-chip`, perform motif finding in the strongest 300 peaks from Sox2. Consider motif widths up to 7bp (-maxw).
+There is a bug in conda with the current version of one of the dependencies so you will also need to run the following command once you have activated the meme environment:
+
+```
+conda install -c conda-forge openmpi=4.1.4 -y
+```
+
+When you are finished with this assignment, don't forget to exit the environment with `conda deactivate`.
+
+Motif finding is computationally intensive, so you want to enrich for signal. I would suggest passing only the 300 strongest ChIP-seq peaks to MEME (you can pass more, but it will take more time, and passing weak peaks will make the motif(s) more difficult to find). MEME requires the FASTA input for these peaks. We’ve provided the mouse genome FASTA file already on your computer at `/Users/cmdb/data/genomes/mm10.fa`. However, you should not have write access to that directory. Because the file is large and you don't need to alter it, you will be making an alias (or symlink) to it rather than a copy. To do this, use the command:
+
+```
+ln -s /Users/cmdb/data/genomes/mm10.fa ./
+```
+
+You should now see `mm10.fa` in your current directory.
+
+You’ll use `samtools faidx` to extract the sequences of the signal enriched peaks, however, you’ll need an `awk` command to convert the bed file into the proper format for `samtools faidx`. The `awk` command will take the chromosome name and coordinate range and convert it into a format recognized by `samtools faidx` (as well as the UCSC genome browser).
+
+1. **Sort your intersected Sox2 replicate narrowPeak file by the score column (5th)** 
+2. **Keep only the first 300 lines**
+3. **Use this command `awk '{ printf "%s:%i-%i\n", $1, $2, $3 }'` to reformat the 300 lines so they can be used as input to `samtools faidx`**
+4. **Use `samtools faidx` to extract the sequences of these peaks from the mm10 reference genome. Consider the -r flag for passing in your reformated input**
+5. **Run `meme-chip` to perform motif finding in these strongest 300 peaks from Sox2. Consider motif widths up to 7bp (-maxw).**
 
 ### Motif identification
 
-Finally, compare your motifs against known motifs. You downloaded a large number of databases from the `Meme` site. Unpack the database file and take a look at what's inside. You will be specifically using the `motif_databases/MOUSE/HOCOMOCOv11_full_MOUSE_mono_meme_format.meme` database. Your motifs can be found in the output folder from `meme-chip` in the file combined.meme. Pass the whole file (all motifs will be compared to the database). Examine the `tomtom` results file (the .html file) in your web browser to see what sorts of matches were found.
+Finally, you will compare your discovered motifs against known motifs to see if you can identify transcription factors known to bind to these motifs. You will compare all motifs discovered by MEME to one of the databases you downloaded and then examine your results. The tool for this is `tomtom` which is part of the MEME suite.
 
-7. Scan your motifs against the above database using `tomtom` (part of the meme suite) to find matches to known motifs.
-
-8. Pull out all matches to "KLF4" and "SOX2" from the tomtom.tsv file in the output folder and save them to a separate file.
+1. **You downloaded a large number of databases from the MEME site. Unpack the database file and take a look at what’s inside.**
+2. **Using the motif_databases/MOUSE/HOCOMOCOv11_full_MOUSE_mono_meme_format.meme database and your MEME discovered motifs (which can be found in the output folder from `meme-chip` in the file combined.meme), scan your motifs against the database using `tomtom`**
+3. **Examine the `tomtom` .html results file in your web browser to see what sorts of matches were found**
+4. **Pull out all matches to “KLF4” and “SOX2' from the tomtom.tsv file in the `tomtom` output folder, saving these matches to a separate file.**
 
 #### Submit
 
@@ -132,4 +163,4 @@ Finally, compare your motifs against known motifs. You downloaded a large number
 
 ### Advanced exercises
 
-Using the motif position data (accessed through the meme html page by clicking on the "Motif Sites in GFF3" link), recreate figure 6B from the paper showing the spacing distribution between Sox2 and Klf4 sites.
+Using the motif position data (accessed through the `meme` html page by clicking on the "Motif Sites in GFF3" link), recreate figure 6B from the paper showing the spacing distribution between Sox2 and Klf4 sites.
