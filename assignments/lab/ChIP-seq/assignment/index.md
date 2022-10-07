@@ -4,7 +4,7 @@ Due Date: Friday, Oct. 14, 2022 @ 1:00pm ET <br>
 
 ## Lecture
 
-[Lecture slides](https://github.com/bxlab/qbb2021/raw/main/week5/Epigenetics%20-%20ChIPseq.pdf)
+[Lecture slides](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/ChIP-seq/slides_asynchronous_or_livecoding_resources/ChIPseq_and_Motif_Finding.pdf)
 
 ## Assignment Overview
 
