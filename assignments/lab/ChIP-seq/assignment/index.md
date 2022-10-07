@@ -46,13 +46,13 @@ The bam files contain reads mapped against the mouse genome mm10 and come from t
 
 Reads have been mapped to the mm10 genome for you for time's sake.
 
-#### Filtering reads
+#### Step 1: Filtering reads
 
 You will be following the protocol described in the paper to filter aligned reads, keeping only those with a quality score of 10 or greater.
 
 - **Filter reads using `samtools view` to only include quality scores >= 10.**
 
-#### Calling peaks
+#### Step 2: Calling peaks
 
 You will use `macs2` to call peaks. `macs2` is preloaded on your computer and has several modes of operation. You will use is called `callpeak`.
 
@@ -62,19 +62,19 @@ Remember that you do not need to provide all of the optional parameters. For `ma
 
 - **Run `macs2` to produce a list of peaks for each condition in [BED format](https://bedtools.readthedocs.io/en/latest/content/general-usage.html).**
 
-#### Intersecting peaks
+#### Step 3: Intersecting peaks
 
 Because the researchers suspected there were many false positives peaks called in their ChIP-seq data, the paper protocol intersected the two replicate peak call sets and kept only those which overlapped. These are the `.narrowPeak` files in your `macs2` output folder. Use `bedtools` to do this. Because you want the intersection or the peaks found in both files, the order of your files doesn’t matter.
 
 - **Intersect peaks and create a file of peaks appearing in both Sox2 replicates.**
 
-#### Colocalization of Sox2 and Klf4
+#### Step 4: Colocalization of Sox2 and Klf4
 
 The paper shows that the vast majority of Klf4 peaks are also bound by Sox2. While your numbers will be different since you are only looking at chromosome 17, see if your data give a similar percentage of overlap. Make sure you are using the intersected set of Sox2 peaks. You can use `bedtools` for this task.
 
 - **Find the number of total peaks and overlapping peaks for Klf4 and Sox2 in your data. What is the percentage of Klf4 peaks colocalized with Sox2?**
 
-#### Plot
+#### Step 5: Plot
 
 Next, you will recreate the read pileup tracks from figure 6K. You have been provided with two python scripts in the `assignments/lab/ChIP-seq/extra_data` folder to help with this. One script is meant for scaling the bedgraph files. It does this by adjusting each value such that the mean signal is one read per base. The other script has a function that loads in and bins the bedgraph file data, returning the coordinates of each bin’s midpoint and the sum of read counts for that bin. Further, the returned bin positions and values are cropped to include only those falling in the genomic window shown in the paper’s figure. (Note: when you look at these positions, they will not be the same as what you see in the figure because the paper mapped the reads to the mm9 genome, while you mapped to the more recent build mm10. I have already lifted the coordinates over for you so that the coordinates you see correspond to the paper’s mm9 locations).
 
@@ -96,7 +96,7 @@ Everything you’ve done so far focuses on processing the Sox2 data. Now you’l
   ```
 2. **Crop the files using this command for each file:**
   ```
-  awk '{ if ($2 < 35502055 && $3 > 35507055) print $0 }' <input_scaled_bdg_filename> > <output_scaled_and_cropped_bdg_filename>
+  awk '{ if ($2 < 35507055 && $3 > 35502055) print $0 }' <input_scaled_bdg_filename> > <output_scaled_and_cropped_bdg_filename>
   ```
 3. **Create a python script which uses the provided function in bdg_loader.py to load the scaled and cropped bedgraph files**
 4. **Within that python script, write code to produce and save a 4 panel plot like the one in figure 6K. Add appropriate track labels. If you want to have the tracks filled in like the original figure, you can look up how to use the *fill_between* function in matplotlib.**
@@ -143,7 +143,7 @@ You’ll use `samtools faidx` to extract the sequences of the signal enriched pe
 4. **Use `samtools faidx` to extract the sequences of these peaks from the mm10 reference genome. Consider the -r flag for passing in your reformated input**
 5. **Run `meme-chip` to perform motif finding in these strongest 300 peaks from Sox2. Consider motif widths up to 7bp (-maxw).**
 
-### Motif identification
+### Part 3: Motif identification
 
 Finally, you will compare your discovered motifs against known motifs to see if you can identify transcription factors known to bind to these motifs. You will compare all motifs discovered by MEME to one of the databases you downloaded and then examine your results. The tool for this is `tomtom` which is part of the MEME suite.
 
@@ -152,15 +152,16 @@ Finally, you will compare your discovered motifs against known motifs to see if 
 3. **Examine the `tomtom` .html results file in your web browser to see what sorts of matches were found**
 4. **Pull out all matches to “KLF4” and “SOX2' from the tomtom.tsv file in the `tomtom` output folder, saving these matches to a separate file.**
 
-#### Submit
+## Submision
 
-* Record of command line commands for the assignment
-* File with the number of peaks in Klf4, Sox2, and intersecting peaks
-* Script for plotting the track figure
-* A pdf of the track figure
-* The match profiles from `tomtom` for "KLF4" and "SOX2"
+For this assignment you should submit five things: 
+1. Record of command line commands for the assignment
+2. File with the number of peaks in Klf4, Sox2, and intersecting peaks
+3. Script for plotting the track figure
+4. A pdf of the track figure
+5. The match profiles from `tomtom` for "KLF4" and "SOX2"
 
 
-### Advanced exercises
+## Advanced exercises
 
 Using the motif position data (accessed through the `meme` html page by clicking on the "Motif Sites in GFF3" link), recreate figure 6B from the paper showing the spacing distribution between Sox2 and Klf4 sites.
