@@ -2,10 +2,13 @@
 
 ## Lecture -- Mike Sauria
 
+Slides -- to be linked
+
+Recording of lecture -- to be linked
 
 ## Homework Assignment
 
-
+[Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/ChIP-seq/assignment/)
 
 ## Applied Paper Example
 

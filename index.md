@@ -66,9 +66,9 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
 |  1   | 9/9  | Mike Schatz (Guest) | [Genome Assembly](webpages/week1/index.html)                   |
 |  2   | 9/16 | Dylan Taylor (Guest)| [Alignment](webpages/week2/index.html)                         |
 |  3   | 9/23 | Rajiv McCoy         | [Variant Calling](webpages/week3)                              |
-|  4   | 9/30 | Rajiv McCoy         | [GWAS](webpages/week4)                                          |
+|  4   | 9/30 | Rajiv McCoy         | [GWAS](webpages/week4)                                         |
 |  5   | 10/7 | Mike Sauria         | [ChIP-Seq](webpages/week5)                                     |
-|  6   | 10/14| Mike Sauria         | 3D Genome                                                      |
+|  6   | 10/14| Mike Sauria         | [3D Genome](webpages/week6)                                    |
 |  7   | 10/21| No class            | Retreat                                                        |
 |  8   | 10/28| Mike Sauria         | Single Molecule Sequencing and DNA Modifications               |
 |  9   | 11/4 | Rajiv McCoy         | Bulk RNA-Seq                                                   |
