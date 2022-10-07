@@ -4,7 +4,7 @@
 
 Slides -- to be linked
 
-Recording of lecture -- to be linked
+[Recording of lecture]([https://livejohnshopkins.sharepoint.com/:v:/s/qbb2021/](https://livejohnshopkins.sharepoint.com/:v:/s/qbb2021/EfRsg8kSyFdIpt-jSWdtseoBbgDa5eOQDmOSTLCupB-c3A?e=CBl8JX))
 
 ## Homework Assignment
 
