@@ -75,7 +75,7 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
 |  10  | 11/11| Kate Weaver (Guest) | Machine Learning and Applications in mRNA Expression Prediction|
 |  11  | 11/18| Rajiv McCoy         | Single-Cell RNA-Seq                                            |
 |  12  | 11/25| No class            | Thanksgiving Break                                             |
-|  13  | 12/2 | Mike Sauria         | Motif Finding                                                  |
+|  13  | 12/2 | Mike Sauria         | TBD                                                            |
 |  14  | 12/9 | Rajiv McCoy         | Population Genetics                                            |
 {:.table.table-striped.well}
 
