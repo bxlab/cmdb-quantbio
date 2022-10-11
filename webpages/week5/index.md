@@ -1,4 +1,4 @@
-# Lab Week 5 - ChIP-Seq
+# Lab Week 5 - ChIP-Seq and Motif Finding
 
 ## Lecture -- Mike Sauria
 

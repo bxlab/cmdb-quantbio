@@ -202,7 +202,7 @@ We know that this is one of the least ideal situations in which to be starting y
   <td>5</td>
   <td>10/7</td>
   <td>Mike Sauria</td>
-  <td>ChIP-Seq</td>
+  <td>ChIP-Seq and Motif Finding</td>
 </tr>
 <tr>
   <td>6</td>
@@ -250,7 +250,7 @@ We know that this is one of the least ideal situations in which to be starting y
   <td>13</td>
   <td>12/2</td>
   <td>Mike Sauria</td>
-  <td>Motif Finding</td>
+  <td>TBD</td>
 </tr>
 <tr>
   <td>14</td>
