@@ -102,14 +102,14 @@ make install
 
 #### Processing the capture Hi-C data
 
-Before running HiC-Pro, you will need to edit the configuration file. There are three lines that you will need to replace `<YOUR_DIRECTORY>` with the complete path to directory you are working in. You can always see the full path with the command `pwd`. Once you have filled those three entries in, save the config file.
+Before running HiC-Pro, you will need to edit the configuration file. There are three lines that you will need to replace `<YOUR_DIRECTORY>` with the complete path to the directory you are working in. You can always see the full path with the command `pwd`. Once you have filled those three entries in, save the config file.
 
 In order to run HiC-Pro, you need to give it the folder where the fastq files are, organized by sample (-i), the name of an output directory to store the results in (-o), and a configuration file (-c). The configuration file was obtained from the repo describing the analysis from the paper and has been updated with the correct paths for various files. You will need to run the program by calling it from `HiC-Pro_3.1.0/bin` which was created in your working directory when you installed HiC-Pro.
 
 Running the analysis will take several minutes. You will see information about each step as it is performed. Once the analysis has finished running, look around in the output directory. You should have five folders. The `bowtie_results` directory has all of the mapped read data. The `hic_results` has all of the data once reads have been assigned to restriction fragments. In this directory, there is a directory `pic` containing several QC plots. Take a look at the `HiCContactRanges` and `HiCFragment` plots (the mapping plots don't tell you anything since only mapped data were selected).
 
 - **What percentage of reads are valid interactions (duplicates do not count as valid)?**
-- **What consitutes the majority of invalid 3C pairs? What does it actually mean (you may need to dig into the [HiC-Pro manual](https://github.com/nservant/HiC-Pro/blob/v3.1.0/doc/MANUAL.md))?**
+- **What constitutes the majority of invalid 3C pairs? What does it actually mean (you may need to dig into the [HiC-Pro manual](https://github.com/nservant/HiC-Pro/blob/v3.1.0/doc/MANUAL.md))?**
 
 
 ### Part 2: Exploring the heatmaps
@@ -123,9 +123,11 @@ To create the plot, you will need to do the following:
 1. Filter out data with one or both interaction ends falling outside the desired bin range
 2. Log-transform the scores (the dynamic range of data makes it hard to visualize the non-transformed data). Also, shift the data by subtracting the minimum value so the new minimum value is zero (this will prevent issues where there is missing information)
 2. Convert the sparse data into a square matrix (note that the sparse data only contains one entry per interaction with the lower-numbered bin in the first column). For one line of the sparse data format, the data relates to the full matrix as follows:
+
 	```python
 	mat[sparse['F1'][i], sparse['F2'][i]] = sparse['score'][i]
 	```
+	
 4. Plot the two matrices using the same maximum value (set vmax in `imshow`). I suggest using the `magma` color map, although you need to flip your scores to mimic the paper figure
 5. For the difference plot, I suggest using the `seismic` color map and `norm=colors.CenteredNorm`. It helps to remove the distance dependent signal and smooth the data first as there is noise. You can use the following function to remove the distance dependent signal:
 
