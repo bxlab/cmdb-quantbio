@@ -20,7 +20,7 @@ In order to use the HiC-Pro software for Hi-C analysis, you will need to set up 
 Next, you will use this file, which contains a list of programs and versions to install, to create a new conda environment. To do this, use the following command:
 
 ```bash
-conda env create -f environment.yml -n hicpro -y
+conda env create -f environment.yml -n hicpro
 ```
 
 ### Part 1: Capture Hi-C analysis
@@ -155,6 +155,7 @@ To create the plot, you will need to do the following:
 	    nmat[invalid] = 0
 	    return nmat
 	```
+
 - **Were you able to see the highlighted difference from the original figure?**
 - **What impact did sequencing depth have?**
 - **What does the highlighted signal indicate?**
@@ -192,7 +193,7 @@ plt.subplots_adjust(left=0.15,
 
 ## Submission
 
-For this assignment you should submit four things: 
+For this assignment you should submit four things:
 1. A README.md with answers to the questions
 2. A three panel plot for your analyzed data
 3. A three panel plot for the full data
