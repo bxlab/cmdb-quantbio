@@ -2,7 +2,7 @@
 
 ## Lecture -- Mike Sauria
 
-
+[Lecture Slides](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/3D_genome/slides_asynchronous_or_livecoding_resources/3D_Genome.pdf)
 
 ## Homework Assignment
 
