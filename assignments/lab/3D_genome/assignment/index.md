@@ -40,8 +40,10 @@ Next, unpack the datasets.
 tar xzf 3dgenome_data.tar.gz
 ```
 
-You should now have 11 files:
+You should now have 13 files:
 
+- mm10.chrom.sizes
+- make_plots.sh
 - fastq/
 	- dCTCF/
     	- SRR14256290_1.fastq
@@ -58,6 +60,8 @@ You should now have 11 files:
     - 6400_bins.bed
     - dCTCF_full.40000.matrix
     - 40000_bins.bed
+
+The script `make_plots.sh` is a replacement for a buggy one in HiC-Pro.
 
 The fastq folder contains Hi-C sequenced reads organized by sample. The name `dCTCF` corresponds to a single deleted CTCF site, while the name `ddCTCF` corresponds to the CTCF double site deletion.
 
@@ -94,9 +98,11 @@ make configure PREFIX=${PWD}/../
 make install
 ```
 
- This will install HiC-Pro into your working directory.
+ This will install HiC-Pro into your working directory. Now exit that directory. Finally, you will need to copy the script `make_plots.sh` into the directory `HiC-Pro_3.1.0/scripts/`
 
 #### Processing the capture Hi-C data
+
+Before running HiC-Pro, you will need to edit the configuration file. There are three lines that you will need to replace `<YOUR_DIRECTORY>` with the complete path to directory you are working in. You can always see the full path with the command `pwd`. Once you have filled those three entries in, save the config file.
 
 In order to run HiC-Pro, you need to give it the folder where the fastq files are, organized by sample (-i), the name of an output directory to store the results in (-o), and a configuration file (-c). The configuration file was obtained from the repo describing the analysis from the paper and has been updated with the correct paths for various files. You will need to run the program by calling it from `HiC-Pro_3.1.0/bin` which was created in your working directory when you installed HiC-Pro.
 
@@ -110,7 +116,7 @@ Running the analysis will take several minutes. You will see information about e
 
 #### Creating differential interaction plots
 
-You will now use the data you analyzed as well as that provided at 6400bp resolution to recreate figure 4a from the paper (minus the scale bars). You will have two versions, one with your subsetted data and another with the full data provided. To do this, you will need to take the sparse format that is provided and convert it into a complete matrix for plotting. You have been provided with a starting script for loading the data you will need for this. Your goal is to produce a horizontal 3-panel plot with a heatmap for ddCTCF, dCTCF, and dCTCF - ddCTCF, covering the region chr15:11170245-12070245 (note that this is different from the paper because they used mm9 and you are using mm10).
+You will now use the data you analyzed as well as that provided at 6400bp resolution to recreate figure 4a from the paper (minus the scale bars). You will have two versions, one with your subsetted data and another with the full data provided. To do this, you will need to take the sparse format that is provided and convert it into a complete matrix for plotting. You have been provided with a starting script for loading the data you will need for this. Your goal is to produce a horizontal 3-panel plot with a heatmap for ddCTCF, dCTCF, and dCTCF - ddCTCF (in this order), covering the region chr15:11170245-12070245 (note that this is different from the paper because they used mm9 and you are using mm10). The heatmaps should come from the `iced` folder and you can use either 6400bp bin file from the `raw` folder in `hic_results/matrix/XXXX`.
 
 To create the plot, you will need to do the following:
 
@@ -121,9 +127,33 @@ To create the plot, you will need to do the following:
 	mat[sparse['F1'][i], sparse['F2'][i]] = sparse['score'][i]
 	```
 4. Plot the two matrices using the same maximum value (set vmax in `imshow`). I suggest using the `magma` color map, although you need to flip your scores to mimic the paper figure
-5. For the difference plot, I suggest using the `seismic` color map and `norm=colors.CenteredNorm`. It helps to smooth the data first as there is noise. You can use the following code to create smoothed matrices before subtracting.
+5. For the difference plot, I suggest using the `seismic` color map and `norm=colors.CenteredNorm`. It helps to remove the distance dependent signal and smooth the data first as there is noise. You can use the following function to remove the distance dependent signal:
+
 	```python
-	smooth_mat = (mat[1:, 1:] + mat[:-1, 1:] + mat[1:, :-1] + mat[:-1, :-1]) / 4
+	def remove_dd_bg(mat):
+	    N = mat.shape[0]
+	    mat2 = numpy.copy(mat)
+	    for i in range(N):
+	        bg = numpy.mean(mat[numpy.arange(i, N), numpy.arange(N - i)])
+	        mat2[numpy.arange(i, N), numpy.arange(N - i)] -= bg
+	        if i > 0:
+	            mat2[numpy.arange(N - i), numpy.arange(i, N)] -= bg
+	    return mat2
+	 ```
+
+ 	You can use this function to create smoothed matrices before subtracting:
+
+	```python
+	def smooth_matrix(mat):
+	    N = mat.shape[0]
+	    invalid = numpy.where(mat[1:-1, 1:-1] == 0)
+	    nmat = numpy.zeros((N - 2, N - 2), float)
+	    for i in range(3):
+	        for j in range(3):
+	            nmat += mat[i:(N - 2 + i), j:(N - 2 + j)]
+	    nmat /= 9
+	    nmat[invalid] = 0
+	    return nmat
 	```
 - **Were you able to see the highlighted difference from the original figure?**
 - **What impact did sequencing depth have?**
@@ -131,23 +161,14 @@ To create the plot, you will need to do the following:
 
 #### Finding insulation scores
 
-Next you will need to score the provided 40kb resolution data to determine the level of insulation between each bin. You will use the whole range of data for this region which spans bins 54878 to 54951. To do this, you will first need to log-transform the data as before, subtracting the minimum score after transformation. You will then need to convert the data into a matrix and remove the distance-dependent background. You can do this by finding the mean signal along each diagonal of the matrix and subtracting it. For example, for the diagonal one off of the center, you would do:
+Next you will need to score the provided 40kb resolution data to determine the level of insulation between each bin. You will use the whole range of data for this region which spans bins 54878 to 54951. To do this, you will first need to log-transform the data as before, subtracting the minimum score after transformation. You will then need to convert the data into a matrix.
 
-```python
-N = mat.shape[0]
-bg = numpy.mean(mat[numpy.arange(1, N), numpy.arange(N - 1)])
-mat[numpy.arange(1, N), numpy.arange(N - 1)] -= bg
-mat[numpy.arange(N - 1), numpy.arange(1, N)] -= bg
-```
-
-Once you have a distance-corrected matrix, you will need to find the insulation score by taking the average of the mean of the 5x5 square of interactions upstream of the target and the mean of the 5x5 square of interactions downstream of the target and subtract the mean of the 5x5 square of interactions between up- and downstream squares.
-
-![](insulation_fig.png)
+Once you have a matrix, you will need to find the insulation score by taking the mean of the 5x5 square of interactions between the 5 upstream bins and 5 downstream binsaround the target.
 
 You can use the following syntax to find the mean of a 5x5 block. This one is for upstream of the test point *i*.
 
 ```python
-numpy.mean(mat[(i - 5):i, (i - 5):i])
+numpy.mean(mat[(i - 5):i, i:(i + 5)])
 ```
 
 Note that the insulation score is found at the boundary between two bins (if i==5, then the insulation score corresponds to the start of bin 5, assuming that bin 0 is the first bin).
