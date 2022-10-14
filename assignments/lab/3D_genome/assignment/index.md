@@ -13,123 +13,256 @@ enhancer–promoter interactions](https://pubmed.ncbi.nlm.nih.gov/35418676/). In
 
 In today's assignment you will attempt to recreate some of the paper's findings and figures.
 
-### Part 0: Setting up your conda environment
+***
+<details><summary> What you would have done to run HiCPro: </summary>
 
-In order to use the HiC-Pro software for Hi-C analysis, you will need to set up a conda environment with all the requirements. This can take some time, so you will get to do this at the **beginning** of class. To do this, create your working folder and copy the file `/Users/cmdb/cmdb-quantbio/assignments/lab/3D_genome/extra_data/environment.yml` in this folder.
+<header>
+<h3>Part 0: Setting up your conda environment</h3>
+</header>
+
+In order to use the HiC-Pro software for Hi-C analysis, you will need to set up a conda environment with all the requirements. This can take some time, so you will get to do this at the <b>beginning</b> of class. To do this, create your working folder and copy the file <code>/Users/cmdb/cmdb-quantbio/assignments/lab/3D_genome/extra_data/environment.yml</code> in this folder.
 
 Next, you will use this file, which contains a list of programs and versions to install, to create a new conda environment. To do this, use the following command:
 
-```bash
+<code>
 conda env create -f environment.yml -n hicpro
-```
+</code>
 
-### Part 1: Capture Hi-C analysis
+<header>
+<h3> Part 1: Capture Hi-C analysis </h3>
+</header>
 
-#### Data
+<header>
+<h4> Data </h4>
+</header>
 
 You will be using capture Hi-C data for two edited cell lines, one with a single deleted CTCF site within the domain of interest and another with two deleted CTCF sites within the domain of interest. Due to time constraints, you will be analyzing a subsampled set of reads. You will also be provided with analyzed data from the complete datasets. You can download the data as follows:
 
-```bash
+<code>
 curl https://bx.bio.jhu.edu/data/msauria/cmdb-lab/3dgenome_data.tar.gz --output 3dgenome_data.tar.gz
+</code>
+<br/><br/>
+<code>
 curl https://hgdownload.soe.ucsc.edu/goldenPath/mm10/bigZips/mm10.chrom.sizes --output mm10.chrom.sizes
-```
+</code>
 
 Next, unpack the datasets.
 
-```bash
+<code>
 tar xzf 3dgenome_data.tar.gz
-```
+</code>
 
 You should now have 13 files:
 
-- mm10.chrom.sizes
-- make_plots.sh
-- fastq/
-	- dCTCF/
-    	- SRR14256290_1.fastq
-        - SRR14256290_2.fastq
-    - ddCTCF/
-        - SRR14256299_1.fastq
-        - SRR14256299_2.fastq
-- mm10.DPNII.frag.bed
-- target.bed
-- config_hicpro.txt
-- matrix/
-    - dCTCF_full.6400.matrix
-    - ddCTCF_full.6400.matrix
-    - 6400_bins.bed
-    - dCTCF_full.40000.matrix
-    - 40000_bins.bed
+<ul>
+<li> mm10.chrom.sizes</li>
+<li>make_plots.sh</li>
+<li>fastq/</li>
+	<ul>
+		<li>dCTCF/</li>
+			<ul>
+    		<li>SRR14256290_1.fastq</li>
+        <li>SRR14256290_2.fastq</li>
+			</ul>
+    <li>ddCTCF/</li>
+      <ul>
+				<li>SRR14256299_1.fastq</li>
+        <li>SRR14256299_2.fastq</li>
+			</ul>
+		</ul>
+<li>mm10.DPNII.frag.bed</li>
+<li>target.bed</li>
+<li>config_hicpro.txt</li>
+<li>matrix/</li>
+	<ul>
+    <li>dCTCF_full.6400.matrix</li>
+    <li>ddCTCF_full.6400.matrix</li>
+    <li>6400_bins.bed</li>
+    <li>dCTCF_full.40000.matrix</li>
+    <li>40000_bins.bed</li>
+	</ul>
+</ul>
 
-The script `make_plots.sh` is a replacement for a buggy one in HiC-Pro.
+The script <code>make_plots.sh</code> is a replacement for a buggy one in HiC-Pro.
 
-The fastq folder contains Hi-C sequenced reads organized by sample. The name `dCTCF` corresponds to a single deleted CTCF site, while the name `ddCTCF` corresponds to the CTCF double site deletion.
+The fastq folder contains Hi-C sequenced reads organized by sample. The name <code>dCTCF</code> corresponds to a single deleted CTCF site, while the name <code>ddCTCF</code> corresponds to the CTCF double site deletion.
 
-The file `mm10.DPNII.frag.bed` contains a list of all of the expected genomic fragments produced by cutting the reference genome with the restriction enzyme DpnII, the one used in these experiments. The file `target.bed` contains the region that was enriched for (the capture part of capture Hi-C). The file `config_hicpro.txt` contains settings for running your analysis.
+The file <code>mm10.DPNII.frag.bed</code> contains a list of all of the expected genomic fragments produced by cutting the reference genome with the restriction enzyme DpnII, the one used in these experiments. The file <code>target.bed</code> contains the region that was enriched for (the capture part of capture Hi-C). The file <code>config_hicpro.txt</code> contains settings for running your analysis.
 
-The two .bed files in the matrix folder contain the boundaries of each bin produced by breaking the genome into bins of the size indicated in the file name. The .matrix files contain 3 columns corresponding to the bin # of the first part of an interaction, the bin # of the second part of an interaction, and a normalized score associated with that interaction.
+The two <code>.bed</code> files in the matrix raw folders contain the boundaries of each bin produced by breaking the genome into bins of the size indicated in the file name. The <code>.matrix</code> files in the iced folders contain 3 columns corresponding to the bin # of the first part of an interaction, the bin # of the second part of an interaction, and a normalized score associated with that interaction.
 
-#### Setting up HiC-Pro
+<header>
+<h4> Setting up HiC-Pro </h4>
+</header>
 
 The HiC-Pro software is a complete pipeline for analyzing Hi-C data. It performs the following steps:
 
-1. Mapping reads
-2. Assigning reads to restriction fragments
-3. Quality control
-4. Binning reads into uniform-sized genomic bins
-5. Normalize binned signal
+<ol>
+<li>Mapping reads</li>
+<li>Assigning reads to restriction fragments</li>
+<li>Quality control</li>
+<li>Binning reads into uniform-sized genomic bins</li>
+<li>Normalize binned signal</li>
+</ol>
 
 To run HiC-Pro, you will first need to build it. Start by activating the conda environment you created at the beginning of the assignment:
 
-```bash
+<code>
 conda activate hicpro
-```
+</code>
 
 Next, you will need to clone the HiC-Pro repo. Note that you will be cloning a specific version of the repo rather than the most recent one.
 
-```bash
+<code>
 git clone -b v3.1.0 https://github.com/nservant/HiC-Pro.git
-```
+</code>
 
 Finally, you will need to build HiC-Pro. To do this, move into the repo you just cloned and use the following commands:
 
-```bash
+<code>
 make configure PREFIX=${PWD}/../
+</code>
+<br/><br/>
+<code>
 make install
+</code>
+
+ This will install HiC-Pro into your working directory. Now exit that directory. Finally, you will need to copy the script <code>make_plots.sh</code> into the directory <code>HiC-Pro_3.1.0/scripts/</code>
+
+<header>
+<h4> Processing the capture Hi-C data </h4>
+</header>
+
+Before running HiC-Pro, you will need to edit the configuration file. There are three lines that you will need to replace <code><YOUR_DIRECTORY></code> with the complete path to the directory you are working in. You can always see the full path with the command <code>pwd</code>. Once you have filled those three entries in, save the config file.
+
+In order to run HiC-Pro, you need to give it the folder where the fastq files are, organized by sample (<code>-i</code>), the name of an output directory to store the results in (<code>-o</code>), and a configuration file (<code>-c</code>). The configuration file was obtained from the repo describing the analysis from the paper and has been updated with the correct paths for various files. You will need to run the program by calling it from <code>HiC-Pro_3.1.0/bin</code> which was created in your working directory when you installed HiC-Pro.
+
+Running the analysis will take several minutes. You will see information about each step as it is performed. Once the analysis has finished running, look around in the output directory. You should have five folders. The <code>bowtie_results</code> directory has all of the mapped read data. The <code>hic_results</code> has all of the data once reads have been assigned to restriction fragments. In this directory, there is a directory <code>pic</code> containing several QC plots. Take a look at the <code>HiCContactRanges</code> and <code>HiCFragment</code> plots (the mapping plots don't tell you anything since only mapped data were selected).
+
+<ul>
+	<li> <b>What percentage of reads are valid interactions (duplicates do not count as valid)?</b></li>
+	<li> <b>What constitutes the majority of invalid 3C pairs? What does it actually mean (you may need to dig into the [HiC-Pro manual](https://github.com/nservant/HiC-Pro/blob/v3.1.0/doc/MANUAL.md))?</b></li>
+</ul>
+</details>
+***
+
+### Part 1: Getting, Exploring, and Commenting on the HiCPro analysis results
+
+#### Get the results
+
+Due to issues running HiCPro, please download the analysis results from running HiCPro on the subsampled data:
+
+
+```
+curl https://bx.bio.jhu.edu/data/msauria/cmdb-lab/hicpro_analysis.tar.gz --output hicpro_analysis.tar.gz
+tar -xzvf hicpro_analysis.tar.gz
 ```
 
- This will install HiC-Pro into your working directory. Now exit that directory. Finally, you will need to copy the script `make_plots.sh` into the directory `HiC-Pro_3.1.0/scripts/`
+Please also download the analysis results from Mike running HiCPro on the full dataset:
 
-#### Processing the capture Hi-C data
+```
+curl https://bx.bio.jhu.edu/data/msauria/cmdb-lab/3dgenome_data.tar.gz --output 3dgenome_data.tar.gz
+tar -xzvf 3dgenome_data.tar.gz
+```
 
-Before running HiC-Pro, you will need to edit the configuration file. There are three lines that you will need to replace `<YOUR_DIRECTORY>` with the complete path to the directory you are working in. You can always see the full path with the command `pwd`. Once you have filled those three entries in, save the config file.
+#### Explore the results
 
-In order to run HiC-Pro, you need to give it the folder where the fastq files are, organized by sample (-i), the name of an output directory to store the results in (-o), and a configuration file (-c). The configuration file was obtained from the repo describing the analysis from the paper and has been updated with the correct paths for various files. You will need to run the program by calling it from `HiC-Pro_3.1.0/bin` which was created in your working directory when you installed HiC-Pro.
+After unzipping the `hicpro_analysis.tar.gz` tar file, you will have a directory called `analysis` with 5 subfolders
 
-Running the analysis will take several minutes. You will see information about each step as it is performed. Once the analysis has finished running, look around in the output directory. You should have five folders. The `bowtie_results` directory has all of the mapped read data. The `hic_results` has all of the data once reads have been assigned to restriction fragments. In this directory, there is a directory `pic` containing several QC plots. Take a look at the `HiCContactRanges` and `HiCFragment` plots (the mapping plots don't tell you anything since only mapped data were selected).
+1. `bowtie_results`
+2. `hic_results`
+3. `fastq`
+4. `logs`
+5. `tmp`
+
+The <code>bowtie_results</code> directory has all of the mapped read data. The <code>hic_results</code> has all of the data once reads have been assigned to restriction fragments. In this directory, there is a directory <code>pic</code> containing several QC plots. Take a look at the <code>HiCContactRanges</code> and <code>HiCFragment</code> plots (the mapping plots don't tell you anything since only mapped data were selected).
+
+You will want to focus on the `hic_results` directory and its subdirectories `pic` and `matrix` for the files you'll use as input when plotting and
+
+After unzipping the `3dgenome_data.tar.gz` tar file, you will have 15 files.
+
+<ul>
+<li>make_plots.sh</li>
+<li>load_data.py</li>
+<li>fastq/</li>
+	<ul>
+		<li>dCTCF/</li>
+			<ul>
+    		<li>SRR14256290_1.fastq</li>
+        <li>SRR14256290_2.fastq</li>
+			</ul>
+    <li>ddCTCF/</li>
+      <ul>
+				<li>SRR14256299_1.fastq</li>
+        <li>SRR14256299_2.fastq</li>
+			</ul>
+		</ul>
+<li>mm10.DPNII.frag.bed</li>
+<li>target.bed</li>
+<li>config_hicpro.txt</li>
+<li>environment.yml</li>
+<li>matrix/</li>
+	<ul>
+    <li>dCTCF_full.6400.matrix</li>
+    <li>ddCTCF_full.6400.matrix</li>
+    <li>6400_bins.bed</li>
+    <li>dCTCF_full.40000.matrix</li>
+    <li>40000_bins.bed</li>
+	</ul>
+</ul>
+
+You only need to focus on the `matrix` directory and the python script `load_data.py`
+
+##### `matrix` directory
+
+This directory contains the analysis results from running HiCPro on the full dataset for both the dCTCF and the ddCTCF genotypes. The two <code>.bed</code> files in the `matrix` folder contain the boundaries of each bin produced by breaking the genome into bins of the size indicated in the file name. The <code>.matrix</code> files contain 3 columns corresponding to the bin # of the first part of an interaction, the bin # of the second part of an interaction, and a normalized score associated with that interaction.
+
+##### `load_data.py`
+
+You will want to use this script to read the matrix and bin files when you plot the heatmaps in Part 2 of the assignment.
+
+#### Comment on the results
+
+Considering the plots in the `analysis/hic_results/pic` directory, comment on the following:
 
 - **What percentage of reads are valid interactions (duplicates do not count as valid)?**
 - **What constitutes the majority of invalid 3C pairs? What does it actually mean (you may need to dig into the [HiC-Pro manual](https://github.com/nservant/HiC-Pro/blob/v3.1.0/doc/MANUAL.md))?**
 
+You may find this post helpful: [https://nservant.github.io/HiC-Pro/RESULTS.html](https://nservant.github.io/HiC-Pro/RESULTS.html)
 
-### Part 2: Exploring the heatmaps
+### Part 2: Exploring the results by plotting heatmaps
+
+
 
 #### Creating differential interaction plots
 
-You will now use the data you analyzed as well as that provided at 6400bp resolution to recreate figure 4a from the paper (minus the scale bars). You will have two versions, one with your subsetted data and another with the full data provided. To do this, you will need to take the sparse format that is provided and convert it into a complete matrix for plotting. You have been provided with a starting script for loading the data you will need for this. Your goal is to produce a horizontal 3-panel plot with a heatmap for ddCTCF, dCTCF, and dCTCF - ddCTCF (in this order), covering the region chr15:11170245-12070245 (note that this is different from the paper because they used mm9 and you are using mm10). The heatmaps should come from the `iced` folder and you can use either 6400bp bin file from the `raw` folder in `hic_results/matrix/XXXX`.
+You will now use the subsampled data which was analyzed as well as the full data (both provided at 6400bp resolution) to recreate figure 4a from the paper (minus the scale bars). Specifically you will plot two different versions, one with the subsetted data and another with the full data provided.
+
+Your goal is to produce a horizontal 3-panel plot with a heatmap for ddCTCF, dCTCF, and dCTCF - ddCTCF (in this order), covering the region chr15:11170245-12070245 (note that this is different from the paper because they used mm9 and you are using mm10).
+
+You have been provided with a starting script for loading the data you will need for this. You will input
+
+	* two sparse format matrices
+		* one ddCTCF
+		* one dCTCF
+	* one bin file
+	* the output name for your heatmap
+
+You will want to input the sparse format that is provided as results from HiCPro. The sparse format data you want should come from the `iced` or normalized data folder. For the input bin file, you can use either 6400bp bin file from the `raw` folder in `hic_results/matrix/XXXX`.
 
 To create the plot, you will need to do the following:
 
 1. Filter out data with one or both interaction ends falling outside the desired bin range
-2. Log-transform the scores (the dynamic range of data makes it hard to visualize the non-transformed data). Also, shift the data by subtracting the minimum value so the new minimum value is zero (this will prevent issues where there is missing information)
-2. Convert the sparse data into a square matrix (note that the sparse data only contains one entry per interaction with the lower-numbered bin in the first column). For one line of the sparse data format, the data relates to the full matrix as follows:
+2. Log-transform the scores (the dynamic range of data makes it hard to visualize the non-transformed data).
+3. Also, shift the data by subtracting the minimum value so the new minimum value is zero (this will prevent issues where there is missing information)
+4. Convert the sparse data into a square matrix (note that the sparse data only contains one entry per interaction with the lower-numbered bin in the first column). By converting the sparse matrix it into a complete matrix for plotting, you have two entries per interaction. For one line of the sparse data format, the data relates to the full matrix as follows:
 
 	```python
 	mat[sparse['F1'][i], sparse['F2'][i]] = sparse['score'][i]
 	```
-	
-4. Plot the two matrices using the same maximum value (set vmax in `imshow`). I suggest using the `magma` color map, although you need to flip your scores to mimic the paper figure
-5. For the difference plot, I suggest using the `seismic` color map and `norm=colors.CenteredNorm`. It helps to remove the distance dependent signal and smooth the data first as there is noise. You can use the following function to remove the distance dependent signal:
+
+5. Plot the two matrices using the same maximum value (set vmax in `imshow`). I suggest using the `magma` color map, although you need to flip your scores to mimic the paper figure
+6. For the difference plot, I suggest using the `seismic` color map and `norm=colors.CenteredNorm`. It helps to remove the distance dependent signal and smooth the data first as there is noise. You can use the following function to remove the distance dependent signal:
 
 	```python
 	def remove_dd_bg(mat):
