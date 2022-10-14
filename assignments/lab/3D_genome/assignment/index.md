@@ -32,17 +32,13 @@ In today's assignment you will attempt to recreate some of the paper's findings 
 Due to issues running HiCPro, please download the analysis results from running HiCPro on the subsampled data:
 
 
-<pre><code>
-curl https://bx.bio.jhu.edu/data/msauria/cmdb-lab/hicpro_analysis.tar.gz --output hicpro_analysis.tar.gz
-tar -xzvf hicpro_analysis.tar.gz
-</code></pre>
+<pre><code>curl https://bx.bio.jhu.edu/data/msauria/cmdb-lab/hicpro_analysis.tar.gz --output hicpro_analysis.tar.gz
+tar -xzvf hicpro_analysis.tar.gz</code></pre>
 
 Please also download the analysis results from Mike running HiCPro on the full dataset:
 
-<pre><code>
-curl https://bx.bio.jhu.edu/data/msauria/cmdb-lab/3dgenome_data.tar.gz --output 3dgenome_data.tar.gz
-tar -xzvf 3dgenome_data.tar.gz
-</code></pre>
+<pre><code>curl https://bx.bio.jhu.edu/data/msauria/cmdb-lab/3dgenome_data.tar.gz --output 3dgenome_data.tar.gz
+tar -xzvf 3dgenome_data.tar.gz</code></pre>
 
 <header>
 <h4> Explore the results </h4>
@@ -156,15 +152,13 @@ To create the plot, you will need to do the following:
 	<li>Also, shift the data by subtracting the minimum value so the new minimum value is zero (this will prevent issues where there is missing information)</li>
 	<li>Convert the sparse data into a square matrix (note that the sparse data only contains one entry per interaction with the lower-numbered bin in the first column). By converting the sparse matrix it into a complete matrix for plotting, you have two entries per interaction. For one line of the sparse data format, the data relates to the full matrix as follows:</li>
 
-	<pre><code>
-	mat[sparse['F1'][i], sparse['F2'][i]] = sparse['score'][i]
-	</code></pre>
+	<code>mat[sparse['F1'][i], sparse['F2'][i]] = sparse['score'][i]</code>
 
 	<li>Plot the two matrices using the same maximum value (set <code>vmax</code> in <code>imshow</code>). I suggest using the <code>magma</code> color map, although you need to flip your scores to mimic the paper figure</li>
 	<li>For the difference plot, I suggest using the <code>seismic</code> color map and <code>norm=colors.CenteredNorm</code>. It helps to remove the distance dependent signal and smooth the data first as there is noise. You can use the following function to remove the distance dependent signal:</li>
 </ol>
 
-	<pre><code>
+	```python
 	def remove_dd_bg(mat):
 	    N = mat.shape[0]
 	    mat2 = numpy.copy(mat)
@@ -174,11 +168,11 @@ To create the plot, you will need to do the following:
 	        if i > 0:
 	            mat2[numpy.arange(N - i), numpy.arange(i, N)] -= bg
 	    return mat2
-	 </code></pre>
+	 ```
 
  	You can use this function to create smoothed matrices before subtracting:
 
-	<pre><code>
+	```python
 	def smooth_matrix(mat):
 	    N = mat.shape[0]
 	    invalid = numpy.where(mat[1:-1, 1:-1] == 0)
@@ -189,7 +183,7 @@ To create the plot, you will need to do the following:
 	    nmat /= 9
 	    nmat[invalid] = 0
 	    return nmat
-	</code></pre>
+	```
 
 <ol>
 	<li><b>Were you able to see the highlighted difference from the original figure?</b></li>
@@ -207,9 +201,7 @@ Once you have a matrix, you will need to find the insulation score by taking the
 
 You can use the following syntax to find the mean of a 5x5 block. This one is for upstream of the test point <i>i</i>.
 
-<pre><code>
-numpy.mean(mat[(i - 5):i, i:(i + 5)])
-</code></pre>
+<pre><code>numpy.mean(mat[(i - 5):i, i:(i + 5)])</code></pre>
 
 Note that the insulation score is found at the boundary between two bins (if i==5, then the insulation score corresponds to the start of bin 5, assuming that bin 0 is the first bin).
 
@@ -219,7 +211,7 @@ Note that the insulation score is found at the boundary between two bins (if i==
 
 Finally, plot the heatmap for bins 54878 to 54951 (chr15:10400000-13400000). Use the log-transformed data but not distance-corrected. You should also plot the insulation scores below the heatmap, lining them up with the heatmap. I found that using the following worked nicely for this purpose:
 
-<pre><code>
+```python
 fig, ax = plt.subplots(2, 1, gridspec_kw={'height_ratios': [3, 1]}, figsize=(5,6.25))
 ax[0].axis('off')
 plt.margins(x=0)
@@ -230,7 +222,7 @@ plt.subplots_adjust(left=0.15,
                 top=1.0,
                 wspace=0.4,
                 hspace=0.0)
-</code></pre>
+```
 
 <header>
 <h2>Submission</h2>
@@ -276,13 +268,9 @@ conda env create -f environment.yml -n hicpro
 
 You will be using capture Hi-C data for two edited cell lines, one with a single deleted CTCF site within the domain of interest and another with two deleted CTCF sites within the domain of interest. Due to time constraints, you will be analyzing a subsampled set of reads. You will also be provided with analyzed data from the complete datasets. You can download the data as follows:
 
-<code>
-curl https://bx.bio.jhu.edu/data/msauria/cmdb-lab/3dgenome_data.tar.gz --output 3dgenome_data.tar.gz
-</code>
-<br/><br/>
-<code>
+<pre><code>curl https://bx.bio.jhu.edu/data/msauria/cmdb-lab/3dgenome_data.tar.gz --output 3dgenome_data.tar.gz
 curl https://hgdownload.soe.ucsc.edu/goldenPath/mm10/bigZips/mm10.chrom.sizes --output mm10.chrom.sizes
-</code>
+</code></pre>
 
 Next, unpack the datasets.
 
@@ -371,7 +359,7 @@ make install
 <h4> Processing the capture Hi-C data </h4>
 </header>
 
-Before running HiC-Pro, you will need to edit the configuration file. There are three lines that you will need to replace <code><YOUR_DIRECTORY></code> with the complete path to the directory you are working in. You can always see the full path with the command <code>pwd</code>. Once you have filled those three entries in, save the config file.
+Before running HiC-Pro, you will need to edit the configuration file. There are three lines that you will need to replace <code>&lt;YOUR_DIRECTORY&gt;</code> with the complete path to the directory you are working in. You can always see the full path with the command <code>pwd</code>. Once you have filled those three entries in, save the config file.
 
 In order to run HiC-Pro, you need to give it the folder where the fastq files are, organized by sample (<code>-i</code>), the name of an output directory to store the results in (<code>-o</code>), and a configuration file (<code>-c</code>). The configuration file was obtained from the repo describing the analysis from the paper and has been updated with the correct paths for various files. You will need to run the program by calling it from <code>HiC-Pro_3.1.0/bin</code> which was created in your working directory when you installed HiC-Pro.
 
