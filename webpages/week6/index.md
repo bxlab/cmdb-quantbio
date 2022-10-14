@@ -6,7 +6,7 @@
 
 ## Homework Assignment
 
-
+[Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/3D_genome/assignment/)
 
 ## Applied Paper Example
 
