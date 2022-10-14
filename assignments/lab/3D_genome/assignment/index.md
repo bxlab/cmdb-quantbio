@@ -1,107 +1,134 @@
-# Assignment 6: The 3D Genome
+<header>
+<h1> Assignment 6: The 3D Genome</h1>
+</header>
+
 Assignment Date: Friday, Oct. 14, 2022 <br>
 Due Date: Friday, Oct. 21, 2022 @ 1:00pm ET <br>
 
-## Lecture
+<header>
+<h2> Lecture</h2>
+</header>
 
-[Lecture slides](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/3D_genome/slides_asynchronous_or_livecoding_resources/3D_Genome.pdf)
+<a href="https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/3D_genome/slides_asynchronous_or_livecoding_resources/3D_Genome.pdf">Lecture slides</a>
 
-## Assignment Overview
 
-For this lab, you are going to be working with capture Hi-C data from [Nonlinear control of transcription through
-enhancer–promoter interactions](https://pubmed.ncbi.nlm.nih.gov/35418676/). In this study, the authors used a transgene in an empty topological domain to explore the effects of enhancer placement both within and outside the domain boundaries.
+<header>
+<h2> Assignment Overview</h2>
+</header>
+
+For this lab, you are going to be working with capture Hi-C data from <a href="https://pubmed.ncbi.nlm.nih.gov/35418676/">Nonlinear control of transcription through
+enhancer–promoter interactions</a>. In this study, the authors used a transgene in an empty topological domain to explore the effects of enhancer placement both within and outside the domain boundaries.
 
 In today's assignment you will attempt to recreate some of the paper's findings and figures.
 
-### Part 1: Getting, Exploring, and Commenting on the HiCPro analysis results
+<header>
+<h3>Part 1: Getting, Exploring, and Commenting on the HiCPro analysis results</h3>
+</header>
 
-#### Get the results
+<header>
+<h4>Get the results</h4>
+</header>
 
 Due to issues running HiCPro, please download the analysis results from running HiCPro on the subsampled data:
 
 
-```
+<pre><code>
 curl https://bx.bio.jhu.edu/data/msauria/cmdb-lab/hicpro_analysis.tar.gz --output hicpro_analysis.tar.gz
 tar -xzvf hicpro_analysis.tar.gz
-```
+</code></pre>
 
 Please also download the analysis results from Mike running HiCPro on the full dataset:
 
-```
+<pre><code>
 curl https://bx.bio.jhu.edu/data/msauria/cmdb-lab/3dgenome_data.tar.gz --output 3dgenome_data.tar.gz
 tar -xzvf 3dgenome_data.tar.gz
-```
+</code></pre>
 
-#### Explore the results
+<header>
+<h4> Explore the results </h4>
+</header>
 
-After unzipping the `hicpro_analysis.tar.gz` tar file, you will have a directory called `analysis` with 5 subfolders
+After unzipping the <code>hicpro_analysis.tar.gz</code> tar file, you will have a directory called <code>analysis</code> with 5 subfolders
 
-1. `bowtie_results`
-2. `hic_results`
-3. `fastq`
-4. `logs`
-5. `tmp`
+<ol>
+	<li> <code>bowtie_results</code></li>
+	<li> <code>hic_results</code></li>
+	<li> <code>fastq</code></li>
+	<li> <code>logs</code></li>
+	<li> <code>tmp</code></li>
+</ol>
 
 The <code>bowtie_results</code> directory has all of the mapped read data. The <code>hic_results</code> has all of the data once reads have been assigned to restriction fragments. In this directory, there is a directory <code>pic</code> containing several QC plots. Take a look at the <code>HiCContactRanges</code> and <code>HiCFragment</code> plots (the mapping plots don't tell you anything since only mapped data were selected).
 
-You will want to focus on the `hic_results` directory and its subdirectories `pic` and `matrix` for the files you'll use as input when plotting and
+You will want to focus on the <code>hic_results</code> directory and its subdirectories <code>pic</code> and <code>matrix</code> for the files you'll use as input when plotting and
 
-After unzipping the `3dgenome_data.tar.gz` tar file, you will have 15 files.
+After unzipping the <code>3dgenome_data.tar.gz</code> tar file, you will have 15 files.
 
 <ul>
-<li>make_plots.sh</li>
-<li>load_data.py</li>
-<li>fastq/</li>
+<li><code>make_plots.sh</code></li>
+<li><code>load_data.py</code></li>
+<li><code>fastq/</code></li>
 	<ul>
-		<li>dCTCF/</li>
+		<li><code>dCTCF/</code></li>
 			<ul>
-    		<li>SRR14256290_1.fastq</li>
-        <li>SRR14256290_2.fastq</li>
+    		<li><code>SRR14256290_1.fastq</code></li>
+        <li><code>SRR14256290_2.fastq</code></li>
 			</ul>
-    <li>ddCTCF/</li>
+    <li><code>ddCTCF/</code></li>
       <ul>
-				<li>SRR14256299_1.fastq</li>
-        <li>SRR14256299_2.fastq</li>
+				<li><code>SRR14256299_1.fastq</code></li>
+        <li><code>SRR14256299_2.fastq</code></li>
 			</ul>
 		</ul>
-<li>mm10.DPNII.frag.bed</li>
-<li>target.bed</li>
-<li>config_hicpro.txt</li>
-<li>environment.yml</li>
-<li>matrix/</li>
+<li><code>mm10.DPNII.frag.bed</code></li>
+<li><code>target.bed</code></li>
+<li><code>config_hicpro.txt</code></li>
+<li><code>environment.yml</code></li>
+<li><code>matrix/</code></li>
 	<ul>
-    <li>dCTCF_full.6400.matrix</li>
-    <li>ddCTCF_full.6400.matrix</li>
-    <li>6400_bins.bed</li>
-    <li>dCTCF_full.40000.matrix</li>
-    <li>40000_bins.bed</li>
+    <li><code>dCTCF_full.6400.matrix</code></li>
+    <li><code>ddCTCF_full.6400.matrix</code></li>
+    <li><code>6400_bins.bed</code></li>
+    <li><code>dCTCF_full.40000.matrix</code></li>
+    <li><code>40000_bins.bed</code></li>
 	</ul>
 </ul>
 
-You only need to focus on the `matrix` directory and the python script `load_data.py`
+You only need to focus on the <code>matrix</code> directory and the python script <code>load_data.py</code>
 
-##### `matrix` directory
+<header>
+<h5><code>matrix</code> directory</h5>
+</header>
 
-This directory contains the analysis results from running HiCPro on the full dataset for both the dCTCF and the ddCTCF genotypes. The two <code>.bed</code> files in the `matrix` folder contain the boundaries of each bin produced by breaking the genome into bins of the size indicated in the file name. The <code>.matrix</code> files contain 3 columns corresponding to the bin # of the first part of an interaction, the bin # of the second part of an interaction, and a normalized score associated with that interaction.
+This directory contains the analysis results from running HiCPro on the full dataset for both the dCTCF and the ddCTCF genotypes. The two <code>.bed</code> files in the <code>matrix</code> folder contain the boundaries of each bin produced by breaking the genome into bins of the size indicated in the file name. The <code>.matrix</code> files contain 3 columns corresponding to the bin # of the first part of an interaction, the bin # of the second part of an interaction, and a normalized score associated with that interaction.
 
-##### `load_data.py`
+<header>
+<h5><code>load_data.py</code></h5>
+</header>
 
 You will want to use this script to read the matrix and bin files when you plot the heatmaps in Part 2 of the assignment.
 
-#### Comment on the results
+<header>
+<h4>Comment on the results</h4>
+</header>
 
-Considering the plots in the `analysis/hic_results/pic` directory, comment on the following:
+Considering the plots in the <code>analysis/hic_results/pic</code> directory, comment on the following:
 
-- **What percentage of reads are valid interactions (duplicates do not count as valid)?**
-- **What constitutes the majority of invalid 3C pairs? What does it actually mean (you may need to dig into the [HiC-Pro manual](https://github.com/nservant/HiC-Pro/blob/v3.1.0/doc/MANUAL.md))?**
+<ul>
+	<li><b>What percentage of reads are valid interactions (duplicates do not count as valid)?</b></li>
+	<li><b>What constitutes the majority of invalid 3C pairs? What does it actually mean (you may need to dig into the <a href="https://github.com/nservant/HiC-Pro/blob/v3.1.0/doc/MANUAL.md">HiC-Pro manual</a>)?</b></li>
+</ul>
 
-You may find this post helpful: [https://nservant.github.io/HiC-Pro/RESULTS.html](https://nservant.github.io/HiC-Pro/RESULTS.html)
+You may find this post helpful: <a href="https://nservant.github.io/HiC-Pro/RESULTS.html">https://nservant.github.io/HiC-Pro/RESULTS.html</a>
 
-### Part 2: Exploring the results by plotting heatmaps
+<header>
+<h3>Part 2: Exploring the results by plotting heatmaps</h3>
+</header>
 
 
-
-#### Creating differential interaction plots
+<header>
+<h4>Creating differential interaction plots</h4>
+</header>
 
 You will now use the subsampled data which was analyzed as well as the full data (both provided at 6400bp resolution) to recreate figure 4a from the paper (minus the scale bars). Specifically you will plot two different versions, one with the subsetted data and another with the full data provided.
 
@@ -109,29 +136,35 @@ Your goal is to produce a horizontal 3-panel plot with a heatmap for ddCTCF, dCT
 
 You have been provided with a starting script for loading the data you will need for this. You will input
 
-	* two sparse format matrices
-		* one ddCTCF
-		* one dCTCF
-	* one bin file
-	* the output name for your heatmap
+<ul>
+	<li> two sparse format matrices </li>
+	<ul>
+		<li>one ddCTCF</li>
+		<li>one dCTCF</li>
+	</ul>
+	<li>one bin file</li>
+	<li>the output name for your heatmap</li>
+</ul>
 
-You will want to input the sparse format that is provided as results from HiCPro. The sparse format data you want should come from the `iced` or normalized data folder. For the input bin file, you can use either 6400bp bin file from the `raw` folder in `hic_results/matrix/XXXX`.
+You will want to input the sparse format that is provided as results from HiCPro. The sparse format data you want should come from the <code>iced</code> or normalized data folder. For the input bin file, you can use either 6400bp bin file from the <code>raw</code> folder in <code>hic_results/matrix/XXXX</code>.
 
 To create the plot, you will need to do the following:
 
-1. Filter out data with one or both interaction ends falling outside the desired bin range
-2. Log-transform the scores (the dynamic range of data makes it hard to visualize the non-transformed data).
-3. Also, shift the data by subtracting the minimum value so the new minimum value is zero (this will prevent issues where there is missing information)
-4. Convert the sparse data into a square matrix (note that the sparse data only contains one entry per interaction with the lower-numbered bin in the first column). By converting the sparse matrix it into a complete matrix for plotting, you have two entries per interaction. For one line of the sparse data format, the data relates to the full matrix as follows:
+<ol>
+	<li>Filter out data with one or both interaction ends falling outside the desired bin range</li>
+	<li>Log-transform the scores (the dynamic range of data makes it hard to visualize the non-transformed data).</li>
+	<li>Also, shift the data by subtracting the minimum value so the new minimum value is zero (this will prevent issues where there is missing information)</li>
+	<li>Convert the sparse data into a square matrix (note that the sparse data only contains one entry per interaction with the lower-numbered bin in the first column). By converting the sparse matrix it into a complete matrix for plotting, you have two entries per interaction. For one line of the sparse data format, the data relates to the full matrix as follows:</li>
 
-	```python
+	<pre><code>
 	mat[sparse['F1'][i], sparse['F2'][i]] = sparse['score'][i]
-	```
+	</code></pre>
 
-5. Plot the two matrices using the same maximum value (set vmax in `imshow`). I suggest using the `magma` color map, although you need to flip your scores to mimic the paper figure
-6. For the difference plot, I suggest using the `seismic` color map and `norm=colors.CenteredNorm`. It helps to remove the distance dependent signal and smooth the data first as there is noise. You can use the following function to remove the distance dependent signal:
+	<li>Plot the two matrices using the same maximum value (set <code>vmax</code> in <code>imshow</code>). I suggest using the <code>magma</code> color map, although you need to flip your scores to mimic the paper figure</li>
+	<li>For the difference plot, I suggest using the <code>seismic</code> color map and <code>norm=colors.CenteredNorm</code>. It helps to remove the distance dependent signal and smooth the data first as there is noise. You can use the following function to remove the distance dependent signal:</li>
+</ol>
 
-	```python
+	<pre><code>
 	def remove_dd_bg(mat):
 	    N = mat.shape[0]
 	    mat2 = numpy.copy(mat)
@@ -141,11 +174,11 @@ To create the plot, you will need to do the following:
 	        if i > 0:
 	            mat2[numpy.arange(N - i), numpy.arange(i, N)] -= bg
 	    return mat2
-	 ```
+	 </code></pre>
 
  	You can use this function to create smoothed matrices before subtracting:
 
-	```python
+	<pre><code>
 	def smooth_matrix(mat):
 	    N = mat.shape[0]
 	    invalid = numpy.where(mat[1:-1, 1:-1] == 0)
@@ -156,31 +189,37 @@ To create the plot, you will need to do the following:
 	    nmat /= 9
 	    nmat[invalid] = 0
 	    return nmat
-	```
+	</code></pre>
 
-- **Were you able to see the highlighted difference from the original figure?**
-- **What impact did sequencing depth have?**
-- **What does the highlighted signal indicate?**
+<ol>
+	<li><b>Were you able to see the highlighted difference from the original figure?</b></li>
+	<li><b>What impact did sequencing depth have?</b></li>
+	<li><b>What does the highlighted signal indicate?</b></li>
+</ol>
 
-#### Finding insulation scores
+<header>
+<h4> Finding insulation scores </h4>
+</header>
 
 Next you will need to score the provided 40kb resolution data to determine the level of insulation between each bin. You will use the whole range of data for this region which spans bins 54878 to 54951. To do this, you will first need to log-transform the data as before, subtracting the minimum score after transformation. You will then need to convert the data into a matrix.
 
-Once you have a matrix, you will need to find the insulation score by taking the mean of the 5x5 square of interactions between the 5 upstream bins and 5 downstream binsaround the target.
+Once you have a matrix, you will need to find the insulation score by taking the mean of the 5x5 square of interactions between the 5 upstream bins and 5 downstream bins around the target.
 
-You can use the following syntax to find the mean of a 5x5 block. This one is for upstream of the test point *i*.
+You can use the following syntax to find the mean of a 5x5 block. This one is for upstream of the test point <i>i</i>.
 
-```python
+<pre><code>
 numpy.mean(mat[(i - 5):i, i:(i + 5)])
-```
+</code></pre>
 
 Note that the insulation score is found at the boundary between two bins (if i==5, then the insulation score corresponds to the start of bin 5, assuming that bin 0 is the first bin).
 
-#### Plotting insulation scores
+<header>
+<h4>Plotting insulation scores </h4>
+</header>
 
 Finally, plot the heatmap for bins 54878 to 54951 (chr15:10400000-13400000). Use the log-transformed data but not distance-corrected. You should also plot the insulation scores below the heatmap, lining them up with the heatmap. I found that using the following worked nicely for this purpose:
 
-```python
+<pre><code>
 fig, ax = plt.subplots(2, 1, gridspec_kw={'height_ratios': [3, 1]}, figsize=(5,6.25))
 ax[0].axis('off')
 plt.margins(x=0)
@@ -191,22 +230,29 @@ plt.subplots_adjust(left=0.15,
                 top=1.0,
                 wspace=0.4,
                 hspace=0.0)
-```
+</code></pre>
 
-## Submission
+<header>
+<h2>Submission</h2>
+</header>
 
 For this assignment you should submit four things:
-1. A README.md with answers to the questions
-2. A three panel plot for your analyzed data
-3. A three panel plot for the full data
-4. A two panel plot with insulation scores
 
+<ol>
+	<li>A README.md with answers to the questions</li>
+	<li>A three panel plot for the subsampled analyzed data</li>
+	<li>A three panel plot for the full analyzed data</li>
+	<li>A two panel plot with insulation scores</li>
+</ol>
 
-## Advanced exercise
+<header>
+<h2>Advanced exercise</h2>
+</header>
 
 Find peaks in your insulation scores and add lines to the heatmap corresponding to these peaks. You can define peaks as points with values higher than both neighboring points.
 
-## What you would have done to run HiCPro
+***
+<details><summary><b>What you would have done to run HiCPro:</b></summary>
 
 <header>
 <h3>Part 0: Setting up your conda environment</h3>
@@ -332,6 +378,9 @@ In order to run HiC-Pro, you need to give it the folder where the fastq files ar
 Running the analysis will take several minutes. You will see information about each step as it is performed. Once the analysis has finished running, look around in the output directory. You should have five folders. The <code>bowtie_results</code> directory has all of the mapped read data. The <code>hic_results</code> has all of the data once reads have been assigned to restriction fragments. In this directory, there is a directory <code>pic</code> containing several QC plots. Take a look at the <code>HiCContactRanges</code> and <code>HiCFragment</code> plots (the mapping plots don't tell you anything since only mapped data were selected).
 
 <ul>
-	<li> <b>What percentage of reads are valid interactions (duplicates do not count as valid)?</b></li>
-	<li> <b>What constitutes the majority of invalid 3C pairs? What does it actually mean (you may need to dig into the [HiC-Pro manual](https://github.com/nservant/HiC-Pro/blob/v3.1.0/doc/MANUAL.md))?</b></li>
+	<li><b>What percentage of reads are valid interactions (duplicates do not count as valid)?</b></li>
+	<li><b>What constitutes the majority of invalid 3C pairs? What does it actually mean (you may need to dig into the <a href="https://github.com/nservant/HiC-Pro/blob/v3.1.0/doc/MANUAL.md">HiC-Pro manual</a>)?</b></li>
 </ul>
+
+</details>
+***
