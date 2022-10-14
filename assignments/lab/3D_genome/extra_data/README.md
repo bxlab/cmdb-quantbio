@@ -1,1 +1,1 @@
-Note any pre-loaded data used in this README
+This assignment includes an environment.yml file for creating a HiC-Pro specific conda environment and a script for loading sparse matrices and a bed file describing genomic bins.
