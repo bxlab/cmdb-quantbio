@@ -4,6 +4,8 @@
 
 [Lecture Slides](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/3D_genome/slides_asynchronous_or_livecoding_resources/3D_Genome.pdf)
 
+[Recording of lecture](https://livejohnshopkins.sharepoint.com/:v:/s/qbb2021/EWZOitWo6iFCmPf9rQEafIkB5EETw9lZ4HaSfRyoj3WtzQ?e=rBaJOb)
+
 ## Homework Assignment
 
 [Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/3D_genome/assignment/)
