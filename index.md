@@ -70,7 +70,7 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
 |  5   | 10/7 | Mike Sauria         | [ChIP-Seq](webpages/week5)                                     |
 |  6   | 10/14| Mike Sauria         | [3D Genome](webpages/week6)                                    |
 |  7   | 10/21| No class            | Retreat                                                        |
-|  8   | 10/28| Mike Sauria         | Single Molecule Sequencing and DNA Modifications               |
+|  8   | 10/28| Mike Sauria         | [Single Molecule Sequencing and DNA Modifications](webpages/week8)               |
 |  9   | 11/4 | Rajiv McCoy         | Bulk RNA-Seq                                                   |
 |  10  | 11/11| Kate Weaver (Guest) | Machine Learning and Applications in mRNA Expression Prediction|
 |  11  | 11/18| Rajiv McCoy         | Single-Cell RNA-Seq                                            |
