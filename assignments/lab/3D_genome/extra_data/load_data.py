@@ -7,6 +7,10 @@ import matplotlib.pyplot as plt
 import matplotlib.colors as colors
 
 def main():
+    # in1_fname should be ddCTCF
+    # in2_fname should be dCTCF
+    # bin_fname should be bed file with bin locations
+    
     in1_fname, in2_fname, bin_fname, out_fname = sys.argv[1:5]
     data1 = numpy.loadtxt(in1_fname, dtype=numpy.dtype([
         ('F1', int), ('F2', int), ('score', float)]))
