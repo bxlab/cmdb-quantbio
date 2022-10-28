@@ -2,7 +2,7 @@
 
 ## Lecture -- Mike Sauria
 
-[Lecture Slides]((https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/nanopore-seq/slides_asynchronous_or_livecoding_resources/Nanopore.pdf)
+[Lecture Slides](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/nanopore-seq/slides_asynchronous_or_livecoding_resources/Nanopore.pdf)
 
 Recording of lecture -- To be linked
 
