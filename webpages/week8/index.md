@@ -4,7 +4,7 @@
 
 [Lecture Slides](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/nanopore-seq/slides_asynchronous_or_livecoding_resources/Nanopore.pdf)
 
-Recording of lecture -- To be linked
+[Recording of lecture](https://livejohnshopkins.sharepoint.com/:v:/s/qbb2021/ERW17eQvFq5Irj8iQkJ4BScB2Z8oBpXLHr-zKXxfabNvwg?e=mQpmO9)
 
 ## Homework Assignment
 
