@@ -101,7 +101,7 @@ cd ../
 This will create a new executable in the folder `igv/build/IGV-dist/igv.sh`. For convenience, I suggest creating a symlink (like an alias) in your homework directory.
 
 ```bash
-ln -s ${PWD}/igvbuild/IGV-dist/igv.sh ./
+ln -s ${PWD}/igv/build/IGV-dist/igv.sh ./
 ```
 
 Now, when you want to start `IGV`, simply type `./igv.sh`.
