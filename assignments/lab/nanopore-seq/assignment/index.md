@@ -71,7 +71,7 @@ To call variants, Medaka needs to know which model was used to do the basecallin
 
 ### Part 2: Mark reads with the correct haplotype tag
 
-The next step is to assign reads a haplotype. To do this, you will be using `whatshap haplotype`. As in the previous step, you will be doing this for each region independently. There is an error in the `whatshap` usage information about the format of specifying a region. You need to use the format `chr:start:end`. There is also a quirk that the `whatshap haplotag` command will freeze if the first argument passed is not `-o OUT_FNAME` where OUT_FNAME is a filename to save the phased bam file to. You will need to output a haplotag list for the splitting step input. Finally, note that the VCF file needed for input should be the compressed and indexed one from the medaka output (i.e. ending in `.gz`).
+The next step is to assign reads a haplotype. To do this, you will be using `whatshap haplotag`. As in the previous step, you will be doing this for each region independently. There is an error in the `whatshap` usage information about the format of specifying a region. You need to use the format `chr:start:end`. There is also a quirk that the `whatshap haplotag` command will freeze if the first argument passed is not `-o OUT_FNAME` where OUT_FNAME is a filename to save the phased bam file to. You will need to output a haplotag list for the splitting step input. Finally, note that the VCF file needed for input should be the compressed and indexed one from the medaka output (i.e. ending in `.gz`).
 
 ### Part 3: Split reads into two files based on their haplotype
 
