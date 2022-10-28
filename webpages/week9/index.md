@@ -12,4 +12,4 @@ Homework assignment -- To be linked
 
 ## Applied Paper Example
 
-Please read the following paper,["Statistical Design and Analysis of RNA Sequencing Data"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2881125/), before class. Don't worry about understanding every equation; instead focus on the principles of experimental design that this paper highlights. Also specifically consider Figure 4.
+Please read the following paper,["Statistical Design and Analysis of RNA Sequencing Data"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2881125/), before class. Don't worry about understanding every equation; instead focus on the principles of experimental design that this paper highlights. Specifically, be sure to take a look at Figure 4.
