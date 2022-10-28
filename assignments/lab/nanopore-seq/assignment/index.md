@@ -108,7 +108,7 @@ Now, when you want to start `IGV`, simply type `./igv.sh`.
 
 ### Part 5: Configuring IGV for differential methylation
 
-Finally, you will be visualizing your data in `IGV` (the new one you just installed).  Once you have loaded the haplotype-specific bam files, you will need to change the coloring scheme to display the embedded methylation data. To do this, two-finger click on each track and then select `Color alignments by->base modification (5mC)`.
+Finally, you will be visualizing your data in `IGV` (the new one you just installed).  Once you have loaded the haplotype-specific bam files, you will need to change the coloring scheme to display the embedded methylation data. To do this, two-finger click on each track and then select `Color alignments by->base modification (5mC)`. For information about interpreting this diplay mode, see [here](https://github.com/igvteam/igv/wiki/5mC-coloring-mode).
 
 ### Part 6: Find and plot differentially methylated regions
 
