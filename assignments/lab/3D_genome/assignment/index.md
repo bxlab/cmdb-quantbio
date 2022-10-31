@@ -228,13 +228,14 @@ plt.subplots_adjust(left=0.15,
 <h2>Submission</h2>
 </header>
 
-For this assignment you should submit four things:
+For this assignment you should submit five things:
 
 <ol>
-	<li>A README.md with answers to the questions</li>
+	<li>A README.md with answers to the questions and any relevant commands</li>
 	<li>A three panel plot for the subsampled analyzed data</li>
 	<li>A three panel plot for the full analyzed data</li>
 	<li>A two panel plot with insulation scores</li>
+	<li>Python script(s)</li>
 </ol>
 
 <header>
