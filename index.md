@@ -61,22 +61,22 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
 
 ### Schedule
 
-| Week | Date | Instructor          | Topic                                                          |
-| :--: | :--: | :-----------------: | :------------------------------------------------------------: |
-|  1   | 9/9  | Mike Schatz (Guest) | [Genome Assembly](webpages/week1/index.html)                   |
-|  2   | 9/16 | Dylan Taylor (Guest)| [Alignment](webpages/week2/index.html)                         |
-|  3   | 9/23 | Rajiv McCoy         | [Variant Calling](webpages/week3)                              |
-|  4   | 9/30 | Rajiv McCoy         | [GWAS](webpages/week4)                                         |
-|  5   | 10/7 | Mike Sauria         | [ChIP-Seq](webpages/week5)                                     |
-|  6   | 10/14| Mike Sauria         | [3D Genome](webpages/week6)                                    |
-|  7   | 10/21| No class            | Retreat                                                        |
-|  8   | 10/28| Mike Sauria         | [Single Molecule Sequencing and DNA Modifications](webpages/week8)               |
-|  9   | 11/4 | Rajiv McCoy         | [Bulk RNA-Seq](webpages/week9)                                 |
-|  10  | 11/11| Kate Weaver (Guest) | Machine Learning and Applications in mRNA Expression Prediction|
-|  11  | 11/18| Rajiv McCoy         | Single-Cell RNA-Seq                                            |
-|  12  | 11/25| No class            | Thanksgiving Break                                             |
-|  13  | 12/2 | Mike Sauria         | TBD                                                            |
-|  14  | 12/9 | Rajiv McCoy         | Population Genetics                                            |
+| Week | Date | Instructor          | Topic                                                                             |
+| :--: | :--: | :-----------------: | :--------------------------------------------------------------------------------:|
+|  1   | 9/9  | Mike Schatz (Guest) | [Genome Assembly](webpages/week1/index.html)                                      |
+|  2   | 9/16 | Dylan Taylor (Guest)| [Alignment](webpages/week2/index.html)                                            |
+|  3   | 9/23 | Rajiv McCoy         | [Variant Calling](webpages/week3)                                                 |
+|  4   | 9/30 | Rajiv McCoy         | [GWAS](webpages/week4)                                                            |
+|  5   | 10/7 | Mike Sauria         | [ChIP-Seq](webpages/week5)                                                        |
+|  6   | 10/14| Mike Sauria         | [3D Genome](webpages/week6)                                                       |
+|  7   | 10/21| No class            | Retreat                                                                           |
+|  8   | 10/28| Mike Sauria         | [Single Molecule Sequencing and DNA Modifications](webpages/week8)                |
+|  9   | 11/4 | Rajiv McCoy         | [Bulk RNA-Seq](webpages/week9)                                                    |
+|  10  | 11/11| Kate Weaver (Guest) | [Machine Learning and Applications in mRNA Expression Prediction](webpages/week10)|
+|  11  | 11/18| Rajiv McCoy         | Single-Cell RNA-Seq                                                               |
+|  12  | 11/25| No class            | Thanksgiving Break                                                                |
+|  13  | 12/2 | Mike Sauria         | TBD                                                                               |
+|  14  | 12/9 | Rajiv McCoy         | Population Genetics                                                               |
 {:.table.table-striped.well}
 
 <!--

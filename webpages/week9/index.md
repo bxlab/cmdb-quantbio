@@ -8,7 +8,7 @@ Recording of lecture -- To be linked
 
 ## Homework Assignment
 
-Homework assignment -- To be linked
+[Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/bulk_RNA-seq/assignment/)
 
 ## Applied Paper Example
 
