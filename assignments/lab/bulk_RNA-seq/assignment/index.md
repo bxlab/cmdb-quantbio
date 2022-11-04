@@ -14,7 +14,9 @@ Due Date: Friday, Nov. 11, 2022 <br>
 
 The data we'll using today is from [this paper](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000590) that examined sex-specific gene expression in developing Drosophila embryos. The paper provides their own processed gene expression data, but we've re-processed the raw reads and generated our own transcript-level gene expression data, and this is what you'll be using for today's assignment.
 
-The FPKM normalized gene expression data can be found here: `~/cmdb-quantbio/assignments/lab/bulk_RNA-seq/extra_data/dros_gene_expression.csv`. Copy this file to the `answers` directory you made for this assignment.
+The FPKM normalized gene expression data can be found here: `~/cmdb-quantbio/assignments/lab/bulk_RNA-seq/extra_data/dros_gene_expression.csv`. Copy this file to the `answers` directory you made for this assignment. Alternatively, you can download it directly into current directory with the following `curl` command:
+
+`curl https://raw.githubusercontent.com/bxlab/cmdb-quantbio/main/assignments/lab/bulk_RNA-seq/extra_data/dros_gene_expression.csv --output dros_gene_expression.csv`
 
 This file has FPKM data for over 34,000 transcripts of over 17,000 genes across 5 developmental stages (stages 10-14) for both male and female embryos. Take a look at the file with `less` to make sure you understand how the data is organized.
 
@@ -113,3 +115,11 @@ For this step, you will work with the same low-median-expression-filtered and lo
   * Plot: Volcano plot (by stage with sex as covariate)
 
 ## Additional Resources
+
+Here are some awesome resources for you. We don't expect you to read these all, but they're relevant for discussions we had in today's lecture and could be helpful for you in your future research.
+
+* [RNA-sequencing overview](https://www.nature.com/articles/s41576-019-0150-2). Figure 2 is especially useful and presents some of the quantification steps/tools that we haven't shown you.
+* [Specific example pipeline](https://www.nature.com/articles/nprot.2016.095) from Steven Salzberg & Co, commonly used in previous iterations of bootcamp
+* [Batch effects](https://www.biorxiv.org/content/10.1101/025528v1.full.pdf) discussion from Stephanie Hicks, specifically concerning single cell RNAseq
+* [Replicates vs Depth](https://academic.oup.com/bioinformatics/article/30/3/301/228651) and the relation to statistical power
+* The [Omnigenic inheritance](https://pubmed.ncbi.nlm.nih.gov/31051098/) model related to the discussion of cis- and trans- effects
