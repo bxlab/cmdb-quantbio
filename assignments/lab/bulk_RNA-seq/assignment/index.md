@@ -4,7 +4,7 @@ Due Date: Friday, Nov. 11, 2022 <br>
 
 ## Lecture
 
-**Slides** are available here: Coming Soon
+**Slides** are available here: [Lecture slides](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/bulk_RNA-seq/slides_asynchronous_or_livecoding_resources/20221104_qblab_gex.pptx)
 
 
 ## Assignment Overview
