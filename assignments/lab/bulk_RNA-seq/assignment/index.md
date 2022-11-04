@@ -27,15 +27,15 @@ Create a python script for this assignment. Everything you'll need to do for thi
 
 1. We recommend using `numpy` to work with this dataset (although you're welcome to use `pandas` if you feel comfortable doing so). First, you'll need read the `.csv` file into a `numpy` array. You can do so with the following code:
 
-  ```
-  input_arr = np.genfromtxt("dros_gene_expression.csv", delimiter=',', names=True, dtype=None, encoding='utf-8')
-  ```
+    ```
+    input_arr = np.genfromtxt("dros_gene_expression.csv", delimiter=',', names=True, dtype=None, encoding='utf-8')
+    ```
 
 2. With this structured array, you have access to the transcript names (the rows) and the column names from the `.csv` file. Extract this info and store it in some variables. For the column names, you can use the following code. What can you do to only include the sample names in this?
 
-  ```
-  col_names = [input_arr.dtype.names]
-  ```
+    ```
+    col_names = [input_arr.dtype.names]
+    ```
 
 3. Then subset your input data to only include the FPKM values, excluding the transcript name info.
 
@@ -45,10 +45,10 @@ Before running any analyses, you'll need to process your data a little bit more:
 
 1. Convert your structured 1D array into an unstructured 2D array that can be indexed with row and column indices. You should use the following code where `fpkm_values` is the array from Step0a:3, that only includes the FPKMS, not the transcript names. You will want to use this `fpkm_values_2d` unstructured array to filter and transform your data in the next two substeps:
 
-  ```
-  import numpy.lib.recfunctions as rfn
-  fpkm_values_2d = rfn.structured_to_unstructured(fpkm_values, dtype=np.float)
-  ```
+    ```
+    import numpy.lib.recfunctions as rfn
+    fpkm_values_2d = rfn.structured_to_unstructured(fpkm_values, dtype=np.float)
+    ```
 
 2. Subset your data to only the transcripts whose median expression is greater than 0. You can use `numpy.median()` to find the median expression of each transcript. This function has an `axis` argument that you need to set, which will determine whether you're correctly finding the median expression per transcript or instead finding the median expression per sample. [This page](https://stackoverflow.com/questions/22320534/how-does-the-axis-parameter-from-numpy-work) might help you determine what value you should assign to `axis`. After finding the median expression per transcript, you can use `numpy.where()` to subset your fpkm array appropriately. Make sure to also filter your transcript name variable.
 
@@ -86,17 +86,17 @@ For this step, you will work with the same low-median-expression-filtered and lo
 
     * Pass the structured array and a formula to `ols`, fit the model, and extract the p-values and beta values for the stage from the results for each transcript. You should store these in lists. [This man page explains provides information on how to extract these values](https://www.statsmodels.org/dev/generated/statsmodels.regression.linear_model.RegressionResults.html#statsmodels.regression.linear_model.RegressionResults) and [this stackoverflow question provides an active example of extracting beta coefficients](https://stackoverflow.com/questions/47388258/how-to-extract-the-regression-coefficient-from-statsmodels-api).
 
-2. Generate a QQ plot from the p-values. We suggest using the [`qqplot` function from `statsmodels.api`](https://stackoverflow.com/questions/48009614/quantile-quantile-plot-using-python-statsmodels-api).
+2. Generate a QQ plot from the p-values. We suggest using the [`qqplot` function from `statsmodels.api`](https://stackoverflow.com/questions/48009614/quantile-quantile-plot-using-python-statsmodels-api). Use the `dist` argument and `scipy.stats` to specify the distribution you want to compare to. By default, it compares to a normal distribution (`dist = scipy.stats.t`) -- is this what you want?
 
 3. Find a list of transcripts that exhibit differential expression by stage at a 10% false discovery rate. [We recommend using the `multipletests` function from `statsmodels.stats` for this.](https://www.statsmodels.org/dev/generated/statsmodels.stats.multitest.multipletests.html) Report this list.
 
 4. Repeat the analysis in substeps 1 and 3 above, controlling for sex as a covariate in the formula. You do not need to generate another QQ plot.
 
-  * Report the list of transcripts that exhibit differential expression by stage at a 10% false discovery rate while controlling for sex.
+5. Report the list of transcripts that exhibit differential expression by stage at a 10% false discovery rate while controlling for sex.
 
-5. Compare the lists--what is the percentage overlap with and without sex as a covariate? We suggest defining the percentage of overlap as `((# overlapping transcripts) / (# transcripts differentially expressed by stage without sex covariate)) * 100`
+6. Compare the lists--what is the percentage overlap with and without sex as a covariate? We suggest defining the percentage of overlap as `((# overlapping transcripts) / (# transcripts differentially expressed by stage without sex covariate)) * 100`
 
-6. Generate a volcano plot of the differential expression (with sex as a covariate) results. Use the betas on the x axis and -log10(p-value) on the y-axis. Color the significant points in a different color.
+7. Generate a volcano plot of the differential expression (with sex as a covariate) results. Use the betas on the x axis and -log10(p-value) on the y-axis. Color the significant points in a different color.
 
 ## Submission
 
