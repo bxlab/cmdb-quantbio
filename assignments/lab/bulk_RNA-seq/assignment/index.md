@@ -27,15 +27,15 @@ Create a python script for this assignment. Everything you'll need to do for thi
 
 1. We recommend using `numpy` to work with this dataset (although you're welcome to use `pandas` if you feel comfortable doing so). First, you'll need read the `.csv` file into a `numpy` array. You can do so with the following code:
 
-```
-input_arr = np.genfromtxt("dros_gene_expression.csv", delimiter=',', names=True, dtype=None, encoding='utf-8')
-```
+  ```
+  input_arr = np.genfromtxt("dros_gene_expression.csv", delimiter=',', names=True, dtype=None, encoding='utf-8')
+  ```
 
 2. With this structured array, you have access to the transcript names (the rows) and the column names from the `.csv` file. Extract this info and store it in some variables. For the column names, you can use the following code. What can you do to only include the sample names in this?
 
-```
-col_names = [input_arr.dtype.names]
-```
+  ```
+  col_names = [input_arr.dtype.names]
+  ```
 
 3. Then subset your input data to only include the FPKM values, excluding the transcript name info.
 
@@ -43,14 +43,12 @@ col_names = [input_arr.dtype.names]
 
 Before running any analyses, you'll need to process your data a little bit more:
 
-1. Convert your structured 1D array into an unstructured 2D array that can be indexed with row and column indices. You should use the following code where `fpkm_values` is the array from Step0a:3, that only includes the FPKMS, not the transcript names:
+1. Convert your structured 1D array into an unstructured 2D array that can be indexed with row and column indices. You should use the following code where `fpkm_values` is the array from Step0a:3, that only includes the FPKMS, not the transcript names. You will want to use this `fpkm_values_2d` unstructured array to filter and transform your data in the next two substeps:
 
-```
-import numpy.lib.recfunctions as rfn
-fpkm_values_2d = rfn.structured_to_unstructured(fpkm_values, dtype=np.float)
-```
-
-You will want to use this `fpkm_values_2d` unstructured array to filter and transform your data in the next two substeps.
+  ```
+  import numpy.lib.recfunctions as rfn
+  fpkm_values_2d = rfn.structured_to_unstructured(fpkm_values, dtype=np.float)
+  ```
 
 2. Subset your data to only the transcripts whose median expression is greater than 0. You can use `numpy.median()` to find the median expression of each transcript. This function has an `axis` argument that you need to set, which will determine whether you're correctly finding the median expression per transcript or instead finding the median expression per sample. [This page](https://stackoverflow.com/questions/22320534/how-does-the-axis-parameter-from-numpy-work) might help you determine what value you should assign to `axis`. After finding the median expression per transcript, you can use `numpy.where()` to subset your fpkm array appropriately. Make sure to also filter your transcript name variable.
 
