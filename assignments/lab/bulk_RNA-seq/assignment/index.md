@@ -28,7 +28,7 @@ Create a python script for this assignment. Everything you'll need to do for thi
 1. We recommend using `numpy` to work with this dataset (although you're welcome to use `pandas` if you feel comfortable doing so). First, you'll need read the `.csv` file into a `numpy` array. You can do so with the following code:
 
 ```
-input_arr = np.genfromtxt("dros_gene_expression.csv", delimiter=',', names=True, dtype=None)
+input_arr = np.genfromtxt("dros_gene_expression.csv", delimiter=',', names=True, dtype=None, encoding='utf-8')
 ```
 
 2. With this structured array, you have access to the transcript names (the rows) and the column names from the `.csv` file. Extract this info and store it in some variables. For the column names, you can use the following code. What can you do to only include the sample names in this?
@@ -72,7 +72,43 @@ To do this analysis, you'll be using the `dendrogram`, `linkage` and `leaves_lis
 
 ### Step 2: Differential Gene Expression
 
+For this step, you will work with the same low-median-expression-filtered and log2-transformed dataset that you prepared for the clustering analysis above.
+
+1. For each transcript, you will perform an ordinary least squares regression to test for transcripts that are differentially expressed across stages. Use the stage number as a numeric independent variable (10, 11, 12, 13, 14).
+
+    * We suggest that you use the [`ols` function from `statsmodels.formula.api`](https://www.statsmodels.org/dev/generated/statsmodels.formula.api.ols.html). To pass this function a formula with named variables and a numpy array, you'll need to build another structured array for each transcript you consider. Specifically, you'll want to store the stage number and the observed fpkm value for that stage. Use a for loop and make a list of tuples with the stage and fpkm. Then, convert this list of tuples into a structured array with names for the info and specified data types. See the slightly more complex example below where `longdf` is the structured array:
+
+    ```
+    for i in range(fpkm_values_2d_filt_transform.shape[0]):
+      list_of_tuples = []
+      for j in range(len(col_names)):
+        list_of_tuples.append((transcript_names[i],fpkm_values_2d_filt_transform[i,j], sexes[j], stages[j]))
+      longdf = np.array(list_of_tuples, dtype=[('transcript', 'S11'), ('fpkm', float), ('sex', 'S6'), ('stage', int)])
+    ```
+
+    * Pass the structured array and a formula to `ols`, fit the model, and extract the p-values and beta values for the stage from the results for each transcript. You should store these in lists. [This man page explains provides information on how to extract these values](https://www.statsmodels.org/dev/generated/statsmodels.regression.linear_model.RegressionResults.html#statsmodels.regression.linear_model.RegressionResults) and [this stackoverflow question provides an active example of extracting beta coefficients](https://stackoverflow.com/questions/47388258/how-to-extract-the-regression-coefficient-from-statsmodels-api).
+
+2. Generate a QQ plot from the p-values. We suggest using the [`qqplot` function from `statsmodels.api`](https://stackoverflow.com/questions/48009614/quantile-quantile-plot-using-python-statsmodels-api).
+
+3. Find a list of transcripts that exhibit differential expression by stage at a 10% false discovery rate. [We recommend using the `multipletests` function from `statsmodels.stats` for this.](https://www.statsmodels.org/dev/generated/statsmodels.stats.multitest.multipletests.html) Report this list.
+
+4. Repeat the analysis in substeps 1 and 3 above, controlling for sex as a covariate in the formula. You do not need to generate another QQ plot.
+
+  * Report the list of transcripts that exhibit differential expression by stage at a 10% false discovery rate while controlling for sex.
+
+5. Compare the lists--what is the percentage overlap with and without sex as a covariate? We suggest defining the percentage of overlap as `((# overlapping transcripts) / (# transcripts differentially expressed by stage without sex covariate)) * 100`
+
+6. Generate a volcano plot of the differential expression (with sex as a covariate) results. Use the betas on the x axis and -log10(p-value) on the y-axis. Color the significant points in a different color.
+
 ## Submission
 
+  * All code from the analysis
+  * Plot: Clustered heatmap of gene expression
+  * Plot: Dendrogram of cell types
+  * Plot: QQ plot of pvalues from differential expression results (by stage only, no sex covariate)
+  * Text: List of differentially expressed transcripts (10% FDR, by stage only, no sex covariate)
+  * Text: List of differentially expressed transcripts (10% FDR, by stage with sex as covariate)
+  * Text: Percentage overlap: `((# overlapping transcripts) / (# transcripts differentially expressed by stage without sex covariate)) * 100`
+  * Plot: Volcano plot (by stage with sex as covariate)
 
 ## Additional Resources
