@@ -23,19 +23,38 @@ This file has FPKM data for over 34,000 transcripts of over 17,000 genes across 
 
 Create a python script for this assignment. Everything you'll need to do for this assignment will be done in this script.
 
-### Step 0: Read in the data
+### Step 0a: Read in the data
 
-We recommend using `numpy` to work with this dataset (although you're welcome to use `pandas` if you feel comfortable doing so). First, you'll need read the `.csv` file into a `numpy` array. You can do so with the following code:
+1. We recommend using `numpy` to work with this dataset (although you're welcome to use `pandas` if you feel comfortable doing so). First, you'll need read the `.csv` file into a `numpy` array. You can do so with the following code:
 
 ```
 input_arr = np.genfromtxt("dros_gene_expression.csv", delimiter=',', names=True, dtype=None)
 ```
 
+2. With this structured array, you have access to the transcript names (the rows) and the column names from the `.csv` file. Extract this info and store it in some variables. For the column names, you can use the following code. What can you do to only include the sample names in this?
+
+```
+col_names = [input_arr.dtype.names]
+```
+
+3. Then subset your input data to only include the FPKM values, excluding the transcript name info.
+
+### Step 0b: Process input data
+
 Before running any analyses, you'll need to process your data a little bit more:
 
-1. Subset your data to only the transcripts whose median expression is greater than 0. You can use `numpy.median()` to find the median expression of each transcript. This function has an `axis` argument that you may need to set, which will determine whether you're correctly finding the median expression per transcript or instead finding the median expression per sample. [This page](https://stackoverflow.com/questions/22320534/how-does-the-axis-parameter-from-numpy-work) might help you determine what value you should assign to `axis`. After finding the median expression per transcript, you can use `numpy.where()` to subset your array appropriately.
+1. Convert your structured 1D array into an unstructured 2D array that can be indexed with row and column indices. You should use the following code where `fpkm_values` is the array from Step0a:3, that only includes the FPKMS, not the transcript names:
 
-2. Using your filtered array, apply a log2(FPKM + 0.1) transform to your data.
+```
+import numpy.lib.recfunctions as rfn
+fpkm_values_2d = rfn.structured_to_unstructured(fpkm_values, dtype=np.float)
+```
+
+You will want to use this `fpkm_values_2d` unstructured array to filter and transform your data in the next two substeps.
+
+2. Subset your data to only the transcripts whose median expression is greater than 0. You can use `numpy.median()` to find the median expression of each transcript. This function has an `axis` argument that you need to set, which will determine whether you're correctly finding the median expression per transcript or instead finding the median expression per sample. [This page](https://stackoverflow.com/questions/22320534/how-does-the-axis-parameter-from-numpy-work) might help you determine what value you should assign to `axis`. After finding the median expression per transcript, you can use `numpy.where()` to subset your fpkm array appropriately. Make sure to also filter your transcript name variable.
+
+3. Using your filtered array, apply a log2(FPKM + 0.1) transform to your data.
 
 
 ### Step 1: Clustering
@@ -44,25 +63,16 @@ We'd like to see if we can identify any broad patterns present in our gene expre
 
 To do this analysis, you'll be using the `dendrogram`, `linkage` and `leaves_list` functions from [`scipy`](http://docs.scipy.org/doc/scipy-0.14.0/reference/cluster.hierarchy.html). The documentation for SciPy isn't very helpful, but with some quick Googling you can find examples of how to use both of these tools.
 
-Before running either tool, you'll want to convert your array to an unstructured array (i.e. one without column names). You can do so using the following code (here `filtered_arr` is the output of running the filtering and transformation steps above):
+1. Using `linkage` and `leaves_list`, cluster the filtered and log2 transformed gene expression data matrix (derived from `fpkm_values_2d` earlier) for both genes and samples based on their patterns of expression (so both the rows and columns of the matrix). You will find the [numpy transpose functionality](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.T.html) useful in order to cluster the columns.
 
-```
-import numpy.lib.recfunctions as rfn
-gene_names = filtered_arr["t_name"]
-fpkm_values = filtered_arr[["male_10", "male_11", "male_12", "male_13", "male_14", "female_10", "female_11", "female_12", "female_13", "female_14"]]
-fpkm_values_2d = rfn.structured_to_unstructured(fpkm_values, dtype=np.float)
-``` 
+2. Plot a heatmap of the clustered gene expression data.
 
-You now have an array `gene_names` that holds the names of all the transcripts, and an unstructured array `fpkm_values_2d` that holds the filtered and transformed FPKM values.
-
-1. Using `linkage` and `leaves_list`, cluster the data matrix (`fpkm_values_2d`) for both genes and samples based on their patterns of expression (so both the rows and columns of the matrix). Plot a heatmap of the clustered gene expression data.
-
-2. Using `dendrogram`, create a dendrogram relating the samples to one another.
+3. Using the `dendrogram` function, create a dendrogram relating the samples to one another.
 
 
+### Step 2: Differential Gene Expression
 
 ## Submission
 
 
 ## Additional Resources
-
