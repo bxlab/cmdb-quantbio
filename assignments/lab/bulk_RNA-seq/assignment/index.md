@@ -31,13 +31,15 @@ Create a python script for this assignment. Everything you'll need to do for thi
     input_arr = np.genfromtxt("dros_gene_expression.csv", delimiter=',', names=True, dtype=None, encoding='utf-8')
     ```
 
-2. With this structured array, you have access to the transcript names (the rows) and the column names from the `.csv` file. Extract this info and store it in some variables. For the column names, you can use the following code. What can you do to only include the sample names in this?
+2. With this structured array, you have access to the transcript names (the rows) and the column names from the `.csv` file. Extract both of these pieces of info and store them in some variables. For the column names, you can use the following code. What can you do to only include the sample names in this?
 
     ```
     col_names = [input_arr.dtype.names]
     ```
 
-3. Then subset your input data to only include the FPKM values, excluding the transcript name info.
+Don't forget to create a separate variable for the row names.
+
+3. Then, subset your input data to only include the FPKM values, excluding the transcript name info.
 
 ### Step 0b: Process input data
 
@@ -86,7 +88,7 @@ For this step, you will work with the same low-median-expression-filtered and lo
 
     * Pass the structured array and a formula to `ols`, fit the model, and extract the p-values and beta values for the stage from the results for each transcript. You should store these in lists. [This man page explains provides information on how to extract these values](https://www.statsmodels.org/dev/generated/statsmodels.regression.linear_model.RegressionResults.html#statsmodels.regression.linear_model.RegressionResults) and [this stackoverflow question provides an active example of extracting beta coefficients](https://stackoverflow.com/questions/47388258/how-to-extract-the-regression-coefficient-from-statsmodels-api).
 
-2. Generate a QQ plot from the p-values. We suggest using the [`qqplot` function from `statsmodels.api`](https://stackoverflow.com/questions/48009614/quantile-quantile-plot-using-python-statsmodels-api). Use the `dist` argument and `scipy.stats` to specify the distribution you want to compare to. By default, it compares to a normal distribution (`dist = scipy.stats.t`) -- is this what you want?
+2. Generate a QQ plot from the p-values. We suggest using the [`qqplot` function from `statsmodels.api`](https://stackoverflow.com/questions/48009614/quantile-quantile-plot-using-python-statsmodels-api). Use the `dist` argument and `scipy.stats` to specify the distribution you want to compare to. By default, it compares to a normal distribution (`dist = scipy.stats.t`) -- is this what you want? In your `README.md` for this assignment, please interpret your QQ plot in the context of the experiment.
 
 3. Find a list of transcripts that exhibit differential expression by stage at a 10% false discovery rate. [We recommend using the `multipletests` function from `statsmodels.stats` for this.](https://www.statsmodels.org/dev/generated/statsmodels.stats.multitest.multipletests.html) Report this list.
 
@@ -104,6 +106,7 @@ For this step, you will work with the same low-median-expression-filtered and lo
   * Plot: Clustered heatmap of gene expression
   * Plot: Dendrogram of cell types
   * Plot: QQ plot of pvalues from differential expression results (by stage only, no sex covariate)
+  * Text: Your answer for question 2.2 (interpretting the QQ plot)
   * Text: List of differentially expressed transcripts (10% FDR, by stage only, no sex covariate)
   * Text: List of differentially expressed transcripts (10% FDR, by stage with sex as covariate)
   * Text: Percentage overlap: `((# overlapping transcripts) / (# transcripts differentially expressed by stage without sex covariate)) * 100`
