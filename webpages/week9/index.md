@@ -4,7 +4,7 @@
 
 Lecture Slides -- [Lecture slides](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/bulk_RNA-seq/slides_asynchronous_or_livecoding_resources/20221104_qblab_gex.pptx)
 
-Recording of lecture -- To be linked
+[Recording of lecture](https://livejohnshopkins.sharepoint.com/:v:/s/qbb2021/ETlJFxpSgmhIt7Q71YmWiUAB8tx0XfCtNS85N2c-z3vDAQ?e=niwxJj)
 
 ## Homework Assignment
 
