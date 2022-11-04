@@ -40,7 +40,7 @@ Create a python script for this assignment. Everything you'll need to do for thi
 2. With this structured array, you have access to the transcript names (the rows) and the column names from the `.csv` file. Extract both of these pieces of info and store them in some variables. For the column names, you can use the following code. What can you do to only include the sample names in this?
 
     ```
-    col_names = [input_arr.dtype.names]
+    col_names = list(input_arr.dtype.names)
     ```
 
 Don't forget to create a separate variable for the row names.
