@@ -9,10 +9,14 @@ Due Date: Friday, Nov. 11, 2022 <br>
 
 ## Assignment Overview
 
+Today, you'll be exploring gene expression changes during Drosophila embryonic development. The data you'll using today is from [this paper](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000590) that examined sex-specific gene expression in developing Drosophila embryos. You'll first explore broad gene expression patterns in this data, between developmental stages and sexes. Then, you'll be using a linear regression  approach to identify genes whose expression changes over the course of embryonic development.
+
+Check out the resources at the bottom of the page for additional information on RNA-seq and DE pipelines, as well as resources regarding proper experimental design for these analyses.
+
 
 ## Data
 
-The data we'll using today is from [this paper](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000590) that examined sex-specific gene expression in developing Drosophila embryos. The paper provides their own processed gene expression data, but we've re-processed the raw reads and generated our own transcript-level gene expression data, and this is what you'll be using for today's assignment.
+ The data you'll be using today is derived from the paper mentioned above. The paper actually provides their own processed gene-level expression data, but we've re-processed the raw reads and generated our own transcript-level expression data, and this is what you'll be using for today's assignment.
 
 The FPKM normalized gene expression data can be found here: `~/cmdb-quantbio/assignments/lab/bulk_RNA-seq/extra_data/dros_gene_expression.csv`. Copy this file to the `answers` directory you made for this assignment. Alternatively, you can download it directly into current directory with the following `curl` command:
 
