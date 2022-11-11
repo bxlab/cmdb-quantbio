@@ -1,22 +1,22 @@
-# Assignment 8: Bulk RNA-Seq
+# Assignment 8: Machine Learning 
 Assignment Date: Friday, Nov. 11, 2022 <br>
 Due Date: Friday, Nov. 18, 2022 <br>
 
 ## Lecture and Live-Coding
 
-**Slides** are available here: To be linked
+**Slides** are available here: To be linked <br><br>
 
 **Master Live-coding script** is available here: `cmdb-quantbio/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/parse_xpresso_predictions.py`. You can copy this to your current directory. Alternatively, you can download it to your current directory with the following `curl` command: 
 
-`curl https://raw.githubusercontent.com/bxlab/cmdb-quantbio/main/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/parse_xpresso_predictions.py --output parse_xpresso_predictions.py`
+`curl https://raw.githubusercontent.com/bxlab/cmdb-quantbio/main/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/parse_xpresso_predictions.py --output parse_xpresso_predictions.py` 
 
-This file shows you how we built the script, step-by-step. As such, only the last code block actually needs to be run (we've commented out the "development" code for you). That said, it's possible we don't reach the last code block during class, so if you want to run the code as we had it in class, you may need to un-comment one of the earlier code blocks, and comment the last one.
+This file shows you how we built the script, step-by-step. As such, only the last code block actually needs to be run (we've commented out the "development" code for you). That said, it's possible we don't reach the last code block during class, so if you want to run the code as we had it in class, you may need to un-comment one of the earlier code blocks, and comment the last one. <br><br>
 
 **Processed Data File for Live-coding** is available here: `~/cmdb-quantbio/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/xpresso_predictions_human.txt`. You can copy this to your current directory. Alternatively, you can download it to your current directory with the following `curl` command:
 
 `curl https://raw.githubusercontent.com/bxlab/cmdb-quantbio/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/xpresso_predictions_human.txt --output xpresso_predictions_human.txt`
 
-This is the fully processed xpresso data that you'll be using as input to your `parse_xpresso_predictions.py` script. Remember, in class we started with the unprocessed `416685-1.xlsx` excel spreadsheet, and processed into a format that we could more easily used in python. 
+This is the fully processed xpresso data that you'll be using as input to your `parse_xpresso_predictions.py` script. Remember, in class we started with the unprocessed `416685-1.xlsx` excel spreadsheet, and processed into a format that we could more easily used in python. <br><br>
 
 ## Assignment Overview
 
