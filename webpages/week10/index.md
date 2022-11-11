@@ -6,9 +6,13 @@ Lecture Slides -- To be linked
 
 Recording of lecture -- To be linked
 
+## Live-coding
+
+Live-coding master script: `~/cmdb-quantbio/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/parse_xpresso_predictions.py`
+
 ## Homework Assignment
 
-Homework assignment -- To be linked
+[Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/machine_learning/assignment/)
 
 ## Applied Paper Example
 
