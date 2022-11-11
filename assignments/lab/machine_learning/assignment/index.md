@@ -1,4 +1,4 @@
-# Assignment 8: Machine Learning 
+# Assignment 9: Machine Learning 
 Assignment Date: Friday, Nov. 11, 2022 <br>
 Due Date: Friday, Nov. 18, 2022 <br>
 
@@ -25,7 +25,7 @@ Today's assignment is **OPTIONAL**. However, if you do choose to do the assignme
 2. If you feel like you're a little bit behind, but the content of this assignment seems exciting to you, we recommend that you do the assignment, and replace your grade for one of the previous assignments that you struggled with. 
 3. If you feel like you're a little bit behind, but are not interested in the content of the assignment, you're welcome to take this week to catch up on some of your previous assignments.
 
-With that out of the way: today's assignment comes in two parts. In the first exercise, you'll be following a tutorial to build, from (relative) scratch your own Convolutional Neural Network (CNN) to interpret written numerals. In the second exercise, you'll be using a pre-trained expression prediction model to predict gene expression status in the xpresso data you used during the live-coding exercise. You'll then be comparing the results of running this model with the results that you got during the live-coding exercise.
+With that out of the way: today's assignment comes in two parts. In the first exercise, you'll be following a tutorial to build, from (relative) scratch your own Convolutional Neural Network (CNN) to interpret pictures of different kinds of clothing. In the second exercise, you'll be using a pre-trained expression prediction model to predict gene expression status in the xpresso data you used during the live-coding exercise. You'll then be comparing the results of running this model with the results that you got during the live-coding exercise. <br><br>
 
 ## Data
 
@@ -37,8 +37,14 @@ You can then use this `.yml` file to create a conda environment using the follow
 
 `conda env create -f tf_env.yml`
 
-This will create a conda environment called `tf_env`, which you can now activate.
-
+This will create a conda environment called `tf_env`, which you can now activate. <br><br>
 
 ### Part 1: Building your own CNN
 
+Follow [this tutorial](https://www.tensorflow.org/tutorials/keras/classification). To build and train a CNN that predicts the kind of clothing shown in an input image.
+
+For this exercise, you'll submit the script where you build and train your model, as well as some plots that show your model's permformance (up to you how you want to demonstrate this). Also, in your README, feel free to include any questions you had about the exercise or about NNs in general, and we're happy to address them in our feedback! <br><br>
+
+### Part 2: Using the Xpresso expression prediction model
+
+From [this link](https://xpresso.gs.washington.edu/data/) that we used during class, download 
