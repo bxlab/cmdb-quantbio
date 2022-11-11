@@ -28,7 +28,7 @@ For each of these regions, create an image from IGV showing reads separated by p
 In order to call variants and phase them, you will be using two programs, Medaka and whatshap. You will need to create a conda environment to do this.
 
 ```bash
-conda env create -n Medaka medaka -y
+conda create -n Medaka medaka -y
 ```
 
 This will install most of what you need. Once you have activated this environment, you will need to replace the current version of whatshap, as there is an incompatibility with the installed version. Unfortunately you can't do this with `conda` so you will need to use the following command instead:
