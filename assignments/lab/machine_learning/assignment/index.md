@@ -46,20 +46,22 @@ Additionally, for the second exercise, you'll need some additional from the [Xpr
 
 ### Part 1: Building your own CNN
 
-Follow [this tutorial](https://www.tensorflow.org/tutorials/keras/classification) to build and train a CNN that predicts the kind of clothing shown in an input image.
+1. Follow [this tutorial](https://www.tensorflow.org/tutorials/keras/classification) to build and train a CNN that predicts the kind of clothing shown in an input image.
 
-For this exercise, you'll submit the script where you build and train your model, as well as some plots that show your model's permformance (up to you how you want to demonstrate this). Also, in your README, feel free to include any questions you had about the exercise or about NNs in general, and we're happy to address them in our feedback! <br><br>
+2. Generate some (at least one) plots that demonstrate your model's performance. It is up to you how you want to show this.
+
+3. In your README, feel free to type-up any questions you had about the exercise or about NNs in general, and we'll be happy to address them in our feedback! <br><br>
 
 ### Part 2: Using the Xpresso expression prediction model
 
-Using the `xpresso_predict.py` script and the trained model that you downloaded, predict gene expression from the fasta file of human promoters. You can use the `--help` argument with `xpresso_predict.py` to determine what command you need to run. <br><br>
+1. Using the `xpresso_predict.py` script and the trained model that you downloaded, predict gene expression from the fasta file of human promoters. You can use the `--help` argument with `xpresso_predict.py` to determine what command you need to run.
 
-After running the prediction model, compare these results to predicted expression values from the paper. Generate a plot that shows the correlation between the predicted expression values from the paper to the expression values you got from running the Xpresso model yourself. **NOTE**: you may need to ensure that the genes are in the same order between the predicted output here, and predicted expression from the paper.
+2. After running the prediction model, compare these results to predicted expression values from the paper. Generate a plot that shows the correlation between the predicted expression values from the paper to the expression values you got from running the Xpresso model yourself. **NOTE**: you may need to ensure that the genes are in the same order between the predicted output here, and predicted expression from the paper.
 
-Compare the predictions you got from this model to what was reported in the paper. In your README, answer the following questions:
+3. Compare the predictions you got from this model to what was reported in the paper. In your README, answer the following questions:
 
-1. Are the predictions different, or the same? Are there any trends that you notice looking at the data?
-2. Looking at the `xpresso_predict.py` script you downloaded, why do you think the predictions may differ? <br><br>
+	* Are the predictions different, or the same? Are there any trends that you notice looking at the data?
+	* Looking at the `xpresso_predict.py` script you downloaded, why do you think the predictions may differ? <br><br>
 
 ## Submission
 
