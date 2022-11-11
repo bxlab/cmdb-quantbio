@@ -26,7 +26,7 @@ Today's assignment is **OPTIONAL**. However, if you do choose to do the assignme
 2. If you feel like you're a little bit behind, but the content of this assignment seems exciting to you, we recommend that you do the assignment, and replace your grade for one of the previous assignments that you struggled with. 
 3. If you feel like you're a little bit behind, but are not interested in the content of the assignment, you're welcome to take this week to catch up on some of your previous assignments.
 
-With that out of the way: today's assignment comes in two parts. In the first exercise, you'll be following a tutorial to build, from (relative) scratch your own Convolutional Neural Network (CNN) to interpret pictures of different kinds of clothing. In the second exercise, you'll be using a pre-trained expression prediction model to predict gene expression status in the xpresso data you used during the live-coding exercise. You'll then be comparing the results of running this model with the results that you got during the live-coding exercise. <br><br>
+With that out of the way: today's assignment comes in two parts. In the first exercise, you'll be following a tutorial to build, from (relative) scratch your own Convolutional Neural Network (CNN) to interpret pictures of different kinds of clothing. In the second exercise, you'll be using a pre-trained expression prediction model to predict gene expression status for the same set of genes explored during the live-coding exercise. You'll then be comparing the results of running this model with the predicted expression results reported in the paper (the txt file we exported from excel and worked with in python in the interactive lecture). <br><br>
 
 ## Data
 
@@ -54,9 +54,9 @@ For this exercise, you'll submit the script where you build and train your model
 
 Using the `xpresso_predict.py` script and the trained model that you downloaded, predict gene expression from the fasta file of human promoters. You can use the `--help` argument with `xpresso_predict.py` to determine what command you need to run. <br><br>
 
-After running the prediction model, compare these results to the results you got from class. Generate a plot that shows the correlation between the predicted expression values you got during the live-coding exercise to the expression values you got from running the Xpresso model. **NOTE**: you may need to ensure that the genes are in the same order between the predicted output here, and predicted expression from the live-coding.
+After running the prediction model, compare these results to predicted expression values from the paper. Generate a plot that shows the correlation between the predicted expression values from the paper to the expression values you got from running the Xpresso model yourself. **NOTE**: you may need to ensure that the genes are in the same order between the predicted output here, and predicted expression from the paper.
 
-Compare the predictions you got from this model to what was reported in the paper (the txt file we exported from excel and worked with in python in the interactive lecture). In your README, answer the following questions:
+Compare the predictions you got from this model to what was reported in the paper. In your README, answer the following questions:
 
 1. Are the predictions different, or the same? Are there any trends that you notice looking at the data?
 2. Looking at the `xpresso_predict.py` script you downloaded, why do you think the predictions may differ? <br><br>
