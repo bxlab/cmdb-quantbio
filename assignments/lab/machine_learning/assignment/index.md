@@ -6,13 +6,13 @@ Due Date: Friday, Nov. 18, 2022 <br>
 
 **Slides** are available here: To be linked
 
-**Master Live-coding script** is available here: `cmdb-quantbio/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/parse_xpresso_predictions.py`. You can copy this to your current directory. Alternatively, you can download it to your current directory with the following curl command: 
+**Master Live-coding script** is available here: `cmdb-quantbio/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/parse_xpresso_predictions.py`. You can copy this to your current directory. Alternatively, you can download it to your current directory with the following `curl` command: 
 
 `curl https://raw.githubusercontent.com/bxlab/cmdb-quantbio/main/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/parse_xpresso_predictions.py --output parse_xpresso_predictions.py`
 
 This file shows you how we built the script, step-by-step. As such, only the last code block actually needs to be run (we've commented out the "development" code for you). That said, it's possible we don't reach the last code block during class, so if you want to run the code as we had it in class, you may need to un-comment one of the earlier code blocks, and comment the last one.
 
-**Processed Data File for Live-coding** is available here: `~/cmdb-quantbio/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/xpresso_predictions_human.txt`. You can copy this to your current directory. Alternatively, you can download it to your current directory with the following curl command:
+**Processed Data File for Live-coding** is available here: `~/cmdb-quantbio/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/xpresso_predictions_human.txt`. You can copy this to your current directory. Alternatively, you can download it to your current directory with the following `curl` command:
 
 `curl https://raw.githubusercontent.com/bxlab/cmdb-quantbio/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/xpresso_predictions_human.txt --output xpresso_predictions_human.txt`
 
@@ -27,9 +27,18 @@ Today's assignment is **OPTIONAL**. However, if you do choose to do the assignme
 
 With that out of the way: today's assignment comes in two parts. In the first exercise, you'll be following a tutorial to build, from (relative) scratch your own Convolutional Neural Network (CNN) to interpret written numerals. In the second exercise, you'll be using a pre-trained expression prediction model to predict gene expression status in the xpresso data you used during the live-coding exercise. You'll then be comparing the results of running this model with the results that you got during the live-coding exercise.
 
+## Data
+
+For this assignment you'll need the Python package `tensorflow` that allows you to build, train, and use all sorts of neural networks. We've put together a conda environment that will allow you to use `tensorflow` and several related libraries. To create this conda environment on your computer, you'll need this `.yml` file: `~/cmdb-quantbio/assignments/lab/machine_learning/extra_data/tf_env.yml`. You can copy this to your current directory. Alternatively you can download it to your current directory with the following `curl` command:
+
+`curl https://raw.githubusercontent.com/bxlab/cmdb-quantbio/assignments/lab/machine_learning/extra_data/tf_env.yml --output tf_env.yml`
+
+You can then use this `.yml` file to create a conda environment using the following command:
+
+`conda env create -f tf_env.yml`
+
+This will create a conda environment called `tf_env`, which you can now activate.
+
+
 ### Part 1: Building your own CNN
-
-#### Data
-
-
 
