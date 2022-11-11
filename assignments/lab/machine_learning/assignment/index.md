@@ -1,6 +1,6 @@
 # Assignment 9: Machine Learning 
 Assignment Date: Friday, Nov. 11, 2022 <br>
-Due Date: Friday, Nov. 18, 2022 <br>
+Due Date: Friday, Nov. 18, 2022 <br><br>
 
 ## Lecture and Live-Coding
 
