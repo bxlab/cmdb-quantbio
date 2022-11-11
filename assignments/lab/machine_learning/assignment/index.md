@@ -42,6 +42,8 @@ This will create a conda environment called `tf_env`, which you can now activate
 
 Additionally, for the second exercise, you'll need some additional from the [Xpresso site](https://xpresso.gs.washington.edu/data/) we looked at during class. Download and unpack the `Xpresso-predict.zip` file. From the unpacked directory, you'll need the following files: `xpresso_predict.py`, `input_fasta/humman_promoters.fa.gz` and `pretrained_models/K562_trainepoch.11-0.4917.h5*`. <br><br>
 
+## Assignment
+
 ### Part 1: Building your own CNN
 
 Follow [this tutorial](https://www.tensorflow.org/tutorials/keras/classification). To build and train a CNN that predicts the kind of clothing shown in an input image.
