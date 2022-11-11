@@ -8,6 +8,8 @@ Recording of lecture -- To be linked
 
 ## Live-coding
 
+[Xpresso data website](https://xpresso.gs.washington.edu/data/)
+
 Live-coding master script: `~/cmdb-quantbio/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/parse_xpresso_predictions.py`
 
 ## Homework Assignment
