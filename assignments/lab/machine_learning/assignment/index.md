@@ -46,7 +46,7 @@ Additionally, for the second exercise, you'll need some additional from the [Xpr
 
 ### Part 1: Building your own CNN
 
-Follow [this tutorial](https://www.tensorflow.org/tutorials/keras/classification). To build and train a CNN that predicts the kind of clothing shown in an input image.
+Follow [this tutorial](https://www.tensorflow.org/tutorials/keras/classification) to build and train a CNN that predicts the kind of clothing shown in an input image.
 
 For this exercise, you'll submit the script where you build and train your model, as well as some plots that show your model's permformance (up to you how you want to demonstrate this). Also, in your README, feel free to include any questions you had about the exercise or about NNs in general, and we're happy to address them in our feedback! <br><br>
 
