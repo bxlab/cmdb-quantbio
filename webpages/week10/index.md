@@ -2,9 +2,9 @@
 
 ## Lecture -- Kate Weaver (Guest)
 
-Lecture Slides -- To be linked
+[Lecture Slides](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/machine_learning_slides.pdf)
 
-Recording of lecture -- To be linked
+[Recording of lecture](https://livejohnshopkins.sharepoint.com/:v:/s/qbb2021/EQaI0YBtkTVCk2vHORF9GDsBdweEP31C9Cl6pTpaQkxrSg?e=InMVd7)
 
 ## Live-coding
 
@@ -14,7 +14,9 @@ Live-coding master script: `~/cmdb-quantbio/assignments/lab/machine_learning/sli
 
 ## Homework Assignment
 
-[Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/machine_learning/assignment/)
+Please upload your live-coding script/plot for credit for this week's assignment.
+
+[Homework assignment -- optional](https://bxlab.github.io/cmdb-quantbio/assignments/lab/machine_learning/assignment/)
 
 ## Applied Paper Example
 

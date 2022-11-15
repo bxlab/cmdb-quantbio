@@ -1,14 +1,14 @@
-# Assignment 9: Machine Learning 
+# Assignment 9: Machine Learning
 Assignment Date: Friday, Nov. 11, 2022 <br>
 Due Date: Friday, Nov. 18, 2022 <br><br>
 
 ## Lecture and Live-Coding
 
-**Slides** are available here: To be linked <br><br>
+[**Slides** are available here](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/machine_learning_slides.pdf)<br><br>
 
-**Master Live-coding script** is available here: `~/cmdb-quantbio/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/parse_xpresso_predictions.py`. You can copy this to your current directory. Alternatively, you can download it to your current directory with the following `curl` command: 
+**Master Live-coding script** is available here: `~/cmdb-quantbio/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/parse_xpresso_predictions.py`. You can copy this to your current directory. Alternatively, you can download it to your current directory with the following `curl` command:
 
-`curl https://raw.githubusercontent.com/bxlab/cmdb-quantbio/main/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/parse_xpresso_predictions.py --output parse_xpresso_predictions.py` 
+`curl https://raw.githubusercontent.com/bxlab/cmdb-quantbio/main/assignments/lab/machine_learning/slides_asynchronous_or_livecoding_resources/parse_xpresso_predictions.py --output parse_xpresso_predictions.py`
 
 This file shows you how we built the script, step-by-step. As such, only the last code block actually needs to be run (we've commented out the "development" code for you). That said, it's possible we don't reach the last code block during class, so if you want to run the code as we had it in class, you may need to un-comment one of the earlier code blocks, and comment the last one. <br><br>
 
@@ -23,7 +23,7 @@ This is the fully processed xpresso data that you'll be using as input to your `
 Today's assignment is **OPTIONAL**. However, if you do choose to do the assignment, you can have your grade for *this* assignment replace your grade for another of the assignments *of your choice*. That said, we do have some recommendations:
 
 1. If you feel like you are up to speed on all of the material in the course, thus far, we recommend that you do this assignment, and we think that you'll get a lot out of it.
-2. If you feel like you're a little bit behind, but the content of this assignment seems exciting to you, we recommend that you do the assignment, and replace your grade for one of the previous assignments that you struggled with. 
+2. If you feel like you're a little bit behind, but the content of this assignment seems exciting to you, we recommend that you do the assignment, and replace your grade for one of the previous assignments that you struggled with.
 3. If you feel like you're a little bit behind, but are not interested in the content of the assignment, you're welcome to take this week to catch up on some of your previous assignments.
 
 **IF YOU CHOOSE NOT TO DO THIS ASSIGNMENT**: You still must upload either the code or plot (or both) from the live-coding exercise to demonstrate that you were participating in class!!!
@@ -41,6 +41,8 @@ You can then use this `.yml` file to create a conda environment using the follow
 `conda env create -f tf_env.yml`
 
 This will create a conda environment called `tf_env`, which you can now activate. <br><br>
+
+If the `curl` command and creating an environment doesn't work for you, try a `git pull --no-rebase origin main` and the `tf_env.yml` should be available for you in the `~/cmdb-quantbio/assignments/lab/machine_learning/extra_data` directory on your laptop.
 
 Additionally, for the second exercise, you'll need some additional from the [Xpresso site](https://xpresso.gs.washington.edu/data/) we looked at during class. Download and unpack the `Xpresso-predict.zip` file. From the unpacked directory, you'll need the following files: `xpresso_predict.py`, `input_fasta/humman_promoters.fa.gz` and `pretrained_models/K562_trainepoch.11-0.4917.h5*`. <br><br>
 
