@@ -28,7 +28,7 @@ curl https://bx.bio.jhu.edu/data/msauria/cmdb-lab/neuron_10k_v3_filtered_feature
 
 ### Getting the data into Scanpy
 
-To get you started, all access to Scanpy is typically through a module call `scanpy` which is imported under the name `sc` for convenience. We then load the count matrix into a table, which is an instance of `AnnData`.
+To get you started, all access to Scanpy is typically through a module called `scanpy` which is imported under the name `sc` for convenience. We then load the count matrix into a table, which is [an instance of `AnnData`](https://scanpy.readthedocs.io/en/latest/usage-principles.html#anndata).
 
 ```python
 import scanpy as sc
@@ -50,18 +50,18 @@ Use `leiden` clustering to identify clusters in the data. Produce t-SNE and UMAP
 
 ### Step 3: Distinguishing Genes
 
-Identify and plot genes that distinguish each cluster. Use both the t-test and logistic regression approaches, implemented through the `rank_genes_groups` function.
+Identify and plot genes that distinguish each cluster. Use both the t-test and logistic regression approaches, implemented through the `rank_genes_groups` function. (Again, see the `sc.tl` module to actually perform the ranking and `sc.pl` for plotting).
 
 ### Step 4: Cell Types?
 
 Now the fun part.
 
-Using your knowledge, identify some marker genes that should distinguish different brain cell types. You must identify at least 6 cell types. There are many resources online for identifying relationships between marker genes and cell types. Take a look at [this database](http://betsholtzlab.org/VascularSingleCells/database.html) for an example of ways to identify cell types.
+Using your knowledge (or the knowledge of neuroscience aficionados in your cohort, or Google), identify some marker genes that should distinguish different brain cell types. You must identify at least 6 cell types. There are many resources online for identifying relationships between marker genes and cell types. Take a look at [this database](http://betsholtzlab.org/VascularSingleCells/database.html) for an example of ways to identify cell types.
 
-1. You can color UMAP and t-SNE plots by any gene of your choice, which is helpful for visualizing which clusters are enriched for which genes, and which clusters might correspond to a specific brain cell type.
-2. Alternatively, you can also produce `dotplots` and `clustermaps` that allow you to see how a specific set of genes are associated with your clusters. Also, stacked violin plots, etc…
-
-Besides these support plots, make an overall t-SNE or UMAP plot that labels your clusters with the cell types you think they mostly represent. Make sure to provide the support plots you made in order to establish your labeling. See [this tutorial](https://scanpy-tutorials.readthedocs.io/en/latest/plotting/core.html) for an example of how to apply labels.
+1. Support plots that provide evidence for your cell type assignments/what you used to diagnose/decide on cell types.
+  * You can color UMAP and t-SNE plots by any gene of your choice, which is helpful for visualizing which clusters are enriched for which genes, and which clusters might correspond to a specific brain cell type.
+  * Alternatively, you can also produce `dotplots` and `clustermaps` that allow you to see how a specific set of genes are associated with your clusters. Also, stacked violin plots, etc…
+2. Besides these support plots, make an overall t-SNE or UMAP plot that labels your clusters with the cell types you think they mostly represent. Make sure to provide the support plots you made in order to establish your labeling. See [this tutorial](https://scanpy-tutorials.readthedocs.io/en/latest/plotting/core.html) for an example of how to apply labels.
 
 ## Submit
 
@@ -69,5 +69,5 @@ Besides these support plots, make an overall t-SNE or UMAP plot that labels your
 - PCA plots before and after filtering from step 1
 - t-SNE and UMAP plots of clusters from step 2
 - Plots for genes that distinguish clusters (t-test and logistic regression) from step 3
-- The overall t-SNE or UMAP plot with at least 6 cell types labeled
-- Support plots that provide evidence for your cell type assignments
+- The overall t-SNE or UMAP plot with at least 6 cell types labeled (Step 4.2)
+- Support plots that provide evidence for your cell type assignments (Step 4.1)
