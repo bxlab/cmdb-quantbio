@@ -5,7 +5,7 @@ Due Date: Friday, December 2, 2022
 
 ## Lecture
 
-[Lecture slides][https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/scRNA-seq/slides_asynchronous_or_livecoding_resources/scRNA-seq.pdf]
+[Lecture slides](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/scRNA-seq/slides_asynchronous_or_livecoding_resources/scRNA-seq.pdf)
 
 ## Conda Environment
 
