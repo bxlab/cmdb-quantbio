@@ -1,4 +1,4 @@
-# Lab Week 9 - Single-Cell RNA-Seq
+# Lab Week 11 - Single-Cell RNA-Seq
 
 ## Lecture -- Mike Sauria
 

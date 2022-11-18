@@ -1,6 +1,6 @@
 # Lab Week 13 - TBD
 
-## Lecture -- Mike Sauria
+## Lecture -- Rajiv McCoy
 
 Lecture Slides -- To be linked
 
