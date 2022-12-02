@@ -11,3 +11,5 @@ Recording of lecture -- To be linked
 Homework assignment -- To be linked
 
 ## Applied Paper Example
+
+[Hidden Markov Model Primer](https://www.nature.com/articles/nbt1004-1315)
