@@ -1,4 +1,4 @@
-# Lab Week 13 - TBD
+# Lab Week 13 - Population Genetics
 
 ## Lecture -- Rajiv McCoy
 
@@ -8,6 +8,8 @@ Recording of lecture -- To be linked
 
 ## Homework Assignment
 
-Homework assignment -- To be linked
+[Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/population_genetics/assignment/)
 
 ## Applied Paper Example
+
+None provided

@@ -1,4 +1,4 @@
-# Lab Week 14 - Population Genetics
+# Lab Week 14 - Hidden Markov Models
 
 ## Lecture -- Rajiv McCoy
 
