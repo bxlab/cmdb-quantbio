@@ -54,7 +54,7 @@ So to introduce selection into a Wright-Fisher simulation, you will have to chan
 
 3. For a starting allele frequency of 0.5, and a population size of 100, produce a histogram with density showing time to fixation over (at least) 1000 independent runs of the simulation.
 
-  HINT: The time to fixation is the number of generations it takes for an allele to fix. Since the function from part 1 is returning a list that contains the allele frequency at each generation, and your function runs until one of the alleles is fixed, how can you find the time to fixation?
+    HINT: The time to fixation is the number of generations it takes for an allele to fix. Since the function from part 1 is returning a list that contains the allele frequency at each generation, and your function runs until one of the alleles is fixed, how can you find the time to fixation?
 
 4. For a starting allele frequency of 0.5, vary the population size and produce a line plot that shows fixation time (y-axis) vs \(*N*\) (x-axis). A reasonable range of population sizes is 100 to 10 million. Use at least 5 different population sizes. Be sure to label your ticks with the population sizes you used.
 
