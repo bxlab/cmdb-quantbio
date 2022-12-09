@@ -163,7 +163,7 @@ $ grep NODE_14_length_235766_cov_39.967778 metagenomics_data/step0_givendata/KRA
 NODE_14_length_235766_cov_39.967778	root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;Staphylococcus haemolyticus;Staphylococcus haemolyticus JCSC1435
 ```
 
-But do this programmatically by tallying up the taxonomic composition of your sample at various levels of taxonomic hierarchy.
+But do this programmatically by tallying up the taxonomic composition of your sample at various levels of taxonomic hierarchy. (The levels of hierarchy are separated by semicolons in the original KRAKEN output)
 
 **Be sure to submit the code/process that you use.**
 
@@ -184,7 +184,7 @@ Use your favorite software package to make a heatmap. All the samples have the s
 * All Python code
 * Command line record
 * Krona Pie chart visualizations from Step 1
-* Thoughtful answers to Questions 1-4
+* Thoughtful answers to Questions 1-4 in your README
 * Optional: Any additional visualizations you made in Step 1 (plus code to produce them)
 * Optional: Heatmap from Step 4
-* Optional: Thoughtful answers to Question 5
+* Optional: Thoughtful answers to Question 5 in your README
