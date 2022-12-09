@@ -123,7 +123,7 @@ Activate your metaBAT2 conda environment using the following command.
 conda activate metabat2
 ```
 
-##### Step 2D: Run metaBAT2
+#### Step 2D: Run metaBAT2
 
 Because of the way that the metaBAT2 environment is set up, you will have to use the "slightly less easy way" described in the "MetaBAT 2 USAGE: running on command line" section [here in the metaBAT2 documentation](https://bitbucket.org/berkeleylab/metabat/src/master/).
 
