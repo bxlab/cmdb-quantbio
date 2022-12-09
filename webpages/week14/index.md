@@ -1,4 +1,4 @@
-# Lab Week 14 - Hidden Markov Models
+# Lab Week 14 - Metagenomics
 
 ## Lecture -- Rajiv McCoy
 
@@ -10,6 +10,6 @@ Recording of lecture -- To be linked
 
 [Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/metagenomics/assignment/)
 
-## Applied Paper Example
+## Applied Paper Example -- not for metagenomics, sorry
 
 [Hidden Markov Model Primer](https://www.nature.com/articles/nbt1004-1315)
