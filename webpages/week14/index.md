@@ -4,7 +4,7 @@
 
 [Lecture Slides](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/metagenomics/slides_asynchronous_or_livecoding_resources/20221208_qblab_metagenomics.pdf)
 
-Recording of lecture -- To be linked
+[Recording of lecture](https://livejohnshopkins.sharepoint.com/:v:/s/qbb2021/ESkah2yx1tJEro1BMmZ9-C0B3DIK0bxHaM9ED9c3eViU7w?e=MtLThq)
 
 ## Homework Assignment
 
