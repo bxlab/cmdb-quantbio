@@ -3,7 +3,7 @@ title: Quantitative Biology Lab -- Metagenomics
 layout: default
 ---
 
-# Assignment 10: Metagenomics
+# Assignment 12: Metagenomics
 Assignment Date: Friday, Dec. 9, 2022 <br>
 Due Date: Friday, Dec. 16, 2022 @ 1pm ET <br>
 
