@@ -56,7 +56,7 @@ sudo ./install.pl
 
 #### Step 1B: Parse the KRAKEN output to convert it to a Krona-Tools compatible format
 
-Krona-Tools requires that its input to the `ktImportText` function be tab-delimited separating the taxonomies represented into separate columns. The KRAKEN output files separate the taxonomies with a semicolon rather than a tab. And the first column contains identifier information that we don't need.
+Krona-Tools requires that its input to the `ktImportText` function be tab-delimited separating levels of thet taxonomies represented into separate columns. The KRAKEN output files separate the taxonomies with a semicolon rather than a tab. And the first column contains identifier information that we don't need.
 
 Either write and submit your own conversion code or use the following Python code to convert each of the 8 output KRAKEN files:
 
@@ -133,13 +133,13 @@ Use the `jgi_summarize_bam_contig_depths` function followed by the `metabat2` fu
 
 **Question 3B: In your README, comment on roughly what percentage of the assembly do they represent?**
 
-(Hint: You can see how many and which "Nodes" are in each bin fasta file by grepping for a `>`, which starts each identification line. Use a pipe and some downstream unix command or python parsing for counting, etc.)
+(Hint: You can see how many and which contigs are in each bin fasta file by grepping for a `>`, which starts each identification line. Use a pipe and some downstream unix command or python parsing for counting, etc.)
 
 **Question 3C: In your README, comment on whether you think the sizes of each bin look about right, based on what you know about the size of prokaryotic genomes?**
 
 **Question 3D:In your README, describe how you might estimate how complete and how contaminated each bin is?**
 
-### Step 3: Estimate the taxonomy of your putative genomes
+### Step 3: Predict the taxonomic composition (genus/species) of your putative genomes
 
 Now that you have individual genomes (we hope so, anyway...) we would like to know what they are. Luckily, you already have KRAKEN classifications of all the scaffolds (`assembly.kraken`), so you could use that as a reference. Cross reference the scaffolds in each bin and their respective KRAKEN taxonomies, and come up with your best prediction for what each bin represents.
 

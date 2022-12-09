@@ -76,7 +76,7 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
 |  11  | 11/18| Mike Sauria         | [Single-Cell RNA-Seq](webpages/week11)                                            |
 |  12  | 11/25| No class            | Thanksgiving Break                                                                |
 |  13  | 12/2 | Rajiv McCoy         | [Population Genetics](webpages/week13)                                            |
-|  14  | 12/9 | Rajiv McCoy         | Hidden Markov Models                                                              |
+|  14  | 12/9 | Rajiv McCoy         | [Metagenomics](webpages/week14)                                                   |
 {:.table.table-striped.well}
 
 <!--
