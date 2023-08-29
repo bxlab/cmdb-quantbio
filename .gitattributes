@@ -1,7 +1,0 @@
-*.pdf filter=lfs diff=lfs merge=lfs -text
-*.key filter=lfs diff=lfs merge=lfs -text
-*.pptx filter=lfs diff=lfs merge=lfs -text
-*.ppt filter=lfs diff=lfs merge=lfs -text
-*.tar.gz filter=lfs diff=lfs merge=lfs -text
-*.tgz filter=lfs diff=lfs merge=lfs -text
-assignments/lab/nanopore-seq/slides_asynchronous_or_livecoding_resources/Nanopore.pdf filter=lfs diff=lfs merge=lfs -text
