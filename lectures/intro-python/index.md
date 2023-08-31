@@ -19,7 +19,7 @@
 Give students time to experiment on their own and emphasize the power of experimenting!
 
 2. As scripts via the command line (1:25-1:40)
-- demonstrate conversion of "Hello, World!" to a script
+- demonstrate conversion of "Hello, World!" to a script written in Sublime
 - what happens if I don't have a print statement?
 - demonstrate a script that would produce an error
 
@@ -201,6 +201,28 @@ start_coord_list.reverse()
 print(start_coord_list)
 ```
 
+- compute the mean
+```
+f = open("mouseBed.bed", "r")
+
+lines = f.readlines()
+
+start_coord_list = []
+sum = 0
+
+for i in range(2000):
+  line_string = lines[i].strip()
+  line_list = line_string.split()
+  start_coord = int(line_list[1])
+  start_coord_list.append(start_coord)
+  sum = sum + start_coord
+
+f.close()
+
+print(sum / len(start_coord_list))
+```
+
+<!---
 - import functions from an outside library
 ```
 import numpy
@@ -222,6 +244,7 @@ f.close()
 start_coord_mean = numpy.mean(start_coord_list)
 print(start_coord_mean)
 ```
+-->
 
 Give students time to practice writing and using for loops (SWCarpentry exercises; 3:30-3:45)
 
