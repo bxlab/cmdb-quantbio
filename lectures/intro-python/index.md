@@ -66,6 +66,7 @@ Allow students to practice specifying, converting, and checking types (2:00-2:10
 Work through SWCarpentry materials: https://swcarpentry.github.io/python-novice-inflammation/instructor/04-lists.html
 
 1. Creating lists (2:25-2:30)
+- check the length of the list with `len()`
 
 2. Indexing lists (2:30-2:40)
 - basic integer indexing (zero-based)
@@ -81,8 +82,153 @@ Work through SWCarpentry materials: https://swcarpentry.github.io/python-novice-
 - lists can even contain lists as elements
 - how to index a nested list
 
-## `for` loops (2:55 - 3:15; live coding)
+## `for` loops (2:55 - 3:30; live coding)
 
+1. Motivate the use of loops for performing a repeated action - copy and paste print statements (2:55 - 3:00)
 
+2. Demonstrate `for` loop syntax (3:00-3:10)
+- start with basic print statement, interating through a list
+- note indentation...what happens if the print statement is not indented (i.e., outside the loop)?
+- show that the list can be a variable
+- show that the name you use for the index variable can be anything (and use this to discuss what makes a good variable name)
+- Demonstrate `range()`
 
+3. Demonstrate the use of loops to iterate through a file line-by-line (3:10-3:30)
 
+Start simple (just printing lines), then build up...
+
+- print the lines...notice the extra whitespace...why?
+```
+f = open("mouseBed.bed", "r")
+
+lines = f.readlines()
+
+for i in range(2000): 
+    print(lines[i])
+
+f.close()
+```
+
+- use `.strip()` to remove the whitespace
+```
+f = open("mouseBed.bed", "r")
+
+lines = f.readlines()
+
+for i in range(2000):
+  line = lines[i].strip()
+  print(line)
+
+f.close()
+```
+
+- lines are strings...can split them on whitespace
+```
+f = open("mouseBed.bed", "r")
+
+lines = f.readlines()
+
+for i in range(2000):
+  line_string = lines[i].strip()
+  line_list = line_string.split()
+  print(line_list[1])
+
+f.close()
+```
+
+- the elements of the list are still strings...
+```
+f = open("mouseBed.bed", "r")
+
+lines = f.readlines()
+
+for i in range(2000):
+  line_string = lines[i].strip()
+  line_list = line_string.split()
+  print(type(line_list[1]))
+
+f.close()
+```
+
+- convert them to numbers
+```
+f = open("mouseBed.bed", "r")
+
+lines = f.readlines()
+
+for i in range(2000):
+  line_string = lines[i].strip()
+  line_list = line_string.split()
+  start_coord = int(line_list[1])
+  print(start_coord)
+
+f.close()
+```
+
+- store in a list
+```
+f = open("mouseBed.bed", "r")
+
+lines = f.readlines()
+
+start_coord_list = []
+
+for i in range(2000):
+  line_string = lines[i].strip()
+  line_list = line_string.split()
+  start_coord = int(line_list[1])
+  start_coord_list.append(start_coord)
+
+f.close()
+
+print(start_coord_list)
+```
+
+- operate on the list
+```
+f = open("mouseBed.bed", "r")
+
+lines = f.readlines()
+
+start_coord_list = []
+
+for i in range(2000):
+  line_string = lines[i].strip()
+  line_list = line_string.split()
+  start_coord = int(line_list[1])
+  start_coord_list.append(start_coord)
+
+f.close()
+
+start_coord_list.reverse()
+
+print(start_coord_list)
+```
+
+- import functions from an outside library
+```
+import statistics
+
+f = open("mouseBed.bed", "r")
+
+lines = f.readlines()
+
+start_coord_list = []
+
+for i in range(2000):
+  line_string = lines[i].strip()
+  line_list = line_string.split()
+  start_coord = int(line_list[1])
+  start_coord_list.append(start_coord)
+
+f.close()
+
+start_coord_mean = statistics.mean(start_coord_list)
+print(start_coord_mean)
+```
+
+Give students time to practice writing and using for loops (SWCarpentry exercises; 3:30-3:45)
+
+## Homework (4:00-5:00)
+
+Exercise prepared by Andrew and Matthew
