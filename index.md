@@ -1,5 +1,5 @@
 ---
-title: CMDB Quantitative Biology 2022
+title: CMDB Quantitative Biology 2023
 layout: default
 ---
 
@@ -11,7 +11,6 @@ layout: default
 - Five day intensive bootcamp geared towards getting everyone up to speed with basic computational skills.
 - <span class="text-danger">**NO** other classes, meetings, lab work, lab meetings, etc.</span>
 - In person, UTL398.
-- Please wear a face mask and bring headphones or earbuds
 - Please arrive by 8:45am ET
 - Lunch and an afternoon snack will be provided
 - Zoom meeting ID (check Slack for passcode or full link to join): 929 0650 3074
@@ -20,7 +19,7 @@ layout: default
 All times in ET<br /><br />
 All day-specific links for assignments, recordings, etc. can be found by clicking the link for the day below.
 
-
+<!--
 |                | [Monday](webpages/day1/index.html) | [Tuesday](webpages/day2/index.html) | [Wednesday](webpages/day3/index.html) | [Thursday](webpages/day4/index.html) | [Friday](webpages/day5/index.html) |
 |:---------------:|:--------------------------------------:|:---------------------------------------:|:------------------------------------:|:---------------------------------------:|:--------------------------------------:|
 |   9:00 - 9:30  | Overview                     | Homework Exercise Small Group Discussions | Homework Exercise Small Group Discussions | Homework Exercise Small Group Discussions | Homework Exercise Small Group Discussions |
@@ -32,6 +31,7 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
 |    2:30 - 4:00   | Program Documentation, Online Resources, and Debugging  | Biological Data Parsing with Python (cont.) | --- | Random Simulations  | Review |
 |     Homework     | Genome Arithmetic  | Mapping across databases | Principal Component Analysis | Visualizing Simulation Results and Power | --- |
 {:.table.table-striped.well}
+-->
 
 <!--- Recall that a link looks like [Friday](day5/index.html) --->
 <!--
@@ -48,7 +48,7 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
         - k-mer matching
 
 -->
-
+<!--
 ## CMDB Quantitative Biology Lab 2022
 
 ### Logistics
@@ -58,7 +58,9 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
 - 1 - 3:30 pm, Fridays
 - Please wear a face mask and bring headphones or earbuds
 - Assignments must be submitted within one week to your `qbb2022-answers` repository
+-->
 
+<!--
 ### Schedule
 
 | Week | Date | Instructor          | Topic                                                                             |
@@ -78,6 +80,7 @@ All day-specific links for assignments, recordings, etc. can be found by clickin
 |  13  | 12/2 | Rajiv McCoy         | [Population Genetics](webpages/week13)                                            |
 |  14  | 12/9 | Rajiv McCoy         | [Metagenomics](webpages/week14)                                                   |
 {:.table.table-striped.well}
+-->
 
 <!--
 ### Useful Goodies
