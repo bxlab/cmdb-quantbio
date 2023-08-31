@@ -4,6 +4,7 @@
 
 ## Motivation (1:00-1:10; PowerPoint)
 
+- State learning objectives
 - What is a program?
 - Why Python?
 
