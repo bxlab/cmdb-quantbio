@@ -22,6 +22,8 @@ Give students time to experiment on their own and emphasize the power of experim
 - demonstrate conversion of "Hello, World!" to a script written in Sublime
 - what happens if I don't have a print statement?
 - demonstrate a script that would produce an error
+- have students copy and run more complex script
+- note basic aspects of Python syntax (indentation, line breaks, comments)
 
 Allow students to practice and experiment
 
