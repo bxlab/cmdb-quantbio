@@ -37,6 +37,8 @@ Allow students to practice and experiment
 2. Booleans (and comparison operators) (1:50-1:55)
 - show that booleans are specified without quotes
 - demonstrate how comparisons produce Booleans
+- demonstrate use of various comparison operators
+- emphasize difference between `=` for assignment and `==` for comparison
 
 3. Strings (don't introduce this as a sequence/interable yet) (1:55-2:00)
 - show that strings are specified with quotes
