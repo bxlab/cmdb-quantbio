@@ -2,10 +2,6 @@
 
 - https://swcarpentry.github.io/shell-novice](https://swcarpentry.github.io/python-novice-inflammation/instructor
 
-## Summary and Setup
-
-1. 
-
 ## Motivation (1:00-1:10; PowerPoint)
 
 - What is a program?
