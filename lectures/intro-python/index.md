@@ -203,7 +203,7 @@ print(start_coord_list)
 
 - import functions from an outside library
 ```
-import statistics
+import numpy
 
 f = open("mouseBed.bed", "r")
 
@@ -219,7 +219,7 @@ for i in range(2000):
 
 f.close()
 
-start_coord_mean = statistics.mean(start_coord_list)
+start_coord_mean = numpy.mean(start_coord_list)
 print(start_coord_mean)
 ```
 
