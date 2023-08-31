@@ -13,6 +13,7 @@
 1. Interactively via the interpreter (1:10-1:25)
 - demonstrate use as a calculator
 - demonstrate a print statement "Hello, World!"
+- explain that print is a built-in function and show them the help page
 - demonstrate statements that would produce an error
 - demonstrate what happens if you press enter before completing a statment
 
