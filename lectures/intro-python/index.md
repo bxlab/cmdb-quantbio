@@ -79,7 +79,7 @@ Work through SWCarpentry materials: https://swcarpentry.github.io/python-novice-
 - lists can even contain lists as elements
 - how to index a nested list
 
-## `for` loops (2:55 - 3:30; live coding)
+## `for` loops (2:55 - 3:45; live coding)
 
 1. Motivate the use of loops for performing a repeated action - copy and paste print statements (2:55 - 3:00)
 
