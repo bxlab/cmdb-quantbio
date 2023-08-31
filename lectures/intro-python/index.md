@@ -26,6 +26,22 @@
 - demonstrate a script that would produce an error
 - allow students to practice and experiment
 
+## Basic data types (1:40-2:10; live coding)
 
+1. Numbers (int, float, complex) (1:40-1:50)
+- describe how to specify and convert among types
+- demonstrate what happens when you perform operations on mixed types
+
+2. Booleans (and comparison operators) (1:50-1:55)
+- show that booleans are specified without quotes
+- demonstrate how comparisons produce Booleans
+
+3. Strings (don't introduce this as a sequence/interable yet) (1:55-2:00)
+- show that strings are specified with quotes
+- show some basic operations that are possible with strings (e.g., `+`)
+- show what happens when you try to add a string and a number
+- show conversion of a string to a number
+
+Allow students to practice specifying, converting, and checking types (2:00-2:10)
 
 
