@@ -91,8 +91,7 @@ Work through SWCarpentry materials: https://swcarpentry.github.io/python-novice-
 
 3. Demonstrate the use of loops to iterate through a file line-by-line (3:10-3:30)
 
-Start simple (just printing lines), then build up...
-
+- Start simple (just printing lines), then build up...
 - print the lines...notice the extra whitespace...why?
 ```
 f = open("mouseBed.bed", "r")
