@@ -219,7 +219,6 @@ We both expect and encourage you to ask questions and request help throughout th
   <li>If the Lead Instructor prompts the class to ask or answer questions verbally, please raise your hand to be courteous.</li>
   <li> If you experience problems you cannot fix in a live-coding session, outside of solicited check ins, still display a pink sticky note, and a TA will assist you. However, depending on the problem, and what will be required to fix it, TAs may suggest that you continue to pay attention and follow along as best as you can, aiding in fixing at a later stopping point</li>
   <li>You can also slack questions to TAs, instructors, or in channels.</li>
-  <li>During <b>Small Group Sessions</b>, <b>please do not interrupt other students</b>. You may slack any TA or instructor during the presentation, but it is likely in your best interest to wait until questions or comments are solicited by the group facilitator.</li>
 </ul>
 
 <a name="Googling"></a>
