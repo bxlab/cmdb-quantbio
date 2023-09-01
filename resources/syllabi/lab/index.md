@@ -2,7 +2,7 @@
 <h1>
     AS.020.617
     <span style="float:right;">
-        Fall 2022
+        Fall 2023
     </span>
     <center>
        CMDB Quantitative Biology Lab
@@ -41,12 +41,12 @@
    <th>Email</th>
  </tr>
  <tr>
-   <td>Kate Weaver</td>
-   <td><a href="mailto:kweave23@jhu.edu">kweave23@jhu.edu</a></td>
+   <td>Andrew Bortvin</td>
+   <td><a href="mailto:abortvi2@jhu.edu">abortvi2@jhu.edu</a></td>
  </tr>
  <tr>
-  <td>Dylan Taylor</td>
-  <td><a href="mailto:dtaylo95@jhu.edu">dtaylo95@jhu.edu</a></td>
+  <td>Sadhana Chidambaran</td>
+  <td><a href="mailto:sadhana.chidambaran@jhu.edu">sadhana.chidambaran@jhu.edu</a></td>
  </tr>
 </table>
 

@@ -130,22 +130,21 @@ Please be on time for course activities. Your attendance is expected at all time
    <th>Email</th>
  </tr>
  <tr>
-   <td>Kate Weaver</td>
-   <td><a href="mailto:kweave23@jhu.edu">kweave23@jhu.edu</a></td>
+   <td>Andrew Bortvin</td>
+   <td><a href="mailto:abortvi2@jhu.edu">abortvi2@jhu.edu</a></td>
  </tr>
  <tr>
-   <td>Steph Yan</td>
-   <td><a href="mailto:syan@jhu.edu">syan@jhu.edu</a></td>
+  <td>Sara Carioscia</td>
+  <td><a href="mailto:scarios1@jhu.edu">scarios1@jhu.edu</a></td>
  </tr>
  <tr>
-  <td>Dylan Taylor</td>
-  <td><a href="mailto:dtaylo95@jhu.edu">dtaylo95@jhu.edu</a></td>
+  <td>Merlin Li</td>
+  <td><a href="mailto:mli163@jhu.edu">mli163@jhu.edu</a></td>
  </tr>
- <tr>
-  <td>Andrew Bortvin</td>
-  <td><a href="mailto:abortvi2@jhu.edu">abortvi2@jhu.edu</a></td>
+<tr>
+  <td>Matthew Isada</td>
+  <td><a href="mailto:mfisada@gmail.com">mfisada@gmail.com</a></td>
  </tr>
-</table>
 
 <a name="Objectives"></a>
 <header>
