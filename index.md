@@ -11,8 +11,8 @@ Prep Work:
 1. [Part 1](https://colab.research.google.com/drive/1VyOVFuwgOWcHBYkIrfeffRm9UUIhVum3?usp=sharing)
 2. [Part 2](https://colab.research.google.com/drive/1T5uFnhf4LzX-Q3cQMIa4cv3OSItImyAw?usp=sharing)
 3. [Part 3](https://colab.research.google.com/drive/1RDohmEn9kO43m_x1hEwDK7dtL7y7mNC0?usp=sharing)
-- [Syllabus](resources/syllabi/bootcamp/index.html)
 
+- [Syllabus](resources/syllabi/bootcamp/index.html)
 - Five day intensive bootcamp geared towards getting everyone up to speed with basic computational skills.
 - <span class="text-danger">**NO** other classes, meetings, lab work, lab meetings, etc.</span>
 - In person, UTL398.
