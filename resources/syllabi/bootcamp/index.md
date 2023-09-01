@@ -65,7 +65,7 @@
   <h2>Course Description</h2>
 </header>
 
-Quantitative and computational methods are increasingly essential to all sub-disciplines of modern biological research. The goal of this intensive week-long “boot camp” is to empower students with the fundamental skills to apply these methods, as well as connect them to resources for further developing their knowledge and abilities. The class starts at 9 am with formal instruction ending at 4 pm daily. The course demonstrates the importance of version control, documentation, testing, and other methods for enhancing reproducibility, reliability, and usability of software. This is achieved through live coding sessions and use of learning exercises, where for the majority of the class, students perform data analysis to address biological questions and reinforce core bioinformatic concepts. Upon completing the course, students should be comfortable using and writing software to work with large-scale biological data. The motivation of this goal is to <b>develop computational and statistical competence</b> in preparation for courses, rotations, thesis research, and careers. Rather than blindly outsourcing bioinformatic components of their work, <b>students will be empowered</b> to understand methodological details and their associated advantages and limitations. This will in turn advance the broader goal of rigor in experimental design, promoting robust and unbiased results.
+Quantitative and computational methods are increasingly essential to all sub-disciplines of modern biological research. The goal of this intensive week-long course is to empower students with the fundamental skills to apply these methods, as well as connect them to resources for further developing their knowledge and abilities. The class starts at 9 am with formal instruction ending at 3 pm daily. The course demonstrates the importance of version control, documentation, testing, and other methods for enhancing reproducibility, reliability, and usability of software. This is achieved through live coding sessions and use of learning exercises, where for the majority of the class, students perform data analysis to address biological questions and reinforce core bioinformatic concepts. Upon completing the course, students should be comfortable using and writing software to work with large-scale biological data. The motivation of this goal is to develop computational and statistical competence in preparation for courses, rotations, thesis research, and careers. 
 
 <a name="ClassMeetings"></a>
 <header>
@@ -137,8 +137,6 @@ Although the course formally starts at 9 am ET, please <b>arrive by 8:45 am</b>.
 
 Due to the interactive nature of this course, there is a policy that students <b>should not participate in any other meetings, courses, or lab work throughout the week</b>. As a core CMDB course, bootcamp should take priority. If a student foresees attendance conflicts, they should contact a TA immediately so that this policy can be communicated to the necessary parties.<br />
 
-This course will be held in person. <br />
-
 Please be on time for course activities. Your attendance is expected at all times. Please let us know about any emergencies, family responsibilities, illness, etc. that may prevent attendance, and we will work to accommodate reasonable requests. If you're ill, don't come into class; contact us, there will be no penalty, and we will make arrangements.
 
 <a name="CourseWebsite"></a>
@@ -153,13 +151,12 @@ Please be on time for course activities. Your attendance is expected at all time
   <h2>Specific Objectives</h2>
 </header>
 
+Upon completion of this course, students will be able to: 
+
 <ul>
-  <li> Develop <b>comfort</b> working within a UNIX environment and at the command line to build and run programs </li>
-  <li> Develop <b>confidence</b> using Python and its extended ecosystem of tools for bioinformatic data analysis and visualization </li>
-  <li> Develop <b>knowledge</b> of standard bioinformatic file formats and where they fit within the context of a project </li>
-  <li> Develop <b>appreciation</b> for and <b>practice</b> of concise and transparent presentation of data </li>
-  <li> Develop <b>fluency</b> in basic statistical tests, associated assumptions, and interpretation of their output </li>
-  <li> Develop <b>good habits for ensuring reproducible research</b> </li>
+  <li> navigate a UNIX environment and create, copy, move, and delete files on the command line </li>
+  <li> manipulate, analyze, and visualize data using Python programming </li>
+  <li> create and maintain a Git repository that organizes and stores scripts for a project </li>
 </ul>
 
 <a name="StudyMats"></a>
@@ -167,26 +164,7 @@ Please be on time for course activities. Your attendance is expected at all time
   <h2>Study Materials</h2>
 </header>
 
-This course does not have a required text. Any lecture notes, slides, and interactive coding scripts/notebooks will be made available on the course website.
-
-<a name="PrepWork"></a>
-<header>
-  <h2>Prep Work</h2>
-</header>
-
-We have developed a prep work module that is designed to teach fundamental skills in scripting using Bash and Python. Prep work consists of readings, short activities, and coding exercises and in total is expected to take approximately 15 hours to complete. These assignments are designed both to build a technical skillset and to introduce the logic of how programmers approach solving complex problems. Prep work must be completed prior to the start of the semester, as all course materials build directly on the skills developed in these assignments.
-
-The prep work <a href="https://kweav.github.io/prepwork_revamp/introduction.html"> can be accessed at this site</a>.
-
-<a name="WhatToBring"></a>
-<header>
-  <h2>What to Bring</h2>
-</header>
-
-<ul>
-  <li>Headphones or earbuds </li>
-  <li> Face mask </li>
-</ul>
+An online textbook written for this course can be found <a href="https://andrew-bortvin.github.io/swcmdb/"> here</a>. Any lecture notes, slides, and interactive coding scripts/notebooks will be made available on the course website.
 
 <a name="Format"></a>
 <header>
@@ -204,7 +182,7 @@ The course is broken into four main <b>types of sessions</b>
 <ol>
   <li><a name="FormatInter"></a><ins><b>Interactive</b> Lecture & <b>Live-Coding</b> Sessions</ins></li>
     <ul>
-      <li>These sessions will consist of interactive lectures and instructor-guided live-coding examples, which introduce and expand on material for the exercise sessions that occur directly afterward. Instructors will give lectures synchronously and TAs will be available to provide support.</li>
+      <li>These sessions will consist of interactive lectures and instructor-guided live-coding examples, which introduce and expand on material for the exercise sessions that occur directly afterward. Instructors will give lectures and TAs will be available to provide support.</li>
       <li>The instructor will pause periodically to invite questions, let students catch up, and solicit sticky-note check-ins. See the next syllabus section, <a href="#Help">Asking for help</a>, on more specific information pertaining to questions and debugging in these sessions</li>
       <li>All scripts or notebooks used by instructors from these sessions will be made available on the course website through GitHub.</li>
     </ul>
@@ -215,87 +193,12 @@ The course is broken into four main <b>types of sessions</b>
       <li>Course-wide announcements and updates during these sessions will be posted to Slack.</li>
       <li>See the next syllabus section, <a href="#Help">Asking for help</a>, on more specific information pertaining to questions and debugging in these sessions.</li>
     </ul>
-  <li><a name="FormatSmallGroup"></a><ins><b>Small Group Discussion</b> Sessions</ins></li>
-    <ul>
-      <li>These sessions will be facilitated by TAs and instructors.</li>
-      <li>We will utilize cooperative small groups discussion sessions for content reviews and peer-presentations.</li>
-      <ul>
-        <li>For peer-presentations, students will explain to one another their approaches to solving exercises. TAs or instructors may provide feedback, and invite questions and discussion among the whole group on alternative approaches and solutions. Presentations are <b>ungraded</b>.</li>
-        <li>For review sessions, students will be asked to explain to one another computational methods and concepts covered in class. Students can ask questions about specific topics or assignments for which they would like additional practice. TAs will be present to help guide the discussion. Review sessions are <b>ungraded</b></li>
-      </ul>
-      <li>Small groups will be assigned daily and group membership rotated throughout the week. The students within each small group will be assigned roles for that day</li>
-        <ul>
-          <li>Manager: makes sure that all have the opportunity to engage in the discussion or peer-presentations.</li>
-          <li>Questioner: generates questions, asking for clarification or pushing back in order to strengthen a presentation.</li>
-          <li>Recorder: writes down/types/records important information, overall conclusions, or questions.</li>
-          <li>Spokesperson: if asked, summarizes or restates the team's conclusions, questions, or answers for the whole class outside of the small group.</li>
-          <li>Time Keeper: given an end time, keeps group on task and on time.</li>
-          <li>Reflector: verifies that any required prompts or agenda items have been discussed and have resulted in a consensus conclusion(s) or question(s).</li>
-          <li>Note: For groups with only 5 members, the Time Keeper and Reflector roles will be merged. In addition, for groups with only 4 members, the Recorder and Spokesperson roles are merged.</li>
-        </ul>
-    </ul>
-  <li><a name="FormatAsynch"></a><ins><b>Asynchronous</b> Sessions</ins></li>
-    <ul>
-        <li>Asynchronous materials will consist of pre-recorded videos that will be posted to YouTube (or a similar platform) and linked on the course        website</li>
-        <li>Students will watch asynchronous videos independently. TAs and instructors will be available during asynchronous sessions to answer questions</li>
-    </ul>
 </ol>
 
-<a name="DaySchedule"></a>
-<header><h3>Daily Schedule</h3></header>
-
-Most sessions will be separated by breaks, however, sometimes a break will be given in the middle of an interactive lecture. We will let you know this in advance. However, the <b>daily schedule</b> will generally be:
-
-<table class="table table-striped" style="width:50%">
- <tr>
-   <th>Morning</th>
-   <th></th>
-   <th>Afternoon</th>
-   <th></th>
- </tr>
- <tr>
-   <td>9:00</td>
-   <td>Small group discussions</td>
-   <td>2:00</td>
-   <td>Small group discussions</td>
- </tr>
- <tr>
-   <td>9:30</td>
-   <td>Interactive</td>
-   <td>2:30</td>
-   <td>Interactive</td>
- </tr>
- <tr>
-  <td>11:00</td>
-  <td>Lunch</td>
-  <td>--</td>
-  <td>--</td>
- </tr>
- <tr>
-  <td>11:45</td>
-  <td>Exercises</td>
-  <td>4:00</td>
-  <td>Exercises</td>
- </tr>
- <tr>
-  <td>1:45</td>
-  <td>Break</td>
-  <td>7:00</td>
-  <td>Wrap Up</td>
- </tr>
-</table>
-
-On Wednesday morning and Friday afternoon, the <b>Interactive</b> sessions will be replaced with the <b>Review Small Group</b> discussions described above.
 
 <a name="Reflections"></a>
 <header><h3>Daily Reflections</h3></header>
-We ask students to write <b>daily reflections</b> and turn them in <a href="https://forms.gle/kPy6BiZDb9SQfSsW7">through Google Forms</a> by <b>7pm ET</b>. Reflections should focus on the current day. The purpose of reflections is threefold.<br />
-  <ol>
-    <li> These reflections allow for students to offer constructive critiques of the course.</li>
-    <li> We believe this exercise has the potential to grow a student’s understanding and confidence as they purposefully reflect and see their improvement.</li>
-    <li>This practice directly cultivates good habits in reproducible analysis and keeping a lab notebook.</li>
-  </ol>
-
+We ask students to write <b>daily reflections</b> and turn them in <a href="https://forms.gle/kPy6BiZDb9SQfSsW7">through Google Forms</a> by <b>5pm ET</b>. Reflections should focus on the current day. These reflections allow for students to offer constructive critiques of the course and provide a space for students to purposefully reflect and see their improvement.
 
 <br />We expect these reflections to be short, but <b>respond to each of the following prompts</b>:<br />
   <ul>
@@ -305,30 +208,12 @@ We ask students to write <b>daily reflections</b> and turn them in <a href="http
   </ul>
 
 
-<br />If you have specific material you know you would like covered in a review session, please also respond to the non-required prompt:<br />
-  <ul>
-    <li>What from today (if anything) would you like to review in a review session?</li>
-  </ul>
-
-
-<br />Finally, if you would like to provide constructive critiques of the course or that day's material, please respond to the final, non-required prompt:<br />
-  <ul>
-    <li>Suggestions or constructive critiques:</li>
-  </ul>
-
-
-<br />Notes on reflections:<br />
-  <ul>
-    <li>As long as reflections attempt to respond to the above prompts, the content of the reflection will not affect a student’s grade in any way. See the <a href="#Grading">Grading</a> section for further clarification.</li>
-    <li>We aim to keep reflections confidential. As such, only instructors, TAs, and the student will have access to a student’s reflections</li>
-  </ul>
+As long as reflections attempt to respond to the above prompts, the content of the reflection will not affect a student’s grade in any way. See the <a href="#Grading">Grading</a> section for further clarification. We aim to keep reflections confidential. As such, only instructors, TAs, and the student will have access to a student’s reflections.
 
 <a name="Food"></a>
 <header><h3>Food</h3></header>
-  <ul>
-    <li>Lunch and an afternoon snack will be provided every day.</li>
-    <li>Students will eat primarily outside.</li>
-  </ul>
+
+Lunch and an afternoon snack will be provided every day.
 
 <a name="Help"></a>
 <header><h2>Asking for Help</h2></header>
