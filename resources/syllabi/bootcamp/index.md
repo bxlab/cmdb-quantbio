@@ -74,6 +74,7 @@ Quantitative and computational methods are increasingly essential to all sub-dis
 
 Tues, Sept 5, 2023 - Fri, Sept 8, 2023<br />
 8:45 A.M. ET - 5 P.M. ET, In Person, UTL398<br />
+Lunch and an afternoon snack will be provided every day.<br />
 
 Although the course formally starts at 9 am ET, please <b>arrive by 8:45 am</b>.
 
@@ -137,7 +138,7 @@ Although the course formally starts at 9 am ET, please <b>arrive by 8:45 am</b>.
 
 Due to the interactive nature of this course, there is a policy that students <b>should not participate in any other meetings, courses, or lab work throughout the week</b>. As a core CMDB course, bootcamp should take priority. If a student foresees attendance conflicts, they should contact a TA immediately so that this policy can be communicated to the necessary parties.<br />
 
-Please be on time for course activities. Your attendance is expected at all times. Please let us know about any emergencies, family responsibilities, illness, etc. that may prevent attendance, and we will work to accommodate reasonable requests. If you're ill, don't come into class; contact us, there will be no penalty, and we will make arrangements.
+Please be on time for course activities. Your attendance is expected at all times. Please let us know about any emergencies, family responsibilities, illness, etc. that may prevent attendance, and we will work to accommodate reasonable requests. If you feel sick or have have had a positive COVID test, please <b> don't come into class </b> ; contact us, there will be no penalty, and we will make arrangements.
 
 <a name="CourseWebsite"></a>
 <header>
@@ -198,22 +199,9 @@ The course is broken into four main <b>types of sessions</b>
 
 <a name="Reflections"></a>
 <header><h3>Daily Reflections</h3></header>
-We ask students to write <b>daily reflections</b> and turn them in <a href="https://forms.gle/kPy6BiZDb9SQfSsW7">through Google Forms</a> by <b>5pm ET</b>. Reflections should focus on the current day. These reflections allow for students to offer constructive critiques of the course and provide a space for students to purposefully reflect and see their improvement.
-
-<br />We expect these reflections to be short, but <b>respond to each of the following prompts</b>:<br />
-  <ul>
-    <li>What did I struggle with today?</li>
-    <li>What did I achieve today?</li>
-    <li>What's one lingering question or thought from today?</li>
-  </ul>
-
+We ask students to write <b>daily reflections</b> and turn them in <a href="https://forms.gle/kPy6BiZDb9SQfSsW7">through Google Forms</a> by <b>5pm ET</b>. Reflections should focus on the current day. These reflections allow for students to offer constructive critiques of the course and provide a space for students to purposefully reflect and see their improvement. We expect these reflections to be short.
 
 As long as reflections attempt to respond to the above prompts, the content of the reflection will not affect a student’s grade in any way. See the <a href="#Grading">Grading</a> section for further clarification. We aim to keep reflections confidential. As such, only instructors, TAs, and the student will have access to a student’s reflections.
-
-<a name="Food"></a>
-<header><h3>Food</h3></header>
-
-Lunch and an afternoon snack will be provided every day.
 
 <a name="Help"></a>
 <header><h2>Asking for Help</h2></header>
@@ -236,11 +224,11 @@ We both expect and encourage you to ask questions and request help throughout th
 
 <a name="Googling"></a>
 <header><h3>Googling</h3></header>
-<b>Googling</b> is always an acceptable way to find answers or help, and we encourage you to utilize it extensively. If you adopt a solution following a Google search, make sure you understand what you incorporate, rather than just copy/pasting without comprehension of the logic or code. Please see the <a href="#Integrity">Academic Integrity & Ethics</a> syllabus section for more on this.
+<b>Googling</b> is always an acceptable way to find answers or help, and we encourage you to utilize it extensively. If you adopt a solution following a Google search, make sure you understand what you incorporate, rather than just copy/pasting without comprehension of the logic or code. 
 
 <a name="Grading"></a>
 <header><h2>Grading</h2></header>
-The grading for this course is based on <b>reasonable completion</b>. For each lunch and homework exercise session, students will be advised which exercises are required and which are advanced or optional. Additionally, students will be asked to upload certain scripts and results (outputs or plots, etc.) to their personal Github repositories, qbb2022-answers. For lunch exercises, these materials should be pushed to the repository by the end of the lunch exercise session. For homework exercises, these materials should be pushed to the repository by the beginning of the next morning session.<br /><br />
+The grading for this course is based on <b>reasonable completion</b>. For each assignment, students will be advised which exercises are required and which are advanced or optional. Additionally, students will be asked to upload certain scripts and results (outputs or plots, etc.) to their personal Github repositories, qbb2022-answers.<br /><br />
 
 TAs will verify that the student’s submitted work shows a reasonable level of individual effort. Finally, students will have one week post-bootcamp to submit any leftover materials. Letter grades will be assigned in line with the level of completion. While student presentations and the content of daily reflections will not affect grades in any way, failure to turn in daily reflections has the potential to lower the final grade.<br /><br />
 
@@ -274,11 +262,6 @@ All class participants agree to:
     <li><b>Refrain from advocating for, or encouraging, negative behavior</b>. And, if someone asks you to stop, then stop. Alert an instructor or TA if you notice a dangerous situation, someone in distress, or violations of this code of conduct, no matter how inconsequential it seems.</li>
   </ul>
 
-<a name="Pandemic"></a>
-<header><h2>The Pandemic</h2></header>
-
-We know that this is one of the least ideal situations in which to be starting your first year of grad school and taking an intensive week-long coding course. Our plan is to be as understanding as possible about grading, attendance, and any issues that come up. Please don’t hesitate to reach out to an instructor or TA, and we will do our best to accommodate you however we can.<br /><br /> When in the classroom, <b>please wear a face mask</b> except when drinking.
-
 <a name="Technology"></a>
 <header><h2>Technology</h2></header>
 
@@ -291,84 +274,4 @@ Several <b>platforms</b> will be utilized for communication and distribution of 
 <header><h3>Laptops</h3></header>
 We <b>provide laptops</b> with pre-configured software and data. Students must sign a Macbook Pro Agreement Form upon pickup of the laptop. Note these laptops are to be returned to the Biology office by the end of the spring semester (date specified on the agreement form). Software issues should be communicated to TAs promptly. In contrast, report any hardware issues to the Biology office.
 
-<a name="WeekSchedule"></a>
-<header><h2>Full Bootcamp Schedule</h2></header>
-All time are ET.
 
-
-<table class="table table-striped">
-<tr>
-  <th></th>
-  <th>Monday</th>
-  <th>Tuesday</th>
-  <th>Wednesday</th>
-  <th>Thursday</th>
-  <th>Friday</th>
-</tr>
-<tr>
-  <th>9:00 - 9:30</th>
-  <td>Overview</td>
-  <td>Homework Exercise Small Group Discussions</td>
-  <td>Homework Exercise Small Group Discussions</td>
-  <td>Homework Exercise Small Group Discussions</td>
-  <td>Homework Exercise Small Group Discussions</td>
-</tr>
-<tr>
-  <th>9:30 - 11</th>
-  <td>The Unix Shell</td>
-  <td>Biological Data Parsing with Python</td>
-  <td>Review</td>
-  <td>Reproducibility and GitHub</td>
-  <td>Statistical Modeling</td>
-</tr>
-<tr>
-  <th>11:00 - 11:45</th>
-  <td>Lunch</td>
-  <td>Lunch</td>
-  <td>Lunch</td>
-  <td>Lunch</td>
-  <td>Lunch</td>
-</tr>
-<tr>
-  <th>11:45 - 1:45</th>
-  <td>Exploring Biological Data Files</td>
-  <td>Extend and Annotate a File Parser</td>
-  <td>Data Exploration and Visualization</td>
-  <td>Research Parasites (aka How to <s>Steal</s> Reuse Other People’s Code)</td>
-  <td>TBA</td>
-</tr>
-<tr>
-  <th>1:45 - 2:00</th>
-  <td>Break</td>
-  <td>Break</td>
-  <td>Break</td>
-  <td>Break</td>
-  <td>Break</td>
-</tr>
-<tr>
-  <th>2:00 - 2:30</th>
-  <td>Lunch Exercise Small Group Discussions</td>
-  <td>Lunch Exercise Small Group Discussions</td>
-  <td>Data Exploration and Visualization (cont.)</td>
-  <td>Lunch Exercise Small Group Discussions</td>
-  <td>Lunch Exercise Small Group Discussions</td>
-</tr>
-<tr>
-  <th>2:30 - 4:00</th>
-  <td>Program Documentation, Online Resources, and Debugging</td>
-  <td>Biological Data Parsing with Python (cont.)</td>
-  <td>---</td>
-  <td>Random Simulations</td>
-  <td>Review</td>
-</tr>
-<tr>
-  <th>Homework (wrap up 7pm)</th>
-  <td>Genome Arithmetic</td>
-  <td>Mapping across Databases</td>
-  <td>Principal Component Analysis</td>
-  <td>Visualizing Simulation Results and Power</td>
-  <td>---</td>
-</tr>
-</table>
-
-Although the course formally starts at 9 am ET, please <b>arrive by 8:45 am</b>.
