@@ -65,7 +65,7 @@
   <h2>Course Description</h2>
 </header>
 
-Quantitative and computational methods are increasingly essential to all sub-disciplines of modern biological research. The goal of this intensive week-long course is to empower students with the fundamental skills to apply these methods, as well as connect them to resources for further developing their knowledge and abilities. The class starts at 9 am with formal instruction ending at 3 pm daily. The course demonstrates the importance of version control, documentation, testing, and other methods for enhancing reproducibility, reliability, and usability of software. This is achieved through live coding sessions and use of learning exercises, where for the majority of the class, students perform data analysis to address biological questions and reinforce core bioinformatic concepts. Upon completing the course, students should be comfortable using and writing software to work with large-scale biological data. The motivation of this goal is to develop computational and statistical competence in preparation for courses, rotations, thesis research, and careers. 
+Quantitative and computational methods are increasingly essential to all sub-disciplines of modern biological research. The goal of this intensive week-long course is to equip students with the fundamental skills to apply these methods and connect them to resources to further develop their knowledge and abilities. The class starts at 9am (please arrive by 8:45am), and formal instruction ends at 3pm daily. The course demonstrates the importance of version control, documentation, testing, and other methods for enhancing reproducibility, reliability, and usability of software. This is achieved through live coding sessions and use of learning exercises, where for the majority of the class, students perform data analysis to address biological questions and reinforce core bioinformatic concepts. Upon completing the course, students will be comfortable using and writing software to work with large-scale biological data. The resulting computational and statistical competence will prepare students for courses, rotations, thesis research, and careers. 
 
 <a name="ClassMeetings"></a>
 <header>
@@ -73,7 +73,7 @@ Quantitative and computational methods are increasingly essential to all sub-dis
 </header>
 
 Tues, Sept 5, 2023 - Fri, Sept 8, 2023<br />
-8:45 A.M. ET - 5 P.M. ET, In Person, UTL398<br />
+8:45 A.M. ET - 5 P.M. ET, In Person, UTL 398<br />
 Lunch and an afternoon snack will be provided every day.<br />
 
 Although the course formally starts at 9 am ET, please <b>arrive by 8:45 am</b>.
@@ -88,7 +88,7 @@ Although the course formally starts at 9 am ET, please <b>arrive by 8:45 am</b>.
 
 <table class="table table-striped" style="width:40%">
  <tr>
-   <th>Instructor</th>
+   <th>Instructors</th>
    <th>Email</th>
  </tr>
  <tr>
@@ -136,9 +136,9 @@ Although the course formally starts at 9 am ET, please <b>arrive by 8:45 am</b>.
   <h3>Attendance</h3>
 </header>
 
-Due to the interactive nature of this course, there is a policy that students <b>should not participate in any other meetings, courses, or lab work throughout the week</b>. As a core CMDB course, bootcamp should take priority. If a student foresees attendance conflicts, they should contact a TA immediately so that this policy can be communicated to the necessary parties.<br />
+Due to the interactive nature of this course, students <b>should not participate in any other meetings, courses, or lab work during the week</b>. If a student foresees attendance conflicts, they should contact a TA immediately so that this policy can be communicated to the necessary parties.<br />
 
-Please be on time for course activities. Your attendance is expected at all times. Please let us know about any emergencies, family responsibilities, illness, etc. that may prevent attendance, and we will work to accommodate reasonable requests. If you feel sick or have have had a positive COVID test, please <b> don't come into class </b> ; contact us, there will be no penalty, and we will make arrangements.
+Please be on time for course activities. Your attendance is expected at all times. Please let a TA know about any emergencies, family responsibilities, illness, etc. that may prevent attendance, and we will work to accommodate you. If you feel sick (any kind if illness, not just a positive COVID test), please <b> don't come to class </b> ; contact a TA and we will make arrangements to support you.
 
 <a name="CourseWebsite"></a>
 <header>
@@ -149,15 +149,15 @@ Please be on time for course activities. Your attendance is expected at all time
 
 <a name="Objectives"></a>
 <header>
-  <h2>Specific Objectives</h2>
+  <h2>Learning Goals</h2>
 </header>
 
 Upon completion of this course, students will be able to: 
 
 <ul>
   <li> navigate a UNIX environment and create, copy, move, and delete files on the command line </li>
-  <li> manipulate, analyze, and visualize data using Python programming </li>
-  <li> create and maintain a Git repository that organizes and stores scripts for a project </li>
+  <li> manipulate, analyze, and visualize data using Python programming (including in Python scripts) </li>
+  <li> create and maintain a Git repository that organizes and stores materials for each quantitative biology project </li>
 </ul>
 
 <a name="StudyMats"></a>
@@ -184,52 +184,49 @@ The course is broken into four main <b>types of sessions</b>
   <li><a name="FormatInter"></a><ins><b>Interactive</b> Lecture & <b>Live-Coding</b> Sessions</ins></li>
     <ul>
       <li>These sessions will consist of interactive lectures and instructor-guided live-coding examples, which introduce and expand on material for the exercise sessions that occur directly afterward. Instructors will give lectures and TAs will be available to provide support.</li>
-      <li>The instructor will pause periodically to invite questions, let students catch up, and solicit sticky-note check-ins. See the next syllabus section, <a href="#Help">Asking for help</a>, on more specific information pertaining to questions and debugging in these sessions</li>
-      <li>All scripts or notebooks used by instructors from these sessions will be made available on the course website through GitHub.</li>
+      <li>The instructor will pause periodically to invite questions, let students catch up, and solicit sticky-note check-ins. See the next syllabus section, <a href="#Help">Asking for help</a>, for more specific information pertaining to questions and debugging in these sessions.</li>
+      <li>All scripts or notebooks used by instructors in these sessions will be made available on the course website through GitHub.</li>
     </ul>
   <li><a name="FormatExercise"></a><ins><b>Exercise</b> Sessions (Lunch and Homework)</ins></li>
     <ul>
       <li>These sessions will be hosted by TAs.</li>
-      <li>Students are encouraged to work in groups with their table partners. While groups are expected to have very similar answers, students should put in individualized effort and strive to understand every line of code and analysis step they take. See the <a href="#Integrity">Academic Integrity & Ethics</a> syllabus section for more information</li>
-      <li>Course-wide announcements and updates during these sessions will be posted to Slack.</li>
-      <li>See the next syllabus section, <a href="#Help">Asking for help</a>, on more specific information pertaining to questions and debugging in these sessions.</li>
+      <li>Students are encouraged to work in groups with their table partners. While groups are expected to have very similar answers, students should put in individualized effort and strive to understand every line of code and analysis step they take. See the <a href="#Integrity">Academic Integrity & Ethics</a> syllabus section for more information.</li>
+      <li>Course-wide announcements and updates during these sessions will be posted to Slack on the quantbio_2023 channel in the JHU Genomics workspace.</li>
     </ul>
 </ol>
 
 
 <a name="Reflections"></a>
 <header><h3>Daily Reflections</h3></header>
-We ask students to write <b>daily reflections</b> and turn them in <a href="https://forms.gle/kPy6BiZDb9SQfSsW7">through Google Forms</a> by <b>5pm ET</b>. Reflections should focus on the current day. These reflections allow for students to offer constructive critiques of the course and provide a space for students to purposefully reflect and see their improvement. We expect these reflections to be short.
-
-As long as reflections attempt to respond to the above prompts, the content of the reflection will not affect a student’s grade in any way. See the <a href="#Grading">Grading</a> section for further clarification. We aim to keep reflections confidential. As such, only instructors, TAs, and the student will have access to a student’s reflections.
+Students will complete a daily reflection and submit <a href="https://forms.gle/kPy6BiZDb9SQfSsW7">via Google Forms</a> by <b>5pm ET</b>. These reflections allow  students to communicate their experience and purposefully reflect. These are meant to be check-ins for both the instructors/TAs and the students, and these will be kept confidential. The content of the reflections will not affect a student’s grade in any way. 
 
 <a name="Help"></a>
 <header><h2>Asking for Help</h2></header>
 <a name="DOIT"></a>
-We both expect and encourage you to ask questions and request help throughout this course. Everyone is learning and there is no shame in having questions, not understanding what an instructor has said or typed, or needing to debug your code. Therefore, <b>please ask questions</b> about whatever, whenever you need to. We’ve written up guidelines below on how you can ask for help during each type of session.
+We expect and encourage you to ask questions and request help throughout this course. Everyone is learning and regardless of your past experience we will expect you to have questions, request clarification or details on in-class information, and ask for help debugging your code. <b>Please ask questions</b> about whatever, whenever you need to; this course is for <b>you</b>, and we look forward to supporting you in your learning. 
 
 <a name="GenerallyHow"></a>
 <ul>
-  <li>For most <b>live-coding sessions</b>, the Lead Instructor will solicit <b>Check Ins</b>, asking students to respond to a poll about whether they are ready to move on to the next section using sticky notes.</li>
+  <li>For most <b>live-coding sessions</b>, Lead Instructor will solicit <b>Check Ins</b>, asking students to respond to a sticky note poll about lesson pacing.</li>
     <ul>
       <li>Use a <b>green sticky note</b> if you’re following along and are ready to move on.</li>
-      <li>Use a <b>yellow sticky note</b> if you're working and need more time, but are not ready to move on and do not need assistance yet</li>
+      <li>Use a <b>yellow sticky note</b> if you're working and need more time, but are not ready to move on and do not need assistance yet.</li>
       <li>Use a <b>pink sticky note</b> if you need assistance.</li>
     </ul>
-  <li>If the Lead Instructor prompts the class to ask or answer questions verbally, please raise your hand to be courteous.</li>
-  <li> If you experience problems you cannot fix in a live-coding session, outside of solicited check ins, still display a pink sticky note, and a TA will assist you. However, depending on the problem, and what will be required to fix it, TAs may suggest that you continue to pay attention and follow along as best as you can, aiding in fixing at a later stopping point</li>
-  <li>You can also slack questions to TAs, instructors, or in channels.</li>
+  <li>If the Instructor prompts the class to ask or answer questions verbally, please raise your hand and be courteous.</li>
+  <li> If you experience problems you cannot fix in a live-coding session, please display a pink sticky note on your laptop or desk area (even outside of a poll), and a TA will assist you. Depending on the problem, and what will be required to fix it, the TA may suggest that you continue to pay attention and follow along as best as you can and will assist you at a later stopping point.</li>
+  <li>You can also Slack questions to TAs, instructors, or in channels.</li>
 </ul>
 
 <a name="Googling"></a>
 <header><h3>Googling</h3></header>
-<b>Googling</b> is always an acceptable way to find answers or help, and we encourage you to utilize it extensively. If you adopt a solution following a Google search, make sure you understand what you incorporate, rather than just copy/pasting without comprehension of the logic or code. 
+<b>Googling</b> is always an acceptable way to find answers or help, and we encourage you to utilize it extensively. If you adopt a solution following a Google search, make sure you understand what you incorporate, rather than just copy/paste without comprehension of the logic or code. Google is also a good way to learn more about any error messages you encounter in your code. 
 
 <a name="Grading"></a>
 <header><h2>Grading</h2></header>
-The grading for this course is based on <b>reasonable completion</b>. For each assignment, students will be advised which exercises are required and which are advanced or optional. Additionally, students will be asked to upload certain scripts and results (outputs or plots, etc.) to their personal Github repositories, qbb2022-answers.<br /><br />
+The grading for this course is based on <b>reasonable completion</b>. For each assignment, students will be told which exercises are required and which are optoinal. To demonstrate completion and get TA feedback, students will upload certain scripts and results (outputs or plots, etc.) to their personal Github repositories, qbb2022-answers.<br /><br />
 
-TAs will verify that the student’s submitted work shows a reasonable level of individual effort. Finally, students will have one week post-bootcamp to submit any leftover materials. Letter grades will be assigned in line with the level of completion. While student presentations and the content of daily reflections will not affect grades in any way, failure to turn in daily reflections has the potential to lower the final grade.<br /><br />
+TAs will verify that the student’s submitted work shows a reasonable level of individual effort.Students will have one week post-bootcamp to submit any leftover materials, though we encourage you to complete these assignments ASAP to ease your workload as you move on to your other courses and rotations. Letter grades will be assigned in line with the level of completion. While student presentations and the content of daily reflections will not affect grades in any way, failure to turn in daily reflections has the potential to lower the final grade.<br /><br />
 
 General guidelines for letter grade assignments:
   <ul>
@@ -241,24 +238,24 @@ General guidelines for letter grade assignments:
 <a name="Feedback"></a>
 <header><h2>Feedback</h2></header>
 
-TAs and instructors will push individualized feedback to the student repositories throughout the week. This feedback is not a grade, but may be used by students to anticipate their level of completion and likely grade. After receiving feedback, students will have the opportunity to revise and complete assignments prior to final submission.
+TAs and instructors will push individualized feedback to the student repositories throughout the week. This feedback is not a grade, but may be used by students to anticipate their level of completion. After receiving feedback, students will have the opportunity to revise and complete each assignment (ideally once) prior to final submission at the end of the semester.
 
 <a name="Integrity"></a>
 <header><h2>Academic Integrity & Ethics</h2></header>
 
-Academic and scientific institutions and research depend on honesty and integrity. You should be completing your lunch and homework exercises and your work should not plagiarize others -- including group partners, presenters, and strangers posting to online forums or blogs. You and your partner should be working together, but both persons should be writing and turning in unique, individualized code. Note your scripts and analysis may follow the same logic steps and even have tidbits of the same code, but no one person should be writing the solution the whole group uses character for character. Additionally, you should understand every line of code you write, are given and use, or find online and incorporate. If asked to, you should be able to explain exactly what your code is doing. Another aspect is properly acknowledging the source of  borrowed code. Understanding can be cultivated and acknowledgement implemented by writing both inline and multiline comments (which is a terrific practice in general). Relatedly, don’t give someone code to copy and paste. Make sure any recipient can explain back to you any gifted code. See the university’s guidelines on plagiarism for details and contact a TA with any questions.
+Academic and scientific institutions and research depend on honesty and integrity. You should complete your own lunch and homework exercises, and your work should not plagiarize others -- including group partners, presenters, and strangers posting to online forums or blogs. You and your partners should be working together, but both persons should be writing and turning in unique, individualized code. Note your scripts and analysis may follow the same logic steps and even have tidbits of the same code, but no one person should be writing the solution the whole group uses character for character. Additionally, you should understand every line of code you write, are given and use, or find online and incorporate. If asked to, you should be able to explain exactly what your code is doing. Another aspect is properly acknowledging the source of borrowed code. Understanding can be cultivated and acknowledgement implemented by writing both inline and multiline comments (which is a terrific practice in general). Relatedly, don’t give someone code to copy and paste. Make sure any recipient can explain back to you any gifted code. See the University’s guidelines on plagiarism for details and contact a TA with any questions.
 
 <a name="CodeofConduct"></a>
 <header><h2>Code of Conduct</h2></header>
 
-We are committed to creating a welcoming, inclusive, and harassment-free environment for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), political beliefs/leanings, or technology choices. We do not tolerate harassment in any form. This code of conduct applies to all course participants, including instructors and TAs, and to all modes of interaction and communication.<br /><br />
+We are committed to maintaining a welcoming, inclusive, and harassment-free environment for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), political beliefs/leanings, or technology choices. We do not tolerate harassment in any form. This code of conduct applies to all course participants, including instructors and TAs, and to all modes of interaction and communication.<br /><br />
 
 All class participants agree to:
   <ul>
-    <li><b>Be considerate and polite</b>. Bootcamp is a stressful and sometimes frustrating week for everyone. In addition, the collaborative nature of this course means it is essential that students are respectful of each other’s questions and points of confusion. Remember that you all are coming into this program with a wide range of coding backgrounds. A community where people feel uncomfortable is not conducive for learning.</li>
+    <li><b>Be considerate and polite</b>. Bootcamp can be a daunting and sometimes frustrating experience - we're showing you a lot in a short amount of time! In addition, the collaborative nature of this course means it is essential that students are respectful of each other’s questions and points of confusion. Remember that you all are coming into this program with a wide range of coding backgrounds. A community where people feel comfortable is most conducive for learning.</li>
     <li><b>Work together cooperatively</b>. Be kind when giving feedback on your classmates’ code, and make an effort to help if they are stuck. You will gain much more from explaining concepts to someone else than you will from rushing through the assignments on your own.</li>
     <li><b>Refrain from demeaning, discriminatory, or harassing behavior and speech</b>. Harassment includes, but is not limited to: deliberate intimidation; stalking; unwanted photography or recording; sustained or willful disruption of talks or other events; inappropriate physical contact; use of sexual or discriminatory imagery, comments, or jokes; and unwelcome sexual attention. If you feel that someone has harassed you or otherwise treated you inappropriately, please alert one of the instructors or TAs.</li>
-    <li><b>Refrain from advocating for, or encouraging, negative behavior</b>. And, if someone asks you to stop, then stop. Alert an instructor or TA if you notice a dangerous situation, someone in distress, or violations of this code of conduct, no matter how inconsequential it seems.</li>
+    <li><b>Refrain from advocating for, or encouraging, negative behavior</b>. If someone asks you to stop, then stop. Alert an instructor or TA if you notice a dangerous situation, someone in distress, or violations of this code of conduct, no matter how inconsequential it seems.</li>
   </ul>
 
 <a name="Technology"></a>
@@ -267,10 +264,10 @@ All class participants agree to:
 <a name="Platforms"></a>
 <header><h3>Platforms</h3></header>
 
-Several <b>platforms</b> will be utilized for communication and distribution of information. These include GitHub, Slack, Google Forms, etc. Instructions and walkthroughs are provided for students to sign up for accounts through GitHub and Slack. If for any reason you do not have access to one of these accounts, please contact a TA.
+Several <b>platforms</b> will be utilized for communication and distribution of information. These include GitHub, Slack, Google Forms, etc. Instructions and walkthroughs are provided for students to sign up for accounts through GitHub and Slack. If for any reason you do not have access to one of these accounts, please reach out to a TA.
 
 <a name="Laptops"></a>
 <header><h3>Laptops</h3></header>
-We <b>provide laptops</b> with pre-configured software and data. Students must sign a Macbook Pro Agreement Form upon pickup of the laptop. Note these laptops are to be returned to the Biology office by the end of the spring semester (date specified on the agreement form). Software issues should be communicated to TAs promptly. In contrast, report any hardware issues to the Biology office.
+We <b>provide laptops</b> with pre-configured software and data. Students must sign a Macbook Pro Agreement Form upon pickup of the laptop. Note these laptops are to be returned to the Biology office by the end of the spring semester (date specified on the agreement form). Software issues should be communicated to TAs promptly. Hardware issues should be communicated to the Biology office ASAP, but also let a TA know so we can accommodate you while the hardware is being addressed.
 
 

@@ -13,16 +13,16 @@ Prep Work:
 3. [Part 3](https://colab.research.google.com/drive/1RDohmEn9kO43m_x1hEwDK7dtL7y7mNC0?usp=sharing)
 
 - [Syllabus](resources/syllabi/bootcamp/index.html)
-- Five day intensive bootcamp geared towards getting everyone up to speed with basic computational skills.
+- Four day intensive bootcamp to introduce students to fundamentals in quantitative and computational biology 
 - <span class="text-danger">**NO** other classes, meetings, lab work, lab meetings, etc.</span>
-- In person, UTL398.
+- In person, UTL 398
 - Please arrive by 8:45am ET
 - Lunch and an afternoon snack will be provided
 - Zoom meeting ID (check Slack for passcode or full link to join): 929 0650 3074
 
 ### Schedule
 All times in ET<br /><br />
-All day-specific links for assignments, recordings, etc. can be found by clicking the link for the day below.
+Resources for each day (links for assignment, any relevant recordings or slides, etc.) will be linked in the schedule below
 
 <!--[Tuesday](webpages/day1/index.html)-->
 
