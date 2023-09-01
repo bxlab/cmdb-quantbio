@@ -1,6 +1,6 @@
 # Software Carpentry: Python Novice
 
-- [https://swcarpentry.github.io/shell-novice](https://swcarpentry.github.io/python-novice-inflammation/instructor)
+- [https://swcarpentry.github.io/python-novice-inflammation/instructor](https://swcarpentry.github.io/python-novice-inflammation/instructor)
 
 ## Motivation (1:00-1:10; PowerPoint)
 
