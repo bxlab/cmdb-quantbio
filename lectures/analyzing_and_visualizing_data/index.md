@@ -1,4 +1,4 @@
-## Motivation (9:00-9:05; PowerPoint)
+# Motivation (9:00-9:05; PowerPoint)
 
 - State learning objectives
 
