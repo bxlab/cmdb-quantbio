@@ -25,8 +25,9 @@ All times in ET<br /><br />
 All day-specific links for assignments, recordings, etc. can be found by clicking the link for the day below.
 
 <!--[Tuesday](webpages/day1/index.html)-->
+
 | Time | Tuesday | Wednesday | Thursday | Friday | 
-|:---------------:|:--------------------------------------:|:---------------------------------------:|:------------------------------------:|:---------------------------------------:|:--------------------------------------:|
+|:---------------:|:--------------------------------------:|:---------------------------------------:|:------------------------------------:|:---------------------------------------:|
 |   9:00 - 12:00  | The Unix Shell | Python: numpy and matplotlib | Python: While, If, Functions | Review and advanced topics | 
 |   12:00 - 1:00  | Lunch    |  Lunch   | Lunch    | Lunch   
 |   1:00 - 3:00 | Python Introduction | Git  | Python: Dictionaries | Assignment: the Wright-Fisher Model |
