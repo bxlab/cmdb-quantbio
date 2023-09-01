@@ -158,7 +158,6 @@ Upon completion of this course, students will be able to:
   <li> navigate a UNIX environment and create, copy, move, and delete files on the command line </li>
   <li> manipulate, analyze, and visualize data using Python programming (including in Python scripts) </li>
   <li> create and maintain a Git repository that organizes and stores materials for each quantitative biology project </li>
-  <li> puppetry </li>
 </ul>
 
 <a name="StudyMats"></a>
