@@ -3,7 +3,8 @@
 - State learning objectives
 
 # Conditionals and comparisons (live-coding; 9:05-9:20)
-
+- [https://swcarpentry.github.io/python-novice-inflammation/instructor/07-cond.html](https://swcarpentry.github.io/python-novice-inflammation/instructor/07-cond.html)
+- everything before "Checking our Data"
 
 # Software Carpentry: Analyzing Patient Data (Numpy; live-coding; 9:20-10:10)
 
@@ -38,11 +39,15 @@ print('maximum inflammation for patient 0:', numpy.amax(patient_0))
 print('maximum inflammation for patient 2:', numpy.amax(data[2, :]))
 ```
 
-- numpy allows you to use the `axis` parameter to apply a function to each row or column (9:58-10:05)
+- numpy allows you to use the `axis` parameter to apply a function to each row or column (9:58-10:00)
 ```
 print(numpy.mean(data, axis=0))
 print(numpy.mean(data, axis=1))
 ```
+
+- conditionals, continued "Checking our data" (10:00-10:10)
+- [https://swcarpentry.github.io/python-novice-inflammation/instructor/07-cond.html](https://swcarpentry.github.io/python-novice-inflammation/instructor/07-cond.html)
+
 
 
 # Software Carpentry: Visualizing Patient Data (Matplotlib; 10:10-11:00)
