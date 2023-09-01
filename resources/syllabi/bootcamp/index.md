@@ -149,7 +149,7 @@ Please be on time for course activities. Your attendance is expected at all time
 
 <a name="Objectives"></a>
 <header>
-  <h2>Specific Objectives</h2>
+  <h2>Learning Goals</h2>
 </header>
 
 Upon completion of this course, students will be able to: 
