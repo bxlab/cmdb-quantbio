@@ -6,7 +6,11 @@ layout: default
 ## CMDB Quantitative Biology Bootcamp 2023
 
 ### Logistics
-- [Prep Work](https://kweav.github.io/prepwork_revamp/introduction.html)
+Prep Work: 
+
+1. 
+2.
+3. [Part 3]
 - [Syllabus](resources/syllabi/bootcamp/index.html)
 - Five day intensive bootcamp geared towards getting everyone up to speed with basic computational skills.
 - <span class="text-danger">**NO** other classes, meetings, lab work, lab meetings, etc.</span>
@@ -20,7 +24,7 @@ All times in ET<br /><br />
 All day-specific links for assignments, recordings, etc. can be found by clicking the link for the day below.
 
 
-| [Tuesday](webpages/day1/index.html) | Wednesday | Thursday | Friday | 
+| Time | [Tuesday](webpages/day1/index.html) | Wednesday | Thursday | Friday | 
 |:---------------:|:--------------------------------------:|:---------------------------------------:|:------------------------------------:|:---------------------------------------:|:--------------------------------------:|
 |   9:00 - 12:00  | The Unix Shell | Python: numpy and matplotlib | Python: While, If, Functions | Review and advanced topics | 
 |   12:00 - 1:00  | Lunch    |  Lunch   | Lunch    | Lunch   
