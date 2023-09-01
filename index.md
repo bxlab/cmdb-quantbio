@@ -20,7 +20,7 @@ All times in ET<br /><br />
 All day-specific links for assignments, recordings, etc. can be found by clicking the link for the day below.
 
 
-| [Tuesday](webpages/day1/index.html) | <!--[Wednesday](webpages/day2/index.html) | [Thursday](webpages/day3/index.html) | [Friday](webpages/day4/index.html) | -->
+| [Tuesday](webpages/day1/index.html) | Wednesday | Thursday | Friday | 
 |:---------------:|:--------------------------------------:|:---------------------------------------:|:------------------------------------:|:---------------------------------------:|:--------------------------------------:|
 |   9:00 - 12:00  | The Unix Shell | Python: numpy and matplotlib | Python: While, If, Functions | Review and advanced topics | 
 |   12:00 - 1:00  | Lunch    |  Lunch   | Lunch    | Lunch   
