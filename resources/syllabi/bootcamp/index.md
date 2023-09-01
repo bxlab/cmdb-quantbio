@@ -2,7 +2,7 @@
 <h1>
     AS.020.607
     <span style="float:right;">
-        Fall 2022
+        Fall 2023
     </span>
     <center>
        CMDB Quantitative Biology Bootcamp
@@ -10,6 +10,7 @@
 </h1>
 </header>
 
+<!--
 <details open><summary><b>Table of Contents</b></summary>
 <ul>
   <li><a href="#Description">Course Description</a></li>
@@ -57,7 +58,7 @@
     </ul>
   <li><a href="#WeekSchedule">Full Bootcamp Schedule</a></li>
 </ul></details>
-
+-->
 
 <a name="Description"></a>
 <header>
@@ -66,39 +67,20 @@
 
 Quantitative and computational methods are increasingly essential to all sub-disciplines of modern biological research. The goal of this intensive week-long “boot camp” is to empower students with the fundamental skills to apply these methods, as well as connect them to resources for further developing their knowledge and abilities. The class starts at 9 am with formal instruction ending at 4 pm daily. The course demonstrates the importance of version control, documentation, testing, and other methods for enhancing reproducibility, reliability, and usability of software. This is achieved through live coding sessions and use of learning exercises, where for the majority of the class, students perform data analysis to address biological questions and reinforce core bioinformatic concepts. Upon completing the course, students should be comfortable using and writing software to work with large-scale biological data. The motivation of this goal is to <b>develop computational and statistical competence</b> in preparation for courses, rotations, thesis research, and careers. Rather than blindly outsourcing bioinformatic components of their work, <b>students will be empowered</b> to understand methodological details and their associated advantages and limitations. This will in turn advance the broader goal of rigor in experimental design, promoting robust and unbiased results.
 
-<a name="Contact"></a>
-<header>
-  <h2> Logistics & Contact Information</h2>
-</header>
-
 <a name="ClassMeetings"></a>
 <header>
   <h3>Class Meetings</h3>
 </header>
 
-Mon, Aug 29, 2022 - Fri, Sept 2, 2022<br />
-8:45 A.M. ET - 7 P.M. ET, In Person, UTL398<br />
+Tues, Sept 5, 2023 - Fri, Sept 8, 2023<br />
+8:45 A.M. ET - 5 P.M. ET, In Person, UTL398<br />
 
 Although the course formally starts at 9 am ET, please <b>arrive by 8:45 am</b>.
 
-<a name="Attendance"></a>
+<a name="Contact"></a>
 <header>
-  <h3>Attendance</h3>
+  <h2> Logistics & Contact Information</h2>
 </header>
-
-Due to the interactive nature of this course, there is a policy that students <b>should not participate in any other meetings, courses, or lab work throughout the week</b>. As a core CMDB course, bootcamp should take priority. If a student foresees attendance conflicts, they should contact a TA immediately so that this policy can be communicated to the necessary parties.<br />
-
-This course will be held in person. <br />
-
-Please be on time for course activities. Your attendance is expected at all times. Please let us know about any emergencies, family responsibilities, illness, etc. that may prevent attendance, and we will work to accommodate reasonable requests. If you're ill, don't come into class; contact us, there will be no penalty, and we will make arrangements.
-
-<a name="CourseWebsite"></a>
-<header>
-  <h3>Course Website</h3>
-</header>
-
-<a href="http://bxlab.github.io/cmdb-quantbio/">http://bxlab.github.io/cmdb-quantbio/</a>
-
 
 <a name="Instructors"></a>
 <header><h3>Instructors</h3></header>
@@ -145,6 +127,24 @@ Please be on time for course activities. Your attendance is expected at all time
   <td>Matthew Isada</td>
   <td><a href="mailto:mfisada@gmail.com">mfisada@gmail.com</a></td>
  </tr>
+
+<a name="Attendance"></a>
+<header>
+  <h3>Attendance</h3>
+</header>
+
+Due to the interactive nature of this course, there is a policy that students <b>should not participate in any other meetings, courses, or lab work throughout the week</b>. As a core CMDB course, bootcamp should take priority. If a student foresees attendance conflicts, they should contact a TA immediately so that this policy can be communicated to the necessary parties.<br />
+
+This course will be held in person. <br />
+
+Please be on time for course activities. Your attendance is expected at all times. Please let us know about any emergencies, family responsibilities, illness, etc. that may prevent attendance, and we will work to accommodate reasonable requests. If you're ill, don't come into class; contact us, there will be no penalty, and we will make arrangements.
+
+<a name="CourseWebsite"></a>
+<header>
+  <h3>Course Website</h3>
+</header>
+
+<a href="http://bxlab.github.io/cmdb-quantbio/">http://bxlab.github.io/cmdb-quantbio/</a>
 
 <a name="Objectives"></a>
 <header>
