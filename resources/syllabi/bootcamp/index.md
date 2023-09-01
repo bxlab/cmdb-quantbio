@@ -165,7 +165,8 @@ Upon completion of this course, students will be able to:
   <h2>Study Materials</h2>
 </header>
 
-An online textbook written for this course can be found <a href="https://andrew-bortvin.github.io/swcmdb/"> here</a>. Any lecture notes, slides, and interactive coding scripts/notebooks will be made available on the course website.
+<!--An online textbook written for this course can be found <a href="https://andrew-bortvin.github.io/swcmdb/"> here</a>. --> 
+Any lecture notes, slides, and interactive coding scripts/notebooks will be made available on the course website.
 
 <a name="Format"></a>
 <header>
