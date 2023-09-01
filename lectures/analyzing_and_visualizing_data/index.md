@@ -46,7 +46,19 @@ print(numpy.mean(data, axis=1))
 
 - [https://swcarpentry.github.io/python-novice-inflammation/instructor/03-matplotlib.html](https://swcarpentry.github.io/python-novice-inflammation/instructor/03-matplotlib.html)
 
+- work thorugh SWC as written, but using the plotting conventions below:
+```
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()
+
+ax.plot(xdata, ydata)
+
+plt.show()
+```
+
 # Exercise (11:00-12:00)
+
 
 ## Intro (live-coding; 11:00-11:15)
 
