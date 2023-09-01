@@ -106,6 +106,7 @@ Although the course formally starts at 9 am ET, please <b>arrive by 8:45 am</b>.
 
 <a name="TAs"></a>
 <header><h3> Teaching Assistants </h3></header>
+
 <table class="table table-striped" style="width:40%">
  <tr>
    <th>Teaching Assistant</th>
@@ -127,6 +128,7 @@ Although the course formally starts at 9 am ET, please <b>arrive by 8:45 am</b>.
   <td>Matthew Isada</td>
   <td><a href="mailto:mfisada@gmail.com">mfisada@gmail.com</a></td>
  </tr>
+</table>
 
 <a name="Attendance"></a>
 <header>
