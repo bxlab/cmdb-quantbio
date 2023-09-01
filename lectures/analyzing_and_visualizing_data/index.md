@@ -2,29 +2,32 @@
 
 - State learning objectives
 
-# Software Carpentry: Analyzing Patient Data (Numpy; live-coding; 9:05-10:00)
+# Conditionals and comparisons (live-coding; 9:05-9:20)
+
+
+# Software Carpentry: Analyzing Patient Data (Numpy; live-coding; 9:20-10:10)
 
 - [https://swcarpentry.github.io/python-novice-inflammation/instructor/02-numpy.html](https://swcarpentry.github.io/python-novice-inflammation/instructor/02-numpy.html)
 
-- introduce concept of libraries, which allow access to functions that are not built in to python (9:05-9:10)
-- use `numpy.loadtxt()` to load the inflammation dataset, then view it, store it in a variable and print it (9:10-9:15)
-- discuss the concept of parameters to a function and order-based versus explicit specification (9:15-9:20)
+- introduce concept of libraries, which allow access to functions that are not built in to python (9:20-9:25)
+- use `numpy.loadtxt()` to load the inflammation dataset, then view it, store it in a variable and print it (9:25-9:30)
+- discuss the concept of parameters to a function and order-based versus explicit specification (9:30-9:35)
 - examine and discuss the `type()` (an n-dimensional array) (9:20-9:22)
-- examine and discuss the `.shape` and use this as an example of an "attribute" of a python object (9:22-9:25)
-- view all the attributes using the built-in `dir()` function (9:25-9:27)
-- index various elements from the numpy array `data[0,0]` and discuss that these start from the top left (9:27-9:30)
+- examine and discuss the `.shape` and use this as an example of an "attribute" of a python object (9:35-9:38)
+- view all the attributes using the built-in `dir()` function (9:38-9:40)
+- index various elements from the numpy array `data[0,0]` and discuss that these start from the top left (9:40-9:43)
 
-- discuss and demonstrate data slices - start at the first index and go up to but not including the second index (9:30-9:35)
+- discuss and demonstrate data slices - start at the first index and go up to but not including the second index (9:43-9:48)
 - show what happens if you dont include bone of the bounds on the slice `data[:3, 36:]`
 
-- discuss and demonstrate built-in functions such as `numpy.mean(data)` (9:35-9:40)
+- discuss and demonstrate built-in functions such as `numpy.mean(data)` (9:48-9:52)
 - demonstrate some other numpy functions and the concept of multiple assignment
 
 ```
 maxval, minval, stdval = numpy.amax(data), numpy.amin(data), numpy.std(data)
 ```
 
-- what if we want to compute a statistic on only a subset of the data (e.g., a specific patient?) (9:40-9:45)
+- what if we want to compute a statistic on only a subset of the data (e.g., a specific patient?) (9:52-9:58)
 ```
 patient_0 = data[0, :] # 0 on the first axis (rows), everything on the second (columns)
 print('maximum inflammation for patient 0:', numpy.amax(patient_0))
@@ -35,14 +38,14 @@ print('maximum inflammation for patient 0:', numpy.amax(patient_0))
 print('maximum inflammation for patient 2:', numpy.amax(data[2, :]))
 ```
 
-- numpy allows you to use the `axis` parameter to apply a function to each row or column (9:45-9:50)
+- numpy allows you to use the `axis` parameter to apply a function to each row or column (9:58-10:05)
 ```
 print(numpy.mean(data, axis=0))
 print(numpy.mean(data, axis=1))
 ```
 
 
-# Software Carpentry: Visualizing Patient Data (Matplotlib; 10:00-11:00)
+# Software Carpentry: Visualizing Patient Data (Matplotlib; 10:10-11:00)
 
 - [https://swcarpentry.github.io/python-novice-inflammation/instructor/03-matplotlib.html](https://swcarpentry.github.io/python-novice-inflammation/instructor/03-matplotlib.html)
 
