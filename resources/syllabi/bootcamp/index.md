@@ -126,7 +126,7 @@ Although the course formally starts at 9 am ET, please <b>arrive by 8:45 am</b>.
  </tr>
 <tr>
   <td>Matthew Isada</td>
-  <td><a href="mailto:mfisada@gmail.com">mfisada@gmail.com</a></td>
+  <td><a href="mailto:misada1@jhu.edu">misada1@jhu.edu</a></td>
  </tr>
 </table>
 
