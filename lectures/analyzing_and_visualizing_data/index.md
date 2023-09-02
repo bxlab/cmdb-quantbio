@@ -75,6 +75,8 @@ plt.show()
 - Have students independently run code and confirm initial plot created
 
 ```
+# https://docs.google.com/document/d/1kvRV44NbxdRG1XF3WGOlJk3OOghB4EYc1_1i92VpF1o/edit
+
 #!/usr/bin/env python3
 
 import numpy as np
