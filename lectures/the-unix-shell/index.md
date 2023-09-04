@@ -29,6 +29,10 @@
 ## Navigating Files and Directories
 
 - Summary -- pwd, file system, ls -F, \<UP\>\<DOWN\>, man, cd, hidden files, paths, syntax, \<TAB\>
+- Images
+    - ![](https://swcarpentry.github.io/shell-novice/fig/filesystem.svg "File system (root)")
+    - ![](https://swcarpentry.github.io/shell-novice/fig/home-directories.svg "File system (home directory)")
+    - ![](https://swcarpentry.github.io/shell-novice/fig/shell_command_syntax.svg "prompt command option argument")
 - Exercises
     - [Exploring more ls options](https://swcarpentry.github.io/shell-novice/02-filedir.html#exploring-more-ls-options)
     - [Listing in reverse chronological order](https://swcarpentry.github.io/shell-novice/02-filedir.html#listing-in-reverse-chronological-order)
@@ -54,6 +58,8 @@
 ## Pipes and Filters
 
 - Summary -- wc,  >, cat, sort, head, |
+- Images
+    - ![](https://swcarpentry.github.io/shell-novice/fig/redirects-and-pipes.svg "redirect and pipes")
 - Exercises
     - [What does sort -n do?](https://swcarpentry.github.io/shell-novice/04-pipefilter.html#what-does-sort--n-do)
     - [What does >> mean?](https://swcarpentry.github.io/shell-novice/04-pipefilter.html#what-does-mean)
@@ -67,6 +73,9 @@
 ## Loops
 
 - Summary -- for filename in *.dat; do echo $filename; done
+- Images
+    - for loop pseudocode
+    - ![for loop copy multiple files](https://swcarpentry.github.io/shell-novice/fig/shell_script_for_loop_flow_chart.svg)
 - Exercises
     - [Write your own loop](https://swcarpentry.github.io/shell-novice/05-loop.html#write-your-own-loop)
     - [Variables in loops](https://swcarpentry.github.io/shell-novice/05-loop.html#variables-in-loops)
