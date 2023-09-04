@@ -68,6 +68,8 @@ Allow students to practice specifying, converting, and checking types (2:00-2:10
 Work through SWCarpentry materials: https://swcarpentry.github.io/python-novice-inflammation/instructor/04-lists.html
 
 1. Creating lists (2:25-2:30)
+- from scratch
+- with `my_string.split()`
 - check the length of the list with `len()`
 
 2. Indexing lists (2:30-2:40)
