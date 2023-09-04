@@ -2,6 +2,18 @@
 
 - https://swcarpentry.github.io/shell-novice
 
+|  Time  | Activity |
+|-------:|:---------|
+|  8:45 | Arrive |
+|  9:00 | [welcome-to-qbb2023](https://docs.google.com/presentation/d/1TJpwKrwHDkiC_0HTydT_3UtmkJ4zhokD_YRrL-mxsEU) |
+|  9:30 | Summary and Setup |
+|  9:45 | Introducing the Shell |
+|       | Navigating Files and Directories |
+| 10:30 | Break |
+| 10:45 | Working With Files and Directories |
+|       | Additional Content |
+| 12:00 | Lunch |
+
 ## Summary and Setup
 
 1. Search for Safari.app [using Spotlight](https://support.apple.com/guide/mac-help/search-with-spotlight-mchlp1008/mac)
