@@ -229,7 +229,6 @@ f.close()
 print(sum / len(start_coord_list))
 ```
 
-<!---
 - import functions from an outside library
 ```
 import numpy
@@ -251,7 +250,6 @@ f.close()
 start_coord_mean = numpy.mean(start_coord_list)
 print(start_coord_mean)
 ```
--->
 
 Give students time to practice writing and using for loops (SWCarpentry exercises; 3:30-3:45)
 
