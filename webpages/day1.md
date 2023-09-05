@@ -14,7 +14,7 @@
 
 ## Homework Assignment: 
 
-
+[Day 1 Homework](../assignments/bootcamp/day1homework.md)
 
 ## Daily Reflection
 
