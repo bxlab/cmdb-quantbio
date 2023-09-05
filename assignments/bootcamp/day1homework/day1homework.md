@@ -1,0 +1,34 @@
+# Day 1 Homework: Python - Lists and For Loops 
+
+For this assignment, we will be working with `inflammation-01.csv`, a simulated dataset representing the response of arthritis patients to a new drug. The data is sourced from [here](https://swcarpentry.github.io/python-novice-inflammation/instructor/). 
+
+In this dataset, each row represents a different patient. Each column represents a different day. Each element in the dataset is the number of arthritis flare-ups that a patient has in a given day. 
+
+## Basic Exercise 1: Reading in Data
+
+Print the number of flare-ups that the fifth patient had on the first, tenth, and last day. 
+
+## Basic Exercise 2: Caluclating Averages
+
+For each patient, calculate the average number of flare-ups per day. Print the average values for the first 10 patients. 
+
+## Basic Exercise 3: Finding Maximum and Minimum Values
+
+Print the highest average and lowest number of flare-ups per day. 
+
+## Basic Exercise 4: Differences Between Patients
+
+For each day, print the difference in number of flare-ups between patients 1 and 5. 
+
+## Grading: 
+
+* Exercise 1: 
+    - 1 pt. Printed out first and last days
+* Exercise 2: 
+    - 1 pt. Calculate averages for all patients
+    - 1 pt. Printed out first 10 averages
+* Exercise 3:
+    - 1 pt. Printed out maximum
+    - 1 pt. Printed out minimum
+* Exercise 4: 
+    - 1 pt. Printed out differences between patients
