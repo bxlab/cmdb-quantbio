@@ -6,6 +6,8 @@ In this dataset, each row represents a different patient. Each column represents
 
 For each exercise, please submit your code along with your answer. You can have one script per exercise, or have all exercises together in one larger script – either way is fine. Since we haven't yet learned how to write to a file in Python, it is ok to print out your answers and then manually copy them over to a text file.
 
+You will submit your assignments tomorrow through Git, after you create a GitHub account overnight and we set it up in the morning. 
+
 ### Exercise 1: Reading in Data
 
 Print the number of flare-ups that the fifth patient had on the first, tenth, and last day. 
