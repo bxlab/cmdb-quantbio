@@ -103,6 +103,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 #### Helpful Documentation (external links)
 
 * [Matplotlib](http://matplotlib.org/api/pyplot_summary.html)
+
 * [Statsmodels](http://statsmodels.sourceforge.net/stable/)
   - e.g. [ttest](http://statsmodels.sourceforge.net/stable/generated/statsmodels.stats.weightstats.ttest_ind.html)
 * [NumPy](http://docs.scipy.org/doc/numpy/reference/index.html#reference)
