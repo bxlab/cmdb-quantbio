@@ -7,6 +7,7 @@
 ## The Unix Shell
 
 [Lecture Notes](../lectures/the-unix-shell/index.md)
+
 <!---
 ## Intro To Python
 
