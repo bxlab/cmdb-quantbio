@@ -4,19 +4,19 @@ For this assignment, we will be working with `inflammation-01.csv`, a simulated 
 
 In this dataset, each row represents a different patient. Each column represents a different day. Each element in the dataset is the number of arthritis flare-ups that a patient has in a given day. 
 
-## Basic Exercise 1: Reading in Data
+## Exercise 1: Reading in Data
 
 Print the number of flare-ups that the fifth patient had on the first, tenth, and last day. 
 
-## Basic Exercise 2: Caluclating Averages
+## Exercise 2: Caluclating Averages
 
 For each patient, calculate the average number of flare-ups per day. Print the average values for the first 10 patients. 
 
-## Basic Exercise 3: Finding Maximum and Minimum Values
+## Exercise 3: Finding Maximum and Minimum Values
 
 Print the highest average and lowest number of flare-ups per day. 
 
-## Basic Exercise 4: Differences Between Patients
+## Exercise 4: Differences Between Patients
 
 For each day, print the difference in number of flare-ups between patients 1 and 5. 
 
