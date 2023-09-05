@@ -13,6 +13,7 @@ Prep Work:
 3. [Part 3](https://colab.research.google.com/drive/1RDohmEn9kO43m_x1hEwDK7dtL7y7mNC0?usp=sharing)
 
 - [Syllabus](resources/syllabi/bootcamp/index.html)
+- [Class Notes](https://andrew-bortvin.github.io/cmdb-bootcampNotes/)
 - Four day intensive bootcamp to introduce students to fundamentals in quantitative and computational biology 
 - <span class="text-danger">**NO** other classes, meetings, lab work, lab meetings, etc.</span>
 - In person, UTL 398
