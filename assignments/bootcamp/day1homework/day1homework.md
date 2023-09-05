@@ -24,7 +24,7 @@ Using the average flare-ups per day calculated in part 2, print the highest aver
 
 For each day, print the difference in number of flare-ups between patients 1 and 5. 
 
-## Optional Exercise 2:
+### Optional Exercise 2:
 
 For each day, find the average number of flare-ups across all patients (i.e. the column averages). What is the highest average number of flare-ups per day? 
 
