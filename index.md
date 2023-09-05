@@ -24,7 +24,7 @@ Prep Work:
 All times in ET<br /><br />
 Resources for each day (links for assignment, any relevant recordings or slides, etc.) will be linked in the schedule below
 
-<!--[Tuesday](webpages/day1/index.html)-->
+<!--[Tuesday](webpages/day1.md)-->
 
 | Time | Tuesday | Wednesday | Thursday | Friday | 
 |:---------------:|:--------------------------------------:|:---------------------------------------:|:------------------------------------:|:---------------------------------------:|
@@ -108,5 +108,3 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 * [Pandas](http://pandas.pydata.org/pandas-docs/stable/)
   - e.g. [read_csv](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html?highlight=read_csv)
 -->
-
-[test](webpages/day1.md)
