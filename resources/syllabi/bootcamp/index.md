@@ -222,7 +222,9 @@ We expect and encourage you to ask questions and request help throughout this co
 
 <a name="Googling"></a>
 <header><h3>Googling</h3></header>
-<b>Googling</b> is always an acceptable way to find answers or help, and we encourage you to utilize it extensively. If you adopt a solution following a Google search, make sure you understand what you incorporate, rather than just copy/paste without comprehension of the logic or code. Google is also a good way to learn more about any error messages you encounter in your code. 
+<b>Googling</b> is always an acceptable way to find answers or help, and we encourage you to utilize it extensively. If you adopt a solution following a Google search, make sure you understand what you incorporate, rather than just copy/paste without comprehension of the logic or code. Google is also a good way to learn more about any error messages you encounter in your code. You may be familiar with ChatGPT and other large language models. 
+
+You may be familiar with ChatGPT and other large language models. After trying each problem/assignment/task on your own, if you’re still running into issues, feel free to use ChatGPT as you would any other online resource (Google, stack overflow, etc.). Learning how to succinctly describe exactly what you want to accomplish is a skillset in itself, so this can be good practice. If you find code that seems to work (e.g., from Google) but you’re not sure how exactly it works, you can also type it into ChatGPT and ask it to explain what’s happening. As always, please do not submit any code if you are not familiar entirely with how it works; flag it and ask a TA for assistance. Be aware that ChatGPT might confidently offer an answer that is not correct; so always check the output on your own.
 
 <a name="Grading"></a>
 <header><h2>Grading</h2></header>
