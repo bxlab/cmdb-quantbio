@@ -32,7 +32,7 @@ For each day, find the average number of flare-ups across all patients (i.e. the
 Please do the following **before the start of class tomorrow**. Create a GitHub account using the following instructions: 
 
 1. Go to github.com and click the **Sign up** button on the upper right hand corner.
-2. Follow the prompts to enter your email (**use your <jhedid>@jhu.edu email**) and create a password and username.
+2. Follow the prompts to enter your email (**use your @jhu.edu email**) and create a password and username.
 3. **Email or Slack yourself the GitHub username** so that you can refer to it later.
 4. GitHub will prompt you for a launch code that they've sent to you by email. Open your email and paste in the launch code.
 
