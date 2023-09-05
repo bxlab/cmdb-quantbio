@@ -2,7 +2,7 @@
 
 ## The Unix Shell
 
-[Lecture Notes](lectures/the-unix-shell/index.md)
+[Lecture Notes](../lectures/the-unix-shell/index.md)
 
 ## Python Fundamentals
 
