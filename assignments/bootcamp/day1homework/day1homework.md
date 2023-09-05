@@ -1,6 +1,6 @@
 # Day 1 Homework: Python - Lists and For Loops 
 
-For this assignment, we will be working with `inflammation-01.csv`, a simulated dataset representing the response of arthritis patients to a new drug. The data is sourced from [here](https://swcarpentry.github.io/python-novice-inflammation/instructor/). 
+For this assignment, we will be working with `inflammation-01.csv`, a simulated dataset representing the response of arthritis patients to a new drug. The data can be downloaded from here: https://www.dropbox.com/scl/fi/vt435kvankioc7ft4bx5n/mouseBed.bed. The data is sourced from [here](https://swcarpentry.github.io/python-novice-inflammation/instructor/). 
 
 In this dataset, each row represents a different patient. Each column represents a different day. Each element in the dataset is the number of arthritis flare-ups that a patient has in a given day. 
 
