@@ -7,6 +7,7 @@
 - State learning objectives
 - What is a program?
 - Why Python?
+- [Setup](https://swcarpentry.github.io/python-novice-inflammation/#obtain-lesson-materials)
 
 ## Executing code (1:10-1:40; live coding)
 
