@@ -7,10 +7,7 @@
 - State learning objectives
 - What is a program?
 - Why Python?
-- [Setup](https://swcarpentry.github.io/python-novice-inflammation/#obtain-lesson-materials) +
-```
-wget https://www.dropbox.com/scl/fi/vt435kvankioc7ft4bx5n/mouseBed.bed
-```
+- [Setup](https://swcarpentry.github.io/python-novice-inflammation/#obtain-lesson-materials) + download mouseBed.bed from Dropbox
 
 ## Executing code (1:10-1:40; live coding)
 
