@@ -18,7 +18,7 @@ These are the row averages - for example, patient 1 has 5.45 flare-ups per day o
 
 ### Exercise 3: Finding Maximum and Minimum Values
 
-Using the average flare-ups per day calculated in part 2, print the highest average and lowest number of flare-ups per day. 
+Using the average flare-ups per day calculated in part 2, print the highest average and lowest average number of flare-ups per day. 
 
 ### Exercise 4: Differences Between Patients
 
