@@ -29,17 +29,20 @@ maxval, minval, stdval = numpy.amax(data), numpy.amin(data), numpy.std(data)
 ```
 
 - what if we want to compute a statistic on only a subset of the data (e.g., a specific patient?) (9:52-9:58)
+  
 ```
 patient_0 = data[0, :] # 0 on the first axis (rows), everything on the second (columns)
 print('maximum inflammation for patient 0:', numpy.amax(patient_0))
 ```
 
 - this can be done in one line instead
+  
 ```
 print('maximum inflammation for patient 2:', numpy.amax(data[2, :]))
 ```
 
 - numpy allows you to use the `axis` parameter to apply a function to each row or column (9:58-10:00)
+  
 ```
 print(numpy.mean(data, axis=0))
 print(numpy.mean(data, axis=1))
