@@ -27,7 +27,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 <!--[Tuesday](webpages/day1.md)-->
 
-| Time | [Tuesday](webpages/day1.md) | Wednesday | Thursday | Friday | 
+| Time | [Tuesday](webpages/day1.md) | [Wednesday](webpages/day2.md)  | Thursday | Friday | 
 |:---------------:|:--------------------------------------:|:---------------------------------------:|:------------------------------------:|:---------------------------------------:|
 |   9:00 - 12:00  | The Unix Shell | Python: numpy and matplotlib | Python: While, If, Functions | Review and advanced topics | 
 |   12:00 - 1:00  | Lunch    |  Lunch   | Lunch    | Lunch   
