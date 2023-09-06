@@ -115,3 +115,27 @@ To do this, we can use a conditional statement. Assuming that we have a dictiona
         genes[name]['count'] += 1       # We add another sighting
         # Only keep the biggest length
         genes[name]['length'] = max(genes[name]['length'], length)
+
+---
+
+## Putting it all together
+
+    !python
+    genes = {}
+    for line in open(fname):
+        line = line.rstrip().split("\t")
+        if line[2] != "pseudogene":
+            continue
+        length = int(line[6]) - int(line[5])
+        info = {}
+        for pair in fields:
+            key, value = pair.split("=")
+            info[key] = value
+        name = info['gene']
+        if name not in genes:
+            genes[name] = info
+            genes[name]['count'] = 1
+            genes[name]['length'] = length
+        else:
+            genes[name]['count'] += 1
+            genes[name]['length'] = max(genes[name]['length'], length)

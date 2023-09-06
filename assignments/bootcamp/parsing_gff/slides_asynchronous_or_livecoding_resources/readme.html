@@ -493,7 +493,7 @@ pre, code, tt {
 
 pre, .gist .gist-file .gist-data {
   font-size: 22px;
-  max-height: 485px;
+  max-height: 600px;
   padding-top: 0.25em !important;
   padding-right: 0.5em !important;
   padding-left: 0.5em !important;
@@ -1361,7 +1361,7 @@ Because these are meant to be a flexible file format, it contains some required 
             </aside>
             
             <aside class="page_number">
-              1/9
+              1/10
             </aside>
           </footer>
         </div>
@@ -1401,7 +1401,7 @@ ID=gene-SEPTIN14P14;Dbxref=GeneID:107105354,HGNC:HGNC:51701;Name=SEPTIN14P14;des
             </aside>
             
             <aside class="page_number">
-              2/9
+              2/10
             </aside>
           </footer>
         </div>
@@ -1432,7 +1432,7 @@ ID=gene-SEPTIN14P14;Dbxref=GeneID:107105354,HGNC:HGNC:51701;Name=SEPTIN14P14;des
             </aside>
             
             <aside class="page_number">
-              3/9
+              3/10
             </aside>
           </footer>
         </div>
@@ -1469,7 +1469,7 @@ ID=gene-SEPTIN14P14;Dbxref=GeneID:107105354,HGNC:HGNC:51701;Name=SEPTIN14P14;des
             </aside>
             
             <aside class="page_number">
-              4/9
+              4/10
             </aside>
           </footer>
         </div>
@@ -1499,7 +1499,7 @@ ID=gene-SEPTIN14P14;Dbxref=GeneID:107105354,HGNC:HGNC:51701;Name=SEPTIN14P14;des
             </aside>
             
             <aside class="page_number">
-              5/9
+              5/10
             </aside>
           </footer>
         </div>
@@ -1536,7 +1536,7 @@ ID=gene-SEPTIN14P14;Dbxref=GeneID:107105354,HGNC:HGNC:51701;Name=SEPTIN14P14;des
             </aside>
             
             <aside class="page_number">
-              6/9
+              6/10
             </aside>
           </footer>
         </div>
@@ -1571,7 +1571,7 @@ ID=gene-SEPTIN14P14;Dbxref=GeneID:107105354,HGNC:HGNC:51701;Name=SEPTIN14P14;des
             </aside>
             
             <aside class="page_number">
-              7/9
+              7/10
             </aside>
           </footer>
         </div>
@@ -1607,7 +1607,7 @@ ID=gene-SEPTIN14P14;Dbxref=GeneID:107105354,HGNC:HGNC:51701;Name=SEPTIN14P14;des
             </aside>
             
             <aside class="page_number">
-              8/9
+              8/10
             </aside>
           </footer>
         </div>
@@ -1649,7 +1649,56 @@ ID=gene-SEPTIN14P14;Dbxref=GeneID:107105354,HGNC:HGNC:51701;Name=SEPTIN14P14;des
             </aside>
             
             <aside class="page_number">
-              9/9
+              9/10
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: README.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code slide-10">
+          <div class="inner">
+            
+            <header><h2>Putting it all together</h2></header>
+            
+            
+            <section><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="n">genes</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="linenos"> 2</span><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
+<span class="linenos"> 3</span>    <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="linenos"> 4</span>    <span class="k">if</span> <span class="n">line</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;pseudogene&quot;</span><span class="p">:</span>
+<span class="linenos"> 5</span>        <span class="k">continue</span>
+<span class="linenos"> 6</span>    <span class="n">length</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+<span class="linenos"> 7</span>    <span class="n">info</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="linenos"> 8</span>    <span class="k">for</span> <span class="n">pair</span> <span class="ow">in</span> <span class="n">fields</span><span class="p">:</span>
+<span class="linenos"> 9</span>        <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="n">pair</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="p">)</span>
+<span class="linenos">10</span>        <span class="n">info</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+<span class="linenos">11</span>    <span class="n">name</span> <span class="o">=</span> <span class="n">info</span><span class="p">[</span><span class="s1">&#39;gene&#39;</span><span class="p">]</span>
+<span class="linenos">12</span>    <span class="k">if</span> <span class="n">name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">genes</span><span class="p">:</span>
+<span class="linenos">13</span>        <span class="n">genes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">info</span>
+<span class="linenos">14</span>        <span class="n">genes</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;count&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="linenos">15</span>        <span class="n">genes</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;length&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">length</span>
+<span class="linenos">16</span>    <span class="k">else</span><span class="p">:</span>
+<span class="linenos">17</span>        <span class="n">genes</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;count&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="linenos">18</span>        <span class="n">genes</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;length&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">genes</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;length&#39;</span><span class="p">],</span> <span class="n">length</span><span class="p">)</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="README.md">README.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              10/10
             </aside>
           </footer>
         </div>
