@@ -102,6 +102,7 @@ Work through SWCarpentry materials: https://swcarpentry.github.io/python-novice-
 
 - Start simple (just printing lines), then build up...
 - print the lines...notice the extra whitespace...why?
+  
 ```
 f = open("mouseBed.bed", "r")
 
@@ -114,6 +115,7 @@ f.close()
 ```
 
 - use `.strip()` to remove the whitespace
+  
 ```
 f = open("mouseBed.bed", "r")
 
@@ -127,6 +129,7 @@ f.close()
 ```
 
 - lines are strings...can split them on whitespace
+  
 ```
 f = open("mouseBed.bed", "r")
 
@@ -141,6 +144,7 @@ f.close()
 ```
 
 - the elements of the list are still strings...
+  
 ```
 f = open("mouseBed.bed", "r")
 
@@ -155,6 +159,7 @@ f.close()
 ```
 
 - convert them to numbers
+  
 ```
 f = open("mouseBed.bed", "r")
 
@@ -170,6 +175,7 @@ f.close()
 ```
 
 - store in a list
+  
 ```
 f = open("mouseBed.bed", "r")
 
@@ -189,6 +195,7 @@ print(start_coord_list)
 ```
 
 - operate on the list
+  
 ```
 f = open("mouseBed.bed", "r")
 
@@ -210,6 +217,7 @@ print(start_coord_list)
 ```
 
 - compute the mean
+  
 ```
 f = open("mouseBed.bed", "r")
 
@@ -231,6 +239,7 @@ print(sum / len(start_coord_list))
 ```
 
 - import functions from an outside library
+  
 ```
 import numpy
 
