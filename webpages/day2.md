@@ -4,8 +4,7 @@
 
 [Lecture Notes and Assignment](../lectures/analyzing_and_visualizing_data)
 
-
-[plot-sxl.py script](plot-sxl.md)
+<!--
 
 ## Afternoon: Version Control with Git
 
@@ -15,8 +14,10 @@
 
 [Day 2 Homework](../assignments/bootcamp/version-control-with-git)
 
+[plot-sxl.py script](plot-sxl.md)
+
 ## Daily Reflection
 
 Please fill out [this survey](https://forms.gle/JtFJ9qV6wumP2vPY6) today at the end of class. 
-<!--
+
 -->
