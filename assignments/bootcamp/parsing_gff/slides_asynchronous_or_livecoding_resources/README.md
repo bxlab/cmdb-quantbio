@@ -1,6 +1,6 @@
 # Writing a GFF file parser
 
-Let'st start by looking at the GFF file format.
+Let's start by looking at the GFF file format.
 Because these are meant to be a flexible file format, it contains some required information and lots of optional information. The rows include:
 
 1. **seqid**  The name of the sequence where the feature is located
@@ -12,6 +12,22 @@ Because these are meant to be a flexible file format, it contains some required 
 7. **strand** Single character indicating the strand of the feature: +, -, . for undertermined, ? for unknown
 8. **phase** The phase of CDS features, 0, 1, or 2 (for CDS features) or . for everything else
 9. **attributes** A list of tag-value pairs separated by semicolons with additional information
+
+---
+
+## And example entry
+
+Here is the first line of one of the homework files:
+
+    NC_060925.1
+    Curated Genomic
+    pseudogene
+    144134
+    146717
+    .
+    -
+    .
+    ID=gene-SEPTIN14P14;Dbxref=GeneID:107105354,HGNC:HGNC:51701;Name=SEPTIN14P14;description=septin 14 pseudogene 14;gbkey=Gene;gene=SEPTIN14P14;gene_biotype=pseudogene;gene_synonym=SEPT14P14;pseudo=true
 
 ---
 
