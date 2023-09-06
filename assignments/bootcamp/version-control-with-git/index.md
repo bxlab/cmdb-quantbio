@@ -1,5 +1,17 @@
 # QBB2023 - Day 2 - Homework
 
+## Instructions
+
+Add each of your answers to `/Users/cmdb/qbb2023-answers/day2-homework`.  Please `git push` after each update and do not wait until the end of the session e.g.
+
+```
+git add code.py
+git add image.png
+git commit -m "Add answer for exercise 1, step 1"
+git push
+# Confirm at github.com
+``` 
+
 ## Exercises
 
 1. Starting with [plot-sxl.py](../../../webpages/plot-sxl.md), create `plot-sisA.py` to visualize sisA (FBtr0073461) in a fashion similar to [Lott et al 2011 PLoS Biology](https://pubmed.gov/21346796) Fig 3A by adding elements in the following order.  After each step, push your code **and** plot to your git repository and check your repository using the https://github.com web interface (i.e. results in four separate commits).
