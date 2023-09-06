@@ -4,11 +4,11 @@
 
 [Lecture Notes and Assignment](../lectures/analyzing_and_visualizing_data)
 
-<!--
-
 ## Afternoon: Version Control with Git
 
 [Lecture Notes](../lectures/version-control-with-git/index.md)
+
+<!--
 
 ## Homework Assignment: 
 
