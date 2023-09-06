@@ -104,9 +104,11 @@ git push
 
 ## Advanced Exercises
 
-1. Repeat the above exercise, but further restrict your analysis to only "Curated Genomic" pseudogenes. How did this affect the results?
+1. Make all of your plots have the same x-axis and y-axis limits so that all data are still included and on the same scale between panels.
 
-2. Using functions, get rid of redundant code in your script such that any repeated action is handled by a function.
+2. Repeat the above exercise, but further restrict your analysis to only "Curated Genomic" pseudogenes. How did this affect the results?
 
-3. For the unique set and the shared set of genes for each annotation, tally up how many times each gene description appears. Print out all descriptions tied for most occurrences for each of the four conditions (shared and unique for aech annotation).
+3. Using functions, get rid of redundant code in your script such that any repeated action is handled by a function.
+
+4. For the unique set and the shared set of genes for each annotation, tally up how many times each gene description appears. Print out all descriptions tied for most occurrences for each of the four conditions (shared and unique for aech annotation).
 
