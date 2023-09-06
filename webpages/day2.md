@@ -2,9 +2,10 @@
 
 ## Morning: Data Analysis and Visualization
 
-[Lecture Notes](../lectures/analyzing_and_visualizing_data)
+[Lecture Notes and Assignment](../lectures/analyzing_and_visualizing_data)
 
 <!--
+[plot-sxl.py script] https://github.com/bxlab/cmdb-quantbio/blob/main/lectures/analyzing_and_visualizing_data/plot-sxl.py
 
 ## Afternoon: Version Control with Git
 
