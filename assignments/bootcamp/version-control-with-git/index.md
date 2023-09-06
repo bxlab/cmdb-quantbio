@@ -2,7 +2,7 @@
 
 ## Exercises
 
-1. Starting with [plot-sxl.py](https://github.com/bxlab/cmdb-quantbio/blob/main/lectures/analyzing_and_visualizing_data/plot-sxl.py), create `plot-sisA.py` to visualize sisA (FBtr0073461) in a fashion similar to [Lott et al 2011 PLoS Biology](https://pubmed.gov/21346796) Fig 3A by adding elements in the following order.  After each step, push your code **and** plot to your git repository and check your repository using the https://github.com web interface (i.e. results in four separate commits).
+1. Starting with [plot-sxl.py](../../../webpages/plot-sxl.md), create `plot-sisA.py` to visualize sisA (FBtr0073461) in a fashion similar to [Lott et al 2011 PLoS Biology](https://pubmed.gov/21346796) Fig 3A by adding elements in the following order.  After each step, push your code **and** plot to your git repository and check your repository using the https://github.com web interface (i.e. results in four separate commits).
 
     - Plot female data
     - Add male data
