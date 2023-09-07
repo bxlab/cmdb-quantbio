@@ -4,6 +4,8 @@
 
 [Lecture Notes](../lectures/pythonDay2.md)
 
+[Lecture Notes Part 2](../lectures/presentation.html)
+
 <!--
 
 ## Afternoon: Dictionaries
