@@ -4,14 +4,14 @@
 
 Extend the Day-1 homework without using any external libraries (such as numpy) unless otherwise noted to analyze data from `inflammation-01.csv`:
 
-3.) Write a function that takes a patient row index (integer) as input and returns the mean inflammation level across the 40 days (float) for that given patient. Do not use any external libraries (such as numpy). Embed this function in a script called `mean_inflammation.py` that defines a patient row index as a variable, executes the function, and prints the output.
+3.) Write a function that takes a patient row index (integer) as input and returns the mean inflammation level across the 40 days (float) for that given patient. Embed this function in a script called `mean_inflammation.py` that defines a patient row index as a variable, executes the function, and prints the output.
 
 4.) Write a function that takes two patient row indices (integers) as input and returns a list of the difference between their inflammation levels on each of the 40 days (floats). Embed this function in a script called `difference_inflammation.py` that defines patient row indices as variables, executes the function, and prints the output.
 
 Optional:
 
-5.) Write a function that takes a patient row index (integer) as input and returns a dictionary with keys "mean", "min", and "max" and corresponding values representing the mean, minimum, and maximum of those integers (floats). Embed this function in a script called `mean_min_max_inflammation.py` that defines the patient ID as a variable, executes the function, and prints the output.
+5.) Write a function that takes a patient row index (integer) as input and returns a dictionary with keys "mean", "min", and "max" and corresponding values representing the mean, minimum, and maximum of those integers (floats). Embed this function in a script called `mean_min_max_inflammation.py` that defines the patient row index as a variable, executes the function, and prints the output.
 
-6.) Building on exercise 4, write a second function that uses matplotlib to produce a line plot of the difference between patient inflammation values (day on the x axis, difference in inflammation levels on the y axis). Have the plot appear on the user's screen. Embed this function in a script called `plot_difference.py` that defines the patient IDs as a variables, executes the function, and generates the plot.
+6.) Building on exercise 4, write a second function that uses matplotlib to produce a line plot of the difference between patient inflammation values (day on the x axis, difference in inflammation levels on the y axis). Have the plot appear on the user's screen. Embed this function in a script called `plot_difference.py` that defines the patient row indices as variables, executes the function, and generates the plot.
 
-7.) Revise the function from exercise 6 to take an argument specifying the output file name for the plot. Rather than having the plot appear on screen, save the plot the the specified file path. Embed this function in a script called `plot_to_file_difference.py` that defines the patient IDs as a variables, executes the function, and generates the plot.
+7.) Revise the function from exercise 6 to take an argument specifying the output file name for the plot. Rather than having the plot appear on screen, save the plot the the specified file path. Embed this function in a script called `plot_to_file_difference.py` that defines the patient row indices as variables, executes the function, and generates the plot.
