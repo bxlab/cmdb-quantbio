@@ -4,6 +4,8 @@
 
 [Lecture Slides](../lectures/presentation.html)
 
+[Lecture Notes(../assignments/bootcamp/parsing_gff/slides_asynchronous_or_livecoding_resources/readme.html)
+
 <!--
 
 ## Afternoon: Dictionaries
