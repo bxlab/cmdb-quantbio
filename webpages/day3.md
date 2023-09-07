@@ -13,7 +13,7 @@
 
 ## Homework: Functions Practice
 
-[Day 3 Homework](../assignments/bootcamp/functionPractice.md)
+[Day 3 Homework](../assignments/bootcamp/functionPractice.html)
 
 ## Daily Reflection
 
