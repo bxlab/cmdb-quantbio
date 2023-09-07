@@ -2,9 +2,7 @@
 
 ## Morning: While, If, Functions
 
-[Lecture Notes](../lectures/pythonDay2.md)
-
-[Lecture Notes Part 2](../lectures/presentation.html)
+[Lecture Slides](../lectures/presentation.html)
 
 <!--
 
