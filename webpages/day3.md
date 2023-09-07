@@ -6,7 +6,7 @@
 
 ## Homework: Parsing a .gff file
 
-[[Day 3 Homework](../assignments/bootcamp/parsing_gff/assignment/index.md)]
+[Day 3 Homework](../assignments/bootcamp/parsing_gff/assignment/index.md)
 
 ## Daily Reflection
 
