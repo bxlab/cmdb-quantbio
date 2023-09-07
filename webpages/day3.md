@@ -4,8 +4,7 @@
 
 ## Afternoon: Dictionaries
 
-[Lecture Notes](assignments/bootcamp/parsing_gff
-/slides_asynchronous_or_livecoding_resources/readme.html)
+[Lecture Notes](../assignments/bootcamp/parsing_gff/slides_asynchronous_or_livecoding_resources/readme.html)
 
 ## Homework: Parsing a .gff file
 
