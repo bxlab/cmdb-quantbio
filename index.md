@@ -26,8 +26,9 @@ All times in ET<br /><br />
 Resources for each day (links for assignment, any relevant recordings or slides, etc.) will be linked in the schedule below
 
 <!--[Tuesday](webpages/day1.md)-->
+<!--[Thursday](webpages/day3.md)-->
 
-| Time | [Tuesday](webpages/day1.md) | [Wednesday](webpages/day2.md)  | [Thursday](webpages/day3.md)  | Friday | 
+| Time | [Tuesday](webpages/day1.md) | [Wednesday](webpages/day2.md)  |  Thursday | Friday | 
 |:---------------:|:--------------------------------------:|:---------------------------------------:|:------------------------------------:|:---------------------------------------:|
 |   9:00 - 12:00  | The Unix Shell | Python: numpy and matplotlib | Python: While, If, Functions | Review and advanced topics | 
 |   12:00 - 1:00  | Lunch    |  Lunch   | Lunch    | Lunch   
