@@ -4,7 +4,7 @@
 
 Extend the Day-1 homework without using any external libraries (such as numpy) unless otherwise noted to analyze data from `inflammation-01.csv`:
 
-3.) Write a function that takes a patient row index (integer) as input and returns the mean inflammation level across the 40 days (float) for that given patient. Embed this function in a script called `mean_inflammation.py` that defines a patient row index as a variable, executes the function, and prints the output.
+3.) Write a function that takes a patient row index (integer) as input and returns the mean inflammation level across the 40 days (float) for that given patient. Embed this function in a script called `mean_inflammation.py` that defines a patient row index as a variable, executes the function, and prints the output. (Hint: consider having your function also take the data file name as one of its arguments).
 
 4.) Write a function that takes two patient row indices (integers) as input and returns a list of the difference between their inflammation levels on each of the 40 days (floats). Embed this function in a script called `difference_inflammation.py` that defines patient row indices as variables, executes the function, and prints the output.
 
