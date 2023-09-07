@@ -2,11 +2,11 @@
 
 2.) Use the function from part 1 to write a Python script called `mean_from_file.py` that computes and prints the mean of a series of integers from a data file (e.g., "my_integers.txt") where the data contain a set of integers, one per line. [Optional: Write your code so that the user can specify the name of that file from the command line (hint: use `sys.argv`).]
 
-Extend the Day-1 homework without using any external libraries (such as numpy) unless otherwise noted to analyze data from `inflammation.csv`:
+Extend the Day-1 homework without using any external libraries (such as numpy) unless otherwise noted to analyze data from `inflammation-01.csv`:
 
-3.) Write a function that takes a patient row index (integer) as input and returns the mean inflammation level across the 40 days (float) for that given patient. Do not use any external libraries (such as numpy). Embed this function in a script called `mean_inflammation.py` that defines the patient ID as a variable, executes the function, and prints the output.
+3.) Write a function that takes a patient row index (integer) as input and returns the mean inflammation level across the 40 days (float) for that given patient. Do not use any external libraries (such as numpy). Embed this function in a script called `mean_inflammation.py` that defines a patient row index as a variable, executes the function, and prints the output.
 
-4.) Write a function that takes two patient row indices (integers) as input and returns a list of the difference between their inflammation levels on each of the 40 days (floats). Embed this function in a script called `difference_inflammation.py` that defines the patient IDs as variables, executes the function, and prints the output.
+4.) Write a function that takes two patient row indices (integers) as input and returns a list of the difference between their inflammation levels on each of the 40 days (floats). Embed this function in a script called `difference_inflammation.py` that defines patient row indices as variables, executes the function, and prints the output.
 
 Optional:
 
