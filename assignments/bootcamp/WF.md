@@ -12,10 +12,10 @@ We can think of Wright-Fisher as modeling an allele that is evolutionarily neutr
 
 Since random effects are the only thing changing the frequency of an allele from generation to generation, we can simulate the change frequency from generation by sampling from the binomial distribution. The binomial states that the probability of observing $j$ alleles in the next generation is:
 
-\begin{align}
+\begin{equation} 
 &\binom{2N}{j}\;p^j_i\;(1-p_i)^{2N-j} \\[1em]
 &\binom{n}{k} = \frac{n!}{ k!( n-k)!}
-\end{align}
+\end{equation} 
 
 with $N$  as the population size and  $i$ as the current allele frequency. Note that the quantity we care about here is  $2N$: the number of chromosomes.
 
