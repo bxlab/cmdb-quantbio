@@ -12,10 +12,7 @@ We can think of Wright-Fisher as modeling an allele that is evolutionarily neutr
 
 Since random effects are the only thing changing the frequency of an allele from generation to generation, we can simulate the change frequency from generation by sampling from the binomial distribution. The binomial states that the probability of observing $j$ alleles in the next generation is:
 
-\begin{equation} 
-&\binom{2N}{j}\;p^j_i\;(1-p_i)^{2N-j} \\[1em]
-&\binom{n}{k} = \frac{n!}{ k!( n-k)!}
-\end{equation} 
+![binomial](binom.png)
 
 with *N*  as the population size and *i* as the current allele frequency. Note that the quantity we care about here is *2N*: the number of chromosomes.
 
@@ -77,9 +74,7 @@ Answer one of the two questions below 3 times (any combination works - you can d
 
 Currently, the probability that an allele will be passed down to the next generation (`p`) is determined entirely by the frequency of the allele in the current generation. To introduce selection, we need to modify this probability by a selection coefficient, $s$. An allele with positive $s$ is favorable, and an allele with negative *s*, while alleles with *s = 0* are neutral. The formula for `p` for allele *A*, given *i* copies of allele *A* and a selection coefficient *s* is: 
 
-\begin{align}
-&p_A = {i(1 + s) \over  2N - i + i(1+s)} \\[1em]
-\end{align}
+![selection](selection.png)
 
 Create a modified version of your Wright-Fisher function which can also take a value of *s* as an argument. Try running multiple iterations of this function and plotting allele trajectories and fixation times. Try using different values of *s* - for a concrete example, lactase persistence, or the mutation allowing us to drink and digest milk into adulthood, has a selection coefficient around *0.01* to *0.03*.
 
