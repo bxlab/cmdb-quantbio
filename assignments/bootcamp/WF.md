@@ -17,7 +17,7 @@ Since random effects are the only thing changing the frequency of an allele from
 &\binom{n}{k} = \frac{n!}{ k!( n-k)!}
 \end{equation} 
 
-with $N$  as the population size and  $i$ as the current allele frequency. Note that the quantity we care about here is  $2N$: the number of chromosomes.
+with *N*  as the population size and *i* as the current allele frequency. Note that the quantity we care about here is *2N*: the number of chromosomes.
 
 The easiest way to draw from the binomial distribution is to use the function `np.random.binomial(n, p)`, where `n` is the number of trials and `p` is the probability of success.
 
@@ -75,13 +75,13 @@ Answer one of the two questions below 3 times (any combination works - you can d
 
 ## Advanced Exercise: Wright-Fisher with Selection
 
-Currently, the probability that an allele will be passed down to the next generation (`p`) is determined entirely by the frequency of the allele in the current generation. To introduce selection, we need to modify this probability by a selection coefficient, $s$. An allele with positive $s$ is favorable, and an allele with negative $s$, while alleles with $s = 0$ are neutral. The formula for `p` for allele $A$, given $i$ copies of allele $A$ and a selection coefficient $s$ is: 
+Currently, the probability that an allele will be passed down to the next generation (`p`) is determined entirely by the frequency of the allele in the current generation. To introduce selection, we need to modify this probability by a selection coefficient, $s$. An allele with positive $s$ is favorable, and an allele with negative *s*, while alleles with *s = 0* are neutral. The formula for `p` for allele *A*, given *i* copies of allele *A* and a selection coefficient *s* is: 
 
 \begin{align}
 &p_A = {i(1 + s) \over  2N - i + i(1+s)} \\[1em]
 \end{align}
 
-Create a modified version of your Wright-Fisher function which can also take a value of $s$ as an argument. Try running multiple iterations of this function and plotting allele trajectories and fixation times. Try using different values of $s$ - for a concrete example, lactase persistence, or the mutation allowing us to drink and digest milk into adulthood, has a selection coefficient around $0.01 - 0.03$.
+Create a modified version of your Wright-Fisher function which can also take a value of *s* as an argument. Try running multiple iterations of this function and plotting allele trajectories and fixation times. Try using different values of *s* - for a concrete example, lactase persistence, or the mutation allowing us to drink and digest milk into adulthood, has a selection coefficient around *0.01* to *0.03*.
 
 How does introducing a selection coefficient impact the time to fixation? How does it change the likelihood of an allele reaching fixation or becoming extinct?  
 
@@ -95,4 +95,4 @@ For each combination of population size and allele frequency, run ten trials of 
 
 ## Advanced Exercise: Average Allele Frequency
 
-In Exercise 2, you created a plot of allele frequencies over time. One way to better understand the overall behavior of this model is to plot the average of the trajectories. Run at least 30 iterations of the Wright-Fisher model at a starting allele frequency not equal to $0.5$ and then calculate the average allele frequency across all runs for each generation. Plot it in a different color. Consider making all other lines more faint (look into the `alpha` parameter of `plt.plot()`). Consider drawing a horizontal line at your initial allele frequency (look into the `plt.axhline()` function for this).
+In Exercise 2, you created a plot of allele frequencies over time. One way to better understand the overall behavior of this model is to plot the average of the trajectories. Run at least 30 iterations of the Wright-Fisher model at a starting allele frequency not equal to *0.5* and then calculate the average allele frequency across all runs for each generation. Plot it in a different color. Consider making all other lines more faint (look into the `alpha` parameter of `plt.plot()`). Consider drawing a horizontal line at your initial allele frequency (look into the `plt.axhline()` function for this).
