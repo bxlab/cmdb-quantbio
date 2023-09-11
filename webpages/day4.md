@@ -15,3 +15,7 @@ Wright Fisher:
 ## Daily Reflection
 
 Please fill out [this survey](https://forms.gle/JtFJ9qV6wumP2vPY6) today at the end of class. 
+
+## Answers to your FAQs
+
+Answers to the questions asked during the daily relfections from bootcamp are [here](). 
