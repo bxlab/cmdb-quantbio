@@ -11,7 +11,14 @@ Indexing is the way you'd subset your data. It lets you grab some element (e.g.,
 
 **How can I use for loops instead of numpy to open and read files?**
 
-In class so far we've implemented this as a 3-step process: 1) `open(filename)`. 2) `readlines()`. 3) Use a for loop to walk through each line of the file and do what you want (e.g., strip the newline character, split on whitespace or some delimiter, etc.). 
+In class so far we've implemented this as a 3-step process: 1) `open(filename)`. 2) `readlines()`. 3) Use a for loop to walk through each line of the file and do what you want (e.g., strip the newline character, split on whitespace or some delimiter, etc.). `.readlines()` is used to put the file into a massive list, but you can also loop over the file and do other operations, e.g., 
+```
+fs = open(filename)
+for line in fs:
+   print(line.rstrip())
+fs.close() 
+```
+More on this in the [textbook](https://andrew-bortvin.github.io/cmdb-bootcampNotes/reading-in-data.html#parsing-a-file).
 
 **What are some common applications of while loops?**
 
