@@ -161,11 +161,6 @@ All class participants agree to:
   <li><b>Refrain from advocating for, or encouraging, negative behavior</b>. And, if someone asks you to stop, then stop. Alert an instructor or TA if you notice a dangerous situation, someone in distress, or violations of this code of conduct, no matter how inconsequential it seems.</li>
 </ul>
 
-<a name="Pandemic"></a>
-<header><h2>The Pandemic</h2></header>
-
-We know that this is one of the least ideal situations in which to be starting your first year of grad school and taking an intensive coding course. Our plan is to be as understanding as possible about grading, attendance, and any issues that come up. Please don’t hesitate to reach out to an instructor or TA if you are having issues, and we will do our best to accommodate you however we can.
-
 <a name="WeeklySchedule"></a>
 <header><h2>Weekly Schedule</h2></header>
 
