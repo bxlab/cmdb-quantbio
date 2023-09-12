@@ -60,8 +60,8 @@
   <h3>Class Meetings</h3>
 </header>
 
-Fridays, Sept 9, 2022 - Dec 9, 2022<br />
-1:00 P.M. ET - 3:30 P.M. ET, BLC 5015<br />
+Fridays, Sept 15, 2023 - Dec 8, 2023<br />
+10:00 A.M. ET - 12:30 P.M. ET, BLC 5015<br />
 
 <a name="CourseWebsite"></a>
 <header>
