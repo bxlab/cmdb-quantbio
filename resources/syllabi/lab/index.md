@@ -232,13 +232,13 @@ All class participants agree to:
   <td>Bulk RNA-seq</td>
 </tr>
 <tr>
-  <td>12</td>
+  <td>11</td>
   <td>11/24</td>
   <td>No class</td>
   <td>Thanksgiving Break</td>
 </tr>
 <tr>
-  <td>13</td>
+  <td>12</td>
   <td>12/8</td>
   <td>Dylan Taylor</td>
   <td>Single-cell RNA-seq</td>
