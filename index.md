@@ -55,39 +55,35 @@ Resources for each day (links for assignment, any relevant recordings or slides,
         - k-mer matching
 
 -->
-<!--
-## CMDB Quantitative Biology Lab 2022
+
+## CMDB Quantitative Biology Lab 2023
 
 ### Logistics
 - [Syllabus](resources/syllabi/lab/index.html)
 - This one day a week course builds upon the foundations of Quantitative Biology Bootcamp, reinforcing and expanding upon mathematical and computational methods for analysis of biological data.
 - In person, BLC 5015
-- 1 - 3:30 pm, Fridays
-- Please wear a face mask and bring headphones or earbuds
+- 10:00 - 12:30 pm, Fridays
 - Assignments must be submitted within one week to your `qbb2022-answers` repository
--->
 
-<!--
 ### Schedule
 
 | Week | Date | Instructor          | Topic                                                                             |
 | :--: | :--: | :-----------------: | :--------------------------------------------------------------------------------:|
-|  1   | 9/9  | Mike Schatz (Guest) | [Genome Assembly](webpages/week1/index.html)                                      |
-|  2   | 9/16 | Dylan Taylor (Guest)| [Alignment](webpages/week2/index.html)                                            |
-|  3   | 9/23 | Rajiv McCoy         | [Variant Calling](webpages/week3)                                                 |
-|  4   | 9/30 | Rajiv McCoy         | [GWAS](webpages/week4)                                                            |
-|  5   | 10/7 | Mike Sauria         | [ChIP-Seq](webpages/week5)                                                        |
-|  6   | 10/14| Mike Sauria         | [3D Genome](webpages/week6)                                                       |
-|  7   | 10/21| No class            | Retreat                                                                           |
-|  8   | 10/28| Mike Sauria         | [Single Molecule Sequencing and DNA Modifications](webpages/week8)                |
-|  9   | 11/4 | Rajiv McCoy         | [Bulk RNA-Seq](webpages/week9)                                                    |
-|  10  | 11/11| Kate Weaver (Guest) | [Machine Learning and Applications in mRNA Expression Prediction](webpages/week10)|
-|  11  | 11/18| Mike Sauria         | [Single-Cell RNA-Seq](webpages/week11)                                            |
-|  12  | 11/25| No class            | Thanksgiving Break                                                                |
-|  13  | 12/2 | Rajiv McCoy         | [Population Genetics](webpages/week13)                                            |
-|  14  | 12/9 | Rajiv McCoy         | [Metagenomics](webpages/week14)                                                   |
+|  1   | 9/15  | Rajiv McCoy |  Linear regression |
+|  2   | 9/22 | Mike Schatz |  Genome assembly |
+|  3   | 9/29 | Mike Sauria |  Sequence alignment |
+|  4   | 10/6 | Mike Sauria |  ChIP-seq |
+|  5   | 10/13 | Rajiv McCoy | Variant calling |
+|  6   | 10/20 | No Class | Retreat |
+|  7   | 10/27 | Rajiv McCoy | GWAS |
+|  8   | 11/3 | Mike Sauria | Single-molecule sequencing and DNA modifications |
+|  9   | 11/10 | Mike Sauria | 3D Genome |
+|  10   | 11/17 | Rajiv McCoy | Bulk RNA-seq |
+|  11   | 11/24 | No class | Thanksgiving Break |
+|  12   | 12/8 | Dylan Taylor | Single-cell RNA-seq |
+																			
+						
 {:.table.table-striped.well}
--->
 
 <!--
 ### Useful Goodies
