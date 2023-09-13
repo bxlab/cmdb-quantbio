@@ -83,6 +83,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |  12   | 12/8 | Dylan Taylor | Single-cell RNA-seq |						
 {:.table.table-striped.well}
 
+
 <!--
 ### Useful Goodies
 
