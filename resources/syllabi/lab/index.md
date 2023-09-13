@@ -96,7 +96,7 @@ Upon completing the course, students should have the background to develop repro
 Upon completion of this course, students will be able to:
 <ul>
     <li>Design workflows for common genomic data types, including developing tractable questions, organizing and preprocessing data, developing analytic pipelines, and implementing statistical models.</li>
-    <li>Describe and implement common probability distributions, statistical tests, and correction for multiple hypothesis testing. Students will be able to identify confounding factors, as well as methods for their diagnosis and mitigation.</li></li>
+    <li>Describe and implement common probability distributions, statistical tests, and correction for multiple hypothesis testing. Students will be able to identify confounding factors, as well as methods for their diagnosis and mitigation.</li>
     <li>Maintain a GitHub repository with code used for documentation, output, and documentation.</li>
     <li>Describe key algorithms and data structures that are commonly encountered in computational biology, along with when best to use them.</li>
 
