@@ -80,9 +80,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |  9   | 11/10 | Mike Sauria | 3D Genome |
 |  10   | 11/17 | Rajiv McCoy | Bulk RNA-seq |
 |  11   | 11/24 | No class | Thanksgiving Break |
-|  12   | 12/8 | Dylan Taylor | Single-cell RNA-seq |
-																			
-						
+|  12   | 12/8 | Dylan Taylor | Single-cell RNA-seq |						
 {:.table.table-striped.well}
 
 <!--
