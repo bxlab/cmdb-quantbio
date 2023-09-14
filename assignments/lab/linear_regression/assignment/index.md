@@ -6,7 +6,7 @@
 
 ## Data
 
-Data are taken from Halldorsson, B. V., Palsson, G., Stefansson, O. A., Jonsson, H., Hardarson, M. T., Eggertsson, H. P., ... & Gudjonsson, S. A. (2019). Characterizing mutagenic effects of recombination through a sequence-level genetic map. Science, 363(6425). [link](https://science.sciencemag.org/content/363/6425/eaau1043.abstract)
+Data are taken from [Halldorsson, B. V., Palsson, G., Stefansson, O. A., Jonsson, H., Hardarson, M. T., Eggertsson, H. P., ... & Gudjonsson, S. A. (2019). Characterizing mutagenic effects of recombination through a sequence-level genetic map. Science, 363(6425)](https://science.sciencemag.org/content/363/6425/eaau1043.abstract).
 
 Read the abstract from the above paper to understand the context of the datasets we will be using. The data you need for this assignment has already been loaded onto your laptop in two files:
 1. information about the number and parental origin of each de novo mutation detected in an offspring individual (i.e. "proband"), stored in `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/statistical_modeling/extra_data/aau1043_dnm.csv`
@@ -21,7 +21,7 @@ Before beginning the assignment, you should examine the two files (with `less -S
 ### Exercise 1: Wrangle the data
 
 1. We'll start by exploring the data in `aau1043_dnm.csv`. First, load this data into a `pandas` dataframe. Using this dataframe, we want to count the number of paternally and maternally inherited DNMs in each proband.
-2. Using this dataframe, create a dictionary where the keys are the proband IDs and the associated value with each key is a list of length 2, where the first element in the list is the number of maternally inherited DNMs and the second element in the list is the number of paternally inherited DNMs for that proband. You can ignore DNMs without a specified parent of origin.
+2. Using this dataframe, create a dictionary where the keys are the proband IDs and the value associated with each key is a list of length 2, where the first element in the list is the number of maternally inherited DNMs and the second element in the list is the number of paternally inherited DNMs for that proband. You can ignore DNMs without a specified parent of origin.
 3. Use the follwing code snippet to convert this dictionary into a new pandas dataframe (this assumes your dictionary from step 2 is called `deNovoCount`):
 `deNovoCountDf = pd.DataFrame.from_dict(deNovoCount, orient = 'index', columns = ['maternal', 'paternal'])`
 Feel free to ask questions about how this code is working, or if you're interested, you can try to figure it out yourself.
