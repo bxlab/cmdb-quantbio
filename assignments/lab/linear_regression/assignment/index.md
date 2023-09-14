@@ -9,8 +9,8 @@ This needs to be added
 Data are taken from [Halldorsson, B. V., Palsson, G., Stefansson, O. A., Jonsson, H., Hardarson, M. T., Eggertsson, H. P., ... & Gudjonsson, S. A. (2019). Characterizing mutagenic effects of recombination through a sequence-level genetic map. Science, 363(6425)](https://science.sciencemag.org/content/363/6425/eaau1043.abstract).
 
 Read the abstract from the above paper to understand the context of the datasets you will be using. The data you need for this assignment has already been loaded onto your laptop. There are two files we'll be using for this assignment:
-    1. information about the number and parental origin of each de novo mutation detected in an offspring individual (i.e. "proband"), stored in `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/statistical_modeling/extra_data/aau1043_dnm.csv`
-    2. ages of the parents of each proband, stored in `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/statistical_modeling/extra_data/aau1043_parental_age.csv`
+1. information about the number and parental origin of each de novo mutation detected in an offspring individual (i.e. "proband"), stored in `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/statistical_modeling/extra_data/aau1043_dnm.csv`
+2. ages of the parents of each proband, stored in `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/statistical_modeling/extra_data/aau1043_parental_age.csv`
 
 You can use this data as is, or make copies of it in your submission directory for this assignment. If you do make copies in your submission directory, don't forget to add them to your `.gitignore` file within the submission directory.
 
@@ -47,18 +47,18 @@ Using the merged dataframe from the previous section, you will be exploring the 
 
 #### **Step 2.1**
 First, you're interested in exploring if there's a relationship between the number of DNMs and parental age. Use `matplotlib` to plot the following. **All plots should be clearly labelled and easily interpretable**.
-    1. the count of maternal de novo mutations vs. maternal age (upload as `ex2_a.png` in your submission directory)
-    2. the count of paternal de novo mutations vs. paternal age (upload as `ex2_b.png` in your submission directory)
+1. the count of maternal de novo mutations vs. maternal age (upload as `ex2_a.png` in your submission directory)
+2. the count of paternal de novo mutations vs. paternal age (upload as `ex2_b.png` in your submission directory)
 
 #### **Step 2.2**
 Now that you've visualized these relationships, you're curious whether they're statistically significant. Perform ordinary least squares using the `smf.ols()` function to test for an association between *maternal* age and *maternally* inherited de novo mutations. In your `README.md` for this assignment, answer the following questions:
-    1. What is the "size" of this relationship? In your own words, what does this mean? Does this match what you observed in your plots in step 6?
-    2. Is this relationship significant? How do you know?
+1. What is the "size" of this relationship? In your own words, what does this mean? Does this match what you observed in your plots in step 6?
+2. Is this relationship significant? How do you know?
 
 #### **Step 2.3**
 As before, perform ordinary least squares using the `smf.ols()` function, but this time to test for an association between *paternal* age and *paternally* inherited de novo mutations. In your `README.md` for this assignment, answer the following questions:
-    1. What is the "size" of this relationship? In your own words, what does this mean? Does this match what you observed in your plots in step 6?
-    2. Is this relationship significant? How do you know?
+1. What is the "size" of this relationship? In your own words, what does this mean? Does this match what you observed in your plots in step 6?
+2. Is this relationship significant? How do you know?
 
 #### **Step 2.4**
 Using your results from **step 2.3**, predict the number of paternal DNMs for a proband with a father who was 50.5 years old at the proband's time of birth. Record your answer and your work (i.e. how you got to that answer) in your `README.md`.
@@ -68,8 +68,8 @@ Next, you're curious whether the number of paternally inherited DNMs match the n
 
 #### **Step 2.6**
 Now that you've visualized this relationship, you want to test whether there is a *significant* difference between the number of maternally vs. paternally inherited DNMs per proband. What would be an appropriate statistical test to test this relationship? Choose a statistical test, and find a Python package that lets you perform this test. If you're not sure where to look, the `stats` module from `scipy` (more [here](https://docs.scipy.org/doc/scipy/reference/stats.html)) provides tools to perform several different useful statistical tests. After performing your test, answer the following answers in your `README.md` for this assignment:
-    1. What statistical test did you choose? Why?
-    2. Was your test result statistically significant? Interpret your result as it relates to the number of paternally and maternally inherited DNMs.
+1. What statistical test did you choose? Why?
+2. Was your test result statistically significant? Interpret your result as it relates to the number of paternally and maternally inherited DNMs.
 
 ### Exercise 3 (OPTIONAL)
 Note that standard linear regression assumes a continuous response variable. When we want to work with response variables that are "counts", such as the number of de novo mutations, we should technically use an approach such as "Poisson regression" that is designed for count data. To fit a Poisson regression model with Python statsmodels, simply use `smf.poisson()` in place of `smf.ols()`.
