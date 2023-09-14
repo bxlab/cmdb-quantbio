@@ -2,13 +2,13 @@
 
 ## Assignment Overview
 
-<!-- ADD THIS (use DNM acronym) --> 
+This needs to be added
 
 ## Data
 
 Data are taken from [Halldorsson, B. V., Palsson, G., Stefansson, O. A., Jonsson, H., Hardarson, M. T., Eggertsson, H. P., ... & Gudjonsson, S. A. (2019). Characterizing mutagenic effects of recombination through a sequence-level genetic map. Science, 363(6425)](https://science.sciencemag.org/content/363/6425/eaau1043.abstract).
 
-Read the abstract from the above paper to understand the context of the datasets we will be using. The data you need for this assignment has already been loaded onto your laptop in two files:
+Read the abstract from the above paper to understand the context of the datasets we will be using. The data you need for this assignment has already been loaded onto your laptop. There are two files we'll be using for this assignment:
 1. information about the number and parental origin of each de novo mutation detected in an offspring individual (i.e. "proband"), stored in `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/statistical_modeling/extra_data/aau1043_dnm.csv`
 2. ages of the parents of each proband, stored in `/Users/cmdb/cmdb-quantbio/assignments/bootcamp/statistical_modeling/extra_data/aau1043_parental_age.csv`
 
@@ -70,4 +70,9 @@ Note that standard linear regression assumes a continuous response variable. Whe
 
 16. Pose a question about the data that can be tested with a linear regression model.
 
-17. Fit your model, evaluate the model fit, and test your hypothesis. Record your hypothesis and results in your `README.md`
+## Submission
+
+Fill this in when everything else is approved<br><br>
+
+
+18. Fit your model, evaluate the model fit, and test your hypothesis. Record your hypothesis and results in your `README.md`
