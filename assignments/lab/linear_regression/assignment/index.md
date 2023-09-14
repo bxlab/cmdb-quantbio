@@ -26,12 +26,12 @@ Before beginning the assignment, you should examine the two files (with `less -S
 `deNovoCountDf = pd.DataFrame.from_dict(deNovoCount, orient = 'index', columns = ['maternal', 'paternal'])`
 Feel free to ask questions about how this code is working, or if you're interested, you can try to figure it out yourself.
 4. Now, load the data from `aau1043_parental_age.csv` into a new `pandas` dataframe.
-5. You now have two dataframes with complementary information. It would be nice to have all of this in one data strucutre. Use the [`pd.concat()`](https://pandas.pydata.org/docs/reference/api/pandas.concat.html) function to combine your dataframe from step 3 with the dataframe you just created in step 4 to create a new merged dataframe.
+5. You now have two dataframes with complementary information. It would be nice to have all of this in one data strucutre. Use the `pd.concat()` function (more [here](https://pandas.pydata.org/docs/reference/api/pandas.concat.html)) to combine your dataframe from step 3 with the dataframe you just created in step 4 to create a new merged dataframe.
     * You will need to specify the `axis` and `join` arguments in `pd.concat()`
 
 ### Exercise 2: Fit and interpret linear regression models with Python
 
-Using the merged dataframe from the previous section, you will be exploring the relationships between different features of the data. The `statsmodels` (more [here](https://www.statsmodels.org/stable/index.html)) package is an incredibly useful package for conducting statistical tests and running regressions. As such, it is especially appropriate for the types of questions we're interested in here. For this assignment, we'll be using the `formula` api from `statsmodels` (more [here](https://www.statsmodels.org/stable/example_formulas.html)) to run some regressions between variables in our dataset. You can load this tool into Python with `import statsmodels.formula.api as smf`. 
+Using the merged dataframe from the previous section, you will be exploring the relationships between different features of the data. The `statsmodels` package (more [here](https://www.statsmodels.org/stable/index.html)) is an incredibly useful package for conducting statistical tests and running regressions. As such, it is especially appropriate for the types of questions we're interested in here. For this assignment, we'll be using the `formula` api from `statsmodels` (more [here](https://www.statsmodels.org/stable/example_formulas.html)) to run some regressions between variables in our dataset. You can load this tool into Python with `import statsmodels.formula.api as smf`. 
 
 1. First, you're interested in exploring if there's a relationship between the number of DNMs and parental age. Use `matplotlib` to plot the following. All plots should be clearly labelled and easily interpretable.
     * the count of maternal de novo mutations vs. maternal age (upload as `ex2_a.png` in your submission directory)
