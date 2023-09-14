@@ -63,7 +63,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 - This one day a week course builds upon the foundations of Quantitative Biology Bootcamp, reinforcing and expanding upon mathematical and computational methods for analysis of biological data.
 - In person, BLC 5015
 - 10:00 - 12:30 pm, Fridays
-- Assignments must be submitted within one week to your `qbb2022-answers` repository
+- Assignments must be submitted within one week to your `qbb2023-answers` repository
 
 ### Schedule
 
