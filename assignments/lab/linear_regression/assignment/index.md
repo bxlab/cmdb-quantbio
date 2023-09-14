@@ -62,7 +62,7 @@ Note that standard linear regression assumes a continuous response variable. Whe
 
 ### Exercise 4 (OPTIONAL)
 
-1. Select a new dataset from those listed at the bottom of this website: https://github.com/rfordatascience/tidytuesday. If not obvious, the corresponding data can generally be found as a `.csv` file in the `tidytuesday/data/<year>/<date>` subdirectory of the GitHub repository. Record which dataset you picked in your `README.md`.
+1. Select a new dataset from those listed at the bottom of [this website](https://github.com/rfordatascience/tidytuesday). The corresponding data can generally be found as a `.csv` file in the `tidytuesday/data/<year>/<date>` subdirectory of the GitHub repository. Record which dataset you picked in your `README.md`.
   
 2. Generate figures to explore these data. What patterns do you notice? Record your observations in your `README.md`.
 
