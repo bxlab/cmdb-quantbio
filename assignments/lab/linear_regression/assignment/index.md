@@ -20,7 +20,7 @@ Before beginning the assignment, you should examine the two files (with `less -S
 
 ### Exercise 1: Wrangle the data
 
-#### Step 1.1
+#### **Step 1.1**
 You'll start by exploring the data in `aau1043_dnm.csv`. First, load this data into a `pandas` dataframe.
 
 #### Step 1.2
