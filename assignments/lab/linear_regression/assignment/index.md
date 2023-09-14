@@ -25,8 +25,8 @@ Before beginning the assignment, you should examine the two files (with `less -S
 3. Use the follwing code snippet to convert this dictionary into a new pandas dataframe (this assumes your dictionary from step 2 is called `deNovoCount`):
     *  `deNovoCountDf = pd.DataFrame.from_dict(deNovoCount, orient = 'index', columns = ['maternal', 'paternal'])`
     * Feel free to ask questions about how this code is working or, if you're interested, you can try to figure it out yourself.
-5. Now, load the data from `aau1043_parental_age.csv` into a new `pandas` dataframe.
-6. You now have two dataframes with complementary information. It would be nice to have all of this in one data strucutre. Use the `pd.concat()` function (more [here](https://pandas.pydata.org/docs/reference/api/pandas.concat.html)) to combine your dataframe from step 3 with the dataframe you just created in step 4 to create a new merged dataframe.
+4. Now, load the data from `aau1043_parental_age.csv` into a new `pandas` dataframe.
+5. You now have two dataframes with complementary information. It would be nice to have all of this in one data structure. Use the `pd.concat()` function (more [here](https://pandas.pydata.org/docs/reference/api/pandas.concat.html)) to combine your dataframe from step 3 with the dataframe you just created in step 4 to create a new merged dataframe.
     * You will need to specify the `axis` and `join` arguments in `pd.concat()`
 
 ### Exercise 2: Fit and interpret linear regression models with Python
