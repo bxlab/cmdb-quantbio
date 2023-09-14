@@ -68,11 +68,10 @@ Note that standard linear regression assumes a continuous response variable. Whe
   
 15. Generate figures to explore these data. What patterns do you notice? Record your observations in your `README.md`.
 
-16. Pose a question about the data that can be tested with a linear regression model.
+16. Pose a hypothesis about the data that can be tested with a linear regression model.
+
+17. Fit your model, evaluate the model fit, and test your hypothesis. Record your hypothesis and results in your `README.md`
 
 ## Submission
 
 Fill this in when everything else is approved<br><br>
-
-
-18. Fit your model, evaluate the model fit, and test your hypothesis. Record your hypothesis and results in your `README.md`
