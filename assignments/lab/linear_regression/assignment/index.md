@@ -29,7 +29,7 @@ You first want to count the number of paternally and maternally inherited DNMs i
 #### **Step 1.3**
 Use the following code snippet to convert this dictionary into a new pandas dataframe (this assumes your dictionary from step 1.2 is called `deNovoCount`):
 
-`deNovoCountDF = pd.DataFrame.from_dict(deNovoCount, orient = 'index', columns = ['maternal', 'paternal'])`
+`deNovoCountDF = pd.DataFrame.from_dict(deNovoCount, orient = 'index', columns = ['maternal_dnm', 'paternal_dnm'])`
 
 Feel free to ask questions about how this code is working or, if you're interested, you can try to figure it out yourself.
 
