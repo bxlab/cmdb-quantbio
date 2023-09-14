@@ -31,13 +31,14 @@ Feel free to ask questions about how this code is working, or if you're interest
 
 ### Exercise 2: Fit and interpret linear regression models with Python
 
-4. Use numpy `genfromtxt` to load the "joined" data from step 3 into a numpy array. Use the `Names =` option to give your fields informative names.
+Using the merged dataframe from the previous section, you will exploring several features of the data:
 
-5. Use matplotlib to plot:
-* the count of maternal de novo mutations vs. maternal age (upload as `ex2_a.png`)
-* the count of paternal de novo mutations vs. paternal age (upload as `ex2_b.png`)
+1. Use `matplotlib` to plot:
+ * the count of maternal de novo mutations vs. maternal age (upload as `ex2_a.png` in your submission directory)
+ * the count of paternal de novo mutations vs. paternal age (upload as `ex2_b.png` in your submission directory)
+ * All plots should be clearly labeled and easily interpretable
 
-6. Use ordinary least squares `smf.ols()` to test for an association between maternal age and maternally inherited de novo mutations.
+6. [`statsmodels`](https://www.statsmodels.org/stable/index.html) is a Python library for stuff. Use ordinary least squares with the `smf.ols()` function to test for an association between maternal age and maternally inherited de novo mutations.
 * Is this relationship significant?
 * What is the size of this relationship?
 
