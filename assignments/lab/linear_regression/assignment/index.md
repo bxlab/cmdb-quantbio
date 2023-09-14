@@ -97,4 +97,22 @@ Fit your model, evaluate the model fit, and test your hypothesis. Record your hy
 
 ## Submission
 
-Fill this in when everything else is approved<br><br>
+1. Python script with all code for the assignment (5.5 points total)
+  * Code to create dataframe with paternal and maternal DNMs per proband (1 point)
+  * Code to generate merged dataframe with DNMs per proband AND parental ages (0.5 point)
+  * Code to generate `ex2_a.png` plot in Step 2.1 (0.5 point)
+  * Code to generate `ex2_b.png` plot in Step 2.1 (0.5 point)
+  * Code to run maternal OLS in Step 2.2 (1 point)
+  * Code to run paternal OLS in Step 2.3 (1 point)
+  * Code to run maternal DNM vs paternal DNM statistical test (1 point)
+2. `README.md` file with answers to questions in the assignment (3.5 points total)
+  * Answer to questions in Step 2.2 (1 point)
+  * Answer to questions in Step 2.3 (1 point)
+  * Answer to question in Step 2.4 (0.5 point)
+  * Answer to questions in Step 2.6 (1 point)
+4. `ex2_a.png` clearly labelled and easily interpretable (0.5 point)
+5. `ex2_b.png` clearly labelled and easily interpretable (0.5 point)
+
+**Total Points: 10**
+
+<br><br>
