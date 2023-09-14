@@ -27,9 +27,9 @@ You'll start by exploring the data in `aau1043_dnm.csv`. First, load this data i
 You first want to count the number of paternally and maternally inherited DNMs in each proband. Using this dataframe, create a dictionary where the keys are the proband IDs and the value associated with each key is a list of length 2, where the first element in the list is the number of maternally inherited DNMs and the second element in the list is the number of paternally inherited DNMs for that proband. You can ignore DNMs without a specified parent of origin.
 
 #### **Step 1.3**
-Use the following code snippet to convert this dictionary into a new pandas dataframe (this assumes your dictionary from step 2 is called `deNovoCount`):
+Use the following code snippet to convert this dictionary into a new pandas dataframe (this assumes your dictionary from step 1.2 is called `deNovoCount`):
 
-`deNovoCountDf = pd.DataFrame.from_dict(deNovoCount, orient = 'index', columns = ['maternal', 'paternal'])`
+`deNovoCountDF = pd.DataFrame.from_dict(deNovoCount, orient = 'index', columns = ['maternal', 'paternal'])`
 
 Feel free to ask questions about how this code is working or, if you're interested, you can try to figure it out yourself.
 
