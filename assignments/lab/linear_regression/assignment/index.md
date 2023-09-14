@@ -14,7 +14,7 @@ Read the abstract from the above paper to understand the context of the datasets
 
 You can use this data as is, or make copies of it in your submission directory for this assignment. If you do make copies in your submission directory, don't forget to add them to your `.gitignore` file within the submission directory.
 
-Before beginning the assignment, you should examine the two files (with `less -S` perhaps) to make sure you understand how they're organized.
+Before beginning the assignment, you should examine the two files (with `less -S` perhaps) to make sure you understand how they're organized.<br><br>
 
 ## Exercises
 
@@ -81,7 +81,7 @@ Note that standard linear regression assumes a continuous response variable. Whe
 
 3. Pose a hypothesis about the data that can be tested with a linear regression model.
 
-4. Fit your model, evaluate the model fit, and test your hypothesis. Record your hypothesis and results in your `README.md`
+4. Fit your model, evaluate the model fit, and test your hypothesis. Record your hypothesis and results in your `README.md`<br><br>
 
 ## Submission
 
