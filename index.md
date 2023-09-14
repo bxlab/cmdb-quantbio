@@ -19,7 +19,7 @@ Prep Work:
 - In person, UTL 398
 - Please arrive by 8:45am ET
 - Lunch and an afternoon snack will be provided
-- Zoom meeting ID (check Slack for passcode or full link to join): 929 0650 3074
+<!-- - Zoom meeting ID (check Slack for passcode or full link to join): 929 0650 3074 --> 
 <br /><br />
 - [Answers to Student Questions](resources/references/reflection_questions_answered.html)
 
