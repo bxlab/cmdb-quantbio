@@ -180,7 +180,7 @@ All class participants agree to:
 <tr>
   <td>2</td>
   <td>9/22</td>
-  <td>Mike Schatz</td>
+  <td>Dylan Taylor</td>
   <td>Genome assembly</td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ All class participants agree to:
 <tr>
   <td>12</td>
   <td>12/8</td>
-  <td>Dylan Taylor</td>
+  <td>Mike Schatz</td>
   <td>Single-cell RNA-seq</td>
 </tr>
 </table>
