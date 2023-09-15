@@ -26,6 +26,13 @@ You'll start by exploring the data in `aau1043_dnm.csv`. First, load this data i
 #### **Step 1.2**
 You first want to count the number of paternally and maternally inherited DNMs in each proband. Using this dataframe, create a dictionary where the keys are the proband IDs and the value associated with each key is a list of length 2, where the first element in the list is the number of maternally inherited DNMs and the second element in the list is the number of paternally inherited DNMs for that proband. You can ignore DNMs without a specified parent of origin.
 
+For example, let's say your data had two probands with IDs `675` and `1097`. And let's say proband `675` has 19 maternal DNMs and 51 paternal DNMs, and proband `1097` has 12 maternal DNMs and 26 paternal DNMs. Your final dictionary would look like this:
+
+```
+{675 : [19, 51],
+ 1097 : [12, 26]}
+```
+
 #### **Step 1.3**
 Use the following code snippet to convert this dictionary into a new pandas dataframe (this assumes your dictionary from step 1.2 is called `deNovoCount`):
 
@@ -35,11 +42,11 @@ Feel free to ask questions about how this code is working or, if you're interest
 
 #### **Step 1.4**
 Now, load the data from `aau1043_parental_age.csv` into a new `pandas` dataframe.
+* **HINT**: You will probably want to use the `index_col` argument with `pd.read_csv()`. It will make your life easier in the next step.
 
 #### **Step 1.5** 
 You now have two dataframes with complementary information. It would be nice to have all of this in one data structure. Use the `pd.concat()` function (more [here](https://pandas.pydata.org/docs/reference/api/pandas.concat.html)) to combine your dataframe from step 3 with the dataframe you just created in step 4 to create a new merged dataframe.
-
-**NOTE**: You will need to specify the `axis` and `join` arguments in `pd.concat()`
+* **HINT**: You will want to specify the `axis` and `join` arguments with `pd.concat()`
 
 ### Exercise 2: Fit and interpret linear regression models with Python
 
