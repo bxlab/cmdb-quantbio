@@ -2,7 +2,7 @@
 
 ## Assignment Overview
 
-This needs to be added
+The goal of today's lab is to use linear regression and other statistical methods to investigate the relationship between paternal age, maternal age, and the number of de novo mutations (DNMs) in a proband (offspring). Today's assignment will build familiarity with manipulating tabular datasets containining mixed data types using the `pandas` library in Python. Specifically, you will import a table of de-novo mutations and will manipulate it to calculate the number of maternal and paternal DNMs per individual. This assignment will also introduce the `statsmodels` package, which you will use to perform statistical analysis of your data. 
 
 ## Data
 
