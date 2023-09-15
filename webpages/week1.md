@@ -1,6 +1,7 @@
 # QuantLab Week 1 - Linear Regression/Statistical Modeling
 
 Assignment Date: Friday, Sept. 15, 2023
+
 Due Date: Friday, Sept. 22, 2023
 
 <!-- ## Lecture -- Rajiv McCoy
