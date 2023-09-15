@@ -69,7 +69,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 | Week | Date | Instructor          | Topic                                                                             |
 | :--: | :--: | :-----------------: | :--------------------------------------------------------------------------------:|
-|  1   | 9/15  | Rajiv McCoy |  Linear regression |
+|  1   | 9/15  | Rajiv McCoy |  [Linear regression](webpages/week1.html) |
 |  2   | 9/22 | Mike Schatz |  Genome assembly |
 |  3   | 9/29 | Dylan Taylor |  Sequence alignment |
 |  4   | 10/6 | Mike Sauria |  ChIP-seq |
