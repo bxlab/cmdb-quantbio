@@ -104,7 +104,7 @@ Fit your model, evaluate the model fit, and test your hypothesis. Record your hy
   * Code to generate `ex2_b.png` plot in Step 2.1 (**0.5 point**)
   * Code to run maternal OLS in Step 2.2 (**1 point**)
   * Code to run paternal OLS in Step 2.3 (**1 point**)
-  * Code to run maternal DNM vs paternal DNM statistical test (**1 point**)
+  * Code to run maternal DNM vs paternal DNM statistical test in Step 2.6 (**1 point**)
 2. `README.md` file with answers to questions in the assignment (**3.5 points total**)
   * Answer to questions in Step 2.2 (**1 point**)
   * Answer to questions in Step 2.3 (**1 point**)
