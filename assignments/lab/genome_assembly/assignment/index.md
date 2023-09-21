@@ -2,6 +2,8 @@
 
 ## Assignment Overview
 
+***FILL IN***
+
 ## Exercises 
 
 ### Exercise 1: Coverage Simulator 
