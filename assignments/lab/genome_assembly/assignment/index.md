@@ -67,16 +67,16 @@ Now, repeat the analysis with 10x coverage:
 1. Simulate using the appropriate number of reads
 2. Make a histogram. Overlay a Poisson distribution with **lambda = 10**. Overlay a Normal distribution with *mean = 10 and std. dev. = 3.16**. Upload this plot as `ex1_10x_cov.png` in your submission directory.
 3. In your `README.md`, answer the following questions:
-  1. In your simulation, how much of the genome has not been sequenced (has 0x coverage)?
-  2. How well does this match Poisson expectations? How well does the normal distribution fit the data?
+  - In your simulation, how much of the genome has not been sequenced (has 0x coverage)?
+  - How well does this match Poisson expectations? How well does the normal distribution fit the data?
 
 #### **Step 1.5**
 Now, repeat the analysis with 30x coverage:
 1. Simulate using the appropriate number of reads
-2. Make a histogram. Overlay a Poisson distribution with **lambda = 10**. Overlay a Normal distribution with *mean = 10 and std. dev. = 3.16**. Upload this plot as `ex1_30x_cov.png` in your submission directory.
+2. Make a histogram. Overlay a Poisson distribution with **lambda = 10**. Overlay a Normal distribution with *mean = 10 and std. dev. = 3.16**. Upload this plot as `ex1_10x_cov.png` in your submission directory.
 3. In your `README.md`, answer the following questions:
-  1. In your simulation, how much of the genome has not been sequenced (has 0x coverage)?
-  2. How well does this match Poisson expectations? How well does the normal distribution fit the data?
+  - In your simulation, how much of the genome has not been sequenced (has 0x coverage)?
+  - How well does this match Poisson expectations? How well does the normal distribution fit the data?
 
 ### Exercise 2. de Bruijn Graph construction
 
