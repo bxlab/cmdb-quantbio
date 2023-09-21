@@ -231,7 +231,7 @@ Using your list from Step 4.2, plot the kmer frequency spectrum: x-axis is the k
 
 #### **Step 4.4** 
 
-Using your list from Step 4.2, answer the following questions Record your answers in your `README.md`.
+Using your list from Step 4.2, answer the following questions. Record your answers in your `README.md`.
 1. What percent of the genome is unique (e.g. what percent of the kmers occur 1 time)?
 2. What percent of the genome is repetitive (occurs more than 1 time)?
 3. What percent occurs more than 1000 times? 
