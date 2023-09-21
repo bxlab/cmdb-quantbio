@@ -164,7 +164,7 @@ A string of length G has G - k + 1 kmers. For long strings, G - k + 1 is nearly 
 
 While a string of length G has G-k+1 kmers, there may be many fewer *distinct* kmers. For example, in the string "GCATCATCATCATCATCATCAT..." the kmers are: GCA, CAT, ATC, TCA, CAT, ATC, TCA, CAT, ATC, TCA, CAT, ... As such there are only 4 disinct kmers (GCA, CAT, ATC, TCA). Of these GCA occurs once and the others occur many times.
 
-##### **Step 4.1** 
+#### **Step 4.1** 
 
 How many As, Cs, Gs, Ts and Ns are found in the entire chromosome? If needed, convert lowercase letters to uppercase. Any other character can be converted to N. Record your answer in your `README.md`.
 
