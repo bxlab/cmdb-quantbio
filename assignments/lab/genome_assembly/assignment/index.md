@@ -22,7 +22,7 @@ Now, plot the histogram of coverage across the genome. Overlay the histogram wit
 
 Upload this plot as `ex1_3x_cov.png` in your submission directory. **All plots should be clearly labelled and easily interpretable** (i.e. axis labels, legend describing the three things plotted, etc.).
 
-<details><summary><b>CLICK HERE FOR PSEUDOCODE</b></summary>
+<details><summary><b><font color="##18BC9C">CLICK HERE FOR PSEUDOCODE</font></b></summary>
   <pre>
     <code>
 num_reads = calculate_number_of_reads(genomesize, readlength, coverage)
@@ -91,7 +91,7 @@ reads = ['ATTCA', 'ATTGA', 'CATTG', 'CTTAT', 'GATTG', 'TATTT', 'TCATT', 'TCTTA',
 
 Write code to find all of the edges in the de Bruijn graph corresponding to the provided reads using **k = 3** (assume all reads are from the forward strand, no sequencing errors, complete coverage of the genome). Each edge should be of the format `AAT -> TTC`. Write all edges to a file, with each edge as its own line in the file.
 
-<details><summary><b>CLICK HERE FOR PSEUDOCODE</b></summary>
+<details><summary><b><font color="##18BC9C">CLICK HERE FOR PSEUDOCODE</font></b></summary>
   <pre>
     <code>
 graph = {}
