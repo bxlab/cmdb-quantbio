@@ -17,7 +17,7 @@ Using Python, simulate sequencing 3x coverage of a 1Mbp genome with 100bp reads.
 
 The start position of each read should have a uniform random probabilty at each possible starting position (0 through 999,900). You can record the coverage in an array of 1M positions.
 
-Now, plot the histogram of coverage across the genome. Overlay the histogram with a Poisson distribution with **lambda = 3**. Also overlay the distribution with a Normal distribution with a **mean of 3 and a standard deviation of 1.73** (which is the square root of 3).
+Now, plot the histogram of coverage across the genome. Overlay the histogram with a Poisson distribution with **lambda = 3**. Also overlay the distribution with a Normal distribution with a **mean of 3 and a std. dev. of 1.73** (which is the square root of 3).
 * **HINT**: For the poisson and normal distributions, you’ll need to find the probability of getting a certain coverage. This is called the probability mass function (PMF) of the distribution. Feel free to code this yourself using the appropriate equations, or you can take a look at the `scipy.stats.poisson.pmf()` function (more [here](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.poisson.html)) and the corressponding function for the normal distribution. Note that this will give you the *probability* of observing each coverage. What do we need to do to transform these probabilities into a frequency count comparable to those in our histogram?
 
 Upload this plot as `ex1_3x_cov.png` in your submission directory. **All plots should be clearly labelled and easily interpretable** (i.e. axis labels, legend describing the three things plotted, etc.).
@@ -58,14 +58,25 @@ for (x = 0; x < genomelength; x++)
 </details>
 
 #### **Step 1.3**
-Using the histogram from Q1.2, how much of the genome has not been sequenced (has 0x coverage)? How well does this match Poisson expectations? How well does the normal distribution fit the data?
+Using your results from Step 1.2, answer the following questions in your `README.md`:
+1. In your simulation, how much of the genome has not been sequenced (has 0x coverage)?
+2. How well does this match Poisson expectations? How well does the normal distribution fit the data?
 
 #### **Step 1.4**
-Now repeat the analysis with 10x coverage: 1. simulate the appropriate number of reads, 2. make a histogram, 3. overlay a Poisson distribution with lambda=10, 4. overlay with a Normal distribution with mean=10, standard deviation=3.16. 5. compute the number of bases with 0x coverage, and 6. evaluate how well it matches the Poisson expectation and Normal expectations.
+Now, repeat the analysis with 10x coverage:
+1. Simulate using the appropriate number of reads
+2. Make a histogram. Overlay a Poisson distribution with **lambda = 10**. Overlay a Normal distribution with *mean = 10 and std. dev. = 3.16**. Upload this plot as `ex1_10x_cov.png` in your submission directory.
+3. In your `README.md`, answer the following questions:
+  1. In your simulation, how much of the genome has not been sequenced (has 0x coverage)?
+  2. How well does this match Poisson expectations? How well does the normal distribution fit the data?
 
 #### **Step 1.5**
-Now repeat the analysis with 30x coverage: 1. simulate the appropriate number of reads, 2. make a histogram, 3. overlay a Poisson distribution with lambda=30, 4. overlay with a Normal distribution with mean=30, standard deviation=5.47 5. compute the number of bases with 0x coverage, and 6. evaluate how well it matches the Poisson expectation and Normal expectations.
-
+Now, repeat the analysis with 30x coverage:
+1. Simulate using the appropriate number of reads
+2. Make a histogram. Overlay a Poisson distribution with **lambda = 10**. Overlay a Normal distribution with *mean = 10 and std. dev. = 3.16**. Upload this plot as `ex1_30x_cov.png` in your submission directory.
+3. In your `README.md`, answer the following questions:
+  1. In your simulation, how much of the genome has not been sequenced (has 0x coverage)?
+  2. How well does this match Poisson expectations? How well does the normal distribution fit the data?
 
 ### Exercise 2. de Bruijn Graph construction
 
