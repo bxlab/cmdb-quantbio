@@ -11,3 +11,7 @@ Live-coding scripts for this assignment are in the [livecoding_resources](https:
 ## External Data
 
 Exercise 4 has students downloading [this](https://schatz-lab.org/appliedgenomics2023/assignments/assignment1/chr22.fa.gz) chr22 fasta file.
+
+## Old Assignment
+
+The 2022 version of this assignment can be accessed through commit [476a1fe](https://github.com/bxlab/cmdb-quantbio/tree/476a1fe).
