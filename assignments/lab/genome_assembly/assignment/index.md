@@ -9,41 +9,53 @@
 ### Exercise 1: Coverage Simulator 
 
 #### **Step 1.1**
-How many 100bp reads are needed to sequence a 1Mbp genome to 3x coverage?
+In your `README.md` for this assignment, answer the following question (show your work):
+1. How many 100bp reads are needed to sequence a 1Mbp genome to 3x coverage?
 
 #### **Step 1.2**
-Using Python, simulate sequencing 3x coverage of a 1Mbp genome with 100bp reads and plot the histogram of coverage. Note you do not need to actually output the sequences of the reads, you can just uniform randomly sample positions in the genome and record the coverage. You do not need to consider the strand of each read. The start position of each read should have a uniform random probabilty at each possible starting position (1 through 999,901). You can record the coverage in an array of 1M positions. Overlay the histogram with a Poisson distribution with lambda=3. Also overlay the distribution with a Normal distribution with a mean of 3 and a standard deviation of 1.73 (which is the square root of 3). Here is the pseudocode for the simulator:
+Using Python, simulate sequencing 3x coverage of a 1Mbp genome with 100bp reads. Note that you do not need to actually simulate the sequences of the reads, you can just randomly sample positions in the genome and record the coverage. You do not need to consider the strand of each read.
 
-```
-num_reads = calculate_number_of_reads(genomesize, readlength, coverage)
-​
-## use an array to keep track of the coverage at each position in the genome
-genome_coverage = initialize_array_with_zero(genomesize)
-​
-for (i = 0; i < num_reads; i++)
-{
-  startpos = uniform_random(1,genomelength-readlength)
-  endpos = startpos + readlength - 1
-  for (x = startpos; x <= endpos; x++)
-  {
-    genomecoverage[x] = genomecoverage[x] + 1
-  }
-}
-​
-maxcoverage = max(genomecoverage)
-​
-## use an array count how many positions have 0x coverage, have 1x coverage, have 2x coverage, ...
-histogram = initialize_array_with_zero(maxcoverage)
-​
-for (x = 0; x < genomelength; x++)
-{
-  cov = genomecoverage[x]
-  histogram[cov] = histogram[cov] + 1
-}
-​
-## now plot the histogram
-...
-```
+The start position of each read should have a uniform random probabilty at each possible starting position (0 through 999,900). You can record the coverage in an array of 1M positions.
+
+Now, plot the histogram of coverage across the genome. Overlay the histogram with a Poisson distribution with **lambda = 3**. Also overlay the distribution with a Normal distribution with a **mean of 3 and a standard deviation of 1.73** (which is the square root of 3).
+* **HINT**: For the poisson and normal distributions, you’ll need to find the probability of getting a certain coverage. This is called the probability mass function (PMF) of the distribution. Feel free to code this yourself using the appropriate equations, or you can take a look at the `scipy.stats.poisson.pmf()` function (more [here](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.poisson.html)) and the corressponding function for the normal distribution. Note that this will give you the *probability* of observing each coverage. What do we need to do to transform these probabilities into a frequency count comparable to those in our histogram?
+
+Upload this plot as `ex1_3x_cov.png` in your submission directory. **All plots should be clearly labelled and easily interpretable** (i.e. axis labels, legend describing the three things plotted, etc.).
+
+<details><summary><bold>Pseudocode</bold></summary>
+  <pre>
+    <code>
+      num_reads = calculate_number_of_reads(genomesize, readlength, coverage)
+      ​
+      ## use an array to keep track of the coverage at each position in the genome
+      genome_coverage = initialize_array_with_zero(genomesize)
+      ​
+      for (i = 0; i < num_reads; i++)
+      {
+        startpos = uniform_random(1,genomelength-readlength)
+        endpos = startpos + readlength - 1
+        for (x = startpos; x <= endpos; x++)
+        {
+          genomecoverage[x] = genomecoverage[x] + 1
+        }
+      }
+      ​
+      maxcoverage = max(genomecoverage)
+      ​
+      ## use an array count how many positions have 0x coverage, have 1x coverage, have 2x coverage, ...
+      histogram = initialize_array_with_zero(maxcoverage)
+      ​
+      for (x = 0; x < genomelength; x++)
+      {
+        cov = genomecoverage[x]
+        histogram[cov] = histogram[cov] + 1
+      }
+      ​
+      ## now plot the histogram
+      ...
+    </code>
+  </pre>
+</details>
 
 #### **Step 1.3**
 Using the histogram from Q1.2, how much of the genome has not been sequenced (has 0x coverage)? How well does this match Poisson expectations? How well does the normal distribution fit the data?
@@ -188,60 +200,4 @@ Using the output from 4.2, plot the kmer frequency spectrum: x-axis is the kmer 
 
 Note: For this analysis, you should separately consider all of the kmers in the genome, e.g. the denominator will be G-k+1. When computing the unique percentage, use the number of unique kmers as the numerator. When computing repetitive percentages, make sure to separately count each instance of a repetitve kmer. For example the string "GCATCATCAT" has kmers: GCA, CAT, ATC, TCA, CAT, ATC, TCA, CAT. Of these 1/8 (12.5%) are unique and 7/8 (87.5%) are repetitive
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br><br>
