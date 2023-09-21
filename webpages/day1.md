@@ -20,7 +20,7 @@ Data used today: [Dropbox link](https://www.dropbox.com/scl/fi/vt435kvankioc7ft4
 
 ## Homework Assignment: 
 
-[Day 1 Homework](../assignments/bootcamp/day1homework/day1homework.md)
+[Day 1 Homework](../assignments/bootcamp/python_fundamentals/day1homework.html)
 
 ## Daily Reflection
 
