@@ -83,26 +83,17 @@ Now, repeat the analysis with 30x coverage:
 
 #### **Step 2.1**
 
-Write a script to draw the de Bruijn graph for the following reads using k=3 (assume all reads are from the forward strand, no sequencing errors, complete coverage of the genome). You may find [graphviz](https://graphviz.org/) to be helpful (see below).
+Next, you're going to generate your own de Bruijn graph using a provided set of reads. Copy the list of reads below into your code:
 
 ```
-ATTCA
-ATTGA
-CATTG
-CTTAT
-GATTG
-TATTT
-TCATT
-TCTTA
-TGATT
-TTATT
-TTCAT
-TTCTT
-TTGAT
+reads = ['ATTCA', 'ATTGA', 'CATTG', 'CTTAT', 'GATTG', 'TATTT', 'TCATT', 'TCTTA', 'TGATT', 'TTATT', 'TTCAT', 'TTCTT', 'TTGAT']
 ```
-Here is some pseudocode for de Bruijn graph construction: 
 
-```
+Write code to find all of the edges in the de Bruijn graph corresponding to the provided reads using **k = 3** (assume all reads are from the forward strand, no sequencing errors, complete coverage of the genome). Each edge should be of the format `AAT -> TTC`. Write all edges to a file, with each edge as its own line in the file.
+
+<details><summary><b>CLICK HERE FOR PSEUDOCODE</b></summary>
+  <pre>
+    <code>
 graph = {}
 
 for each read
@@ -114,15 +105,38 @@ for each read
 for each kmer1 in graph
    for each kmer2 in graph[kmer1]
       print "kmer1 -> kmer2"
-```
+    </code>
+  </pre>
+</details>
 
 #### **Step 2.2**
 
-Assume that the maximum number of occurrences of any 3-mer in the actual genome is 4 using the k-mers from Q2.1. Write one possible genome sequence
+Now that we know all of the edges, we can go about actually visualizing the de Bruijn graph. For this task, we'll be using the [graphviz](https://graphviz.org/) command line tool.
+
+Create a `conda` environment for this assignment and install `graphviz`:
+
+```
+conda create -n graphviz -c conda-forge graphviz
+conda activate graphviz
+```
 
 #### **Step 2.3**
 
-In a few sentences, what would it take to accurately reconstruct the sequence of the genome?
+Graphviz's command line tool is called `dot`. Read more about how to use `dot` and the file format it's expecting [here](https://graphviz.org/doc/info/command.html). **NOTE**: We're going to want to produce a *directed* graph.
+
+Based on what you've read, modify your code from Step 2.1 to output the edges in a format `dot` can use.
+
+#### **Step 2.4**
+
+Now, use `dot` to produce a directed graph. Upload this graph as `ex2_digraph.png` in your submission directory.
+
+#### **Step 2.5**
+
+Assume that the maximum number of occurrences of any 3-mer in the actual genome is 4. Using your graph from Step 2.4,  write one possible genome sequence that would produce these reads. Record your answer in your `README.md`.
+
+#### **Step 2.6**
+
+In a few sentences, what would it take to accurately reconstruct the sequence of the genome? Record your answer in your `README.md`.
 
 ### Exercise 3: Why Genomics?
 
