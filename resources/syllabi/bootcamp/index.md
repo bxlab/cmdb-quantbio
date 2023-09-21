@@ -228,7 +228,7 @@ You may be familiar with ChatGPT and other large language models. After trying e
 
 <a name="Grading"></a>
 <header><h2>Grading</h2></header>
-The grading for this course is based on <b>reasonable completion</b>. For each assignment, students will be told which exercises are required and which are optoinal. To demonstrate completion and get TA feedback, students will upload certain scripts and results (outputs or plots, etc.) to their personal Github repositories, qbb2022-answers.<br /><br />
+The grading for this course is based on <b>reasonable completion</b>. For each assignment, students will be told which exercises are required and which are optoinal. To demonstrate completion and get TA feedback, students will upload certain scripts and results (outputs or plots, etc.) to their personal Github repositories, qbb2023-answers.<br /><br />
 
 TAs will verify that the student’s submitted work shows a reasonable level of individual effort.Students will have one week post-bootcamp to submit any leftover materials, though we encourage you to complete these assignments ASAP to ease your workload as you move on to your other courses and rotations. Letter grades will be assigned in line with the level of completion. While student presentations and the content of daily reflections will not affect grades in any way, failure to turn in daily reflections has the potential to lower the final grade.<br /><br />
 
