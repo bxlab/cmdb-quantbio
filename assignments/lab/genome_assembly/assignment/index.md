@@ -89,7 +89,7 @@ Next, you're going to generate your own de Bruijn graph using a provided set of 
 reads = ['ATTCA', 'ATTGA', 'CATTG', 'CTTAT', 'GATTG', 'TATTT', 'TCATT', 'TCTTA', 'TGATT', 'TTATT', 'TTCAT', 'TTCTT', 'TTGAT']
 ```
 
-Write code to find all of the edges in the de Bruijn graph corresponding to the provided reads using **k = 3** (assume all reads are from the forward strand, no sequencing errors, complete coverage of the genome). Each edge should be of the format `AAT -> TTC`. Write all edges to a file, with each edge as its own line in the file.
+Write code to find all of the edges in the de Bruijn graph corresponding to the provided reads using **k = 3** (assume all reads are from the forward strand, no sequencing errors, complete coverage of the genome). Each edge should be of the format `ATT -> TTC`. Write all edges to a file, with each edge as its own line in the file.
 
 <details><summary><b><font color="##18BC9C">CLICK HERE FOR PSEUDOCODE</font></b></summary>
   <pre>
