@@ -22,7 +22,7 @@ Now, plot the histogram of coverage across the genome. Overlay the histogram wit
 
 Upload this plot as `ex1_3x_cov.png` in your submission directory. **All plots should be clearly labelled and easily interpretable** (i.e. axis labels, legend describing the three things plotted, etc.).
 
-<details><summary><bold>Pseudocode</bold></summary>
+<details><summary>CLICK HERE FOR PSEUDOCODE</summary>
   <pre>
     <code>
       num_reads = calculate_number_of_reads(genomesize, readlength, coverage)
