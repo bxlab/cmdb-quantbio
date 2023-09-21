@@ -12,7 +12,7 @@
 How many 100bp reads are needed to sequence a 1Mbp genome to 3x coverage?
 
 #### **Step 1.2**
-In the language of your choice, simulate sequencing 3x coverage of a 1Mbp genome with 100bp reads and plot the histogram of coverage. Note you do not need to actually output the sequences of the reads, you can just uniform randomly sample positions in the genome and record the coverage. You do not need to consider the strand of each read. The start position of each read should have a uniform random probabilty at each possible starting position (1 through 999,901). You can record the coverage in an array of 1M positions. Overlay the histogram with a Poisson distribution with lambda=3. Also overlay the distribution with a Normal distribution with a mean of 3 and a standard deviation of 1.73 (which is the square root of 3). Here is the pseudocode for the simulator:
+Using Python, simulate sequencing 3x coverage of a 1Mbp genome with 100bp reads and plot the histogram of coverage. Note you do not need to actually output the sequences of the reads, you can just uniform randomly sample positions in the genome and record the coverage. You do not need to consider the strand of each read. The start position of each read should have a uniform random probabilty at each possible starting position (1 through 999,901). You can record the coverage in an array of 1M positions. Overlay the histogram with a Poisson distribution with lambda=3. Also overlay the distribution with a Normal distribution with a mean of 3 and a standard deviation of 1.73 (which is the square root of 3). Here is the pseudocode for the simulator:
 
 ```
 num_reads = calculate_number_of_reads(genomesize, readlength, coverage)
@@ -98,7 +98,7 @@ Assume that the maximum number of occurrences of any 3-mer in the actual genome 
 
 #### **Step 2.3**
 
-In a few sentences, what would it take to fully resolve the genome?
+In a few sentences, what would it take to accurately reconstruct the sequence of the genome?
 
 ### Exercise 3: Why Genomics?
 
