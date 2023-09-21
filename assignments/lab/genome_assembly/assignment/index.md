@@ -6,7 +6,7 @@
 
 ## Exercises 
 
-### Exercise 1: Coverage Simulator 
+### Exercise 1: Coverage simulator 
 
 #### **Step 1.1**
 In your `README.md` for this assignment, answer the following question (show your work):
@@ -78,7 +78,7 @@ Now, repeat the analysis with 30x coverage:
    1. In your simulation, how much of the genome has not been sequenced (has 0x coverage)?
    2. How well does this match Poisson expectations? How well does the normal distribution fit the data?
 
-### Exercise 2. de Bruijn Graph construction
+### Exercise 2: De Bruijn graph construction
 
 #### **Step 2.1**
 
@@ -121,13 +121,14 @@ conda activate graphviz
 
 #### **Step 2.3**
 
-Graphviz's command line tool is called `dot`. Read more about how to use `dot` and the file format it's expecting [here](https://graphviz.org/doc/info/command.html). **NOTE**: We're going to want to produce a *directed* graph.
+Graphviz's command line tool is called `dot`. Read more about how to use `dot` and the file format it's expecting [here](https://graphviz.org/doc/info/command.html).
+* **NOTE**: We're going to want to produce a *directed* graph.
 
 Based on what you've read, modify your code from Step 2.1 to output the edges in a format `dot` can use.
 
 #### **Step 2.4**
 
-Now, use `dot` to produce a directed graph. Upload this graph as `ex2_digraph.png` in your submission directory.
+Now, use `dot` to produce a directed graph. Upload this graph as `ex2_digraph.png` in your submission directory. You do NOT need to upload the text file of edges you used to make the graph.
 
 #### **Step 2.5**
 
@@ -137,37 +138,45 @@ Assume that the maximum number of occurrences of any 3-mer in the actual genome 
 
 In a few sentences, what would it take to accurately reconstruct the sequence of the genome? Record your answer in your `README.md`.
 
-### Exercise 3: Why Genomics?
+### Exercise 3: Why genomics?
 
 #### **Step 3.1**
 
-Use ChatGPT (or Bard or your favorite LLM) to write an essay on why you are interested in genomics. Make sure to ask for references. Make sure to include both your prompt(s) and the output from the LLM
+Use ChatGPT (or Bard or your favorite LLM) to write an essay on why you are interested in genomics. Make sure to ask for references. Record both your prompt(s) and the output from the LLMin your `README.md`.
 ​
 #### **Step 3.2**
 
-Comment on the output from the LLM - does it make logical sense, does it include any phrases you would not have written, do the citated papers exist and support the claims from the LLM?
+In your `README.md`, comment on the output from the LLM: Does it make logical sense? Does it include any phrases you would not have written? Do the cited papers exist and support the claims from the LLM?
 
-## Bonus Exercises
 
-### Exercise 4: K-mer Uniqueness 
+### Exercise 4: K-mer uniqueness (OPTIONAL)
 
-Download the human chomosome 22 from here: [https://schatz-lab.org/appliedgenomics2023/assignments/assignment1/chr22.fa.gz](https://schatz-lab.org/appliedgenomics2023/assignments/assignment1/chr22.fa.gz)
+Download the human chomosome 22 DNA sequence using the following command:
 
-A kmer is a substring of length k. For example, the string GATTACA, has these 3-mers: GAT, ATT, TTA, TAC, ACA
-​
-A string of length G has G - k + 1 kmers. For long strings, G - k + 1 is nearly the same as G e.g. for human using 19mers, 3,000,000,000 vs 2,999,999,986
-​
+```
+wget https://schatz-lab.org/appliedgenomics2023/assignments/assignment1/chr22.fa.gz
+```
+#### **Background**
+
+A kmer is a substring of length k. For example, the string GATTACA, has these 3-mers: GAT, ATT, TTA, TAC, ACA.
+
+A string of length G has G - k + 1 kmers. For long strings, G - k + 1 is nearly the same as G e.g. for human using 19mers, 3,000,000,000 vs 2,999,999,986.
+
 While a string of length G has G-k+1 kmers, there may be many fewer *distinct* kmers. For example, in the string "GCATCATCATCATCATCATCAT..." the kmers are: GCA, CAT, ATC, TCA, CAT, ATC, TCA, CAT, ATC, TCA, CAT, ... As such there are only 4 disinct kmers (GCA, CAT, ATC, TCA). Of these GCA occurs once and the others occur many times.
 
 ##### **Step 4.1** 
 
-How many As, Cs, Gs, Ts and Ns are found in the entire chromosome? If needed convert lowercase letters to uppercase, and any other character can be converted to N.
+How many As, Cs, Gs, Ts and Ns are found in the entire chromosome? If needed, convert lowercase letters to uppercase. Any other character can be converted to N. Record your answer in your `README.md`.
 
 #### **Step 4.2**
 
-In the language of your choice, tally the frequency of 19-mers in the chromosome, and output the kmer frequency spectrum upto 1000 e.g. how many kmers occur 1 time, how many occur 2 times, how many occur 3 times, etc. For this, convert lowercase letters to uppercase, and any character that is not ACG or T can be converted to A (especially N characters). We recommend you use a dictionary (or hash table) to tally the frequencies using this pseudocode. In your writeup, show the kmer frequency spectrum for 1 to 20, e.g. how many kmers occur 1 time, how many occur 2, ..., how many occur 20 times. This can be done with the unix command `head`:
+Using Python, tally the frequency of all of the different 19-mers in the chromosome, and calculate the kmer frequency spectrum up to 1000 (e.g. how many kmers occur 1 time, how many occur 2 times, how many occur 3 times, etc.). Store this in a list. For this, convert lowercase letters to uppercase, and convert any character that is not A, C, G or T to A (especially N characters). We recommend you use a dictionary to tally the frequencies using this pseudocode.
 
-```
+In your `README.md`, show the kmer frequency spectrum for 1 to 20, e.g. how many kmers occur 1 time, how many occur 2, ..., how many occur 20 times.
+
+<details><summary><b><font color="#18BC9C">CLICK HERE FOR PSEUDOCODE</font></b></summary>
+  <pre>
+    <code>
 ## initialize kmer length
 k=19
 ​
@@ -212,17 +221,21 @@ for (i = 1; i <= max_frequency; i++)
     print_to_file(i, freq)
   }
 }
-```
+    </code>
+  </pre>
+</details>
 
 #### **Step 4.3** 
 
-Using the output from 4.2, plot the kmer frequency spectrum: x-axis is the kmer frequency, and the y-axis is the number of kmers that occur x times. Make sure to plot both the x and y-axis in log space.
+Using your list from Step 4.2, plot the kmer frequency spectrum: x-axis is the kmer frequency, and the y-axis is the number of kmers that occur at each of those frequencies times. Make sure to plot both the x and y-axis in log space. Upload this graph as `ex4_kmer_spec.png` in your submission directory.
 
 #### **Step 4.4** 
 
-**a)** What percent of the genome is unique, e.g. what percent of the kmers occur 1 time. \
-**b)** What percent of the genome is repetitive (occurs more than 1 time). c) What percent occurs more than 1000 times? 
+Using your list from Step 4.2, answer the following questions Record your answers in your `README.md`.
+1. What percent of the genome is unique (e.g. what percent of the kmers occur 1 time)?
+2. What percent of the genome is repetitive (occurs more than 1 time)?
+3. What percent occurs more than 1000 times? 
 
-Note: For this analysis, you should separately consider all of the kmers in the genome, e.g. the denominator will be G-k+1. When computing the unique percentage, use the number of unique kmers as the numerator. When computing repetitive percentages, make sure to separately count each instance of a repetitve kmer. For example the string "GCATCATCAT" has kmers: GCA, CAT, ATC, TCA, CAT, ATC, TCA, CAT. Of these 1/8 (12.5%) are unique and 7/8 (87.5%) are repetitive
+* **Note**: For this analysis, you should separately consider all of the kmers in the genome, e.g. the denominator will be G-k+1. When computing the unique percentage, use the number of unique kmers as the numerator. When computing repetitive percentages, make sure to separately count each instance of a repetitve kmer. For example the string "GCATCATCAT" has kmers: GCA, CAT, ATC, TCA, CAT, ATC, TCA, CAT. Of these 1/8 (12.5%) are unique and 7/8 (87.5%) are repetitive
 
 <br><br>
