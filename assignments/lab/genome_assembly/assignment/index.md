@@ -22,37 +22,37 @@ Now, plot the histogram of coverage across the genome. Overlay the histogram wit
 
 Upload this plot as `ex1_3x_cov.png` in your submission directory. **All plots should be clearly labelled and easily interpretable** (i.e. axis labels, legend describing the three things plotted, etc.).
 
-<details><summary>**CLICK HERE FOR PSEUDOCODE**</summary>
+<details><summary><b>CLICK HERE FOR PSEUDOCODE</b></summary>
   <pre>
     <code>
-      num_reads = calculate_number_of_reads(genomesize, readlength, coverage)
-      ​
-      ## use an array to keep track of the coverage at each position in the genome
-      genome_coverage = initialize_array_with_zero(genomesize)
-      ​
-      for (i = 0; i < num_reads; i++)
-      {
-        startpos = uniform_random(1,genomelength-readlength)
-        endpos = startpos + readlength - 1
-        for (x = startpos; x <= endpos; x++)
-        {
-          genomecoverage[x] = genomecoverage[x] + 1
-        }
-      }
-      ​
-      maxcoverage = max(genomecoverage)
-      ​
-      ## use an array count how many positions have 0x coverage, have 1x coverage, have 2x coverage, ...
-      histogram = initialize_array_with_zero(maxcoverage)
-      ​
-      for (x = 0; x < genomelength; x++)
-      {
-        cov = genomecoverage[x]
-        histogram[cov] = histogram[cov] + 1
-      }
-      ​
-      ## now plot the histogram
-      ...
+num_reads = calculate_number_of_reads(genomesize, readlength, coverage)
+​
+## use an array to keep track of the coverage at each position in the genome
+genome_coverage = initialize_array_with_zero(genomesize)
+​
+for (i = 0; i < num_reads; i++)
+{
+  startpos = uniform_random(1,genomelength-readlength)
+  endpos = startpos + readlength - 1
+  for (x = startpos; x <= endpos; x++)
+  {
+    genomecoverage[x] = genomecoverage[x] + 1
+  }
+}
+​
+maxcoverage = max(genomecoverage)
+​
+## use an array count how many positions have 0x coverage, have 1x coverage, have 2x coverage, ...
+histogram = initialize_array_with_zero(maxcoverage)
+​
+for (x = 0; x < genomelength; x++)
+{
+  cov = genomecoverage[x]
+  histogram[cov] = histogram[cov] + 1
+}
+​
+## now plot the histogram
+...
     </code>
   </pre>
 </details>
