@@ -8,8 +8,8 @@ Due Date: Friday, Sept. 29, 2023
 
 [Lecture Slides](https://www.dropbox.com/scl/fi/xpu9jwqlqdgbdv5b8kwv3/2023.09.21.QBLab.GenomeSequencing.pptx?rlkey=65wan8x0kywpm99b1ehgp0mi0&dl=0)
 
-<!-- ## Homework Assignment
+## Homework Assignment
 
-Before you do anything else, make a `week2` directory in your `qbb2023-answers` directory for this assignment. This is where you will be putting and uploading all of your code/plots/etc. for this assignment.
+As always, before you do anything else, create a `week2` directory in your `qbb2023-answers` directory for this assignment, and create a `README.md` file in that `week2` directory. This is where you will be putting and uploading all of your code/plots/etc. for this assignment.
 
-[Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/genome_assembly/assignment) -->
+[Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/genome_assembly/assignment)
