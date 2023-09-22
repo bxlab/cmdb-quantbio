@@ -229,7 +229,7 @@ Using your list from Step 4.2, answer the following questions. Record your answe
 
 ## Submission
 
-1. Python script with all code for the assignment (**4 points total)
+1. Python script with all code for the assignment (**4 points total**)
   * Code to simulate read coverage (**1.5 point**)
   * Code to calculate Poisson and Normal distribution expectations (**0.5 point**)
   * Code to count 0 coverage occurences (**0.5 point**)
