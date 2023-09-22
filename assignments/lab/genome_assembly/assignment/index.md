@@ -92,7 +92,7 @@ Write code to find all of the edges in the de Bruijn graph corresponding to the 
 graph = set()
 
 for each read:
-  for i in range(len(read) - k - 1):
+  for i in range(len(read) - k):
      kmer1 = read[i: i+k]
      kmer2 = read[i+1: i+1+k]
      add "kmer1 -> kmer2" to graph
