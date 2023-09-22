@@ -117,8 +117,8 @@ Fit your model, evaluate the model fit, and test your hypothesis. Record your hy
   * Answer to questions in Step 2.3 (**1 point**)
   * Answer to question in Step 2.4 (**0.5 point**)
   * Answer to questions in Step 2.6 (**1 point**)
-4. `ex2_a.png` clearly labelled and easily interpretable (**0.5 point**)
-5. `ex2_b.png` clearly labelled and easily interpretable (**0.5 point**)
+3. `ex2_a.png` clearly labelled and easily interpretable (**0.5 point**)
+4. `ex2_b.png` clearly labelled and easily interpretable (**0.5 point**)
 
 **Total Points: 10**
 
