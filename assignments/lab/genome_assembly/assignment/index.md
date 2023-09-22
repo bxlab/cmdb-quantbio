@@ -123,7 +123,7 @@ Based on what you've read, modify your code from Step 2.1 to output the edges in
 
 #### **Step 2.4**
 
-Now, use `dot` to produce a directed graph. Upload this graph as `ex2_digraph.png` in your submission directory. You do NOT need to upload the text file of edges you used to make the graph.
+Now, use `dot` to produce a directed graph. Record the command you used in your `READMD.md`. Upload this graph as `ex2_digraph.png` in your submission directory. You do NOT need to upload the text file of edges you used to make the graph. 
 
 #### **Step 2.5**
 
@@ -226,5 +226,29 @@ Using your list from Step 4.2, answer the following questions. Record your answe
 3. What percent occurs more than 1000 times? 
 
 * **Note**: For this analysis, you should separately consider all of the kmers in the genome, e.g. the denominator will be G-k+1. When computing the unique percentage, use the number of unique kmers as the numerator. When computing repetitive percentages, make sure to separately count each instance of a repetitve kmer. For example the string "GCATCATCAT" has kmers: GCA, CAT, ATC, TCA, CAT, ATC, TCA, CAT. Of these 1/8 (12.5%) are unique and 7/8 (87.5%) are repetitive
+
+## Submission
+
+1. Python script with all code for the assignment (**4 points total)
+  * Code to simulate read coverage (**1.5 point**)
+  * Code to calculate Poisson and Normal distribution expectations (**0.5 point**)
+  * Code to count 0 coverage occurences (**0.5 point**)
+  * Code to plot `ex1_*_cov.png` (**0.5 point**)
+  * Code to generate the edges of the de Bruijn graph (**1 point**)
+2. `README.md` file with answers to questions in the assignment (**4 points total**)
+  * Answer to question in Step 1.1 (**0.5 point**)
+  * Answer to questions in Steps 1.3 - 1.5 (**1 point**)
+  * Answer to question in Step 2.4 (**0.5 point**)
+  * Answer to question in Step 2.5 (**0.5 point**)
+  * Answer to question in Step 2.6 (**0.5 point**)
+  * Answer to question in Step 3.1 (**0.5 point**)
+  * Answer to question in Step 3.2 (**0.5 point**)
+3. Figures for exercises 1 and 2 (**2 points total**)
+  * `ex1_3x_cov.png` clearly labelled (**0.5 point**)
+  * `ex1_10x_cov.png` clearly labelled (**0.5 point**)
+  * `ex1_30x_cov.png` clearly labelled (**0.5 point**)
+  * `ex2_digraph.png` (just the output of `dot`) (**0.5 point**)
+
+**Total Points: 10**
 
 <br><br>
