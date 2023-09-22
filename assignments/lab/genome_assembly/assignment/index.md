@@ -2,7 +2,7 @@
 
 ## Assignment Overview
 
-***FILL IN***
+In today’s assignment, you will be simulating sequencing coverage data across a genome. The goal is to understand how probability distributions can inform the amount of coverage needed to reconstruct an entire genome. You will also be introduced to genome assembly, by constructing a de Bruijn graph assembly. This assembly will be visualized as a directed graph using `graphviz`.
 
 ## Exercises 
 
