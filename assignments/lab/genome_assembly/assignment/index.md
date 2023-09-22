@@ -30,28 +30,24 @@ num_reads = calculate_number_of_reads(genomesize, readlength, coverage)
 ## use an array to keep track of the coverage at each position in the genome
 genome_coverage = initialize_array_with_zero(genomesize)
 ​
-for (i = 0; i < num_reads; i++)
-{
+for i in range(len(num_reads)):
+
   startpos = uniform_random(1,genomelength-readlength)
   endpos = startpos + readlength - 1
-  for (x = startpos; x <= endpos; x++)
-  {
+  for x in range(startpos, endpos):
     genomecoverage[x] = genomecoverage[x] + 1
-  }
-}
+
+## get the range of coverages observed
+maxcoverage = max(genomecoverage)​
+xs = list(range(0, maxcoverage+1))
+
+## Get the poisson pmf at each of these
+poisson_estimates = get_poisson_estimates(xs, lambda = genome_coverage)
+
+## Get normal pdf at each of these (i.e. the density between each adjacent pair of points)
+normal_estimates = get_normal_estimates(xs, mean = genome_coverage, stddev = sqrt(genome_coverage))
 ​
-maxcoverage = max(genomecoverage)
-​
-## use an array count how many positions have 0x coverage, have 1x coverage, have 2x coverage, ...
-histogram = initialize_array_with_zero(maxcoverage)
-​
-for (x = 0; x < genomelength; x++)
-{
-  cov = genomecoverage[x]
-  histogram[cov] = histogram[cov] + 1
-}
-​
-## now plot the histogram
+## now plot the histogram and probability distributions
 ...
     </code>
   </pre>
@@ -93,17 +89,16 @@ Write code to find all of the edges in the de Bruijn graph corresponding to the 
 <details><summary><b><font color="#18BC9C">CLICK HERE FOR PSEUDOCODE</font></b></summary>
   <pre>
     <code>
-graph = {}
+graph = set()
 
-for each read
-  for (i = 0; i < read.len() - k - 1; i++)
-     kmer1 = read.substr(i, k)
-     kmer2 = read.substr(i+1, k)
-     graph[kmer1][kmer2] = 1
+for each read:
+  for i in range(len(read) - k - 1):
+     kmer1 = read[i: i+k]
+     kmer2 = read[i+1: i+1+k]
+     add "kmer1 -> kmer2" to graph
 
-for each kmer1 in graph
-   for each kmer2 in graph[kmer1]
-      print "kmer1 -> kmer2"
+for each edge in graph:
+   print edge
     </code>
   </pre>
 </details>
@@ -180,47 +175,41 @@ In your `README.md`, show the kmer frequency spectrum for 1 to 20, e.g. how many
 ## initialize kmer length
 k=19
 ​
-## read genome, convert to upper canse and convert non-DNA to 'A'
+## read genome, convert to upper case and convert non-DNA to 'A'
 genome_string = read_from_file("chr22.fa")
 ​
 ## dictionary that maps a kmer (like GAT) to a frequency (like 3)
-kmer_frequency = initialize_dictionary()
+kmer_frequency = {}
 ​
 ## now scan the genome, extract kmers, and tally up their frequencies
-for(i = 0; i < length(genome_string) - k + 1; i++)
-{
-  kmer = substring(genome_string, i, k)  
+for i in range(len(genome_string)-k+1):
+  kmer = genome_string[i, i+k]  
   kmer_frequency[kmer] = kmer_frequency[kmer] + 1
-}
 ​
 ## now tally the frequencies in a dictionary that maps kmer frequency to count
 ## also determine the maximum kmer frequency
 ​
-tally = initialize_dictionary()
+tally = {}
 all_kmers = kmer_frequency.keys()
 max_frequency = 0
 ​
-for (i = 0; i < length(all_kmers); i++)
-{
-  kmer = all_kmers[i]
+for each kmer in all_kmers:
+
   freq = kmer_frequency[kmer]
   tally[freq] = tally[freq] + 1
   
-  if (freq > max_frequency)
-  {
+  if freq > max_frequency:
     max_frequency = freq
-  }
-}
-​
+
+freq_spectrum = []​
+
 ## now print in sorted order
-for (i = 1; i <= max_frequency; i++)
-{
-  if (tally.has_key(i))
-  {
+for i in range(1, max_frequency+1):
+  if i in tally:
     freq = tally[i]
-    print_to_file(i, freq)
-  }
-}
+    append freq to freq_spectrum
+  else:
+    append 0 to freq_spectrum
     </code>
   </pre>
 </details>
