@@ -127,7 +127,7 @@ Now, use `dot` to produce a directed graph. Record the command you used in your 
 
 #### **Step 2.5**
 
-Assume that the maximum number of occurrences of any 3-mer in the actual genome is 4. Using your graph from Step 2.4,  write one possible genome sequence that would produce these reads. Record your answer in your `README.md`.
+Assume that the maximum number of occurrences of any 3-mer in the actual genome is **five**. Using your graph from Step 2.4,  write one possible genome sequence that would produce these reads. Record your answer in your `README.md`.
 
 #### **Step 2.6**
 
