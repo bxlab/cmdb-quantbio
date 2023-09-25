@@ -1,15 +1,4 @@
-# Assignment 2: Sequence Alignment
-Assignment Date: Friday, Sept. 16, 2022 <br>
-Due Date: Friday, Sept. 23, 2022 @ 1:00pm ET <br>
-
-## Lecture and Live-Coding
-
-**Slides** are available here: [Lecture slides](https://docs.google.com/presentation/d/1IRm-2vsaJLWN2YV0us_UHHwVVDEfrvXu8zW-9zc0Jec/edit?usp=sharing)
-
-**Blank Live-coding script** is available here: `~/cmdb-quantbio/assignments/lab/alignment/slides_asynchronous_or_livecoding_resources/needleman-wunsch_livecoding_empty.py`
-
-**Master Live-coding script** is available here: `~/cmdb-quantbio/assignments/lab/alignment/slides_asynchronous_or_livecoding_resources/needleman-wunsch_livecoding_master.py`<br><br>
-
+# Sequence Alignment
 
 ## Assignment Overview
 
@@ -27,7 +16,9 @@ After copying the zipped folder, you'll need to extract it with `tar -zxvf <file
 
 You'll be working FASTA files in today's lab. This is the standard file format used to store nucleotide and amino acid sequences, and there's a good chance you'll encounter this format again in your Ph.D. (read more [here](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp)). Unfortunately, reading these files into Python in a meaningful way is not a trivial task, so we've put together some code to make this easier. Copy the `~/cmdb-quantbio/resources/code/fasta.py` file into your current assignment directory. In your python script for this assignment, you can import the `readFASTA`  function using `from fasta import readFASTA`. If you're interested in how this function works, you're certainly encouraged to take a look at it in the `fasta.py` file.<br><br>
 
-## Assignment
+## Exercises
+
+### Exercise 1: Needleman-Wunsch Algorithm
 
 Write a script to perform global alignment between two sequences using a given scoring matrix and gap penalty. Your script will take four inputs:
 1. A FASTA-style file containing two sequences to align
@@ -83,6 +74,9 @@ Sequence 2 alignment: 'ATTA--ACTTA'
 
 Write the alignment to the output file specified in the command line, and print out the additional information requested (the number of gaps in each sequence and the score of the  alignment).<br><br>
 
+### Exercise 2: Smith-Waterman (OPTIONAL)
+
+If you finish early and you want to try something a little bit harder, try to implement the Smith-Waterman algorithm for local alignment in a new script.
 
 ## Submission
 
@@ -92,6 +86,3 @@ For this assignment, you should submit four things:
 3. A text file containing your amino acid sequence alignment
 4. A markdown or text file detailing the number of gaps in each sequence (including leading and trailing gaps) and alignment score for both of the above alignments<br><br>
 
-## Just for fun
-
-If you finish early and you want to try something a little bit harder, try to implement the Smith-Waterman algorithm for local alignment in a new script.<br><br>
