@@ -1,1 +1,0 @@
-Lecture Slides are updated here: https://docs.google.com/presentation/d/1IRm-2vsaJLWN2YV0us_UHHwVVDEfrvXu8zW-9zc0Jec/edit?usp=sharing
