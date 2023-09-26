@@ -1,4 +1,4 @@
-# QuantLab Week 2 - Genome Assembly
+# QuantLab Week 3 - Sequence Alignment
 
 Assignment Date: Friday, Sept. 29, 2023
 
