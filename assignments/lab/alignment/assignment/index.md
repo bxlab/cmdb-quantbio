@@ -38,7 +38,7 @@ You'll run your script twice:
 
 **NOTE**: The DNA sequences are fairly long, and as such the DNA alignment may take a few minutes to run. We recommend testing your code with the protein alignment first (or even just a couple of small test sequences), and then running the DNA alignment when you're confident it's working.<br><br>
 
-#### Step 1.1: Read in your parameters
+#### **Step 1.1: Read in your parameters**
 
 Use `sys.argv` to read in the parameters you need to run your script from the command line. When reading in the fasta file, you can use `readFASTA` to store the sequence ids and sequences as follows:
 
@@ -53,19 +53,19 @@ For the scoring matrix, it probably makes sense to store it in a pandas datafram
 
 *HINT*: Uh oh! Looks like the scoring matrices don't use a consistent field separator... Maybe `pd.read_csv()` has an argument that let's you separate columns based on an arbitrary amount of whitespace...<br><br>
 
-#### Step 1.2: Initializing matrices
+#### **Step 1.2: Initializing matrices**
 
 You'll need two matrices to carry out the Needleman-Wunsch algorithm: an F-matrix that stores the score of each "optimal" sub-alignment (this is the one we created in class), as well as a traceback matrix that allows you to determine the optimal global alignment (as a path through this matrix). Initialize two empty matrices for these purposes.
 
 *HINT*: With sequence 1 of length *m* and sequence 2 of length *n*, both matrices should be of size (*m+1*)×(*n+1*), to account for potential leading gaps in either sequence.<br><br>
 
-#### Step 1.3: Populating the matrices
+#### **Step 1.3: Populating the matrices**
 
 Follow the steps of the needleman-wunsch algorithm discussed in class to populate the two matrices.
 
 When generating the traceback matrix: if at any point there is a tie between aligning, a gap in sequence 1, or a gap in sequence 2, resolve the tie in the order (aligning -> gap in sequence 1 -> gap in sequence 2).<br><br>
 
-#### Step 1.4: Find the optimal alignment
+#### **Step 1.4: Find the optimal alignment**
 
 Use the traceback matrix to find the optimal alignment between the two sequences. Start at the bottom right corner and follow a path backwards through the traceback matrix until you reach the top left of the matrix, building the alignment as you go. You should end up with two strings of the same length, one for each sequence. Gaps in the sequences should be denoted with a hyphen (`-`). For example, if your input sequences were `TACGATTA` and `ATTAACTTA` your final alignment might look something like:
 
@@ -76,7 +76,7 @@ Sequence 2 alignment: 'ATTA--ACTTA'
 
 *HINT*: A `while` loop will probably be helpful for this part.<br><br>
 
-#### Step 1.5: Write the alignment to the output
+#### **Step 1.5: Write the alignment to the output**
 
 Write the alignment to the output file specified in the command line.
 
