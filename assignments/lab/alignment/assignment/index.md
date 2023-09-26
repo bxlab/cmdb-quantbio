@@ -88,7 +88,7 @@ For *both* alignments (DNA and AA), record these values in your `README.md`.<br>
 
 ### Exercise 2: Smith-Waterman (OPTIONAL)
 
-If you finish early and you want to try something a little bit harder, try to implement the Smith-Waterman algorithm for local alignment in a new script (or as a separate function in the same script).
+If you finish early and you want to try something a little bit harder, try to implement the Smith-Waterman algorithm for local alignment in a new script (or as a separate function in the same script).<br><br>
 
 ## Submission
 
