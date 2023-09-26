@@ -67,20 +67,20 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 ### Schedule
 
-| Week | Date | Instructor          | Topic                                                                             |
-| :--: | :--: | :-----------------: | :--------------------------------------------------------------------------------:|
-|  1   | 9/15  | Rajiv McCoy |  [Linear regression](webpages/week1.html) |
-|  2   | 9/22 | Mike Schatz |  [Genome assembly](webpages/week2.html)|
-|  3   | 9/29 | Dylan Taylor |  Sequence alignment |
-|  4   | 10/6 | Mike Sauria |  ChIP-seq |
-|  5   | 10/13 | Rajiv McCoy | Variant calling |
-|  6   | 10/20 | No Class | Retreat |
-|  7   | 10/27 | Rajiv McCoy | GWAS |
-|  8   | 11/3 | Mike Sauria | Single-molecule sequencing and DNA modifications |
-|  9   | 11/10 | Mike Sauria | 3D Genome |
-|  10   | 11/17 | Rajiv McCoy | Bulk RNA-seq |
-|  11   | 11/24 | No class | Thanksgiving Break |
-|  12   | 12/8 | Mike Sauria | Single-cell RNA-seq |						
+| Week | Date | Instructor          | Topic                                                                             | Resubmission Deadline |
+| :--: | :--: | :-----------------: | :--------------------------------------------------------------------------------:|:----: |
+|  1   | 9/15  | Rajiv McCoy |  [Linear regression](webpages/week1.html) | |
+|  2   | 9/22 | Mike Schatz |  [Genome assembly](webpages/week2.html)| | 
+|  3   | 9/29 | Dylan Taylor |  Sequence alignment | |
+|  4   | 10/6 | Mike Sauria |  ChIP-seq | |
+|  5   | 10/13 | Rajiv McCoy | Variant calling | |
+|  6   | 10/20 | No Class | Retreat | |
+|  7   | 10/27 | Rajiv McCoy | GWAS | |
+|  8   | 11/3 | Mike Sauria | Single-molecule sequencing and DNA modifications | 11/27 |
+|  9   | 11/10 | Mike Sauria | 3D Genome | |
+|  10   | 11/17 | Rajiv McCoy | Bulk RNA-seq | 12/8 |
+|  11   | 11/24 | No class | Thanksgiving Break | |
+|  12   | 12/8 | Mike Sauria | Single-cell RNA-seq |	12/15 |					
 {:.table.table-striped.well}
 
 
