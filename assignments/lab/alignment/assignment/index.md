@@ -51,7 +51,7 @@ seq2_id, sequence2 = input_sequences[1]
 
 For the scoring matrix, it probably makes sense to store it in a pandas dataframe.
 
-*HINT*: Uh oh! Looks like the scoring matrices don't use a consistent field separator... Maybe `pd.read_csv()` has an argument that let's you separate columns based on an arbitrary amount of whitespace...<br><br>
+*HINT*: Uh oh! Looks like the scoring matrices don't use a consistent field separator... Maybe `pd.read_csv()` has an argument that lets you separate columns based on an arbitrary amount of whitespace...<br><br>
 
 #### **Step 1.2: Initializing matrices**
 
