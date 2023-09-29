@@ -20,10 +20,10 @@ Wherever you choose to do your live-coding, you can download the following two f
 
 The first contains just the prompts for the live-coding exercises. The second file contains the actual code itself, in case you get lost or want to look back at the live-coding during the homework.
 
-<!--## Homework Assignment
+## Homework Assignment
 
 Complete the homework assignment in your `week3` submission directory in your `qbb2023-answers`.
 
-[Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/genome_assembly/assignment)-->
+[Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/genome_assembly/assignment)
 
 <br><br>
