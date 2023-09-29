@@ -24,6 +24,6 @@ The first contains just the prompts for the live-coding exercises. The second fi
 
 Complete the homework assignment in your `week3` submission directory in your `qbb2023-answers`.
 
-[Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/genome_assembly/assignment)
+[Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/alignment/assignment/)
 
 <br><br>
