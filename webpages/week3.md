@@ -6,7 +6,7 @@ Due Date: Friday, Oct. 6, 2023
 
 ## Lecture -- Dylan Taylor
 
-[Lecture Slides](https://docs.google.com/presentation/d/1IRm-2vsaJLWN2YV0us_UHHwVVDEfrvXu8zW-9zc0Jec/edit?usp=sharing)
+<a href="https://docs.google.com/presentation/d/1IRm-2vsaJLWN2YV0us_UHHwVVDEfrvXu8zW-9zc0Jec/edit?usp=sharing" target="_blank">Lecture Slides</a>
 
 ## Live-coding
 
