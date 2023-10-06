@@ -13,5 +13,5 @@ Due Date: Friday, Oct. 13, 2023
 
  Complete the homework assignment in your `week4` submission directory in your `qbb2023-answers`.
 
- [Homework Assignment](../assignments/lab/ChIP-seq/assignment/index.md)
+ [Homework Assignment](../assignments/lab/ChIP-seq/assignment/index.html)
  -->
