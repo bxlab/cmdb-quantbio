@@ -17,13 +17,13 @@ def main():
     chromend =  12000000
     chromlen = chromend - chromstart
 
-    # Load the bedgraph data, reusing the function we already wrote
+    # Load the sample bedgraph data, reusing the function we already wrote
     
     # Combine tag densities, shifting by our previously found fragment width
 
-    # Load the bedgraph data, reusing the function we already wrote
+    # Load the control bedgraph data, reusing the function we already wrote
     
-    # Combine tag densities, shifting by our previously found fragment width
+    # Combine tag densities
     
     # Adjust the control to have the same coverage as our sample
 

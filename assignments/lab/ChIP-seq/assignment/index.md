@@ -1,10 +1,10 @@
 # ChIP-seq & Motif Finding
-Assignment Date: Friday, Oct. 6, 2022 <br>
-Due Date: Friday, Oct. 13, 2022 @ 10:00pm ET <br>
+Assignment Date: Friday, Oct. 6, 2023 <br>
+Due Date: Friday, Oct. 13, 2023 @ 10:00pm ET <br>
 
 ## Lecture
 
-[Lecture slides](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/ChIP-seq/slides_asynchronous_or_livecoding_resources/ChIPseq_and_Motif_Finding.pdf)
+[Lecture slides](https://docs.google.com/presentation/d/11MmpLL4GT3R4DR5yLdiDOyIxb547gbIhEsdN2YfKW3A/edit?usp=sharing)
 
 ## Assignment Overview
 
