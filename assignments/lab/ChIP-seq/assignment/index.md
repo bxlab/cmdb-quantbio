@@ -8,7 +8,7 @@ Due Date: Friday, Oct. 13, 2023 @ 10:00pm ET <br>
 
 ## Assignment Overview
 
-The aim of this assignment is to have you create a basic peak-finding script and motif scoring script. This will build on the interactive coding during lecture.
+The aim of this assignment is to have you create a basic peak-finding script. This will build on the interactive coding during lecture.
 
 ### Setup
 
@@ -83,7 +83,18 @@ IGV is short for Integrative Genomics Viewer. It is like a light-weight genome b
 Question: How reproducible are the peaks called between the two samples? Is the p-value range of a peak indicative of reproducibility? Is it completely consistent?
 
 
-### Step 4: Scoring sequences using a position weight matrix
+## Submission
+
+For this assignment you should submit three things: 
+
+1. Your completed find_peaks.py script
+2. Your IGV browser image
+3. A README.md file with answers to the questions in steps 2 and 3
+
+
+## Advanced exercises
+
+### Scoring sequences using a position weight matrix
 
 Using 'score_peak_seqs.py' as a framework, write a script that loads in the sequence for chromosome chr2R and the combined_peak bed file as well as the CTCF position frequency matrix. For each peak, score each k-mer (where k is the length of the sequence) and identify the best score and k-mer for each sequence. Your script should output a graph with the following subplots:
 
@@ -100,19 +111,7 @@ Questions:
 - What percentage of peaks had a binding site with a score of at least 1?
 
 
-## Submission
-
-For this assignment you should submit five things: 
-
-1. Your completed find_peaks.py script
-2. Your IGV browser image
-3. Your completed score_peak_seqs.py script
-4. Your histogram and pfm plot for your combined_peak file from step 4
-5. Your histogram and pfm plot for the all_combined_peak file
-6. A README.md file with answers to the questions in steps 2, 3, and 4
-
-
-## Advanced exercises
+### Finding motifs
 
 Rerun your find_peaks script but using the whole chromosome chr2R. This will give you a wiggle file with p-values covering the whole chromosome. Using the all_combined_peaks bed file and the p-value wiggle track you just generated, extract peak sequences with a max p-value of at least 1e-250. Save these sequences in a fasta file.
 
