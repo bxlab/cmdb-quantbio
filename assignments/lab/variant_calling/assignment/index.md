@@ -19,8 +19,7 @@ tar -xvzf BYxRM.tar.gz
 
 You will be aligning reads from your yeast samples to the *Saccharomyces cerevisiae* reference genome. This reference is called _sacCer3_ by the UCSC genome browser, but its name in the NCBI Assembly archive is [R64-1-1](https://www.ncbi.nlm.nih.gov/assembly/GCF_000146045.2/). **You'll need this info later for snpEff**.
 
-We have provided a single whole genome reference file for you. (all of the chromosomes are in the FASTA same file as separate entries)
-
+We have provided a single whole genome reference file for you:
 ```
 /Users/cmdb/data/genomes/sacCer3.fa
 ```
