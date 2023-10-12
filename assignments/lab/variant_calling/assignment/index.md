@@ -125,7 +125,7 @@ If it wasn't obvious, `snpeff` requires prior annotations (e.g. gene annotations
 snpeff download R64-1-1.99
 ```
 
-Now, use `snpeff ann` to annotate your VCF with the predicted functional effects that these genetic variants may have. Output to a new (and final) VCF.
+Finally, use `snpeff ann` to annotate your VCF with the predicted functional effects that these genetic variants may have. Output to a new (and final) VCF.
 
 For submission purposes, use `head` to grab just the first 100 lines of your final VCF and store this in a new VCF. You will submit this "sample" VCF along with the rest of your assignment. **YOU SHOULD NOT SUBMIT ANY OTHER VCFS, THEY ARE TOO BIG**. Depending on how your `.gitignore` is set up, you may need to do `git add --force <yoursamplevcf.vcf>`.<br><br>
 
