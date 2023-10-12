@@ -31,8 +31,8 @@ As always, if your `.gitignore` is not already set up to ignore these files (the
 ## Excercises
 
 There are three exercises in today's assignment:
-1. Read alignment to the reference
-2. Variant calling and annotations
+1. Alignment of sequencing reads to the reference
+2. Variant calling and annotation
 3. Analysis of annotated variant calls in Python
 
 The first two exercises will occur entirely in the command line. As such, you will be writing and submitting an `alignment-variant_calling.sh` bash script that will run all of the code for exercises 1 and 2.
