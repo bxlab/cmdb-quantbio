@@ -2,7 +2,7 @@
 
 ## Assignment Overview
 
-Today we will perform <i>de novo</i> alignment and variant calling in multiple haploid yeast strains. These strains are the progeny of a cross between a lab strain and a wine strain. The data come from [Finding the sources of missing heritability in a yeast cross](http://www.nature.com/nature/journal/v494/n7436/full/nature11867.html).<br><br>
+Today you will perform alignment and variant calling across multiple haploid yeast strains. These strains are the progeny of a cross between a lab strain and a wine strain. The data come from this paper: "[Finding the sources of missing heritability in a yeast cross](http://www.nature.com/nature/journal/v494/n7436/full/nature11867.html)". After performing variant calling, you'll be doing some basic exploratory analysis of the genetic variation you discovered.<br><br>
 
 ## Data
 
@@ -196,13 +196,16 @@ Make sure you label the panel appropriately.<br><br>
 
 ## Submission
 
-1. Bash script that performs read alignment and variant calling/filtering/annotation
- * Breakdown of the commands
-2. VCF file containing the first 100 lines of your filtered/annotated VCF from Step 2.4
+1. Bash script that performs read alignment and variant calling/filtering/annotation (**3 points**)
+ * Read alignment (**1 point**)
+ * Variant calling (**1 point**)
+ * Filtering and annotation (**1 point**)
+2. VCF file containing the first 100 lines of your filtered/annotated VCF from Step 2.4 (**1 point**)
  * **DO NOT SUBMIT ANY OF THE OTHER VCFS; THEY ARE TOO BIG**
-3. Python script that runs exploratory analysis of VCF from Step 2.4
-   * Breakdown of the different analyses
-4. Nicely formatted and labeled multi-panel plot showing summaries of exploratory analysis
+3. Python script that runs exploratory analysis of VCF from Step 2.4 (**4 points**)
+   * Code to parse VCF file (**2 points**)
+   * Code to produce multi-panel plot (**2 points**)
+4. Nicely formatted and labeled multi-panel plot showing summaries of exploratory analysis (**2 points**)
 
 **Total Points: 10**
 
