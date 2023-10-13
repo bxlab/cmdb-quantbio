@@ -109,23 +109,23 @@ Use `vcfallelicprimitives` to decompose complex haplotypes in your filtered VCF 
 
 #### **Step 2.4**: Annotate variants
 
-Now that you've got these high-quality and nicely behaving variant calls, you want to know what impact these variants might have. Obviously, this is a huge question, and is the basis of all of genetics, but we can get a basic idea of their functional impact on nearby genes (e.g. are they missense, nonsense, etc.) using the `snpeff` tool (the online documentation isn't great, but running `snpeff ann --help` should provide some useful information).
+Now that you've got these high-quality and nicely behaving variant calls, you want to know what impact these variants might have. Obviously, this is a huge question, and is the basis of all of genetics, but we can get a basic idea of their functional impact on nearby genes (e.g. are they missense, nonsense, etc.) using the `snpEff` tool (the online documentation isn't great, but running `snpEff ann --help` should provide some useful information).
 
 <!--
-First, you'll need to downgrade/re-install `snpeff`:
+First, you'll need to downgrade/re-install `snpEff`:
 
 ```
-conda install snpeff=5.0 -y
+conda install snpEff=5.0 -y
 ```
 -->
 
-If it wasn't obvious, `snpeff` requires prior annotations (e.g. gene annotations) to work. Have `snpeff` download its database of *Saccharomyces cerevisiae* annotations using the following command (we told you the NCBI ID would be relevant):
+If it wasn't obvious, `snpEff` requires prior annotations (e.g. gene annotations) to work. Have `snpeff` download its database of *Saccharomyces cerevisiae* annotations using the following command (we told you the NCBI ID would be relevant):
 
 ```
-snpeff download R64-1-1.99
+snpEff download R64-1-1.99
 ```
 
-Finally, use `snpeff ann` to annotate your VCF with the predicted functional effects that these genetic variants may have. Output to a new (and final) VCF.
+Finally, use `snpEff ann` to annotate your VCF with the predicted functional effects that these genetic variants may have. Output to a new (and final) VCF.
 
 For submission purposes, use `head` to grab just the first 100 lines of your final VCF and store this in a new VCF. You will submit this "sample" VCF along with the rest of your assignment. **YOU SHOULD NOT SUBMIT ANY OTHER VCFS; THEY ARE TOO BIG**. Depending on how your `.gitignore` is set up, you may need to do `git add --force <yoursamplevcf.vcf>`.<br><br>
 
