@@ -73,7 +73,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |  2   | 9/22 | Mike Schatz |  [Genome assembly](webpages/week2.html)| &#124;| 
 |  3   | 9/29 | Dylan Taylor |  [Sequence alignment](webpages/week3.html) |&#124; |
 |  4   | 10/6 | Mike Sauria |  [ChIP-seq](webpages/week4.html) |&#124; |
-|  5   | 10/13 | Rajiv McCoy | Variant calling |&#124; |
+|  5   | 10/13 | Rajiv McCoy | [Variant calling](webpages/week5.html) |&#124; |
 |  6   | 10/20 | No Class | Retreat |&#124; |
 |  7   | 10/27 | Rajiv McCoy | GWAS |&#124; |
 |  8   | 11/3 | Mike Sauria | Single-molecule sequencing and DNA modifications | 11/27 |
