@@ -6,7 +6,7 @@ Lecture slides are available through Dropbox [here](https://www.dropbox.com/scl/
 
 ## Live-coding Resources
 
-The `live_coding_data.tar.gz` tarball used for live-coding isin the shared dropbox [here](https://www.dropbox.com/home/cmdb-quantbio/quantLab/variant_calling).
+The `live_coding_data.tar.gz` tarball used for live-coding is in the shared dropbox [here](https://www.dropbox.com/home/cmdb-quantbio/quantLab/variant_calling).
 
 ## External Data
 
