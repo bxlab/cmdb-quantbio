@@ -87,9 +87,20 @@ Question: How reproducible are the peaks called between the two samples? Is the 
 
 For this assignment you should submit three things: 
 
-1. Your completed find_peaks.py script
-2. Your IGV browser image
-3. A README.md file with answers to the questions in steps 2 and 3
+1. Your completed find_peaks.py script (**7 points total**)
+* Load in bedgraph data (**1 point**)
+* Combine tag densities (**1 point**)
+* Adjust control coverage (**1 point**)
+* Calculate background (**1 point**)
+* Score sample (**1 point**)
+* Calculate and log transform p-values (**1 point**)
+* Output data (**1 point**)
+
+2. Your IGV browser image (**1 point**)
+
+3. A README.md file with answers to the questions in steps 2 and 3 (**2 points total**)
+* Answer to step 2 (**1 point**)
+* Answer to step 3 (**1 point**)
 
 
 ## Advanced exercises
