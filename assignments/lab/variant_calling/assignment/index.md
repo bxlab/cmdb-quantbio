@@ -97,6 +97,10 @@ Note that the "site quality" is not the same as the "genotype quality", which de
 
 You can filter out low quality variants using the `vcffilter` tool (documentation [here](https://github.com/vcflib/vcflib/blob/master/doc/vcffilter.md)).
 
+To use `vcffilter` if you're getting Illegal Instruction: 4 errors, get out of your conda environment, then run:
+
+`brew install brewsci/bio/vcflib`
+
 Filter your VCF using `vcffilter` so that you only keep variants whose estimated probability of being polymorphic is greater than 0.99. You should consider how to do this with the `-f` flag. Output your filtered variant calls to a new VCF file.<br><br>
 
 #### **Step 2.3**: Decompose complex haplotypes
