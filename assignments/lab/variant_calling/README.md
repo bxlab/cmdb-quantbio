@@ -11,3 +11,5 @@ The `live_coding_data.tar.gz` tarball used for live-coding isin the shared dropb
 ## External Data
 
 The `BYxRM.tar.gz` tarball used in the assignment is on the shared dropbox [here](https://www.dropbox.com/home/cmdb-quantbio/quantLab/variant_calling).
+
+The sacCer3 reference genome (which should already be on the student's laptops) was downloaded from here: http://hgdownload.soe.ucsc.edu/goldenPath/sacCer3/bigZips/chromFa.tar.gz
