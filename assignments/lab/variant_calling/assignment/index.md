@@ -83,19 +83,19 @@ Now that you've aligned the sequencing reads to the reference, you can call gene
 
 For variant calling, you'll be using a tool called `freebayes` (manual [here](https://github.com/freebayes/freebayes#usage), or you can just run `freebayes --help`).
 
-Use `freebayes` to identify genetic variants in all of your yeast strains **concurrently** (i.e. you should only be running `freebayes` once will all samples, not for each sample separately). It will output results in Variant Call Format (`.vcf`).
+Use `freebayes` to identify genetic variants in all of your yeast strains **concurrently** (i.e. you should only be running `freebayes` once will all samples, not for each sample separately). It will output results in Variant Call Format (`.vcf`). You can read more about the VCF format [here](https://samtools.github.io/hts-specs/VCFv4.2.pdf).
 
 You should consider using the `-f`, `--genotype-qualities`, and `-p` flags. You might like the `-L` flag as well.
 
 **NOTE**: For TAs, running this step took nearly 15 minutes. We expect this step will take a similar amount of time for you, and your computer might make a lot of noise.<br><br>
 
-#### **Step 2.2**: Filter variants based on genotype quality
+#### **Step 2.2**: Filter variants based on site quality
 
 Sometimes, `freebayes` will call variants that may not be "real". Luckily, variant callers generally report, for each variant, a "site quality", that describes the probability of that site truly being polymorphic. You can use that quality score to filter out low quality (low confidence) variants.
 
 Note that the "site quality" is not the same as the "genotype quality", which describes the probability that a single sample's genotype at some variant is correct. Both qualities, however, are generally reported on the "Phred" scale (more [here](https://en.wikipedia.org/wiki/Phred_quality_score)).
 
-You can filter out low quality variants using the `vcffilter` tool (documentation [here](https://github.com/vcflib/vcflib/blob/master/doc/vcffilter.md).
+You can filter out low quality variants using the `vcffilter` tool (documentation [here](https://github.com/vcflib/vcflib/blob/master/doc/vcffilter.md)).
 
 Filter your VCF using `vcffilter` so that you only keep variants whose estimated probability of being polymorphic is greater than 0.99. You should consider how to do this with the `-f` flag. Output your filtered variant calls to a new VCF file.<br><br>
 
@@ -127,26 +127,83 @@ snpeff download R64-1-1.99
 
 Finally, use `snpeff ann` to annotate your VCF with the predicted functional effects that these genetic variants may have. Output to a new (and final) VCF.
 
-For submission purposes, use `head` to grab just the first 100 lines of your final VCF and store this in a new VCF. You will submit this "sample" VCF along with the rest of your assignment. **YOU SHOULD NOT SUBMIT ANY OTHER VCFS, THEY ARE TOO BIG**. Depending on how your `.gitignore` is set up, you may need to do `git add --force <yoursamplevcf.vcf>`.<br><br>
+For submission purposes, use `head` to grab just the first 100 lines of your final VCF and store this in a new VCF. You will submit this "sample" VCF along with the rest of your assignment. **YOU SHOULD NOT SUBMIT ANY OTHER VCFS; THEY ARE TOO BIG**. Depending on how your `.gitignore` is set up, you may need to do `git add --force <yoursamplevcf.vcf>`.<br><br>
 
 ### Exercise 3: Exploratory data analysis
 
+Now that you've discovered variants in these strains and annotated their predicted functional effects, you'd like to do some basic exploratory analysis of the patterns you observe in the VCF. You'll be using Python to create a _single_ nicely formatted and labeled multi-panel plot (e.g., use `subplots` with multiple rows and columns) that explores the following features of the data:
+1. The distribution of read depth across sample genotypes
+2. The distribution of genotyping quality across samples genotypes
+3. The allele frequency spectrum of the discovered variants
+4. A summary of the predicted effects of the discovered variants
+
+Each feature will be a single panel in your multi-panel plot.
+
+Create an empty `variation_analysis.py` script now where you'll be doing the analyses in the next steps.<br><br>
+
+#### **Step 3.0**: Parse the VCF file
+
+For these analyses, you'll have to parse the filtered/biallelic VCF you generated in Step 2.4. If you can find a python library that handles VCF parsing, you're welcome to use it, but it may be easier to simply use the following structure:
+
+```
+for line in open(<vcf_file_name>):
+    if line.startswith('#'):
+        continue
+    fields = line.rstrip('\n').split('\t')
+
+    # grab what you need from `fields`
+```
+
+Each of the following analyses needs information from a different field/column from the VCF. As such, you'll be grabbing multiple pieces of information from each line, so if you do use this structure, instead of looping through the VCF separately for each analysis, try to use just a single loop across all analyses.
+
+Remember, you can read more about the VCF file format [here](https://samtools.github.io/hts-specs/VCFv4.2.pdf).<br><br>
+
+#### **Step 3.1**: Read depth distribution
+
+Plot a histogram showing the distribution of read depth at each variant across all samples (e.g. if you had 10 variants and 5 samples, you'd have 50 data points).
+
+This information can be found in the sample specific FORMAT fields and the end of each line. Check the file header to decide which ID is appropriate.
+
+Make sure you label the panel appropriately.<br><br>
+
+#### **Step 3.2**: Genotype quality distribution
+
+Plot a histogram showing the distribution of genotyping quality at each variant across all samples (as before, if you had 10 variants and 5 samples, you'd have 50 data points).
+
+This information can be found in the sample specific FORMAT fields and the end of each line. Check the file header to decide which ID is appropriate. Remember, "genotype quality" is **NOT** the same as "site quality" and is a different part of the VCF line.
+
+Make sure you label the panel appropriately.<br><br>
+
+#### **Step 3.3**: Allele frequency spectrum
+
+Plot a histogram showing the allele frequency spectrum (distribution) of the variants in the VCF (this is a per-variant metric, so with 10 variants and 5 samples, you'd only have 10 data points).
+
+This information is pre-calculated for you and can be found in the variant specific INFO field. Check the file header to decide which ID is appropriate.
+
+Make sure you label the panel appropriately.<br><br>
+
+#### **Step 3.4**: Predicted effects
+
+Create a barplot showing the predicted effect(s) of the variants in the VCF (i.e. a bar for each "type" of effect showing the number of variants with that effect).
+
 In Python, produce a nicely formatted and labeled multi-panel plot (e.g., use `subplots` with multiple rows and columns) describing your variants.<br /><br />Explore each of the following characteristics of the variant genotypes called across all ten yeast samples. (Each characteristic will be a subplot in the multi-panel plot).
 
-  * The read depth distribution of variant genotypes (histogram)
-      * This information can be found in the sample specific FORMAT field for each variant/line. Check the file header to decide which ID is appropriate.
-  * The quality distribution of variant genotypes (histogram)
-      * This information can be found in the sample specific FORMAT field for each variant/line. Check the file header to decide which ID is appropriate.
-  * The allele frequency spectrum of your identified variants (histogram)
-      * This information is pre-calculated for you and can be found in the variant specific INFO field. Check the file header to decide which ID is appropriate.
-  * A summary of the predicted effect(s) of each variant as determined by snpEff (barplot)
-      * This information was added to the VCF by snpEff and can be found in the variant specific INFO field. Check the file header to decide which ID is appropriate and how to parse the information.
-      * We encourage you to consider every possible effect for each variant, but feel free to just grab the first one.
+This information was added to the VCF by `snpEff` and can be found in the variant specific INFO field. Check the file header to decide which ID is appropriate and how to parse the information.
 
-You may find it helpful to reference [this page](https://pcingola.github.io/SnpEff/se_inputoutput/) of the `snpeff` manual, which describes the format of its output VCF.<br><br>
+**NOTE**: We encourage you to consider every possible effect for each variant, but feel free to just grab the first one.
+
+Make sure you label the panel appropriately.<br><br>
 
 ## Submission
 
-Push all scripts, a record of your command line commands (if applicable), your multi-panel plot, and **ONLY the first 1000 lines** of your filtered, decomposed, and annotated VCF to your `qbb2022-answers` repo. **Do not push any other raw data to Github, and do not push the full VCF!**
+1. Bash script that performs read alignment and variant calling/filtering/annotation
+ * Breakdown of the commands
+2. VCF file containing the first 100 lines of your filtered/annotated VCF from Step 2.4
+ * **DO NOT SUBMIT ANY OF THE OTHER VCFS; THEY ARE TOO BIG**
+3. Python script that runs exploratory analysis of VCF from Step 2.4
+   * Breakdown of the different analyses
+4. Nicely formatted and labeled multi-panel plot showing summaries of exploratory analysis
+
+**Total Points: 10**
 
 <br><br>
