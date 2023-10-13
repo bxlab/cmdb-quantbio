@@ -34,10 +34,8 @@ This file contains the data you'll need for the live-coding exercises. Once down
 tar -xvzf live_coding_data.tar.gz
 ```
 
-<!--
 ## Homework Assignment
 
- Complete the homework assignment in your `week4` submission directory in your `qbb2023-answers`.
+Complete the homework assignment in your `week5` submission directory in your `qbb2023-answers`.
 
- [Homework Assignment](../assignments/lab/variant_calling/assignment/index.html)
- -->
+[Homework Assignment](../assignments/lab/variant_calling/assignment/)
