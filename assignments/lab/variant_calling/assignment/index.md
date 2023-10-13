@@ -111,14 +111,6 @@ Use `vcfallelicprimitives` to decompose complex haplotypes in your filtered VCF 
 
 Now that you've got these high-quality and nicely behaving variant calls, you want to know what impact these variants might have. Obviously, this is a huge question, and is the basis of all of genetics, but we can get a basic idea of their functional impact on nearby genes (e.g. are they missense, nonsense, etc.) using the `snpEff` tool (the online documentation isn't great, but running `snpEff ann --help` should provide some useful information).
 
-<!--
-First, you'll need to downgrade/re-install `snpEff`:
-
-```
-conda install snpEff=5.0 -y
-```
--->
-
 If it wasn't obvious, `snpEff` requires prior annotations (e.g. gene annotations) to work. Have `snpeff` download its database of *Saccharomyces cerevisiae* annotations using the following command (we told you the NCBI ID would be relevant):
 
 ```
