@@ -114,7 +114,7 @@ Now that you've got these high-quality and nicely behaving variant calls, you wa
 If it wasn't obvious, `snpEff` requires prior annotations (e.g. gene annotations) to work. Have `snpeff` download its database of *Saccharomyces cerevisiae* annotations using the following command (we told you the NCBI ID would be relevant):
 
 ```
-snpEff download R64-1-1.99
+snpEff download R64-1-1.105
 ```
 
 Finally, use `snpEff ann` to annotate your VCF with the predicted functional effects that these genetic variants may have. Output to a new (and final) VCF.
