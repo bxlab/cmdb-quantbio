@@ -1,12 +1,6 @@
-# Assignment 4: Genome-Wide Association Studies
-Assignment Date: Friday, Sept. 30, 2022 <br>
-Due Date: Friday, Oct. 7, 2022 @ 1:00pm ET <br>
+# Genome-Wide Association Studies
 
 **Please do a `git pull` within your `~/cmdb-quantbio/` directory**
-
-## Lecture
-
-Slides are available here: [Lecture Slides](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/lab/GWAS/slides_asynchronous_or_livecoding_resources/20220930_qblab_gwas.pptx?raw=true)
 
 ## Background
 
@@ -74,13 +68,18 @@ You shouldn't be pushing any of these files to your remote repo, so update your 
 - Notice how the IDs are encoded in the phenotype files [phenotypes](https://www.cog-genomics.org/plink2/input#pheno]). `plink` expects both a family ID and a sample ID. In your VCF, they are separated by an underscore, but in your phenotype file they are separated by a tab-character. The files we provided are already formatted in this way, but keep this in mind for future work where reformatting may be necessary.
 
 
-## Submit
+## Submission
 
 For this assignment you should submit the following:
 
-1. Your `README.md` file containing the commands you used, as well as your answer for Part 7
-2. Any python scripts you wrote
-3. The plots for Parts 2, 3, 5, and 6
+1. `plink` code to perform PCA and top 10 PCs (**1pt**)
+2. PCA figure (**1pt**)
+3. Code to generate allele frequency histogram (**1pt**)
+4. Allele frequency histogram + clear labels (**1pt**)
+5. Script to perform association testing using `plink` (**1pt**)
+6. Manhattan Plots (**1pt each**)
+7. Phenotype effect boxplot (**1pt**)
+8. Written summary about potential causal variants in `README.md` (**1pt**)
 
 **DO NOT** push any raw data to Github unless we explicitly ask for it!
 
