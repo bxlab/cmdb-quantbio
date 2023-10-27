@@ -78,9 +78,7 @@ Using `plink`, perform quantitative association testing for each of your two phe
 
 We encourage you to try this on your own first, but you can use the hint below to check your answer (this WILL give you the full `plink` command, be warned).
 
-<details><summary><b>CLICK HERE IF YOU WANT TO CHECK YOUR ANSWER:</b></summary>
-  <code>plink --vcf genotypes.vcf --linear --pheno &lt;<phenotype>.txt&gt; --covar &lt;pca.eigenvec&gt; --allow-no-sex --out &lt;<phenotype>_gwas_results&gt;</code>
-</details>
+<details><summary><b>CLICK HERE IF YOU WANT TO CHECK YOUR ANSWER:</b></summary><code>plink --vcf genotypes.vcf --linear --pheno &lt;<phenotype>.txt&gt; --covar &lt;pca.eigenvec&gt; --allow-no-sex --out &lt;<phenotype>_gwas_results&gt;</code></details>
 
 You should have two output files, one for each phenotype.
 
@@ -114,9 +112,7 @@ In your `README.md`, summarize what you found (i.e. what gene(s) are closest to 
 - You can perform the PCA and allele frequency calculations in Python, but `plink` can perform both as well. Either way, you will probably want to use matplotlib to produce the plots.
 - If you do PCA in python, be sure you have one datapoint per individual, as opposed to per SNP.
 - Each SNP only has one allele frequency.
-- Notice how the IDs are encoded in the phenotype files [phenotypes](https://www.cog-genomics.org/plink2/input#pheno]). `plink` expects both a family ID and a sample ID. In your VCF, they are separated by an underscore, but in your phenotype file they are separated by a tab-character. The files we provided are already formatted in this way, but keep this in mind for future work where reformatting may be necessary. 
--->
-
+- Notice how the IDs are encoded in the phenotype files [phenotypes](https://www.cog-genomics.org/plink2/input#pheno]). `plink` expects both a family ID and a sample ID. In your VCF, they are separated by an underscore, but in your phenotype file they are separated by a tab-character. The files we provided are already formatted in this way, but keep this in mind for future work where reformatting may be necessary.-->
 
 ## Submission
 
