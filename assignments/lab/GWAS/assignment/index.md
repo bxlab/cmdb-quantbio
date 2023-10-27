@@ -108,12 +108,15 @@ For the top loci associated with **each** of your two phenotypes, use the <a hre
 
 In your `README.md`, summarize what you found (i.e. what gene(s) are closest to each top hit? How might these genes impact the trait?).<br><br>
 
-<!-- ### Hints
+<!-- 
+### Hints
 
 - You can perform the PCA and allele frequency calculations in Python, but `plink` can perform both as well. Either way, you will probably want to use matplotlib to produce the plots.
 - If you do PCA in python, be sure you have one datapoint per individual, as opposed to per SNP.
 - Each SNP only has one allele frequency.
-- Notice how the IDs are encoded in the phenotype files [phenotypes](https://www.cog-genomics.org/plink2/input#pheno]). `plink` expects both a family ID and a sample ID. In your VCF, they are separated by an underscore, but in your phenotype file they are separated by a tab-character. The files we provided are already formatted in this way, but keep this in mind for future work where reformatting may be necessary. -->
+- Notice how the IDs are encoded in the phenotype files [phenotypes](https://www.cog-genomics.org/plink2/input#pheno]). `plink` expects both a family ID and a sample ID. In your VCF, they are separated by an underscore, but in your phenotype file they are separated by a tab-character. The files we provided are already formatted in this way, but keep this in mind for future work where reformatting may be necessary. 
+-->
+
 
 ## Submission
 
