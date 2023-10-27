@@ -78,7 +78,7 @@ Using `plink`, perform quantitative association testing for each of your two phe
 
 We encourage you to try this on your own first, but you can use the hint below to check your answer (this WILL give you the full `plink` command, be warned).
 
-<details><summary><b>CLICK HERE IF YOU WANT TO CHECK YOUR ANSWER:</b></summary><code>plink --vcf genotypes.vcf --linear --pheno phenotype.tx --covar pca.eigenvec --allow-no-sex --out phenotype_gwas_results</code></details>
+<details><summary><b>CLICK HERE IF YOU WANT TO CHECK YOUR ANSWER:</b></summary><code>plink --vcf genotypes.vcf --linear --pheno phenotype.txt --covar pca.eigenvec --allow-no-sex --out phenotype_gwas_results</code></details>
 
 You should have two output files, one for each phenotype.
 
