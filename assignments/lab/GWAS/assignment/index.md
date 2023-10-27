@@ -88,7 +88,7 @@ Record the `plink` commands you used in your `README.md`.<br><br>
 
 #### **Step 3.2**: Visualing GWAS results
 
-Now that you've run your GWASes, you want to visualize the results.
+Now that you've run your GWAS analyses, you want to visualize the results.
 
 In your `plotting.py` script, produce a two-panel figure (one column, two rows) depicting the Manhattan plot for each of your two GWAS analyses (i.e. each phenotype). Each Manhattan plot should be one of the two panels in your figure. In each Manhattan plot, highlight SNPs with p-values less than 10<sup>-5</sup> in a different color. 
 
@@ -119,16 +119,23 @@ In your `README.md`, summarize what you found (i.e. what gene(s) are closest to 
 
 For this assignment you should submit the following:
 
-1. `plink` code to perform PCA and top 10 PCs (**1pt**)
-2. PCA figure (**1pt**)
-3. Code to generate allele frequency histogram (**1pt**)
-4. Allele frequency histogram + clear labels (**1pt**)
-5. Script to perform association testing using `plink` (**1pt**)
-6. Manhattan Plots (**1pt each**)
-7. Phenotype effect boxplot (**1pt**)
-8. Written summary about potential causal variants in `README.md` (**1pt**)
+1. `README.md` with commands and analyses (**2 points**)
+ * Step 1.1 command(s) (**0.33 pt**)
+ * Step 2.1 command(s) (**0.33 pt**)
+ * Step 3.1 commands (**0.33 pt**)
+ * Answer to Step 3.4 (**1 pt**)
+2. `plotting.py` script to produce plots (**4 points**)
+ * Code to produce step 1.2 PC plot (**1 pt**)
+ * Code to produce step 2.2 AFS (**1 pt**)
+ * Code to produce step 3.2 Manhattan plots (**1 pt**)
+ * Code to procude setp 3.3 effect size box plot (**1 pt**)
+3. Pretty plots (**4 points**)
+ * Step 1.2 PCA plot (**1 pt**)
+ * Step 2.2 AFS (**1 pt**)
+ * Step 3.2 multi-panel Manhattan plots (**1 pt**)
+ * Step 3.3 effect size box plot (**1 pt**)
 
-**DO NOT** push any raw data to Github unless we explicitly ask for it!
+**DO NOT** push any raw data! Only the things we asked for!<br><br>
 
 ## Advanced Exercises
 
@@ -136,8 +143,4 @@ For this assignment you should submit the following:
 
 2. Examine the frequency of the top associated variants. What is its frequency in various global populations? Use the GGV Browser to explore this: https://popgen.uchicago.edu/ggv
 
-3. Is the variant itself necessarily causal in driving the association? Investigate the local haplotype structure using the LDLink website's "LDproxy" tool: https://ldlink.nci.nih.gov/?tab=ldproxy
-
-
-
-
+3. Is the variant itself necessarily causal in driving the association? Investigate the local haplotype structure using the LDLink website's "LDproxy" tool: https://ldlink.nci.nih.gov/?tab=ldproxy<br><br>
