@@ -1,7 +1,5 @@
 # Genome-Wide Association Studies
 
-**Please do a `git pull` within your `~/cmdb-quantbio/` directory**
-
 ## Background
 
 One of the central goals of human genetics is clarifying the relationship between genotypes and phenotypes. Genome-wide association studies (GWAS) emerged around 20 years ago as a useful approach for discovering genetic variation that underlies variation in human traits. At their core, GWAS involve fitting linear models to test for relationships between polymorphisms (often SNPs) and phenotypes using data from large samples of individuals.
