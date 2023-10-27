@@ -8,7 +8,7 @@ Genotypes of nearby SNPs are correlated--a phenomenon termed "linkage disequilib
 
 ## Assignment Overview
 
-Today we will conduct a GWAS using a materials adapted from workshop by Heather Wheeler from Loyola University Chicago (https://github.com/hwheeler01/GWAS_workshop). Note that these phenotype data are simulated. The combination of genotype and phenotype data poses a privacy risk, so real genotype and phenotype data from humans are often stored in controlled-access databases such as dbGaP.
+Today we will conduct a GWAS using a materials adapted from workshop by Heather Wheeler from Loyola University Chicago ([https://github.com/hwheeler01/GWAS_workshop](https://github.com/hwheeler01/GWAS_workshop)). Note that these phenotype data are simulated. The combination of genotype and phenotype data poses a privacy risk, so real genotype and phenotype data from humans are often stored in controlled-access databases such as dbGaP.
 
 The premise for the exercise is that you are part of a company developing two new cancer drugs called GS451 and CB1908. Some individuals in early phase trials have experienced a side effect of these drugs called lymphocytopenia (low lymphocyte counts). You are now tasked with performing a GWAS on data from lymphblastoid cell lines to search for risk factors for lymphocytopenia. The phenotype that was measured is the IC50, defined as the concentration of the drug at which 50% viability occurs.<br><br>
 
