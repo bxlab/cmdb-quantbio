@@ -1,125 +1,101 @@
 # Assignment 7: Nanopore Sequencing and Methylation
-Assignment Date: Friday, Oct. 28, 2022 <br>
-Due Date: Friday, Nov. 4, 2022 @ 1:00pm ET <br>
-
-## Lecture
-
-[Lecture slides](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/nanopore-seq/slides_asynchronous_or_livecoding_resources/Nanopore.pdf)
+Assignment Date: Friday, Nov. 5, 2023 <br>
+Due Date: Friday, Nov. 12, 2023 @ 10:00am ET <br>
 
 ## Assignment Overview
 
-For this lab, you will be working with nanopore data from Oxford Nanopore. The data were basecalled to identify methylated cytosine in addition to standard sequence. Reads for four regions have been extracted along with their corresponding methylation calls. If you look at the entries in the bam file, you will see that there is an additional pair of tags, MM and ML, followed by a series of comma-separated numbers. These values are the base counts between methylated bases and methylation call probabilities, respectively.
+For this lab, you will be working with two datasets, methylation calls across chromosome 2 in the cell line GM24385 using both traditional bisulfite sequencing (using the software Bismark) and direct detection using nanopore sequencing. The second dataset is looking at paired samples for normal and colorectal cancer methylation cells. There are methylation calls for bisulfite sequencing and nanopore sequencing for chr2. You also have the nanopore reads for two subregions of chr2 in the normal and tumor samples.
 
- The aim of this assignment is to identify differential methylation at several known imprinted genes from the paper [The role of imprinted genes in humans](https://pubmed.ncbi.nlm.nih.gov/22771538/). Observing figure 2 (below), you can see a series of regions with differential methylation.
+ The aim of this assignment is to compare methylation calling from the two different technologies and observe the role of tumorigenesis in hypermethylation and allele-specific methylation.
 
- ![Figure 2](./fig2.png)
+### Part 1: Getting the data
 
-For each of these regions, create an image from IGV showing reads separated by parent and highlighting their methylation patterns. There are several steps needed to achieve this.
+To get the data for this assignment, you will need to download it from [here](https://www.dropbox.com/scl/fi/qz5m5x5v5sr3og3vy9921/ONT_data.tar.gz?rlkey=1bp3j45sqavysnqg2d5n0jxhv&dl=0) (There is a download button in the upper right corner, a down arrow over a horizontal line).
 
-1. Call and phase variants for each region
-2. Mark reads with the correct haplotype tag
-3. Split reads into two files by haplotype
-4. Set up a conda environment for and build the latest version of `IGV`
-5. Load data into IGV and set up methylation-specific viewing parameters
-6. Locate differentially-methylated feature(s) and save an image for each region
-
-### Part 0a: Setting up your conda environment
-
-In order to call variants and phase them, you will be using two programs, Medaka and whatshap. You will need to create a conda environment to do this.
+Create a folder for this assignment and move the resulting file `ONT_data.tar.gz` into your newly created folder. Then unpack the file with the following command:
 
 ```bash
-conda create -n Medaka medaka -y
+tar xzf ONT_data.tar.gz
 ```
 
-This will install most of what you need. Once you have activated this environment, you will need to replace the current version of whatshap, as there is an incompatibility with the installed version. Unfortunately you can't do this with `conda` so you will need to use the following command instead:
+You should have a total of 9 files:
 
-```bash
-pip install whatshap==1.0
-```
+- ONT.cpg.chr2.bedgraph
+- bisulfite.cpg.chr2.bedgraph
+- normal.ONT.chr2.bedgraph
+- normal.ONT.chr2.bam
+- tumor.ONT.chr2.bedgraph
+- tumor.ONT.chr2.bam
+- normal.bisulfite.chr2.bedgraph
+- tumor.bisulfite.chr2.bedgraph
+- transposons.chr2.bed
 
-This will force an updated version of whatshap to be installed. When you run this command, it will complain that whatshap is not the correct version but will install anyway. Ignore these warnings.
+### Part 2: Exploring CpG methylation
 
-### Part 0b: Getting the data
+First, start IGV from the command line (the command is `igv`). Make sure you have hg38 selected as the genome. Then under the file drop-down menu select "Load from File" and add the tracks ONT.cpg.chr2.bedgraph and bismark.cpg.chr2.bedgraph. Each of these tracks contain one CpG location per line, the percent of reads with that site methylated, and the read coverage for that site. Explore at different resolutions, comparing the two tracks. Do they match well? Are there regions missing from one track but present in the other?
 
-All of the data is downloadable in a compressed archive. To download and unpack it, use the command:
+Q1: Are the majority of the CpG dinucleotides methylated or unmethylated?
 
-```bash
-curl https://bx.bio.jhu.edu/data/msauria/cmdb-lab/ont_data.tar.gz --output ont_data.tar.gz
-tar xzf ont_data.tar.gz
-```
+### Part 3: Comparing nanopore vs. bisulfite sequencing methylation calling
 
-This will give you 5 files:
+You will be comparing data from the two methylation calling approaches. This includes answering questions in your `README.md` file as well as creating several plots. Please put all of the plots into a single multi-plot figure with properly labeled axes and titles.
 
-- methylation.bam - your methylation-called reads
-- methylation.bam.bai - the index for your bam file
-- methylation.bed.gz - a compressed bed file containing methylation sites
-- methylation.bed.gz.tbi - the index for the compressed bed file
-- regions.bed - a bed file containing the regions that were used to filter the data and that you will be considering in this assignment
-- region_genes.bed - a bed file containing genes for chromosomes 11, 14, 15, and 20
+#### Part 3a
 
-You will also need a copy of the human genome, since using it directly from your data directory will complain about write privileges.
+Using the above bedgraph files, write a script to perform a number of comparisons between the two sets of methylation calls. Your script should be able to:
 
-```bash
-cp /Users/cmdb/data/genomes/hg38.fa ./
-```
+1. Parse the bedgraph files
+2. Calculate the number of sites present only in the bismark file, present only in the nanopore file, and the shared sites as a percentage of total sites (both unique and shared sites) and record them in your `README.md` file.
 
-### Part 1: Call and phase variant for each region
+#### Part 3b:
 
-To call variants, you will be using `medaka_variant`. Unfortunately, like many newer tools `medaka_variant` does not have good documentation. In fact, I have found the help statement (argument `-h`) to be the most helpful.
+Plot the distribution of coverages across CpG sites for each track on the same plot. Make sure to indicate which distribution corresponds to which track. In order to visualize both distributions on the same plot, it may be useful to use the `alpha` option to set the transparency of the plotted data.
 
-To call variants, Medaka needs to know which model was used to do the basecalling, both for variant calling and phasing. You should use the default for both `-s` and `-m`. You will also need the phased vcf file as output (look at `-p`). Only one region can be specified for Medaka at a time so you will need to generate a phased vcf file for each region in `regions.bed` using the format `chr:start-end` to specify the region.
+Q2: How does using nanopore for methylation calling differ from bisulfite sequencing in terms of coverage? Which method appears better and why?
 
-### Part 2: Mark reads with the correct haplotype tag
+#### Part 3c:
 
-The next step is to assign reads a haplotype. To do this, you will be using `whatshap haplotag`. As in the previous step, you will be doing this for each region independently. There is an error in the `whatshap` usage information about the format of specifying a region. You need to use the format `chr:start:end`. There is also a quirk that the `whatshap haplotag` command will freeze if the first argument passed is not `-o OUT_FNAME` where OUT_FNAME is a filename to save the phased bam file to. You will need to output a haplotag list for the splitting step input. Finally, note that the VCF file needed for input should be the compressed and indexed one from the medaka output (i.e. ending in `.gz`).
+For CpG sites occurring in both bedgraph files, plot the correspondence between methylation scores for the two approaches. Because of the number of data points, it is impractical to do this using a scatterplot. Instead, use the numpy function `histogram2d` and plot using the matplotlib function `imshow`. I recommend 100 bins per axis for the histogram as this will make the axis labels match the percent methylation. Because points are highly concentrated in the corners, it is difficult to see much of the data. Therefore you should transform the data using a `log10(data + 1)` transformation. You also should calculate the Pearson R coefficient for the two sets of methylation calls (non-transformed data). This is easy to do using the numpy function `corrcoef`. Include this value in the title (no more than 3 decimal places, please).
 
-### Part 3: Split reads into two files based on their haplotype
+#### Part 3d:
 
-Once you have tagged the reads, you will need to split the bam file into two bam files, one for each haplotype. You will be using `whatshap split`, performing the split for each region independently. Use `whatshap split` and the haplotag list that you just generated.
+Now, let's examine the matched normal-tumor samples. You should be able to load these bedgraph files with the same parser as the previous files. For each pair of samples (normal and tumor), for all CpG sites in common find the change in methylation (tumor - normal), excluding values with no change. Create a violin plot showing the distribution of methylation changes, one distribution for nanopore and one for bisulfite results. Using common sites between the two approaches, find the Pearson R coefficient for methylation changes and add this value to the title of the plot.
 
-While you can complete the `igv` part of the assignment with the region- and haplotype-specific bam files, it is easy to concatenate them into one bam file per haplotype using `samtools cat` (samtools is **not** in the igv environment, so you will need to do this before the next step if you decide to concatenate the bam files).
+Q3: What can you infer about the two different approaches and their ability to detect methylation changes?
+Q4: What is the effect of tumorigenesis on global methylation patterns?
 
-### Part 4: Setting up IGV
+### Part 4: Using IGV to explore differential methylation
 
-You will need to install a new version of `IGV` for this assignment as the functionality for viewing methylation data without reprocessing bam files was only recently added. To do this, you will be creating a new conda environment, cloning the `IGV` repo and building the application.
+Finally, you will be visualizing your data in `IGV`. Before starting, you will need to index the bam files using `samtools`. Load the two bam files and the bismark normal and tumor bedgraph files into the browser. For the bam files, use a two-finger click on the track to pull up a menu, select `Color alignments by` and then select `base modification (5mc)`. This will use the methylation data stored in each read to color methylated sites red and unmethylated sites blue. I recommend also using the same approach to select "squished" to fit the data more easily in the browser.
 
-```bash
-conda deactivate
-conda create -n igv gradle openjdk=11 -y
-conda activate igv
-git clone https://github.com/igvteam/igv.git
-```
+#### Part 4a:
 
-Once you have cloned the repo, change into the igv directory and use the following command to build the program:
+In the navigation field, type in the gene name "DNMT3A". This should take you to the gene "DNA (cytosine-5)-methyltransferase 3A", a gene responsible for de novo methylation of cytosines and one of the 127 frequently mutated genes identified by the Cancer Genome Atlas project. Find a region of interest and save an image.
 
-```bash
-cd igv
-./gradlew createDist
-cd ../
-```
+Q5: What changes can you observe between the normal and tumor methylation landscape? What do you think the possible effects are of the changes you observed?
 
-This will create a new executable in the folder `igv/build/IGV-dist/igv.sh`. For convenience, I suggest creating a symlink (like an alias) in your homework directory.
+#### Part 4b:
 
-```bash
-ln -s ${PWD}/igv/build/IGV-dist/igv.sh ./
-```
+In the navigation field, type in the gene name "ZDBF2". This should take you to one of the 91 known imprinted genes. Adjust you field of view to focus only on the first exon of the gene. Do you see much difference between the tumor and normal sample? In order to see the effects of imprinting, you will first need to phase the reads. You can do this by pulling up the menu for each track with a two-finger click and selecting "Cluster (phase) alignments" (accept 2 for the number of clusters).
 
-Now, when you want to start `IGV`, simply type `./igv.sh`.
+Q6: What does it mean for a gene to be "imprinted"?
+Q7: What is happening when you select the option to phase the reads? What is required in order to phase the reads?
 
-### Part 5: Configuring IGV for differential methylation
+Now that reads are phased, can you identify any allele-specific methylation sites? How does tumorigenesis affect these sites? Is the effect consistent across sites? Save a picture of this region. Drag the view region left or right. Try phasing the reads at different locations. Does it always work?
 
-Finally, you will be visualizing your data in `IGV` (the new one you just installed).  Once you have loaded the haplotype-specific bam files, you will need to change the coloring scheme to display the embedded methylation data. To do this, two-finger click on each track and then select `Color alignments by->base modification (5mC)`. For information about interpreting this diplay mode, see [here](https://github.com/igvteam/igv/wiki/5mC-coloring-mode).
-
-### Part 6: Find and plot differentially methylated regions
-
-For each region, you should locate one of the differentially-methylated features shown in the above figure. Zoom in and center the feature in the IGV window such that it takes up approximately the middle fifth of the window. Save a `.png` of the zoomed and centered IGV window using the `File -> Save Image` menu command.
-
-- Do you expect each region in H1 or H2 to correspond to the same parent of origin (i.e. the same haplotype)? Explain your reasoning.
+Q8: Can any set of reads be phased? Explain your answer.
 
 ## Submission
 
-For this assignment you should turn in a record of commands you used to do the assignment, your answer to the question in part 6, and one igv image for each region (4 in all).
+For this assignment you should turn in the following:
+
+- The number of unique and shared CpG sites from part 3a in your `README.md` document
+- Answers to questions 1-8 in your `README.md` document
+- A multi-panel plot containing the plots from parts 3b, 3c, and 3d
+- 2 images from IGV, one from gene DNMT3A and one from gene ZDBF2
 
 ## Advanced
 
-Using the `region_genes.bed` file provided, find the mean methylation signal across each gene body and its corresponding mean signal in the 1K region upstream of the TSS and create a scatterplot showing this relationship. The function `bedtools map` is very handy for this.
+One important role of DNA methylation is to inactivate transposons, preventing their spread through the genome and possible disruption of normal function. Included with the data you downloaded is a bed file containing a set of identified transposons on chromosome 2 for the human genome build hg38. Using the ONT.cpg.chr2.bedgraph file, create an average profile of methylation across all of the transposons in the bed file. Include 5kb upstream and downstream of each transposon, binning data into 100bp bins for the flanking regions and dividing each transposon into 100 equal sized bins (thus transposons of different length will have different bin sizes but all have a total of 100 bins covering them). Don't forget to divide the data sums by the binsize to ensure your units are % methylation/bp. Divide the data into quartiles based on the score in the bed file (you will need np.float64 to handle the precision of the scores). You should have one line per quartile of data. Don't forget to include a legend.
+
+The scores in the bed file represent the significance of the sequence similarity to transposon family that each sequence derived from. Hence low scores are younger transposons as few mutations have accumulated. Given that, what does your plot tell you about the relationship of methylation to transposon age?
