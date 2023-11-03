@@ -32,7 +32,7 @@ You should have a total of 9 files:
 
 ### Part 2: Exploring CpG methylation
 
-First, start IGV from the command line (the command is `igv`). Make sure you have hg38 selected as the genome. Then under the file drop-down menu select "Load from File" and add the tracks ONT.cpg.chr2.bedgraph and bismark.cpg.chr2.bedgraph. Each of these tracks contain one CpG location per line, the percent of reads with that site methylated, and the read coverage for that site. Explore at different resolutions, comparing the two tracks. Do they match well? Are there regions missing from one track but present in the other?
+First, start IGV from the command line (the command is `igv`). Make sure you have hg38 selected as the genome. Then under the file drop-down menu select "Load from File" and add the tracks ONT.cpg.chr2.bedgraph and bisulfite.cpg.chr2.bedgraph. Each of these tracks contain one CpG location per line, the percent of reads with that site methylated, and the read coverage for that site. Explore at different resolutions, comparing the two tracks. Do they match well? Are there regions missing from one track but present in the other?
 
 Q1: Are the majority of the CpG dinucleotides methylated or unmethylated?
 
