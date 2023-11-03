@@ -4,7 +4,7 @@ Due Date: Friday, Nov. 12, 2023 @ 10:00am ET <br>
 
 ## Assignment Overview
 
-For this lab, you will be working with two datasets, methylation calls across chromosome 2 in the cell line GM24385 using both traditional bisulfite sequencing (using the software Bismark) and direct detection using nanopore sequencing. The second dataset is looking at paired samples for normal and colorectal cancer methylation cells. There are methylation calls for bisulfite sequencing and nanopore sequencing for chr2. You also have the nanopore reads for two subregions of chr2 in the normal and tumor samples.
+For this lab, you will be working with two datasets. The first is methylation calls across chromosome 2 in the cell line GM24385 using both traditional bisulfite sequencing (using the software Bismark) and direct detection using nanopore sequencing. The second dataset is looking at paired samples for normal and colorectal cancer methylation cells. There are methylation calls for bisulfite sequencing and nanopore sequencing for chr2. You also have the nanopore reads for two subregions of chr2 in the normal and tumor samples.
 
  The aim of this assignment is to compare methylation calling from the two different technologies and observe the role of tumorigenesis in hypermethylation and allele-specific methylation.
 
@@ -42,7 +42,7 @@ You will be comparing data from the two methylation calling approaches. This inc
 
 #### Part 3a
 
-Using the above bedgraph files, write a script to perform a number of comparisons between the two sets of methylation calls. Your script should be able to:
+Using the above bedgraph files, write a Python script to perform a number of comparisons between the two sets of methylation calls. Your script should be able to:
 
 1. Parse the bedgraph files
 2. Calculate the number of sites present only in the bismark file, present only in the nanopore file, and the shared sites as a percentage of total sites (both unique and shared sites) and record them in your `README.md` file.
@@ -55,7 +55,11 @@ Q2: How does using nanopore for methylation calling differ from bisulfite sequen
 
 #### Part 3c:
 
-For CpG sites occurring in both bedgraph files, plot the correspondence between methylation scores for the two approaches. Because of the number of data points, it is impractical to do this using a scatterplot. Instead, use the numpy function `histogram2d` and plot using the matplotlib function `imshow`. I recommend 100 bins per axis for the histogram as this will make the axis labels match the percent methylation. Because points are highly concentrated in the corners, it is difficult to see much of the data. Therefore you should transform the data using a `log10(data + 1)` transformation. You also should calculate the Pearson R coefficient for the two sets of methylation calls (non-transformed data). This is easy to do using the numpy function `corrcoef`. Include this value in the title (no more than 3 decimal places, please).
+For CpG sites occurring in both bedgraph files, plot the relationship between methylation scores for the two approaches. Because of the number of data points, it is impractical to do this using a scatterplot. Instead, use the numpy function `histogram2d` and plot using the matplotlib function `imshow`. I recommend 100 bins per axis for the histogram as this will make the axis labels match the percent methylation. 
+
+To do this, first run `numpy.histogram2d()` on your data. `numpy.histogram2d()` returns three items - a histogram, the x edges and the y edges. Store the histogram as a variable. Because points are highly concentrated in the corners, it is difficult to see much of the data. Therefore you should transform the histogram using a `log10(data + 1)` transformation. Plot your transformed histogram `imshow()`. 
+
+You also should calculate the Pearson R coefficient for the two sets of methylation calls (non-transformed data). This is easy to do using the numpy function `corrcoef`. Include this value in the title (no more than 3 decimal places, please).
 
 #### Part 3d:
 
@@ -89,10 +93,13 @@ Q8: Can any set of reads be phased? Explain your answer.
 
 For this assignment you should turn in the following:
 
-- The number of unique and shared CpG sites from part 3a in your `README.md` document
-- Answers to questions 1-8 in your `README.md` document
-- A multi-panel plot containing the plots from parts 3b, 3c, and 3d
-- 2 images from IGV, one from gene DNMT3A and one from gene ZDBF2
+* Part 3a: Python code to calculate overlap between Bismark and Nanopore (**1pt**)
+* Part 3b: Python code to plot distributions of coverages (**1pt**)
+* Part 3c: Python code to plot relationship between two approaches and caluclate correlation (**1pt**)
+* Part 3d: Python code to compare normal and tumor samples (**1pt**)
+* Part 3: Screenshot of multi-plot figure of coverage distributions (3b), heatmap (3c), violin plot (3d) (**2pt**)
+* Part 4: 2 images from IGV, one from gene DNMT3A and one from gene ZDBF2 (**1pt**)
+* README.md: Answers to questions 1-8: (**3pt**)
 
 ## Advanced
 
