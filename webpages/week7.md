@@ -4,6 +4,7 @@ Assignment Date: Friday, Nov. 03, 2023
 
 Due Date: Friday, Nov. 10, 2023
 
+<!--
 ## Lecture -- Michael Sauria
 
 [Lecture Slides](https://www.dropbox.com/scl/fi/j0xp8mjdfo1vnc5h240z3/Nanopore-and-Methylation.pdf?rlkey=wpw6fz8dom3by2s755ondckjb&dl=0)
@@ -25,3 +26,4 @@ brew install minimap2
 Complete the homework assignment in your `week7` submission directory in your `qbb2023-answers`.
 
 [Homework Assignment](../assignments/lab/nanopore-seq/assignment/)
+-->
