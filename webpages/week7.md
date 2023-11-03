@@ -20,10 +20,8 @@ Installing minimap2 can be done using the command
 brew install minimap2
 ```
 
-<!--
 ## Homework Assignment
 
 Complete the homework assignment in your `week7` submission directory in your `qbb2023-answers`.
 
 [Homework Assignment](../assignments/lab/nanopore-seq/assignment/)
--->
