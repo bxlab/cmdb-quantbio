@@ -4,11 +4,11 @@ Assignment Date: Friday, Nov. 03, 2023
 
 Due Date: Friday, Nov. 10, 2023
 
-<!--
 ## Lecture -- Michael Sauria
 
 [Lecture Slides](https://www.dropbox.com/scl/fi/j0xp8mjdfo1vnc5h240z3/Nanopore-and-Methylation.pdf?rlkey=wpw6fz8dom3by2s755ondckjb&dl=0)
 
+<!--
 ## Live coding resources
 
 Files for the live coding exercise can be found in `cmdb-quantbio/assignments/lab/nanopore-seq/slides_asynchronous_or_livecoding_resources/`.
