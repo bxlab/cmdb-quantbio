@@ -15,7 +15,7 @@ To get the data for this assignment, you will need to download it from [here](ht
 Create a folder for this assignment and move the resulting file `ONT_data.tar.gz` into your newly created folder. Then unpack the file with the following command:
 
 ```bash
-tar xzf ONT_data.tar.gz
+tar -xzf ONT_data.tar.gz
 ```
 
 You should have a total of 9 files:
