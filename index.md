@@ -74,14 +74,14 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |  3   | 9/29 | Dylan Taylor |  [Sequence alignment](webpages/week3.html) |&#124; |
 |  4   | 10/6 | Mike Sauria |  [ChIP-seq](webpages/week4.html) |&#124; |
 |  5   | 10/13 | Rajiv McCoy | [Variant calling](webpages/week5.html) |&#124; |
-|  6   | 10/20 | No Class | Retreat |&#124; |
-|  7   | 10/27 | Rajiv McCoy | [GWAS](webpages/week6.html) |&#124; |
-|  8   | 11/3 | Mike Sauria | [Single-molecule sequencing and DNA modifications](webpages/week7.html) | 11/27 |
-|  9   | 11/10 | Mike Sauria | 3D Genome | &#124;|
-|  10   | 11/17 | Rajiv McCoy | Bulk RNA-seq | 12/8 |
-|  11   | 11/24 | No class | Thanksgiving Break | &#124; |
-|  12   | 12/1 | Rajiv McCoy | Single-cell RNA-seq |	&#124; |
-|  13   | 12/8 | Mike Sauria | Metagenomics |	12/15 |
+|  -   | 10/20 | No Class | Retreat |&#124; |
+|  6   | 10/27 | Rajiv McCoy | [GWAS](webpages/week6.html) |&#124; |
+|  7   | 11/3 | Mike Sauria | [Single-molecule sequencing and DNA modifications](webpages/week7.html) | 11/27 |
+|  8   | 11/10 | Mike Sauria | 3D Genome | &#124;|
+|  9   | 11/17 | Rajiv McCoy | Bulk RNA-seq | 12/8 |
+|  -   | 11/24 | No class | Thanksgiving Break | &#124; |
+|  10   | 12/1 | Rajiv McCoy | Single-cell RNA-seq |	&#124; |
+|  11   | 12/8 | Mike Sauria | Metagenomics |	12/15 |
 {:.table.table-striped.well}
 
 
