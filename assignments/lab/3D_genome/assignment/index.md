@@ -102,7 +102,7 @@ If this description of the necessary fields is confusing, you can use the hint b
 17. targetName: The name of the target fragment. If the target fragment is *also* a bait fragment, this should be the name of the fragment, otherwise you can mark it as empty with a `.`
 18. targetStrand: The "strand" of the target fragment. Again, you don't need this, but we recommend setting it to `+` if the target is also a bait fragment, and `-` if it is not. It will help later on.
   </pre>
-</details>
+</details><br>
 
 Now that you understand the two file formats, you'll have to write a Python script that will convert the WashU format to the UCSC interaction bed format.<br><br>
 
@@ -138,7 +138,7 @@ You will also want to add the following line at the beginning of your interactio
 
 Using your newly created UCSC interaction bed file, find the following:
 1. The 6 top-scoring interactions between two promoters (i.e. between two bait fragments). Record these six lines in your `README.md` file for this assignment.
-2. The 6 top-scoring interactions between a promoter and an enhancer (i.e. between one bait fragment and and non-bait fragments). Record these six lines in your `README.md` file for this assignment. Make sure it's clear which set of 6 is which in your `README.md`
+2. The 6 top-scoring interactions between a promoter and an enhancer (i.e. between one bait fragment and and non-bait fragments). Record these six lines in your `README.md` file for this assignment. Make sure it's clear which set of 6 is which in your `README.md`<br><br>
 
 #### **Step 2.3**: Visualizing top interactions
 
