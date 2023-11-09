@@ -65,7 +65,7 @@ Q1. Do these enrichments make sense to you? Are any surprising? Explain your rea
 
 ### Exercise 3: Creating a custom track
 
-`Chicago` outputs a file of significant interactions but in a format specific for the WashU genome browser, which we will not be using. Take a look at the file, which should be `<OUTNAME>/data/<OUTNAME>_washU_text.txt` which `<OUTNAME>` is the output prefix you used when running `Chicago`. The format that you will need to visualizing in the UCSC genome browser can be found [here](https://genome.ucsc.edu/goldenPath/help/interact.html).
+`Chicago` outputs a file of significant interactions but in a format specific for the WashU genome browser, which we will not be using. Take a look at the file, which should be `<OUTNAME>/data/<OUTNAME>_washU_text.txt` where `<OUTNAME>` is the output prefix you used when running `Chicago`. The format that you will need to visualizing in the UCSC genome browser can be found [here](https://genome.ucsc.edu/goldenPath/help/interact.html).
 
 Note that the first set of coordinates are the smallest and largest for the pair of interactions (i.e. the start and end will come from opposite ends of the interaction). Use the bait list (`raw/Design/h19_chr20and21.baitmap`) to add gene names to interactions where appropriate (every interaction will have at least one end from a promoter bait fragment, some will have both ends when two promoters are interacting). You should also find the maximum score and scale values from 0-1000 for the `score` field. This will allow you to visualize strong vs. weak interactions in the browser.
 
