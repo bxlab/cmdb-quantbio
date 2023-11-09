@@ -83,7 +83,7 @@ If this description of the necessary fields is confusing, you can use the hint b
 
 <details><summary><b><font color="#18BC9C">CLICK HERE FOR A DESCRIPTION OF THE FIELDS</font></b></summary>
   <pre>
-1. `chrom`: The chromsome of the interaction
+1. <code>chrom</code>: The chromsome of the interaction
 2. `chromStart`: The start position of the interaction (i.e. the start position of the lower of the two fragments)
 3. `chromEnd`: The end position of the interaction (i.e. the end position of the upper of the two fragments)
 4. `name`: You won't need this so you can just use a `.` to mark that it's missing
