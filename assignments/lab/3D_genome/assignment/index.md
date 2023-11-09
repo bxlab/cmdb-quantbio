@@ -83,24 +83,24 @@ If this description of the necessary fields is confusing, you can use the hint b
 
 <details><summary><b><font color="#18BC9C">CLICK HERE FOR A DESCRIPTION OF THE FIELDS</font></b></summary>
   <pre>
-1. <code>chrom</code>: The chromsome of the interaction
-2. `chromStart`: The start position of the interaction (i.e. the start position of the lower of the two fragments)
-3. `chromEnd`: The end position of the interaction (i.e. the end position of the upper of the two fragments)
-4. `name`: You won't need this so you can just use a `.` to mark that it's missing
-5. `score`: An integer score (0-1000) that describes the strength of the interaction. This is set to help with visualiztion. We'll describe below how to generate this.
-6. `value`: The strength of the interaction
-7. `exp`: You won't need this so you can just use a `.` to mark that it's missing
-8. `color`: Feel free to set a different color, but you can just use `0` to show the interactions in black
-9. `sourceChrom`: The chromosome of the bait fragment
-10. `sourceStart`: The start position of the bait fragment
-11. `sourceEnd`: The end position of the bait fragment
-12. `sourceName`: The name of the bait fragment (i.e. the name of the gene(s) for which the bait fragment is a marker)
-13. `sourceStrand`: The "strand" of the bait fragment. You don't need this, but we recommend setting it to `+` to indicate that this is a bait fragment
-14. `targetChrom`: The chromosome of the target fragment
-15. `targetStart`: The start position of the target fragment
-16. `targetEnd`: The end position of the target fragment
-17. `targetName`: The name of the target fragment. If the target fragment is *also* a bait fragment, this should be the name of the fragment, otherwise you can mark it as empty with a `.`
-18. `targetStrand`: The "strand" of the target fragment. Again, you don't need this, but we recommend setting it to `+` if the target is also a bait fragment, and `-` if it is not. It will help later on.
+1. chrom: The chromsome of the interaction
+2. chromStart: The start position of the interaction (i.e. the start position of the lower of the two fragments)
+3. chromEnd: The end position of the interaction (i.e. the end position of the upper of the two fragments)
+4. name: You won't need this so you can just use a `.` to mark that it's missing
+5. score: An integer score (0-1000) that describes the strength of the interaction. This is set to help with visualiztion. We'll describe below how to generate this.
+6. value: The strength of the interaction
+7. ex`: You won't need this so you can just use a `.` to mark that it's missing
+8. color: Feel free to set a different color, but you can just use `0` to show the interactions in black
+9. sourceChrom: The chromosome of the bait fragment
+10. sourceStart: The start position of the bait fragment
+11. sourceEnd: The end position of the bait fragment
+12. sourceName: The name of the bait fragment (i.e. the name of the gene(s) for which the bait fragment is a marker)
+13. sourceStrand: The "strand" of the bait fragment. You don't need this, but we recommend setting it to `+` to indicate that this is a bait fragment
+14. targetChrom: The chromosome of the target fragment
+15. targetStart: The start position of the target fragment
+16. targetEnd: The end position of the target fragment
+17. targetName: The name of the target fragment. If the target fragment is *also* a bait fragment, this should be the name of the fragment, otherwise you can mark it as empty with a `.`
+18. targetStrand: The "strand" of the target fragment. Again, you don't need this, but we recommend setting it to `+` if the target is also a bait fragment, and `-` if it is not. It will help later on.
   </pre>
 </details>
 
