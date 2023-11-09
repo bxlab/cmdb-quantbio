@@ -54,7 +54,7 @@ In addition to the two required parameters, there are three other arguments you'
 3. `--export-format`: This should be the desired format of the output interactions. There are a bunch of different possible output formats, but the `washU_test` format is the one that will probably be most useful to you. 
 
 Run `chicago` using these parameters. Record the command you used to run `chicago` in your `README.md` file; you'll be submitting your `README.md` as part of the assignment.
- 
+
 Once you've run this command you should have a folder with the output prefix you selected containing a variety of output files, which you'll explore more now.<br><br>
 
 #### **Step 1.2**: Feature enrichment
