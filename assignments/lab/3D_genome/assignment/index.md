@@ -118,6 +118,7 @@ This script should take three inputs:
 Your script should do the following:
 1. To make sure your output file properly displays, add the following line at the top of your output:
   * `track type=interact name="pCHIC" description="Chromatin interactions" useScore=on maxHeightPixels=200:100:50 visibility=full`
+  * Note that you do NOT need to have the column names as an additional header
 2. Use the `.baitmap` file to determine, for each interaction, which fragment is the bait (or if they are both baits) and what the corresponding genes are
 3. For each interaction, determine an interaction "score" (used for visualization), by dividing the interaction strength by the `max` interaction strength, and multiplying by 1000. This should be an integer.
   * In pseudocode, `score = int(streng / max_strength) * 1000`
