@@ -25,7 +25,7 @@ There's a lot of data in the `raw` directory, but there are a few specific files
 
 ## Setting up your analysis environment
 
-You will need to use your **x86** version of iTerm for this assignment. Open `iTerm-x86` and run the following command to create and activate your conda environment:
+You will need to use your **Rosetta x86** version of iTerm for this assignment. Open `Rosetta_iTerm.app` and run the following command to create and activate your conda environment:
 
 ```bash
 mamba create -n chicago bioconductor-chicago r-argparser matplotlib
