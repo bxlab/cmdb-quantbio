@@ -51,7 +51,7 @@ You'll note that there are two required positional parameters:
 In addition to the two required parameters, there are three other arguments you'll need to specify:
 1. `--design-dir`: This should be the path to the design directory that describes all of the restriction fragments in your experiment
 2. `--en-feat-list`: This should be a file describing the filepaths of each of the regulatory features you want to intersect your pCHiC data with
-3. `--export-format`: This should be the desired format of the output interactions. There are a bunch of different possible output formats, but the `washU_test` format is the one that will probably be most useful to you. 
+3. `--export-format`: This should be the desired format of the output interactions. There are a bunch of different possible output formats, but the `washU_text` format is the one that will probably be most useful to you. 
 
 Run `chicago` using these parameters. Record the command you used to run `chicago` in your `README.md` file; you'll be submitting your `README.md` as part of the assignment.
 
