@@ -38,7 +38,7 @@ You should now see the environment indicator `(chicago)` to the left of your ter
 
 ### Exercise 1: Running `Chicago`
 
-The data have already been aligned and assigned to specific restriction fragments. The next step is to determine which fragment pairs are co-occurring at a significantly higher frequency than expected. To do this, you will use the R package `Chicago`. One of the things you downloaded was an R script called `runChicago.R`, which is an executable version of the package. You can run the script script using the command `Rscript runChicago.R`.<br><br>
+The data have already been aligned and assigned to specific restriction fragments. The next step is to determine which fragment pairs are co-occurring at a significantly higher frequency than expected. To do this, you will use the R package `Chicago`. One of the things you downloaded was an R script called `runChicago.R`, which is an executable version of the package. You can run the script using the command `Rscript runChicago.R`.<br><br>
 
 #### **Step 1.1**: Running the `runChicago.R` script
 
@@ -156,18 +156,18 @@ In your `README.md` for this assignment, answer the following question: Does it 
 
 ## Submission
 
-1. `README.md` file with commands and answers to questions (**X points total**)
-  * Command to run `chicago` in step 1.1 (**X points**)
-  * Answer to question in step 1.2 (**X points**)
-  * List of top 6 promoter-promoter interactions from step 2.2 (**X points**)
-  * List of top 6 promoter-enhancer interactions from step 2.2 (**X points**)
-  * Answer to question in step 2.3 (**X points**)
-2. Your `convert_washU_to_UCSC.py` script from step 2.1 (**X points**)
+1. `README.md` file with commands and answers to questions (**5 points total**)
+  * Command to run `chicago` in step 1.1 (**1 point**)
+  * Answer to question in step 1.2 (**1 point**)
+  * List of top 6 promoter-promoter interactions from step 2.2 (**1 point**)
+  * List of top 6 promoter-enhancer interactions from step 2.2 (**1 point**)
+  * Answer to question in step 2.3 (**1 point**)
+2. Your `convert_washU_to_UCSC.py` script from step 2.1 (**3 points**)
+3. The output interaction bed file from running `convert_washU_to_UCSC.py` (**1 point**)
   * git will complain about adding this since it is a bed file which is in your .gitignore list. You can use `git add --force` to get around this. Make sure you actually add it to your commit.
-3. The output interaction bed file from running `convert_washU_to_UCSC.py` (**X points**)
-4. The two UCSC genome browser screen shots of your selected promoter-enhancer interactions (**X points**)
+4. The two UCSC genome browser screen shots of your selected promoter-enhancer interactions (**1 point**)
 
-**Total Points: 10***<br><br>
+**Total Points: 10**<br><br>
 
 ## Advanced Exercise 1: Plotting top interactions (OPTIONAL)
 
