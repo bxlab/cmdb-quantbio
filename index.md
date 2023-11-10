@@ -77,7 +77,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |  -   | 10/20 | No Class | Retreat |&#124; |
 |  6   | 10/27 | Rajiv McCoy | [GWAS](webpages/week6.html) |&#124; |
 |  7   | 11/3 | Mike Sauria | [Single-molecule sequencing and DNA modifications](webpages/week7.html) | 11/27 |
-|  8   | 11/10 | Mike Sauria | 3D Genome | &#124;|
+|  8   | 11/10 | Mike Sauria | [3D Genome](webpages/week8.html) | &#124;|
 |  9   | 11/17 | Rajiv McCoy | Bulk RNA-seq | 12/8 |
 |  -   | 11/24 | No class | Thanksgiving Break | &#124; |
 |  10   | 12/1 | Rajiv McCoy | Single-cell RNA-seq |	&#124; |
