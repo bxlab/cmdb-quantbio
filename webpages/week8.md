@@ -4,6 +4,7 @@ Assignment Date: Friday, Nov. 10, 2023
 
 Due Date: Friday, Nov. 17, 2023
 
+<!--
 ## Lecture -- Michael Sauria
 
 [Lecture Slides](https://www.dropbox.com/scl/fi/0cek4f6vr6ziw4l72mmr0/3D-Genome-2023.pdf?rlkey=gsqbsosw1cu339vdtwom86552&dl=0)
@@ -17,3 +18,4 @@ You will need to erase old versions of the conda install scripts from last week 
 Complete the homework assignment in your `week8` submission directory in your `qbb2023-answers`.
 
 [Homework Assignment](../assignments/lab/3D_genome/assignment/)
+-->
