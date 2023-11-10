@@ -121,18 +121,7 @@ Your script should do the following:
 2. Use the `.baitmap` file to determine, for each interaction, which fragment is the bait (or if they are both baits) and what the corresponding genes are
 3. For each interaction, determine an interaction "score" (used for visualization), by dividing the interaction strength by the `max` interaction strength, and multiplying by 1000. This should be an integer.
   * In pseudocode, `score = int(streng / max_strength) * 1000`
-4. Using the information from steps 2 and 3, reformat the input WashU-formatted data to the UCSC interaction bed format
-
-<!--
-Note that the first set of coordinates are the smallest and largest for the pair of interactions (i.e. the start and end will come from opposite ends of the interaction). Use the bait list (`raw/Design/h19_chr20and21.baitmap`) to add gene names to interactions where appropriate (every interaction will have at least one end from a promoter bait fragment, some will have both ends when two promoters are interacting). You should also find the maximum score and scale values from 0-1000 for the `score` field. This will allow you to visualize strong vs. weak interactions in the browser.
-
-The format that you will need to visualizing in the UCSC genome browser can be found [here](https://genome.ucsc.edu/goldenPath/help/interact.html).
-
-You will also want to add the following line at the beginning of your interaction bed file so it properly displays:
-
-`track type=interact name="pCHIC" description="Chromatin interactions" useScore=on maxHeightPixels=200:100:50 visibility=full`
--->
-<br><br>
+4. Using the information from steps 2 and 3, reformat the input WashU-formatted data to the UCSC interaction bed format<br><br>
 
 #### **Step 2.2**: Finding the most significant interactions 
 
