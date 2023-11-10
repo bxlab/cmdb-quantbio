@@ -79,7 +79,7 @@ First, take a look at the `chicago` output file, which should be `<OUTNAME>/data
 
 Now, take a look at the format you will need to visualize the interactions in the UCSC browser [here](https://genome.ucsc.edu/goldenPath/help/interact.html). You'll note that this is essentially an extension of the `.bed` format.
 
-If this description of the necessary fields is confusing, you can use the hint below to check your undrstanding:
+If this description of the necessary fields is confusing, you can use the hint below to check your understanding:
 
 <details><summary><b><font color="#18BC9C">CLICK HERE FOR A DESCRIPTION OF THE FIELDS</font></b></summary>
   <pre>
