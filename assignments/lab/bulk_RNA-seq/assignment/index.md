@@ -1,122 +1,112 @@
-# Assignment 8: Bulk RNA-Seq
-Assignment Date: Friday, Nov. 4, 2022 <br>
-Due Date: Friday, Nov. 11, 2022 <br>
+# QuantLab Week 7 - Bulk RNA-seq and differential expression analysis
+Assignment Date: Friday, Nov. 17, 2023 <br>
+Due Date: Friday, Dec. 1, 2023 <br>
 
 ## Lecture
 
-**Slides** are available here: [Lecture slides](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/bulk_RNA-seq/slides_asynchronous_or_livecoding_resources/20221104_qblab_gex.pptx)
+**Slides** are available here: [Lecture slides](https://www.dropbox.com/scl/fi/qrdlsfg054xz3mkicatec/20231117_qblab_gex.pptx?rlkey=9o684hms6niwdgthanalbk81k&dl=0)
 
 
 ## Assignment Overview
 
-Today, you'll be exploring gene expression changes during Drosophila embryonic development. The data you'll using today is from [this paper](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000590) that examined sex-specific gene expression in developing Drosophila embryos. You'll first explore broad gene expression patterns in this data, between developmental stages and sexes. Then, you'll be using a linear regression  approach to identify genes whose expression changes over the course of embryonic development.
+Today, you will be examining gene expression data from the [Genotype-Tissue Expression (GTEx) Project](https://doi.org/10.1126/science.aaz1776)--a prominent resource in the field of human genetics comprising whole-genome and RNA-seq data from >800 post-mortem individuals across >50 tissues. Not all individuals donated all tissues, but there are more than 17,000 total RNA-seq samples, offering detailed insight into gene expression patterns across tissues and individuals, as well as the DNA sequence variants that modulate these differences.
 
-Check out the resources at the bottom of the page for additional information on RNA-seq and DE pipelines, as well as resources regarding proper experimental design for these analyses.
+One extremely common use of RNA-seq data is to compare patterns of gene expression across different conditions (i.e., predictor variables), which may include features such as sex, tissue type, genotype (e.g., wild-type versus mutant), drug treatment, time, etc. Such statistical analyses are termed "differential expression" tests, as we effectively loop over each gene and ask whether expression of that gene is correlated with the relevant predictor variable. In some study designs, you may want to "model out" or account for the effects of certain predictor variables (termed "covariates") while focusing attention on other predictors. From the statistical perspective, covariates are typically treated in the same way as other predictor variables, we simply place less focus on their effects in downstream analysis and interpretation as they may be less relevant to our key hypotheses.
 
+Unfortunately, the most popular software packages for performing differential expression analysis (edgeR and DESeq2) were written as libraries for the R programming language, so until this year, it was not possible to introduce these packages in QuantBio Lab. As of this year, DESeq2 has been ported to Python and released as a package called "PyDESeq2". While this provides key functions of DESeq2, the package is still poorly documented, so I would like to start by motivating this exercise with a simpler (but flawed) approach for differential expression analysis based on simple linear regression. Remember that DESeq2/PyDESeq2 are also linear regression(!), but with some additional bells and whistles that I reviewed in the lecture.
 
 ## Data
 
- The data you'll be using today is derived from the paper mentioned above. The paper actually provides their own processed gene-level expression data, but we've re-processed the raw reads and generated our own transcript-level expression data, and this is what you'll be using for today's assignment.
+The data you'll be using today is derived from the paper mentioned above, focusing on the RNA-seq samples from whole blood (755 total individuals). They were downloaded directly from the [GTEx portal](https://gtexportal.org/home/downloads/adult-gtex#bulk_tissue_expression) and slightly reformatted to save you some time on tedious data wrangling. Download from the Dropbox links below:
 
-The FPKM normalized gene expression data can be found here: `~/cmdb-quantbio/assignments/lab/bulk_RNA-seq/extra_data/dros_gene_expression.csv`. Copy this file to the `answers` directory you made for this assignment. Alternatively, you can download it directly into current directory with the following `curl` command:
+[Subject-level metadata](https://www.dropbox.com/scl/fi/zidlbn4rlvyv43k022mmn/gtex_metadata.txt?rlkey=j6aidakljr0739tnnzvpbg0gn&dl=0)
+[Gene expression matrix](https://www.dropbox.com/scl/fi/7iengpyrevd356dfq53pg/gtex_whole_blood_counts_formatted.txt?rlkey=l5h12cyher33kkzlrwi4qwf8g&dl=0)
 
-`curl https://raw.githubusercontent.com/bxlab/cmdb-quantbio/main/assignments/lab/bulk_RNA-seq/extra_data/dros_gene_expression.csv --output dros_gene_expression.csv`
+Create a Python script for this assignment. Everything you'll need to do for this assignment will be done in this script and submitted via GitHub.
 
-This file has FPKM data for over 34,000 transcripts of over 17,000 genes across 5 developmental stages (stages 10-14) for both male and female embryos. Take a look at the file with `less` to make sure you understand how the data is organized.
+### Step 0a: Import relevant libraries and read in the data
 
+Because the data are rectangular data of mixed type, we use Pandas to read the data into a data frame. Numpy is another alternative (and is superior in many ways), but the PyDESeq2 documentation uses Pandas, so we will stick with that for now. We will also use statsmodels to perform our "homemade" differential expression test, followed by PyDESeq2 to apply the more sophisticated test. Here is code to load those up, along with the data. You will need to modify the file paths to direct it to wherever you stored the data.
 
-## Assignment
+```
+import numpy as np
+import pandas as pd
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+from statsmodels.stats import multitest
+from pydeseq2 import preprocessing
+from pydeseq2.dds import DeseqDataSet
+from pydeseq2.ds import DeseqStats
 
-Create a python script for this assignment. Everything you'll need to do for this assignment will be done in this script.
+# read in data
+counts_df = pd.read_csv("gtex_whole_blood_counts_formatted.txt", index_col = 0)
 
-### Step 0a: Read in the data
+# read in metadata
+metadata = pd.read_csv("gtex_metadata.txt", index_col = 0)
+``` 
 
-1. We recommend using `numpy` to work with this dataset (although you're welcome to use `pandas` if you feel comfortable doing so). First, you'll need read the `.csv` file into a `numpy` array. You can do so with the following code:
+### Step 0b: Perform a "homemade" test for differential expression between the sexes
 
-    ```
-    input_arr = np.genfromtxt("dros_gene_expression.csv", delimiter=',', names=True, dtype=None, encoding='utf-8')
-    ```
+Before performing this test, we will first use PyDESeq2 to perform normalization across samples to account for differences in sequencing depth and RNA composition (i.e., some highly expressed genes "eating up" lots of reads and distorting the patterns). This will produce a "normalized counts" matrix that we can use for our own test. IMPORTANT NOTE: DESeq2 doesn’t actually use these normalized counts as input, rather it uses the raw counts and models the normalization inside the Generalized Linear Model (GLM). So when you proceed to Step 3, use `counts_df`, not `counts_df_normed`!
 
-2. With this structured array, you have access to the transcript names (the rows) and the column names from the `.csv` file. Extract both of these pieces of info and store them in some variables. For the column names, you can use the following code. What can you do to only include the sample names in this?
+```
+counts_df_normed = preprocessing.deseq2_norm(counts_df)[0]
+```
 
-    ```
-    col_names = list(input_arr.dtype.names)
-    ```
+Now extract the expression data from a given gene (let's start with the first column, DDX11L1) and merge it with the metadata, which contains the predictor variable of interest (sex).
 
-Don't forget to create a separate variable for the row names.
+```
+counts_gene = counts_df_normed.iloc[:, 0:1]
+counts_gene.columns = ["counts"]
+counts_gene = counts_gene.merge(metadata, on = "SUBJECT_ID")
+```
 
-3. Then, subset your input data to only include the FPKM values, excluding the transcript name info.
+Use statsmodels to perform the statistical test, using `log(counts + 1)` as the response variable and sex as the predictor variable. Extract and examine the slope and p-value.
 
-### Step 0b: Process input data
+```
+mod = smf.ols(formula = 'np.log(counts + 1) ~ SEX', data = counts_gene)
+res = mod.fit()
+slope = res.params[1]
+pval = res.pvalues[1]
+```
 
-Before running any analyses, you'll need to process your data a little bit more:
+### Step 1: Extend this test to all genes
 
-1. Convert your structured 1D array into an unstructured 2D array that can be indexed with row and column indices. You should use the following code where `fpkm_values` is the array from Step0a:3, that only includes the FPKMS, not the transcript names. You will want to use this `fpkm_values_2d` unstructured array to filter and transform your data in the next two substeps:
+- Write a for-loop in Python to extend this test to all genes in your matrix. 
+- Store the slopes and p-values, along with the associated gene names in one or more data structures (pandas DataFrame, arrays, ..., ?)
+- Use the [Benjamini-Hochberg procedure](https://www.statsmodels.org/dev/generated/statsmodels.stats.multitest.fdrcorrection.html) to determine which genes are sex-differentially expressed at an FDR of 10%
 
-    ```
-    import numpy.lib.recfunctions as rfn
-    fpkm_values_2d = rfn.structured_to_unstructured(fpkm_values, dtype=np.float)
-    ```
+### Step 2: Repeat the analysis from Step 1 with PyDESeq2
 
-2. Subset your data to only the transcripts whose median expression is greater than 0. You can use `numpy.median()` to find the median expression of each transcript. This function has an `axis` argument that you need to set, which will determine whether you're correctly finding the median expression per transcript or instead finding the median expression per sample. [This page](https://stackoverflow.com/questions/22320534/how-does-the-axis-parameter-from-numpy-work) might help you determine what value you should assign to `axis`. After finding the median expression per transcript, you can use `numpy.where()` to subset your fpkm array appropriately. Make sure to also filter your transcript name variable.
+First load the data into a PyDESeq2 object:
+```
+dds = DeseqDataSet(
+    counts=counts_df,
+    metadata=metadata,
+    design_factors="SEX",
+    n_cpus=4,
+)
+```
 
-3. Using your filtered array, apply a log2(FPKM + 0.1) transform to your data.
+Then apply the differential expression test and extract the results:
+```
+dds.deseq2()
+results = stat_res.results_df
+```
+Note that the `padj` column of `results` reports the FDR-adjusted p-value (i.e., "q-value"). The rows with a `padj` < 0.1 are the genes that are differentially expressed at an FDR of 10%. Compare these genes to those you identified in Step 1. What is the percentage of overlap? Compute this percentage in your code.
 
+### Step 3: Visualization
 
-### Step 1: Clustering
+Use matplotlib to create a "Volcano" plot depicting your differential expression results from Step 2. This is just another name for a scatter plot, where the x-axis shows the log2FoldChange and the y-axis shows the -log10(padj). Highlight the genes that are significant at a 10% FDR and for which the absolute value of the log2FoldChange is greater than 1 in a separate color. 
 
-We'd like to see if we can identify any broad patterns present in our gene expression data. To explore this, we're going to cluster the data, both by sample (i.e. identifying developmental timepoints whose gene expression patterns are similar across the genes we measured) as well as by transcript (i.e. identifying transcripts whose expression patterns are similar over the course of development).
-
-To do this analysis, you'll be using the `dendrogram`, `linkage` and `leaves_list` functions from [`scipy`](http://docs.scipy.org/doc/scipy-0.14.0/reference/cluster.hierarchy.html). The documentation for SciPy isn't very helpful, but with some quick Googling you can find examples of how to use both of these tools.
-
-1. Using `linkage` and `leaves_list`, cluster the filtered and log2 transformed gene expression data matrix (derived from `fpkm_values_2d` earlier) for both genes and samples based on their patterns of expression (so both the rows and columns of the matrix). You will find the [numpy transpose functionality](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.T.html) useful in order to cluster the columns.
-
-2. Plot a heatmap of the clustered gene expression data.
-
-3. Using the `dendrogram` function, create a dendrogram relating the samples to one another.
-
-
-### Step 2: Differential Gene Expression
-
-For this step, you will work with the same low-median-expression-filtered and log2-transformed dataset that you prepared for the clustering analysis above.
-
-1. For each transcript, you will perform an ordinary least squares regression to test for transcripts that are differentially expressed across stages. Use the stage number as a numeric independent variable (10, 11, 12, 13, 14).
-
-    * We suggest that you use the [`ols` function from `statsmodels.formula.api`](https://www.statsmodels.org/dev/generated/statsmodels.formula.api.ols.html). To pass this function a formula with named variables and a numpy array, you'll need to build another structured array for each transcript you consider. Specifically, you'll want to store the stage number and the observed fpkm value for that stage. Use a for loop and make a list of tuples with the stage and fpkm. Then, convert this list of tuples into a structured array with names for the info and specified data types. See the slightly more complex example below where `longdf` is the structured array:
-
-    ```
-    for i in range(fpkm_values_2d_filt_transform.shape[0]):
-      list_of_tuples = []
-      for j in range(len(col_names)):
-        list_of_tuples.append((transcript_names[i],fpkm_values_2d_filt_transform[i,j], sexes[j], stages[j]))
-      longdf = np.array(list_of_tuples, dtype=[('transcript', 'S11'), ('fpkm', float), ('sex', 'S6'), ('stage', int)])
-    ```
-
-    * Pass the structured array and a formula to `ols`, fit the model, and extract the p-values and beta values for the stage from the results for each transcript. You should store these in lists. [This man page explains provides information on how to extract these values](https://www.statsmodels.org/dev/generated/statsmodels.regression.linear_model.RegressionResults.html#statsmodels.regression.linear_model.RegressionResults) and [this stackoverflow question provides an active example of extracting beta coefficients](https://stackoverflow.com/questions/47388258/how-to-extract-the-regression-coefficient-from-statsmodels-api).
-
-2. Generate a QQ plot from the p-values. We suggest using the [`qqplot` function from `statsmodels.api`](https://stackoverflow.com/questions/48009614/quantile-quantile-plot-using-python-statsmodels-api). Use the `dist` argument and `scipy.stats` to specify the distribution you want to compare to. By default, it compares to a normal distribution (`dist = scipy.stats.t`) -- is this what you want? In your `README.md` for this assignment, please interpret your QQ plot in the context of the experiment.
-
-3. Find a list of transcripts that exhibit differential expression by stage at a 10% false discovery rate. [We recommend using the `multipletests` function from `statsmodels.stats` for this.](https://www.statsmodels.org/dev/generated/statsmodels.stats.multitest.multipletests.html) Report this list.
-
-4. Repeat the analysis in substeps 1 and 3 above, controlling for sex as a covariate in the formula. You do not need to generate another QQ plot.
-
-5. Report the list of transcripts that exhibit differential expression by stage at a 10% false discovery rate while controlling for sex.
-
-6. Compare the lists--what is the percentage overlap with and without sex as a covariate? We suggest defining the percentage of overlap as `((# overlapping transcripts) / (# transcripts differentially expressed by stage without sex covariate)) * 100`
-
-7. Generate a volcano plot of the differential expression (with sex as a covariate) results. Use the betas on the x axis and -log10(p-value) on the y-axis. Color the significant points in a different color.
 
 ## Submission
 
   * All code from the analysis
-  * Plot: Clustered heatmap of gene expression
-  * Plot: Dendrogram of cell types
-  * Plot: QQ plot of pvalues from differential expression results (by stage only, no sex covariate)
-  * Text: Your answer for question 2.2 (interpretting the QQ plot)
-  * Text: List of differentially expressed transcripts (10% FDR, by stage only, no sex covariate)
-  * Text: List of differentially expressed transcripts (10% FDR, by stage with sex as covariate)
-  * Text: Percentage overlap: `((# overlapping transcripts) / (# transcripts differentially expressed by stage without sex covariate)) * 100`
-  * Plot: Volcano plot (by stage with sex as covariate)
+  * Text: List of differentially expressed transcripts (10% FDR) from Step 1
+  * Text: List of differentially expressed transcripts (10% FDR) from Step 2
+  * Text: Percentage overlap
+  * Plot: Volcano plot
 
 ## Additional Resources
 
