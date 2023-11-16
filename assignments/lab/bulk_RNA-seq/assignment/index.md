@@ -53,7 +53,7 @@ Before performing this test, we will first use PyDESeq2 to perform normalization
 counts_df_normed = preprocessing.deseq2_norm(counts_df)[0]
 ```
 
-Now extract the expression data from a given gene (let's start with the first column, DDX11L1) and merge it with the metadata, which contains the predictor variable of interest (sex).
+Now extract the expression data from a given gene (let's start with the first column, DDX11L1) and merge it with the metadata, which contains the predictor variable of interest (sex). Note that sex here is encoded as 1 and 2, where 1 refers to males and 2 refers to females.
 
 ```
 counts_gene = counts_df_normed.iloc[:, 0:1]
@@ -101,7 +101,6 @@ Note that the `padj` column of `results` reports the FDR-adjusted p-value (i.e.,
 
 Use matplotlib to create a "Volcano" plot depicting your differential expression results from Step 2. This is just another name for a scatter plot, where the x-axis shows the log2FoldChange and the y-axis shows the -log10(padj). Highlight the genes that are significant at a 10% FDR and for which the absolute value of the log2FoldChange is greater than 1 in a separate color. 
 
-
 ## Submission
 
   * All code from the analysis
@@ -109,6 +108,11 @@ Use matplotlib to create a "Volcano" plot depicting your differential expression
   * Text: List of differentially expressed transcripts (10% FDR) from Step 2
   * Text: Percentage overlap
   * Plot: Volcano plot
+
+### Optional Extra Questions:
+
+1. Use PyDESeq2 to perform a test of differential expression between participants <50 vs. >=50 years of age, controlling for sex as a covariate.
+2. Use PyDESeq2 to perform a test of differential expression between participants who were (`DTHHRDY == 0`) versus were not (`DTHHRDY != 0`) on a ventillator immediately prior to death, controlling for sex and age category as covariates.
 
 ## Additional Resources
 
