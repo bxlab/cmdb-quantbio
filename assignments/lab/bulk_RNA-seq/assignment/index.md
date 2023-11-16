@@ -95,7 +95,7 @@ stat_res = DeseqStats(dds)
 stat_res.summary()
 results = stat_res.results_df
 ```
-Note that the `padj` column of `results` reports the FDR-adjusted p-value (i.e., "q-value"). The rows with a `padj` < 0.1 are the genes that are differentially expressed at an FDR of 10%. Compare these genes to those you identified in Step 1. What is the percentage of overlap? Compute this percentage in your code.
+Note that the `padj` column of `results` reports the FDR-adjusted p-value (i.e., "q-value"). The rows with a `padj` < 0.1 are the genes that are differentially expressed at an FDR of 10%. Compare these genes to those you identified in Step 1. What is the percentage of overlap? Compute this percentage in your code as a "Jaccard index", which quantifies the intersection divided by the union: `((number of genes that were significant in steps 1 and 2) / (number of genes that were significant in steps 1 or 2)) * 100%`
 
 ### Step 3: Visualization
 
