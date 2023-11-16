@@ -43,6 +43,7 @@ def main():
     #sc.pl.highly_variable_genes(adata)
     adata.write("filtered_data.h5")
 
+    adata.raw = adata
     adata = adata[:, adata.var.highly_variable]
     print("# cells, # genes after variability filtering:", adata.shape)
 
