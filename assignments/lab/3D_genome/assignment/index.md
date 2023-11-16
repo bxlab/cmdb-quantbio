@@ -89,7 +89,7 @@ If this description of the necessary fields is confusing, you can use the hint b
 4. name: You won't need this so you can just use a `.` to mark that it's missing
 5. score: An integer score (0-1000) that describes the strength of the interaction. This is set to help with visualiztion. We'll describe below how to generate this.
 6. value: The strength of the interaction
-7. ex`: You won't need this so you can just use a `.` to mark that it's missing
+7. exp: You won't need this so you can just use a `.` to mark that it's missing
 8. color: Feel free to set a different color, but you can just use `0` to show the interactions in black
 9. sourceChrom: The chromosome of the bait fragment
 10. sourceStart: The start position of the bait fragment
