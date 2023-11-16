@@ -19,7 +19,7 @@ Unfortunately, the most popular software packages for performing differential ex
 
 The data you'll be using today is derived from the paper mentioned above, focusing on the RNA-seq samples from whole blood (755 total individuals). They were downloaded directly from the [GTEx portal](https://gtexportal.org/home/downloads/adult-gtex#bulk_tissue_expression) and slightly reformatted to save you some time on tedious data wrangling. Download from the Dropbox links below:
 
-[Subject-level metadata](https://www.dropbox.com/scl/fi/zidlbn4rlvyv43k022mmn/gtex_metadata.txt?rlkey=j6aidakljr0739tnnzvpbg0gn&dl=0)
+[Subject-level metadata](https://www.dropbox.com/scl/fi/zidlbn4rlvyv43k022mmn/gtex_metadata.txt?rlkey=j6aidakljr0739tnnzvpbg0gn&dl=0) <br>
 [Gene expression matrix](https://www.dropbox.com/scl/fi/7iengpyrevd356dfq53pg/gtex_whole_blood_counts_formatted.txt?rlkey=l5h12cyher33kkzlrwi4qwf8g&dl=0)
 
 Create a Python script for this assignment. Everything you'll need to do for this assignment will be done in this script and submitted via GitHub.
