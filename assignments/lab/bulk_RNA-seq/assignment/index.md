@@ -91,6 +91,8 @@ dds = DeseqDataSet(
 Then apply the differential expression test and extract the results:
 ```
 dds.deseq2()
+stat_res = DeseqStats(dds)
+stat_res.summary()
 results = stat_res.results_df
 ```
 Note that the `padj` column of `results` reports the FDR-adjusted p-value (i.e., "q-value"). The rows with a `padj` < 0.1 are the genes that are differentially expressed at an FDR of 10%. Compare these genes to those you identified in Step 1. What is the percentage of overlap? Compute this percentage in your code.
