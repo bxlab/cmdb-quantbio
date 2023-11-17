@@ -123,11 +123,11 @@ Use matplotlib to create a "Volcano" plot depicting your differential expression
   * Code for FDR correction (Exercise 2) **(1 point)**
   * Code for percent overlap in results between methods (Exercise 2) **(1 point)**
   * Code for volcano plot (Exercise 2) **(1 point)**
-* Text submissions
+* **Text submissions**
   *  List of differentially expressed transcripts (10% FDR) from Step 1 **(1 point)**
   *  List of differentially expressed transcripts (10% FDR) from Step 2 **(1 point)**
   *  Percent overlap between manual testing and PyDESeq2 **(1 point)**
-* Images
+* **Images**
   * Nicely formatted and labelled volcano plot **(1 point)**
 
 ## Advanced Exercises:
