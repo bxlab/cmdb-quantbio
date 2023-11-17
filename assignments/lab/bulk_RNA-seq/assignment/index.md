@@ -49,7 +49,8 @@ counts_df = pd.read_csv("gtex_whole_blood_counts_formatted.txt", index_col = 0)
 
 # read in metadata
 metadata = pd.read_csv("gtex_metadata.txt", index_col = 0)
-``` 
+```
+<br><br>
 
 #### **Step 1.2**: Normalization
 
