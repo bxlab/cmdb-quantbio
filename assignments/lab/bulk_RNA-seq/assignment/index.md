@@ -12,8 +12,9 @@ Unfortunately, the most popular software packages for performing differential ex
 
 The data you'll be using today is derived from the paper mentioned above, focusing on the RNA-seq samples from whole blood (755 total individuals). They were downloaded directly from the [GTEx portal](https://gtexportal.org/home/downloads/adult-gtex#bulk_tissue_expression) and slightly reformatted to save you some time on tedious data wrangling. Download from the Dropbox links below:
 
-[Subject-level metadata](https://www.dropbox.com/scl/fi/zidlbn4rlvyv43k022mmn/gtex_metadata.txt?rlkey=j6aidakljr0739tnnzvpbg0gn&dl=0) <br>
-[Gene expression matrix](https://www.dropbox.com/scl/fi/7iengpyrevd356dfq53pg/gtex_whole_blood_counts_formatted.txt?rlkey=l5h12cyher33kkzlrwi4qwf8g&dl=0)<br<br>
+[Subject-level metadata](https://www.dropbox.com/scl/fi/zidlbn4rlvyv43k022mmn/gtex_metadata.txt?rlkey=j6aidakljr0739tnnzvpbg0gn&dl=0)
+
+[Gene expression matrix](https://www.dropbox.com/scl/fi/7iengpyrevd356dfq53pg/gtex_whole_blood_counts_formatted.txt?rlkey=l5h12cyher33kkzlrwi4qwf8g&dl=0)<br><br>
 
 ## Exercises
 
@@ -27,9 +28,11 @@ Before you do anything else, create a Python script for this assignment. Everyth
 
 ### Exercise 1: Perform a "homemade" test for differential expression between the sexes
 
+You're curious whether any genes are differntially expressed between sexes (in whole blood). Before you do the DE analysis the "right" way with DESeq2, you're first going to perform your own naive "homemade" analysis to get an idea of what DESeq2 is doing behind the scenes at a basic level. This will involve regressing expression quantifications from GTEx onto sample sex, and identifying genes with significant differences in expression between sexes.<br><br>
+
 #### **Step 1.1**: Loading data and importing libraries
 
-Because the data are rectangular data of mixed type, we use Pandas to read the data into a data frame. Numpy is another alternative (and is superior in many ways), but the PyDESeq2 documentation uses Pandas, so we will stick with that for now. We will also use statsmodels to perform our "homemade" differential expression test, followed by PyDESeq2 to apply the more sophisticated test. Here is code to load those up, along with the data. You will need to modify the file paths to direct it to wherever you stored the data.
+Because the data are rectangular data of mixed type, you can use `pandas` to read the data into a data frame. You will also need `statsmodels` to perform your "homemade" differential expression test, followed by PyDESeq2 to apply the more sophisticated test. You'll also need `numpy` to do some data transformations. Here is code to load those up, along with the data. You will need to modify the file paths to direct it to wherever you stored the data.
 
 ```
 import numpy as np
@@ -50,23 +53,25 @@ metadata = pd.read_csv("gtex_metadata.txt", index_col = 0)
 
 #### **Step 1.2**: Normalization
 
-Before performing this test, we will first use PyDESeq2 to perform normalization across samples to account for differences in sequencing depth and RNA composition (i.e., some highly expressed genes "eating up" lots of reads and distorting the patterns). This will produce a "normalized counts" matrix that we can use for our own test. <span style="color:red;font-weight:bold">IMPORTANT NOTE:</span>: DESeq2 doesn’t actually use these normalized counts as input, rather it uses the raw counts and models the normalization inside the Generalized Linear Model (GLM). So when you proceed to Step 3, use `counts_df`, not `counts_df_normed`!
+Before running your analysis, you will first use PyDESeq2 to perform normalization across samples to account for differences in sequencing depth and RNA composition (i.e., some highly expressed genes "eating up" lots of reads and distorting the patterns). This will produce a "normalized counts" matrix that we can use for our own test.
 
 ```
 counts_df_normed = preprocessing.deseq2_norm(counts_df)[0]
 ```
 
-Now extract the expression data from a given gene (let's start with the first column, DDX11L1) and merge it with the metadata, which contains the predictor variable of interest (sex). Note that sex here is encoded as 1 and 2, where 1 refers to males and 2 refers to females.
+<span style="color:red;font-weight:bold">IMPORTANT NOTE:</span>: DESeq2 doesn’t actually use these normalized counts as input, rather it uses the raw counts and models the normalization inside the Generalized Linear Model (GLM). So when you proceed to Exercise 2,  you will use `counts_df`, not `counts_df_normed`!<br><br>
+
+#### **Step 1.3**: Running regression for a single gene
+
+Now extract the expression data from a given gene (let's start with the first column, gene DDX11L1) and merge it with the metadata, which contains the predictor variable of interest (sex). Note that sex here is encoded as 1 and 2, where 1 refers to males and 2 refers to females.
 
 ```
-counts_gene = counts_df_normed.iloc[:, 0:1]
+counts_gene = counts_df_normed.iloc[:, [0]]
 counts_gene.columns = ["counts"]
 counts_gene = counts_gene.merge(metadata, on = "SUBJECT_ID")
 ```
 
-#### **Step 1.3**: Statistical testing 
-
-Use statsmodels to perform the statistical test, using `log(counts + 1)` as the response variable and sex as the predictor variable. Extract and examine the slope and p-value.
+Now, use statsmodels to perform the statistical test, using `log(counts + 1)` as the response variable and sex as the predictor variable. Extract and examine the slope and p-value.
 
 ```
 mod = smf.ols(formula = 'np.log(counts + 1) ~ SEX', data = counts_gene)
@@ -74,12 +79,21 @@ res = mod.fit()
 slope = res.params[1]
 pval = res.pvalues[1]
 ```
+<br><br>
 
 #### Step 1.4: Extend this test to all genes
 
-Write a for-loop in Python to extend this test to all genes in your matrix. For each gene that you test, store the slopes and p-values, along with the associated gene names in one or more data structures (pandas DataFrame, arrays, ..., ?). Use the [Benjamini-Hochberg procedure](https://www.statsmodels.org/dev/generated/statsmodels.stats.multitest.fdrcorrection.html) to determine which genes are sex-differentially expressed at an FDR of 10%.
+Write a for-loop in Python to extend this test to all genes in your matrix. For each gene that you test, store the slopes and p-values, along with the associated gene names in a useful data structure (pandas DataFrame, arrays, ..., ?).
+
+NOTE: This step will probably take a few minutes to run. We recommend outputing your results to a file, and then reading it back in to your script so that you don't have to re-run this whole process each time you run your python script.
+
+After running the analysis on all the genes, use the Benjamini-Hochberg procedure to determine which genes are sex-differentially expressed at an FDR of 10%. Statsmodels has a great function to do this correction for you: [statsmodels.stats.multitest.fdrcorrection](https://www.statsmodels.org/dev/generated/statsmodels.stats.multitest.fdrcorrection.html)
+
+Write the list of genes that are differentially expressed at a 10% FDR to a file. You will be uploading this file with your assignment.<br><br>
 
 ### Exercise 2: Repeat differential expression testing with PyDESeq2
+
+Now that you've run your homemade analysis to get a feel for what the analysis is doing, you want to run it the "right" way with DESeq2.
 
 First load the data into a PyDESeq2 object:
 ```
@@ -100,19 +114,25 @@ stat_res.summary()
 results = stat_res.results_df
 ```
 
-Note that the `padj` column of `results` reports the FDR-adjusted p-value (i.e., "q-value"). The rows with a `padj` < 0.1 are the genes that are differentially expressed at an FDR of 10%. Compare these genes to those you identified in Step 1. What is the percentage of overlap? Compute this percentage in your code as a "Jaccard index", which is defined as the intersection divided by the union: `((number of genes that were significant in steps 1 and 2) / (number of genes that were significant in steps 1 or 2)) * 100%`
+Note that the `padj` column of `results` reports the FDR-adjusted p-value (i.e., "q-value"). The rows with a `padj` < 0.1 are the genes that are differentially expressed at an FDR of 10%. A lot of rows will have missing `padj` values. This is because DESeq2 does a filtering step to remove genes that it thinks have a low probability of being DE, and only performs FDR correction for the set of genes it does not filter out. You can ignore genes with missing `padj` values.
+
+Compare the list of genes that ARE differentially expressed at a 10% FDR to those you identified in Step 1.4. What is the percentage of overlap? Compute this percentage in your code as a "Jaccard index", which is defined as the intersection divided by the union: `((number of genes that were significant in steps 1 and 2) / (number of genes that were significant in steps 1 or 2)) * 100%`. Record this in your `README.md` file for this assignment, which you will upload with the assignment.<br><br>
 
 ### Exercise 3: Visualization
 
-Use matplotlib to create a "Volcano" plot depicting your differential expression results from Step 2. This is just another name for a scatter plot, where the x-axis shows the log2FoldChange and the y-axis shows the -log10(padj). Highlight the genes that are significant at a 10% FDR and for which the absolute value of the log2FoldChange is greater than 1 in a separate color. 
+Use `matplotlib` to create a "Volcano" plot depicting your differential expression results from Exercise 2. A volcano plot is a scatter plot, where the x-axis shows the `log2FoldChange` and the y-axis shows the -log10(pvalue).
+
+Highlight the genes that are significant at a 10% FDR and for which the absolute value of the log2FoldChange is greater than 1 in a separate color.
+
+Output this plot to a `.png` that you will upload with your assignment.<br><br>
 
 ## Submission
 
 1. Python script to run DE analysis **(6 points total)**
   * Implementation of manual DE test (Steps 1.2-1.3) **(1 point)**
   * Code to perform DE test on all genes (Step 1.4) **(1 point)**
+  * Code for FDR correction (Step 1.4) **(1 point)**
   * Running PyDESeq2 on all genes (Exercise 2) **(1 point)**
-  * Code for FDR correction (Exercise 2) **(1 point)**
   * Code for percent overlap in results between methods (Exercise 2) **(1 point)**
   * Code for volcano plot (Exercise 2) **(1 point)**
 2. `README.md` file with answers to questions **(1 point total)**
