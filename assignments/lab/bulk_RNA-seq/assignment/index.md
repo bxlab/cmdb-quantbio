@@ -86,7 +86,6 @@ To get started, just run your regression for a single gene. You can start with t
 You will use statsmodels to perform the statistical test, using the gene ID as the response variable and sex as the predictor variable. Note that the format of some of the gene IDs in your data violate the formatting requirements of `smf.ols`. You can get around this by wrapping the response variable in `Q()` in your regression formula. Note as well that sex here is encoded as 1 and 2, where 1 refers to males and 2 refers to females.
 
 ```
-targetGene = 'DDX11L1'
 model = smf.ols(formula = 'Q("DDX11L1") ~ SEX', data=full_design_df)
 results = model.fit()
 ```
