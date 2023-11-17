@@ -133,13 +133,13 @@ results = stat_res.results_df
 
 Note that the `padj` column of `results` reports the FDR-adjusted p-value (i.e., "q-value"). The rows with a `padj` < 0.1 are the genes that are differentially expressed at an FDR of 10%. A lot of rows will have missing `padj` values. This is because DESeq2 does a filtering step to remove genes that it thinks have a low probability of being DE, and only performs FDR correction for the set of genes it does not filter out. You can ignore genes with missing `padj` values.
 
-Compare the list of genes that ARE differentially expressed at a 10% FDR to those you identified in Step 1.4. What is the percentage of overlap? Compute this percentage in your code as a "Jaccard index", which is defined as the intersection divided by the union: `((number of genes that were significant in steps 1 and 2) / (number of genes that were significant in steps 1 or 2)) * 100%`. Record this in your `README.md` file for this assignment, which you will upload with the assignment.<br><br>
+Compare the list of genes that ARE differentially expressed at a 10% FDR to those you identified in Step 1.5. What is the percentage of overlap? Compute this percentage in your code as a "Jaccard index", which is defined as the intersection divided by the union: `((number of genes that were significant in steps 1 and 2) / (number of genes that were significant in steps 1 or 2)) * 100%`. Record this in your `README.md` file for this assignment, which you will upload with the assignment.<br><br>
 
 ### Exercise 3: Visualization
 
-Use `matplotlib` to create a "Volcano" plot depicting your differential expression results from Exercise 2. A volcano plot is a scatter plot, where the x-axis shows the `log2FoldChange` and the y-axis shows the -log10(pvalue).
+Use `matplotlib` to create a "Volcano" plot depicting your differential expression results from Exercise 2. A volcano plot is a scatter plot, where the x-axis shows the `log2FoldChange` and the y-axis shows the -log10(`padj`).
 
-Highlight the genes that are significant at a 10% FDR and for which the absolute value of the log2FoldChange is greater than 1 in a separate color.
+Highlight the genes that are significant at a 10% FDR **AND** for which the absolute value of the log2FoldChange is greater than 1 in a separate color.
 
 Output this plot to a `.png` that you will upload with your assignment.<br><br>
 
