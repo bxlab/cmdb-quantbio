@@ -24,7 +24,18 @@ The data you'll be using today is derived from the paper mentioned above, focusi
 
 Create a Python script for this assignment. Everything you'll need to do for this assignment will be done in this script and submitted via GitHub.
 
-### Step 0a: Import relevant libraries and read in the data
+
+## Exercises
+
+There are three exercises in this assignment:
+
+1. Manually perform regression testing for differential expression
+2. Perform the same tests using the `pydeseq2` library
+3. Data visualization 
+
+### Exercise 1: Perform a "homemade" test for differential expression between the sexes
+
+#### **Step 1.1**: Loading data and importing libraries
 
 Because the data are rectangular data of mixed type, we use Pandas to read the data into a data frame. Numpy is another alternative (and is superior in many ways), but the PyDESeq2 documentation uses Pandas, so we will stick with that for now. We will also use statsmodels to perform our "homemade" differential expression test, followed by PyDESeq2 to apply the more sophisticated test. Here is code to load those up, along with the data. You will need to modify the file paths to direct it to wherever you stored the data.
 
@@ -45,9 +56,9 @@ counts_df = pd.read_csv("gtex_whole_blood_counts_formatted.txt", index_col = 0)
 metadata = pd.read_csv("gtex_metadata.txt", index_col = 0)
 ``` 
 
-### Step 0b: Perform a "homemade" test for differential expression between the sexes
+#### **Step 1.2**: Normalization
 
-Before performing this test, we will first use PyDESeq2 to perform normalization across samples to account for differences in sequencing depth and RNA composition (i.e., some highly expressed genes "eating up" lots of reads and distorting the patterns). This will produce a "normalized counts" matrix that we can use for our own test. IMPORTANT NOTE: DESeq2 doesn’t actually use these normalized counts as input, rather it uses the raw counts and models the normalization inside the Generalized Linear Model (GLM). So when you proceed to Step 3, use `counts_df`, not `counts_df_normed`!
+Before performing this test, we will first use PyDESeq2 to perform normalization across samples to account for differences in sequencing depth and RNA composition (i.e., some highly expressed genes "eating up" lots of reads and distorting the patterns). This will produce a "normalized counts" matrix that we can use for our own test. <span style="color:red;font-weight:bold">IMPORTANT NOTE:</span>: DESeq2 doesn’t actually use these normalized counts as input, rather it uses the raw counts and models the normalization inside the Generalized Linear Model (GLM). So when you proceed to Step 3, use `counts_df`, not `counts_df_normed`!
 
 ```
 counts_df_normed = preprocessing.deseq2_norm(counts_df)[0]
@@ -61,6 +72,8 @@ counts_gene.columns = ["counts"]
 counts_gene = counts_gene.merge(metadata, on = "SUBJECT_ID")
 ```
 
+#### **Step 1.3**: Statistical testing 
+
 Use statsmodels to perform the statistical test, using `log(counts + 1)` as the response variable and sex as the predictor variable. Extract and examine the slope and p-value.
 
 ```
@@ -70,13 +83,11 @@ slope = res.params[1]
 pval = res.pvalues[1]
 ```
 
-### Step 1: Extend this test to all genes
+#### Step 1.4: Extend this test to all genes
 
-- Write a for-loop in Python to extend this test to all genes in your matrix. 
-- Store the slopes and p-values, along with the associated gene names in one or more data structures (pandas DataFrame, arrays, ..., ?)
-- Use the [Benjamini-Hochberg procedure](https://www.statsmodels.org/dev/generated/statsmodels.stats.multitest.fdrcorrection.html) to determine which genes are sex-differentially expressed at an FDR of 10%
+Write a for-loop in Python to extend this test to all genes in your matrix. For each gene that you test, store the slopes and p-values, along with the associated gene names in one or more data structures (pandas DataFrame, arrays, ..., ?). Use the [Benjamini-Hochberg procedure](https://www.statsmodels.org/dev/generated/statsmodels.stats.multitest.fdrcorrection.html) to determine which genes are sex-differentially expressed at an FDR of 10%.
 
-### Step 2: Repeat the analysis from Step 1 with PyDESeq2
+### Exercise 2: Repeat differential expression testing with PyDESeq2
 
 First load the data into a PyDESeq2 object:
 ```
@@ -89,27 +100,37 @@ dds = DeseqDataSet(
 ```
 
 Then apply the differential expression test and extract the results:
+
 ```
 dds.deseq2()
 stat_res = DeseqStats(dds)
 stat_res.summary()
 results = stat_res.results_df
 ```
+
 Note that the `padj` column of `results` reports the FDR-adjusted p-value (i.e., "q-value"). The rows with a `padj` < 0.1 are the genes that are differentially expressed at an FDR of 10%. Compare these genes to those you identified in Step 1. What is the percentage of overlap? Compute this percentage in your code as a "Jaccard index", which is defined as the intersection divided by the union: `((number of genes that were significant in steps 1 and 2) / (number of genes that were significant in steps 1 or 2)) * 100%`
 
-### Step 3: Visualization
+### Exercise 3: Visualization
 
 Use matplotlib to create a "Volcano" plot depicting your differential expression results from Step 2. This is just another name for a scatter plot, where the x-axis shows the log2FoldChange and the y-axis shows the -log10(padj). Highlight the genes that are significant at a 10% FDR and for which the absolute value of the log2FoldChange is greater than 1 in a separate color. 
 
 ## Submission
 
-  * All code from the analysis
-  * Text: List of differentially expressed transcripts (10% FDR) from Step 1
-  * Text: List of differentially expressed transcripts (10% FDR) from Step 2
-  * Text: Percentage overlap
-  * Plot: Volcano plot
+* **Python scripts**
+  * Implementation of manual DE test (Exercise 1.2-1.3) **(1 point)**
+  * Code to perform DE test on all genes (Exercise 1.4) **(1 point)**
+  * Running PyDESeq2 on all genes (Exercise 2) **(1 point)**
+  * Code for FDR correction (Exercise 2) **(1 point)**
+  * Code for percent overlap in results between methods (Exercise 2) **(1 point)**
+  * Code for volcano plot (Exercise 2) **(1 point)**
+* Text submissions
+  *  List of differentially expressed transcripts (10% FDR) from Step 1 **(1 point)**
+  *  List of differentially expressed transcripts (10% FDR) from Step 2 **(1 point)**
+  *  Percent overlap between manual testing and PyDESeq2 **(1 point)**
+* Images
+  * Nicely formatted and labelled volcano plot **(1 point)**
 
-### Optional Extra Questions:
+## Advanced Exercises:
 
 1. Use PyDESeq2 to perform a test of differential expression between participants <50 vs. >=50 years of age, controlling for sex as a covariate.
 2. Use PyDESeq2 to perform a test of differential expression between participants who were (`DTHHRDY == 0`) versus were not (`DTHHRDY != 0`) on a ventillator immediately prior to death, controlling for sex and age category as covariates.
