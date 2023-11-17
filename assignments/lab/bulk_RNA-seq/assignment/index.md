@@ -60,25 +60,42 @@ Before running your analysis, you will first use PyDESeq2 to perform normalizati
 counts_df_normed = preprocessing.deseq2_norm(counts_df)[0]
 ```
 
+In addition to normalizing the counts, you will also want to log them. OLS regression (the type that you will be using for your homemade approach) assumes the data is normally distributed. Unfortunately, gene expression counts definitely are NOT. Logging the counts will make the data closer to a normal distribution, however. We can log the normalized expression counts using `numpy`.
+
+```
+counts_df_normed = np.log2(counts_df_normed + 1)
+```
+
 <span style="color:red;font-weight:bold">IMPORTANT NOTE:</span> DESeq2 doesn’t actually use these normalized counts as input, rather it uses the raw counts and models the normalization inside the Generalized Linear Model (GLM). So when you proceed to Exercise 2,  you will use `counts_df`, not `counts_df_normed`!<br><br>
 
-#### **Step 1.3**: Running regression for a single gene
+#### **Step 1.3**: Create a design matrix
 
-Now extract the expression data from a given gene (let's start with the first column, gene DDX11L1) and merge it with the metadata, which contains the predictor variable of interest (sex). Note that sex here is encoded as 1 and 2, where 1 refers to males and 2 refers to females.
-
-```
-counts_gene = counts_df_normed.iloc[:, [0]]
-counts_gene.columns = ["counts"]
-counts_gene = counts_gene.merge(metadata, on = "SUBJECT_ID")
-```
-
-Now, use statsmodels to perform the statistical test, using `log(counts + 1)` as the response variable and sex as the predictor variable. Extract and examine the slope and p-value.
+To make the regression easier, you're going to put all of your data (`counts_df_normed` and `metadata`) into a single data frame. You can do this using `pd.concat()`
 
 ```
-mod = smf.ols(formula = 'np.log(counts + 1) ~ SEX', data = counts_gene)
-res = mod.fit()
-slope = res.params[1]
-pval = res.pvalues[1]
+full_design_df = pd.concat([counts_df_normed, metadata], axis=1)
+```
+
+Take a look at how `full_design_df` looks. You should have one row per sample, with logged expression values 
+for all genes, and metadata for that sample.<br><br>
+
+#### **Step 1.4**: Running regression for a single gene
+
+To get started, just run your regression for a single gene. You can start with the first gene in the dataframe: DDX11L1.
+
+You will use statsmodels to perform the statistical test, using the gene ID as the response variable and sex as the predictor variable. Note that the format of some of the gene IDs in your data violate the formatting requirements of `smf.ols`. You can get around this by wrapping the response variable in `Q()` in your regression formula. Note as well that sex here is encoded as 1 and 2, where 1 refers to males and 2 refers to females.
+
+```
+targetGene = 'DDX11L1'
+model = smf.ols(formula = 'Q("DDX11L1") ~ SEX', data=full_design_df)
+results = model.fit()
+```
+
+Now, extract and examine the slope and p-value.
+
+```
+slope = results.params[1]
+pval = results.pvalues[1]
 ```
 <br><br>
 
