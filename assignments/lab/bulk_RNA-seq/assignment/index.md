@@ -60,7 +60,7 @@ Before running your analysis, you will first use PyDESeq2 to perform normalizati
 counts_df_normed = preprocessing.deseq2_norm(counts_df)[0]
 ```
 
-<span style="color:red;font-weight:bold">IMPORTANT NOTE:</span>: DESeq2 doesn’t actually use these normalized counts as input, rather it uses the raw counts and models the normalization inside the Generalized Linear Model (GLM). So when you proceed to Exercise 2,  you will use `counts_df`, not `counts_df_normed`!<br><br>
+<span style="color:red;font-weight:bold">IMPORTANT NOTE:</span> DESeq2 doesn’t actually use these normalized counts as input, rather it uses the raw counts and models the normalization inside the Generalized Linear Model (GLM). So when you proceed to Exercise 2,  you will use `counts_df`, not `counts_df_normed`!<br><br>
 
 #### **Step 1.3**: Running regression for a single gene
 
