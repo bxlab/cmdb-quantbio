@@ -158,7 +158,7 @@ Output this plot to a `.png` that you will upload with your assignment.<br><br>
   *  List of differentially expressed transcripts (10% FDR) from Step 1.5 **(1 point)**
   *  List of differentially expressed transcripts (10% FDR) from Exercise 2 **(1 point)**
 4. Plots **(1 point total)**
-  * Nicely formatted and labelled volcano plot from Exercise 2**(1 point)**
+  * Nicely formatted and labelled volcano plot from Exercise 2 **(1 point)**
 
 **Total Points: 10**<br><br>
 
