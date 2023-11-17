@@ -1,11 +1,4 @@
 # Bulk RNA-seq and differential expression analysis
-Assignment Date: Friday, Nov. 17, 2023 <br>
-Due Date: Friday, Dec. 1, 2023 <br>
-
-## Lecture
-
-**Slides** are available here: [Lecture slides](https://www.dropbox.com/scl/fi/qrdlsfg054xz3mkicatec/20231117_qblab_gex.pptx?rlkey=9o684hms6niwdgthanalbk81k&dl=0)
-
 
 ## Assignment Overview
 
@@ -13,17 +6,14 @@ Today, you will be examining gene expression data from the [Genotype-Tissue Expr
 
 One extremely common use of RNA-seq data is to compare patterns of gene expression across different conditions (i.e., predictor variables), which may include features such as sex, tissue type, genotype (e.g., wild-type versus mutant), drug treatment, time, etc. Such statistical analyses are termed "differential expression" tests, as we effectively loop over each gene and ask whether expression of that gene is correlated with the relevant predictor variable. In some study designs, you may want to "model out" or account for the effects of certain predictor variables (termed "covariates") while focusing attention on other predictors. From the statistical perspective, covariates are typically treated in the same way as other predictor variables, we simply place less focus on their effects in downstream analysis and interpretation as they may be less relevant to our key hypotheses.
 
-Unfortunately, the most popular software packages for performing differential expression analysis (edgeR and DESeq2) were written as libraries for the R programming language, so until this year, it was not possible to introduce these packages in QuantBio Lab. As of this year, DESeq2 has been ported to Python and released as a package called "PyDESeq2". While this provides key functions of DESeq2, the package is still poorly documented, so I would like to start by motivating this exercise with a simpler (but flawed) approach for differential expression analysis based on simple linear regression. Remember that DESeq2/PyDESeq2 are also linear regression(!), but with some additional bells and whistles that I reviewed in the lecture.
+Unfortunately, the most popular software packages for performing differential expression analysis (edgeR and DESeq2) were written as libraries for the R programming language, so until this year, it was not possible to introduce these packages in QuantBio Lab. As of this year, DESeq2 has been ported to Python and released as a package called "PyDESeq2". While this provides key functions of DESeq2, the package is still poorly documented, so I would like to start by motivating this exercise with a simpler (but flawed) approach for differential expression analysis based on simple linear regression. Remember that DESeq2/PyDESeq2 are also linear regression(!), but with some additional bells and whistles that I reviewed in the lecture.<br><br>
 
 ## Data
 
 The data you'll be using today is derived from the paper mentioned above, focusing on the RNA-seq samples from whole blood (755 total individuals). They were downloaded directly from the [GTEx portal](https://gtexportal.org/home/downloads/adult-gtex#bulk_tissue_expression) and slightly reformatted to save you some time on tedious data wrangling. Download from the Dropbox links below:
 
 [Subject-level metadata](https://www.dropbox.com/scl/fi/zidlbn4rlvyv43k022mmn/gtex_metadata.txt?rlkey=j6aidakljr0739tnnzvpbg0gn&dl=0) <br>
-[Gene expression matrix](https://www.dropbox.com/scl/fi/7iengpyrevd356dfq53pg/gtex_whole_blood_counts_formatted.txt?rlkey=l5h12cyher33kkzlrwi4qwf8g&dl=0)
-
-Create a Python script for this assignment. Everything you'll need to do for this assignment will be done in this script and submitted via GitHub.
-
+[Gene expression matrix](https://www.dropbox.com/scl/fi/7iengpyrevd356dfq53pg/gtex_whole_blood_counts_formatted.txt?rlkey=l5h12cyher33kkzlrwi4qwf8g&dl=0)<br<br>
 
 ## Exercises
 
@@ -32,6 +22,8 @@ There are three exercises in this assignment:
 1. Manually perform regression testing for differential expression
 2. Perform the same tests using the `pydeseq2` library
 3. Data visualization 
+
+Before you do anything else, create a Python script for this assignment. Everything you'll need to do for this assignment will be done in this script and submitted via GitHub.<br><br>
 
 ### Exercise 1: Perform a "homemade" test for differential expression between the sexes
 
