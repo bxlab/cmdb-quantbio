@@ -98,7 +98,7 @@ pval = results.pvalues[1]
 ```
 <br>
 
-#### Step 1.4: Extend this test to all genes
+#### **Step 1.5**: Extend this test to all genes
 
 Write a for-loop in Python to extend this test to all genes in your matrix. For each gene that you test, store the slopes and p-values, along with the associated gene names in a useful data structure (pandas DataFrame, arrays, ..., ?).
 
@@ -146,16 +146,16 @@ Output this plot to a `.png` that you will upload with your assignment.<br><br>
 ## Submission
 
 1. Python script to run DE analysis **(6 points total)**
-  * Implementation of manual DE test (Steps 1.2-1.3) **(1 point)**
-  * Code to perform DE test on all genes (Step 1.4) **(1 point)**
-  * Code for FDR correction (Step 1.4) **(1 point)**
+  * Implementation of manual DE test (Steps 1.1-1.4) **(1 point)**
+  * Code to perform DE test on all genes (Step 1.5) **(1 point)**
+  * Code for FDR correction (Step 1.5) **(1 point)**
   * Running PyDESeq2 on all genes (Exercise 2) **(1 point)**
   * Code for percent overlap in results between methods (Exercise 2) **(1 point)**
   * Code for volcano plot (Exercise 2) **(1 point)**
 2. `README.md` file with answers to questions **(1 point total)**
   *  Percent overlap between manual testing and PyDESeq2 from Exercise 2 **(1 point)**
 3. Output text files **(2 points total)**
-  *  List of differentially expressed transcripts (10% FDR) from Step 1.4 **(1 point)**
+  *  List of differentially expressed transcripts (10% FDR) from Step 1.5 **(1 point)**
   *  List of differentially expressed transcripts (10% FDR) from Exercise 2 **(1 point)**
 4. Plots **(1 point total)**
   * Nicely formatted and labelled volcano plot from Exercise 2**(1 point)**
