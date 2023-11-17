@@ -1,4 +1,4 @@
-# QuantLab Week 7 - Bulk RNA-seq and differential expression analysis
+# Bulk RNA-seq and differential expression analysis
 Assignment Date: Friday, Nov. 17, 2023 <br>
 Due Date: Friday, Dec. 1, 2023 <br>
 
