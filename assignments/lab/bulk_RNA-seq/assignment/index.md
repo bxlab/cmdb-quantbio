@@ -108,24 +108,27 @@ Use matplotlib to create a "Volcano" plot depicting your differential expression
 
 ## Submission
 
-* **Python scripts**
-  * Implementation of manual DE test (Exercise 1.2-1.3) **(1 point)**
-  * Code to perform DE test on all genes (Exercise 1.4) **(1 point)**
+1. Python script to run DE analysis **(6 points total)**
+  * Implementation of manual DE test (Steps 1.2-1.3) **(1 point)**
+  * Code to perform DE test on all genes (Step 1.4) **(1 point)**
   * Running PyDESeq2 on all genes (Exercise 2) **(1 point)**
   * Code for FDR correction (Exercise 2) **(1 point)**
   * Code for percent overlap in results between methods (Exercise 2) **(1 point)**
   * Code for volcano plot (Exercise 2) **(1 point)**
-* **Text submissions**
-  *  List of differentially expressed transcripts (10% FDR) from Step 1 **(1 point)**
-  *  List of differentially expressed transcripts (10% FDR) from Step 2 **(1 point)**
-  *  Percent overlap between manual testing and PyDESeq2 **(1 point)**
-* **Images**
-  * Nicely formatted and labelled volcano plot **(1 point)**
+2. `README.md` file with answers to questions **(1 point total)**
+  *  Percent overlap between manual testing and PyDESeq2 from Exercise 2 **(1 point)**
+3. Output text files **(2 points total)**
+  *  List of differentially expressed transcripts (10% FDR) from Step 1.4 **(1 point)**
+  *  List of differentially expressed transcripts (10% FDR) from Exercise 2 **(1 point)**
+4. Plots **(1 point total)**
+  * Nicely formatted and labelled volcano plot from Exercise 2**(1 point)**
+
+**Total Points: 10**<br><br>
 
 ## Advanced Exercises:
 
 1. Use PyDESeq2 to perform a test of differential expression between participants <50 vs. >=50 years of age, controlling for sex as a covariate.
-2. Use PyDESeq2 to perform a test of differential expression between participants who were (`DTHHRDY == 0`) versus were not (`DTHHRDY != 0`) on a ventillator immediately prior to death, controlling for sex and age category as covariates.
+2. Use PyDESeq2 to perform a test of differential expression between participants who were (`DTHHRDY == 0`) versus were not (`DTHHRDY != 0`) on a ventillator immediately prior to death, controlling for sex and age category as covariates.<br><br>
 
 ## Additional Resources
 
@@ -135,4 +138,4 @@ Here are some awesome resources for you. We don't expect you to read these all, 
 * [Specific example pipeline](https://www.nature.com/articles/nprot.2016.095) from Steven Salzberg & Co, commonly used in previous iterations of bootcamp
 * [Batch effects](https://www.biorxiv.org/content/10.1101/025528v1.full.pdf) discussion from Stephanie Hicks, specifically concerning single cell RNAseq
 * [Replicates vs Depth](https://academic.oup.com/bioinformatics/article/30/3/301/228651) and the relation to statistical power
-* The [Omnigenic inheritance](https://pubmed.ncbi.nlm.nih.gov/31051098/) model related to the discussion of cis- and trans- effects
+* The [Omnigenic inheritance](https://pubmed.ncbi.nlm.nih.gov/31051098/) model related to the discussion of cis- and trans- effects<br><br>
