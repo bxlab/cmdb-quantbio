@@ -73,8 +73,8 @@ Examine the feature overlaps and answer the following question in your `README.m
 The UCSC broswer is a great tool for visualzing interactions from pCHiC experiments such as these. Unfortunately, while `chicago` does output a file of significant interactions, it's in a format specific for the WashU genome browser, which we will not be using. You'll need to convert the `chicago` WashU format to a format the UCSC browser can use.
 
 First, take a look at the `chicago` output file, which should be `<OUTNAME>/data/<OUTNAME>_washU_text.txt` where `<OUTNAME>` is the output prefix you used when running `Chicago`. You'll see that this file has one line for each interaction and 3 columns:
-1. A column separated list denoting the location of one of the fragments of the interaction. This could be either the bait or the target fragment
-2. A column separated list denoting the location of the other fragment of the interaction. Again, this could be either the bait or the target fragment
+1. A comma-separated list denoting the location of one of the fragments of the interaction. This could be either the bait or the target fragment
+2. A comma-eparated list denoting the location of the other fragment of the interaction. Again, this could be either the bait or the target fragment
 3. The "strength" of the interaction, which is based on the number of reads from your pCHiC experiment supporting that interaction
 
 Now, take a look at the format you will need to visualize the interactions in the UCSC browser [here](https://genome.ucsc.edu/goldenPath/help/interact.html). You'll note that this is essentially an extension of the `.bed` format.
