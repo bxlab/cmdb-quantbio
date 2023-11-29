@@ -202,45 +202,51 @@ All class participants agree to:
   <td>Variant calling</td>
 </tr>
 <tr>
-  <td>6</td>
+  <td>-</td>
   <td>10/20</td>
   <td>No Class</td>
   <td>Retreat</td>
 </tr>
 <tr>
-  <td>7</td>
+  <td>6</td>
   <td>10/27</td>
   <td>Rajiv McCoy</td>
   <td>GWAS</td>
 </tr>
 <tr>
-  <td>8</td>
+  <td>7</td>
   <td>11/3</td>
   <td>Mike Sauria</td>
   <td>Single-molecule sequencing and DNA modifications</td>
 </tr>
 <tr>
-  <td>9</td>
+  <td>8</td>
   <td>11/10</td>
   <td>Mike Sauria</td>
   <td>3D Genome</td>
 </tr>
 <tr>
-  <td>10</td>
+  <td>9</td>
   <td>11/17</td>
   <td>Rajiv McCoy</td>
   <td>Bulk RNA-seq</td>
 </tr>
 <tr>
-  <td>11</td>
+  <td>-</td>
   <td>11/24</td>
   <td>No class</td>
   <td>Thanksgiving Break</td>
 </tr>
 <tr>
+  <td>11</td>
+  <td>12/1</td>
+  <td>Rajiv McCoy</td>
+  <td>Single-cell RNA-seq</td>
+</tr>
+<tr>
   <td>12</td>
   <td>12/8</td>
   <td>Mike Sauria</td>
-  <td>Single-cell RNA-seq</td>
+  <td>Metagenomics</td>
 </tr>
 </table>
