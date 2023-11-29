@@ -238,13 +238,13 @@ All class participants agree to:
   <td>Thanksgiving Break</td>
 </tr>
 <tr>
-  <td>11</td>
+  <td>10</td>
   <td>12/1</td>
   <td>Rajiv McCoy</td>
   <td>Single-cell RNA-seq</td>
 </tr>
 <tr>
-  <td>12</td>
+  <td>11</td>
   <td>12/8</td>
   <td>Mike Sauria</td>
   <td>Metagenomics</td>
