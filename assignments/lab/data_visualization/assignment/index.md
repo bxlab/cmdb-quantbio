@@ -70,7 +70,7 @@ For the gene LPXN, plot the median expression (logged normalized counts) over ti
 
 We highly encourage you to do this exercise with a partner.
 
-With your partner, select any data set from the TidyTuesday repository on GitHub: https://github.com/rfordatascience/tidytuesday. In this exercise, you'll be exploring interesting patterns in the data set that you choose.
+With your partner, select any data set from the TidyTuesday repository on GitHub: [https://github.com/rfordatascience/tidytuesday](https://github.com/rfordatascience/tidytuesday). In this exercise, you'll be exploring interesting patterns in the data set that you choose.
 
 Create a `plotting_exercise2.py` script now for this exercise.<br><br>
 
