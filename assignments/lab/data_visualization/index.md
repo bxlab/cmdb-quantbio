@@ -45,7 +45,7 @@ full_design_df = pd.concat([counts_df_normed, metadata], axis=1)
 
 Generate the following figures. For all figures, label the axes appropriately, provide legends only when necessary, do not place a title or any other elements on the plot itself. Use [log axis scales](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_xscale.html#matplotlib.axes.Axes.set_xscale) where necessary.
 
-1. For subject GTEX-113JC, plot the distribution of expression across all 54,592 genes.
+1. For subject GTEX-113JC, plot the distribution of expression across all genes, but excluding genes with a normalized count of 0.
 
 2. Plot the expression distribution of the gene MXD4 in males versus females.
 
