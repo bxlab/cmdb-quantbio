@@ -21,11 +21,13 @@ Re-load the data you downloaded in the previous lab session. These data comprise
 
 In the first exercise, you'll be exploring some aspects of the GTEx whole blood data and generating plots that communicate the observed patterns in an easy-to-interpret manner. You will be producing four figures. Each should be saved as it's own separate file and uploaded as part of the assignment.
 
-For all figures, label the axes appropriately, provide legends only when necessary, do not place a title or any other elements on the plot itself. **You will be graded on proper labelling.**<br><br>
+For all figures, label the axes appropriately, provide legends only when necessary, do not place a title or any other elements on the plot itself. **You will be graded on proper labelling.**
+
+Create a `plotting_exercise1.py` script now for this exercise.<br><br>
 
 #### **Step 1.0**: Load the data
 
-Load and normalize the GTEx data using the code below:
+In your `plotting_exercise1.py` script, load and normalize the GTEx data using the code below:
 
 ```
 import numpy as np
@@ -92,12 +94,6 @@ For this assignment you should submit the following:
 ## Advanced Exercises
 
 We'd like to see if we can identify any broad patterns present in our gene expression data. To explore this, we're going to cluster the data, both by sample as well as by gene.
-
-As a first step, we will need to log2-transform our data:
-
-```
-counts_df_normed = np.log2(counts_df_normed + 1)
-```
 
 To perform clustering, you'll be using the `dendrogram`, `linkage` and `leaves_list` functions from `scipy`. The documentation for SciPy isn't very helpful, but with some quick Googling you can find examples of how to use both of these tools.
 
