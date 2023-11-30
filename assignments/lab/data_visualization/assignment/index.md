@@ -10,7 +10,7 @@ You will start with some more directed visualizations of the GTEx RNA-seq datase
 
 Re-load the data you downloaded in the previous lab session. These data comprise RNA-seq samples from whole blood from the GTEx Consortium (755 total individuals). As a reminder, they were downloaded directly from the [GTEx portal](https://gtexportal.org/home/downloads/adult-gtex#bulk_tissue_expression) and slightly reformatted to save you some time on tedious data wrangling. If needed, download again from the Dropbox links below:
 
-[Subject-level metadata](https://www.dropbox.com/scl/fi/zidlbn4rlvyv43k022mmn/gtex_metadata.txt?rlkey=j6aidakljr0739tnnzvpbg0gn&dl=0) </br>
+[Subject-level metadata](https://www.dropbox.com/scl/fi/zidlbn4rlvyv43k022mmn/gtex_metadata.txt?rlkey=j6aidakljr0739tnnzvpbg0gn&dl=0)<br>
 [Gene expression matrix](https://www.dropbox.com/scl/fi/7iengpyrevd356dfq53pg/gtex_whole_blood_counts_formatted.txt?rlkey=l5h12cyher33kkzlrwi4qwf8g&dl=0)<br><br>
 
 ## Exercises
