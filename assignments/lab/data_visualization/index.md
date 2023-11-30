@@ -89,11 +89,6 @@ For this assignment you should submit the following:
 
 **DO NOT** push any raw data! Only the things we asked for!<br><br>
 
-
-## Additional Resources
-
-* [Fundamentals of Data Visualization Textbook](https://clauswilke.com/dataviz/)
-
 ## Advanced Exercises
 
 We'd like to see if we can identify any broad patterns present in our gene expression data. To explore this, we're going to cluster the data, both by sample as well as by gene.
@@ -110,4 +105,8 @@ To perform clustering, you'll be using the `dendrogram`, `linkage` and `leaves_l
 
 2. Plot a heatmap of the clustered gene expression data.
 
-3. Using the dendrogram function, create a dendrogram relating the samples to one another.
+3. Using the dendrogram function, create a dendrogram relating the samples to one another.<br><br>
+
+## Additional Resources
+
+* [Fundamentals of Data Visualization Textbook](https://clauswilke.com/dataviz/)<br><br>
