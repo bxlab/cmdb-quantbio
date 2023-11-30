@@ -29,10 +29,10 @@ from pydeseq2 import preprocessing
 from matplotlib import pyplot as plt
 
 # read in data
-counts_df = pd.read_csv("~/Dropbox/teaching/cmdb-quantbio/quantLab/bulk_rna_seq/gtex_whole_blood_counts_formatted.txt", index_col = 0)
+counts_df = pd.read_csv("gtex_whole_blood_counts_formatted.txt", index_col = 0)
 
 # read in metadata
-metadata = pd.read_csv("~/Dropbox/teaching/cmdb-quantbio/quantLab/bulk_rna_seq/gtex_metadata.txt", index_col = 0)
+metadata = pd.read_csv("gtex_metadata.txt", index_col = 0)
 
 # normalize
 counts_df_normed = preprocessing.deseq2_norm(counts_df)[0]
