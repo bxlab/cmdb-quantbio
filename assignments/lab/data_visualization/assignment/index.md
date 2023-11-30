@@ -1,6 +1,4 @@
 # Data Visualization
-Assignment Date: Friday, Dec. 1, 2023 <br>
-Due Date: Friday, Dec. 8, 2023 <br>
 
 ## Assignment Overview
 
