@@ -70,24 +70,48 @@ For the gene LPXN, plot the median expression (logged normalized counts) over ti
 
 ### Exercise 2: Independent data visualization
 
-Working with a partner, select any dataset from the TidyTuesday repository on GitHub: https://github.com/rfordatascience/tidytuesday. 
+We highly encourage you to do this exercise with a partner.
 
-1. Using Python (`pandas`, `numpy`, `matplotlib`, etc.) these data with your partner, searching for any interesting features or patterns. Jot these down as notes (no need to submit).
+With your partner, select any data set from the TidyTuesday repository on GitHub: https://github.com/rfordatascience/tidytuesday. In this exercise, you'll be exploring interesting patterns in the data set that you choose.
 
-2. Choose three aspects of these data that are best represented by three different types of figures (e.g., histogram, bar plot, line plot, heatmap, etc.).
+Create a `plotting_exercise2.py` script now for this exercise.<br><br>
 
-3. Generate these figures with `matplotlib`. As always, label the axes appropriately and avoid extraneous visual elements. Using `matplotlib.pyplot.title`, write a title on your plot that concisely states the message that your figure is attempting to convey.
+#### **Step 2.1**: Initial exploration
 
+Using Python (`pandas`, `numpy`, `matplotlib`, etc.) explore these data with your partner, searching for any interesting features or patterns. Jot down any interesting patterns you observe as notes (no need to submit). For each feature/pattern you observe, think about what kind of plot would best communicate that feature/pattern.<br><br>
+
+#### **Step 2.2**: Visualization
+
+Choose three aspects/patterns of these data that are best represented by three different types of plots (e.g., histogram, bar plot, line plot, heatmap, etc.).
+
+Generate these figures using `matplotlib`. As always, label the axes appropriately and avoid extraneous visual elements. For each plot, add a title that concisely states the message that your figure is attempting to convey.<br><br>
 
 ## Submission
 
 For this assignment you should submit the following:
 
-1. `plotting_step1.py` script to load and analyze data and produce plots from Step 1
+1. `plotting_exercise1.py` script to load and analyze data and produce plots from Exercise 1 **(3 points total)**
+    * Code to load in and normalize data **(1 point)**
+    * Code to create plot for Step 1.1 **(0.5 point)**
+    * Code to create plot for Step 1.2 **(0.5 point)**
+    * Code to create plot for Step 1.3 **(0.5 point)**
+    * Code to create plot for Step 1.4 **(0.5 point)**
+2. `plotting_exercise2.py` script to load and analyze data and produce plots from Exercise 2 **(3.5 points total)**
+    * Code to load in data **(1 point)**
+    * Code for initial data exploration **(1 point)**
+    * Code to produce first plot **(0.5 point)**
+    * Code to produce second plot **(0.5 point)**
+    * Code to produce third plot **(0.5 point)**
+3. Pretty plots produced by the scripts above. **(3.5 points total)**
+    * Plot for Step 1.1 **(0.5 point)**
+    * Plot for Step 1.2 **(0.5 point)**
+    * Plot for Step 1.3 **(0.5 point)**
+    * Plot for Step 1.4 **(0.5 point)**
+    * First plot for Exercise 2 **(0.5 point)**
+    * Second plot for Exercise 2 **(0.5 point)**
+    * Third plot for Exercise 2 **(0.5 point)**
 
-2. `plotting_step2.py` script to load and analyze data and produce plots from Step 2
-
-3. The pretty plots produced by the scripts above.
+**Total Points: 10**
 
 **DO NOT** push any raw data! Only the things we asked for!<br><br>
 
