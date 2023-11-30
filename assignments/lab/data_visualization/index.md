@@ -1,26 +1,31 @@
-# QuantLab Week 8 - Data Visualization
+# Data Visualization
 Assignment Date: Friday, Dec. 1, 2023 <br>
 Due Date: Friday, Dec. 8, 2023 <br>
 
-## Lecture
-
-**Slides** are available here: [Lecture slides](https://www.dropbox.com/scl/fi/tytab80ncq1ia85remlsh/20231201_qblab_dataviz.pptx?rlkey=x08ydaut17vn3x8dha0zdfebo&dl=0)
-
-
 ## Assignment Overview
 
-In today's assignment we will practice the principles of data visualization that we covered in the lecture. Visualizations should accurately and concisely convey a message in an easily understandable way without misleading the audience. Avoid extraneous visual elements.
+In today's assignment you will practice the principles of data visualization that were covered in the lecture. Visualizations should accurately and concisely convey a message in an easily understandable way without misleading the audience. Avoid extraneous visual elements.
 
-We will start with some more directed visualizations of the GTEx RNA-seq dataset you analyzed last week, followed by a more open-ended project.
+You will start with some more directed visualizations of the GTEx RNA-seq dataset you analyzed last week, followed by a more open-ended project.
 
 ## Data
 
-Re-load the data you downloaded in the previous lab session. These data comprise RNA-seq samples from whole blood from the GTEx Consortium (755 total individuals). They were downloaded directly from the [GTEx portal](https://gtexportal.org/home/downloads/adult-gtex#bulk_tissue_expression) and slightly reformatted to save you some time on tedious data wrangling. If needed, download again from the Dropbox links below:
+Re-load the data you downloaded in the previous lab session. These data comprise RNA-seq samples from whole blood from the GTEx Consortium (755 total individuals). As a reminder, they were downloaded directly from the [GTEx portal](https://gtexportal.org/home/downloads/adult-gtex#bulk_tissue_expression) and slightly reformatted to save you some time on tedious data wrangling. If needed, download again from the Dropbox links below:
 
 [Subject-level metadata](https://www.dropbox.com/scl/fi/zidlbn4rlvyv43k022mmn/gtex_metadata.txt?rlkey=j6aidakljr0739tnnzvpbg0gn&dl=0) </br>
-[Gene expression matrix](https://www.dropbox.com/scl/fi/7iengpyrevd356dfq53pg/gtex_whole_blood_counts_formatted.txt?rlkey=l5h12cyher33kkzlrwi4qwf8g&dl=0)
+[Gene expression matrix](https://www.dropbox.com/scl/fi/7iengpyrevd356dfq53pg/gtex_whole_blood_counts_formatted.txt?rlkey=l5h12cyher33kkzlrwi4qwf8g&dl=0)<br><br>
 
-Load and normalize the data using the code below:
+## Exercises
+
+### Excercise 1: Visualize characteristics of the RNA-seq data
+
+In the first exercise, you'll be exploring some aspects of the GTEx whole blood data and generating plots that communicate the observed patterns in an easy-to-interpret manner. You will be producing four figures. Each should be saved as it's own separate file and uploaded as part of the assignment.
+
+For all figures, label the axes appropriately, provide legends only when necessary, do not place a title or any other elements on the plot itself. **You will be graded on proper labelling.**<br><br>
+
+#### **Step 1.0**: Load the data
+
+Load and normalize the GTEx data using the code below:
 
 ```
 import numpy as np
@@ -37,23 +42,31 @@ metadata = pd.read_csv("gtex_metadata.txt", index_col = 0)
 # normalize
 counts_df_normed = preprocessing.deseq2_norm(counts_df)[0]
 
+# log
+counts_df_logged = np.log2(counts_df_normed + 1)
+
 # merge with metadata
-full_design_df = pd.concat([counts_df_normed, metadata], axis=1)
+full_design_df = pd.concat([counts_df_logged, metadata], axis=1)
 ```
+<br>
 
-### Step 1: Visualize characteristics of the RNA-seq data (barplots, line plots, box/violin plots, and histograms)
+#### **Step 1.1**: Distribution of expression across genes
 
-Generate the following figures. For all figures, label the axes appropriately, provide legends only when necessary, do not place a title or any other elements on the plot itself. Use [log axis scales](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_xscale.html#matplotlib.axes.Axes.set_xscale) where necessary.
+For subject GTEX-113JC, plot the distribution of expression (logged normalized counts) across all genes, excluding any genes with 0 counts. Upload this figure for the assignment.<br><br>
 
-1. For subject GTEX-113JC, plot the distribution of expression across all genes, but excluding genes with a normalized count of 0.
+#### **Step 1.2**: Expression of a single gene between sexes
 
-2. Plot the expression distribution of the gene MXD4 in males versus females.
+For the gene MXD4, plot the distribution expression (logged normalized counts) in males versus females. Upload this figure for the assignment.<br><br>
 
-3. Plot the number of subjects per age category that fall into each category of the Hardy scale.
+#### **Step 1.3**: Distribution of subject ages
 
-4. Plot the median expression of the gene LPXN for each age category, stratified by sex.
+Plot the number of subjects in each age category. Upload this figure for the assignment.<br><br>
 
-### Step 2: Independent data visualization
+#### **Step 1.4**: Sex-stratified expression with age
+
+For the gene LPXN, plot the median expression (logged normalized counts) over time (i.e. in each age category), stratified by sex. Upload this figure for the assignment.<br><br>
+
+### Exercise 2: Independent data visualization
 
 Working with a partner, select any dataset from the TidyTuesday repository on GitHub: https://github.com/rfordatascience/tidytuesday. 
 
