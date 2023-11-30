@@ -56,11 +56,11 @@ For subject GTEX-113JC, plot the distribution of expression (logged normalized c
 
 #### **Step 1.2**: Expression of a single gene between sexes
 
-For the gene MXD4, plot the distribution expression (logged normalized counts) in males versus females. Upload this figure for the assignment.<br><br>
+For the gene MXD4, plot the distribution of expression (logged normalized counts) in males versus females. Upload this figure for the assignment.<br><br>
 
-#### **Step 1.3**: Distribution of subject ages
+#### **Step 1.3**: Distribution of Hardy scale across subject ages
 
-Plot the number of subjects in each age category. Upload this figure for the assignment.<br><br>
+Plot the relative proportions of subjects in each category of the Hardy scale according to their age category. Upload this figure for the assignment.<br><br>
 
 #### **Step 1.4**: Sex-stratified expression with age
 
