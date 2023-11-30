@@ -53,8 +53,35 @@ Generate the following figures. For all figures, label the axes appropriately, p
 
 4. Plot the median expression of the gene LPXN for each age category, stratified by sex.
 
+### Step 2: Independent data visualization
 
-### Step 2: Clustering (heatmaps and dendrograms)
+Working with a partner, select any dataset from the TidyTuesday repository on GitHub: https://github.com/rfordatascience/tidytuesday. 
+
+1. Using Python (`pandas`, `numpy`, `matplotlib`, etc.) these data with your partner, searching for any interesting features or patterns. Jot these down as notes (no need to submit).
+
+2. Choose three aspects of these data that are best represented by three different types of figures (e.g., histogram, bar plot, line plot, heatmap, etc.).
+
+3. Generate these figures with `matplotlib`. As always, label the axes appropriately and avoid extraneous visual elements. Using `matplotlib.pyplot.title`, write a title on your plot that concisely states the message that your figure is attempting to convey.
+
+
+## Submission
+
+For this assignment you should submit the following:
+
+1. `plotting_step1.py` script to load and analyze data and produce plots from Step 1
+
+2. `plotting_step2.py` script to load and analyze data and produce plots from Step 2
+
+3. The pretty plots produced by the scripts above.
+
+**DO NOT** push any raw data! Only the things we asked for!<br><br>
+
+
+## Additional Resources
+
+* [Fundamentals of Data Visualization Textbook](https://clauswilke.com/dataviz/)
+
+## Advanced Exercises
 
 We'd like to see if we can identify any broad patterns present in our gene expression data. To explore this, we're going to cluster the data, both by sample as well as by gene.
 
@@ -71,19 +98,3 @@ To perform clustering, you'll be using the `dendrogram`, `linkage` and `leaves_l
 2. Plot a heatmap of the clustered gene expression data.
 
 3. Using the dendrogram function, create a dendrogram relating the samples to one another.
-
-### Step 3: Independent data visualization
-
-Working with a partner, select any dataset from the TidyTuesday repository on GitHub: https://github.com/rfordatascience/tidytuesday. 
-
-1. Using Python (`pandas`, `numpy`, `matplotlib`, etc.) these data with your partner, searching for any interesting features or patterns. Jot these down as notes (no need to submit).
-
-2. Choose three aspects of these data that are best represented by three different types of figures (e.g., histogram, bar plot, line plot, heatmap, etc.).
-
-3. Generate these figures with `matplotlib`. As always, label the axes appropriately and avoid extraneous visual elements. Using `matplotlib.pyplot.title`, write a title on your plot that concisely states the message that your figure is attempting to convey.
-
-
-## Additional Resources
-
-* [Fundamentals of Data Visualization Textbook](https://clauswilke.com/dataviz/)
-
