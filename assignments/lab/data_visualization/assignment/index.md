@@ -60,7 +60,7 @@ For the gene MXD4, plot the distribution of expression (logged normalized counts
 
 #### **Step 1.3**: Distribution of Hardy scale across subject ages
 
-Plot the relative proportions of subjects in each category of the Hardy scale according to their age category. Upload this figure for the assignment.<br><br>
+For each age category, plot the relative proportion of subjects in each category of the Hardy scale (cause of death). To clarify, this should be a single panel figure. Upload this figure for the assignment.<br><br>
 
 #### **Step 1.4**: Sex-stratified expression with age
 
