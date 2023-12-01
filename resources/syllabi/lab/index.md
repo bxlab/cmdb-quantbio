@@ -241,12 +241,12 @@ All class participants agree to:
   <td>10</td>
   <td>12/1</td>
   <td>Rajiv McCoy</td>
-  <td>Single-cell RNA-seq</td>
+  <td>Metagenomics</td>
 </tr>
 <tr>
   <td>11</td>
   <td>12/8</td>
   <td>Mike Sauria</td>
-  <td>Metagenomics</td>
+  <td>Single-cell RNA-seq</td>
 </tr>
 </table>
