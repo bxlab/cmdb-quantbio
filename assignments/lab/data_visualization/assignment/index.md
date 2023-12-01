@@ -115,6 +115,12 @@ For this assignment you should submit the following:
 
 ## Advanced Exercises
 
+### Advanced Exercise 1
+
+For each age range, plot the proportion of samples within each group of the Hardy scale. This should be a single panel figure.<br><br>
+
+### Advanced Exercise 2
+
 We'd like to see if we can identify any broad patterns present in our gene expression data. To explore this, we're going to cluster the data, both by sample as well as by gene.
 
 To perform clustering, you'll be using the `dendrogram`, `linkage` and `leaves_list` functions from `scipy`. The documentation for SciPy isn't very helpful, but with some quick Googling you can find examples of how to use both of these tools.
