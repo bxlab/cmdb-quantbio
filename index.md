@@ -80,8 +80,8 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |  8   | 11/10 | Mike Sauria | [3D Genome](webpages/week8.html) | &#124;|
 |  9   | 11/17 | Rajiv McCoy | [Bulk RNA-seq](webpages/week9.html) | 12/8 |
 |  -   | 11/24 | No class | Thanksgiving Break | &#124; |
-|  10   | 12/1 | Rajiv McCoy | Single-cell RNA-seq |	&#124; |
-|  11   | 12/8 | Mike Sauria | Metagenomics |	12/15 |
+|  10   | 12/1 | Rajiv McCoy | Data Visualization |	&#124; |
+|  11   | 12/8 | Mike Sauria | Single-cell RNA-seq |	12/15 |
 {:.table.table-striped.well}
 
 
