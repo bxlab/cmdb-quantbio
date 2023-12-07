@@ -17,6 +17,17 @@ mamba create -n scanpy scanpy openblas "matplotlib<3.7" leidenalg "pandas<2.0.1"
 
 Then you can activate the mamba environment with the command `mamba activate scanpy`.
 
+## Scanpy documentation
+
+For the rest of this lab, refer to the [Scanpy documentation](https://scanpy.readthedocs.io/en/stable/), and specifically the [API documentation](https://scanpy.readthedocs.io/en/stable/api.html).
+
+This documentation is broken into several sections, grouping functions by stage of analysis. You can identify general function by the function prefix
+
+- Preprocessing functions (filtering, qc, normalizing, etc.) begin with `pp.`
+- Tool functions (analysis, embedding, clustering, etc.) begin with `tl.`
+- Plotting functions (visualizing t-SNE, UMAP, PCA, expression, ranking, etc.) begin with `pl.`
+- Reading and writing functions have no prefix but are called directly from the `scanpy` package
+
 ## Getting the Data
 
 We will be looking at a dataset containing ~3,000 peripheral blood mononuclear cells (PBMCs) from a healthy human donor. This was produced using the 10x technology and provided by 10X Genomics.
@@ -51,15 +62,13 @@ adata = sc.read_h5ad("variable_data.h5")
 adata.uns['log1p']['base'] = None # This is needed due to a bug in scanpy 
 ```
 
-For the rest of this lab, refer to the [Scanpy documentation](https://scanpy.readthedocs.io/en/stable/), and specifically the [API documentation](https://scanpy.readthedocs.io/en/stable/api.html).
-
 ### Step 1: Clustering
 
 You will need to calculate a neighborhood graph to determine the neighborhood space for each cell. This is a pre-processing function and you should use the parameters `n_neighbors=10` and `n_pcs=40`.
 
 Next, use `leiden` clustering to identify clusters in the data. Produce t-SNE and UMAP plots showing the clusters. Note that to create the UMAP transformation, you need to specify `maxiter`. I suggest 900.
 
-### Step 2: Distinguishing Genes
+### Step 2: Marker Genes
 
 Identify and plot genes that distinguish each cluster. Use both the Wilcoxon and logistic regression approaches, implemented through the `rank_genes_groups` function. (Again, see the `sc.tl` module to actually perform the ranking and `sc.pl` for plotting). You will need to use the arguments `groupby='leiden'` and `use_raw=True` for both rankings.
 
@@ -77,13 +86,24 @@ adata.obsm['X_umap'] = umap
 adata.obsm['X_tsne'] = tsne
 ```
 
-You can do this as a single script or by creating 2 scripts and saving the data at the end of the first script and loading it in the second, to avoid having to rerun the clustering steps.
+You can do this as a single script or by creating 2 scripts and saving the data at the end of the first script and loading it in the second, to avoid having to rerun the clustering steps, like this:
+
+```python
+adata.write('filtered_clustered_data.h5')
+```
+
+and load in a new script:
+
+```python
+adata = sc.read_h5ad("filtered_clustered_data.h5")
+adata.uns['log1p']['base'] = None # This is needed due to a bug in scanpy 
+```
 
 ### Step 4: Cell Types?
 
 Now the fun part.
 
-Using your knowledge (or the knowledge of hematopoeisis aficionados in your cohort, or Google), identify some marker genes that should distinguish different blood cell types. You must identify at least 4 cell types. There are many resources online for identifying relationships between marker genes and cell types. Take a look at [this database](http://betsholtzlab.org/VascularSingleCells/database.html) for an example of ways to identify cell types. You may need multiple markers to distinguish between clusters.
+Using your knowledge (or the knowledge of hematopoeisis aficionados in your cohort, or Google), identify some marker genes that should distinguish different blood cell types. You should try to identify at least 3 cell types. There are many resources online for identifying relationships between marker genes and cell types. Take a look at [this database](http://betsholtzlab.org/VascularSingleCells/database.html) for an example of ways to identify cell types. You may need multiple markers to distinguish between clusters.
 
 1. Support plots that provide evidence for your cell type assignments/what you used to diagnose/decide on cell types.
   * You can color UMAP and t-SNE plots by any gene of your choice, which is helpful for visualizing which clusters are enriched for which genes, and which clusters might correspond to a specific blood cell type.
@@ -96,7 +116,7 @@ Using your knowledge (or the knowledge of hematopoeisis aficionados in your coho
 - t-SNE and UMAP plots of clusters from step 1
 - Plots for genes that distinguish clusters (t-test and logistic regression) from step 2
 - Support plots that provide evidence for your cell type assignments (Step 4.1)
-- The overall t-SNE or UMAP plot with at least 4 cell types labeled (Step 4.2)
+- The overall t-SNE or UMAP plot with at least 3 cell types labeled (Step 4.2)
 
 ## Advanced Excercise
 
