@@ -138,7 +138,7 @@ Second, using the `sc.pl.rank_genes_groups()` function with the `logreg` object 
 
 Now that you've identified marker genes for each cluster in your data set, you want to assign cell-types to each cluster, based on those marker genes.<br><br>
 
-#### Step 3.1: Reload Missing Genes
+#### **Step 3.1**: Reload Missing Genes
 
 In the next couple of steps, you may receive errors trying to plot the data for certain genes that you pull from the highly-ranked genes. That's because the ranking is done across all genes. Because some genes are filtered out at the "highly-variable gene" filtering step, despite showing cell-type specificity, you should load the dataset `filtered_data.h5` which has the genes that were removed by the highly-variable gene filtering. In order to keep the leiden clusters and UMAP or t-SNE mappings, you will need to copy them from your clustered and transformed data. To do this, you can copy the values to a variable and then copy that variable to the `filtered_data.h5` dataset.
 
@@ -180,7 +180,7 @@ Once you have a short list of genes that should distinguish cell-types in your d
 
 Choose one approach and produce the corresponding figure. Make sure that the marker genes you chose do indeed match your expectations. Label your figure appropriately and save it to a file. You will be uploading it with the assignment.<br><br>
 
-#### **Step 3.2**: Putting it all together
+#### **Step 3.3**: Putting it all together
 
 Now that you've confirmed that the marker genes you've chosen do indeed "mark" the clusters you expected them to, you want to update your cluster labels with the cell-types corresponding to those clusters.
 
@@ -200,6 +200,6 @@ Finally, make an overall t-SNE or UMAP plot that labels your clusters with the c
 
 **Total Points: 10**<br><br>
 
-## Advanced Excercise
+<!--## Advanced Excercise
 
-Identify all clusters (there should be 8). Create a dotplot with a gene as specific to each cluster as you can find (8 clusters, 8 genes). Create a multi-panel UMAP or t-SNE plot colored by the expression of each gene as well as the leiden clusters.<br><br>
+Identify all clusters (there should be 8). Create a dotplot with a gene as specific to each cluster as you can find (8 clusters, 8 genes). Create a multi-panel UMAP or t-SNE plot colored by the expression of each gene as well as the leiden clusters.<br><br>-->
