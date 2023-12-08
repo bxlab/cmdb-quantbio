@@ -201,8 +201,6 @@ Finally, make an overall t-SNE or UMAP plot that labels your clusters with the c
   * Chosen support plot from step 3.2 (**2 point**)
   * Final labeled UMAP or t-SNE plot from step 3.3 (**2 point**)
 
-**Total Points: 10**
-
 **Total Points: 10**<br><br>
 
 ## Advanced Excercise
