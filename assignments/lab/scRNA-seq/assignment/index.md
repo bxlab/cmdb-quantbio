@@ -9,7 +9,7 @@
 We will use `scanpy` for this lab, a fairly comprehensive Python package for scRNA-seq analysis. Create a mamba environment that you will use for this lab called `scanpy` using the following command:
 
 ```bash
-mamba create -n scanpy scanpy openblas "matplotlib<3.7" leidenalg "pandas<2.0.1" -y
+mamba create -n scanpy scanpy openblas "matplotlib<3.7" leidenalg "pandas<2" -y
 ```
 
 Then, activate the mamba environment with the command `mamba activate scanpy`.<br><br>
@@ -107,12 +107,9 @@ Use the [scanpy documentation](https://scanpy.readthedocs.io/en/stable/api.html)
 
 Now, find a **tool** function to run the tSNE algorithm on your data. You should not need any additional parameters.
 
-Now that you've run the UMAP and t-SNE algorithms, you'll want to plot the output. Helpfully, scanpy's plotting functions actually work with Matplotlib's `fig, ax = plt.subplots()` functionality: when you run a scanpy plotting function, you can use the `ax` argument to plot to a specific matplotlib `axes` object. Create a figure showing the UMAP and t-SNE visualizations of your data as follows:
-1. Create a two panel figure using `fig, axes = plt.subplots(ncols=2)`
-2. Find a scanpy **plotting** function to plot your UMAP results. You'll want to specify the `color` argument to color the cells by their leiden cluster (`color='leiden'`), the `ax` argument to choose where to actually plot the data (`ax = axes[0]`), and the `title` argument to set the panel title. You'll also want to set `show=False`.
-3. Find a scanpy **plotting** function to plot your t-SNE results. You'll want to specify the `color` argument to color the cells by their leiden cluster (`color='leiden'`), the `ax` argument to choose where to actually plot the data (`ax = axes[1]`), and the `title` argument to set the panel title. You'll also want to set `show=False`.
+Now that you've run the UMAP and t-SNE algorithms, you'll want to plot the output. Find a scanpy **plotting** function to plot your UMAP results. You'll want to specify the `color` argument to color the cells by their leiden cluster (`color='leiden'`), the `title` argument to set the panel title, and the `save` argument to specify a file suffix for saving the plot. Note that plots are saved into a folder `figures` that scanpy creates. Now find a scanpy **plotting** function to plot your t-SNE results. This function takes the same arguments as the t-SNE plotting function.
 
-Label your figure appropriately and save it to a file. You will be uploading it with the assignment.<br><br>
+Title your figures appropriately. You will be uploading them for the assignment.<br><br>
 
 ### Exercise 2: Identifying cluster marker genes
 
@@ -130,9 +127,9 @@ Second: using the `sc.tl.rank_genes_groups()` function, rank marker genes in you
 
 Helpfully, scanpy has another **plotting** function for visualizing the gene rankings from `sc.tl.rank_genes_groups()`.
 
-First, using the `sc.pl.rank_genes_groups()` function with the `wilcoxon_adata` object you created in the previous step, plot the top 25 genes for each cluster when using the **Wilcoxon rank-sum method**. As before, you can use Matplotlib's `fig, ax = plt.subplots()` functionality to make your life easier. You'll want to specify the `n_genes`, `ax` and `title` arguments. You'll also want to set `sharey=False`, `show=False`, and `use_raw=True`. Label your figure appropriately and save it to a file. You will be uploading it with the assignment.
+First, using the `sc.pl.rank_genes_groups()` function with the `wilcoxon_adata` object you created in the previous step, plot the top 25 genes for each cluster when using the **Wilcoxon rank-sum method**. As before, use  `save` to save your plot. You'll want to specify the `n_genes` and `title` arguments. You'll also want to set `sharey=False`, `show=False`, and `use_raw=True`. Label your figure appropriately and save it to a file. You will be uploading it with the assignment.
 
-Second, using the `sc.pl.rank_genes_groups()` function with the `logreg` object you created in the previous step, plot the top 25 genes for each cluster when using the **logistic regression method**. As before, you can use Matplotlib's `fig, ax = plt.subplots()` functionality to make your life easier. You'll want to specify the `n_genes`, `ax` and `title` arguments. You'll also want to set `sharey=False`, `show=False`, and `use_raw=True`. Label your figure appropriately and save it to a file. You will be uploading it with the assignment.<br><br>
+Second, using the `sc.pl.rank_genes_groups()` function with the `logreg` object you created in the previous step, plot the top 25 genes for each cluster when using the **logistic regression method**. Use the same arguments as you did for the wilcoxon data. Label your figure appropriately and save it to a file. You will be uploading it with the assignment.<br><br>
 
 ### Exercise 3: Identifying cluster cell types
 
@@ -164,6 +161,9 @@ and load in a new script:
 adata = sc.read_h5ad("filtered_clustered_data.h5")
 adata.uns['log1p']['base'] = None # This is needed due to a bug in scanpy 
 ```
+
+To plot expression data for multiple genes, each in their own plot, pass a list of gene names to the UMAP or t-SNE plotting function using the `color` argument. You can also add a subplot with cluster labels by including the name `leiden` in the list passed to `color`. 
+
 <br>
 
 #### **Step 3.2**: Matching genes to cell types
@@ -173,7 +173,9 @@ Now the fun part.
 Identify some marker genes in your data set that should distinguish different blood cell types. Your *goal* is to try to identify at least 3 distinct cell types in your data based on the marker genes from exercise 2. You can do this using your knowledge, the knowledge of hematopoeisis aficionados in your cohort, or the power of the internet. There are many resources online for identifying relationships between marker genes and cell types. Take a look at [this database](http://betsholtzlab.org/VascularSingleCells/database.html) for an example of ways to identify cell types. You may need multiple marker genes to distinguish between clusters.
 
 Once you have a short list of genes that should distinguish cell-types in your data, produce ONE figure that supports your hypothesis that these genes should be marking specific clusters in your dataset. You have several options (and [this link](https://scanpy-tutorials.readthedocs.io/en/latest/plotting/core.html) may help you):
+
 1. A set of UMAP or t-SNE plots, colored by expression of a specific gene. You can color the plots by a gene by using the `color` argument. Create a multi-panel figure (one panel per marker gene) showing the expression of these genes in either a UMAP or t-SNE plot. Compare your results to your plot from step 1.3 to validate your hypothesis (no need to write anything down).
+
 2. A `dotplot` showing expression of your chosen marker genes in each cluster
 3. A `clustermap` showing expression of your chosen marker genes in each cluster
 4. Other (e.g. stacked violin plots)
@@ -184,7 +186,7 @@ Choose one approach and produce the corresponding figure. Make sure that the mar
 
 Now that you've confirmed that the marker genes you've chosen do indeed "mark" the three clusters you expected them to, you want to update your cluster labels with the cell-types corresponding to those clusters.
 
-Using `adata.rename_categories()` rename the three clusters you identified in your `adata` object to the cell types you think they are (based on the marker genes).
+Using `adata.rename_categories()` rename the clusters in your `adata` object to the cell types you think they are (based on the marker genes). This function requires two arguments, the annotation to relabel (`leiden`), and a list of new unique labels of the same length as the number of clusters.
 
 Finally, make an overall t-SNE or UMAP plot that labels your clusters with the cell types you think they mostly represent, either on the plot or in a legend. Label your figure appropriately and save it to a file. You will be uploading it with the assignment.<br><br>
 
@@ -195,7 +197,7 @@ Finally, make an overall t-SNE or UMAP plot that labels your clusters with the c
   * Cluster data (**0.5 point**)
   * Rank marker genes using Wilcoxon rank-sum and logistic regression methods (**1 point**)
 2. Pretty plots (**8 points total**)
-  * UMAP/t-SNE multi-panel plot from step 1.3 (**2 points**)
+  * UMAP/t-SNE multi-panel plots from step 1.3 (**2 points**)
   * Wilcoxon-based rank_genes_groups plot from step 2.2 (**1 point**)
   * Logreg-based rank_genes_groups plot from step 2.2 (**1 point**)
   * Chosen support plot from step 3.2 (**2 point**)
