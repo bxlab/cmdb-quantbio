@@ -114,9 +114,9 @@ Now that you've run the UMAP and t-SNE algorithms, you'll want to plot the outpu
 
 Label your figure appropriately and save it to a file. You will be uploading it with the assignment.<br><br>
 
-### Exercise 2: Indentifying cluster marker genes
+### Exercise 2: Identifying cluster marker genes
 
-Now that you've identified clusters in your data, ideally you'd like to be able to determine what cell types those clusters correspond to. The first step to doing that is to identify the "marker genes" that seem to define each cluster: which genes are specifically upregulated in each cluster, relative to the other clusters. In this exercise, you'll be identifying each clusters marker genes.<br><br>
+Now that you've identified clusters in your data, ideally you'd like to be able to determine what cell types those clusters correspond to. The first step to doing that is to identify the "marker genes" that seem to define each cluster: which genes are specifically upregulated in each cluster, relative to the other clusters. In this exercise, you'll be identifying each cluster's marker genes.<br><br>
 
 #### **Step 2.1**: Ranking genes in each cluster
 
@@ -190,13 +190,18 @@ Finally, make an overall t-SNE or UMAP plot that labels your clusters with the c
 
 ## Submission
 
-1. Python code
-2. Pretty plots
-  * UMAP/t-SNE multi-panel plot from step 1.3
-  * Wilcoxon-based rank_genes_groups plot from step 2.2
-  * Logreg-based rank_genes_groups plot from step 2.2
-  * Chosen support plot from step 3.2
-  * Final labeled UMAP or t-SNE plot from step 3.3
+1. Python script with all code for the assignment (**2 points total**)
+  * Compute neighborhood graph (**0.5 point**)
+  * Cluster data (**0.5 point**)
+  * Rank marker genes using Wilcoxon rank-sum and logistic regression methods (**1 point**)
+2. Pretty plots (**8 points total**)
+  * UMAP/t-SNE multi-panel plot from step 1.3 (**2 points**)
+  * Wilcoxon-based rank_genes_groups plot from step 2.2 (**1 point**)
+  * Logreg-based rank_genes_groups plot from step 2.2 (**1 point**)
+  * Chosen support plot from step 3.2 (**2 point**)
+  * Final labeled UMAP or t-SNE plot from step 3.3 (**2 point**)
+
+**Total Points: 10**
 
 **Total Points: 10**<br><br>
 
