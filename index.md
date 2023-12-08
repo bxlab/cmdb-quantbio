@@ -81,7 +81,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |  9   | 11/17 | Rajiv McCoy | [Bulk RNA-seq](webpages/week9.html) | 12/8 |
 |  -   | 11/24 | No class | Thanksgiving Break | &#124; |
 |  10   | 12/1 | Rajiv McCoy | [Data Visualization](webpages/week10.html) |	&#124; |
-|  11   | 12/8 | Mike Sauria | Single-cell RNA-seq |	12/15 |
+|  11   | 12/8 | Mike Sauria | [Single-cell RNA-seq](webpages/week11.html) |	12/15 |
 {:.table.table-striped.well}
 
 
