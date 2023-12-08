@@ -44,11 +44,28 @@ This will create a folder, `filtered_gene_bc_matrices/hg19/` with 3 files:
 - `genes.tsv`
 - `matrix.mtx`
 
-You will also need the livecoding excercise code. You can download the complete code [here](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/scRNA-seq/slides_asynchronous_or_livecoding_resources/livecoding.py). Using the three files above, run the livecoding script to produce the 2 input files you will need for the homework assignment: `filtered_data.h5` and `variable_data.h5`.<br><br>
+### Live-coding preprocessing
+
+You will also need the live-coding excercise code. You can download the complete code [here](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/scRNA-seq/slides_asynchronous_or_livecoding_resources/livecoding.py).
+
+The live-coding script loads the pre-aligned and deduplicated reads into scanpy. It then preforms the following steps:
+
+1. Filters the reads for under-represented genes and cells
+2. Removes mitochondrial genes
+3. Normalizes and log transforms expression levels using a pseudo-count of one
+4. Saves this version of the data under the name `filtered_data.h5`
+5. Remove genes that are not considered 'highly variable'
+6. Regresses out the influence of the total transcript count per gene and the percent of mitochondrial gene expression
+7. Renormalized expression levels with a maximum expression value of 10
+8. Calculates principal components of the data
+9. Saves the fully-filtered version of the data under the name `variable_data.h5`
+
+Using the three files above, run the live-coding script to produce the 2 input files you will need for the homework assignment: `filtered_data.h5` and `variable_data.h5`.<br><br>
 
 ## Exercises
 
 ### Exercise 0: Getting the data into Scanpy
+
 You will first need to load the counts matrix from the live-coding exercise into a special kind of table, which is [an instance of Scanpy's `AnnData` class](https://scanpy.readthedocs.io/en/latest/usage-principles.html#anndata).
 
 You will be modifying this table throughout the homework as you run different analyses, and using it for plotting, all using scanpy functions.
@@ -84,7 +101,7 @@ As before, use the [scanpy documentation](https://scanpy.readthedocs.io/en/stabl
 
 In this step, you will be visualizing the clusters you identified in the previous steps using two separate approaches: UMAP and t-SNE. UMAP and t-SNE are both dimensionality reduction tools for visualizing structure in your data, just like PCA, but they make fewer assumptions about how the data actually is structured.
 
-Before you can produce UMAP and tSNE plots, you'll actually need to run the UMAP and tSNE algorithms, which essentially "embed" your high-dimensional data into two dimenions.
+Before you can produce UMAP and tSNE plots, you'll actually need to run the UMAP and tSNE algorithms, which essentially "embed" your high-dimensional data into two dimensions.
 
 Use the [scanpy documentation](https://scanpy.readthedocs.io/en/stable/api.html) to find a **tool** function to run the UMAP algorithm on your data. Note that to create the UMAP transformation, you need to specify `maxiter`. We suggest 900.
 
