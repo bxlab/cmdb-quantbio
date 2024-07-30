@@ -1,0 +1,90 @@
+---
+title: "hg38-gene-metadata"
+author: "Frederick J Tan"
+date: "24 July 2024"
+output: 
+  html_notebook:
+    toc: true
+    toc_float: true
+---
+
+# Summary
+
+- wget -O hg38-gene-metadata-feature.tsv https://drive.google.com/uc?export=download&id=1t1F-ggKJWI9UJnP7Hba3sixS9KzQ-vmQ
+- wget -O hg38-gene-metadata-go.tsv https://drive.google.com/uc?export=download&id=1zJcwcYIDHFqtpwsH7-lg8F7Fmt8O6RJj
+- wget -O hg38-gene-metadata-homologs.tsv https://drive.google.com/uc?export=download&id=1LaCh9IwtNvBSmC8nXfK3g3YbIuODfGfW
+
+# Load packages
+
+```{r}
+library( "biomaRt" )
+library( "tidyverse" )
+```
+
+# Configure biomaRt
+
+```{r}
+ensembl <- useEnsembl( "genes", "hsapiens_gene_ensembl" )
+ensembl
+```
+
+```{r}
+chromosomes <- c( 1:21, "X", "Y", "MT" )
+```
+
+# Obtain feature data
+
+```{r}
+metadata_feature <- c( "ensembl_gene_id", "external_gene_name", "chromosome_name", "start_position", "end_position", "strand", "gene_biotype", "description" )
+df_feature <- getBM(
+        attributes = metadata_feature,
+        filter = "chromosome_name", value = chromosomes, mart = ensembl
+)
+```
+
+```{r}
+write_tsv( df_feature, "hg38-gene-metadata-feature.tsv" )
+```
+
+# Obtain GO data
+
+```{r}
+metadata_go <- c( "ensembl_gene_id", "go_id", "name_1006" )
+df_go <- getBM(
+        attributes = metadata_go,
+        filter = "chromosome_name", value = chromosomes, mart = ensembl
+)
+```
+
+```{r}
+# Remove rows with no go_id; unclear why 40,586 rows lack go_id
+nrow( df_go )
+df_go2 <- df_go %>% filter( go_id != "" )
+nrow( df_go2 )
+```
+
+```{r}
+write_tsv( df_go2, "hg38-gene-metadata-go.tsv" )
+```
+
+# Obtain homolog data
+
+```{r}
+metadata_homologs <- c( "ensembl_gene_id", "mmusculus_homolog_ensembl_gene", "dmelanogaster_homolog_ensembl_gene", "scerevisiae_homolog_ensembl_gene" )
+df_homologs <- getBM(
+        attributes = metadata_homologs,
+        filter = "chromosome_name", value = chromosomes, mart = ensembl
+)
+```
+
+```{r}
+write_tsv( df_homologs, "hg38-gene-metadata-homologs.tsv" )
+```
+
+# Document software
+
+```{r}
+sessionInfo()
+```
+
+
