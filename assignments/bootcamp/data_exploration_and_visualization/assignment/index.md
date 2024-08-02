@@ -1,56 +1,39 @@
-# QBB2022 -- Day 3 Homework: Principal Component Analysis
+## Visualizing metadata from the GTEx Project
 
-## Prepare `day3-homework` directory
+A description of GTEx is copied from the [GTEx Portal](https://gtexportal.org/home/aboutAdultGtex) below.
 
-a. Create a `/Users/cmdb/qbb2022-answers/day3-homework` directory.
+The Adult Genotype Tissue Expression (GTEx) Project is a comprehensive public resource to study human gene expression and regulation, and its relationship to genetic variation across multiple diverse tissues and individuals.
 
-b. Use TextMate.app to create a `README.md` file in the new `day3-homework` directory.
+The project collected samples from up to 54 non-diseased tissue sites across nearly 1,000 deceased individuals. All individuals were densely genotyped to assess genetic variation within their genomes by Whole Genome Sequencing (WGS). Gene expression of each tissue was assessed by RNA sequencing (bulk RNA-seq). Expression quantitative trait loci (eQTLs) were identified as genetic variants that were significantly correlated with changes in the expression of nearby genes. The project provides a comprehensive identification of tissue-shared and tissue-specific human eQTLs, as well as a valuable basis for the mechanistic interpretation of the many non-coding genetic variants that have been associated with common human diseases, such as heart disease, cancer, diabetes, asthma, and stroke.
 
-c. Add the following line to `README.md` and save the file. Record the code you used and answers to questions within `README.md`.
+Please submit your answers as a single `.R` script with comments that separate out answers to each question below. (Remember that comment lines start with `#` and are ignored by R). For questions regarding interpretation or discussion of your results, please include your answers as comments interspersed with your code.
 
-```
-# QBB2022 - Day 3 - Homework Exercises Submission
-```
-d. Submit your answers to your `qbb2022-answers` repository as you work on the assignment and complete an exercise; do not wait until all of the exercises are complete. Use informative commit messages. For example:
+1.  Load the `tidyverse` package, and use the function `read_delim()` to read in sample-level metadata that was obtained from the GTEx Portal (`GTEx_Analysis_v8_Annotations_SampleAttributesDS.txt`). In addition, open the data dictionary `GTEx_Analysis_v8_Annotations_SampleAttributesDD.xlsx` in Excel, which provides a description of each column in the `.txt` file.
 
-```
-git add README.md ex2_a.png
-git commit -m "edited figure and answers for day 3 hw exercise 2"
-git push
-```
-e. Verify that your files were successfully uploaded to your online repository on GitHub.  
+2.  View the first rows of the tibble by simply entering the variable name in which you stored it. Notice that some of the columns were cut off due to the limits of the display. Use the `glimpse()` function to examine the data types and first entries of all of the columns.
 
-## Exercise 1
+3.  Use the `filter()` function to subset the dataset to only the RNA-seq data by selecting rows for which the `SMGEBTCHT` column contains the value `"TruSeq.v1"`. [TruSeq](https://www.illumina.com/products/by-type/sequencing-kits/library-prep-kits/truseq-rna-v2.html) is a library preparation kit from Illumina.
 
-* Using PLINK, perform principal components analysis on the genotype data stored in `/Users/cmdb/data/vcf_files/ALL.chr21.shapeit2_integrated_v1a.GRCh38.20181129.phased.vcf.gz`. Look at the PLINK documentation / Google examples of how to perform PCA with PLINK. Only have PLINK return the first 3 principal components.
-* Record the code you used to perform PCA above in your README.md file.
+4.  Plot the number of samples from each tissue (`SMTSD`) as a barplot. (Hint: if you do not specify a y-axis, ggplot will use `stat = count` as the default, so the y-axis will represent the number of occurrences of each value of your x variable). See this [webpage](https://stackoverflow.com/questions/1330989/rotating-and-spacing-axis-labels-in-ggplot2) for a code snippet for rotating axis labels, which will be relevant throughout this exercise. Always be sure to label your axes with informative names!
 
-## Exercise 2
+5.  The RNA integrity number is a measurement of the degree of RNA degradation based on characteristics of an electropherogram trace. It ranges from 1 to 10, with 10 being the least degraded. Plot the distribution of RNA integrity numbers across your samples. What type of plot is best for visualizing a single continuous distribution? Take a look at this "[cheat sheet](https://images.datacamp.com/image/upload/v1666806657/Marketing/Blog/ggplot2_cheat_sheet.pdf)" for hints.
 
-* Using the numpy `genfromtxt` function, read in the principal component coordinates for each sample. (In linear algebra terms, these are the first, second, and third eigenvectors of the covariance matrix, and are therefore stored in the `plink.eigenvec` output file). Remember to use the `dtype = None, encoding = None` arguments to `genfromtxt` to deal with the mixed data types, as well as the `names = ["col1_name", "col2_name", ...]` to name your data fields.
-* Create a scatter plot using the first vs. second principal component coordinates for your samples.  Your figure should have 2548 total data points.
-* Repeat the step above, but plotting the first vs. third principal component.
-* Label the axes of each figure as PC1, PC2, or PC3, as appropriate.
-* Upload the above figures to your GitHub repo as `ex2_a.png` and `ex2_b.png`.
-* Do you notice any structure among the points? What do you think this structure represents?
+What is the shape of the distribution? Is it unimodal?
 
-## Exercise 3
+6.  Copy your code from above, but now plot the distribution of RIN, stratified by tissue. Consider what type of plot is best for contrasting continuous distributions across multiple groups.
 
-* Use the unix `join` command to intersect the `plink.eigenvec` file with the metadata for those same samples stored in `/Users/cmdb/data/metadata_and_txt_files/integrated_call_samples.panel`. Output this joined table to a new file. (Read the documentation for `join`! **Hint:** for `join` to work, both files need to be sorted on the field you will use to join, and both files also have to have the same delimiter character.)
-* Read the above file into a numpy array. 
-* Use these data to color the plot of PC1 vs. PC2 according to population, superpopulation, and sex (3 separate plots).
-* Add a legend to each plot to explain the colors.
-* Add an informative title to each plot.
-* Label the axes of each figure as PC1 and PC2, as appropriate.
-* Upload the above figures to your GitHub repo as `ex3_a.png`, `ex3_b.png`, and `ex3_c.png`.
+Do you notice any differences across tissues? Are certain tissues outliers? What are your hypotheses to explain these observations?
 
-## Optional exercise
+7.  Visualize the number of genes detected per sample, stratifying by tissue. Again consider what type of plot is best for contrasting continuous distributions across multiple groups.
 
-* Try plotting the first three principal components together on a 3D scatter plot.
-* See https://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html
-* NOTE: Never put a figure like this in a (2D) paper! 3D plots are only potentially useful if you can animate or rotate them.
+Do you notice any differences across tissues? Which tissues are outliers? Look over the abstract of this paper for one hypothesis to explain these observations.
 
-## Optional exercise
+8.  Plot the relationship between ischemic time and RIN. Consider what type of plot is best for visualizing the relationship between two continuous variables. Create sub-panels that stratify the data by tissue using `facet_wrap()`. Resize points to `size = 0.5` and set the opacity to `alpha = 0.5`. Add linear trend lines to your plot with \`geom_smooth(method = "lm").
 
-* Using any of the the metadata files in `/Users/cmdb/data/metadata_and_txt_files/`, develop your own visualizations to convey a point of your choosing.
-* For example, using data in `integrated_call_samples.panel`, you could create a "stacked bar plot" to compare the sex ratio within different superpopulations (see https://matplotlib.org/stable/gallery/lines_bars_and_markers/bar_stacked.html).
+What relationships do you notice? Does the relationship depend on tissue?
+
+9.  Copy your answer from question 6 above, but modify it to color your points by autolysis score (`SMATSSCR`). Note that if we place `aes(color = SMATSSCR)` within the `ggplot()` portion of the code, it will attempt to apply this mapping to all `geom_`s, including `geom_smooth`. To avoid this, place `aes(color = SMATSSCR)` within the `geom_point()` portion of the code.
+
+What relationships do you notice? Does the relationship depend on tissue?
+
+10. If you finished early, make some more plots! What else can you learn about these data? Consider which type of plot visualizes a particular relationship most effectively. Keep it simple. Ideally, each figure should convey one main point. The purpose of a figure is to convey that point to the audience as clearly and concisely as possible.
