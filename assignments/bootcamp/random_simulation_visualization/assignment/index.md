@@ -8,6 +8,8 @@ In contrast, ASE typically focuses on individual samples and asks whether the ma
 
 GTEx recently published some of the first [long-read sequencing data](https://gtexportal.org/home/downloads/adult-gtex/long_read_data) from human samples and quantified expression of maternally versus paternally inherited haplotypes with a new tool called LORALS.
 
+## Assignment
+
 One question that we might ask is whether genes that exhibit evidence of ASE based on the long-read sequencing data are enriched for eQTLs that were previously detected with short-read sequencing data. We will address this question in the following exercise.
 
 Please submit your answers as a single `.R` script with comments that separate out answers to each question below. (Remember that comment lines start with `#` and are ignored by R). For questions regarding interpretation or discussion of your results, please include your answers as comments interspersed with your code.
@@ -28,7 +30,7 @@ Please submit your answers as a single `.R` script with comments that separate o
     -   Re-plot the data while scaling the x and y axes using `scale_x_log10()` and `scale_y_log10()`.
 
 
-4.  The following function applies a binomial test and returns a p-value, quantifying evidence of allele specific expression for a given gene in a given sample (i.e., a row of your data). Apply this function to each row of your tibble using the `rowwise() %>% mutate()` chain of functions, adding a column that contains the p-values. Read about how to use these functions together [here](https://dplyr.tidyverse.org/articles/rowwise.html).\
+4.  The following function applies a binomial test and returns a p-value, quantifying evidence of allele specific expression for a given gene in a given sample (i.e., a row of your data). Apply this function to each row of your tibble using the `rowwise() %>% mutate()` chain of functions, adding a column that contains the p-values. Read about how to use these functions together [here](https://dplyr.tidyverse.org/articles/rowwise.html).
 
     ``` R
     ase_pval <- function(hap1_counts, hap2_counts) {   
