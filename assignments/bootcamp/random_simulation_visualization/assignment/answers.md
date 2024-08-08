@@ -1,9 +1,3 @@
----
-title: "Bootcamp - Day 4 afternoon"
-author: "Rajiv McCoy"
-output: html_document
----
-
 ## Examining the causes of allele specific expression
 
 Genetic variation near a gene (e.g., within the promoter) may contribute to differences in gene expression among individuals. GTEx has used different approaches to assess evidence of such *cis*-regulatory effects on gene expression. Two complementary approaches for discovering these effects are expression quantitative trait locus (eQTL) mapping and allele-specific expression (ASE) analysis.
