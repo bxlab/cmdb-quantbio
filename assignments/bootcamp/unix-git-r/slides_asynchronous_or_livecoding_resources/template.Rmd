@@ -1,0 +1,56 @@
+---
+title: "Summary of Contents"
+author: "Your Name"
+date: "Today's Date"
+output: 
+  html_notebook:
+    toc: true
+    toc_float: true
+---
+
+# Load packages
+
+```{r}
+library( "___" )
+```
+
+# Load data
+
+- This data contains ___
+
+```{r}
+df <- read_tsv( "~/Data/___" )
+df
+```
+
+# Analysis
+
+- First we need to ___
+
+```{r}
+df_subset <- df %>%
+  filter( ___=="" )
+df_subset
+```
+
+- Now we can ___
+
+```{r}
+df_count <- df_subset %>%
+  group_by( ___ ) %>%
+  summarize( ___=n() ) %>%
+  arrange( -___ )
+df_count
+```
+
+# Save results
+
+```{r}
+write_tsv( ___, "___" )
+```
+
+# Document software
+
+```{r}
+sessionInfo()
+```

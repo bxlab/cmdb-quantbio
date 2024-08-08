@@ -1,0 +1,56 @@
+---
+title: "Summary of Contents"
+author: "Your Name"
+date: "Today's Date"
+output: 
+  html_notebook:
+    toc: true
+    toc_float: true
+---
+
+# Load packages
+
+```{r}
+library( "tidyverse" )
+```
+
+# Load data
+
+- This data contains information about genes in the human genome
+
+```{r}
+df <- read_tsv( "~/Data/hg38/hg38-gene-metadata-feature.tsv" )
+df
+```
+
+# Analysis
+
+- First we need to filter for protein coding genes
+
+```{r}
+df_subset <- df %>%
+  filter( gene_biotype=="protein_coding" )
+df_subset
+```
+
+- Now we can summarize by chromosome
+
+```{r}
+df_count <- df_subset %>%
+  group_by( chromosome_name ) %>%
+  summarize( count=n() ) %>%
+  arrange( -count )
+df_count
+```
+
+# Save results
+
+```{r}
+write_tsv( df_count, "counts.tsv" )
+```
+
+# Document software
+
+```{r}
+sessionInfo()
+```
