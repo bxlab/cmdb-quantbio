@@ -6,6 +6,10 @@ The Adult Genotype Tissue Expression (GTEx) Project is a comprehensive public re
 
 The project collected samples from up to 54 non-diseased tissue sites across nearly 1,000 deceased individuals. All individuals were densely genotyped to assess genetic variation within their genomes by Whole Genome Sequencing (WGS). Gene expression of each tissue was assessed by RNA sequencing (bulk RNA-seq). Expression quantitative trait loci (eQTLs) were identified as genetic variants that were significantly correlated with changes in the expression of nearby genes. The project provides a comprehensive identification of tissue-shared and tissue-specific human eQTLs, as well as a valuable basis for the mechanistic interpretation of the many non-coding genetic variants that have been associated with common human diseases, such as heart disease, cancer, diabetes, asthma, and stroke.
 
+## Assignment
+
+Building off of your work this morning, we will visualize various aspects of the sample metadata from the GTEx project.
+
 Please submit your answers as a single `.R` script with comments that separate out answers to each question below. (Remember that comment lines start with `#` and are ignored by R). For questions regarding interpretation or discussion of your results, please include your answers as comments interspersed with your code.
 
 1.  Load the `tidyverse` package, and use the function `read_delim()` to read in sample-level metadata that was obtained from the GTEx Portal (`GTEx_Analysis_v8_Annotations_SampleAttributesDS.txt`). In addition, open the data dictionary `GTEx_Analysis_v8_Annotations_SampleAttributesDD.xlsx` in Excel, which provides a description of each column in the `.txt` file.
