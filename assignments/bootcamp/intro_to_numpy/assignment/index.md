@@ -54,4 +54,4 @@ Now how do the median and mean transformed expression values compare?
 
 11.  Find which gene-tissue pairs are marked as highly expressed and tissue specific using `numpy.where`. Remember that this will return a tuple (like a list) with two 1D arrays, the first for axis 0 (rows/genes) and the second for axis 1 (columns/tissues). Print out and save each gene-tissue pair. Remember that you have the gene names and tissue names saved and these can be indexed using the appropriate 1D array resulting from the `numpy.where` command.
 
-Do these genes make sense for the corresponding tissue? You can look up information about each gene at [GeneCards](https://www.genecards.org/).
+Do these genes make sense for the corresponding tissue? You can look up information about each gene at [GeneCards](https://www.genecards.org/) (you need to remove the period and number following it for gene IDs to look up the genes).
