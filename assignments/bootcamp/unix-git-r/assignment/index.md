@@ -66,6 +66,11 @@ git push
 
 6. Explore `SMATSSCR` (autolysis score)
 
+    - Filter out `NA` values in this column to avoid `mean()` returning `NA`
+        ```
+        df %>%
+            filter( !is.na(SMATSSCR) )
+        ```
     - How many samples have a mean score of 0?
     - What other observations can you make about the distribution of mean scores?
     - What are possible ways to present this information in a report?
