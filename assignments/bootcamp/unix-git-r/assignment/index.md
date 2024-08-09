@@ -71,7 +71,7 @@ git push
         df %>%
             filter( !is.na(SMATSSCR) )
         ```
-    - How many samples have a mean score of 0?
+    - How many `SUBJECT`s have a mean `SMATSSCR` score of 0?
     - What other observations can you make about the distribution of mean scores?
     - What are possible ways to present this information in a report?
 
