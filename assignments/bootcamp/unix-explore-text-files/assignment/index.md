@@ -41,6 +41,12 @@ This information can be retrieved through the [web-based tool](https://www.ensem
 [GENCODE](https://www.gencodegenes.org) works to annotate the human and mouse genome using biological evidence such as long-read RNA-seq, Ribo-seq, and other targeted approaches.
 This gene set is used by many projects including Genotype-Tissue Expression ([GTEx](https://gtexportal.org)), The Cancer Genome Atlas ([TCGA](https://www.cancer.gov/ccg/research/genome-sequencing/tcga)), and the Human Cell Atlas ([HCA](https://www.humancellatlas.org)).
 
+Complete the following exercises using the `gene.gtf` that we created together
+
+```
+grep -w gene gencode.v46.basic.annotation.gtf > gene.gtf
+```
+
 3. Immunoglobin (Ig) genes are present in over 200 copies throughout the human genome.  How many [IG genes](https://www.gencodegenes.org/pages/biotypes.html) (not pseudogenes) are present on each chromosome?  You can use a dot (`.`) in a [regular expression](https://www.regular-expressions.info/quickstart.html) pattern to match any single character.  How does this compare with the distribution of IG pseudogenes?
 
 4. Why is `grep pseudogene gene.gtf` not an effective way to identify lines where the `gene_type` [key-value pair](https://www.gencodegenes.org/pages/data_format.html) is a pseudogene (hint: look for overlaps_pseudogene)?  What would be a better pattern?  Describe it in words if you are having trouble with the regular expression.
