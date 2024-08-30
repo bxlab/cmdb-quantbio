@@ -24,7 +24,7 @@ Prep Work:
 
 ### Schedule
 All times in ET<br /><br />
-Resources for each day (links for assignment, any relevant recordings or slides, etc.) will be linked in the schedule below
+Resources for each day (links for assignment, any relevant recordings or slides, etc.) will be linked in the schedule below 
 
 <!--[Tuesday](webpages/day1.md)-->
 <!--[Thursday](webpages/day3.md)-->
