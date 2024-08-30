@@ -1,9 +1,9 @@
 ---
-title: CMDB Quantitative Biology 2023
+title: CMDB Quantitative Biology 2024
 layout: default
 ---
 
-## CMDB Quantitative Biology Bootcamp 2023
+## CMDB Quantitative Biology Bootcamp 2024
 
 ### Logistics
 Prep Work: 
@@ -13,10 +13,9 @@ Prep Work:
 3. [Part 3](https://colab.research.google.com/drive/1RDohmEn9kO43m_x1hEwDK7dtL7y7mNC0?usp=sharing)
 
 - [Syllabus](resources/syllabi/bootcamp/index.html)
-- [Class Notes](https://andrew-bortvin.github.io/cmdb-bootcampNotes/)
 - Four day intensive bootcamp to introduce students to fundamentals in quantitative and computational biology 
 - <span class="text-danger">**NO** other classes, meetings, lab work, lab meetings, etc.</span>
-- In person, UTL 398
+- In person, Carnegie Rose Auditorium
 - Please arrive by 8:45am ET
 - Lunch and an afternoon snack will be provided
 <!-- - Zoom meeting ID (check Slack for passcode or full link to join): 929 0650 3074 --> 
