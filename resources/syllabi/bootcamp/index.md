@@ -72,7 +72,7 @@ Quantitative and computational methods are increasingly essential to all sub-dis
   <h3>Class Meetings</h3>
 </header>
 
-Tues, Sept 3, 2023 - Fri, Sept 6, 2023<br />
+Tues, Sept 3, 2024 - Fri, Sept 6, 2024<br />
 8:45 A.M. ET - 5 P.M. ET, In Person, Carnegie Rose Auditorium<br />
 Lunch and an afternoon snack will be provided every day.<br />
 
