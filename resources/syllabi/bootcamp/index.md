@@ -2,7 +2,7 @@
 <h1>
     AS.020.607
     <span style="float:right;">
-        Fall 2023
+        Fall 2024
     </span>
     <center>
        CMDB Quantitative Biology Bootcamp
@@ -72,8 +72,8 @@ Quantitative and computational methods are increasingly essential to all sub-dis
   <h3>Class Meetings</h3>
 </header>
 
-Tues, Sept 5, 2023 - Fri, Sept 8, 2023<br />
-8:45 A.M. ET - 5 P.M. ET, In Person, UTL 398<br />
+Tues, Sept 3, 2023 - Fri, Sept 6, 2023<br />
+8:45 A.M. ET - 5 P.M. ET, In Person, Carnegie Rose Auditorium<br />
 Lunch and an afternoon snack will be provided every day.<br />
 
 Although the course formally starts at 9 am ET, please <b>arrive by 8:45 am</b>.
@@ -118,12 +118,12 @@ Although the course formally starts at 9 am ET, please <b>arrive by 8:45 am</b>.
    <td><a href="mailto:abortvi2@jhu.edu">abortvi2@jhu.edu</a></td>
  </tr>
  <tr>
-  <td>Sara Carioscia</td>
-  <td><a href="mailto:scarios1@jhu.edu">scarios1@jhu.edu</a></td>
+  <td>Michael Tassia</td>
+  <td><a href="mailto:mtassia1@jhu.edu">mtassia1@jhu.edu</a></td>
  </tr>
  <tr>
-  <td>Merlin Li</td>
-  <td><a href="mailto:mli163@jhu.edu">mli163@jhu.edu</a></td>
+  <td>Sadhana Chidambaran</td>
+  <td><a href="mailto:sadhana.chidambaran@jhu.edu">sadhana.chidambaran@jhu.edu</a></td>
  </tr>
 <tr>
   <td>Matthew Isada</td>
@@ -157,17 +157,9 @@ Upon completion of this course, students will be able to:
 <ul>
   <li> navigate a UNIX environment and create, copy, move, and delete files on the command line </li>
   <li> manipulate, analyze, and visualize data using Python programming (including in Python scripts) </li>
+  <li> visualize and statistically analyze data using the R programming language </li>
   <li> create and maintain a Git repository that organizes and stores materials for each quantitative biology project </li>
 </ul>
-
-<a name="StudyMats"></a>
-<header>
-  <h2>Study Materials</h2>
-</header>
-
-A brief online textbook written for this course can be found <a href="https://andrew-bortvin.github.io/cmdb-bootcampNotes/"> here</a>.
-Any lecture notes, slides, and interactive coding scripts/notebooks will be made available on the course website.
-
 
 <a name="Format"></a>
 <header>
