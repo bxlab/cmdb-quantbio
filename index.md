@@ -113,4 +113,4 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 * [Pandas](http://pandas.pydata.org/pandas-docs/stable/)
   - e.g. [read_csv](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html?highlight=read_csv)
 -->
--->
+
