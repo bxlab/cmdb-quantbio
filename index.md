@@ -35,11 +35,12 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 | Time | Tuesday | Wednesday |  Thursday | Friday | 
 |:---------------:|:--------------------------------------:|:---------------------------------------:|:------------------------------------:|:---------------------------------------:|
-|   9:00 - 12:00  | The Unix Shell | Python: numpy and matplotlib | Python: While, If, Functions | Review and advanced topics | 
+|   9:00 - 9:30  | Welcome | Small Groups | Small Groups | Small Groups |
+| 9:00 - 12:00 | Unix, git, R | Unix (II) | Python Indexing, Arrays | Linear Regression |
 |   12:00 - 1:00  | Lunch    |  Lunch   | Lunch    | Lunch   
-|   1:00 - 3:00 | Python Introduction | Git  | Python: Dictionaries | Assignment: the Wright-Fisher Model |
+|   1:00 - 3:00 | Plotting w/ ggplot2 | Parsing files w/ Python  | Python Dictionaries | Multiple testing, power analysis |
 |    3:00 - 3:15  | Break | Break | Break  | Break | 
-|    3:15 - 5:00  | File Parsing in Python | Git and Plotting: RNAseq Data | Dictionaries: .gff Files   | Assignment: the Wright-Fisher Model | 
+|    3:15 - 5:00  | Exercise | Exercise | Exercise   | Exercise | 
 {:.table.table-striped.well}
 
 
