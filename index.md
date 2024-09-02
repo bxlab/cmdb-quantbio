@@ -35,12 +35,14 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 | Time | Tuesday | Wednesday |  Thursday | Friday | 
 |:---------------:|:--------------------------------------:|:---------------------------------------:|:------------------------------------:|:---------------------------------------:|
-|   9:00 - 9:30  | Welcome | Small Groups | Small Groups | Small Groups |
-| 9:00 - 12:00 | Unix, git, R | Unix (II) | Python Indexing, Arrays | Linear Regression |
-|   12:00 - 1:00  | Lunch    |  Lunch   | Lunch    | Lunch   
-|   1:00 - 3:00 | Plotting w/ ggplot2 | Parsing files w/ Python  | Python Dictionaries | Multiple testing, power analysis |
-|    3:00 - 3:15  | Break | Break | Break  | Break | 
-|    3:15 - 5:00  | Exercise | Exercise | Exercise   | Exercise | 
+|   9:00 -  9:30  | Welcome      | Small Groups | Small Groups | Small Groups |
+|   9:30 - 11:00  | Unix, git, R | Explore text files w/ Unix | Python Indexing, Arrays | Linear Regression |
+|  11:00 - 12:00  | Exercise     | Exercise     | Exercise     | Exercise     | 
+|  12:00 -  1:00  | Lunch        |  Lunch       | Lunch        | Lunch        |
+|   1:00 -  1:30  | Small Groups | Small Groups | Small Groups | Small Groups |
+|   1:30 -  3:00  | Plotting w/ ggplot2 | Parsing files w/ Python  | Python Dictionaries | Multiple testing, power analysis |
+|   3:00 -  3:15  | Break        | Break        | Break        | Break        | 
+|   3:15 -  5:15  | Exercise     | Exercise     | Exercise     | Exercise     | 
 {:.table.table-striped.well}
 
 
