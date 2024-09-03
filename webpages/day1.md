@@ -3,7 +3,7 @@
 
 ## Introduction
 
-[Slides: Welcome and Overview]([https:/docs.google.com/presentation/d/1jeln65Tx0CZlcEm9-cQG9AU7pbdS8ULt4rsiPUXiKu0](https://docs.google.com/presentation/d/1jeln65Tx0CZlcEm9-cQG9AU7pbdS8ULt4rsiPUXiKu0/edit#slide=id.p))
+[Slides: Welcome and Overview](https://docs.google.com/presentation/d/1jeln65Tx0CZlcEm9-cQG9AU7pbdS8ULt4rsiPUXiKu0/edit?usp=sharing)
 
 <!--
 
