@@ -9,6 +9,10 @@
 
 [Morning Exercise](../assignments/bootcamp/unix-git-r/assignment/index.md)
 
+## Afternoon Exercise
+
+[Afternoon Exercise](../assignments/bootcamp/data_exploration_and_visualization/assignment/index.md)
+
 <!--
 
 
