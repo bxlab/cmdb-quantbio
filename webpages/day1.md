@@ -1,9 +1,12 @@
 # Bootcamp Day 1
-<!--
+
 
 ## Introduction
 
-[Slides: Welcome and Overview](https://docs.google.com/presentation/d/1TJpwKrwHDkiC_0HTydT_3UtmkJ4zhokD_YRrL-mxsEU/edit#slide=id.p)
+[Slides: Welcome and Overview](docs.google.com/presentation/d/1jeln65Tx0CZlcEm9-cQG9AU7pbdS8ULt4rsiPUXiKu0)
+
+<!--
+
 
 ## The Unix Shell
 
