@@ -5,6 +5,9 @@
 
 [Slides: Welcome and Overview](https://docs.google.com/presentation/d/1jeln65Tx0CZlcEm9-cQG9AU7pbdS8ULt4rsiPUXiKu0/edit?usp=sharing)
 
+## Morning Exercise 
+
+[Morning Exercise](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/bootcamp/unix-git-r/assignment/index.md)
 <!--
 
 
