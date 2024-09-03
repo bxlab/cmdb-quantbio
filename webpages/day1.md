@@ -20,10 +20,11 @@ Data used today: [Dropbox link](https://www.dropbox.com/scl/fi/vt435kvankioc7ft4
 
 
 ## Homework Assignment: 
--->
+
 
 [Day 1 Homework](../assignments/bootcamp/python_fundamentals/day1homework.html)
 
 ## Daily Reflection
 
 Please fill out [this survey](https://forms.gle/JtFJ9qV6wumP2vPY6) today at the end of class. 
+-->
