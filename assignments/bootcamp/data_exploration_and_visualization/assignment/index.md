@@ -30,7 +30,7 @@ Do you notice any differences across tissues? Are certain tissues outliers? What
 
 Q7.  Visualize the number of genes detected per sample, stratifying by tissue. Again consider what type of plot is best for contrasting continuous distributions across multiple groups.
 
-Do you notice any differences across tissues? Which tissues are outliers? Look over the abstract of this paper for one hypothesis to explain these observations.
+Do you notice any differences across tissues? Which tissues are outliers? Look over the abstract of this [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7891839/) for one hypothesis to explain these observations.
 
 Q8.  Plot the relationship between ischemic time and RIN. Consider what type of plot is best for visualizing the relationship between two continuous variables. Create sub-panels that stratify the data by tissue using `facet_wrap()`. Resize points to `size = 0.5` and set the opacity to `alpha = 0.5`. Add linear trend lines to your plot with \`geom_smooth(method = "lm").
 
