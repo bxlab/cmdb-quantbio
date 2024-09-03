@@ -16,7 +16,7 @@ Q1.  Load the `tidyverse` package, and use the function `read_delim()` to read i
 
 Q2.  View the first rows of the tibble by simply entering the variable name in which you stored it. Notice that some of the columns were cut off due to the limits of the display. Use the `glimpse()` function to examine the data types and first entries of all of the columns.
 
-Q3.  Use the `filter()` function to subset the dataset to only the RNA-seq data by selecting rows for which the `SMGEBTCHT` column contains the value `"TruSeq.v1"`. [TruSeq](https://www.illumina.com/products/by-type/sequencing-kits/library-prep-kits/truseq-rna-v2.html) is a library preparation kit from Illumina.
+Q3.  Use the `filter()` function to subset the dataset to only the RNA-seq data by selecting rows for which the `SMGEBTCHT` column contains the value `"TruSeq.v1"`. [TruSeq](https://www.illumina.com/products/by-type/sequencing-kits/library-prep-kits/truseq-rna-v2.html) is a library preparation kit from Illumina. Use this filtered output for all subsequent questions.
 
 Q4.  Plot the number of samples from each tissue (`SMTSD`) as a barplot. (Hint: if you do not specify a y-axis, ggplot will use `stat = count` as the default, so the y-axis will represent the number of occurrences of each value of your x variable). See this [webpage](https://stackoverflow.com/questions/1330989/rotating-and-spacing-axis-labels-in-ggplot2) for a code snippet for rotating axis labels, which will be relevant throughout this exercise. Always be sure to label your axes with informative names!
 
