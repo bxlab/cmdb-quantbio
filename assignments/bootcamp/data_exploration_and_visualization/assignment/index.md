@@ -36,7 +36,7 @@ Q8.  Plot the relationship between ischemic time and RIN. Consider what type of 
 
 What relationships do you notice? Does the relationship depend on tissue?
 
-Q9.  Copy your answer from question 6 above, but modify it to color your points by autolysis score (`SMATSSCR`). Note that if we place `aes(color = SMATSSCR)` within the `ggplot()` portion of the code, it will attempt to apply this mapping to all `geom_`s, including `geom_smooth`. To avoid this, place `aes(color = SMATSSCR)` within the `geom_point()` portion of the code.
+Q9.  Copy your answer from question 8 above, but modify it to color your points by autolysis score (`SMATSSCR`). Note that if we place `aes(color = SMATSSCR)` within the `ggplot()` portion of the code, it will attempt to apply this mapping to all `geom_`s, including `geom_smooth`. To avoid this, place `aes(color = SMATSSCR)` within the `geom_point()` portion of the code.
 
 What relationships do you notice? Does the relationship depend on tissue?
 
