@@ -24,3 +24,4 @@ Each assignment subdirectory contains:
 * Syllabi: `resources/syllabi/`
 * Reference sheets for syntax, etc: `resources/references/`
 * Plotting gallery: `resources/gallery/`
+
