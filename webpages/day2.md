@@ -18,4 +18,4 @@
 
 ## Daily Reflection
 
-Please fill out [this survey](https://forms.gle/JtFJ9qV6wumP2vPY6) today at the end of class. 
+Please fill out [this survey](https://forms.gle/qyzDdwYqraEjBTzE9) today at the end of class. 
