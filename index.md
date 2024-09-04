@@ -90,8 +90,10 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |  11   | 12/8 | Mike Sauria | [Single-cell RNA-seq](webpages/week11.html) |	12/15 |
 {:.table.table-striped.well}
 
+-->
 
-<!--
+Resources 
+
 ### Useful Goodies
 
 #### Unix and Git
@@ -108,7 +110,6 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 #### Helpful Documentation (external links)
 
 * [Matplotlib](http://matplotlib.org/api/pyplot_summary.html)
-
 * [Statsmodels](http://statsmodels.sourceforge.net/stable/)
   - e.g. [ttest](http://statsmodels.sourceforge.net/stable/generated/statsmodels.stats.weightstats.ttest_ind.html)
 * [NumPy](http://docs.scipy.org/doc/numpy/reference/index.html#reference)
