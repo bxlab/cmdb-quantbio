@@ -1,6 +1,14 @@
 # Bootcamp Day 2
 
+
+
 <!-- 
+
+## Morning Exercise
+
+[](../assignments/bootcamp/unix-explore-text-files/assignment/index.md)
+
+
 
 ## Morning: Data Analysis and Visualization
 
