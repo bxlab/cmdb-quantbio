@@ -16,10 +16,6 @@
 
 [Exercise: Parsing Files With Python](../assignments/bootcamp/parsing-files-with-python/assignment/index.md)
 
-<!-- 
-
 ## Daily Reflection
 
 Please fill out [this survey](https://forms.gle/JtFJ9qV6wumP2vPY6) today at the end of class. 
-
--->
