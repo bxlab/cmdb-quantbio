@@ -1,6 +1,6 @@
 ## Assignment Overview
 
-The goal of this exercise is to use linear regression and other statistical methods to investigate the relationship between paternal age, maternal age, and the number of de novo mutations (DNMs) in a proband (offspring). Today's assignment will build familiarity with manipulating tabular datasets containining mixed data types. Specifically, you will import a table of de novo mutations and will manipulate it to calculate the number of maternal and paternal DNMs per individual, which you will then model with linear regression.
+The goal of this exercise is to use linear regression and other statistical methods to investigate the relationship between paternal age, maternal age, and the number of de novo mutations (DNMs) in a proband (offspring). Today's assignment will build familiarity with working with data frames. Specifically, you will import a table of de novo mutations and will manipulate it to calculate the number of maternal and paternal DNMs per individual, which you will then model with linear regression.
 
 ## Data
 
@@ -24,13 +24,13 @@ Use `group_by()` and `summarize()` to tabulate the number of paternally and mate
 
 #### **Step 1.3**
 
-Now, load the data from `aau1043_parental_age.csv` into a new `pandas` dataframe.
+Now, load the data from `aau1043_parental_age.csv` into a new dataframe.
 
 #### **Step 1.4**
 
-You now have two dataframes with complementary information. It would be nice to have all of this in one data structure. Use the `left_join()` function to combine your dataframe from step 2 with the dataframe you just created in step 3 based on the shared column `Proband_id`.
+You now have two dataframes with complementary information. It would be nice to have all of this in one dataframe. Use the `left_join()` function to combine your dataframe from step 2 with the dataframe you just created in step 3 based on the shared column `Proband_id`.
 
-### Exercise 2: Fit and interpret linear regression models with Python
+### Exercise 2: Fit and interpret linear regression models
 
 Using the merged dataframe from the previous section, you will be exploring the relationships between different features of the data.
 
@@ -60,11 +60,7 @@ As before, fit a linear regression model, but this time to test for an associati
 
 1.  What is the "size" of this relationship? In your own words, what does this mean? Does this match what you observed in your plots in step 6?
 
-There is an average increase of 0.38 maternal DNMs per year of maternal age.
-
 2.  Is this relationship significant? How do you know? In your own words, what does this mean?
-
-The relationship is statistically significant with a p-value of 6.9e-24 which is less than our threshold of 0.05. We interpret this to mean that there is a very small probability of observing a relationship this extreme or more extreme assuming that the null hypothesis is true (i.e., that there is no relationship between maternal age and maternal DNM count).
 
 #### **Step 2.4**
 
@@ -76,7 +72,7 @@ Next, you're curious whether the number of paternally inherited DNMs match the n
 
 #### **Step 2.6**
 
-Now that you've visualized this relationship, you want to test whether there is a *significant* difference between the number of maternally vs. paternally inherited DNMs per proband. What would be an appropriate statistical test to test this relationship?
+Now that you've visualized this relationship, you want to test whether there is a *significant* difference between the number of maternally vs. paternally inherited DNMs per proband. What would be an appropriate statistical model to test this relationship? Fit this model to the data.
 
 After performing your test, answer the following questions:
 
@@ -98,10 +94,9 @@ The interpretation of parameter estimates from Poisson regression differs from t
 
 Using the relevant Poisson regression model that you fit, predict the number of paternal de novo mutations for a proband with a father who was 40.2 years old at the proband's time of birth. Record your answer and your work.
 
-
 ### Exercise 4 (OPTIONAL)
 
-Do the analyses we tell you to do is surely fun, but isn't it more fun to do your *own* analyses?
+Doing the analyses we tell you to do is surely fun, but isn't it more fun to do your *own* analyses?
 
 #### **Step 4.1** 
 
