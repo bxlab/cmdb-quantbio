@@ -8,7 +8,18 @@
 
 ## Morning Exercise
 
-[](../assignments/bootcamp/unix-explore-text-files/assignment/index.md)
+[Morning Exercise](../assignments/bootcamp/unix-explore-text-files/assignment/index.md)
+
+## Afternoon Code-Along
+
+[Code](../assignments.bootcamp/parsing-files-with-python/slides_asynchronous_or_livecoding_resources)
+
+## Afternnoon Exercise
+
+[Exercise: Parsing Files With Python](assignments/bootcamp/parsing-files-with-python/assignment/index.md)
+
+
+
 
 
 
