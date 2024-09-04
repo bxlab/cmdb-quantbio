@@ -25,18 +25,7 @@ Please `git push` after each exercise and **do not wait** until the end of the s
     chr7 HAVANA exon       101244960 101245081 . - . gene_id "ENSG0000021 ...
     ```
 
-2. `cut.py` -- Implement a basic `cut` program where the 1st command line argument specifies the fields to be output, separated by commas .  Use `.split()` to separate this argument into a list, providing you a list that you can loop over to extract the specified fields from each line in the file (i.e. nested `for` loops).  If you store the specified fields in a list, you can combine the entire list into a string using `"\t".join(my_list)`.
-
-    Test this on `hg38-gene-metadata-feature.tsv` to avoid parsing header lines that begin with `#`.
-
-    ```
-    $ cut.py 0,2,6 hg38-gene-metadata-feature.tsv
-    ensembl_gene_id  chromosome_name  gene_biotype
-    ENSG00000228037  1                lncRNA
-    ENSG00000142611  1                protein_coding
-    ```
-
-3. `gtf2bed.py` -- Create a program that converts genome annotation information from [.gtf format](https://genome.ucsc.edu/FAQ/FAQformat.html#format4) to [.bed format](https://genome.ucsc.edu/FAQ/FAQformat.html#format1).  Specifically, print out just the chromosome, start, stop, and gene_name, stripping off both the beginning `gene_name "` and ending `"`.
+2. `gtf2bed.py` -- Create a program that converts genome annotation information from [.gtf format](https://genome.ucsc.edu/FAQ/FAQformat.html#format4) to [.bed format](https://genome.ucsc.edu/FAQ/FAQformat.html#format1).  Specifically, print out just the chromosome, start, stop, and gene_name, stripping off both the beginning `gene_name "` and ending `"`.
 
     ```
     $ gtf2bed.py gencode.v46.basic.annotation.gtf
@@ -45,7 +34,7 @@ Please `git push` after each exercise and **do not wait** until the end of the s
     chr1	14696	24886	WASH7P
     ```
 
-4. `tally-fixed.py` -- Starting with `tally.py`, identify and fix the three bugs in this code.  The output of this program should match the output of `cut -f 1 | uniq -c` e.g.
+3. `tally-fixed.py` -- Starting with `tally.py`, identify and fix the three bugs in this code.  The output of this program should match the output of `cut -f 1 | uniq -c` e.g.
 
     ```
     $ grep -v "#" gencode.v46.basic.annotation.gtf | cut -f 1 | uniq -c
@@ -69,4 +58,15 @@ C. Create a program that for each gene in prints out one line containing the gen
 ```
 FIS1 FIS1-201 FIS1-207 FIS1-203
 ```
+
+D. `cut.py` -- Implement a basic `cut` program where the 1st command line argument specifies the fields to be output, separated by commas .  Use `.split()` to separate this argument into a list, providing you a list that you can loop over to extract the specified fields from each line in the file (i.e. nested `for` loops).  If you store the specified fields in a list, you can combine the entire list into a string using `"\t".join(my_list)`.
+
+    Test this on `hg38-gene-metadata-feature.tsv` to avoid parsing header lines that begin with `#`.
+
+    ```
+    $ cut.py 0,2,6 hg38-gene-metadata-feature.tsv
+    ensembl_gene_id  chromosome_name  gene_biotype
+    ENSG00000228037  1                lncRNA
+    ENSG00000142611  1                protein_coding
+    ```
 
