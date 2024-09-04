@@ -28,7 +28,7 @@ Please `git push` after each exercise and **do not wait** until the end of the s
 2. `gtf2bed.py` -- Create a program that converts genome annotation information from [.gtf format](https://genome.ucsc.edu/FAQ/FAQformat.html#format4) to [.bed format](https://genome.ucsc.edu/FAQ/FAQformat.html#format1).  Specifically, print out just the chromosome, start, stop, and gene_name, stripping off both the beginning `gene_name "` and ending `"`.
 
     ```
-    $ gtf2bed.py gencode.v46.basic.annotation.gtf
+    $ gtf2bed.py genes.gtf
     chr1	11869	14409	DDX11L2
     chr1	12010	13670	DDX11L1
     chr1	14696	24886	WASH7P
