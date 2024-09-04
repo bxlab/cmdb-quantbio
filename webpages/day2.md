@@ -8,15 +8,15 @@
 
 [Morning Exercise](../assignments/bootcamp/unix-explore-text-files/assignment/index.md)
 
+## Afternoon Code-Along
+
+[Code](https://github.com/bxlab/cmdb-quantbio/tree/main/assignments/bootcamp/parsing-files-with-python/slides_asynchronous_or_livecoding_resources)
+
 ## Afternoon Exercise
 
 [Exercise: Parsing Files With Python](../assignments/bootcamp/parsing-files-with-python/assignment/index.md)
 
 <!-- 
-
-## Afternoon Code-Along
-
-[Code](../assignments.bootcamp/parsing-files-with-python/slides_asynchronous_or_livecoding_resources)
 
 ## Daily Reflection
 
