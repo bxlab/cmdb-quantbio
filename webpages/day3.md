@@ -8,7 +8,7 @@ Please fill out [this survey](https://forms.gle/qyzDdwYqraEjBTzE9) today at the 
 
 -->
 
-## Morning: While, If, Functions
+## Morning lecture
 
 [Lecture Slides](https://docs.google.com/presentation/d/1VnTgjL3rqTNFv9JNg6LjGApcReK-JktdBK5dVai6_f0/edit#slide=id.p)
 
