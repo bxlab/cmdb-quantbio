@@ -1,5 +1,9 @@
 # Bootcamp Day 3
 
+## Afternoon Assignment
+
+[Intro to Numpy](../assignments/bootcamp/intro_to_numpy/index.md)
+
 <!--
 
 ## Daily Reflection
