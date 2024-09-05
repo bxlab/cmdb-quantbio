@@ -21,8 +21,8 @@ Please submit your answers as a `.py` script with comments explaining the logic 
    ***Why do you need to tell numpy what type of data the expression data is but not for the other data lists?***
 
 
-#### 3. Let's check the mean expression values for the first 10 genes using an approach you have already learned, nested `for` loops.
-- For the first 10 genes (rows, axis 0), use a nested `for` loop to find the mean gene expression and print them. Think about which axis needs to be the outer `for` loop and which the inner.
+#### ~~3. Let's check the mean expression values for the first 10 genes using an approach you have already learned, nested `for` loops.~~
+~~For the first 10 genes (rows, axis 0), use a nested `for` loop to find the mean gene expression and print them. Think about which axis needs to be the outer `for` loop and which the inner.~~
 
 
 #### 4. Now let's see how numpy arrays make working with data more streamlined by calculating the same mean expression values for the first 10 genes but using the build-in numpy function `mean` and printing them.
