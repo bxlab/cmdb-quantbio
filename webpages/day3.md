@@ -1,5 +1,14 @@
 # Bootcamp Day 3
 
+<!--
+
+## Daily Reflection
+
+Please fill out [this survey](https://forms.gle/qyzDdwYqraEjBTzE9) today at the end of class. 
+
+-->
+<!--
+
 ## Morning: While, If, Functions
 
 [Lecture Slides](../lectures/presentation.html)
@@ -15,6 +24,6 @@
 
 [Day 3 Homework](../assignments/bootcamp/functionPractice.html)
 
-## Daily Reflection
 
-Please fill out [this survey](https://forms.gle/JtFJ9qV6wumP2vPY6) today at the end of class. 
+
+-->
