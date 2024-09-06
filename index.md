@@ -33,7 +33,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 <!--[Tuesday](webpages/day1.md)-->
 <!--[Thursday](webpages/day3.md)-->
 
-| Time | [Tuesday](webpages/day1.md) | [Wednesday](webpages/day2.md) |  [Thursday](webpages/day3.md) | Friday | 
+| Time | [Tuesday](webpages/day1.md) | [Wednesday](webpages/day2.md) |  [Thursday](webpages/day3.md) | [Friday](webpages/day4.md) | 
 |:---------------:|:--------------------------------------:|:---------------------------------------:|:------------------------------------:|:---------------------------------------:|
 |   9:00 -  9:30  | Welcome      | Small Groups | Small Groups | Small Groups |
 |   9:30 - 11:00  | Unix, git, R | Explore text files w/ Unix | Python Indexing, Arrays | Linear Regression |
