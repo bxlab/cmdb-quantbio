@@ -12,6 +12,10 @@
 ## Afternoon Lecture
 [Slides](https://docs.google.com/presentation/d/1S_cQxSfdBpt2lYqX-6s1m1tDnwEFhcvoVLcqY3W4ch0/)
 
+## Afternoon assignment
+
+[Linear Regression] (https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/bootcamp/linear_regression/assignment/index.md)
+
 <!--
 
 ## Afternoon
