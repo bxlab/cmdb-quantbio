@@ -108,7 +108,7 @@ Upon completion of this course, students will be able to:
 <header>
   <h2>Study Materials</h2>
 </header>
-This course does not have a required text. TAs have created a [short online textbook](https://andrew-bortvin.github.io/cmdb-bootcampNotes/) coverin the fundamentals of Python and Git. Any lecture notes or slides will be made available on the course website. 
+This course does not have a required text. TAs have created a [short online textbook](https://andrew-bortvin.github.io/cmdb-bootcampNotes) covering the fundamentals of Python and Git. Any lecture notes or slides will be made available on the course website. 
 
 <a name="Format"></a>
 <header>
