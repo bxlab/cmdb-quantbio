@@ -1,5 +1,5 @@
 # Bootcamp Day 4
-
+<!--
 ## Morning
 
 Review Sessions 
@@ -20,3 +20,4 @@ Please fill out [this survey](https://forms.gle/JtFJ9qV6wumP2vPY6) today at the 
 ## Answers to your FAQs
 
 Answers to the questions asked during the daily reflections from bootcamp are [here](../resources/references/reflection_questions_answered.html). 
+-->
