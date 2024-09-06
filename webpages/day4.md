@@ -14,7 +14,7 @@
 
 ## Afternoon assignment
 
-[Linear Regression] (../assignments/bootcamp/linear_regression/assignment/index.md)
+[Linear Regression](../assignments/bootcamp/linear_regression/assignment/index.md)
 
 <!--
 
