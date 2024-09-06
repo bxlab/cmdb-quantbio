@@ -5,6 +5,10 @@
 
 [Dictionaries and more arrays](https://docs.google.com/presentation/d/1SwZgNAlrVPOhxUe63J75qV3UEstvwKB5GK-JiEiBeCs/edit#slide=id.p)
 
+## Lunch Exercise 
+
+[Dictionaries](../assignments/bootcamp/dictionaries/assignment/index.md)
+
 <!--
 
 ## Afternoon Lecture
