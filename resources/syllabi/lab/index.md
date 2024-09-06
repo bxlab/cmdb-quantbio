@@ -2,7 +2,7 @@
 <h1>
     AS.020.617
     <span style="float:right;">
-        Fall 2023
+        Fall 2024
     </span>
     <center>
        CMDB Quantitative Biology Lab
@@ -31,6 +31,10 @@
    <td>Michael Sauria</td>
    <td><a href="mailto:msauria1@jhu.edu">msauria1@jhu.edu</a></td>
  </tr>
+ <tr>
+   <td>Frederick Tan</td>
+   <td><a href="mailto:ftan2@jh.edu">ftan2@jh.edu</a></td>
+ </tr>
 </table>
 
 <a name="TAs"></a>
@@ -41,16 +45,16 @@
    <th>Email</th>
  </tr>
  <tr>
-   <td>Andrew Bortvin</td>
-   <td><a href="mailto:abortvi2@jhu.edu">abortvi2@jhu.edu</a></td>
+   <td>Nicolas Moya</td>
+   <td><a href="mailto:nmoya1@jh.edu">nmoya1@jh.edu</a></td>
  </tr>
  <tr>
-  <td>Sadhana Chidambaran</td>
-  <td><a href="mailto:sadhana.chidambaran@jhu.edu">sadhana.chidambaran@jhu.edu</a></td>
+  <td>Jonathan Fischer</td>
+  <td><a href="mailto:jfisch27@jhu.edu">jfisch27@jhu.edu</a></td>
  </tr>
  <tr>
-  <td>Dylan Taylor</td>
-  <td><a href="mailto:dtaylo95@jhu.edu">dtaylo95@jhu.edu</a></td>
+  <td>Siqi Ma</td>
+  <td><a href="mailto:sma46@jhu.edu">sma46@jhu.edu</a></td>
  </tr>
 </table>
 
@@ -60,8 +64,8 @@
   <h3>Class Meetings</h3>
 </header>
 
-Fridays, Sept 15, 2023 - Dec 8, 2023<br />
-10:00 A.M. ET - 12:30 P.M. ET, BLC 5015<br />
+Fridays, Sept 13, 2023 - Dec 6, 2024<br />
+10:00 A.M. ET - 12:30 P.M. ET, Rose Auditorium, Carnegie Institution for Science<br />
 
 <a name="CourseWebsite"></a>
 <header>
@@ -80,12 +84,10 @@ This course builds upon the foundations of Quantitative Biology Bootcamp, reinfo
 Topics are intergated with the curricula for concurrent core courses in molecular biology and cell biology, with datasets and analysis goals aimed at diverse topics in these fields. Examples of such topics include:
 
   <ul>
-    <li>genome assembly and variant discovery, problems necessary for a wide array of downstream genomic analyses</li>
-    <li>genetic association studies, aimed at uncovering the genetic basis of phenotypic variation for complex traits</li>
-    <li>sequence alignment, a long-standing computational challenge that is foundational to evolutionary studies</li>
-    <li>interpretation of functional genomic data, such as ChIP-seq and bisulfite-seq, which provide insight into mechanisms of gene regulation</li>
+    <li>genome assembly, variant discovery, and genotyping</li>
+    <li>analysis of functional genomic data, such as bulk and single-cell RNA-seq</li>
+    <li>analysis of imaging data, including common tasks such as segmentation and classification</li>
   </ul>
-
 
 Upon completing the course, students should have the background to develop reproducible bioinformatic workflows tailored to their research questions, as well as familiarity with resources for expanding upon these skills.   
 
