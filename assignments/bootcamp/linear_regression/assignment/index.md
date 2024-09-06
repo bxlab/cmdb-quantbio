@@ -44,7 +44,7 @@ First, you're interested in exploring if there's a relationship between the numb
 
 #### **Step 2.2**
 
-Now that you've visualized these relationships, you're curious whether they're statistically significant. Fit a linear regression model to the data using the `lm()` function.
+Now that you've visualized these relationships, you're curious whether they're statistically significant. Fit a linear regression model to the maternal age and maternal DNM model using the `lm()` function.
 
 1.  What is the "size" of this relationship? In your own words, what does this mean? Does this match what you observed in your plots in step 2.1?
 
@@ -54,7 +54,7 @@ Now that you've visualized these relationships, you're curious whether they're s
 
 As before, fit a linear regression model, but this time to test for an association between *paternal* age and *paternally* inherited de novo mutations.
 
-1.  What is the "size" of this relationship? In your own words, what does this mean? Does this match what you observed in your plots in step 6?
+1.  What is the "size" of this relationship? In your own words, what does this mean? Does this match what you observed in your plots in step 2.1?
 
 2.  Is this relationship significant? How do you know? In your own words, what does this mean?
 
