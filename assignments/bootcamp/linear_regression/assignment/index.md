@@ -48,11 +48,7 @@ Now that you've visualized these relationships, you're curious whether they're s
 
 1.  What is the "size" of this relationship? In your own words, what does this mean? Does this match what you observed in your plots in step 2.1?
 
-There is an average increase of 1.35 paternal DNMs per year of paternal age.
-
 2.  Is this relationship significant? How do you know? In your own words, what does this mean?
-
-The relationship is statistically significant with a p-value of 1.6e-84 which is less than our threshold of 0.05. We interpret this to mean that there is a very small probability of observing a relationship this extreme or more extreme assuming that the null hypothesis is true (i.e., that there is no relationship between paternal age and paternal DNM count).
 
 #### **Step 2.3**
 
