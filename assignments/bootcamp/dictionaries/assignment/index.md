@@ -48,19 +48,7 @@ Please submit your answers as a `.py` script with comments explaining the logic 
     ***Which tissue types have the largest number of samples? The fewest?***
 
 
-#### 6. Now that you know which columns you need for any given tissue, you can load the expression file, keeping only genes that appear in the gene-tissue pair file and only epxression values from sampleIDs that correspond to the tissue of interest for that gene.
-- To check if the gene is from the gene-tissue pair file, you can use the keyword `in` to see if a value is in the step 1 dictionary's keys just like a list.
-- If the gene is in the gene-tissue pair set, determine which tissue that gene is associated with, get the column indices for that tissue, and pull out only the expression values for the corresponding tissue.
-- Unlike lists, numpy arrays can use a list of indices to pull out multiple values at the same time and much faster. With this in mind, when you find a target gene you should convert its expression values into a numpy array and then you can use the index list that you made step 5 to extract the tissue-specific expression values in one step.
-- You will potentially have different numbers of expression values for each gene, so saving your data in a numpy array doesn't make sense. Instead, you can use a couple of different approaches. A list with the geneID, tissue, and expressions is one option. A dictionary keyed by the geneID and tissue name with the expression value array as the coresponding value is another.
-
-
-#### 7. Now that you have the relevant expression values, you need to save the results in a tab-separated file with one line per expression value, its corresponding geneID, and tissue.
-- Your output should have 3 columns. You can do this using a nested `for` loop. The outer `for` loop looks at each gene while the inned `for` loop reads each expression value for that gene.
-
-
-#### 8. Finally, you can visualize how variable each gene's expression is.
-- Load the data into R and create a violin plot of expression levels broken down by gene (ggplot2's `geom_violin()`).
+#### 6. (formerly 8) Finally, you can visualize how variable each gene's expression is. Download the [data](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/main/assignments/bootcamp/dictionaries/extra_data/dicts_expr.tsv), load it into R, and create a violin plot of expression levels broken down by gene (ggplot2's `geom_violin()`).
 - For categories, create a combination of tissue names and gene IDs (`dplyr::mutate(Tissue_Gene=paste0(Tissue, " ", GeneID))`)
 - You will need to log-transform your data with a psuedo-count of one (you can use `dplyr::mutate` for this step as well)
 - Switch the axes for the violin plot so the categories are on the y-axis (`coord_flip()`)
@@ -72,8 +60,17 @@ Please submit your answers as a `.py` script with comments explaining the logic 
 
 ### Advanced exercises
 
-#### 9. For tissues with more than 1 gene, find the correlation between each pairwise combination of gene sample expression levels for that tissue and report the tissue name, number of associated genes, and median correlation.
-- You can use the numpy `corrcoef` to find the Pearson correlation, and because this function returns a correlation matrix, you will need to select item `[0, 1]`).
+#### 7. (formerly 6) Now that you know which columns you need for any given tissue, you can load the expression file, keeping only genes that appear in the gene-tissue pair file and only epxression values from sampleIDs that correspond to the tissue of interest for that gene.
+- To check if the gene is from the gene-tissue pair file, you can use the keyword `in` to see if a value is in the step 1 dictionary's keys just like a list.
+- If the gene is in the gene-tissue pair set, determine which tissue that gene is associated with, get the column indices for that tissue, and pull out only the expression values for the corresponding tissue.
+- Unlike lists, numpy arrays can use a list of indices to pull out multiple values at the same time and much faster. With this in mind, when you find a target gene you should convert its expression values into a numpy array and then you can use the index list that you made step 5 to extract the tissue-specific expression values in one step.
+- You will potentially have different numbers of expression values for each gene, so saving your data in a numpy array doesn't make sense. Instead, you can use a couple of different approaches. A list with the geneID, tissue, and expressions is one option. A dictionary keyed by the geneID and tissue name with the expression value array as the coresponding value is another.
+
+
+#### 8. (formerly 7) Now that you have the relevant expression values, you need to save the results in a tab-separated file with one line per expression value, its corresponding geneID, and tissue. Your output should have 3 columns. You can do this using a nested `for` loop. The outer `for` loop looks at each gene while the inned `for` loop reads each expression value for that gene.
+
+
+#### 9. For tissues with more than 1 gene, find the correlation between each pairwise combination of gene sample expression levels for that tissue and report the tissue name, number of associated genes, and median correlation (you can use the numpy `corrcoef` to find the Pearson correlation, and because this function returns a correlation matrix, you will need to select item `[0, 1]`).
 
 
 #### 10. For any tissue with a median correlation greater than 0.4, find and print the gene names and their associated tissue.
