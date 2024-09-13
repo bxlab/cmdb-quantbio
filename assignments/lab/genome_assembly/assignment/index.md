@@ -18,7 +18,7 @@ Using Python, simulate sequencing 3x coverage of a 1Mbp genome with 100bp reads.
 The start position of each read should have a uniform random probabilty at each possible starting position (0 through 999,900). You can record the coverage in an array of 1M positions.
 
 Now using R, plot the histogram of coverage across the genome. Overlay the histogram with a Poisson distribution with **lambda = 3**. Also overlay the distribution with a Normal distribution with a **mean of 3 and a std. dev. of 1.73** (which is the square root of 3).
-* **HINT**: For the poisson and normal distributions, you’ll need to find the probability of getting a certain coverage. For the poisson distribution, this is called the probability mass function (PMF) of the distribution. Feel free to code this yourself using the appropriate equation, or you can take a look at the `scipy.stats.poisson.pmf()` function (more [here](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.poisson.html)). Unlike the Poisson distribution, the normal distribution is continuous, and so we will instead want to use the probability density function (PDF). Note that for both of these, this will give you the *probability* of observing each coverage. What do we need to do to transform these probabilities into a frequency count comparable to those in our histogram?
+* **HINT**: For the poisson and normal distributions, you’ll need to find the probability of getting a certain coverage. For the poisson distribution, this is called the probability mass function (PMF) of the distribution. Feel free to code this yourself using the appropriate equation, or you can take a look at the python `scipy.stats.poisson.pmf()` function (more [here](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.poisson.html)) or the R `dpois` function (more [here](https://www.rdocumentation.org/packages/stats/versions/3.3/topics/Poisson)). Unlike the Poisson distribution, the normal distribution is continuous, and so we will instead want to use the probability density function (PDF). Note that for both of these, this will give you the *probability* of observing each coverage. What do we need to do to transform these probabilities into a frequency count comparable to those in our histogram?
 
 Upload this plot as `ex1_3x_cov.png` in your submission directory. **All plots should be clearly labelled and easily interpretable** (i.e. axis labels, legend describing the three things plotted, etc.).
 
@@ -225,7 +225,7 @@ Using your list from Step 3.2, answer the following questions. Record your answe
   * Code to count 0 coverage occurences (**0.5 point**)
   * Code to plot `ex1_*_cov.png` (**1 point**)
   * Code to generate the edges of the de Bruijn graph (**1 point**)
-2. `README.md` file with answers to questions in the assignment (**4 points total**)
+2. `README.md` file with answers to questions in the assignment (**3 points total**)
   * Answer to question in Step 1.1 (**0.5 point**)
   * Answer to questions in Steps 1.3 - 1.5 (**1 point**)
   * Answer to question in Step 2.4 (**0.5 point**)
