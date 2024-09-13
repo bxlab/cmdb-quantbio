@@ -3,11 +3,9 @@ Assignment Date: Friday, Sept. 13, 2024
 
 Due Date: Friday, Sept. 20, 2024
 
-<!--
 ## Lecture -- Mike Schatz
 
-[Lecture Slides](https://docs.google.com/presentation/d/1GRB69Vd9T0Rc7USsuP80GVWdpxa5KWKoT_iWX30gOe0/edit?usp=sharing)
--->
+[Lecture Slides](https://www.dropbox.com/scl/fi/2oxr3sbmfthemrmb8ne90/2024.09.12.QBLab.GenomeSequencing.pdf?rlkey=9dg26etap0ukyx3wney65n5s0&e=1&dl=0)
 
 ## Homework Assignment
 
