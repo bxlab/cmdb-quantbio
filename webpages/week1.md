@@ -1,5 +1,5 @@
 # QuantLab Week 1 - Genome Assembly
-Assignment Date: Friday, Sept. 13 2024
+Assignment Date: Friday, Sept. 13, 2024
 
 Due Date: Friday, Sept. 20, 2024
 
