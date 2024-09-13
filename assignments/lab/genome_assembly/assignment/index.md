@@ -17,7 +17,7 @@ Using Python, simulate sequencing 3x coverage of a 1Mbp genome with 100bp reads.
 
 The start position of each read should have a uniform random probabilty at each possible starting position (0 through 999,900). You can record the coverage in an array of 1M positions.
 
-Now, plot the histogram of coverage across the genome. Overlay the histogram with a Poisson distribution with **lambda = 3**. Also overlay the distribution with a Normal distribution with a **mean of 3 and a std. dev. of 1.73** (which is the square root of 3).
+Now using R, plot the histogram of coverage across the genome. Overlay the histogram with a Poisson distribution with **lambda = 3**. Also overlay the distribution with a Normal distribution with a **mean of 3 and a std. dev. of 1.73** (which is the square root of 3).
 * **HINT**: For the poisson and normal distributions, you’ll need to find the probability of getting a certain coverage. For the poisson distribution, this is called the probability mass function (PMF) of the distribution. Feel free to code this yourself using the appropriate equation, or you can take a look at the `scipy.stats.poisson.pmf()` function (more [here](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.poisson.html)). Unlike the Poisson distribution, the normal distribution is continuous, and so we will instead want to use the probability density function (PDF). Note that for both of these, this will give you the *probability* of observing each coverage. What do we need to do to transform these probabilities into a frequency count comparable to those in our histogram?
 
 Upload this plot as `ex1_3x_cov.png` in your submission directory. **All plots should be clearly labelled and easily interpretable** (i.e. axis labels, legend describing the three things plotted, etc.).
@@ -61,7 +61,7 @@ Using your results from Step 1.2, answer the following questions in your `README
 #### **Step 1.4**
 Now, repeat the analysis with 10x coverage:
 1. Simulate using the appropriate number of reads
-2. Make a histogram. Overlay a Poisson distribution with **lambda = 10**. Overlay a Normal distribution with **mean = 10 and std. dev. = 3.16**. Upload this plot as `ex1_10x_cov.png` in your submission directory.
+2. In R, make a histogram. Overlay a Poisson distribution with **lambda = 10**. Overlay a Normal distribution with **mean = 10 and std. dev. = 3.16**. Upload this plot as `ex1_10x_cov.png` in your submission directory.
 3. In your `README.md`, answer the following questions:
    1. In your simulation, how much of the genome has not been sequenced (has 0x coverage)?
    2. How well does this match Poisson expectations? How well does the normal distribution fit the data?
@@ -69,7 +69,7 @@ Now, repeat the analysis with 10x coverage:
 #### **Step 1.5**
 Now, repeat the analysis with 30x coverage:
 1. Simulate using the appropriate number of reads
-2. Make a histogram. Overlay a Poisson distribution with **lambda = 30**. Overlay a Normal distribution with **mean = 30 and std. dev. = 5.47**. Upload this plot as `ex1_30x_cov.png` in your submission directory.
+2. In R, make a histogram. Overlay a Poisson distribution with **lambda = 30**. Overlay a Normal distribution with **mean = 30 and std. dev. = 5.47**. Upload this plot as `ex1_30x_cov.png` in your submission directory.
 4. In your `README.md`, answer the following questions:
    1. In your simulation, how much of the genome has not been sequenced (has 0x coverage)?
    2. How well does this match Poisson expectations? How well does the normal distribution fit the data?
@@ -133,19 +133,9 @@ Assume that the maximum number of occurrences of any 3-mer in the actual genome 
 
 In a few sentences, what would it take to accurately reconstruct the sequence of the genome? Record your answer in your `README.md`.
 
-### Exercise 3: Why genomics?
+## Advanced Exercises
 
-#### **Step 3.1**
-
-Use ChatGPT (or Bard or your favorite LLM) to write an essay on why you are interested in genomics. Make sure to ask for references. Record both your prompt(s) and the output from the LLMin your `README.md`.
-​
-#### **Step 3.2**
-
-In your `README.md`, comment on the output from the LLM: Does it make logical sense? Does it include any phrases you would not have written? Do the cited papers exist and support the claims from the LLM?
-
-
-### Exercise 4: K-mer uniqueness (OPTIONAL)
-
+### Exercise 3: K-mer uniqueness
 Download the human chomosome 22 DNA sequence using the following command:
 
 ```
@@ -159,11 +149,11 @@ A string of length G has G - k + 1 kmers. For long strings, G - k + 1 is nearly 
 
 While a string of length G has G-k+1 kmers, there may be many fewer *distinct* kmers. For example, in the string "GCATCATCATCATCATCATCAT..." the kmers are: GCA, CAT, ATC, TCA, CAT, ATC, TCA, CAT, ATC, TCA, CAT, .... As such, there are only 4 disinct kmers (GCA, CAT, ATC, TCA). Of these, GCA occurs once and the others occur many times.
 
-#### **Step 4.1** 
+#### **Step 3.1** 
 
 How many As, Cs, Gs, Ts and Ns are found in the entire chromosome? If needed, convert lowercase letters to uppercase. Any other character can be converted to N. Record your answer in your `README.md`.
 
-#### **Step 4.2**
+#### **Step 3.2**
 
 Using Python, tally the frequency of all of the different 19-mers in the chromosome, and calculate the kmer frequency spectrum up to 1000 (e.g. how many kmers occur 1 time, how many occur 2 times, how many occur 3 times, etc.). Store this in a list. For this, convert lowercase letters to uppercase, and convert any character that is not A, C, G or T to A (especially N characters). We recommend you use a dictionary to tally the frequencies using this pseudocode.
 
@@ -214,13 +204,13 @@ for i in range(1, max_frequency+1):
   </pre>
 </details>
 
-#### **Step 4.3** 
+#### **Step 3.3** 
 
-Using your list from Step 4.2, plot the kmer frequency spectrum: x-axis is the kmer frequency, and the y-axis is the number of kmers that occur at each of those frequencies times. Make sure to plot both the x and y-axis in log space. Upload this graph as `ex4_kmer_spec.png` in your submission directory.
+Using your list from Step 3.2, plot the kmer frequency spectrum: x-axis is the kmer frequency, and the y-axis is the number of kmers that occur at each of those frequencies times. Make sure to plot both the x and y-axis in log space. Upload this graph as `ex4_kmer_spec.png` in your submission directory.
 
-#### **Step 4.4** 
+#### **Step 3.4** 
 
-Using your list from Step 4.2, answer the following questions. Record your answers in your `README.md`.
+Using your list from Step 3.2, answer the following questions. Record your answers in your `README.md`.
 1. What percent of the genome is unique (e.g. what percent of the kmers occur 1 time)?
 2. What percent of the genome is repetitive (occurs more than 1 time)?
 3. What percent occurs more than 1000 times? 
@@ -229,11 +219,11 @@ Using your list from Step 4.2, answer the following questions. Record your answe
 
 ## Submission
 
-1. Python script with all code for the assignment (**4 points total**)
-  * Code to simulate read coverage (**1.5 point**)
+1. Python and R scripts with all code for the assignment (**5 points total**)
+  * Code to simulate read coverage (**2 points**)
   * Code to calculate Poisson and Normal distribution expectations (**0.5 point**)
   * Code to count 0 coverage occurences (**0.5 point**)
-  * Code to plot `ex1_*_cov.png` (**0.5 point**)
+  * Code to plot `ex1_*_cov.png` (**1 point**)
   * Code to generate the edges of the de Bruijn graph (**1 point**)
 2. `README.md` file with answers to questions in the assignment (**4 points total**)
   * Answer to question in Step 1.1 (**0.5 point**)
@@ -241,8 +231,6 @@ Using your list from Step 4.2, answer the following questions. Record your answe
   * Answer to question in Step 2.4 (**0.5 point**)
   * Answer to question in Step 2.5 (**0.5 point**)
   * Answer to question in Step 2.6 (**0.5 point**)
-  * Answer to question in Step 3.1 (**0.5 point**)
-  * Answer to question in Step 3.2 (**0.5 point**)
 3. Figures for exercises 1 and 2 (**2 points total**)
   * `ex1_3x_cov.png` clearly labelled (**0.5 point**)
   * `ex1_10x_cov.png` clearly labelled (**0.5 point**)
