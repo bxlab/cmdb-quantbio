@@ -75,8 +75,8 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 | Week | Date | Instructor          | Topic                                                                             | Resubmission Deadline |
 | :--: | :--: | :-----------------: | :--------------------------------------------------------------------------------:|:----: |
-|  1  | 9/13 | Mike Schatz |  [Genome assembly](webpages/week1.html)| &#124;| 
-
+|  1  | 9/13 | Mike Schatz |  [Genome assembly](webpages/week1.html)| | 
+| 2   | 9/20 | Mike Sauria |  Genome Content | |
 {:.table.table-striped.well}
 
 
