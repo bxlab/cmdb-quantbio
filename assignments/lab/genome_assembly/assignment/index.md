@@ -19,13 +19,6 @@ The start position of each read should have a uniform random probabilty at each 
 
 Once you have all of your reads simulated and recorded, save your coverages (there should be 1 million) into a text file which you can open in R for plotting.
 
-#### **Step 1.3**
-
-Now using R, plot the histogram of coverage across the genome. Overlay the histogram with a Poisson distribution with **lambda = 3**. Also overlay the distribution with a Normal distribution with a **mean of 3 and a std. dev. of 1.73** (which is the square root of 3).
-* **HINT**: For the poisson and normal distributions, you’ll need to find the probability of getting a certain coverage. For the poisson distribution, this is called the probability mass function (PMF) of the distribution. Feel free to code this yourself using the appropriate equation, or you can take a look at the python `scipy.stats.poisson.pmf()` function (more [here](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.poisson.html)) or the R `dpois` function (more [here](https://www.rdocumentation.org/packages/stats/versions/3.3/topics/Poisson)). Unlike the Poisson distribution, the normal distribution is continuous, and so we will instead want to use the probability density function (PDF). Note that for both of these, this will give you the *probability* of observing each coverage. What do we need to do to transform these probabilities into a frequency count comparable to those in our histogram?
-
-Upload this plot as `ex1_3x_cov.png` in your submission directory. **All plots should be clearly labelled and easily interpretable** (i.e. axis labels, legend describing the three things plotted, etc.).
-
 <details><summary><b><font color="#18BC9C">CLICK HERE FOR PSEUDOCODE</font></b></summary>
   <pre>
     <code>
@@ -55,6 +48,13 @@ normal_estimates = get_normal_estimates(xs, mean = genome_coverage, stddev = sqr
     </code>
   </pre>
 </details>
+
+#### **Step 1.3**
+
+Now using R, plot the histogram of coverage across the genome. Overlay the histogram with a Poisson distribution with **lambda = 3**. Also overlay the distribution with a Normal distribution with a **mean of 3 and a std. dev. of 1.73** (which is the square root of 3).
+* **HINT**: For the poisson and normal distributions, you’ll need to find the probability of getting a certain coverage. For the poisson distribution, this is called the probability mass function (PMF) of the distribution. Feel free to code this yourself using the appropriate equation, or you can take a look at the python `scipy.stats.poisson.pmf()` function (more [here](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.poisson.html)) or the R `dpois` function (more [here](https://www.rdocumentation.org/packages/stats/versions/3.3/topics/Poisson)). Unlike the Poisson distribution, the normal distribution is continuous, and so we will instead want to use the probability density function (PDF). Note that for both of these, this will give you the *probability* of observing each coverage. What do we need to do to transform these probabilities into a frequency count comparable to those in our histogram?
+
+Upload this plot as `ex1_3x_cov.png` in your submission directory. **All plots should be clearly labelled and easily interpretable** (i.e. axis labels, legend describing the three things plotted, etc.).
 
 #### **Step 1.4**
 Using your results from Step 1.3, answer the following questions in your `README.md`:
