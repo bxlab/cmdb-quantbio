@@ -43,18 +43,22 @@
  <tr>
    <th>Teaching Assistant</th>
    <th>Email</th>
+   <th>Office Hours</th>
  </tr>
  <tr>
    <td>Nicolas Moya</td>
    <td><a href="mailto:nmoya1@jh.edu">nmoya1@jh.edu</a></td>
+   <td>Thursday 1-2 PM, Mudd Atrium</td>
  </tr>
  <tr>
   <td>Jonathan Fischer</td>
   <td><a href="mailto:jfisch27@jhu.edu">jfisch27@jhu.edu</a></td>
+  <td>Wednesday 1-2 PM, Mudd Atrium</td>
  </tr>
  <tr>
   <td>Siqi Ma</td>
   <td><a href="mailto:sma46@jhu.edu">sma46@jhu.edu</a></td>
+  <td>Monday 1-2 PM, Mudd Atrium</td>
  </tr>
 </table>
 
