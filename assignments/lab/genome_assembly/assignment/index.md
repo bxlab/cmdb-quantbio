@@ -17,6 +17,10 @@ Using Python, simulate sequencing 3x coverage of a 1Mbp genome with 100bp reads.
 
 The start position of each read should have a uniform random probabilty at each possible starting position (0 through 999,900). You can record the coverage in an array of 1M positions.
 
+Once you have all of your reads simulated and recorded, save your coverages (there should be 1 million) into a text file which you can open in R for plotting.
+
+#### **Step 1.3**
+
 Now using R, plot the histogram of coverage across the genome. Overlay the histogram with a Poisson distribution with **lambda = 3**. Also overlay the distribution with a Normal distribution with a **mean of 3 and a std. dev. of 1.73** (which is the square root of 3).
 * **HINT**: For the poisson and normal distributions, you’ll need to find the probability of getting a certain coverage. For the poisson distribution, this is called the probability mass function (PMF) of the distribution. Feel free to code this yourself using the appropriate equation, or you can take a look at the python `scipy.stats.poisson.pmf()` function (more [here](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.poisson.html)) or the R `dpois` function (more [here](https://www.rdocumentation.org/packages/stats/versions/3.3/topics/Poisson)). Unlike the Poisson distribution, the normal distribution is continuous, and so we will instead want to use the probability density function (PDF). Note that for both of these, this will give you the *probability* of observing each coverage. What do we need to do to transform these probabilities into a frequency count comparable to those in our histogram?
 
@@ -32,10 +36,9 @@ genome_coverage = initialize_array_with_zero(genomesize)
 ​
 for i in range(len(num_reads)):
 
-  startpos = uniform_random(1,genomelength-readlength)
-  endpos = startpos + readlength - 1
-  for x in range(startpos, endpos):
-    genomecoverage[x] = genomecoverage[x] + 1
+  startpos = uniform_random(0,genomelength-readlength+1)
+  endpos = startpos + readlength
+  genomecoverage[startpos:endpos] += 1
 
 ## get the range of coverages observed
 maxcoverage = max(genomecoverage)​
@@ -53,12 +56,12 @@ normal_estimates = get_normal_estimates(xs, mean = genome_coverage, stddev = sqr
   </pre>
 </details>
 
-#### **Step 1.3**
-Using your results from Step 1.2, answer the following questions in your `README.md`:
+#### **Step 1.4**
+Using your results from Step 1.3, answer the following questions in your `README.md`:
 1. In your simulation, how much of the genome has not been sequenced (has 0x coverage)?
 2. How well does this match Poisson expectations? How well does the normal distribution fit the data?
 
-#### **Step 1.4**
+#### **Step 1.5**
 Now, repeat the analysis with 10x coverage:
 1. Simulate using the appropriate number of reads
 2. In R, make a histogram. Overlay a Poisson distribution with **lambda = 10**. Overlay a Normal distribution with **mean = 10 and std. dev. = 3.16**. Upload this plot as `ex1_10x_cov.png` in your submission directory.
@@ -66,7 +69,7 @@ Now, repeat the analysis with 10x coverage:
    1. In your simulation, how much of the genome has not been sequenced (has 0x coverage)?
    2. How well does this match Poisson expectations? How well does the normal distribution fit the data?
 
-#### **Step 1.5**
+#### **Step 1.6**
 Now, repeat the analysis with 30x coverage:
 1. Simulate using the appropriate number of reads
 2. In R, make a histogram. Overlay a Poisson distribution with **lambda = 30**. Overlay a Normal distribution with **mean = 30 and std. dev. = 5.47**. Upload this plot as `ex1_30x_cov.png` in your submission directory.
@@ -227,7 +230,7 @@ Using your list from Step 3.2, answer the following questions. Record your answe
   * Code to generate the edges of the de Bruijn graph (**1 point**)
 2. `README.md` file with answers to questions in the assignment (**3 points total**)
   * Answer to question in Step 1.1 (**0.5 point**)
-  * Answer to questions in Steps 1.3 - 1.5 (**1 point**)
+  * Answer to questions in Steps 1.4 - 1.6 (**1 point**)
   * Answer to question in Step 2.4 (**0.5 point**)
   * Answer to question in Step 2.5 (**0.5 point**)
   * Answer to question in Step 2.6 (**0.5 point**)
