@@ -62,21 +62,27 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 -->
 
-<!--## CMDB Quantitative Biology Lab 2023
+## CMDB Quantitative Biology Lab 2024
 
 ### Logistics
 - [Syllabus](resources/syllabi/lab/index.html)
 - This one day a week course builds upon the foundations of Quantitative Biology Bootcamp, reinforcing and expanding upon mathematical and computational methods for analysis of biological data.
-- In person, BLC 5015
+- In person, Carnegie Rose Auditorium
 - 10:00 - 12:30 pm, Fridays
-- Assignments must be submitted within one week to your `qbb2023-answers` repository
+- Assignments must be submitted within one week to your `qbb2024-answers` repository
 
 ### Schedule
 
 | Week | Date | Instructor          | Topic                                                                             | Resubmission Deadline |
 | :--: | :--: | :-----------------: | :--------------------------------------------------------------------------------:|:----: |
+|  1  | 9/13 | Mike Schatz |  [Genome assembly](webpages/week1.html)| &#124;| 
+
+{:.table.table-striped.well}
+
+
+<!--
 |  1   | 9/15  | Rajiv McCoy |  [Linear regression](webpages/week1.html) | &#124;|
-|  2   | 9/22 | Mike Schatz |  [Genome assembly](webpages/week2.html)| &#124;| 
+
 |  3   | 9/29 | Dylan Taylor |  [Sequence alignment](webpages/week3.html) |&#124; |
 |  4   | 10/6 | Mike Sauria |  [ChIP-seq](webpages/week4.html) |&#124; |
 |  5   | 10/13 | Rajiv McCoy | [Variant calling](webpages/week5.html) |&#124; |
@@ -88,9 +94,10 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |  -   | 11/24 | No class | Thanksgiving Break | &#124; |
 |  10   | 12/1 | Rajiv McCoy | [Data Visualization](webpages/week10.html) |	&#124; |
 |  11   | 12/8 | Mike Sauria | [Single-cell RNA-seq](webpages/week11.html) |	12/15 |
-{:.table.table-striped.well}
-
 -->
+
+
+
 
 Resources 
 
