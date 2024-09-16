@@ -58,7 +58,7 @@
  <tr>
   <td>Siqi Ma</td>
   <td><a href="mailto:sma46@jhu.edu">sma46@jhu.edu</a></td>
-  <td>Monday 1-2 PM, Mudd Atrium</td>
+  <td>Monday 1-2 PM, Mudd Atrium (email me if you're there)</td>
  </tr>
 </table>
 
