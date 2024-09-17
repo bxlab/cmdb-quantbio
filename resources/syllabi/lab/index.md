@@ -179,80 +179,80 @@ All class participants agree to:
 </tr>
 <tr>
   <td>1</td>
-  <td>9/15</td>
-  <td>Rajiv McCoy</td>
-  <td>Linear regression</td>
+  <td>9/13</td>
+  <td>Mike Schatz</td>
+  <td>Genome Assembly</td>
 </tr>
 <tr>
   <td>2</td>
-  <td>9/22</td>
-  <td>Mike Schatz</td>
-  <td>Genome assembly</td>
+  <td>9/20</td>
+  <td>Mike Sauria</td>
+  <td>Genome Contents</td>
 </tr>
 <tr>
   <td>3</td>
-  <td>9/29</td>
-  <td>Dylan Taylor</td>
-  <td>Sequence alignment</td>
+  <td>9/27</td>
+  <td>Rajiv McCoy</td>
+  <td>Variant Discovery and Genotyping</td>
 </tr>
 <tr>
   <td>4</td>
-  <td>10/6</td>
-  <td>Mike Sauria</td>
-  <td>ChIP-seq</td>
+  <td>10/4</td>
+  <td>Frederick Tan</td>
+  <td>Project Work + Demo</td>
 </tr>
 <tr>
   <td>5</td>
-  <td>10/13</td>
-  <td>Rajiv McCoy</td>
-  <td>Variant calling</td>
+  <td>10/11</td>
+  <td>Mike Sauria</td>
+  <td>RNA-seq: Quantitation, Dimension Reduction, Clustering</td>
 </tr>
 <tr>
   <td>-</td>
-  <td>10/20</td>
+  <td>10/18</td>
   <td>No Class</td>
   <td>Retreat</td>
 </tr>
 <tr>
   <td>6</td>
-  <td>10/27</td>
+  <td>10/25</td>
   <td>Rajiv McCoy</td>
-  <td>GWAS</td>
+  <td>RNA-seq: Differential Expression</td>
 </tr>
 <tr>
   <td>7</td>
-  <td>11/3</td>
-  <td>Mike Sauria</td>
-  <td>Single-molecule sequencing and DNA modifications</td>
+  <td>11/1</td>
+  <td>Frederick Tan</td>
+  <td>Single-cell RNA-seq</td>
 </tr>
 <tr>
   <td>8</td>
-  <td>11/10</td>
-  <td>Mike Sauria</td>
-  <td>3D Genome</td>
+  <td>11/8</td>
+  <td>Rajiv McCoy</td>
+  <td>Project Work + Demo</td>
 </tr>
 <tr>
   <td>9</td>
-  <td>11/17</td>
-  <td>Rajiv McCoy</td>
-  <td>Bulk RNA-seq</td>
+  <td>11/15</td>
+  <td>Mike Sauria</td>
+  <td>TBD</td>
 </tr>
 <tr>
   <td>-</td>
-  <td>11/24</td>
-  <td>No class</td>
-  <td>Thanksgiving Break</td>
+  <td>11/22</td>
+  <td>Frederick Tan</td>
+  <td>TBD</td>
 </tr>
 <tr>
   <td>10</td>
-  <td>12/1</td>
-  <td>Rajiv McCoy</td>
-  <td>Metagenomics</td>
+  <td>11/29</td>
+  <td>No Class</td>
+  <td>Thanksgiving</td>
 </tr>
 <tr>
   <td>11</td>
-  <td>12/8</td>
-  <td>Mike Sauria</td>
-  <td>Single-cell RNA-seq</td>
+  <td>12/6</td>
+  <td></td>
+  <td>Final Presentations</td>
 </tr>
 </table>
