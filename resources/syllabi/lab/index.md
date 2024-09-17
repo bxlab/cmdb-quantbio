@@ -238,13 +238,13 @@ All class participants agree to:
   <td>TBD</td>
 </tr>
 <tr>
-  <td>-</td>
+  <td>10</td>
   <td>11/22</td>
   <td>Frederick Tan</td>
   <td>TBD</td>
 </tr>
 <tr>
-  <td>10</td>
+  <td>-</td>
   <td>11/29</td>
   <td>No Class</td>
   <td>Thanksgiving</td>
