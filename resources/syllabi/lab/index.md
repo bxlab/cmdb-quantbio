@@ -48,7 +48,7 @@
  <tr>
    <td>Nicolas Moya</td>
    <td><a href="mailto:nmoya1@jh.edu">nmoya1@jh.edu</a></td>
-   <td>Thursday 1-2 PM, Mudd Atrium</td>
+   <td>Thursday 1-2 PM, UTL379</td>
  </tr>
  <tr>
   <td>Jonathan Fischer</td>
