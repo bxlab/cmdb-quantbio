@@ -4,6 +4,10 @@
 
 The goal of today's lab is to learn about what types of information exists within a genome, the formats that data can take, how to visualize and obtain publicly available data, and how to use various data sources to identify relevant subsets of a genome. In order to carry out today's assignment, you will be making extensive use of the [UCSC Genome Browser](https://genome.ucsc.edu/) for data visualization, filtering and downloading data, and analysis. The aim of this assignment is to look at the prevalence (and therefor the infered genomic tolerance for) SNPs within various genomic features and across varying SNP frequencies in the population.
 
+**Important**
+Please commit and push as you finish each part (in the case of 2.1, commit and push as you do each task within the step). This will really help us gauge the where people are being challenged and better help you all and future students.
+
+
 ## Data
 
  You will be provided with a set of bed files containing a set of common SNPs for human chromosome 1 (genome build hg38) partitioned by minor allele fequency (MAF). These SNPs were obtained from the UCSC Genome Browser from the dbSNP release 151 common SNPs. There is also a bed file dividing chromosome 1 into contiguous 20Kb bins.
