@@ -1,15 +1,15 @@
-# QuantLab Week 2 - Genome Assembly
+# QuantLab Week 2 - Genome Content
 
-Assignment Date: Friday, Sept. 22, 2023
+Assignment Date: Friday, Sept. 20, 2024
 
-Due Date: Friday, Sept. 29, 2023
+Due Date: Friday, Sept. 27, 2024
 
-## Lecture -- Mike Schatz
+## Lecture -- Mike Sauria
 
-[Lecture Slides](https://www.dropbox.com/scl/fi/xpu9jwqlqdgbdv5b8kwv3/2023.09.21.QBLab.GenomeSequencing.pptx?rlkey=65wan8x0kywpm99b1ehgp0mi0&dl=0)
+[Lecture Slides](https://docs.google.com/presentation/d/1sKZiD7-Y6RKmmJIMiYZryDA1v4aRWAK5SXs8l-aQs1E/edit?usp=sharing)
 
 ## Homework Assignment
 
-As always, before you do anything else, create a `week2` directory in your `qbb2023-answers` directory for this assignment, and create a `README.md` file in that `week2` directory. This is where you will be putting and uploading all of your code/plots/etc. for this assignment.
+As always, before you do anything else, create a `week2` directory in your `qbb2024-answers` directory for this assignment.
 
-[Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/genome_assembly/assignment)
+[Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/genome_content/assignment)
