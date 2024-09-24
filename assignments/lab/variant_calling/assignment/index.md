@@ -14,7 +14,7 @@ To accomplish this goal, we will be working with Illumina short-read sequencing 
 
 We have randomly selected ten samples from the study and placed them in a compressed file on Dropbox. You can download the data into your current directory and decompress them with the following commands:
 
-```
+```bash
 wget https://www.dropbox.com/s/ogx7nbhlhrp3ul6/BYxRM.tar.gz
 tar -xvzf BYxRM.tar.gz
 ```
@@ -27,7 +27,28 @@ As always, if your `.gitignore` is not already set up to ignore these FASTQ file
 Remember to record all of your work! You can answer the questions using comments within your scripts. Show how you obtained your answers.
 
 Plan to submit:
-- a Bash script for exercise 1 (with comments providing answers to written questions)
+- a Bash script for exercise 1 (with comments providing answers to written questions; see example below).
+
+<h5 a><strong><code>ex1.sh</code></strong></h5>
+
+```bash
+#!/usr/bin/env bash
+
+### Question 1.1 ###
+
+my unix commands | to perform | Q1.1 analysis here
+# A written answer to Question 1.1 based on the output of my code above can go here here.
+
+
+### Question 1.2 ###
+
+my unix commands | to perform | Q1.2 analysis here
+# A written answer to Question 1.2 based on the output of my code above can go here here.
+
+...
+```
+
+
 - a Bash script for exercise 2 (with comments providing answers to written questions)
 - a Python script for exercise 3 to produce output necessary for your figures
 - an R script to produce figures for exercise 3 (with comments providing answers to written questions)
@@ -58,14 +79,14 @@ You'll be using a tool called `bwa` ([BWA manual](http://bio-bwa.sourceforge.net
 
 First, download the sacCer3 reference genome FASTA file from UCSC and unzip it:
 
-```
+```bash
 wget https://hgdownload.cse.ucsc.edu/goldenPath/sacCer3/bigZips/sacCer3.fa.gz
 gunzip sacCer3.fa.gz
 ```
 
 Then, using `bwa index`, create an index for the `sacCer3.fa` reference.
 
-```
+```bash
 bwa index sacCer3.fa
 ```
 
@@ -124,7 +145,7 @@ Now that you've aligned the sequencing reads to the reference genome, you can ca
 
 That file can be obtained via Dropbox [here](https://www.dropbox.com/scl/fi/9kpzomh4uor2z5z7q5i82/biallelic.vcf?rlkey=mc2m37gnntajiptp51cvwb28x&dl=0). If you are curious how it was generated, please see the following code, which you are welcome to (but not required) replicate on your own computer.
 
-```
+```bash
 # generate a list of the bam files
 ls *.bam > bamListFile.txt
 
@@ -159,7 +180,7 @@ Create an empty `ex3.py` script now where you'll be doing the analyses in the ne
 
 For these analyses, you'll have to parse the VCF file that we provided. If you can find a python library that handles VCF parsing, you're welcome to use it, but it may be easier to simply use the following structure:
 
-```
+```python
 for line in open(<vcf_file_name>):
     if line.startswith('#'):
         continue
@@ -174,9 +195,9 @@ Remember, you can read more about the VCF file format [here](https://samtools.gi
 
 #### **Step 3.2**: Allele frequency spectrum
 
-Plot a histogram showing the allele frequency spectrum (distribution) of the variants in the VCF (this is a per-variant metric, so with 10 variants and 5 samples, you'd only have 10 data points). 
+Using your Python script above, extract the allele frequency of each variant and output it to a new file called `AF.txt` which contains only the allele frequencies -- one per line (potentially having the first line contain a header). This information is pre-calculated for you and can be found in the variant specific INFO field. Check the file header to decide which ID is appropriate. This is a per-variant metric, so with 10 variants and 5 samples, you would only have 10 allele frequencies.
 
-This information is pre-calculated for you and can be found in the variant specific INFO field. Check the file header to decide which ID is appropriate.
+Plot a histogram showing the allele frequency spectrum (distribution) of the variants in the VCF. 
 
 Make sure you label the panel appropriately. Set `bins=11` to avoid binning artifacts.
 
@@ -184,9 +205,9 @@ Make sure you label the panel appropriately. Set `bins=11` to avoid binning arti
 
 #### **Step 3.2**: Read depth distribution
 
-Plot a histogram showing the distribution of read depth at each variant across all samples (e.g. if you had 10 variants and 5 samples, you'd have 50 data points).
+Using your Python script above, extract the read depth of each variant site in each sample and output it to a new file called `DP.txt` which contains only the depths -- one per line (potentially having the first line contain a header). This information can be found in the sample specific FORMAT fields and the end of each line. Check the file header to decide which ID is appropriate. This is a per-sample, per-variant metric, so with 10 variants and 5 samples, you would have 50 read depths.
 
-This information can be found in the sample specific FORMAT fields and the end of each line. Check the file header to decide which ID is appropriate.
+Plot a histogram showing the distribution of read depth at each variant across all samples (i.e., a single histogram, rather than multiple histograms stratified by sites or samples).
 
 Make sure you label the plot appropriately. Set `bins=21` and `xlim(0, 20)` to make the figure more legible, noting that some very high depths will be cut off.
 
@@ -219,9 +240,9 @@ For a given chromosome (or all chromosomes) for your sample, create a figure whe
 
 1. Bash script that performs the explorations of the FASTQ file for exercise 1 (**2.5 points (0.5 per question)**).
 
-2. Bash script that performs the alignments, formatting, indexing, and answers to questions from exercise 2 (**2.5 points (0.5 point per step)**).
+2. Bash script that performs the alignments, formatting, indexing, and answers to questions from exercise 2 (**3 points (0.5 per question)**).
 
-3. Python script to produce the output necessary for plots in Step 3 (**3 points**).
+3. Python script to produce the output necessary for plots in Step 3 (**2.5 points**).
 
 4. R script to take the output from step 3 and generate figures, which should also be uploaded (**2 points**).
 
