@@ -6,8 +6,6 @@ Modern genome sequencing technologies produce sequencing "reads" which represent
 
 To accomplish this goal, we will be working with Illumina short-read sequencing data generated in a study where a lab strain of a model yeast species (Saccharomyces cerevisiae) was crossed with a wine strain as part of a quantitative genetic experiment to map associations with phenotypes (paper: "[Finding the sources of missing heritability in a yeast cross](http://www.nature.com/nature/journal/v494/n7436/full/nature11867.html)"). The diploid offspring from this cross were sporulated, and one (haploid) spore from each of the resulting tetrads was sequenced. This means that the data you will be working with are from haploid genomes that we expect will be mosaics of the two original strains (i.e., will possess "tracts" of ancestry from one strain versus the other, with relatively few transitions).
 
-<br><br>
-
 ## Data
 
 ##### **Sequencing reads**
