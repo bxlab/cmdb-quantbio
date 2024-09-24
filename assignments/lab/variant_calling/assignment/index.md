@@ -159,9 +159,6 @@ Interpret this figure in two or three sentences in your own words. Does it look 
 
 Bonus: what is the name of this distribution?
 
-<br><br>
-
-
 #### **Step 3.2**: Allele frequency spectrum
 
 Plot a histogram showing the allele frequency spectrum (distribution) of the variants in the VCF (this is a per-variant metric, so with 10 variants and 5 samples, you'd only have 10 data points). 
@@ -173,9 +170,6 @@ Make sure you label the panel appropriately. Set `bindwidth=0.025` to avoid binn
 Interpret this figure in two or three sentences in your own words. Does it look as expected? Why or why not?
 
 Bonus: what is the name of this distribution?
-
-<br><br>
-
 
 ## Submission
 
