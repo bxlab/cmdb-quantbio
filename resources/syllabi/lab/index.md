@@ -138,9 +138,14 @@ You may be familiar with ChatGPT and other large language models. After trying e
 
 <a name="Grading"></a>
 <header><h2>Grading</h2></header>
-Weekly exercise solutions (Jupyter notebooks, scripts, results, etc.) should be pushed to a student's `qbb2023-answers` GitHub repository within a week after the assignment is posted. The grading for this course is based on <b>reasonable completion</b>. For each weekly exercise, students will be advised which if any exercises are advanced and therefore not required for submission. <br /><br />
+Weekly exercise solutions (Jupyter notebooks, scripts, results, etc.) should be pushed to a student's `qbb2024-answers` GitHub repository within a week after the assignment is posted. 
+The grading for this course is based on <b>reasonable completion</b>. 
+For each weekly exercise, students will be advised which if any exercises are advanced and therefore not required for submission. <br /><br />
 
-TAs will verify that the student’s submitted work each week shows a reasonable level of individual effort. Letter grades will be assigned in line with the level of completion.<br /><br />
+TAs will verify that the student’s submitted work each week shows a reasonable level of individual effort. 
+Letter grades will be assigned in line with the level of completion.<br /><br />
+
+Resubmissions must occur within <b>one week</b> of receiving feedback and grades (please let us know if you need extra time and we will try and accommodate).<br /><br />
 
 General guidelines for letter grade assignments:
   <ul>
