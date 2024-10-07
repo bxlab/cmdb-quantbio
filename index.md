@@ -78,7 +78,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |  2   | 9/20  | Mike Sauria     | [Genome Content](webpages/week2.html)           | 10/13                 |
 |  3   | 9/27  | Rajiv McCoy     | [Variant discovery and genotyping](webpages/week3.html) | 10/20         |
 |  4   | 10/4  | Frederick Tan   | Project Work + HPC Demo                         | N/A                   |
-
+{:.table.table-striped.well}
 
 
 <!--
