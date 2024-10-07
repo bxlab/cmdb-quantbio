@@ -43,7 +43,6 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |   1:30 -  3:00  | Plotting w/ ggplot2 | Parsing files w/ Python  | Python Dictionaries | Multiple testing, power analysis |
 |   3:00 -  3:15  | Break        | Break        | Break        | Break        | 
 |   3:15 -  5:15  | Exercise     | Exercise     | Exercise     | Exercise     | 
-{:.table.table-striped.well}
 
 
 <!--- Recall that a link looks like [Friday](day5/index.html) --->
@@ -73,13 +72,13 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 ### Schedule
 
-| Week | Date | Instructor          | Topic                                                                             | Resubmission Deadline |
-| :--: | :--: | :-----------------: | :--------------------------------------------------------------------------------:|:----: |
-|  1  | 9/13 | Mike Schatz |  [Genome assembly](webpages/week1.html)| | 10/4
-| 2   | 9/20 | Mike Sauria |  [Genome Content](webpages/week2.html)| | 10/13
-| 3   | 9/27 | Rajiv McCoy |  [Variant discovery and genotyping](webpages/week3.html)| | 10/20
-| 4   | 10/4 | Frederick Tan |  Project Work + HPC Demo | | N/A
-{:.table.table-striped.well}
+| Week | Date  | Instructor      | Topic                                           | Resubmission Deadline |
+|:----:|:-----:|:---------------:|:-----------------------------------------------:|:---------------------:|
+|  1   | 9/13  | Mike Schatz     | [Genome assembly](webpages/week1.html)          | 10/4                  |
+|  2   | 9/20  | Mike Sauria     | [Genome Content](webpages/week2.html)           | 10/13                 |
+|  3   | 9/27  | Rajiv McCoy     | [Variant discovery and genotyping](webpages/week3.html) | 10/20         |
+|  4   | 10/4  | Frederick Tan   | Project Work + HPC Demo                         | N/A                   |
+
 
 
 <!--
