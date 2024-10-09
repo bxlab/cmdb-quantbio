@@ -33,9 +33,13 @@ tar -xzf bulkRnaSeqData.tar.gz
 
 There are three exercises in this assignment:
 
-1. Use fastqc to determine the quality of the reads prior to RNA-seq analysis
-2. Use the multiqc report to explore the quality of the processed data
-3. Data exploration and visualization using DESeq2
+1. Use fastqc to determine the quality of the reads prior to RNA-seq analysis (~20 minutes)
+2. Use the multiqc report to explore the quality of the processed data (~15 minutes)
+3. Data exploration and visualization using DESeq2 (~2 hours)
+
+<br>
+
+## Submission
 
 Before you begin, create a `week5` folder in your `QBB2024-answers` repo. You will be expected to turn in 5 files for this assignment.
 
@@ -176,7 +180,7 @@ Save this plot to turn in.
 
 <br>
 
-## Submission
+## Grading
 
 1. R script for exploratory analysis of expression data **(4.5 points total)**
   * Loads data, converts to integers, filters by row sums **(0.5 points)**
