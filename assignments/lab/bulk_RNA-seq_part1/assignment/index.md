@@ -103,6 +103,7 @@ Before loading the data, you will first need to load the following libraries:
 - matrixStats
 - readr
 - dplyr
+- tibble
 - ggfortify
 
 Now, using the `readr::read_tsv` function, load the file `salmon.merged.gene_counts.tsv`. You will want to use the column `gene_name` as the row names. You will also want to use `dplyr::select` to remove the column `gene_id`.

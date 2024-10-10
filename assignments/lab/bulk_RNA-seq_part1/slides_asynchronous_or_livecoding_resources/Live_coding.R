@@ -1,6 +1,8 @@
 # install new packages
 BiocManager::install("DESeq2")
 BiocManager::install("vsn")
+install.packages("ggfortify")
+install.packages("hexbin")
 
 # Load libraries we'll need
 library(DESeq2)
@@ -8,6 +10,8 @@ library(vsn)
 library(matrixStats)
 library(readr)
 library(dplyr)
+library(tibble)
+library(hexbin)
 library(ggfortify)
 
 # Load tab-separated data file
@@ -36,7 +40,7 @@ broad_metadata = tibble(tissue=as.factor(c("A1_3", "A1_3", "A1_3", "Cu_LFC_Fe", 
 broaddata = DESeqDataSetFromMatrix(countData=as.matrix(broad), colData=broad_metadata, design=~tissue)
 
 # Plot variance by average
-meanSdPlot(assay(broadLogdata))
+meanSdPlot(assay(broaddata))
 
 # Log transform data
 broadLogdata = normTransform(broaddata) # log(1 + data)
@@ -66,9 +70,9 @@ ggplot(broadPcaData, aes(PC1, PC2, color=tissue, shape=rep)) +
 broadVstdata = as.matrix(assay(broadVstdata[sds>1,]))
 
 # Find replicate means
-combined = broadVstdata[,seq(1, 21, 3)]
-combined = combined + broadVstdata[,seq(2, 21, 3)]
-combined = combined + broadVstdata[,seq(3, 21, 3)]
+combined = broadVstdata[,seq(1, 9, 3)]
+combined = combined + broadVstdata[,seq(2, 9, 3)]
+combined = combined + broadVstdata[,seq(3, 9, 3)]
 combined = combined / 3
 
 # Use replicate means to filter low variance genes out
