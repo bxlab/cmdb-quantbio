@@ -37,6 +37,8 @@ There are three exercises in this assignment:
 2. Use the multiqc report to explore the quality of the processed data (~15 minutes)
 3. Data exploration and visualization using DESeq2 (~2 hours)
 
+> **_Important:_** Note that in any code snippets shown in the assignment, variable names are examples only and you will need to use the variable names from your own code when applying the functions or operations!
+
 <br>
 
 ## Submission
@@ -81,7 +83,7 @@ While it does not analyze the data directly, `MultiQC` takes the output of a var
 
 **If you were to reject any samples with the percentage of unique reads less than 45%, how many samples would you keep?**
 
-Given that replicate are contiguous (next to each other) in the sample ordering, example the DESeq2 sample-to-sample distance heatmap.
+Given that replicate are contiguous (next to each other) in the sample ordering, examine the DESeq2 sample-to-sample distance heatmap.
 
 **Can you see the blocks of triplicates clearly? Try adjusting the min slider up. Does this suggest anything about consistency between replicates?**
 
@@ -90,11 +92,12 @@ Given that replicate are contiguous (next to each other) in the sample ordering,
 
 ### Exercise 3: Normalization and clustering
 
-Now you are going to explore the data using some tools provided `DESeq2`, an RNA-seq analysis package in R. You can use the live-coding session to help scaffold this session.
+Now you are going to explore the data using some tools provided in `DESeq2`, an RNA-seq analysis package in R. You can use the live-coding session to help scaffold this session.
 
 #### **Step 3.1**: Loading and filtering the data
 
 Before loading the data, you will first need to load the following libraries:
+
 - DESeq2
 - vsn
 - matrixStats
@@ -115,7 +118,7 @@ Make sure to record each step in your R script to turn in.
 Next you will need to create a `DESeq2` object using the command `DESeqDataSetFromMatrix`. First you will need to create a metadata tibble. This should contain two columns, one with sample names and the other with replicate number. Both should be created as factors by enclosing each list in the tibble creation in the function `as.factor`. For the `DESeq2` object, you will also need to spceify a design.
 
 ```R
-metadata = tibble(tissue=as.factor(c("tissue1", "tissue1", ...)), rep=as.factor(c(1, 2, ...)))
+metadata = tibble(tissue=as.factor(c("A1", "A1", ...)), rep=as.factor(c(1, 2, ...)))
 DESeqDataSetFromMatrix(countData=as.matrix(data), colData=metadata, design=~tissue)
 ```
 
