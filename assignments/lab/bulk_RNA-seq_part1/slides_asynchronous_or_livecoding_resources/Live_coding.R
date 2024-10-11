@@ -67,7 +67,7 @@ ggplot(broadPcaData, aes(PC1, PC2, color=tissue, shape=rep)) +
   geom_point(size=5)
 
 # Convert into a matrix
-broadVstdata = as.matrix(assay(broadVstdata[sds>1,]))
+broadVstdata = as.matrix(assay(broadVstdata))
 
 # Find replicate means
 combined = broadVstdata[,seq(1, 9, 3)]
