@@ -78,11 +78,11 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |  2   | 9/20  | Mike Sauria     | [Genome Content](webpages/week2.html)           | 10/13                 |
 |  3   | 9/27  | Rajiv McCoy     | [Variant discovery and genotyping](webpages/week3.html) | 10/20         |
 |  4   | 10/4  | Frederick Tan   | Project Work + HPC Demo                         | N/A                   |
+|  5   | 10/11  | Mike Sauria    |  [Bulk RNA-seq, PCA, & Clustering](webpages/week5.html) | 10/28 |
 {:.table.table-striped.well}
 
 
 <!--
-|  1   | 9/15  | Rajiv McCoy |  [Linear regression](webpages/week1.html) | &#124;|
 
 |  3   | 9/29 | Dylan Taylor |  [Sequence alignment](webpages/week3.html) |&#124; |
 |  4   | 10/6 | Mike Sauria |  [ChIP-seq](webpages/week4.html) |&#124; |
