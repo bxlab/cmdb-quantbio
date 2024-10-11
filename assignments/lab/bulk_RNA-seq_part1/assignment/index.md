@@ -12,6 +12,8 @@ In this exercise, you will be focusing on three tasks. First, you will use Fastq
 
 <img src="nf_rnaseq.png" alt="Nextflow rnaseq pipeline" style="width:100%;"/>
 
+Code from the live-coding session can be downloaded [here](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/lab/bulk_RNA-seq_part1/slides_asynchronous_or_livecoding_resources/Live_coding.R)
+
 <br>
 
 
