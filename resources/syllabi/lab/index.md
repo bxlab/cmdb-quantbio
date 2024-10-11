@@ -222,7 +222,7 @@ All class participants agree to:
   <td>6</td>
   <td>10/25</td>
   <td>Rajiv McCoy</td>
-  <td>RNA-seq: Differential Expression</td>
+  <td>RNA-seq: Differential Expression <-- BLC5015 (basement!)</td>
 </tr>
 <tr>
   <td>7</td>
