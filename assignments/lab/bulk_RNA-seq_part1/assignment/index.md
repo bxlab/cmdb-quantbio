@@ -4,13 +4,13 @@
 
 Today, you will be examining gene expression data from a paper by our own Allan Spradling entitled ["Physiological and stem cell compartmentalization within the Drosophila midgut"](https://pubmed.ncbi.nlm.nih.gov/23991285/). The data are RNA-seq samples derived from Drosophila melanogaster midguts cut into nine sections. Some samples cover multiple regions, as denoted by their sample names (see the image below). Each sample has three replicates.
 
-![Adapted from Fig1](dm_gut.jpg)
+<img src="dm_gut.jpg" alt="Adapted from Fig. 1" style="width:100%;"/>
 
  In some study designs, you may want to "model out" or account for the effects of certain predictor variables (termed "covariates") while focusing attention on other predictors. From the statistical perspective, covariates are typically treated in the same way as other predictor variables, we simply place less focus on their effects in downstream analysis and interpretation as they may be less relevant to our key hypotheses.
 
 In this exercise, you will be focusing on three tasks. First, you will use Fastqc to examine the quality of the fastq data. Next, you will use the quality report from the RNA processing pipeline to assess the quality of the mapped samples. Finally, you will do some initial exploratory analysis and clustering to explore the data. Because of the scale of the data and time-comsuming nature of processing the fastq reads into gene quantitation, the data have already been processed using the Nextflow rnaseq pipeline.
 
-![Nextflow rnaseq pipeline](nf_rnaseq.png)
+<img src="nf_rnaseq.png" alt="Nextflow rnaseq pipeline" style="width:100%;"/>
 
 <br>
 
