@@ -48,17 +48,17 @@
  <tr>
    <td>Nicolas Moya</td>
    <td><a href="mailto:nmoya1@jh.edu">nmoya1@jh.edu</a></td>
-   <td>Thursday 1-2 PM, UTL379</td>
+   <td>Thursday 5-6:30 PM, UTL379</td>
  </tr>
  <tr>
   <td>Jonathan Fischer</td>
   <td><a href="mailto:jfisch27@jhu.edu">jfisch27@jhu.edu</a></td>
-  <td>Wednesday 1-2 PM, UTL398</td>
+  <td>Wednesday 4-6 PM, UTL398</td>
  </tr>
  <tr>
   <td>Siqi Ma</td>
   <td><a href="mailto:sma46@jhu.edu">sma46@jhu.edu</a></td>
-  <td>Monday 4:30-5:30 PM, UTL398</td>
+  <td>Wednesday 4-6 PM, UTL398</td>
  </tr>
 </table>
 
