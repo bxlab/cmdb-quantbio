@@ -1,27 +1,24 @@
-# QuantLab Week 7 - Single-molecule sequencing and DNA methylation
+# QuantLab Week 7 - RNA-seq differential expression analysis
 
-Assignment Date: Friday, Nov. 03, 2023
+Assignment Date: Friday, Oct. 25, 2024
 
-Due Date: Friday, Nov. 10, 2023
+Due Date: Friday, Nov. 1, 2024
 
-## Lecture -- Michael Sauria
 
-[Lecture Slides](https://www.dropbox.com/scl/fi/j0xp8mjdfo1vnc5h240z3/Nanopore-and-Methylation.pdf?rlkey=wpw6fz8dom3by2s755ondckjb&dl=0)
+## Lecture -- Rajiv McCoy
 
-## Live coding resources
+[Lecture Slides](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/lab/bulk_RNA-seq/slides_asynchronous_or_livecoding_resources/20241025_qblab_deseq.pptx)
 
-Files for the live coding exercise can be found in `cmdb-quantbio/assignments/lab/nanopore-seq/slides_asynchronous_or_livecoding_resources/`.
 
-Download [chr2.fa.gz](https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr2.fa.gz) to you working directory 
+## Live-coding resources
 
-Installing minimap2 can be done using the command
+The live-coding script can be found [here](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/lab/bulk_RNA-seq/slides_asynchronous_or_livecoding_resources/live_coding.R)
 
-```bash
-brew install minimap2
-```
+Files for the live-coding exercise can be downloaded [here](https://www.dropbox.com/scl/fo/dmhj9mr31q676vg3ukrgq/AH21i3wAj6O1zwfTDixf5s0?rlkey=4hotab3thzsbbktotghua9kyv&dl=0).
+
 
 ## Homework Assignment
 
-Complete the homework assignment in your `week7` submission directory in your `qbb2023-answers`.
+Complete the homework assignment in your `week7` submission directory in your `qbb2024-answers`.
 
-[Homework Assignment](../assignments/lab/nanopore-seq/assignment/)
+[Homework Assignment](../assignments/lab/bulk_RNA-seq/assignment/)
