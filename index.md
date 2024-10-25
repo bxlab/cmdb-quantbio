@@ -79,6 +79,8 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |  3   | 9/27  | Rajiv McCoy     | [Variant discovery and genotyping](webpages/week3.html) | 10/20         |
 |  4   | 10/4  | Frederick Tan   | Project Work + HPC Demo                         | N/A                   |
 |  5   | 10/11  | Mike Sauria    |  [Bulk RNA-seq, PCA, & Clustering](webpages/week5.html) | 11/01 |
+|  6   | 10/18  | N/A    |  Departmental Retreat | N/A |
+|  7   | 10/25  | Rajiv McCoy    |  [Bulk RNA-seq, PCA, & Clustering](webpages/week7.html) | 11/15 |
 {:.table.table-striped.well}
 
 
