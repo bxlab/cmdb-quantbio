@@ -124,7 +124,7 @@ How many genes exhibit significant differential expression between males and fem
 
 Examine your top hits. Which chromosomes encode the genes that are most strongly upregulated in males versus females, respectively? Are there more male-upregulated genes or female-upregulated genes near the top of the list? Interpret these results in your own words. 
 
-**2.3.4**: Examine the results for the two genes (WASH7P and MAP7D2) that you had previously tested with the basic linear regression model in step 2.1. Are the results broadly consistent?
+**2.3.4**: Examine the results for the two genes (WASH7P and SLC25A47) that you had previously tested with the basic linear regression model in step 2.1. Are the results broadly consistent?
 
 #### **Step 2.4**: Extract and interpret the results for differential expression by death classification
 
