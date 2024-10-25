@@ -84,5 +84,16 @@ ggplot(data = pasilla_res, aes(x = log2FoldChange, y = -log10(pvalue))) +
   scale_color_manual(values = c("darkgray", "coral")) +
   labs(y = expression(-log[10]("p-value")), x = expression(log[2]("fold change")))
 
+fb <- read_delim("pasilla/flybase_gene_names.csv")
 
+pasilla_res <- left_join(pasilla_res, fb, by = "GENE_ID")
+
+ggplot(data = pasilla_res, aes(x = log2FoldChange, y = -log10(pvalue))) +
+  geom_point(aes(color = (abs(log2FoldChange) > 2 & pvalue < 1e-20))) +
+  geom_text(data = pasilla_res %>% filter(abs(log2FoldChange) > 2 & pvalue < 1e-50),
+            aes(x = log2FoldChange, y = -log10(pvalue) + 5, label = GENE_SYMBOL), size = 3,) +
+  theme_bw() +
+  theme(legend.position = "none") +
+  scale_color_manual(values = c("darkgray", "coral")) +
+  labs(y = expression(-log[10]("p-value")), x = expression(log[2]("fold change")))
 
