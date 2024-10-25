@@ -1,4 +1,3 @@
-library(data.table)
 library(tidyverse)
 library(broom)
 library(DESeq2)
