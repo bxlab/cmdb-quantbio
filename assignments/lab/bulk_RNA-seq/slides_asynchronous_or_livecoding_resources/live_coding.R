@@ -1,12 +1,12 @@
-library(pasilla)
 library(data.table)
 library(tidyverse)
+library(broom)
 
 # set your working directory to where your data and output will be stored
 setwd("~/Dropbox/teaching/2024_qblab/differential_expression/")
 
 # load the gene expression counts
-counts_df <- read_delim("pasilla_gene_counts.tsv")
+counts_df <- read_delim("pasilla/pasilla_gene_counts.tsv")
 # move the gene_id column to rownames, so that the contents of the
 # tibble is entirely numeric
 counts_df <- column_to_rownames(counts_df, var = "gene_id")
@@ -15,7 +15,7 @@ counts_df <- column_to_rownames(counts_df, var = "gene_id")
 counts_df[1:5,]
 
 # load the metadata
-metadata_df <- read_delim("pasilla_metadata.csv")
+metadata_df <- read_delim("pasilla/pasilla_metadata.csv")
 # move the sample IDs from the first column to rownames
 metadata_df <- column_to_rownames(metadata_df, var = "SAMPLE_ID")
 
@@ -48,7 +48,8 @@ hist(vsd_df$FBgn0000008)
 
 # apply multiple linear regression to a given gene
 lm(data = vsd_df, formula = FBgn0000008 ~ condition + type) %>%
-  summary()
+  summary() %>%
+  tidy()
 
 # use DESeq2 to perform differential expression analysis across all genes
 dds <- DESeq(dds)
