@@ -53,12 +53,12 @@
  <tr>
   <td>Jonathan Fischer</td>
   <td><a href="mailto:jfisch27@jhu.edu">jfisch27@jhu.edu</a></td>
-  <td>Wednesday 4-6 PM, UTL398</td>
+  <td>Wednesday 4-6 PM, Mergenthaler 121</td>
  </tr>
  <tr>
   <td>Siqi Ma</td>
   <td><a href="mailto:sma46@jhu.edu">sma46@jhu.edu</a></td>
-  <td>Wednesday 4-6 PM, UTL398</td>
+  <td>Wednesday 4-6 PM, Mergenthaler 121</td>
  </tr>
 </table>
 
