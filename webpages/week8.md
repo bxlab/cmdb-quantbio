@@ -14,3 +14,4 @@ The code along script can be found [here](https://github.com/bxlab/cmdb-quantbio
 
 Complete the homework assignment in your `week8` submission directory in your `qbb2024-answers`.
 
+[Homework Assignment](../assignments/lab/scrnaseq-bioconductor/assignment/)
