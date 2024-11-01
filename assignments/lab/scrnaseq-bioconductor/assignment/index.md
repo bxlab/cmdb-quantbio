@@ -99,7 +99,7 @@ Sum the expression of all mitochondrial genes across each cell
 - Create a vector named `mito` of mitochondrial gene names using `grep()` to search `rownames(gut)` for the pattern `^mt:` and setting `value` to TRUE
 - Create a DataFrame named `df` using `perCellQCMetrics()` specifying that `subsets=list(Mito=mito)`
 - Confirm that the mean sum and detected match your previous calculations by converting `df` to a data.frame using `as.data.frame()` and then running `summary()`
-- Add metrics to cell metadata using `colnames(colData(gut)) <- cbind( colData(gut), df )`
+- Add metrics to cell metadata using `colData(gut) <- cbind( colData(gut), df )`
 
 **Question 5**: Visualize percent of reads from mitochondria (1 pt)
 
