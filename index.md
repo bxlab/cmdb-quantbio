@@ -81,6 +81,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |  5   | 10/11  | Mike Sauria    |  [Bulk RNA-seq, PCA, & Clustering](webpages/week5.html) | 11/01 |
 |  6   | 10/18  | N/A    |  Departmental Retreat | N/A |
 |  7   | 10/25  | Rajiv McCoy    |  [Bulk RNA-seq, PCA, & Clustering](webpages/week7.html) | 11/15 |
+|  7   | 11/1  | Frederick Tan  |  [Single cell RNA-seq Analysis with Bioconductor](webpages/week8.html) | 11/22 |
 {:.table.table-striped.well}
 
 
