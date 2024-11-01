@@ -4,7 +4,7 @@ Assignment Date: Friday, Nov. 1, 2024
 
 Due Date: Friday, Nov. 8, 2024
 
-## Code Along
+## Lecture -- Fred Tan
 
 [Slidedeck](https://docs.google.com/presentation/d/1NiE1wPoxLMGImj_sHkuFfOeNyaqdvsOH5lIdOPRx9i8)
 
@@ -13,6 +13,4 @@ The code along script can be found [here](https://github.com/bxlab/cmdb-quantbio
 ## Homework Assignment
 
 Complete the homework assignment in your `week8` submission directory in your `qbb2024-answers`.
-
-[Homework Assignment](../assignments/lab/scrnaseq-bioconductor/assignment/)
 
