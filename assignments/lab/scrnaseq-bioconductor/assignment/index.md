@@ -103,7 +103,7 @@ Sum the expression of all mitochondrial genes across each cell
 
 **Question 5**: Visualize percent of reads from mitochondria (1 pt)
 
-- Plot the `subsets_Mito_percent` on the y-axis against the `broad_annotation` on the x-axis rotating the x-axis labels using `theme( axis.text.x=element_text( angle=90 ) )` and **submit this plot**
+- Use `plotColData()` to plot the `subsets_Mito_percent` on the y-axis against the `broad_annotation` on the x-axis rotating the x-axis labels using `theme( axis.text.x=element_text( angle=90 ) )` and **submit this plot**
 - Which cell types may have a higher percentage of mitochondrial reads?  Why might this be the case?
 
 ### 3. Identify marker genes
