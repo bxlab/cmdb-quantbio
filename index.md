@@ -101,10 +101,13 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |  11   | 12/8 | Mike Sauria | [Single-cell RNA-seq](webpages/week11.html) |	12/15 |
 -->
 
+### Project Work
+
+- See [Project Work Guide](https://docs.google.com/document/d/1iiHjieL_Kfr8WvNRpfkAjpvDmNfOiYFrmIHO2_Q3eLE) for deadlines and deliverables
 
 
-
-Resources 
+Resources
+---
 
 ### Useful Goodies
 
