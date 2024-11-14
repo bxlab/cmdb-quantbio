@@ -8,15 +8,15 @@ import imageio
 na = numpy.newaxis
 
 # Load image into a numpy 2D array and rescale
-img = imageio.v3.imread("illum_0.tif").astype(numpy.float32)
+img = imageio.v3.imread("illum_DAPI.tif").astype(numpy.float32)
 img -= numpy.amin(img)
 img /= numpy.amax(img) * 1.05
 
-img1 = imageio.v3.imread("illum_1.tif").astype(numpy.float32)
+img1 = imageio.v3.imread("illum_RNAcytoNuc.tif").astype(numpy.float32)
 img1 -= numpy.amin(img1)
 img1 /= numpy.amax(img1) * 1.05
 
-img2 = imageio.v3.imread("illum_2.tif").astype(numpy.float32)
+img2 = imageio.v3.imread("illum_Mito.tif").astype(numpy.float32)
 img2 -= numpy.amin(img2)
 img2 /= numpy.amax(img2) * 1.05
 
@@ -37,8 +37,8 @@ plt.show()
 
 # Load 3 channels into single image array
 rgbimg = numpy.zeros((img.shape[0], img.shape[1], 3), numpy.uint16)
-for i in range(3):
-    rgbimg[:, :, i] = imageio.v3.imread(f"illum_{i}.tif")
+for i, name in enumerate(['DAPI', 'RNAcytoNuc', 'Mito']):
+    rgbimg[:, :, i] = imageio.v3.imread(f"illum_{name}.tif")
 
 # Display image
 plt.imshow(rbgimg)
@@ -214,7 +214,7 @@ marked[where] = 2
 # And if we want information about that nucleus in another channel?
 minv = numpy.amin(img1[where])
 maxv = numpy.amax(img1[where])
-print(f"Signal ranges from {minv} to {maxv}")
+print(f"RNA nuclear signal ranges from {minv} to {maxv}")
 
 # Now let's see what a kernel is and what it does
 kernel = numpy.zeros((9, 9), numpy.float32)
@@ -226,14 +226,14 @@ plt.imshow(kernel)
 plt.show()
 
 # Let's see what happens when we apply the kernel
-blurred = scipy.ndimage.convolve(img1, kernel)
+blurred = scipy.ndimage.convolve(img2, kernel)
 
 # Let's try a new way of seeing the data
 import plotly.express as px
 import plotly
 
 # We need to combine the images
-combined = numpy.concatenate((img1[:, :, na], blurred[:, :, na]), axis=2)
+combined = numpy.concatenate((img2[:, :, na], blurred[:, :, na]), axis=2)
 
 # Now we can view them with plotly
 fig = px.imshow(combined, facet_col=2)
