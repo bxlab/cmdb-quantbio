@@ -1,15 +1,32 @@
-# QuantLab Week 10 - Data Visualization
+# QuantLab Week 10 - Image Processing
 
-Assignment Date: Friday, Dec. 1, 2023
+Assignment Date: Friday, Nov. 15, 2024
 
-Due Date: Friday, Dec. 8, 2023
+Due Date: Monday, Dec. 2, 2024
 
-## Lecture -- Rajiv McCoy
+## Lecture -- Mike Sauria
 
-[Lecture Slides](https://www.dropbox.com/scl/fi/tytab80ncq1ia85remlsh/20231201_qblab_dataviz.pptx?rlkey=x08ydaut17vn3x8dha0zdfebo&dl=0)
+[Lecture Slides](https://docs.google.com/presentation/d/1pf-ZRerG1jzXrZfYkObE_qpXC18lPE3Q-2RaZrLxuPU/edit?usp=sharing)
+
+## Live-coding
+
+As always, before you do anything else, create a `week10` directory in your `qbb2024-answers` directory for this assignment, and create a `README.md` file in that `week10` directory. This is where you will be putting and uploading all of your code/plots/etc. for this assignment.
+
+I recommend creating a `livecoding` directory within your `week10` directory, and putting your live-coding scripts and data there. You can add the `livecoding` directory to your `.gitignore` so that `git` won't track these files.
+
+Wherever you choose to do your live-coding, you can download the following file:
+[live_coding_images.tar.gz](https://github.com/bxlab/cmdb-quantbio/raw/refs/heads/main/assignments/lab/image_processing/extra_data/live_coding_images.tar.gz)
+
+This file contains the data you'll need for the live-coding exercises. Once downloaded, unzip it with the following command:
+
+```
+tar -xvzf live_coding_images.tar.gz
+```
+
+You can also download the live-coding script we will be writing [here](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/lab/image_processing/slides_asynchronous_or_livecoding_resources/live_coding.py) so you can follow along or catch up if you fall behind. This also has two functions you will use in your homework assignment.
 
 ## Homework Assignment
 
-Complete the homework assignment in your `week10` submission directory in your `qbb2023-answers`.
+Complete the homework assignment in your `week10` submission directory in your `qbb2024-answers`.
 
-[Homework Assignment](../assignments/lab/data_visualization/assignment/)
+[Homework Assignment](../assignments/lab/image_processing/assignment/)

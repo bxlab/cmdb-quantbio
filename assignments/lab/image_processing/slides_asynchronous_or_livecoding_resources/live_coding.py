@@ -206,6 +206,16 @@ label_copy[numpy.where(label_copy == 0)] -= 50
 plt.imshow(label_copy)
 plt.show()
 
+# What if we want to select a single marked nucleus?
+marked = numpy.copy(mask).astype(numpy.int32)
+where = numpy.where(label == 50)
+marked[where] = 2
+
+# And if we want information about that nucleus in another channel?
+minv = numpy.amin(img1[where])
+maxv = numpy.amax(img1[where])
+print(f"Signal ranges from {minv} to {maxv}")
+
 # Now let's see what a kernel is and what it does
 kernel = numpy.zeros((9, 9), numpy.float32)
 # Add two normal curves, one across rows, one across columns
