@@ -13,7 +13,7 @@ Please commit and push as you finish each part. This will really help us gauge t
 
 ## Data
 
-You will be provided with a set of 24 channel images of cells (one color in each image). There are 4 different samples (knocked-down genes), each with 2 separate fields (positions in the sample well). Each sample-field has 3 channel images, one for  DAPI (a stain for DNA), one for Alexa568 (antibody for PCNA, a protein associated with DNA replication), and one for EU-Alexa488 (labeled uracil, marking nascent RNA).
+You will be provided with 24 single-channel images of cells (one color in each image). There are 4 different samples (knocked-down genes), each with 2 separate fields (positions in the sample well). Each sample-field has 3 channel images, one for  DAPI (a stain for DNA), one for Alexa568 (antibody for PCNA, a protein associated with DNA replication), and one for EU-Alexa488 (labeled uracil, marking nascent RNA).
 
 To get the data, download them from [here](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/lab/image_processing/extra_data/image_data.tar.gz). You can use the following commands to download and unpack the data:
 
@@ -38,7 +38,7 @@ There are three exercises in this assignment:
 
 ## Submission
 
-Before you begin, create a `week10` folder in your `QBB2024-answers` repo. You will be expected to turn in 5 files for this assignment.
+Before you begin, create a `week10` folder in your `QBB2024-answers` repo. You will be expected to turn in 4 files for this assignment.
 
 1. A Python script for loading images, segmenting nuclei, and outputting nuclei signals
 2. An R script for plotting the nuclei signals as violin plots
@@ -63,7 +63,7 @@ In this section, you will be using the segmentation function that was used in th
 
 #### **Step 2.1** For each image, create a binary mask from the DAPI channel
 
-In order to segment the iamges, you will need to create a mask image indicating nuclues vs. background. If you open one of the DAPI images in `Preview`, you will not see anything but a dark field. In order to actually see the data, you need to adjust the color, sliding the upper limit far to the left. This should tell you that the images are rather dim. However, you aren't doing this by eye, you will be using the data to guide you.
+In order to segment the iamges, you will need to create a mask image indicating nucleus vs. background. If you open one of the DAPI images in `Preview`, you will not see anything but a dark field. In order to actually see the data, you need to adjust the color, sliding the upper limit far to the left. This should tell you that the images are rather dim. However, you aren't doing this by eye, you will be using the data to guide you.
 
 To create the mask for each image, use the mean value of an image's DAPI channel as a cutoff, giving you a binary array with `True` for values greater than or equal to the cutoff and `False` for values less than the cutoff.
 
@@ -85,15 +85,15 @@ Finally, filter the labels one more time, this time using the mean size plus or 
 
 <br>
 
-### Exercise 3: Score the PCNA and nascent RNA signal in each nuclues and plot them
+### Exercise 3: Score the PCNA and nascent RNA signal in each nucleus and plot them
 
 Now that you have a set of labeled individual nuclei, you will be finding the mean signal in each nucleus for the two other labeled features, PCNA and nascent RNA. Using these values, you will be able to plot their distributions and test for differences between conditions.
 
-#### **Step 3.1** Find the mean signal for each nuclues from the PCNA and nascent RNA channels
+#### **Step 3.1** Find the mean signal for each nucleus from the PCNA and nascent RNA channels
 
-For each gene knock-down condition, you will be constructing a list of values for each nucleus: mean PCNA signal, mean nascent RNA signal, and the log2-transformed ratio of mean nascent RNA signal to mean PCNA signal. Combine data from both fields for a given gene. In the end, you should have three lists of values for each cell, one entry per nuclues in each list.
+For each gene knock-down condition, you will be constructing a list of values for each nucleus: mean PCNA signal, mean nascent RNA signal, and the log2-transformed ratio of mean nascent RNA signal to mean PCNA signal. Combine data from both fields for a given gene. In the end, you should have three lists of values for each cell, one entry per nucleus in each list.
 
-To find the mean signal for a nucleus, you need to identify which pixel positions correspond to that nuclues. This is where the label array comes in. For example, to find the pixels for nucleus #7, you would use the command `where = numpy.where(label_array == 7)`. The number of labeled nuclei for a given label array will be equal to `numpy.amax(label_array) + 1`. Don't forget to skip label zero, as this corresponds to the background. You will need a `for` loop to go through each label in a given label array.
+To find the mean signal for a nucleus, you need to identify which pixel positions correspond to that nucleus. This is where the label array comes in. For example, to find the pixels for nucleus #7, you would use the command `where = numpy.where(label_array == 7)`. The number of labeled nuclei for a given label array will be equal to `numpy.amax(label_array) + 1`. Don't forget to skip label zero, as this corresponds to the background. You will need a `for` loop to go through each label in a given label array.
 
 Write these data to a text file. I suggest using the column format `Gene,nascentRNA,PCA,ratio` as this will make it easier to plot with R.
 
@@ -129,7 +129,9 @@ For each set of data, nascent RNA signal, PCNA signal, and the log2 ratio, creat
   * Answered question 3.1 **(0.5 pts)**
   * Answerd question 3.2 **(0.5 pts)**
 
-**Total Points: 8**
+**5. Make 2 commits on your project work by 11/22 (2 pts)**
+
+**Total Points: 10**
 
 <br><br>
 

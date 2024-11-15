@@ -2,7 +2,7 @@
 
 Assignment Date: Friday, Nov. 15, 2024
 
-Due Date: Monday, Dec. 2, 2024
+Due Date: Monday, Nov. 22, 2024
 
 ## Lecture -- Mike Sauria
 
