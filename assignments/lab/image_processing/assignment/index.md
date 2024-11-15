@@ -18,7 +18,7 @@ You will be provided with 24 single-channel images of cells (one color in each i
 To get the data, download them from [here](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/lab/image_processing/extra_data/image_data.tar.gz). You can use the following commands to download and unpack the data:
 
 ```bash
-wget hhttps://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/lab/image_processing/extra_data/image_data.tar.gz
+wget https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/lab/image_processing/extra_data/image_data.tar.gz
 tar -xzf image_data.tar.gz
 ```
 

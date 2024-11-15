@@ -158,7 +158,6 @@ def find_labels(mask):
                 l += 1
                 equivalence.append(l)
                 labels[x, -1] = l
-
     equivalence = numpy.array(equivalence)
     # Go backwards through all labels
     for i in range(1, len(equivalence))[::-1]:
@@ -179,7 +178,7 @@ plt.imshow(label_copy)
 plt.show()
 
 # # Filter cells
-sizes = numpy.bincount(labels)
+sizes = numpy.bincount(labels.ravel())
 print(sizes)
 for i in range(sizes.shape[0]):
     if sizes[i] < 100:
@@ -187,11 +186,11 @@ for i in range(sizes.shape[0]):
 
 def filter_by_size(labels, minsize, maxsize):
     # Find label sizes
-    sizes = numpy.bincount(labels)
+    sizes = numpy.bincount(labels.ravel())
     # Iterate through labels, skipping background
     for i in range(1, sizes.shape[0]):
         # If the number of pixels falls outsize the cutoff range, relabel as background
-        if sizes[i] < minsize or sizes > maxsize:
+        if sizes[i] < minsize or sizes[i] > maxsize:
             # Find all pixels for label
             where = numpy.where(labels == i)
             labels[where] = 0
