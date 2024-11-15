@@ -109,26 +109,25 @@ For each set of data, nascent RNA signal, PCNA signal, and the log2 ratio, creat
 
 ## Grading
 
-1. Python script **(6 pts total)**:
+1. Python script **(7 pts total)**:
   * Used a `for` loop to cycle through genes **(0.5 pts)**
   * Combined channels into a single array for each image **(0.5 pts)**
   * Created a binary mask from the DAPI channel **(0.5 pts)**
-  * Created mask and label array from DAPI channel **(0.5 pts)**
+  * Created mask and label array from DAPI channel **(1 pt)**
   * Filtered out small objects **(0.5 pts)**
   * Found object sizes, excluding background **(0.5 pts)**
   * Found correct minimum and maximum size cutoffs for second filtering **(0.5 pts)**
   * Filtered out too small and large objects **(0.5 pts)**
   * Correctly identified pixels for a given label **(0.5 pts)**
-  * Found signal for correct 2 channels and log-transformed ratio for each nucleus **(1 pt)**
+  * Found signal for correct 2 channels and log-transformed ratio for each nucleus **(1.5 pts)**
   * Wrote values to text file **(0.5 pts)**
-2. R script **(0.5 pts total)**:
-  * Load and plot data in violin plots **(0.5 pts)**
-3. Violin plots **(0.5 pts total)**:
-  * Created 3 properly labeled violin plots **(0.5 pts)**
+2. R script **(1 pt total)**:
+  * Load and plot data in violin plots **(1 pt)**
+3. Violin plots **(1 pt total)**:
+  * Created 3 properly labeled violin plots **(1 pt)**
 4. README.md **(1 pt total)**:
   * Answered question 3.1 **(0.5 pts)**
   * Answerd question 3.2 **(0.5 pts)**
-**5. Make 2 commits on your project work by 11/22 (2 pts)**
 
 **Total Points: 10**
 
