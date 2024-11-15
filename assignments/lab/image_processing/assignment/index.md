@@ -128,7 +128,6 @@ For each set of data, nascent RNA signal, PCNA signal, and the log2 ratio, creat
 4. README.md **(1 pt total)**:
   * Answered question 3.1 **(0.5 pts)**
   * Answerd question 3.2 **(0.5 pts)**
-
 **5. Make 2 commits on your project work by 11/22 (2 pts)**
 
 **Total Points: 10**
