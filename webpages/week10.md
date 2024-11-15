@@ -14,6 +14,12 @@ As always, before you do anything else, create a `week10` directory in your `qbb
 
 I recommend creating a `livecoding` directory within your `week10` directory, and putting your live-coding scripts and data there. You can add the `livecoding` directory to your `.gitignore` so that `git` won't track these files.
 
+Before starting, you will need to install an addiitonal python package using the following command:
+
+```bash
+conda install plotly -y
+```
+
 Wherever you choose to do your live-coding, you can download the following file:
 [live_coding_images.tar.gz](https://github.com/bxlab/cmdb-quantbio/raw/refs/heads/main/assignments/lab/image_processing/extra_data/live_coding_images.tar.gz)
 

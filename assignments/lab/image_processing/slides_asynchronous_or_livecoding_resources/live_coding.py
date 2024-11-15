@@ -4,21 +4,29 @@ import numpy
 import scipy
 import matplotlib.pyplot as plt
 import imageio
+import plotly.express as px
+import plotly
 
 na = numpy.newaxis
 
 # Load image into a numpy 2D array and rescale
 img = imageio.v3.imread("illum_DAPI.tif").astype(numpy.float32)
 img -= numpy.amin(img)
-img /= numpy.amax(img) * 1.05
+scores = numpy.copy(img.ravel())
+scores.sort()
+img = numpy.minimum(1,img / scores[int(0.95*scores.shape)]
 
 img1 = imageio.v3.imread("illum_RNAcytoNuc.tif").astype(numpy.float32)
 img1 -= numpy.amin(img1)
-img1 /= numpy.amax(img1) * 1.05
+scores = numpy.copy(img1.ravel())
+scores.sort()
+img1 = numpy.minimum(1,img1 / scores[int(0.95*scores.shape)]
 
 img2 = imageio.v3.imread("illum_Mito.tif").astype(numpy.float32)
 img2 -= numpy.amin(img2)
-img2 /= numpy.amax(img2) * 1.05
+scores = numpy.copy(img2.ravel())
+scores.sort()
+img2 = numpy.minimum(1,img2 / scores[int(0.95*scores.shape)]
 
 # Check image size and data type
 print(img.shape, img.dtype)
@@ -41,14 +49,14 @@ for i, name in enumerate(['DAPI', 'RNAcytoNuc', 'Mito']):
     rgbimg[:, :, i] = imageio.v3.imread(f"illum_{name}.tif")
 
 # Display image
-plt.imshow(rbgimg)
+plt.imshow(rgbimg)
 
 # Oops, got a warning.
 # Convert values from uint16 to uint8
 rgbimg = (rgbimg // 2**8).astype(numpy.uint8)
 
 # Display image
-plt.imshow(rbgimg)
+plt.imshow(rgbimg)
 plt.show()
 
 # Too dim because there is no automatic color scaling
@@ -208,7 +216,7 @@ plt.show()
 
 # What if we want to select a single marked nucleus?
 marked = numpy.copy(mask).astype(numpy.int32)
-where = numpy.where(label == 50)
+where = numpy.where(labels == 50)
 marked[where] = 2
 
 # And if we want information about that nucleus in another channel?
@@ -227,10 +235,10 @@ plt.show()
 
 # Let's see what happens when we apply the kernel
 blurred = scipy.ndimage.convolve(img2, kernel)
-
-# Let's try a new way of seeing the data
-import plotly.express as px
-import plotly
+blurred -= numpy.amin(blurred)
+scores = numpy.copy(blurred.ravel())
+scores.sort()
+blurred = numpy.minimum(1, blurred / scores[int(0.95*scores.shape)]
 
 # We need to combine the images
 combined = numpy.concatenate((img2[:, :, na], blurred[:, :, na]), axis=2)
