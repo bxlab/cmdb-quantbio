@@ -28,7 +28,7 @@ plt.imshow(img, vmin=0, vmax=2**16)
 plt.show()
 
 # Look at data range
-plt.histogram(img)
+plt.hist(img)
 print(numpy.amin(img), numpy.amax(img))
 
 # Display image with automatic value scaling
