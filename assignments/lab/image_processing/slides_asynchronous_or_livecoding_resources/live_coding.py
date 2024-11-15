@@ -14,19 +14,19 @@ img = imageio.v3.imread("illum_DAPI.tif").astype(numpy.float32)
 img -= numpy.amin(img)
 scores = numpy.copy(img.ravel())
 scores.sort()
-img = numpy.minimum(1,img / scores[int(0.95*scores.shape)]
+img = numpy.minimum(1,img / scores[int(0.95*scores.shape)])
 
 img1 = imageio.v3.imread("illum_RNAcytoNuc.tif").astype(numpy.float32)
 img1 -= numpy.amin(img1)
 scores = numpy.copy(img1.ravel())
 scores.sort()
-img1 = numpy.minimum(1,img1 / scores[int(0.95*scores.shape)]
+img1 = numpy.minimum(1,img1 / scores[int(0.95*scores.shape)])
 
 img2 = imageio.v3.imread("illum_Mito.tif").astype(numpy.float32)
 img2 -= numpy.amin(img2)
 scores = numpy.copy(img2.ravel())
 scores.sort()
-img2 = numpy.minimum(1,img2 / scores[int(0.95*scores.shape)]
+img2 = numpy.minimum(1,img2 / scores[int(0.95*scores.shape)])
 
 # Check image size and data type
 print(img.shape, img.dtype)
@@ -238,7 +238,7 @@ blurred = scipy.ndimage.convolve(img2, kernel)
 blurred -= numpy.amin(blurred)
 scores = numpy.copy(blurred.ravel())
 scores.sort()
-blurred = numpy.minimum(1, blurred / scores[int(0.95*scores.shape)]
+blurred = numpy.minimum(1, blurred / scores[int(0.95*scores.shape)])
 
 # We need to combine the images
 combined = numpy.concatenate((img2[:, :, na], blurred[:, :, na]), axis=2)
