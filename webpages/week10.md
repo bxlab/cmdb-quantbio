@@ -31,7 +31,7 @@ tar -xvzf live_coding_images.tar.gz
 
 You can also download the live-coding script we will be writing [here](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/lab/image_processing/slides_asynchronous_or_livecoding_resources/live_coding.py) so you can follow along or catch up if you fall behind. This also has two functions you will use in your homework assignment.
 
-Since today deviated a bit from the live-coding template, I am also uploading the actual live code from class [here](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/lab/image_processing/slides_asynchronous_or_livecoding_resources/inclass_live_coding.py).
+Since today deviated a bit from the live-coding template, I am also uploading the actual live code from class [here](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/lab/image_processing/slides_asynchronous_or_livecoding_resources/class_live_coding.py).
 
 ## Homework Assignment
 
