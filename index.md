@@ -84,6 +84,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |  8   | 11/1  | Frederick Tan  |  [Single cell RNA-seq Analysis with Bioconductor](webpages/week8.html) | 11/22 |
 |  9   | 11/8  | Frederick Tan   | Project Work + Notebooks Demo                   | N/A                   |
 |  10  | 11/15 | Mike Sauria     | [Image processing](webpages/week10.html)        | 12/02                 |
+|  11  | 11/22 | Frederick Tan   | [Image Classification](webpages/week11.html)    | 12/13                 |
 {:.table.table-striped.well}
 
 

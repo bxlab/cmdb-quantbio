@@ -1,19 +1,17 @@
-# QuantLab Week 11 - Single-cell RNA-seq
+# QuantLab Week 11 -- Image Classification
 
-Assignment Date: Friday, Dec. 8, 2023
+Assignment Date: Friday, Nov. 22, 2024
 
-Due Date: Monday, Dec. 11, 2023
+Due Date: Friday, Nov. 29, 2024
 
-## Lecture -- Michael Sauria
+## Code Along
 
-[Lecture Slides](https://www.dropbox.com/scl/fi/75tnpong2k5vqifd2qjhz/scRNA-seq-2023.pdf?rlkey=99nxpj22k476qye37k40pz3n0&dl=0)
+[Slidedeck](https://docs.google.com/presentation/d/13INHTu6M3V7LVFD0q0PNbKnX1QNOjOJCIuzcoWUnpeQ)
 
-## Live-coding
-
-[Live-coding script](https://github.com/bxlab/cmdb-quantbio/raw/main/assignments/lab/scRNA-seq/slides_asynchronous_or_livecoding_resources/livecoding.py)
+The code along notebooks can be found [here](https://github.com/bxlab/qbb2024/blob/main/pytorch/analysis.ipynb) and [here](https://github.com/bxlab/qbb2024/blob/main/bioimage/analysis.ipynb)
 
 ## Homework Assignment
 
-Complete the homework assignment in your `week11` submission directory in your `qbb2023-answers`.
+Complete the homework assignment in your `week11` submission directory in your `qbb2024-answers`.
 
-[Homework Assignment](../assignments/lab/scRNA-seq/assignment/)
+[Homework Assignment](../assignments/lab/image-classification/assignment/)
