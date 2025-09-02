@@ -8,6 +8,7 @@
 ## Morning Lecture 
 
 [Slides: Basic Python part 1](https://docs.google.com/presentation/d/1CgkpRxD6aqLYACOUeUUNLWv_SfaflhLEZBi4n_CeBCk/edit?usp=sharing)
+
 [Code](https://github.com/bxlab/qbb2025/tree/main/bootcamp/day1_morning)
 
 ## Afternoon Exercise
