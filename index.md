@@ -62,13 +62,13 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 - This one day a week course builds upon the foundations of Quantitative Biology Bootcamp, reinforcing and expanding upon mathematical and computational methods for analysis of biological data.
 - In person, Carnegie Rose Auditorium
 - 10:00 - 12:30 pm, Fridays
-- Assignments must be submitted within one week to your `qbb2025-answers` repository
+- Assignments must be submitted within one week to your `qb25-answers` repository
 
 ### Schedule
 
 | Week  | Date  | Instructor      | Topic                                           | Resubmission Deadline |
 | :---: | :---: | :---:           | :---:                                           | :---:                 |
-| 1     | 9/12  | Fred Tan        | Genome Content                                  | 10/3                  |
+| 1     | 9/12  | Frederick Tan        | Genome Content                                  | 10/3                  |
 {:.table.table-striped.well}
 
 <!-- |  1   | 9/13  | Mike Schatz     | [Genome assembly](webpages/week1.html)          | 10/4                  |
@@ -110,5 +110,4 @@ Resources
 * [NumPy](http://docs.scipy.org/doc/numpy/reference/index.html#reference)
 * [Pandas](http://pandas.pydata.org/pandas-docs/stable/)
   - e.g. [read_csv](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html?highlight=read_csv)
--->
 
