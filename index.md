@@ -6,9 +6,7 @@ layout: default
 ## CMDB Quantitative Biology Bootcamp 2025
 
 ### Logistics
-Prep Work: 
-
-[Prep work]( http://swcarpentry.github.io/python-novice-inflammation )
+Prep Work: [zero-to-python](https://genomicscafe.github.io/zero-to-python) [Software Carpentry]( http://swcarpentry.github.io/python-novice-inflammation )
 
 - [Syllabus](resources/syllabi/bootcamp/index.html)
 - Four day intensive bootcamp to introduce students to fundamentals in quantitative and computational biology 
