@@ -2,7 +2,7 @@
 <h1>
     AS.020.607
     <span style="float:right;">
-        Fall 2024
+        Fall 2025
     </span>
     <center>
        CMDB Quantitative Biology Bootcamp
@@ -72,7 +72,7 @@ Quantitative and computational methods are increasingly essential to all sub-dis
   <h3>Class Meetings</h3>
 </header>
 
-Tues, Sept 3, 2024 - Fri, Sept 6, 2024<br />
+Tues, Sept 2, 2025 - Fri, Sept 5, 2025<br />
 8:45 A.M. ET - 5 P.M. ET, In Person, Carnegie Rose Auditorium<br />
 Lunch and an afternoon snack will be provided every day.<br />
 
@@ -114,20 +114,16 @@ Although the course formally starts at 9 am ET, please <b>arrive by 8:45 am</b>.
    <th>Email</th>
  </tr>
  <tr>
-   <td>Andrew Bortvin</td>
-   <td><a href="mailto:abortvi2@jhu.edu">abortvi2@jhu.edu</a></td>
- </tr>
- <tr>
-  <td>Michael Tassia</td>
-  <td><a href="mailto:mtassia1@jhu.edu">mtassia1@jhu.edu</a></td>
- </tr>
- <tr>
   <td>Sadhana Chidambaran</td>
   <td><a href="mailto:sadhana.chidambaran@jhu.edu">sadhana.chidambaran@jhu.edu</a></td>
  </tr>
-<tr>
-  <td>Matthew Isada</td>
-  <td><a href="mailto:misada1@jhu.edu">misada1@jhu.edu</a></td>
+ <tr>
+   <td>Sneha Agrawal</td>
+   <td><a href="mailto:sagraw16@jhu.edu">sagraw16@jhu.edu</a></td>
+ </tr>
+ <tr>
+  <td>Lance O'Connor</td>
+  <td><a href="mailto:loconn13@jh.edu">loconn13@jh.edu</a></td>
  </tr>
 </table>
 
@@ -192,7 +188,7 @@ The course is broken into four main <b>types of sessions</b>
 
 <a name="Reflections"></a>
 <header><h3>Daily Reflections</h3></header>
-Students will complete a daily reflection and submit <a href="https://forms.gle/kPy6BiZDb9SQfSsW7">via Google Forms</a> by <b>5pm ET</b>. These reflections allow  students to communicate their experience and purposefully reflect. These are meant to be check-ins for both the instructors/TAs and the students, and these will be kept confidential. The content of the reflections will not affect a student’s grade in any way. 
+Students will complete a daily reflection and submit <a href="https://forms.gle/PLeHe8sqe2UCqeM79">via Google Forms</a> by <b>5pm ET</b>. These reflections allow  students to communicate their experience and purposefully reflect. These are meant to be check-ins for both the instructors/TAs and the students, and these will be kept confidential. The content of the reflections will not affect a student’s grade in any way. 
 
 <a name="Help"></a>
 <header><h2>Asking for Help</h2></header>

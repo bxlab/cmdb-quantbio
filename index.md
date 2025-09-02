@@ -28,7 +28,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 <!--[Thursday](webpages/day3.md)-->
 
 <!-- | Time            | [Tuesday](webpages/day1.md)            | [Wednesday](webpages/day2.md) |  [Thursday](webpages/day3.md) | [Friday](webpages/day4.md) |  -->
-| Time            | [Tuesday](webpages/day1.md)           | Wednesday           |  Thursday                      | Friday | 
+| Time            | [Tuesday](webpages/day1.md)           | Wednesday           |  Thursday                      | Friday                  | 
 |:---------------:|:-------------------------------------:|:-------------------:|:------------------------------:|:-----------------------:|
 |   9:00 -  10:00 | Welcome                               | Python file IO      | Small group review             | R - base and tidyverse  |
 |   10:00 - 11:00 | Laptop orientation                    | Python dictionaries | Git                            | Assignment              |
@@ -38,6 +38,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |   2:00 -  3:00  | Python loops                          | Unix                | Mini project                   | R - bioconductor        |
 |   3:00 -  4:00  | Assignment.                           | Python scripts      | Discussion                     | Discussion / Happy hour | 
 |   4:00 -  5:00  | Discussion                            | Assignment          | Mini project # 2               | Finished!               | 
+{:.table.table-striped.well}
 
 
 <!--- Recall that a link looks like [Friday](day5/index.html) --->
@@ -69,6 +70,8 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 | Week | Date  | Instructor      | Topic                                           | Resubmission Deadline |
 |:----:|:-----:|:---------------:|:-----------------------------------------------:|:---------------------:|
+{:.table.table-striped.well}
+
 <!-- |  1   | 9/13  | Mike Schatz     | [Genome assembly](webpages/week1.html)          | 10/4                  |
 |  2   | 9/20  | Mike Sauria     | [Genome Content](webpages/week2.html)           | 10/13                 |
 |  3   | 9/27  | Rajiv McCoy     | [Variant discovery and genotyping](webpages/week3.html) | 10/20         |
@@ -79,7 +82,6 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |  8   | 11/1  | Frederick Tan  |  [Single cell RNA-seq Analysis with Bioconductor](webpages/week8.html) | 11/22 |
 |  9   | 11/8  | Frederick Tan   | Project Work + Notebooks Demo                   | N/A                   |
 |  10  | 11/15 | Mike Sauria     | [Image processing](webpages/week10.html)        | 12/02                 | -->
-{:.table.table-striped.well}
 
 ### Project Work
 
