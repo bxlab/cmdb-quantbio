@@ -11,7 +11,7 @@
 
 ## Afternoon Exercise
 
-[Afternoon Exercise](../assignments/bootcamp/lists_loops_conditionals/python_basics.ipynb)
+[Afternoon Exercise](../assignments/bootcamp/lists_loops_conditionals/python_basics.md)
 
 ## Daily Reflection
 
