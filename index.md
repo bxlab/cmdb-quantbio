@@ -1,20 +1,14 @@
 ---
-title: CMDB Quantitative Biology 2024
+title: CMDB Quantitative Biology 2025
 layout: default
 ---
 
-## CMDB Quantitative Biology Bootcamp 2024
+## CMDB Quantitative Biology Bootcamp 2025
 
 ### Logistics
 Prep Work: 
 
-1. [Part 1](https://colab.research.google.com/drive/1ognkG7ph79u82DBjNoE3z9X8B4q9_ik8)
-2. [Part 2](https://colab.research.google.com/drive/18K0W2S17-97AwH0BK8rog0u64QSfXbrZ )
-
-R chapters to read before class:
-
-1. [Workflow Basics](https://r4ds.hadley.nz/workflow-basics)
-2. [Data Visualization](https://r4ds.hadley.nz/data-visualize )
+[Prep work]( http://swcarpentry.github.io/python-novice-inflammation )
 
 - [Syllabus](resources/syllabi/bootcamp/index.html)
 - Four day intensive bootcamp to introduce students to fundamentals in quantitative and computational biology 
@@ -33,16 +27,17 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 <!--[Tuesday](webpages/day1.md)-->
 <!--[Thursday](webpages/day3.md)-->
 
-| Time | [Tuesday](webpages/day1.md) | [Wednesday](webpages/day2.md) |  [Thursday](webpages/day3.md) | [Friday](webpages/day4.md) | 
-|:---------------:|:--------------------------------------:|:---------------------------------------:|:------------------------------------:|:---------------------------------------:|
-|   9:00 -  9:30  | Welcome      | Small Groups | Small Groups | Small Groups |
-|   9:30 - 11:00  | Unix, git, R | Explore text files w/ Unix | Python Indexing, Arrays | Linear Regression |
-|  11:00 - 12:00  | Exercise     | Exercise     | Exercise     | Exercise     | 
-|  12:00 -  1:00  | Lunch        |  Lunch       | Lunch        | Lunch        |
-|   1:00 -  1:30  | Small Groups | Small Groups | Small Groups | Small Groups |
-|   1:30 -  3:00  | Plotting w/ ggplot2 | Parsing files w/ Python  | Python Dictionaries | Multiple testing, power analysis |
-|   3:00 -  3:15  | Break        | Break        | Break        | Break        | 
-|   3:15 -  5:15  | Exercise     | Exercise     | Exercise     | Exercise     | 
+<!-- | Time            | [Tuesday](webpages/day1.md)            | [Wednesday](webpages/day2.md) |  [Thursday](webpages/day3.md) | [Friday](webpages/day4.md) |  -->
+| Time            | [Tuesday](webpages/day1.md)           | Wednesday           |  Thursday                      | Friday | 
+|:---------------:|:-------------------------------------:|:-------------------:|:------------------------------:|:-----------------------:|
+|   9:00 -  10:00 | Welcome                               | Python file IO      | Small group review             | R - base and tidyverse  |
+|   10:00 - 11:00 | Laptop orientation                    | Python dictionaries | Git                            | Assignment              |
+|  11:00 - 12:00  | Python datatypes & functions          | Assignment          | Git cont. & mini project intro | R - ggplot              | 
+|  12:00 -  1:00  | Lunch                                 |  Lunch              | Lunch                          | Lunch                   |
+|   1:00 -  2:00  | Python conditionals, strings, & lists | Assignment  cont.   | Mini project                   | Assigment               |
+|   2:00 -  3:00  | Python loops                          | Unix                | Mini project                   | R - bioconductor        |
+|   3:00 -  4:00  | Assignment.                           | Python scripts      | Discussion                     | Discussion / Happy hour | 
+|   4:00 -  5:00  | Discussion                            | Assignment          | Mini project # 2               | Finished!               | 
 
 
 <!--- Recall that a link looks like [Friday](day5/index.html) --->
@@ -61,20 +56,20 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 -->
 
-## CMDB Quantitative Biology Lab 2024
+## CMDB Quantitative Biology Lab 2025
 
 ### Logistics
 - [Syllabus](resources/syllabi/lab/index.html)
 - This one day a week course builds upon the foundations of Quantitative Biology Bootcamp, reinforcing and expanding upon mathematical and computational methods for analysis of biological data.
 - In person, Carnegie Rose Auditorium
 - 10:00 - 12:30 pm, Fridays
-- Assignments must be submitted within one week to your `qbb2024-answers` repository
+- Assignments must be submitted within one week to your `qbb2025-answers` repository
 
 ### Schedule
 
 | Week | Date  | Instructor      | Topic                                           | Resubmission Deadline |
 |:----:|:-----:|:---------------:|:-----------------------------------------------:|:---------------------:|
-|  1   | 9/13  | Mike Schatz     | [Genome assembly](webpages/week1.html)          | 10/4                  |
+<!-- |  1   | 9/13  | Mike Schatz     | [Genome assembly](webpages/week1.html)          | 10/4                  |
 |  2   | 9/20  | Mike Sauria     | [Genome Content](webpages/week2.html)           | 10/13                 |
 |  3   | 9/27  | Rajiv McCoy     | [Variant discovery and genotyping](webpages/week3.html) | 10/20         |
 |  4   | 10/4  | Frederick Tan   | Project Work + HPC Demo                         | N/A                   |
@@ -83,29 +78,12 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 |  7   | 10/25  | Rajiv McCoy    |  [Bulk RNA-seq, PCA, & Clustering](webpages/week7.html) | 11/15 |
 |  8   | 11/1  | Frederick Tan  |  [Single cell RNA-seq Analysis with Bioconductor](webpages/week8.html) | 11/22 |
 |  9   | 11/8  | Frederick Tan   | Project Work + Notebooks Demo                   | N/A                   |
-|  10  | 11/15 | Mike Sauria     | [Image processing](webpages/week10.html)        | 12/02                 |
-|  11  | 11/22 | Frederick Tan   | [Image Classification](webpages/week11.html)    | 12/13                 |
+|  10  | 11/15 | Mike Sauria     | [Image processing](webpages/week10.html)        | 12/02                 | -->
 {:.table.table-striped.well}
-
-
-<!--
-
-|  3   | 9/29 | Dylan Taylor |  [Sequence alignment](webpages/week3.html) |&#124; |
-|  4   | 10/6 | Mike Sauria |  [ChIP-seq](webpages/week4.html) |&#124; |
-|  5   | 10/13 | Rajiv McCoy | [Variant calling](webpages/week5.html) |&#124; |
-|  -   | 10/20 | No Class | Retreat |&#124; |
-|  6   | 10/27 | Rajiv McCoy | [GWAS](webpages/week6.html) |&#124; |
-|  7   | 11/3 | Mike Sauria | [Single-molecule sequencing and DNA modifications](webpages/week7.html) | 11/27 |
-|  8   | 11/10 | Mike Sauria | [3D Genome](webpages/week8.html) | &#124;|
-|  9   | 11/17 | Rajiv McCoy | [Bulk RNA-seq](webpages/week9.html) | 12/8 |
-|  -   | 11/24 | No class | Thanksgiving Break | &#124; |
-|  10   | 12/1 | Rajiv McCoy | [Data Visualization](webpages/week10.html) |	&#124; |
-|  11   | 12/8 | Mike Sauria | [Single-cell RNA-seq](webpages/week11.html) |	12/15 |
--->
 
 ### Project Work
 
-- See [Project Work Guide](https://docs.google.com/document/d/1iiHjieL_Kfr8WvNRpfkAjpvDmNfOiYFrmIHO2_Q3eLE) for deadlines and deliverables
+<!-- - See [Project Work Guide](https://docs.google.com/document/d/1iiHjieL_Kfr8WvNRpfkAjpvDmNfOiYFrmIHO2_Q3eLE) for deadlines and deliverables -->
 
 
 Resources
