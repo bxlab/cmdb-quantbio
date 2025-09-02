@@ -26,18 +26,18 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 <!--[Tuesday](webpages/day1.md)-->
 <!--[Thursday](webpages/day3.md)-->
-
 <!-- | Time            | [Tuesday](webpages/day1.md)            | [Wednesday](webpages/day2.md) |  [Thursday](webpages/day3.md) | [Friday](webpages/day4.md) |  -->
-| Time            | [Tuesday](webpages/day1.md)           | Wednesday           |  Thursday                      | Friday                  | 
-|:---------------:|:-------------------------------------:|:-------------------:|:------------------------------:|:-----------------------:|
-|   9:00 -  10:00 | Welcome                               | Python file IO      | Small group review             | R - base and tidyverse  |
-|   10:00 - 11:00 | Laptop orientation                    | Python dictionaries | Git                            | Assignment              |
-|  11:00 - 12:00  | Python datatypes & functions          | Assignment          | Git cont. & mini project intro | R - ggplot              | 
-|  12:00 -  1:00  | Lunch                                 |  Lunch              | Lunch                          | Lunch                   |
-|   1:00 -  2:00  | Python conditionals, strings, & lists | Assignment  cont.   | Mini project                   | Assigment               |
-|   2:00 -  3:00  | Python loops                          | Unix                | Mini project                   | R - bioconductor        |
-|   3:00 -  4:00  | Assignment.                           | Python scripts      | Discussion                     | Discussion / Happy hour | 
-|   4:00 -  5:00  | Discussion                            | Assignment          | Mini project # 2               | Finished!               | 
+
+| Time           | [Tuesday](webpages/day1.md)           | Wednesday           | Thursday                       | Friday                  | 
+| :---:          | :---:                                 | :---:               | :---:                          | :---:                   |
+|   9:00 - 10:00 | Welcome                               | Python file IO      | Small group review             | R \- base and tidyverse |
+|  10:00 - 11:00 | Laptop orientation                    | Python dictionaries | Git                            | Assignment              |
+|  11:00 - 12:00 | Python datatypes & functions          | Assignment          | Git cont. & mini project intro | R \- ggplot             | 
+|  12:00 -  1:00 | Lunch                                 | Lunch               | Lunch                          | Lunch                   |
+|   1:00 -  2:00 | Python conditionals, strings, & lists | Assignment  cont.   | Mini project                   | Assigment               |
+|   2:00 -  3:00 | Python loops                          | Unix                | Mini project                   | R \- bioconductor       |
+|   3:00 -  4:00 | Assignment                            | Python scripts      | Discussion                     | Discussion / Happy hour | 
+|   4:00 -  5:00 | Discussion                            | Assignment          | Mini project # 2               | Finished!               | 
 {:.table.table-striped.well}
 
 
@@ -68,12 +68,12 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 ### Schedule
 
-| Week | Date  | Instructor      | Topic                                           | Resubmission Deadline |
-|:----:|:-----:|:---------------:|:-----------------------------------------------:|:---------------------:|
+| Week  | Date  | Instructor      | Topic                                           | Resubmission Deadline |
+| :---: | :---: | :---:           | :---:                                           | :---:                 |
+| 1     | 9/12  | Fred Tan        | [Genome Content]()                              | 10/3                  |
 {:.table.table-striped.well}
 
 <!-- |  1   | 9/13  | Mike Schatz     | [Genome assembly](webpages/week1.html)          | 10/4                  |
-|  2   | 9/20  | Mike Sauria     | [Genome Content](webpages/week2.html)           | 10/13                 |
 |  3   | 9/27  | Rajiv McCoy     | [Variant discovery and genotyping](webpages/week3.html) | 10/20         |
 |  4   | 10/4  | Frederick Tan   | Project Work + HPC Demo                         | N/A                   |
 |  5   | 10/11  | Mike Sauria    |  [Bulk RNA-seq, PCA, & Clustering](webpages/week5.html) | 11/01 |
