@@ -4,18 +4,16 @@
 
 [Reflection Responses](https://docs.google.com/presentation/d/1fJZJEXB3m_R12aymiz0Fu7B2kDJdhEfFrwJn4PDild0/edit?usp=sharing)
 
-## Morning Exercise
+## Morning Lecture
 
-[Morning Exercise](../assignments/bootcamp/unix-explore-text-files/assignment/index.md)
-
-## Afternoon Code-Along
-
-[Code](https://github.com/bxlab/cmdb-quantbio/tree/main/assignments/bootcamp/parsing-files-with-python/slides_asynchronous_or_livecoding_resources)
+[Slides](https://docs.google.com/presentation/d/1lsCTOWqkNNWReJu6wThq_UZ84tfMtzByzGqqapgeH2E/edit?usp=sharing)
+[Code](https://github.com/bxlab/qbb2025/tree/main/bootcamp/day2_morning)
+[Assignment](../assignments/bootcamp/dictionaries_file_io/index.md)
 
 ## Afternoon Exercise
 
-[Exercise: Parsing Files With Python](../assignments/bootcamp/parsing-files-with-python/assignment/index.md)
+[Exercise](../assignments/bootcamp/parsing-files-with-python/assignment/index.md)
 
 ## Daily Reflection
 
-Please fill out [this survey](https://forms.gle/qyzDdwYqraEjBTzE9) today at the end of class. 
+Please fill out [this survey](https://forms.gle/PLeHe8sqe2UCqeM79) today at the end of class. 
