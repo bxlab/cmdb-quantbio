@@ -8,6 +8,8 @@
 
 [Assignment](../assignments/bootcamp/dictionaries_file_io/index.md)
 
+[Notebook link](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/bootcamp/dictionaries_file_io/python_dictionaries.ipynb)
+
 <!--
 ## Afternoon Exercise
 
