@@ -10,7 +10,6 @@
 
 [Notebook link](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/bootcamp/dictionaries_file_io/python_dictionaries.ipynb)
 
-<!--
 ## Afternoon Session
 
 [Slides](https://docs.google.com/presentation/d/1BVpggcb6b9Ft2S7oboSyvDeo5au2g-bUw6WIJhTy7oE)
@@ -19,6 +18,4 @@
 
 ## Daily Reflection
 
-Please fill out [this survey](https://forms.gle/PLeHe8sqe2UCqeM79) today at the end of class.
--->
- 
+Please fill out [this survey](https://forms.gle/PLeHe8sqe2UCqeM79) today at the end of class. 
