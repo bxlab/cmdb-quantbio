@@ -118,7 +118,7 @@ tissues = []
 
 # Step through each value in the header
 
-    # Check if the value has an entry in the gene_tissue dictionary, adding either the tissue corresponding to that entry or "missing" to your tissues list
+    # Check if the value has an entry in the metadata dictionary, adding either the tissue corresponding to that entry or "missing" to your tissues list
 
 ```
 
