@@ -9,26 +9,24 @@ Computational Learning Objectives
 - Use [Unix commands](https://wikipedia.org/wiki/List_of_POSIX_commands) to examine text files
 - Create Python scripts for text wrangling
 
-## Part I -- Unix
+## Instructions
 
-### Instructions
+Document your answers in `~/qbXX-answers/unix-python-scripts`
 
-Work on these exercises locally on your laptop in `~/qbXX-answers/unix-python-scripts`
+Upload your scripts to https://github.com after each exercise and do not wait until the end of the session
 
-Submit your answers via https://github.com
+Place all of your Unix commands in a single file named `unix-commands.sh` along with the output as a comment e.g.
 
-- Create a new README.md in your repository under a new directory named `unix-python-scripts`
-- Commit your answer after each exercise and do not wait until the end of the session
-- Place each of your Unix commands along with the output as a comment e.g.
+```
+#!/bin/bash
 
-    ```
-    tail ce11_genes.bed | head -n 2
+tail ce11_genes.bed | head -n 2
 
-    # chrIII	13768540	13771741	NM_067444.8	515	-
-    # chrIII	13769876	13769953	NR_003432.1	9	-
-    ```
+# chrIII	13768540	13771741	NM_067444.8	515	-
+# chrIII	13769876	13769953	NR_003432.1	9	-
+```
 
-### Exercises
+## Exercises
 
 1. Explore ce11_genes.bed using Unix
 
@@ -38,28 +36,7 @@ Submit your answers via https://github.com
     - How many features per chr? e.g. `chrI`, `chrII`
     - How many features per strand? e.g. `+`, `-`
 
-1. Explore GTEx_Analysis_v8_Annotations_SampleAttributesDS.txt using Unix
-
-    - Which three SMTSDs (Tissue Site Detail) have the most samples?
-    - How many lines have "RNA"?
-    - How many lines do **not** have "RNA"?
-
-1. Explore ~/Data/References/hg38/gencode.v46.basic.annotation.gtf using Unix
-
-    - How many entries are there for each feature type?  Look at column 3 and be sure to skip any lines that begin with `#`
-    - How many lncRNA entries are on each chromosome?
-
-## Part II -- Python Scripts
-
-### Instructions
-
-Document your answers in `~/qbXX-answers/unix-python-scripts`
-
-Upload your scripts to https://github.com after each exercise and do not wait until the end of the session
-
-### Exercises
-
-1. Recalculate ce11_genes.bed scores using Python
+2. Recalculate ce11_genes.bed scores using Python
 
     Write a script that for each feature (line) recalculates the score (column 5) such that
 
@@ -68,17 +45,13 @@ Upload your scripts to https://github.com after each exercise and do not wait un
 
     Print out all six columns in BED format
 
-1. Export gene features to BED format using Python
+3. Explore GTEx_Analysis_v8_Annotations_SampleAttributesDS.txt using Unix
 
-    Write a script that takes gencode.v46.basic.annotation.gtf and
+    - Which three SMTSDs (Tissue Site Detail) have the most samples?
+    - How many lines have "RNA"?
+    - How many lines do **not** have "RNA"?
 
-    - Ignores a line if it startswith `#`
-    - Only prints output for `gene` features (column 3)
-    - Subtracts 1 from the start position to convert to [zero-based coordinate system](https://en.wikipedia.org/wiki/BED_(file_format)#Coordinate_system)
-    - Correctly parses gene name from the `attribute` (column 9)
-    - Prints chr, start, stop, gene name
-
-1. Transform GTEx data using Python
+4. Transform GTEx data using Python
 
     Write a script that extracts expression values for the first gene (DDX11L1) which is stored on a single line spread across more than 17,000 columns and transposes the data so that the expression in each sample is stored on a separate line.
 
@@ -99,10 +72,24 @@ Upload your scripts to https://github.com after each exercise and do not wait un
 
     What are the first three tissues that have >0 expression?
 
+5. Explore ~/Data/References/hg38/gencode.v46.basic.annotation.gtf using Unix
+
+    - How many entries are there for each feature type?  Look at column 3 and be sure to skip any lines that begin with `#`
+    - How many lncRNA entries are on each chromosome?
+
+6. Export gene features to BED format using Python
+
+    Write a script that takes gencode.v46.basic.annotation.gtf and
+
+    - Ignores a line if it startswith `#`
+    - Only prints output for `gene` features (column 3)
+    - Subtracts 1 from the start position to convert to [zero-based coordinate system](https://en.wikipedia.org/wiki/BED_(file_format)#Coordinate_system)
+    - Correctly parses gene name from the `attribute` (column 9)
+    - Prints chr, start, stop, gene name
+
 ## Grading
 
 - unix-commands.sh -- 3 pt
 - recalculate-score.py -- 2 pt
 - sample-by-gene.py -- 3 pt
 - gtf2bed.py -- 2 pt
-
