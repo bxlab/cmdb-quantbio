@@ -13,20 +13,20 @@ Computational Learning Objectives
 
 ### Instructions
 
-Document your answers in `~/qbXX-answers/unix-python-scripts`
+Work on these exercises locally on your laptop in `~/qbXX-answers/unix-python-scripts`
 
-Upload your scripts to https://github.com after each exercise and do not wait until the end of the session
+Submit your answers via https://github.com
 
-Place all of your Unix commands in a single file named `unix-commands.sh` along with the output as a comment e.g.
+- Create a new README.md in your repository under a new directory named `unix-python-scripts`
+- Commit your answer after each exercise and do not wait until the end of the session
+- Place each of your Unix commands along with the output as a comment e.g.
 
-```
-#!/bin/bash
+    ```
+    tail ce11_genes.bed | head -n 2
 
-tail ce11_genes.bed | head -n 2
-
-# chrIII	13768540	13771741	NM_067444.8	515	-
-# chrIII	13769876	13769953	NR_003432.1	9	-
-```
+    # chrIII	13768540	13771741	NM_067444.8	515	-
+    # chrIII	13769876	13769953	NR_003432.1	9	-
+    ```
 
 ### Exercises
 
