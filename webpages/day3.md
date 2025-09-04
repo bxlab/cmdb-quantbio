@@ -8,6 +8,8 @@
 
 [Calculate Assembly Metrics](../assignments/bootcamp/miniproject-assembly-metrics/assignment/index.md)
 
+## Optional
+
 [Measure Codon Usage](../assignments/bootcamp/miniproject-codon-usage/assignment/index.md)
 
 ## Daily Reflection
