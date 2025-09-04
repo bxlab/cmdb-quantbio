@@ -72,6 +72,8 @@ tail ce11_genes.bed | head -n 2
 
     What are the first three tissues that have >0 expression?
 
+## Optional
+
 5. Explore ~/Data/References/hg38/gencode.v46.basic.annotation.gtf using Unix
 
     - How many entries are there for each feature type?  Look at column 3 and be sure to skip any lines that begin with `#`
