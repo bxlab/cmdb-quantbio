@@ -27,6 +27,12 @@ c(10, 4, 2, 45.5)
 c(10, 4, 2, TRUE)     # coerces to numeric (TRUE -> 1)
 c(10, 4, 2, "hello")  # coerces to character
 
+# indexing a vector
+my_vector <- c(10, 4, 2, 45.5)
+my_vector[2] # note that R is 1-based
+my_vector[length(my_vector)]
+my_vector[1:2]
+
 # common atomic types in R: double, logical, integer, character, complex
 typeof(2)
 typeof(2.1)
