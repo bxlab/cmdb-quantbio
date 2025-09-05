@@ -32,6 +32,7 @@ my_vector <- c(10, 4, 2, 45.5)
 my_vector[2] # note that R is 1-based
 my_vector[length(my_vector)]
 my_vector[1:2]
+my_vector[c(TRUE, FALSE, TRUE, FALSE)]
 
 # common atomic types in R: double, logical, integer, character, complex
 typeof(2)
