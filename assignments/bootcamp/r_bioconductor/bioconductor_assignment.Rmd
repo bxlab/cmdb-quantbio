@@ -1,0 +1,75 @@
+In this exercise, you will practice working with the bioconductor `SummarizedExperiment` package and associated class by exploring the `pasilla` dataset obtained from the package of the same name. From their README:
+
+> This package provides per-exon and per-gene read counts computed for selected genes from RNA-seq data that were presented in the article "Conservation of an RNA regulatory map between Drosophila and mammals" by Brooks AN, Yang L, Duff MO, Hansen KD, Park JW, Dudoit S, Brenner SE, Graveley BR, Genome Res. 2011 Feb;21(2):193-202, Epub 2010 Oct 4, PMID: 20921232. The experiment studied the effect of RNAi knockdown of Pasilla, the Drosophila melanogaster ortholog of mammalian NOVA1 and NOVA2, on the transcriptome.
+
+------------------------------------------------------------------------
+
+### Load packages and data
+
+Start by loading the `tidyverse`, `SummarizedExperiment`, and `pasilla` packages into R. Note that `library(pasilla)` will throw an error, as that package has not been pre-installed on your computer. For bioconductor packages, you can use `BiocManager::install("package_name")` to install, then re-load with `library(package_name)`. Notice the use of quotes in the install syntax. You will only have to install once, and all future attempts to load the package should work without installing. When asked whether you would like to update other packages, you can type "n" for "no".
+
+```{r}
+
+# code to load libraries here
+
+# then load the dxd dataset from pasilla
+data("pasillaDEXSeqDataSet", package = "pasilla")
+# notice it appear in the Environment panel
+
+```
+
+### Q1. Examine the data contents
+
+Inspect the data in assay data.
+
+-   What are its dimensions, and what do they represent?
+
+Inspect the colData and rowData.
+
+-   Identify a sample-level column that separates experimental groups (e.g., condition) and list its levels.
+-   What are the dimensions of each, and what do they represent?
+-   Identify a sample-level column that separates experimental groups and list its levels.
+
+```{r}
+
+# answer here
+
+```
+
+### Q2. Compute total library sizes of each sample
+
+When comparing gene or exon expression between samples, it is necessary to consider the total amount of sequencing data produced from a given sample (i.e., "library size"). This is because for random and technical reasons, some samples will happen to generate more reads than others, so we need to normalize by this factor.
+
+- Use the counts data in `assay()` to compute the library size for each of the 14 samples. 
+- Store this information in the colData by using the `colData(dxd)$my_new_column_name <- library_sizes` to generate a new column.
+- Plot the library sizes per sample as a barplot. Give your axes informative labels and limit any extraneous information.
+
+```{r}
+
+# answer here
+
+```
+
+### Q3. Compare exon-specific expression between two samples
+
+- Extract exonic read counts for sample `treated1fb` and sample `untreated1fb`. 
+- Sum the total counts of each sample to compute their respective library sizes.
+- Divide the counts by the respective library sizes and multiply by `1e6` to obtain the expression values in counts per million (CPM). 
+- Create a scatter plot that compares the CPMs between these two samples.
+
+```{r}
+
+# answer here
+
+```
+
+### Optional/advanced. Explore the data further.
+
+- Compute Spearman correlation coefficients between all pairs of samples, comparing their exon specific expression (in CPM). Does any structure emerge where treated samples and untreated samples show higher correlations within their condition versus between? Use `ggplot() + geom_tile()` to visualize the pairwise correlations with a heatmap.
+- Select the 20 genes with the highest exonBaseMean (in rowData). Use `ggplot() + geom_tile()` to create a heatmap of the expression of each of these genes across samples. If the plot is not informative (too low of variability within a gene versus between genes), consider computing a z-score for each gene using the `scale()` function and plotting this instead of the raw expression values.
+
+```{r}
+
+# answer here
+
+```
