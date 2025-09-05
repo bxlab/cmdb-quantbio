@@ -63,7 +63,9 @@ Genes encoded by the mitochondrial genome have the gene symbol prefix `MT-`. The
 Use `str_starts()` to identify which genes are mitochondrially encoded and store this information in a new Boolean column named `is_mitochondrial`. Next, compute the mean and median expression of mitochondrial genes in the liver, as well as the mean and median expression of nuclear-encoded genes in the liver and compare them. Do mitochondrial genes exhibit higher or lower mean and median expression than nuclear genes? What does the difference between the mean and median tell you about the distribution of gene expression.
 
 ```{r}
+# Code here
 
+# Interpretation here as a comment
 ```
 
 ------------------------------------------------------------------------
@@ -78,7 +80,9 @@ Look up basic information about these genes on the internet. Do their expression
 
 ```{r}
 
+# Code here
 
+# Interpretation here as a comment
 ```
 
 ------------------------------------------------------------------------
