@@ -30,12 +30,12 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 | :---:          | :---:                                 | :---:                         | :---:                          | :---:                      |
 |   9:00 - 10:00 | Welcome                               | Python file IO                | Git Setup                      | R \- base and tidyverse    |
 |  10:00 - 11:00 | Laptop orientation                    | Python dictionaries           | Git Practice                   | Assignment                 |
-|  11:00 - 12:00 | Python datatypes & functions          | Assignment                    | Small group review             | R \- ggplot                | 
+|  11:00 - 12:00 | Python datatypes & functions          | Assignment                    | Catch Up                       | R \- ggplot                | 
 |  12:00 -  1:00 | Lunch                                 | Lunch                         | Lunch                          | Lunch                      |
 |   1:00 -  2:00 | Python conditionals, strings, & lists | Assignment  cont.             | Mini project                   | Assigment                  |
-|   2:00 -  3:00 | Python loops                          | Unix                          | Mini project                   | R \- bioconductor          |
-|   3:00 -  4:00 | Assignment                            | Python scripts                | Mini project # 2               | Discussion                 | 
-|   4:00 -  5:00 | Discussion                            | Assignment                    | Mini project # 2               | Finished!                  | 
+|   2:00 -  3:00 | Python loops                          | Unix                          | Mini project                   | R \- Bioconductor          |
+|   3:00 -  4:00 | Assignment                            | Python scripts                | Small group review             | Assignment                 | 
+|   4:00 -  5:00 | Discussion                            | Assignment                    | Small group review             | Finished!                  | 
 {:.table.table-striped.well}
 
 
