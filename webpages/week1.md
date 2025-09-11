@@ -1,14 +1,21 @@
-# QuantLab Week 1 - Genome Assembly
-Assignment Date: Friday, Sept. 13, 2024
+# Quantitative Biology Lab Week 1 - Genome Content
 
-Due Date: Friday, Sept. 20, 2024
+Assignment Date: Friday, September 12, 2025
 
-## Lecture -- Mike Schatz
+Due Date: Friday, September 19, 2025
 
-[Lecture Slides](https://www.dropbox.com/scl/fi/2oxr3sbmfthemrmb8ne90/2024.09.12.QBLab.GenomeSequencing.pdf?rlkey=9dg26etap0ukyx3wney65n5s0&e=1&dl=0)
+## Lecture
 
-## Homework Assignment
+[Slides](https://docs.google.com/presentation/d/1sKw9u6ucA2giNrIWHXQ8fABevM-h6-ife1FbLQZICt8)
+<!--
+[Slides 2024](https://docs.google.com/presentation/d/1sKZiD7-Y6RKmmJIMiYZryDA1v4aRWAK5SXs8l-aQs1E)
+-->
 
-Before you do anything else, make a `week1` directory in your `qbb2024-answers` directory for this assignment. This is where you will be putting and uploading all of your code/plots/etc. for this assignment.
+## Assignment
 
-[Homework assignment](../assignments/lab/genome_assembly/assignment/index.md) 
+Create a `week1` directory in your `qb25-answers` directory for this assignment.
+
+[Assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/genome_content/assignment)
+<!--
+[Assignment 2024](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/lab/genome_content/assignment/index-2024.md)
+-->
