@@ -114,6 +114,54 @@ Document your answers in `~/qbXX-answers/weekX`
 
 1. Explore chromatin states between conditions
 
+    Visualize ChromHMM chromatin state segmentation
+
+    - Navigate to https://genome.ucsc.edu and select hg19 under Genomes
+    - Scroll down to the Regulation section, toggle ENC Histone to show, and click
+    - Click on any of the ChromHMM tracks to expand from dense to pack
+    - Note how the chromatin state transitions between fifteen different states (e.g. 1_Active_Promoter, 12_Repressed) as you
+        - Look at different parts of a gene e.g. transcription start site vs introns
+        - Look at different genes e.g. SHH vs TP53
+        - Look at different conditions e.g. NHLF (lung fibroblasts) vs NHEK (keratinocytes)
+    - Select PDF in the View menu to download an image of SHH and TP53 showing the ChromHMM tracks
+
+    Create four .bed files corresponding to 1_Active and 12_Repressed for NHEK and NHLF
+
+    - Configure Table Browser to Assembly hg19, Group Regulation, Table NHEK, Region Genome, Output format BED, Output filename nhek.bed
+    - Subset regions classified as 1_Active and 12_Repressed in to separate files
+        ```
+        grep 1_Active nhek.bed > nhek-active.bed
+        ```
+    - Repeat for NHLF
+    - Confirm that your files have 14013, 32314, 14888, and 34469 lines
+
+    Construct a `bedtools` command to test where there is any overlap between 1_Active and 12_Repressed in a given condition (aka mutually exclusive)
+
+    Construct two `bedtools intersect [OPTIONS] -a nhek-active.bed -b nhlf-active.bed` commands, one to find regions that are active in NHEK and NHLF, and one to find regions that are active in NHEK but not active in NHLF
+
+    - How many features are output by the first command?  by the second command?
+    - Do these two numbers add up to the original number of lines in nhek-active.bed?
+    - If not, how can you adjust your first command to only report one feature per overlap?
+
+    Construct three `bedtools intersect` commands to see the effect of using the arguments `-f 1`, `-F 1`, and `-f 1 -F 1` when comparing `-a nhek-active.bed -b nhlf-active.bed`
+
+    - Visualize the first result for each three commands by pasting the coordinates into UCSC Genome Browser e.g. `chr1	25558413	25559413`
+    - Click on Zoom out 3x to get a better perspective.
+    - How does the relationship between the NHEK and NHLF chromatin state change as you alter the overlap parameter?
+
+    Construct three `bedtools intersect` commands to identify the following types of regions.  Use UCSC Genome Browser to save one PDF image for each of the three types of regions.  Describe the chromatin state across all nine conditions.
+
+    - Active in NHEK, Active in NHLF
+    - Active in NHEK, Repressed in NHLF
+    - Repressed in NHEK, Repressed in NHLF
+
+    Submit the following
+
+    - shh.pdf -- Genome browser image of chromatin state at SHH
+    - tp53.pdf -- Genome browser image of chromatin state at TP53
+    - exercise3.sh -- Bash script with your nine `bedtools` commands; place output and answers as comments
+    - active-active.pdf, active-repressed.pdf, and repressed-repressed.pdf
+
 1. Identify where variation occurs
 
 ## Grading
