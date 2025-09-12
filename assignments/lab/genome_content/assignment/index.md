@@ -39,7 +39,8 @@ Document your answers in `~/qbXX-answers/weekX`
     Create hg19-kc.bed with one transcript per gene (aka [knownCanonical](https://genome.ucsc.edu/FAQ/FAQgenes.html#singledownload))
 
     - Navigate to https://genome.ucsc.edu and select Table Browser under Tools
-    - Configure Assembly hg19, Table knownCanonical, Output filename hg19-kc.tsv
+    - Configure Assembly hg19, Region Genome, Table knownCanonical, Output filename hg19-kc.tsv
+        - You must select Region Genome before selecting Table knownCanonical or it will be hidden
     - Use `mv` to move the file from `~/Desktop` to `~/qbXX-answers/weekX`
     - Confirm that `hg19-kc.tsv` has 80,270 lines
     - Use the following command to convert from a .tsv to a .bed file
@@ -56,7 +57,7 @@ Document your answers in `~/qbXX-answers/weekX`
 
     Count how many genes are in each 1 mb interval using `bedtools intersect`
 
-    - You will need to use exactly one 1-letter option e.g.
+    - You will need to use exactly one 1-letter option (not `-x` which is just a placeholder) e.g.
         ```
         bedtools intersect -x -a fileA.bed -b fileB.bed
         ```
