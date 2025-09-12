@@ -68,7 +68,8 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 | Week  | Date  | Instructor      | Topic                                           | Resubmission Deadline |
 | :---: | :---: | :---:           | :---:                                           | :---:                 |
-| 1     | 9/12  | Frederick Tan        | Genome Content                                  | 10/3                  |
+| 1     | 9/12  | Frederick Tan   | [Genome Content](webpages/week1.html)           | 10/3                  |
+| 2     | 9/19  | Frederick Tan   | Sequence Alignment                              | 10/10                 |
 {:.table.table-striped.well}
 
 <!-- |  1   | 9/13  | Mike Schatz     | [Genome assembly](webpages/week1.html)          | 10/4                  |
