@@ -164,6 +164,30 @@ Document your answers in `~/qbXX-answers/weekX`
 
 1. Identify where variation occurs
 
+    Obtain snps-chr1.bed with only the chromosome 1 Common SNPs
+
+    - Configure Table Browser to Assembly hg19, Group Variation, Track Common SNPs(151), Region Position `chr1`, Output format BED, Output filename snps-chr1.bed
+    - Confirm that your file has 1091148 lines
+
+    Use `bedtools intersect` and `hg19-kc.bed` to determine which gene has the most SNPs
+
+    - Visualize the gene using UCSC Genome Browser and click on the gene to see more details
+    - Describe the gene: What is the systematic name (e.g. ENST00000413465.6_5), human readable name (e.g. TP53), position (e.g. hg19 chr17:7,565,097-7,579,912), size (e.g. 14,816), exon count (e.g. 7)
+    - Why do you think this gene has the most SNPs?
+
+    Determine which SNPs lie within vs outside of a gene
+    
+    - Create a subset of SNPs using `bedtools sample -n 20 -seed 42`
+    - Use `bedtools sort` to sort the subset of SNPs
+    - Use `bedtools sort` to sort hg19-kc.bed
+    - Use `bedtools closest -d` on the two sorted files, with `-t first` to break ties
+    - How many SNPs are inside of a gene?
+    - What is the range of distances for the ones outside a gene?
+    
+    Submit the following
+
+    - exercise4.sh -- Bash script with your five `bedtools` commands; place output and answers as comments
+
 ## Grading
 
 - Plot gene density -- 3 pt
