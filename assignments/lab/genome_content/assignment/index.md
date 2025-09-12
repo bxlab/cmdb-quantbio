@@ -63,6 +63,7 @@ Document your answers in `~/qbXX-answers/weekX`
         ```
     - Save the output to `hg19-kc-count.bed`
     - Confirm that hg19-kc-count.bed has 3,114 lines
+        - If you get 80,269 lines swap `-a` and `-b` and think about why order matters
 
     Use R to plot gene density across all 25 main chromosomes
 
