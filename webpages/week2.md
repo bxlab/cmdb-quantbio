@@ -1,4 +1,4 @@
-# Quantitative Biology Lab Week 1 - Sequence Alignment
+# Quantitative Biology Lab Week 2 - Sequence Alignment
 
 Assignment Date: Friday, September 19, 2025
 
