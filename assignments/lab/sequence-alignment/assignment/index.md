@@ -85,6 +85,7 @@ marker                 A01_01  A01_02
         - If not available, in the Genomes menu select "Download Hosted Genome..."
     - Load A01_01.bam
     - View region chrI:27,000-32,000
+        - Reference is a BY, so variants suggest RM
     - View genotype calls in BYxRM_GenoData.txt
         - chrI:27915
         - chrI:28323
@@ -125,7 +126,7 @@ marker                 A01_01  A01_02
     Submit the following
 
     - README.md -- Your description of the visualization
-    - map-reads.sh -- Bash script to process six samples along with comment on visualization
+    - map-reads.sh -- Bash script to process six samples
     - A01_01-06.png -- Image of chrI:27,000-32,000 region
 
 1. Summarize sequence alignments using Python
