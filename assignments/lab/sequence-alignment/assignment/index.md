@@ -21,7 +21,7 @@ Learning Objectives
     ├── genomes
     │   └── sacCer3.fa
     ├── rawdata
-    │   └── ERR8562478.fastq
+    │   └── ERR8562476.fastq
     └── variants
         ├── A01_01.bam
         ├── ...
@@ -160,24 +160,24 @@ marker                 A01_01  A01_02
     - Scroll down and click on the 288 [SRA Experiments](https://www.ncbi.nlm.nih.gov/sra/docs/submitmeta/#sra-metadata-experiment)
     - Use the left hand column to filter for Oxford Nanopore
     - Click on ERX8178858 (should be #10 on the list)
-    - Click on the Run number (ERR8562478) to see the dataset size, average read length, taxonomy analysis
+    - Click on the Run number (ERR8562476) to see the dataset size, average read length, taxonomy analysis
 
     Fetch reads using [sratoolkit](https://www.ncbi.nlm.nih.gov/sra/docs/sradownload/#download-sequence-data-files-usi)
 
     - Change into your `week2/rawdata` directory
-    - Download dataset using `fasterq-dump -p ERR8562478`
+    - Download dataset using `fasterq-dump -p ERR8562476`
         - If not available, run `conda install sra-tools`
-    - Confirm that `ERR8562478.fastq` has 404400 lines
+    - Confirm that `ERR8562476.fastq` has 137436 lines
 
     Map reads to genome
 
     - Create and work in `week2/longreads`
     - Run `minimap2` with the following [arguments](https://github.com/lh3/minimap2#general-usage)
         - If not available, run `conda install minimap2`
-        - Input/Output option to output in the SAM format
+        - Input/Output option to output in the SAM format ([default is PAF format](https://github.com/lh3/minimap2/blob/master/README.md#general-usage))
         - Preset option to map Nanopore reads
         - sacCer3.fa as the target.fa
-        - ERR8562478.fastq as the query.fa
+        - ERR8562476.fastq as the query.fa
         - Redirecting output to a file named `longreads.sam`
     - Sort .sam into .bam file and index
     - Save the output of samtools idxstats as longreads.idxstats
