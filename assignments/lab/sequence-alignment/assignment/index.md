@@ -174,7 +174,7 @@ marker                 A01_01  A01_02
     - Create and work in `week2/longreads`
     - Run `minimap2` with the following [arguments](https://github.com/lh3/minimap2#general-usage)
         - If not available, run `conda install minimap2`
-        - Input/Output option to output in the SAM format ([default is PAF format](https://github.com/lh3/minimap2/blob/master/README.md#general-usage))
+        - Input/Output option to output in the SAM format ([default is PAF format](https://github.com/lh3/minimap2/blob/master/README.md#general))
         - Preset option to map Nanopore reads
         - sacCer3.fa as the target.fa
         - ERR8562476.fastq as the query.fa
