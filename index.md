@@ -84,8 +84,18 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 ### Project Work
 
-<!-- - See [Project Work Guide](https://docs.google.com/document/d/1iiHjieL_Kfr8WvNRpfkAjpvDmNfOiYFrmIHO2_Q3eLE) for deadlines and deliverables -->
+See [Project Work Guide](webpages/project-work.html) for more details
 
+| Deadline  | Assignment             | Reference       |
+| :-------: | :--------------------: | :-------------: |
+| 9/19      | Project Topics         | [Submission Form](https://docs.google.com/forms/d/e/1FAIpQLScMqZHoMmYUJJMJTj8YkJwIFXEDMTjvU1Fo6OzFE-SbCqqqTw/viewform) |
+| 9/22 - 26 | Instructor/TA Feedback | Timeful         |
+| 10/3      | Proposal               |                 |
+| 10/24     | Check-in #1            |                 |
+| 11/7      | Peer Review            |                 |
+| 11/21     | Check-in #2            |                 |
+| 12/5      | Final Presentation     | [Shared Drive](https://drive.google.com/drive/folders/1LwOwKdzwD9tg5JUNxdHg8f_7kHPEIqQc)    |
+{:.table.table-striped.well}
 
 Resources
 ---

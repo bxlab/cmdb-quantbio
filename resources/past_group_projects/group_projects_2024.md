@@ -1,21 +1,4 @@
-# Project Work
-
-## Data Repositories
-
-Here are some data repositories that may contain datasets of interest
-
-- [SRA](https://www.ncbi.nlm.nih.gov/sra) -- NCBI Sequence Read Archive
-- [GEO](https://www.ncbi.nlm.nih.gov/geo) -- NCBI Gene Expression Omnibus
-- [1KGP](https://www.internationalgenome.org) -- The 1000 Genomes Project
-- [CaeNDR](https://caendr.org) -- The Caenorhabditis Natural Diversity Resource
-- [GTEx](https://gtexportal.org) -- The Genotype-Tissue Expression Project
-- [recount3](https://rna.recount.bio) -- recount3: uniformly processed RNA-seq
-- [cellxgene](https://cellxgene.cziscience.com) -- Single-cell datasets
-- [IDR](https://idr.openmicroscopy.org) -- The Image Data Resource
-- [Allen Cell](https://allencell.org) -- Allen Cell Collection
-- [Napari List](https://github.com/napari/docs/blob/main/docs/further-resources/sample_data.md) -- Public sample image databases across various imaging modalities
-
-## QB24 Group Projects
+# QB24 Group Projects
 
 Here is a sampling of projects that students have undertaken from years past. This should give you an idea of the types of topics and scope that we are looking for in the small-group projects.
 
