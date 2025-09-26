@@ -59,6 +59,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 ### Logistics
 - [Syllabus](resources/syllabi/lab/index.html)
+- [Announcements](https://docs.google.com/presentation/d/1iwU8PE--yItXZ4ZezarbLvpJjy0r3G0zVwROj8i6-oA)
 - This one day a week course builds upon the foundations of Quantitative Biology Bootcamp, reinforcing and expanding upon mathematical and computational methods for analysis of biological data.
 - In person, Carnegie Rose Auditorium
 - 10:00 - 12:30 pm, Fridays
