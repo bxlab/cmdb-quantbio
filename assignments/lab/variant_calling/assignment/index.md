@@ -72,7 +72,7 @@ You will be creating figures that explore the following features of the data:
 - The allele frequency spectrum of the discovered variants
 - The distribution of read depth across sample genotypes
 
-Create an empty `ex1.py` script now where you'll be doing the analyses in the next steps.<br><br>
+Create an empty `ex2.py` script now where you'll be doing the analyses in the next steps.<br><br>
 
 #### **Step 2.1**: Parse the VCF file
 
