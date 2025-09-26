@@ -8,6 +8,8 @@ For many DNA-based applications, a next step would be to identify sites where sa
 
 As with part of last week's lab, you will work with Illumina short-read sequencing data from a cross between a lab strain of *Saccharomyces cerevisiae* and a wine strain, as described in the paper: ["Finding the sources of missing heritability in a yeast cross"](http://www.nature.com/nature/journal/v494/n7436/full/nature11867.html). Diploid offspring from this cross were sporulated, and a colony from one haploid spore from each tetrad was sequenced. Thus, the data represent *segregants*, which are haploid whose genomes resemble a mosaic of the two parental strains.
 
+![by_x_rm](by_x_rm.jpg)
+
 We have preprocessed the sequencing reads and aligned them to the yeast reference genome (sacCer3). You will begin at the stage of **variant discovery and exploratory analysis**, then move to **ancestry inference**, and finally implement a simple method to detect **meiotic crossovers**.
 
 ---
