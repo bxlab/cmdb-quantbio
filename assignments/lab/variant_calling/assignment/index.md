@@ -143,16 +143,13 @@ for each line in the VCF file:
     if line starts with "#":
         skip it, as these are metadata
     
-    # split the line into fields by tab
+    # split the line into fields by tab, then
     chrom = fields[0]
     pos   = fields[1]
     
-    # FORMAT field tells us what each column means (GT:GQ:DP:...)
-    format_field = fields[8]
-    
     # for each sample in sample_ids:
         # get the sample's data from fields[9], fields[10], ...
-        # genotype = first value before ":" in that sample's data
+        # genotypes are represented by the first value before ":" in that sample's data
         # if genotype is "0" then print "0"
         # if genotype is "1" then print "1"
         # otherwise skip
