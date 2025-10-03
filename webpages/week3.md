@@ -2,7 +2,7 @@
 
 Assignment Date: Friday, Sept. 26, 2025
 
-Due Date: Friday, Oct. 3, 2025
+Due Date: Friday, Oct. 10, 2025
 
 ## Lecture Slides
 
