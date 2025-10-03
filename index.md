@@ -71,7 +71,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 | :---: | :---: | :---:           | :---:                                           | :---:                 |
 | 1     | 9/12  | Frederick Tan   | [Genome Content](webpages/week1.html)           | 10/3                  |
 | 2     | 9/19  | Frederick Tan   | [Sequence Alignment](webpages/week2.html)       | 10/10                 |
-| 3     | 9/26  | Rajiv McCoy     | [Variant Discovery and Genotyping](webpages/week3.html) | 10/17         |
+| 3     | 9/26  | Rajiv McCoy     | [Variant Discovery and Genotyping](webpages/week3.html) | 10/24        |
 {:.table.table-striped.well}
 
 <!-- |  1   | 9/13  | Mike Schatz     | [Genome assembly](webpages/week1.html)          | 10/4                  |
