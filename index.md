@@ -72,10 +72,10 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 | 1     | 9/12  | Frederick Tan   | [Genome Content](webpages/week1.html)           | 10/3                  |
 | 2     | 9/19  | Frederick Tan   | [Sequence Alignment](webpages/week2.html)       | 10/10                 |
 | 3     | 9/26  | Rajiv McCoy     | [Variant Discovery and Genotyping](webpages/week3.html) | 10/24        |
+| 4     | 10/3  | Frederick Tan   | Project Work + [HPC Demo](https://docs.google.com/presentation/d/1q5nPhG9J7AsXyzaL4-aWFABpDclASqKVViYqqVBydVg)                         | N/A                   |
 {:.table.table-striped.well}
 
 <!-- |  1   | 9/13  | Mike Schatz     | [Genome assembly](webpages/week1.html)          | 10/4                  |
-|  4   | 10/4  | Frederick Tan   | Project Work + HPC Demo                         | N/A                   |
 |  5   | 10/11  | Mike Sauria    |  [Bulk RNA-seq, PCA, & Clustering](webpages/week5.html) | 11/01 |
 |  6   | 10/18  | N/A    |  Departmental Retreat | N/A |
 |  7   | 10/25  | Rajiv McCoy    |  [Bulk RNA-seq, PCA, & Clustering](webpages/week7.html) | 11/15 |
