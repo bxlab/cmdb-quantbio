@@ -196,7 +196,7 @@ In R, create a histogram showing the number of crossovers per segregant across t
 2. Python script to produce the input necessary for plots in Exercise 2 (`ex2.py`)  
 2. R script to generate figures for Exercise 1 (with answers to written questions as comments; `ex2.R`)  
 3. Python script to perform ancestry inference in Exercise 3 (`ex3.py`)  
-4. R script to generate ancestry figures in Exercise 3 (`ex3.py`)  
+4. R script to generate ancestry figures in Exercise 3 (`ex3.R`)  
 5. Optional: Python script to detect crossovers in Exercise 4 (`ex4.py`)  
 6. Optional: R script to generate the crossover histogram (`ex4.R`)
 7. Figures as PNGs  
