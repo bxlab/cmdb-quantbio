@@ -2,7 +2,7 @@
 
 ## Assignment Overview
 
-The goal of today's lab is to use linear regression and related statistical methods to investigate the relationship between paternal age, maternal age, and the number of de novo mutations (DNMs) in a proband (offspring). Today's assignment will build familiarity with manipulating tabular datasets containing mixed data types using the **tidyverse** in **R**. Specifically, you will import a table of de novo mutations and manipulate it to calculate the number of maternal and paternal DNMs per individual. Yo...
+The goal of today's lab is to use linear regression and related statistical methods to investigate the relationship between paternal age, maternal age, and the number of de novo mutations (DNMs) in a proband (offspring). Today's assignment will build familiarity with manipulating tabular datasets containing mixed data types using the **tidyverse** in **R**. Specifically, you will import a table of de novo mutations and manipulate it to calculate the number of maternal and paternal DNMs per individual. You will then fit and interpret linear models with **stats::lm** (and optionally **stats::glm** for Poisson regression), and tidy results with **broom**.
 
 ## Data
 
@@ -21,7 +21,7 @@ Before beginning the assignment, take a quick look at both files (e.g., with `le
 
 ## Getting started (R packages)
 
-You’ll use the following packages. Install once if needed, then load:
+Load the tidyverse and broom packages.
 
 ```r
 ```
@@ -48,7 +48,7 @@ Create a **per-proband** summary with counts of maternally and paternally inheri
 
 #### **Step 1.3 — Load parental ages**
 
-Load `aau1043_parental_age.csv`. Setting the proband ID as a key (or ensuring it merges cleanly) will simplify the join.
+Load `aau1043_parental_age.csv`.
 
 ```r
 ```
@@ -74,16 +74,19 @@ Use your merged data frame for the following. All plots should be clearly labele
 ```r
 ```
 
-#### **Step 2.2 — OLS: maternal age → maternal DNMs**
+#### **Step 2.2 — OLS: maternal age vs. maternal DNMs**
 
-Fit a simple linear regression model relating maternal age to the number of maternal de novo mutations and report effect size and significance in your `README.md`.
+Fit a simple linear regression model relating maternal age to the number of maternal de novo mutations. 
+
+In `README.md`, answer: 1. What is the "size" (i.e., slope) of this relationship? Interpret the slope in plain language. Does it match your plot? 2. Is the relationship significant? How do you know? Explain the p-value in plain but precise language.
+
 
 ```r
 ```
 
-#### **Step 2.3 — OLS: paternal age → paternal DNMs**
+#### **Step 2.3 — OLS: paternal age vs. paternal DNMs**
 
-Repeat for paternal age vs. paternal DNMs.
+Repeat the step above but for paternal age vs. paternal DNMs.
 
 ```r
 ```
@@ -97,7 +100,7 @@ Use the paternal regression model to predict the expected number of paternal DNM
 
 #### **Step 2.5 — Compare distributions of maternal vs. paternal DNMs**
 
-Plot both distributions in the **same axes** as semi-transparent histograms; save as `ex2_c.png`.
+Plot both distributions on the **same axes** as semi-transparent histograms; save as `ex2_c.png`.
 
 ```r
 ```
@@ -122,7 +125,7 @@ Choose a dataset from the bottom of the [TidyTuesday README](https://github.com/
 
 #### **Step 4.2 — Explore and visualize**
 
-Generate figures and note any interesting patterns; save figures as `ex4_<something>.png`.
+Generate figures and note any interesting patterns in `README.md`; save figures as `ex4_<something>.png`.
 
 #### **Step 4.3 — Pose and test a linear-model hypothesis**
 
