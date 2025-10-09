@@ -117,17 +117,17 @@ Note that the paired t-test is equivalent to using the difference between the ma
 
 ------------------------------------------------------------------------
 
-### Exercise 4: Explore a new dataset
+### Exercise 3: Explore a new dataset
 
-#### **Step 4.1 — Pick a TidyTuesday dataset**
+#### **Step 3.1 — Pick a TidyTuesday dataset**
 
 Choose a dataset from the bottom of the [TidyTuesday README](https://github.com/rfordatascience/tidytuesday). Record which one you chose in `README.md`.
 
-#### **Step 4.2 — Explore and visualize**
+#### **Step 3.2 — Explore and visualize**
 
 Generate figures and note any interesting patterns in `README.md`; save figures as `ex4_<something>.png`.
 
-#### **Step 4.3 — Pose and test a linear-model hypothesis**
+#### **Step 3.3 — Pose and test a linear-model hypothesis**
 
 State a hypothesis, fit a linear model, evaluate fit, and report results in `README.md`.
 
