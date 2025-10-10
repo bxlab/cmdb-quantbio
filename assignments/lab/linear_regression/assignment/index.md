@@ -154,7 +154,7 @@ State a hypothesis, fit a linear model, evaluate fit, and report results in `REA
 - Step 2.3: Fit and interpret paternal OLS model (**1 pt**)
 - Step 2.4: Predict paternal DNMs for age 50.5 (**0.5 pt**)
 - Step 2.5: Plot distributions of maternal vs. paternal DNMs (**1 pt**)
-- Step 2.6: Paired t-test (`t.test` or `lm(diff ~ 1)`) and interpret results (**1.5 pts**)
+- Step 2.6: Paired t-test (`t.test` and `lm(diff ~ 1)`) and interpret results (**1.5 pts**)
 
 ### **Exercise 3 — Explore a New Dataset (2 points)**
 - Step 3.1: Choose and document TidyTuesday dataset (**0.5 pt**)
