@@ -74,15 +74,13 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 | 3     | 9/26  | Rajiv McCoy     | [Variant Discovery and Genotyping](webpages/week3.html) | 10/24        |
 | 4     | 10/3  | Frederick Tan   | Project Work + [HPC Demo](https://docs.google.com/presentation/d/1q5nPhG9J7AsXyzaL4-aWFABpDclASqKVViYqqVBydVg)                         | N/A                   |
 | 5     | 10/10 | Rajiv McCoy     |  [Linear Regression](webpages/week5.html)       | 10/31 |
+| 6     | 10/17 |                 | Departmental Retreat                            |                       |
+| 7     | 10/24 | Mike Sauria     | Unsupervised Learning                           | 11/14                 |
+| 8     | 10/31 | Rajiv McCoy     | Simulations                                     | 11/21                 |
+| 9     | 11/7  |                 | Project Work + Demo                             |                       |
+| 10    | 11/14 | Mike Sauria     | Sequence Search                                 | 12/5                  |
+| 11    | 11/21 | Mike Schatz     | Genome Assembly                                 | 12/12                 |
 {:.table.table-striped.well}
-
-<!-- |  1   | 9/13  | Mike Schatz     | [Genome assembly](webpages/week1.html)          | 10/4                  |
-|  5   | 10/11  | Mike Sauria    |  [Bulk RNA-seq, PCA, & Clustering](webpages/week5.html) | 11/01 |
-|  6   | 10/18  | N/A    |  Departmental Retreat | N/A |
-|  7   | 10/25  | Rajiv McCoy    |  [Bulk RNA-seq, PCA, & Clustering](webpages/week7.html) | 11/15 |
-|  8   | 11/1  | Frederick Tan  |  [Single cell RNA-seq Analysis with Bioconductor](webpages/week8.html) | 11/22 |
-|  9   | 11/8  | Frederick Tan   | Project Work + Notebooks Demo                   | N/A                   |
-|  10  | 11/15 | Mike Sauria     | [Image processing](webpages/week10.html)        | 12/02                 | -->
 
 ### Project Work
 
@@ -95,7 +93,7 @@ See [Project Work Guide](webpages/project-work.html) for more details
 | 10/3      | Proposal               |                 |
 | 10/24     | Check-in #1            |                 |
 | 11/7      | Peer Review            |                 |
-| 11/21     | Check-in #2            |                 |
+| 11/14     | Check-in #2            |                 |
 | 12/5      | Final Presentation     | [Shared Drive](https://drive.google.com/drive/folders/1LwOwKdzwD9tg5JUNxdHg8f_7kHPEIqQc)    |
 {:.table.table-striped.well}
 
