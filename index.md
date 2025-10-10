@@ -73,6 +73,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 | 2     | 9/19  | Frederick Tan   | [Sequence Alignment](webpages/week2.html)       | 10/10                 |
 | 3     | 9/26  | Rajiv McCoy     | [Variant Discovery and Genotyping](webpages/week3.html) | 10/24        |
 | 4     | 10/3  | Frederick Tan   | Project Work + [HPC Demo](https://docs.google.com/presentation/d/1q5nPhG9J7AsXyzaL4-aWFABpDclASqKVViYqqVBydVg)                         | N/A                   |
+| 5     | 10/10 | Rajiv McCoy     |  [Linear Regression](webpages/week5.html)       | 10/31 |
 {:.table.table-striped.well}
 
 <!-- |  1   | 9/13  | Mike Schatz     | [Genome assembly](webpages/week1.html)          | 10/4                  |
