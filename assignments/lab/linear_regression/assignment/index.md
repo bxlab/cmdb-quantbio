@@ -1,5 +1,8 @@
 # Linear Regression
 
+**Deadline:** Monday, October 20\
+**Resubmission deadline:** Friday, October 31
+
 ## Assignment Overview
 
 The goal of today's lab is to use linear regression and related statistical methods to investigate the relationship between paternal age, maternal age, and the number of de novo mutations (DNMs) in a proband (offspring). Today's assignment will build familiarity with manipulating tabular datasets containing mixed data types using the **tidyverse** in **R**. Specifically, you will import a table of de novo mutations and manipulate it to calculate the number of maternal and paternal DNMs per individual. You will then fit and interpret linear models with **stats::lm** (and optionally **stats::glm** for Poisson regression), and tidy results with **broom**.
