@@ -1,4 +1,4 @@
-# Resources for the Linear Regression/Statistical Modelling Assignment
+# Resources for the Linear Regression Assignment
 
 **Date:** Friday, October 10\
 **Deadline:** Monday, October 20\
