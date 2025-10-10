@@ -1,5 +1,9 @@
 # Resources for the Linear Regression/Statistical Modelling Assignment
 
+**Date:** Friday, October 10\
+**Deadline:** Monday, October 20\
+**Resubmission deadline:** Friday, October 31
+
 ## Lecture Slides
 
 Lecture slides are available through google drive [here](https://docs.google.com/presentation/d/1S_cQxSfdBpt2lYqX-6s1m1tDnwEFhcvoVLcqY3W4ch0/edit?usp=sharing)
@@ -9,6 +13,9 @@ Lecture slides are available through google drive [here](https://docs.google.com
 The completed live-coding script is available [here](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/lab/linear_regression/livecoding_resources/live_coding.R)
 
 The `penguins.csv` file used in the live-coding is available by loading the `palmerpenguins` library or on the dropbox [here](https://www.dropbox.com/scl/fi/flfxjjmt1vc325d351yj9/penguins.csv?rlkey=s0yz11e6qbwvchbto29res4if&st=pgyj6ilp&dl=0)
+
+## Assignment
+[Homework Assignment](../assignments/lab/linear_regression/assignment/)
 
 ## External Data
 
