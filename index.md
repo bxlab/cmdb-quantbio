@@ -3,6 +3,48 @@ title: CMDB Quantitative Biology 2025
 layout: default
 ---
 
+## CMDB Quantitative Biology Lab 2025
+
+### Logistics
+- [Syllabus](resources/syllabi/lab/index.html)
+- [Announcements](https://docs.google.com/presentation/d/1iwU8PE--yItXZ4ZezarbLvpJjy0r3G0zVwROj8i6-oA)
+- This one day a week course builds upon the foundations of Quantitative Biology Bootcamp, reinforcing and expanding upon mathematical and computational methods for analysis of biological data.
+- In person, Carnegie Rose Auditorium
+- 10:00 - 12:30 pm, Fridays
+- Assignments must be submitted within one week to your `qb25-answers` repository
+
+### Schedule
+
+| Week  | Date  | Instructor      | Topic                                           | Due Date | Resubmission Deadline |
+| :---: | :---: | :---:           | :---:                                           | :---:    | :---:                 |
+| 1     | 9/12  | Frederick Tan   | [Genome Content](webpages/week1.html)           | 9/19     | 10/3                  |
+| 2     | 9/19  | Frederick Tan   | [Sequence Alignment](webpages/week2.html)       | 9/26     | 10/10                 |
+| 3     | 9/26  | Rajiv McCoy     | [Variant Discovery and Genotyping](webpages/week3.html) | 10/10    | 10/24                 |
+| 4     | 10/3  | Frederick Tan   | Project Work + [HPC Demo](https://docs.google.com/presentation/d/1q5nPhG9J7AsXyzaL4-aWFABpDclASqKVViYqqVBydVg)                         |          |                       |
+| 5     | 10/10 | Rajiv McCoy     |  [Linear Regression](webpages/week5.html)       | 10/20    | 10/31 |
+| 6     | 10/17 |                 | Departmental Retreat                            |          |                       |
+| 7     | 10/24 | Mike Sauria     | Unsupervised Learning                           | 10/31    | 11/14                 |
+| 8     | 10/31 | Rajiv McCoy     | Simulations                                     | 11/7     | 11/21                 |
+| 9     | 11/7  |                 | Project Work + Demo                             |          |                       |
+| 10    | 11/14 | Mike Sauria     | Sequence Search                                 | 11/21    | 12/5                  |
+| 11    | 11/21 | Mike Schatz     | Genome Assembly                                 | 12/1     | 12/12                 |
+{:.table.table-striped.well}
+
+### Project Work
+
+See [Project Work Guide](webpages/project-work.html) for more details
+
+| Deadline  | Assignment             | Reference       |
+| :-------: | :--------------------: | :-------------: |
+| 9/19      | Project Topics         | [Submission Form](https://docs.google.com/forms/d/e/1FAIpQLScMqZHoMmYUJJMJTj8YkJwIFXEDMTjvU1Fo6OzFE-SbCqqqTw/viewform) |
+| 9/22 - 26 | Instructor/TA Feedback | Timeful         |
+| 10/3      | Proposal               |                 |
+| 10/24     | Check-in #1            |                 |
+| 11/7      | Peer Review            |                 |
+| 11/14     | Check-in #2            |                 |
+| 12/5      | Final Presentation     | [Shared Drive](https://drive.google.com/drive/folders/1LwOwKdzwD9tg5JUNxdHg8f_7kHPEIqQc)    |
+{:.table.table-striped.well}
+
 ## CMDB Quantitative Biology Bootcamp 2025
 
 ### Logistics
@@ -54,71 +96,3 @@ Resources for each day (links for assignment, any relevant recordings or slides,
         - k-mer matching
 
 -->
-
-## CMDB Quantitative Biology Lab 2025
-
-### Logistics
-- [Syllabus](resources/syllabi/lab/index.html)
-- [Announcements](https://docs.google.com/presentation/d/1iwU8PE--yItXZ4ZezarbLvpJjy0r3G0zVwROj8i6-oA)
-- This one day a week course builds upon the foundations of Quantitative Biology Bootcamp, reinforcing and expanding upon mathematical and computational methods for analysis of biological data.
-- In person, Carnegie Rose Auditorium
-- 10:00 - 12:30 pm, Fridays
-- Assignments must be submitted within one week to your `qb25-answers` repository
-
-### Schedule
-
-| Week  | Date  | Instructor      | Topic                                           | Resubmission Deadline |
-| :---: | :---: | :---:           | :---:                                           | :---:                 |
-| 1     | 9/12  | Frederick Tan   | [Genome Content](webpages/week1.html)           | 10/3                  |
-| 2     | 9/19  | Frederick Tan   | [Sequence Alignment](webpages/week2.html)       | 10/10                 |
-| 3     | 9/26  | Rajiv McCoy     | [Variant Discovery and Genotyping](webpages/week3.html) | 10/24        |
-| 4     | 10/3  | Frederick Tan   | Project Work + [HPC Demo](https://docs.google.com/presentation/d/1q5nPhG9J7AsXyzaL4-aWFABpDclASqKVViYqqVBydVg)                         | N/A                   |
-| 5     | 10/10 | Rajiv McCoy     |  [Linear Regression](webpages/week5.html)       | 10/31 |
-| 6     | 10/17 |                 | Departmental Retreat                            |                       |
-| 7     | 10/24 | Mike Sauria     | Unsupervised Learning                           | 11/14                 |
-| 8     | 10/31 | Rajiv McCoy     | Simulations                                     | 11/21                 |
-| 9     | 11/7  |                 | Project Work + Demo                             |                       |
-| 10    | 11/14 | Mike Sauria     | Sequence Search                                 | 12/5                  |
-| 11    | 11/21 | Mike Schatz     | Genome Assembly                                 | 12/12                 |
-{:.table.table-striped.well}
-
-### Project Work
-
-See [Project Work Guide](webpages/project-work.html) for more details
-
-| Deadline  | Assignment             | Reference       |
-| :-------: | :--------------------: | :-------------: |
-| 9/19      | Project Topics         | [Submission Form](https://docs.google.com/forms/d/e/1FAIpQLScMqZHoMmYUJJMJTj8YkJwIFXEDMTjvU1Fo6OzFE-SbCqqqTw/viewform) |
-| 9/22 - 26 | Instructor/TA Feedback | Timeful         |
-| 10/3      | Proposal               |                 |
-| 10/24     | Check-in #1            |                 |
-| 11/7      | Peer Review            |                 |
-| 11/14     | Check-in #2            |                 |
-| 12/5      | Final Presentation     | [Shared Drive](https://drive.google.com/drive/folders/1LwOwKdzwD9tg5JUNxdHg8f_7kHPEIqQc)    |
-{:.table.table-striped.well}
-
-Resources
----
-
-### Useful Goodies
-
-#### Unix and Git
-
-* [Unix Reference](resources/references/unix.html)
-* [Git Reference](resources/references/git.html)
-* [Git Recipes](resources/references/git_recipes.html)
-
-#### Python
-
-* [Python and Pandas Reference](resources/references/python.html)
-* [Plotting/Matplotlib Reference](resources/gallery/README.html)
-
-#### Helpful Documentation (external links)
-
-* [Matplotlib](http://matplotlib.org/api/pyplot_summary.html)
-* [Statsmodels](http://statsmodels.sourceforge.net/stable/)
-  - e.g. [ttest](http://statsmodels.sourceforge.net/stable/generated/statsmodels.stats.weightstats.ttest_ind.html)
-* [NumPy](http://docs.scipy.org/doc/numpy/reference/index.html#reference)
-* [Pandas](http://pandas.pydata.org/pandas-docs/stable/)
-  - e.g. [read_csv](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html?highlight=read_csv)
-
