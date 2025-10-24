@@ -16,18 +16,18 @@ layout: default
 ### Schedule
 
 | Week  | Date  | Instructor      | Topic                                           | Due Date | Resubmission Deadline |
-| :---: | :---: | :---:           | :---:                                           | :---:    | :---:                 |
-| 1     | 9/12  | Frederick Tan   | [Genome Content](webpages/week1.html)           | 9/19     | 10/3                  |
-| 2     | 9/19  | Frederick Tan   | [Sequence Alignment](webpages/week2.html)       | 9/26     | 10/10                 |
-| 3     | 9/26  | Rajiv McCoy     | [Variant Discovery and Genotyping](webpages/week3.html) | 10/10    | 10/24                 |
-| 4     | 10/3  | Frederick Tan   | Project Work + [HPC Demo](https://docs.google.com/presentation/d/1q5nPhG9J7AsXyzaL4-aWFABpDclASqKVViYqqVBydVg)                         |          |                       |
+| :---: | :---: | :---:           | :---:                                           | :---:    | :---: |
+| 1     | 9/12  | Frederick Tan   | [Genome Content](webpages/week1.html)           | 9/19     | 10/3  |
+| 2     | 9/19  | Frederick Tan   | [Sequence Alignment](webpages/week2.html)       | 9/26     | 10/10 |
+| 3     | 9/26  | Rajiv McCoy     | [Variant Discovery and Genotyping](webpages/week3.html) | 10/10    | 10/24 |
+| 4     | 10/3  | Frederick Tan   | Project Work + [HPC Demo](https://docs.google.com/presentation/d/1q5nPhG9J7AsXyzaL4-aWFABpDclASqKVViYqqVBydVg)                                       |          |       |
 | 5     | 10/10 | Rajiv McCoy     |  [Linear Regression](webpages/week5.html)       | 10/20    | 10/31 |
-| 6     | 10/17 |                 | Departmental Retreat                            |          |                       |
-| 7     | 10/24 | Mike Sauria     | Unsupervised Learning                           | 10/31    | 11/14                 |
-| 8     | 10/31 | Rajiv McCoy     | Simulations                                     | 11/7     | 11/21                 |
-| 9     | 11/7  |                 | Project Work + Demo                             |          |                       |
-| 10    | 11/14 | Mike Sauria     | Sequence Search                                 | 11/21    | 12/5                  |
-| 11    | 11/21 | Mike Schatz     | Genome Assembly                                 | 12/1     | 12/12                 |
+| 6     | 10/17 |                 | Departmental Retreat                            |          |       |
+| 7     | 10/24 | Mike Sauria     | [Unsupervised Learning](webpages/week6.html)    | 10/31    | 11/14 |
+| 8     | 10/31 | Rajiv McCoy     | Simulations                                     | 11/7     | 11/21 |
+| 9     | 11/7  |                 | Project Work + Demo                             |          |       |
+| 10    | 11/14 | Mike Sauria     | Sequence Search                                 | 11/21    | 12/   |
+| 11    | 11/21 | Mike Schatz     | Genome Assembly                                 | 12/1     | 12/   |
 {:.table.table-striped.well}
 
 ### Project Work

@@ -13,7 +13,7 @@ In today's assignment, you will be using unsupervised machine learning methods t
 
 ## Data
 
-The data you will be utilizing today were processed using the Nextflow RNA-seq pipeline utilizing Salmon and then normalized using a variance-stabilizing transformation in DESeq2/ You will be downloading a table of transformed gene expression values with one row per gene and one column per sample replicate (7 tissues x 3 replicates for 21 colunns).
+The data you will be utilizing today were processed using the Nextflow RNA-seq pipeline utilizing Salmon and then normalized using a variance-stabilizing transformation in DESeq2. You will be downloading a table of transformed gene expression values with one row per gene and one column per sample replicate (7 tissues x 3 replicates for 21 colunns).
 
 To get the data, download them from [here](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/lab/unsupervised_learning/extra_data/read_matrix.tsv.gz). You can use the following commands to download and unpack the data:
 
