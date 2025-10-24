@@ -23,7 +23,7 @@ layout: default
 | 4     | 10/3  | Frederick Tan   | Project Work + [HPC Demo](https://docs.google.com/presentation/d/1q5nPhG9J7AsXyzaL4-aWFABpDclASqKVViYqqVBydVg)                                       |          |       |
 | 5     | 10/10 | Rajiv McCoy     |  [Linear Regression](webpages/week5.html)       | 10/20    | 10/31 |
 | 6     | 10/17 |                 | Departmental Retreat                            |          |       |
-| 7     | 10/24 | Mike Sauria     | [Unsupervised Learning](webpages/week6.html)    | 10/31    | 11/14 |
+| 7     | 10/24 | Mike Sauria     | [Unsupervised Learning](webpages/week7.html)    | 10/31    | 11/14 |
 | 8     | 10/31 | Rajiv McCoy     | Simulations                                     | 11/7     | 11/21 |
 | 9     | 11/7  |                 | Project Work + Demo                             |          |       |
 | 10    | 11/14 | Mike Sauria     | Sequence Search                                 | 11/21    | 12/   |

@@ -1,4 +1,4 @@
-# PCA and K-means clustering
+# Unsupervised learning
 
 ## Assignment Overview
 
