@@ -26,8 +26,8 @@ layout: default
 | 7     | 10/24 | Mike Sauria     | [Unsupervised Learning](webpages/week7.html)    | 10/31    | 11/14 |
 | 8     | 10/31 | Rajiv McCoy     | Simulations                                     | 11/7     | 11/21 |
 | 9     | 11/7  |                 | Project Work + Demo                             |          |       |
-| 10    | 11/14 | Mike Sauria     | Sequence Search                                 | 11/21    | 12/   |
-| 11    | 11/21 | Mike Schatz     | Genome Assembly                                 | 12/1     | 12/   |
+| 10    | 11/14 | Mike Sauria     | Sequence Search                                 | 11/21    | 12/5  |
+| 11    | 11/21 | Mike Schatz     | Genome Assembly                                 | 12/1     | 12/12 |
 {:.table.table-striped.well}
 
 ### Project Work
