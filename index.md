@@ -40,7 +40,7 @@ See [Project Work Guide](webpages/project-work.html) for more details
 | 9/22 - 26 | Instructor/TA Feedback | Timeful         |
 | 10/3      | Proposal               |                 |
 | 10/24     | Check-in #1            |                 |
-| 11/7      | Peer Review            |                 |
+| 11/7      | Peer Review            | [Sign Up](https://docs.google.com/spreadsheets/d/1_u-56_fz7LTU6f0VZOynwe-VzQ1YtGhuAff8VPN7evw)         |
 | 11/14     | Check-in #2            |                 |
 | 12/5      | Final Presentation     | [Shared Drive](https://drive.google.com/drive/folders/1LwOwKdzwD9tg5JUNxdHg8f_7kHPEIqQc)    |
 {:.table.table-striped.well}
