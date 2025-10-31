@@ -111,7 +111,9 @@ vsd_df <- bind_cols(metadata_df, vsd_df)
 For example, we can test for differential expression of the gene WASH7P by running the following code:
 
 ```r
-
+m1 <- lm(formula = WASH7P ~ DTHHRDY + AGE + SEX, data = vsd_df) %>%
+  summary() %>%
+  tidy()
 ```
 Does WASH7P show significant evidence of sex-differential expression (and if so, in which direction)? Explain your answer.
 
@@ -138,7 +140,8 @@ Now apply the `DESeq()` function to fit the regression model that you previously
 Results of this differential expression analysis can be extracted using the `results()` function. By default, this function will focus on whatever variable was specified last in your `design =` formula, but while controlling for all of the other covariates listed in the model formula. You can override the default behavior and tell `results()` to focus on any variable of interest that was included in that formula. For example, if my original model formula was `design = ~ CONDITION + SMOKING_STATUS`, and `CONDITION` had the levels `treatment` and `control`, I could extract differential expression results for `CONDITION` (controlling for `SMOKING_STATUS`) and store it in a tibble using the following code.
 
 ```r
-
+res <- results(dds, name = "CONDITION_treatment_vs_control")  %>%
+  as_tibble(rownames = "GENE_NAME")
 ```
 
 Extract the differential expression results for the variable SEX.
@@ -237,3 +240,4 @@ Output this plot to a `.png` that you will upload with your assignment.<br><br>
 2. Use DESeq2 to perform a test of differential expression with respect to age. How many genes are differentially expressed? How do you interpret genes with positive versus negative associations?
 
 3. Try applying functional enrichment analysis to ask if your genes are overrepresented for some particular functional category. The packages `fgsea` and `msigdbr` provide one nice approach (see tutorial here: https://cran.r-project.org/web/packages/msigdbr/vignettes/msigdbr-intro.html). 
+
