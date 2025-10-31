@@ -3,7 +3,7 @@ library(broom)
 library(DESeq2)
 
 # set your working directory to where your data and output will be stored
-setwd("~/Dropbox/teaching/2024_qblab/differential_expression/")
+setwd("~/Dropbox/teaching/2025_qblab/differential_expression/")
 
 # load the gene expression counts
 counts_df <- read_delim("pasilla/pasilla_gene_counts.tsv")
