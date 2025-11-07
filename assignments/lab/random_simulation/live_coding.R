@@ -68,7 +68,7 @@ for (i in 1:perm_replicates) {
 p_one_sided <- mean(perm_diffs >= obs_diff)
 p_one_sided
 
-# Two-sided p-value (optional)
+# Two-sided p-value (male > female or female > male)
 p_two_sided <- mean(abs(perm_diffs) >= abs(obs_diff))
 p_two_sided
 
