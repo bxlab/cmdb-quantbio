@@ -6,7 +6,7 @@ Due Date: Monday, Nov. 21, 2025
 
 ## Lecture -- Mike Sauria
 
-[Lecture Slides](https://docs.google.com/presentation/d/1pf-ZRerG1jzXrZfYkObE_qpXC18lPE3Q-2RaZrLxuPU/edit?usp=sharing)
+[Lecture Slides](https://docs.google.com/presentation/d/1a3_0FSH_HJGHEYkePyl60jfzWwvvdqh3lSkHGvB78Ec/edit?usp=sharing)
 
 ## Live-coding
 
