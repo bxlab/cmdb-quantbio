@@ -5,7 +5,7 @@ Due Date: Monday, December 1, 2025
 
 ## Lecture -- Mike Schatz
 
-[Lecture Slides](https://www.dropbox.com/scl/fi/2oxr3sbmfthemrmb8ne90/2024.09.12.QBLab.GenomeSequencing.pdf?rlkey=9dg26etap0ukyx3wney65n5s0&e=1&dl=0)
+[Lecture Slides](https://www.dropbox.com/scl/fi/e8p9r0d36qavh8fkxt15r/2025.11.21.QBLab.Assembly.pptx?rlkey=cc7q35t8zgqpljbv8feg110e7&dl=0)
 
 ## Homework Assignment
 
