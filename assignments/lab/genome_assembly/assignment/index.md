@@ -41,7 +41,7 @@ xs = list(range(0, maxcoverage+1))
 poisson_estimates = get_poisson_estimates(xs, lambda = coverage)
 
 ## Get normal pdf at each of these (i.e. the density between each adjacent pair of points)
-normal_estimates = get_normal_estimates(xs, mean = genome_coverage, stddev = sqrt(genome_coverage))
+normal_estimates = get_normal_estimates(xs, mean = coverage, stddev = sqrt(coverage))
 ​
 ## now plot the histogram and probability distributions
 ...

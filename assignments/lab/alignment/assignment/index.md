@@ -9,7 +9,7 @@ The goal of today's lab is to implement the Needleman-Wunsch algorithm we discus
 All the data you need for this assignment is in a zipped archive on github. You can download the data into your current directory with the following command:
 
 ```bash
-wget https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/lab/alignment/extra_data/needleman-wunsch.tar.gz.md
+wget https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/lab/alignment/extra_data/needleman-wunsch.tar.gz
 ```
 
 After downloading the zipped folder, you'll need to extract it with `tar -zxvf <filename.tar.gz>`. You should get 5 files:
