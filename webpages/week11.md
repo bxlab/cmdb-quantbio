@@ -1,17 +1,14 @@
-# QuantLab Week 11 -- Image Classification
+# QuantLab Week 11 - Genome Assembly
+Assignment Date: Friday, November 21, 2025
 
-Assignment Date: Friday, Nov. 22, 2024
+Due Date: Monday, December 1, 2025
 
-Due Date: Friday, Nov. 29, 2024
+## Lecture -- Mike Schatz
 
-## Code Along
-
-[Slidedeck](https://docs.google.com/presentation/d/13INHTu6M3V7LVFD0q0PNbKnX1QNOjOJCIuzcoWUnpeQ)
-
-The code along notebooks can be found [here](https://github.com/bxlab/qbb2024/blob/main/pytorch/analysis.ipynb) and [here](https://github.com/bxlab/qbb2024/blob/main/bioimage/analysis.ipynb)
+[Lecture Slides](https://www.dropbox.com/scl/fi/2oxr3sbmfthemrmb8ne90/2024.09.12.QBLab.GenomeSequencing.pdf?rlkey=9dg26etap0ukyx3wney65n5s0&e=1&dl=0)
 
 ## Homework Assignment
 
-Complete the homework assignment in your `week11` submission directory in your `qbb2024-answers`.
+Before you do anything else, make a `week11` directory in your `qbb2025-answers` directory for this assignment. This is where you will be putting and uploading all of your code/plots/etc. for this assignment.
 
-[Homework Assignment](../assignments/lab/image-classification/assignment/)
+[Homework assignment](../assignments/lab/genome_assembly/assignment/index.md) 
