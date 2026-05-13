@@ -1,4 +1,4 @@
-This public repository hosts materials for the Quantitative Biology Bootcamp and Fall Lab course (2023). It contains all materials necessary to render the course website, as well as any materials students will need for lectures and assignments.
+This public repository hosts materials for the Quantitative Biology Bootcamp and Fall Lab course. It contains all materials necessary to render the course website, as well as any materials students will need for lectures and assignments.
 
 The website is located at [bxlab.github.io/cmdb-quantbio](https://bxlab.github.io/cmdb-quantbio/) and rendered from the root directory of the `bxlab/cmdb-quantbio` repository. Materials necessary for **website content rendering**:
 
