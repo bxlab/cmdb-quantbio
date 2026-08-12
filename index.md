@@ -1,9 +1,9 @@
 ---
-title: CMDB Quantitative Biology 2025
+title: CMDB Quantitative Biology 2026
 layout: default
 ---
 
-## CMDB Quantitative Biology Lab 2025
+<!-- ## CMDB Quantitative Biology Lab 2025
 
 ### Logistics
 - [Syllabus](resources/syllabi/lab/index.html)
@@ -43,18 +43,18 @@ See [Project Work Guide](webpages/project-work.html) for more details
 | 11/7      | Peer Review            | [Sign Up](https://docs.google.com/spreadsheets/d/1_u-56_fz7LTU6f0VZOynwe-VzQ1YtGhuAff8VPN7evw)         |
 | 11/14     | Check-in #2            |                 |
 | 12/5      | Final Presentation     | [Shared Drive](https://drive.google.com/drive/folders/1LwOwKdzwD9tg5JUNxdHg8f_7kHPEIqQc)    |
-{:.table.table-striped.well}
+{:.table.table-striped.well} -->
 
-## CMDB Quantitative Biology Bootcamp 2025
+## CMDB Quantitative Biology Bootcamp 2026
 
 ### Logistics
-Prep Work: [zero-to-python](https://genomicscafe.github.io/zero-to-python) [Software Carpentry]( http://swcarpentry.github.io/python-novice-inflammation )
+ Prep Work: [zero-to-python](https://genomicscafe.github.io/zero-to-python) <!--[Software Carpentry]( http://swcarpentry.github.io/python-novice-inflammation ) -->
 
 - [Syllabus](resources/syllabi/bootcamp/index.html)
 - Four day intensive bootcamp to introduce students to fundamentals in quantitative and computational biology 
 - <span class="text-danger">**NO** other classes, meetings, lab work, lab meetings, etc.</span>
-- In person, Carnegie Rose Auditorium
-- Please arrive by 8:45am ET
+- In person, UTL 289
+- Please arrive by 8:30am ET
 - Lunch and an afternoon snack will be provided
 <!-- - Zoom meeting ID (check Slack for passcode or full link to join): 929 0650 3074 --> 
 <br /><br />
