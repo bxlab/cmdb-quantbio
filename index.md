@@ -50,11 +50,11 @@ See [Project Work Guide](webpages/project-work.html) for more details
 ### Logistics
  Prep Work: [zero-to-python](https://genomicscafe.github.io/zero-to-python) <!--[Software Carpentry]( http://swcarpentry.github.io/python-novice-inflammation ) -->
 
-- [Syllabus](resources/syllabi/bootcamp/index.html)
+- [Syllabus](resources/syllabi/bootcamp/2026.md)
 - Four day intensive bootcamp to introduce students to fundamentals in quantitative and computational biology 
 - <span class="text-danger">**NO** other classes, meetings, lab work, lab meetings, etc.</span>
 - In person, UTL 289
-- Please arrive by 8:30am ET
+- Please arrive by 8:45am ET (although plan to arrive at 8:30am on Tuesday for initial setup)
 - Lunch and an afternoon snack will be provided
 <!-- - Zoom meeting ID (check Slack for passcode or full link to join): 929 0650 3074 --> 
 <br /><br />
@@ -70,14 +70,14 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 | Time           | [Tuesday](webpages/day1.md)           | [Wednesday](webpages/day2.md) | [Thursday](webpages/day3.md)   | [Friday](webpages/day4.md) | 
 | :---:          | :---:                                 | :---:                         | :---:                          | :---:                      |
-|   9:00 - 10:00 | Welcome                               | Python file IO                | Git Setup                      | R \- base                  |
-|  10:00 - 11:00 | Laptop orientation                    | Python dictionaries           | Git Practice                   | R \- tidyverse             |
-|  11:00 - 12:00 | Python datatypes & functions          | Assignment                    | Catch Up                       | Assignment                 | 
+|   9:00 - 10:00 | Welcome                               | Python file IO                | Review                         | R \- base/tidyverse        |
+|  10:00 - 11:00 | Laptop orientation                    | Python dictionaries           | Git (SWC)                      | Assignment                 |
+|  11:00 - 12:00 | Python (notebooks)                    | Assignment                    | Git (setup)                    | R (ggplot2)                | 
 |  12:00 -  1:00 | Lunch                                 | Lunch                         | Lunch                          | Lunch                      |
-|   1:00 -  2:00 | Python conditionals, strings, & lists | Assignment cont.              | Mini project                   | Assigment cont.            |
-|   2:00 -  3:00 | Python loops                          | Unix                          | Mini project cont.             | R \- ggplot2               |
-|   3:00 -  4:00 | Assignment                            | Python scripts                | Small group review             | Assignment                 | 
-|   4:00 -  5:00 | Assignment cont.                      | Assignment                    | Small group review             | Finished!                  | 
+|   1:00 -  2:00 | Python                                | Assignment cont.              | Mini project (assembly metrics)| Assigment cont.            |
+|   2:00 -  3:00 | Python loops                          | Unix                          | Mini project (assembly metrics)| R \- (Bioconductor)        |
+|   3:00 -  4:00 | Assignment (lists, for, if, f(x))     | Python scripts                | Discussion                     | Assignment                 | 
+|   4:00 -  5:00 | Discussion                            | Assignment                    | AI Chatbots (HopGPT)           | Discussion                 | 
 {:.table.table-striped.well}
 
 
