@@ -23,7 +23,7 @@ Computational Learning Objectives
 ----------------
 
 - Save a copy of this notebook as `~/qbXX-answers/day2-afternoon/python_dictionaries.ipynb`.
-- Copy the files `sequences.fa` and `codons.tsv` into `~/qbXX-answers/day2-afternoon/` (but do not submit them with your answer)
+- Copy the files [`sequences.fa`](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/bootcamp/dictionaries_file_io/sequences.fa) and [`codons.tsv`](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/bootcamp/dictionaries_file_io/codons.tsv) into `~/qbXX-answers/day2-afternoon/` (but do not submit them with your answer)
 - Fill in answers in the available code/markdown cells below.
 - Remember to comment your code to help yourself and us know what each part is intended to do.
 
@@ -57,7 +57,7 @@ Computational Learning Objectives
 %cd ~/qxx-answers/day2-afternoon/
 ```
 
-2. Building on the code for reading in a single FASTA sequence, adapt it to read in multiple sequences from a single FASTA file, storing each sequence in a dictionary using the sequence name as the key. Wrap this code in a function such that it takes a file name as the only function argument and returns the dictionary of sequences.
+2. Building on the [code](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/lectures/python_dicts_file_io/livecoding.ipynb) for reading in a single FASTA sequence, adapt it to read in multiple sequences from a single FASTA file, storing each sequence in a dictionary using the sequence name as the key. Wrap this code in a function such that it takes a file name as the only function argument and returns the dictionary of sequences.
 
 - To check if a line represents the start of a new sequence, consider using the string method `.startswith()`
 - Don't forget to close your filestream
