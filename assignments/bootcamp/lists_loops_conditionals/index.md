@@ -1,4 +1,4 @@
-# Assigment 1 - Python basics
+# Assigment 1 - Python lists, loops, and conditionals
 
 ### Overview
 ------------
@@ -21,7 +21,7 @@ Computational Learning Objectives
 ### Instructions
 ----------------
 
-- Save a copy of this notebook as `~/qbXX-answers/python_basics.ipynb`.
+- Save a copy of [this notebook](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/bootcamp/lists_loops_conditionals/python_basics.ipynb) as `~/qbXX-answers/python_basics.ipynb`.
 - Fill in answers in the available code cells below.
 - Remember to comment your code to help yourself and us know what each part is intended to do.
 - You may find the functions `sorted()`, `sum()`, and `len()`, which all accept a list as their argument, useful for completing this exercise
@@ -56,11 +56,11 @@ text_data = "chrI\t8377406\t8390027\tNM_059873.7\t6\t-\nchrI\t8377598\t8392758\t
 ### Excercises
 --------------
 
-1. Parse the data from the data string, converting values to appropriate data types as necessary
+1. Parse the data from the data string, converting values to appropriate data types as necessary. The column values are chromosome, start position, end position, gene name, expression value, and strand
     
     - Split the string by the newline character (`\n`) to create a list containing one line per list-entry
     - Use a `for` loop to step through the data, line by line
-    - Split each line by the tab characer (`\t`) to get values for ecah column
+    - Split each line by the tab characer (`\t`) to get values for each column
     - Convert position values to integers and expression values to floats
 
 ```python
@@ -74,7 +74,7 @@ text_data = "chrI\t8377406\t8390027\tNM_059873.7\t6\t-\nchrI\t8377598\t8392758\t
 
 ```
 
-2. Create and populate lists with the parsed data using one to record expression values, one to record gene lengths, and one to record strandedness, skipping any genes from the mitochondrial chromosome
+2. Create and populate lists with the parsed data using one list to record expression values, one to record gene lengths, and one to record strandedness, skipping any genes from the mitochondrial chromosome
 
     - Use your above code as a starting point for this, adding lines inside the `for` loop for recording relevant values
     - It will be much easier to analyze the strandedness data if you convert it into ones and zeros (you can use an `if` statement for this)
@@ -126,7 +126,7 @@ text_data = "chrI\t8377406\t8390027\tNM_059873.7\t6\t-\nchrI\t8377598\t8392758\t
 
 ```
 
-5. Calculate and report the percent of genes that are on the positive strand
+5. Calculate and report the percentage of genes that are on the positive strand
 
 ```python
 # Calculate the percentage of positive strand genes
