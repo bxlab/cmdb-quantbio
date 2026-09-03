@@ -64,18 +64,17 @@ See [Project Work Guide](webpages/project-work.html) for more details
 All times in ET<br /><br />
 Resources for each day (links for assignment, any relevant recordings or slides, etc.) will be linked in the schedule below 
 
-<!--[Tuesday](webpages/day1.md)-->
-<!--[Thursday](webpages/day3.md)-->
+
 <!-- | Time            | [Tuesday](webpages/day1.md)            | [Wednesday](webpages/day2.md) |  [Thursday](webpages/day3.md) | [Friday](webpages/day4.md) |  -->
 
-| Time           | [Tuesday](webpages/day1.md)           | [Wednesday](webpages/day2.md) | [Thursday](webpages/day3.md)   | [Friday](webpages/day4.md) | 
+| Time           | [Tuesday](webpages/day1.md)           | Wednesday                     | Thursday                       | Friday                     | 
 | :---:          | :---:                                 | :---:                         | :---:                          | :---:                      |
 |   9:00 - 10:00 | Welcome                               | Python file IO                | Review                         | R \- base/tidyverse        |
 |  10:00 - 11:00 | Laptop orientation                    | Python dictionaries           | Git (SWC)                      | Assignment                 |
-|  11:00 - 12:00 | Python (notebooks)                    | Assignment                    | Git (setup)                    | R (ggplot2)                | 
+|  11:00 - 12:00 | Python (notebooks)                    | Assignment                    | Git (setup)                    | R \- ggplot2               | 
 |  12:00 -  1:00 | Lunch                                 | Lunch                         | Lunch                          | Lunch                      |
 |   1:00 -  2:00 | Python                                | Assignment cont.              | Mini project (assembly metrics)| Assigment cont.            |
-|   2:00 -  3:00 | Python loops                          | Unix                          | Mini project (assembly metrics)| R \- (Bioconductor)        |
+|   2:00 -  3:00 | Python loops                          | Unix                          | Mini project (assembly metrics)| R \- Bioconductor          |
 |   3:00 -  4:00 | Assignment (lists, for, if, f(x))     | Python scripts                | Discussion                     | Assignment                 | 
 |   4:00 -  5:00 | Discussion                            | Assignment                    | AI Chatbots (HopGPT)           | Discussion                 | 
 {:.table.table-striped.well}

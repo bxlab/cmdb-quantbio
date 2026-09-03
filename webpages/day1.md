@@ -3,7 +3,7 @@
 
 ## Introduction
 
-[Slides: Welcome and Overview](https://docs.google.com/presentation/d/1LQjRBm0cF-CZe35pHMgon-Pm1TsSjuCqbpyyW_r2elE/edit?usp=sharing)
+[Slides: Welcome and Overview](https://docs.google.com/presentation/d/1thz9SctM2wZWFbsWOz-YDaYKHdU84-dicYuGj59ZvNg/edit?usp=sharing)
 
 ## Morning Lecture 
 
