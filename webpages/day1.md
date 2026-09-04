@@ -5,6 +5,8 @@
 
 [Slides: Welcome and Overview](https://docs.google.com/presentation/d/1thz9SctM2wZWFbsWOz-YDaYKHdU84-dicYuGj59ZvNg/edit?usp=sharing)
 
+<!--
+
 ## Morning Lecture 
 
 [Slides: Basic Python part 1](https://docs.google.com/presentation/d/1CgkpRxD6aqLYACOUeUUNLWv_SfaflhLEZBi4n_CeBCk/edit?usp=sharing)
@@ -17,6 +19,8 @@
 
 [Notebook Link](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/bootcamp/lists_loops_conditionals/python_basics.ipynb)
 
+-->
+
 ## Daily Reflection
 
-Please fill out [this survey](https://forms.gle/PLeHe8sqe2UCqeM79) today at the end of class. 
+Please fill out [this survey](https://forms.gle/bgn8rEATZyKKkwNU9) today at the end of class. 
