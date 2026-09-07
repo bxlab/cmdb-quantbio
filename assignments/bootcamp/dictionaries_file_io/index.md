@@ -57,7 +57,7 @@ Computational Learning Objectives
 %cd ~/qxx-answers/day2-morning/
 ```
 
-2. Building on the [code](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/lectures/python_dicts_file_io/livecoding.ipynb) for reading in a single FASTA sequence, adapt it to read in multiple sequences from a single FASTA file, storing each sequence in a dictionary using the sequence name as the key. Wrap this code in a function such that it takes a file name as the only function argument and returns the dictionary of sequences.
+2. Building on the [code](https://github.com/bxlab/cmdb-quantbio/blob/main/lectures/python_dicts_file_io/livecoding.ipynb) for reading in a single FASTA sequence, adapt it to read in multiple sequences from a single FASTA file, storing each sequence in a dictionary using the sequence name as the key. Wrap this code in a function such that it takes a file name as the only function argument and returns the dictionary of sequences.
 
 - To check if a line represents the start of a new sequence, consider using the string method `.startswith()`
 - Don't forget to close your filestream
