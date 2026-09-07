@@ -12,14 +12,16 @@
 [Slides: Basic Python part 1](https://docs.google.com/presentation/d/1CgkpRxD6aqLYACOUeUUNLWv_SfaflhLEZBi4n_CeBCk/edit?usp=sharing)
 
 [Code](https://github.com/bxlab/qbb2025/tree/main/bootcamp/day1_morning)
+-->
 
 ## Afternoon Exercise
+
+[Slides: Python lists, loops, and conditionals](https://docs.google.com/presentation/d/1qBdxpHQYy6351HmH65yT2TlxP7cJ0orpi462gncDiQg/edit?usp=drive_link)
 
 [Afternoon Exercise](../assignments/bootcamp/lists_loops_conditionals/index.md)
 
 [Notebook Link](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/bootcamp/lists_loops_conditionals/python_basics.ipynb)
 
--->
 
 ## Daily Reflection
 
