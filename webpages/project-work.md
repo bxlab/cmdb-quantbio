@@ -31,6 +31,7 @@ Some possible project ideas depending on your interests and prior experience
 ### Past Group Projects
 
 - [QB24 Group Projects](../resources/past_group_projects/group_projects_2024.html)
+- [QB25 Group Projects](../resources/past_group_projects/group_projects_2025.html)
 
 ### Example CMDB Projects
 
