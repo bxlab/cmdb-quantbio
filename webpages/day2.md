@@ -4,7 +4,7 @@
 
 [Slides](https://docs.google.com/presentation/d/1OApcbAH2DvXq4gquZWgOR_cxAiibLzxmRA7MN1mWdas/edit?usp=sharing)
 
-[Code](https://github.com/bxlab/qbb2026/tree/main/day2_morning)
+[Code](https://github.com/bxlab/qbb2026/tree/main/day2-morning)
 
 [Assignment](../assignments/bootcamp/dictionaries_file_io/index.md)
 
