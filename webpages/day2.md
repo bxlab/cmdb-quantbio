@@ -2,9 +2,9 @@
 
 ## Morning Lecture
 
-[Slides](https://docs.google.com/presentation/d/1lsCTOWqkNNWReJu6wThq_UZ84tfMtzByzGqqapgeH2E/edit?usp=sharing)
+[Slides](https://docs.google.com/presentation/d/1OApcbAH2DvXq4gquZWgOR_cxAiibLzxmRA7MN1mWdas/edit?usp=sharing)
 
-[Code](https://github.com/bxlab/qbb2025/tree/main/bootcamp/day2_morning)
+[Code](https://github.com/bxlab/qbb2026/tree/main/day2_morning)
 
 [Assignment](../assignments/bootcamp/dictionaries_file_io/index.md)
 
@@ -18,4 +18,5 @@
 
 ## Daily Reflection
 
-Please fill out [this survey](https://forms.gle/bgn8rEATZyKKkwNU9) today at the end of class.  -->
+Please fill out [this survey](https://forms.gle/PLeHe8sqe2UCqeM79) today at the end of class. 
+-->
