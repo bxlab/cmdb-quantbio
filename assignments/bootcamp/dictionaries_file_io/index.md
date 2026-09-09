@@ -59,21 +59,21 @@ Computational Learning Objectives
 
 2. Building on the [code](https://github.com/bxlab/cmdb-quantbio/blob/main/lectures/python_dicts_file_io/livecoding.ipynb) for reading in a single FASTA sequence, adapt it to read in multiple sequences from a single FASTA file, storing each sequence in a dictionary using the sequence name as the key. Wrap this code in a function such that it takes a file name as the only function argument and returns the dictionary of sequences.
 
-- To check if a line represents the start of a new sequence, consider using the string method `.startswith()`
-- Don't forget to close your filestream
+    - To check if a line represents the start of a new sequence, consider using the string method `.startswith()`
+    - Don't forget to close your filestream
 
 3. Wrap the code for reading in the codon table into a function, taking a file name in as the argument and returning the dictionary of codon/amin acid pairs.
 
 4. Write a function for translating the CDS sequences into amino acid sequences. This function will need to take in two arguments, the codon table and the DNA sequence. The DNA sequences contain untranslated sequences (UTRs) at the start and end so you will need to step through the sequences to find the first methionine (M). Likewise, you will need to stop when you encounter the first step codon (*) rather than translating through the end of the sequence.
 
-- Using a `while` loop may be useful for this task, but it is not required as `for` loops can also work
-- You will need to consider three different parts reading the sequence:
-    1. Have you reached the start of the coding sequence
-    2. Do you need to record the current codon's amino acid
-    3. Have you reached the end of the coding sequence
+    - Using a `while` loop may be useful for this task, but it is not required as `for` loops can also work
+    - You will need to consider three different parts reading the sequence:
+        1. Have you reached the start of the coding sequence
+        2. Do you need to record the current codon's amino acid
+        3. Have you reached the end of the coding sequence
 
 5. Finally, put it all together, loading in the FASTA sequences and codon table, and translating the into amino acids. Once you have the amino acid sequences, count the number of times each amino acid is used. Finally, convert these counts into percentages and write them to a tab-separated file with the first column being the amino acid letter and the second column being the percent usage.
 
-- To get the percentages, it will helpful to keep a running total of the number of amino acids as you find the counts
-- The dictionary method `.setdefault` may be useful for intializing you count dictionary for each new amino acid
-- Don't forget to close your filestream
+    - To get the percentages, it will helpful to keep a running total of the number of amino acids as you find the counts
+    - The dictionary method `.setdefault` may be useful for intializing you count dictionary for each new amino acid
+    - Don't forget to close your filestream
