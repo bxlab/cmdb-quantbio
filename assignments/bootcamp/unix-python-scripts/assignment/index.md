@@ -13,7 +13,7 @@ Computational Learning Objectives
 
 Document your answers in `~/qbXX-answers/unix-python-scripts`
 
-Upload your scripts to https://github.com after each exercise and do not wait until the end of the session
+Upload your scripts to OneDrive after each exercise and do not wait until the end of the session
 
 Place all of your Unix commands in a single file named `unix-commands.sh` along with the output as a comment e.g.
 
@@ -91,7 +91,6 @@ tail ce11_genes.bed | head -n 2
 
 ## Grading
 
-- unix-commands.sh -- 3 pt
+- unix-commands.sh -- 4 pt
 - recalculate-score.py -- 2 pt
-- sample-by-gene.py -- 3 pt
-- gtf2bed.py -- 2 pt
+- sample-by-gene.py -- 4 pt
