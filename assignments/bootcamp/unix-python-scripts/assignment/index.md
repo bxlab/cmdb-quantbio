@@ -59,6 +59,19 @@ tail ce11_genes.bed | head -n 2
     - Skip the first two lines using `.readline()`
     - Read the next header line and save the fields after splitting
     - Read the next data line and save the fields after splitting
+    - Print out the SAMPID and expression if expression is greater than 1 e.g.
+  
+    ```
+    GTEX-13NYB-2226-SM-5MR58 1.045
+    GTEX-1LB8K-2326-SM-DHXJL 1.063
+    GTEX-1KANB-2126-SM-DHXJV 1.083
+    ```
+  
+## Optional
+
+5. Annotate Sample IDs
+
+    Update your script from Question 4 to
     - Create a dictionary by looping through the fields, using `header[i]` as the key to store `data[i]` as the value
 
     Open the metadata file GTEx_Analysis_v8_Annotations_SampleAttributesDS.txt
@@ -72,14 +85,12 @@ tail ce11_genes.bed | head -n 2
 
     What are the first three tissues that have >0 expression?
 
-## Optional
-
-5. Explore ~/Data/References/hg38/gencode.v46.basic.annotation.gtf using Unix
+6. Explore ~/Data/References/hg38/gencode.v46.basic.annotation.gtf using Unix
 
     - How many entries are there for each feature type?  Look at column 3 and be sure to skip any lines that begin with `#`
     - How many lncRNA entries are on each chromosome?
 
-6. Export gene features to BED format using Python
+7. Export gene features to BED format using Python
 
     Write a script that takes gencode.v46.basic.annotation.gtf and
 
@@ -92,5 +103,5 @@ tail ce11_genes.bed | head -n 2
 ## Grading
 
 - unix-commands.sh -- 4 pt
-- recalculate-score.py -- 2 pt
-- sample-by-gene.py -- 4 pt
+- recalculate-score.py -- 3 pt
+- sample-by-gene.py -- 3 pt
