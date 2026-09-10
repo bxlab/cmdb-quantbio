@@ -67,7 +67,7 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 <!-- | Time            | [Tuesday](webpages/day1.md)            | [Wednesday](webpages/day2.md) |  [Thursday](webpages/day3.md) | [Friday](webpages/day4.md) |  -->
 
-| Time           | [Tuesday](webpages/day1.md)           | [Wednesday](webpages/day2.md) | Thursday                       | Friday                     | 
+| Time           | [Tuesday](webpages/day1.md)           | [Wednesday](webpages/day2.md) | [Thursday](webpages/day3.md)   | Friday                     | 
 | :---:          | :---:                                 | :---:                         | :---:                          | :---:                      |
 |   9:00 - 10:00 | Welcome                               | Python file IO                | Review                         | R \- base/tidyverse        |
 |  10:00 - 11:00 | Laptop orientation                    | Python dictionaries           | Git (SWC)                      | Assignment                 |
