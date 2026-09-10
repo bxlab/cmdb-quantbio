@@ -10,9 +10,11 @@
 
 [Calculate Assembly Metrics](../assignments/bootcamp/miniproject-assembly-metrics/assignment/index.md)
 
-## Optional
+## AI Chatbots
 
-[Measure Codon Usage](../assignments/bootcamp/miniproject-codon-usage/assignment/index.md)
+[Learning to Code with AI Chatbots](https://carpentries-incubator.github.io/coding-with-llms-novice)
+
+[HopGPT](https://chat.ai.jh.edu)
 
 ## Daily Reflection
 
