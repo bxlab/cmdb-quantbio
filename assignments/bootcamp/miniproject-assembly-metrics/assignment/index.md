@@ -79,7 +79,10 @@ git push
 
 	- Run your script on all four .fa files
 	- Update README.md with instructions on using your script and summary of results
+        - What trend do you see?  PRJNA248909 is from 2014, PRJNA248911 is from 2015, PRJNA577507 is from 2019
 	- Push your script and updated README.md
+
+## Optional
 
 1. Extend your Python script to calculate the N50 statistic
 
@@ -96,9 +99,8 @@ git push
 
 ## Grading
 
-- README -- 2 pt for having all five details (description, URLs, file sizes, first summary, second summary)
+- README -- 2 pt for having all four details (description, URLs, file sizes, results summary)
 - Bash script -- 1 pt for `getGenomes.sh`
-- Python script -- 3 pt for original `assembly-metrics.py`
-- N50 statistic -- 2 pt for extending Python script
-- git -- 2 pt for making a commit after each of the five exercises
+- Python script -- 4 pt for original `assembly-metrics.py`
+- git -- 3 pt for making a commit after each of the five exercises
 
