@@ -69,14 +69,14 @@ Resources for each day (links for assignment, any relevant recordings or slides,
 
 | Time           | [Tuesday](webpages/day1.md)           | [Wednesday](webpages/day2.md) | [Thursday](webpages/day3.md)   | Friday                     | 
 | :---:          | :---:                                 | :---:                         | :---:                          | :---:                      |
-|   9:00 - 10:00 | Welcome                               | Python file IO                | Review                         | R \- base/tidyverse        |
-|  10:00 - 11:00 | Laptop orientation                    | Python dictionaries           | Git (SWC)                      | Assignment                 |
-|  11:00 - 12:00 | Python (notebooks)                    | Assignment                    | Git (setup)                    | R \- ggplot2               | 
+|   9:00 - 10:00 | Welcome                               | Python file IO                | Review                         | R \- data exploration      |
+|  10:00 - 11:00 | Laptop orientation                    | Python dictionaries           | Git (SWC)                      | R \- data exploration      |
+|  11:00 - 12:00 | Python (notebooks)                    | Assignment                    | Git (setup)                    | R \- assignment            | 
 |  12:00 -  1:00 | Lunch                                 | Lunch                         | Lunch                          | Lunch                      |
-|   1:00 -  2:00 | Python                                | Assignment cont.              | Mini project (assembly metrics)| Assigment cont.            |
-|   2:00 -  3:00 | Python loops                          | Unix                          | Mini project (assembly metrics)| R \- Bioconductor          |
-|   3:00 -  4:00 | Assignment (lists, for, if, f(x))     | Python scripts                | Discussion                     | Assignment                 | 
-|   4:00 -  5:00 | Discussion                            | Assignment                    | AI Chatbots (HopGPT)           | Discussion                 | 
+|   1:00 -  2:00 | Python                                | Assignment cont.              | Mini project (assembly metrics)| R \- data visualization    |
+|   2:00 -  3:00 | Python loops                          | Unix                          | Mini project (assembly metrics)| R \- data visualization    |
+|   3:00 -  4:00 | Assignment (lists, for, if, f(x))     | Python scripts                | Discussion                     | R \- assignment            | 
+|   4:00 -  5:00 | Discussion                            | Assignment                    | AI Chatbots (HopGPT)           | Discussion / flex time     | 
 {:.table.table-striped.well}
 
 
