@@ -4,7 +4,6 @@
 
 [Slides](https://docs.google.com/presentation/d/1Yytii1zz-ijUhJC-e3QD2EyHCkuw1P-lYwWLe87psi4/edit?usp=sharing)
 
-<!--
 ## Mini Projects
 
 [Slides](https://docs.google.com/presentation/d/1EU5iDGUd0Xf2HCsgTuKewCVPHTMopeYmbyS3T9D4MwI)
@@ -13,7 +12,6 @@
 ## Optional
 
 [Measure Codon Usage](../assignments/bootcamp/miniproject-codon-usage/assignment/index.md)
--->
 
 ## Daily Reflection
 
