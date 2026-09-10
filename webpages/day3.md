@@ -7,6 +7,7 @@
 ## Mini Projects
 
 [Slides](https://docs.google.com/presentation/d/1EU5iDGUd0Xf2HCsgTuKewCVPHTMopeYmbyS3T9D4MwI)
+
 [Calculate Assembly Metrics](../assignments/bootcamp/miniproject-assembly-metrics/assignment/index.md)
 
 ## Optional
