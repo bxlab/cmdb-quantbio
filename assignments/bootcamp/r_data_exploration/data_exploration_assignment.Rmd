@@ -1,22 +1,54 @@
-In this exercise, you will practice basic `dplyr` (the relevant package within `tidyverse`) operations on a dataset of gene expression levels across human tissues (from the GTEx Project). The dataset (`dt`) has one row per gene, with columns:
+---
+title: "Data exploration assignment"
+author: "YOUR NAME HERE"
+date: "`r Sys.Date()`"
+output: html_document
+---
 
--   `Name`: the Ensembl gene ID\
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = TRUE)
+```
+
+In this exercise, you will practice basic `dplyr` (the relevant package within
+`tidyverse`) operations on a dataset of gene expression levels across human
+tissues (from the GTEx Project). The dataset (`dt`) has one row per gene, with
+columns:
+
+-   `Name`: the Ensembl gene ID
 -   `Description`: the gene symbol
 -   One column per tissue containing the median expression levels (in TPM units)
+
+**Using HopGPT.** You are welcome to use HopGPT on this assignment. Wherever you
+do, add a couple of comment lines in that same code block noting what you asked
+it and how you checked the answer. Checking is the part that matters --- a
+chatbot will happily give you code that runs perfectly and answers a slightly
+different question than the one you asked. For example:
+
+```{r ai-comment-example, eval=FALSE}
+# Asked HopGPT how to sort a tibble by a column with a space in its name.
+# Checked: printed the first and last rows to confirm it sorted descending.
+```
 
 ------------------------------------------------------------------------
 
 ### Start by loading the data into R:
 
-Note the arguments, which specify that the first two lines of the file will be skipped, that the file contains a header line that should be used to form column names, and that the columns are tab (`\t`) separated.
+Note the arguments, which specify that the first two lines of the file will be
+skipped, that the file contains a header line that should be used to form column
+names, and that the columns are tab (`\t`) separated.
 
-```{r}
-dt <- read_delim("GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_median_tpm.gct.gz", skip = 2, col_names = TRUE, sep = "\t")
+```{r load-data}
+library(tidyverse)
+
+dt <- read_delim("GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_median_tpm.gct.gz",
+                 skip = 2, col_names = TRUE, delim = "\t")
 ```
 
 ### Q1. How many genes are in the dataset, and how many tissues are represented?
 
-```{r}
+Note that not every column is a tissue.
+
+```{r q1}
 
 # code and answer here
 
@@ -27,12 +59,18 @@ dt <- read_delim("GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_median_tpm.gct.
 ### Q2. How many genes are expressed above a given threshold in each tissue?
 
 A common threshold is 1 TPM to define whether a gene is "expressed."\
-Compute, for each of the three tissues, `Liver`, `Testis`, and `Whole Blood`, how many genes are expressed above this threshold.\
-Then identify which tissue has the **most** and which has the **fewest** expressed genes. See this paper for one possible explanation: Xia et al. 2021: [PMC7891839](https://pmc.ncbi.nlm.nih.gov/articles/PMC7891839/).
+Compute, for each of the three tissues, `Liver`, `Testis`, and `Whole Blood`,
+how many genes are expressed above this threshold.\
+Then identify which tissue has the **most** and which has the **fewest**
+expressed genes. See this paper for one possible explanation: Xia et al. 2021:
+[PMC7891839](https://pmc.ncbi.nlm.nih.gov/articles/PMC7891839/).
 
 Do the results change if you set the threshold higher, say at 10 TPM?
 
-```{r}
+*Hint:* the column name `Whole Blood` contains a space, so it needs backticks:
+`` dt$`Whole Blood` ``.
+
+```{r q2}
 
 # Code here
 
@@ -42,11 +80,39 @@ Do the results change if you set the threshold higher, say at 10 TPM?
 
 ------------------------------------------------------------------------
 
+### Q2b. Write a function
+
+If you answered Q2 by copying the same line of code and editing the tissue name,
+and then copying those lines again and editing the threshold, you did six
+near-identical things by hand. Each copy is a chance to change the tissue but
+forget to change the label.
+
+Write a function `count_expressed()` that takes a vector of expression values
+and a threshold, and **returns** the number of genes above that threshold. Give
+the threshold a default value of 1.
+
+Test it on a small vector where you already know the answer, such as
+`c(0, 0.5, 1, 5, 100)`. Then use it to redo Q2 (all three tissues, both
+thresholds) instead of writing out the counting code separately six times.
+
+```{r q2b}
+
+# your function here
+
+# test on an input whose answer you know
+
+# use it to answer Q2 again
+
+```
+
+------------------------------------------------------------------------
+
 ### Q3. What are the 20 most highly expressed genes in the liver?
 
-What do you notice about many of the genes in this list? Can you propose a hypothesis to explain your observation?
+What do you notice about many of the genes in this list? Can you propose a
+hypothesis to explain your observation?
 
-```{r}
+```{r q3}
 
 # Code here
 
@@ -58,27 +124,45 @@ What do you notice about many of the genes in this list? Can you propose a hypot
 
 ### Q4. Compare the mean expression levels of mitochondrial versus nuclear-encoded genes in the Liver.
 
-Genes encoded by the mitochondrial genome have the gene symbol prefix `MT-`. The function `str_starts()` from the `stringr` package in `tidyverse` tests whether a string (or a vector of strings) start with a given pattern, returning TRUE/FALSE (or a boolean vector) as output.
+Genes encoded by the mitochondrial genome have the gene symbol prefix `MT-`. The
+function `str_starts()` from the `stringr` package in `tidyverse` tests whether a
+string (or a vector of strings) starts with a given pattern, returning TRUE/FALSE
+(or a boolean vector) as output.
 
-Use `str_starts()` to identify which genes are mitochondrially encoded and store this information in a new Boolean column named `is_mitochondrial`. Next, compute the mean and median expression of mitochondrial genes in the liver, as well as the mean and median expression of nuclear-encoded genes in the liver and compare them. Do mitochondrial genes exhibit higher or lower mean and median expression than nuclear genes? What does the difference between the mean and median tell you about the distribution of gene expression.
+Use `str_starts()` to identify which genes are mitochondrially encoded and store
+this information in a new Boolean column named `is_mitochondrial`. Next, compute
+the mean and median expression of mitochondrial genes in the liver, as well as
+the mean and median expression of nuclear-encoded genes in the liver and compare
+them. Do mitochondrial genes exhibit higher or lower mean and median expression
+than nuclear genes? What does the difference between the mean and median tell you
+about the distribution of gene expression?
 
-```{r}
+**Check your pattern before you trust the result.** There is an easy version of
+this that is wrong: matching `"MT"` instead of `"MT-"`. Count how many genes each
+of the two patterns matches, and look at a few of the genes that `"MT"` picks up
+but `"MT-"` does not. How much does the mistake change your answer?
+
+```{r q4}
 # Code here
+
+# how many genes match "MT-" vs "MT"? which genes differ?
 
 # Interpretation here as a comment
 ```
 
 ------------------------------------------------------------------------
 
-### Q5. Are liver’s most highly expressed genes also highly expressed in another tissue?
+### Q5. Are liver's most highly expressed genes also highly expressed in another tissue?
 
-Take the 20 most highly exprssed genes in **Liver** and check how they are expressed in the **Heart - Left Ventricle**. Identify:\
+Take the 20 most highly expressed genes in **Liver** and check how they are
+expressed in the **Heart - Left Ventricle**. Identify:\
 1. one gene that is highly expressed in both tissues\
 2. one gene that is highly expressed in Liver but very low in Heart
 
-Look up basic information about these genes on the internet. Do their expression patterns make sense given their known functions?
+Look up basic information about these genes on the internet. Do their expression
+patterns make sense given their known functions?
 
-```{r}
+```{r q5}
 
 # Code here
 
@@ -89,15 +173,29 @@ Look up basic information about these genes on the internet. Do their expression
 
 ### Q6. Comparing gene expression between tissues
 
-Another way to compare tissues is to ask how similar are their expression patterns overall, across all genes?
+Another way to compare tissues is to ask how similar are their expression
+patterns overall, across all genes?
 
-R has a built-in function called `cor.test()` that measures the correlation between two vectors of numbers. Remember that you can extract the contents of a given column of a tibble as a vector using the syntax `tibble_name$column_name`. If a column name contains spaces, enclose the column name in backticks such as `` tibble_name$`column name` ``.
+R has a built-in function called `cor.test()` that measures the correlation
+between two vectors of numbers. Remember that you can extract the contents of a
+given column of a tibble as a vector using the syntax `tibble_name$column_name`.
+If a column name contains spaces, enclose the column name in backticks such as
+`` tibble_name$`column name` ``.
 
-Use `cor.test()` with the argument `method = "kendall"` to compute: - the Spearman correlation between `Liver` and `Heart - Left Ventricle` - the Spearman correlation between `Liver` and `Brian - Cortex`
+Use `cor.test()` with the argument `method = "spearman"` to compute:
 
-Which pair of tissues is more strongly correlated? Does this result make sense biologically?
+-   the Spearman correlation between `Liver` and `Heart - Left Ventricle`
+-   the Spearman correlation between `Liver` and `Brain - Cortex`
 
-```{r}
+Which pair of tissues is more strongly correlated? Does this result make sense
+biologically?
+
+You will see a warning about not being able to compute an exact p-value because
+of ties. You can ignore it, as it does not affect the qualitative results in this case. 
+It is worth understanding where it comes from, though: what is it about these data that 
+creates so many tied values?
+
+```{r q6}
 # Liver vs Heart answer
 
 # Liver vs Brain answer
@@ -109,8 +207,9 @@ Which pair of tissues is more strongly correlated? Does this result make sense b
 
 ### Optional: further exploration
 
-What other patterns are present in the data? Use tidyverse functions to explore and summarize the data in different ways and see what you can learn.
+What other patterns are present in the data? Use tidyverse functions to explore
+and summarize the data in different ways and see what you can learn.
 
-```{r}
+```{r optional}
 # answer here
 ```
