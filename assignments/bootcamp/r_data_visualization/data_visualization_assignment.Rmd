@@ -1,10 +1,31 @@
-In this exercise, you will practice basic plotting with **`ggplot2`** on a dataset of median gene expression levels across samples from various human tissues from the GTEx Project. The dataset (`dt`) has one row per gene, with columns:
+---
+title: "Data visualization assignment"
+author: "YOUR NAME HERE"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = TRUE, fig.width = 6, fig.height = 4)
+```
+
+In this exercise, you will practice basic plotting with **`ggplot2`** on a
+dataset of median gene expression levels across samples from various human
+tissues from the GTEx Project. The dataset (`dt`) has one row per gene, with
+columns:
 
 -   `Name`: the Ensembl gene ID
 -   `Description`: the gene symbol
 -   One column per tissue containing the median expression levels (in TPM units)
 
-Insert your code into the empty code blocks. Insert answers any comprehension questions as comments within the code blocks. You do not need to submit the figures themselves, only the code used to produce them. Remember to label your axes!
+Insert your code into the empty code blocks. Insert answers to any comprehension
+questions as comments within the code blocks. You do not need to submit the
+figures themselves, only the code used to produce them. Remember to label your
+axes!
+
+**Using HopGPT.** As in the last assignment: you are welcome to use it, and
+wherever you do, add a couple of comment lines in that same code block noting
+what you asked it and how you checked the answer.
 
 ------------------------------------------------------------------------
 
@@ -15,19 +36,32 @@ Start by loading the data into R, as before.
 ```{r load-data}
 library(tidyverse)
 
-dt <- read_delim(
-  "~/Dropbox/teaching/2025_qbb/friday_data_exploration/GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_median_tpm.gct.gz",
-  skip = 2, col_names = TRUE, delim = "\t"
-)
+dt <- read_delim("GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_median_tpm.gct.gz",
+                 skip = 2, col_names = TRUE, delim = "\t")
+```
+
+Recreate the `is_mitochondrial` column from the last assignment; you will need it
+in Q4 and Q5.
+
+```{r add-mito}
+dt <- dt %>%
+  mutate(is_mitochondrial = str_starts(Description, "MT-"))
+
+dt %>% count(is_mitochondrial)
 ```
 
 ------------------------------------------------------------------------
 
 ### Q1. Histogram
 
-Make a histogram of gene expression in the liver. Use the argument `breaks = seq(0, 100, 2)` to bin in units of 2 TPM, ranging from 0 to 100. Note that this cuts off the data at 100, which might be misleading depending on what we are trying to depict!
+Make a histogram of gene expression in the liver. Use the argument
+`breaks = seq(0, 100, 2)` to bin in units of 2 TPM, ranging from 0 to 100. Note
+that this cuts off the data at 100, which might be misleading depending on what
+we are trying to depict! How many genes are you leaving out?
 
-What do you notice about the shape of the distribution? What does it tell you about the relative expression of genes in the liver transcriptome? Do you think this is specific to the liver? Check another tissue, as well.
+What do you notice about the shape of the distribution? What does it tell you
+about the relative expression of genes in the liver transcriptome? Do you think
+this is specific to the liver? Check another tissue, as well.
 
 ```{r q1}
 
@@ -38,7 +72,13 @@ What do you notice about the shape of the distribution? What does it tell you ab
 
 ### Q2. Density plot
 
-Going back to the liver, now represent the same data with a density plot rather than a histogram. Do not restrict the X axis. Within the same code block, create a second plot where you scale the X axis to a log10 scale. Add a pseudo-count of 1 to the expression values, as the log of 0 is negative infinity.
+Going back to the liver, now represent the same data with a density plot rather
+than a histogram. Do not restrict the X axis. Within the same code block, create
+a second plot where you scale the X axis to a log10 scale. Add a pseudo-count of
+1 to the expression values, as the log of 0 is negative infinity.
+
+What does the log-scaled version show you that the first one does not? And where
+on the log-scaled plot do the genes with 0 TPM end up?
 
 ```{r q2}
 
@@ -49,7 +89,12 @@ Going back to the liver, now represent the same data with a density plot rather 
 
 ### Q3. Scatter plot
 
-Make a scatter plot comparing the expression genes in the `Liver` to the same genes in the `Heart - Left Ventricle`. Add a pseudocount to each and log10 scale both the X and Y axes. Adjust the point size to 1 and the alpha (opacity) to 0.2. Add a dashed red line along the diagonal (y = x).
+Make a scatter plot comparing the expression of genes in the `Liver` to the same
+genes in the `Heart - Left Ventricle`. Add a pseudocount to each and log10 scale
+both the X and Y axes. Adjust the point size to 1 and the alpha (opacity) to 0.2.
+Add a dashed red line along the diagonal (y = x).
+
+What does a point far above the diagonal mean, biologically?
 
 ```{r q3}
 
@@ -60,7 +105,18 @@ Make a scatter plot comparing the expression genes in the `Liver` to the same ge
 
 ### Q4. Colored points on scatter plot
 
-Color the previous scatter plot points based on whether the genes are mitochondrial vs nuclear encoded. Note that the tidyverse function `str_starts()` can test whether a string starts with a specific pattern.
+Color the previous scatter plot points based on whether the genes are
+mitochondrial vs nuclear encoded, using the `is_mitochondrial` column you made
+above.
+
+There are only a few dozen mitochondrial genes among tens of thousands of
+nuclear ones, so the colored points end up buried. Try plotting them as a second
+`geom_point()` layer on top of the others, using the `data` argument to give that
+layer just the mitochondrial genes:
+`geom_point(data = filter(dt, is_mitochondrial), ...)`.
+
+Where do the mitochondrial genes sit relative to the diagonal, and does that fit
+what you found in the last assignment?
 
 ```{r q4}
 
@@ -71,34 +127,75 @@ Color the previous scatter plot points based on whether the genes are mitochondr
 
 ### Q5. Facets
 
-Repeat question 1 (histogram), but faceting such that you create separate panels (arranged horizontally) for several tissues of interest:
+Repeat question 1 (histogram), but faceting such that you create separate panels
+(arranged horizontally) for several tissues of interest:
 
-```{r}
+```{r focal-tissues}
 focal_tissues <- c("Liver", "Testis", "Whole Blood", "Heart - Left Ventricle", "Brain - Cortex")
 ```
 
 This requires first converting the data into "long" format with `pivot_longer()`:
 
-```{r}
+```{r pivot-long}
 dt_long <- dt %>%
   select("Description", "is_mitochondrial", all_of(focal_tissues)) %>%
-  pivot_longer(cols = focal_tissues, names_to = "Tissue", values_to = "TPM")
+  pivot_longer(cols = all_of(focal_tissues), names_to = "Tissue", values_to = "TPM")
 ```
 
-After creating 5-panel plot, also split into two rows that separate genes that are versus are not encoded by the mitochondrial genome (10 panels). Use the argument `scales = "free_y"` to deal with the fact that there are far fewer mitochondrial-encoded than nuclear-encoded genes.
+After creating the 5-panel plot, also split into two rows that separate genes
+that are versus are not encoded by the mitochondrial genome (10 panels). Use the
+argument `scales = "free_y"` to deal with the fact that there are far fewer
+mitochondrial-encoded than nuclear-encoded genes.
+
+`scales = "free_y"` means the panels can no longer be compared by eye. Write the
+one-sentence note you would put in a figure caption to keep a reader from being
+misled.
 
 ```{r q5}
 
 # your code for 5-panel plot
 
 # your code for 10-panel plot
+
+# caption note
+
 ```
 
 ------------------------------------------------------------------------
 
-Optional: Have fun and explore these data! Create your own plots and interpret them.
+### Q6. Write a function
 
-```{r q5}
+By now you have written nearly the same histogram several times, changing only
+the tissue. Write a function that does it once.
+
+Your function should take a vector of expression values and a tissue name, and
+**return** a log10-scaled histogram of those values (with a pseudocount), with
+the tissue name in the title and both axes labeled. Give the pseudocount a
+default value of 1.
+
+As in the live coding, have the function take a plain vector, which you pull out
+with `$`, so `plot_tissue_histogram(dt$Liver, "Liver")` is how you would call it.
+
+Test it on the liver and confirm you get the same figure you made in Q2 --- that
+is the point of the test. Then use it to produce the plot for each of the five
+`focal_tissues`, either with a `for` loop or by calling it five times.
+
+```{r q6}
+
+# your function here
+
+# test it against a result you already trust
+
+# all five tissues
+
+```
+
+------------------------------------------------------------------------
+
+Optional: Have fun and explore these data! Create your own plots and interpret
+them.
+
+```{r optional}
 
 # answer here
 ```
