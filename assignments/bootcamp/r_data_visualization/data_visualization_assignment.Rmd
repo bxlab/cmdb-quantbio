@@ -74,12 +74,12 @@ this is specific to the liver? Check another tissue, as well.
 
 Going back to the liver, now represent the same data with a density plot rather
 than a histogram. Do not restrict the X axis. Within the same code block, create
-a second plot where you remove the custom bin breaks, but scale the X axis to a 
-log10 scale. Add a pseudo-count of 1 to the expression values, as the log of 0 is 
-negative infinity.
+a second plot where you remove the custom bin breaks, but transform the expression
+values using `log10()`. First add a pseudo-count of 1 to the expression values, as 
+the log of 0 is negative infinity.
 
-What does the log-scaled version show you that the first one does not? And where
-on the log-scaled plot do the genes with 0 TPM end up?
+What does the log-transformed version show you that the first plot does not? And where
+on the log-transformed plot do the genes with 0 TPM end up?
 
 ```{r q2}
 
@@ -91,9 +91,9 @@ on the log-scaled plot do the genes with 0 TPM end up?
 ### Q3. Scatter plot
 
 Make a scatter plot comparing the expression of genes in the `Liver` to the same
-genes in the `Heart - Left Ventricle`. Add a pseudocount to each and log10 scale
-both the X and Y axes. Adjust the point size to 1 and the alpha (opacity) to 0.2.
-Add a dashed red line along the diagonal (y = x).
+genes in the `Heart - Left Ventricle`. Add a pseudocount to each and log10 transform
+them. Adjust the point size to 1 and the alpha (opacity) to 0.2. Add a dashed red line 
+along the diagonal (y = x).
 
 What does a point far above the diagonal mean, biologically?
 
@@ -107,7 +107,7 @@ What does a point far above the diagonal mean, biologically?
 ### Q4. Colored points on scatter plot
 
 Color the previous scatter plot points based on whether the genes are
-mitochondrial vs nuclear encoded, using the `is_mitochondrial` column you made
+mitochondrial vs. nuclear encoded, using the `is_mitochondrial` column you made
 above.
 
 There are only a few dozen mitochondrial genes among tens of thousands of
@@ -170,8 +170,8 @@ By now you have written nearly the same histogram several times, changing only
 the tissue. Write a function that does it once.
 
 Your function should take a vector of expression values and a tissue name, and
-**return** a log10-scaled histogram of those values (with a pseudocount), with
-the tissue name in the title and both axes labeled. Give the pseudocount a
+**return** a histogram of the log10-transformed values (with a pseudocount), 
+with the tissue name in the title and both axes labeled. Give the pseudocount a
 default value of 1.
 
 As in the live coding, have the function take a plain vector, which you pull out
