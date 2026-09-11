@@ -164,35 +164,6 @@ misled.
 
 ------------------------------------------------------------------------
 
-### Q6. Write a function
-
-By now you have written nearly the same histogram several times, changing only
-the tissue. Write a function that does it once.
-
-Your function should take a vector of expression values and a tissue name, and
-**return** a histogram of the log10-transformed values (with a pseudocount), 
-with the tissue name in the title and both axes labeled. Give the pseudocount a
-default value of 1.
-
-As in the live coding, have the function take a plain vector, which you pull out
-with `$`, so `plot_tissue_histogram(dt$Liver, "Liver")` is how you would call it.
-
-Test it on the liver and confirm you get the same figure you made in Q2 --- that
-is the point of the test. Then use it to produce the plot for each of the five
-`focal_tissues`, either with a `for` loop or by calling it five times.
-
-```{r q6}
-
-# your function here
-
-# test it against a result you already trust
-
-# all five tissues
-
-```
-
-------------------------------------------------------------------------
-
 Optional: Have fun and explore these data! Create your own plots and interpret
 them.
 
