@@ -74,8 +74,9 @@ this is specific to the liver? Check another tissue, as well.
 
 Going back to the liver, now represent the same data with a density plot rather
 than a histogram. Do not restrict the X axis. Within the same code block, create
-a second plot where you scale the X axis to a log10 scale. Add a pseudo-count of
-1 to the expression values, as the log of 0 is negative infinity.
+a second plot where you remove the custom bin breaks, but scale the X axis to a 
+log10 scale. Add a pseudo-count of 1 to the expression values, as the log of 0 is 
+negative infinity.
 
 What does the log-scaled version show you that the first one does not? And where
 on the log-scaled plot do the genes with 0 TPM end up?
