@@ -8,11 +8,11 @@
 
 [Assignment](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/bootcamp/r_data_exploration/data_exploration_assignment.Rmd)
 
-<!-- ## Afternoon Session
+## Afternoon Session
 
 [Code](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/bootcamp/r_data_visualization/data_visualization_live_coding.R)
 
-[Assignment](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/bootcamp/r_data_visualization/data_visualization_assignment.Rmd) -->
+[Assignment](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/bootcamp/r_data_visualization/data_visualization_assignment.Rmd)
 
 ## Daily Reflection
 
