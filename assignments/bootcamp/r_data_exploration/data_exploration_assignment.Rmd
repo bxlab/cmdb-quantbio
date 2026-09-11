@@ -18,11 +18,12 @@ columns:
 -   `Description`: the gene symbol
 -   One column per tissue containing the median expression levels (in TPM units)
 
-**Using HopGPT.** You are welcome to use HopGPT on this assignment. Wherever you
+**Using HopGPT.** You are welcome to use HopGPT on this assignment. If you
 do, add a couple of comment lines in that same code block noting what you asked
-it and how you checked the answer. Checking is the part that matters --- a
-chatbot will happily give you code that runs perfectly and answers a slightly
-different question than the one you asked. For example:
+it and how you checked the answer. Rmember that a chatbot will happily give you code 
+that runs perfectly and answers a slightly different question than the one you asked. 
+
+For example:
 
 ```{r ai-comment-example, eval=FALSE}
 # Asked HopGPT how to sort a tibble by a column with a space in its name.
@@ -84,8 +85,9 @@ Do the results change if you set the threshold higher, say at 10 TPM?
 
 If you answered Q2 by copying the same line of code and editing the tissue name,
 and then copying those lines again and editing the threshold, you did six
-near-identical things by hand. Each copy is a chance to change the tissue but
-forget to change the label.
+near-identical things by hand. Each time you copied code represents a chance to
+introduce a mistake, and if you wanted to change something, you would have to 
+implement the change multiple times.
 
 Write a function `count_expressed()` that takes a vector of expression values
 and a threshold, and **returns** the number of genes above that threshold. Give
@@ -99,7 +101,7 @@ thresholds) instead of writing out the counting code separately six times.
 
 # your function here
 
-# test on an input whose answer you know
+# test on an input with a known answer
 
 # use it to answer Q2 again
 
@@ -152,22 +154,46 @@ but `"MT-"` does not. How much does the mistake change your answer?
 
 ------------------------------------------------------------------------
 
-### Q5. Are liver's most highly expressed genes also highly expressed in another tissue?
+### Q5. Which tissue is this?
 
-Take the 20 most highly expressed genes in **Liver** and check how they are
-expressed in the **Heart - Left Ventricle**. Identify:\
-1. one gene that is highly expressed in both tissues\
-2. one gene that is highly expressed in Liver but very low in Heart
+So far we have told you which tissue to look at. Now you will find a tissue based
+on the genes it expresses.
 
-Look up basic information about these genes on the internet. Do their expression
-patterns make sense given their known functions?
+A gene is *tissue-specific* if it is expressed much more in one tissue than it
+is on average across the body. To measure that, you first need each gene's
+average expression across all tissues.
 
-```{r q5}
+```{r mean-across-tissues}
+# remove the columns that are not tissue expression
+tissue_only <- dt %>%
+  select(-Name, -Description, -is_mitochondrial)
 
-# Code here
-
-# Interpretation here as a comment
+# store the mean back in the original tibble
+dt <- dt %>%
+  mutate(mean_all_tissues = rowMeans(tissue_only))
 ```
+
+**(a)** Pick any tissue in the dataset and compute a specificity score for every
+gene:
+
+$$
+\text{specificity} = \log_2 \left( \frac{\text{my tissue} + 1}{\text{mean across all tissues} + 1} \right)
+$$
+
+Keep only genes expressed above 10 TPM in your tissue, sort by specificity, and print the top 20
+gene symbols.
+
+**(b)** Give a classmate *only that list of 20 gene symbols* — not the tissue
+name — and see whether they can identify the tissue. Do the same for theirs. If
+the list doesn't give it away, explain why it challenging.
+
+**(c)** Why is the `> 10 TPM` filter in part (a)? Take it out and look at what
+rises to the top. What kind of genes are the most ``specific" when you do not require
+them to be meaningfully expressed?
+
+**(d)** Housekeeping genes, which are highly expressed in every tissue, should
+score near 0 on this specificity metric. Find a few genes with specificity closest to 
+0 and high expression. Do they look like what you would expect?
 
 ------------------------------------------------------------------------
 
