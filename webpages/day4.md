@@ -14,6 +14,10 @@
 
 [Assignment](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/bootcamp/r_data_visualization/data_visualization_assignment.Rmd)
 
+## OPTIONAL Bioconductor Assignment
+
+[Assignment](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/bootcamp/r_bioconductor/bioconductor_assignment.Rmd)
+
 ## Daily Reflection
 
 Please fill out [this survey](https://forms.gle/bgn8rEATZyKKkwNU9) today at the end of class. 
