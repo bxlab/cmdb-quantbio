@@ -1,15 +1,14 @@
 # Quantitative Biology Lab Week 1 - Genome Content
 
-Assignment Date: Friday, September 12, 2025
+Assignment Date: Friday, September 18, 2026
 
-Due Date: Friday, September 19, 2025
+Due Date: Friday, September 25, 2026
 
 ## Announcements
 
-- [Bootcamp Feedback Poll](https://docs.google.com/forms/d/e/1FAIpQLScsqi0mmflZqBqPZcxJFN2YL1mTI_tj_RdaSrLi8RJZQEPhMA/viewform) -- Help improve this course!
-- [Bootcamp TA Feedback](https://forms.office.com/Pages/ResponsePage.aspx?id=OPSkn-axO0eAP4b4rt8N7HuQUbAa__lAlv8FlW8IsWVUQzE4OU85MllVSVVWRzRDSDM3UTFGOFVWVC4u) -- Help your TAs improve!
-- [Project Topics Feedback](https://timeful.app/e/AD39A) -- Schedule time w/ Instructors and TAs
-- (by Sep 19) [Project Topics](https://docs.google.com/forms/d/e/1FAIpQLScMqZHoMmYUJJMJTj8YkJwIFXEDMTjvU1Fo6OzFE-SbCqqqTw/viewform) -- Propose a project topic
+- [Bootcamp Feedback Poll](https://docs.google.com/forms/d/e/1FAIpQLSdpcQ84ZLHjeC30kqVohotYug8jHllSseRATaysDsLYdEoE0g/viewform) -- Help improve this course!
+- [Project Topics Feedback](https://timeful.app/e/FDBfB) -- Schedule time w/ Instructors and TAs
+- (by Sep 25) [Project Topics](https://docs.google.com/forms/d/e/1FAIpQLSf_7g6cEEsu9pQISJA0AEikYeDeAG_QzsqPlUaCTFldSzRrrw/viewform) -- Propose a project topic
 
 ## Lecture
 

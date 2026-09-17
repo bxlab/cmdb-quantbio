@@ -3,34 +3,36 @@ title: CMDB Quantitative Biology 2026
 layout: default
 ---
 
-<!-- ## CMDB Quantitative Biology Lab 2025
+## CMDB Quantitative Biology Lab 2026
 
 ### Logistics
-- [Syllabus](resources/syllabi/lab/index.html)
-- [Announcements](https://docs.google.com/presentation/d/1iwU8PE--yItXZ4ZezarbLvpJjy0r3G0zVwROj8i6-oA)
 - This one day a week course builds upon the foundations of Quantitative Biology Bootcamp, reinforcing and expanding upon mathematical and computational methods for analysis of biological data.
-- In person, Carnegie Rose Auditorium
-- 10:00 - 12:30 pm, Fridays
-- Assignments must be submitted within one week to your `qb25-answers` repository
+- In person, UTL398
+- 9:30 - 12:00 pm, Fridays
+- Assignments must be submitted within one week to your `qb26-answers` repository
 
 ### Schedule
 
+<!-- Due in 7 days, 10 if special event; Resubmission in 14 days, 11 if special event -->
+
 | Week  | Date  | Instructor      | Topic                                           | Due Date | Resubmission Deadline |
 | :---: | :---: | :---:           | :---:                                           | :---:    | :---: |
-| 1     | 9/12  | Frederick Tan   | [Genome Content](webpages/week1.html)           | 9/19     | 10/3  |
-| 2     | 9/19  | Frederick Tan   | [Sequence Alignment](webpages/week2.html)       | 9/26     | 10/10 |
-| 3     | 9/26  | Rajiv McCoy     | [Variant Discovery and Genotyping](webpages/week3.html) | 10/10    | 10/24 |
-| 4     | 10/3  | Frederick Tan   | Project Work + [HPC Demo](https://docs.google.com/presentation/d/1q5nPhG9J7AsXyzaL4-aWFABpDclASqKVViYqqVBydVg)                                       |          |       |
-| 5     | 10/10 | Rajiv McCoy     |  [Linear Regression](webpages/week5.html)       | 10/20    | 10/31 |
-| 6     | 10/17 |                 | Departmental Retreat                            |          |       |
-| 7     | 10/24 | Mike Sauria     | [Unsupervised Learning](webpages/week7.html)    | 10/31    | 11/14 |
-| 8     | 10/31 | Rajiv McCoy     | [Multiple Testing](webpages/week8.html)         | 11/7     | 11/21 |
-| 9     | 11/7  | Rajiv McCoy     | [Project Work + Bootstrap and Permutation Demo](webpages/week9.html)      |          |       |
-| 10    | 11/14 | Mike Sauria     | [Sequence Alignment](webpages/week10.html)      | 11/21    | 12/5  |
-| 11    | 11/21 | Mike Schatz     | [Genome Assembly](webpages/week11.html)         | 12/1     | 12/12 |
+| 1     | 9/18  | Frederick Tan   | Genome Content                                  | 9/25     | 10/9  |
+| 2     | 9/25  | Rajiv McCoy     | Sequence Alignment + Variant Discovery          | 10/2     | 10/16 |
+| 3     | 10/2  | Rajiv McCoy     | Linear Regression                               | 10/9     |       |
+| 4     | 10/9  | Frederick Tan   | Project Work + HPC Demo                         |          |       |
+| 5     | 10/16 | Mike Sauria     | Unsupervised Learning                           | 10/26    | 11/6  |
+| 6     | 10/23 |                 | Departmental Retreat                            |          |       |
+| 7     | 10/30 | Rajiv McCoy     | Bulk RNA-seq                                    | 11/6     | 11/20 |
+| 8     | 11/6  | Frederick Tan   | Single cell RNA-seq                             | 11/13    |       |
+| 9     | 11/13 | Rajiv McCoy     | Project Work + Bootstrap and Permutation Demo   |          |       |
+| 10    | 11/20 | Mike Sauria     | Sequence Search                                 | 11/30    | 12/11 |
+| 11    | 11/27 |                 | Thanksgiving                                    |          |       |
+| 12    | 12/4  | Mike Sauria     | Genome Assembly                                 | 12/14    |       |
+| 13    | 12/11 |                 | Final Presentations                             |          |       |
 {:.table.table-striped.well}
 
-### Project Work
+<!-- ### Project Work
 
 See [Project Work Guide](webpages/project-work.html) for more details
 
