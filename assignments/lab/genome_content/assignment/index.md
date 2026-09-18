@@ -42,7 +42,7 @@ Document your answers in `~/qbXX-answers/weekX`
     - Configure Assembly hg19, Region Genome, Table knownCanonical, Output filename hg19-kc.tsv
         - You must select Region Genome before selecting Table knownCanonical or it will be hidden
     - Use `mv` to move the file from `~/Desktop` to `~/qbXX-answers/weekX`
-    - Confirm that `hg19-kc.tsv` has 80,270 lines
+    - Confirm that `hg19-kc.tsv` has approximately 80,270 lines (pre-GENCODE V50)
     - Use the following command to convert from a .tsv to a .bed file
         ```
         cut -f1-3,5 hg19-kc.tsv > hg19-kc.bed

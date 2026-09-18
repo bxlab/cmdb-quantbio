@@ -19,7 +19,7 @@ Due Date: Friday, September 25, 2026
 
 ## Assignment
 
-Create a `week1` directory in your `qb25-answers` directory for this assignment.
+Create a `week1` directory in your `qb26-answers` directory for this assignment.
 
 [Assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/genome_content/assignment)
 <!--
