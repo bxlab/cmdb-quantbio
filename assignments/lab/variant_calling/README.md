@@ -2,7 +2,7 @@
 
 ## Lecture Slides
 
-Lecture slides are available through Dropbox [here](https://www.dropbox.com/scl/fi/xtwhabep2q25q2cs71vao/20240927_variant_calling.pptx?rlkey=dsw4ylkzx2jre4ea9dso2q78q&dl=0).
+Lecture slides are available through Dropbox [here](https://www.dropbox.com/scl/fi/41w5dqgvoxccmude9alod/20260921_read_mapping_variant_calling.pptx?rlkey=iinm6p4zaeqpnn97f85hyvhax&dl=0).
 
 ## Live-coding Resources
 
