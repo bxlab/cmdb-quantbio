@@ -6,5 +6,5 @@ Lecture slides are available through Dropbox [here](https://www.dropbox.com/scl/
 
 ## Live-coding Resources
 
-The `live_coding_data.tar.gz` tarball used for live-coding is in the shared dropbox [here](https://www.dropbox.com/scl/fi/07zzq6m24ip0qkb640m5x/live_coding_data.tar.gz?rlkey=0akznspv6as4q8frdb6a86rps&dl=0).
+The `live_coding_data.tar.gz` tarball used for live-coding is in the shared dropbox [here](https://www.dropbox.com/scl/fi/9nywo4gqpmhllaxmexncs/live_coding_data.tar.gz?rlkey=2xb2dbltjzxc7b4owroqerebu&dl=0).
 
