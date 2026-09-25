@@ -18,7 +18,7 @@ layout: default
 | Week  | Date  | Instructor      | Topic                                           | Due Date | Resubmission Deadline |
 | :---: | :---: | :---:           | :---:                                           | :---:    | :---: |
 | 1     | 9/18  | Frederick Tan   | [Genome Content](webpages/week1.html)           | 9/25     | 10/9  |
-| 2     | 9/25  | Rajiv McCoy     | Sequence Alignment + Variant Discovery          | 10/2     | 10/16 |
+| 2     | 9/25  | Rajiv McCoy     | [Sequence Alignment + Variant Discovery](webpages/week2.html)          | 10/2     | 10/16 |
 | 3     | 10/2  | Rajiv McCoy     | Linear Regression                               | 10/9     |       |
 | 4     | 10/9  | Frederick Tan   | Project Work + HPC Demo                         |          |       |
 | 5     | 10/16 | Mike Sauria     | Unsupervised Learning                           | 10/26    | 11/6  |
