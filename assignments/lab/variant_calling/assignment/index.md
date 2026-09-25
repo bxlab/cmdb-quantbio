@@ -92,7 +92,7 @@ bwa mem -t 4 -R "@RG\tID:A01_09\tSM:A01_09" ../genomes/sacCer3.fa ~/Data/BYxRM/f
 
 Taking that command apart:
 
-| Piece | What it does |
+| Code | Explanation |
 | --- | --- |
 | `bwa mem` | The alignment algorithm. `mem` is the bwa algorithm intended for reads of ~70 bp and longer. |
 | `-t 4` | Use 4 threads. This makes the alignment run faster on a laptop with multiple cores. |
@@ -134,7 +134,7 @@ You should now have `A01_09.bam` and `A01_09.bam.bai`.
 
 ### Step 1.4: A short detour on variables and loops
 
-You have now run three commands for one sample. Those three commands contain the sample name in seven separate places. Running them nine more times by hand, editing all seven each time, is exactly the kind of task where people make silent mistakes. Instead you will write a script.
+You have now run three commands for one sample. Those three commands contain the sample name in seven separate places. Running them nine more times by hand, editing all seven each time, is an opportunity to introduce mistakes. Instead, we will write a script.
 
 > **Variables in bash**
 >
@@ -147,7 +147,7 @@ You have now run three commands for one sample. Those three commands contain the
 >
 > This prints `A01_09`.
 >
-> The curly braces are optional in simple cases but always safe, so get in the habit of using them. They tell bash exactly where the variable name ends. Without them, `$my_sample_sorted` looks to bash like a variable named `my_sample_sorted`, which does not exist, and you get an empty string instead of an error.
+> The curly braces are optional in simple cases but always safe, so get in the habit of using them. They tell bash where the variable name ends. Without them, `$my_sample_sorted` looks to bash like a variable named `my_sample_sorted`, which does not exist, and you get an empty string instead of an error.
 >
 > Wherever `${my_sample}` appears in a command, bash swaps in the text *before* running the command. So this:
 >
