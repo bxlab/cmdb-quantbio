@@ -1,7 +1,7 @@
 # Linear Regression
 
 **Deadline:** Friday, October 9\
-**Resubmission deadline:** Friday, October 16
+**Resubmission deadline:** Friday, October 30
 
 ## Assignment Overview
 
