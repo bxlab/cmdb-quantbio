@@ -16,6 +16,8 @@ The `penguins.csv` file used in the live-coding is available by loading the `pal
 
 ## Assignment
 [Homework Assignment](../assignments/lab/linear_regression/assignment/)
+Download markdown file [here](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/lab/linear_regression/assignment/index.md)
+
 
 ## External Data
 
