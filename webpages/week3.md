@@ -1,35 +1,25 @@
-# Resources for the Variant Calling Assignment
+# Quantitative Biology Lab Week 3 - Linear Regression
 
-Assignment Date: Friday, Sept. 26, 2025
-
-Due Date: Friday, Oct. 10, 2025
+**Date:** Friday, October 2\
+**Deadline:** Monday, October 9\
+**Resubmission deadline:** Friday, October 30
 
 ## Lecture Slides
 
-Lecture slides are available through Dropbox [here](https://www.dropbox.com/scl/fi/dukux5o61wfko0smxc48y/20250926_variant_calling.pptx?rlkey=fmu6e18dfbxxai4gv6kvt5toi&st=2zyz7r5v&dl=0).
+Lecture slides are available through google drive [here](https://docs.google.com/presentation/d/1S_cQxSfdBpt2lYqX-6s1m1tDnwEFhcvoVLcqY3W4ch0/edit?usp=sharing)
 
+## Live-coding Resources
 
-## Live Coding
+The completed live-coding script is available [here](https://github.com/bxlab/cmdb-quantbio/blob/main/assignments/lab/linear_regression/livecoding_resources/live_coding.R)
 
-Code for binomial simulations, tabulation, and plotting is provided below:
+The `penguins.csv` file used in the live-coding is available by loading the `palmerpenguins` library or on the dropbox [here](https://www.dropbox.com/scl/fi/flfxjjmt1vc325d351yj9/penguins.csv?rlkey=s0yz11e6qbwvchbto29res4if&st=pgyj6ilp&dl=0)
 
-```{r}
+## Assignment
+[Homework Assignment](../assignments/lab/linear_regression/assignment/)
 
-library(tidyverse)
+## External Data
 
-n_experiments <- 30
-n_tosses_per_experiment <- 5
-prob_tails <- 0.5
+The two `.csv` files used for the assignment (`aau1043_dnm.csv`) and (`aau1043_parental_age.csv`) are on the dropbox:
 
-data.frame(ntails = rbinom(n_experiments, n_tosses_per_experiment, prob_tails)) %>%
-  count(ntails) %>%
-  ggplot(aes(x = ntails, y = n)) +
-    geom_bar(stat = "identity")
-
-```
-
-## Homework Assignment
-
-As always, before you do anything else, create a `week3` directory in your `qbb2025-answers` directory for this assignment.
-
-[Homework assignment](https://bxlab.github.io/cmdb-quantbio/assignments/lab/variant_calling/assignment)
+1.  Information about the number and parental origin of each de novo mutation detected in a proband (offspring): [aau1043_dnm.csv](https://www.dropbox.com/scl/fi/6e28a3dow872fi02cp537/aau1043_dnm.csv?rlkey=l3gs7fb6igff4el5ov6wg96ai&dl=0)
+2.  Ages of the parents of each proband: [aau1043_parental_age.csv](https://www.dropbox.com/scl/fi/sjrq1x1g30h0j10ktxysi/aau1043_parental_age.csv?rlkey=e9g3m9iq4tfsm9ski7w4vb0bf&dl=0)
