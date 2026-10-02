@@ -1,8 +1,8 @@
 # Resources for the Linear Regression Assignment
 
-**Date:** Friday, October 10\
-**Deadline:** Monday, October 20\
-**Resubmission deadline:** Friday, October 31
+**Date:** Friday, October 2\
+**Deadline:** Monday, October 9\
+**Resubmission deadline:** Friday, October 30
 
 ## Lecture Slides
 
