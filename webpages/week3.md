@@ -15,7 +15,8 @@ The completed live-coding script is available [here](https://github.com/bxlab/cm
 The `penguins.csv` file used in the live-coding is available by loading the `palmerpenguins` library or on the dropbox [here](https://www.dropbox.com/scl/fi/flfxjjmt1vc325d351yj9/penguins.csv?rlkey=s0yz11e6qbwvchbto29res4if&st=pgyj6ilp&dl=0)
 
 ## Assignment
-[Homework Assignment](../assignments/lab/linear_regression/assignment/)
+[Homework Assignment](../assignments/lab/linear_regression/assignment/)\
+
 Download markdown file [here](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/lab/linear_regression/assignment/index.md)
 
 
