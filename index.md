@@ -20,7 +20,7 @@ layout: default
 | 1     | 9/18  | Frederick Tan   | [Genome Content](webpages/week1.html)           | 9/25     | 10/9  |
 | 2     | 9/25  | Rajiv McCoy     | [Sequence Alignment + Variant Discovery](webpages/week2.html)          | 10/2     | 10/16 |
 | 3     | 10/2  | Rajiv McCoy     | [Linear Regression](webpages/week3.html)                               | 10/9     | 10/30    |
-| 4     | 10/9  | Frederick Tan   | Project Work + HPC Demo                         |          |       |
+| 4     | 10/9  | Frederick Tan   | Project Work + [HPC Demo](https://docs.google.com/presentation/d/1RlAVvlnJbndR5l4bedRaYeba-Tbq3mQWkrC2G3cL-Eg)                         |          |       |
 | 5     | 10/16 | Mike Sauria     | Unsupervised Learning                           | 10/26    | 11/6  |
 | 6     | 10/23 |                 | Departmental Retreat                            |          |       |
 | 7     | 10/30 | Rajiv McCoy     | Bulk RNA-seq                                    | 11/6     | 11/20 |
