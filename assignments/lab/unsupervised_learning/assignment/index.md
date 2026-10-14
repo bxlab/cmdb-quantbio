@@ -2,25 +2,16 @@
 
 ## Assignment Overview
 
-Today, you will be examining gene expression data from a paper by our own Allan Spradling entitled ["Physiological and stem cell compartmentalization within the Drosophila midgut"](https://pubmed.ncbi.nlm.nih.gov/23991285/). The data are RNA-seq samples derived from Drosophila melanogaster midguts cut into nine sections and processed with Salmon and DESeq2. Some samples cover multiple regions, as denoted by their sample names (see the image below). Each sample has three replicates.
+Today, you will be examining gene expression data from a recent paper by Sahasrabudhe *et al.* entitled ["mTOR signaling contributes to system-driven rhythmic gene expression in mouse liver"](https://pubmed.ncbi.nlm.nih.gov/42490445/). The data are RNA-seq samples taken every 4 hours from mice fed on a nighttime-restricted feeding schedule. Some mice were given rapamycin to inhibit mTOR, a nutrient-sensing kinase responsible for oscillating gene expression patterns due to feeding.
 
-<img src="dm_gut.jpg" alt="Adapted from Fig. 1" style="width:100%;"/>
-
-In today's assignment, you will be using unsupervised machine learning methods to explore the data for both quality and bioligical insights.
+In today's assignment, you will be using unsupervised machine learning methods to explore the data for both quality and bioligical insights, looking at the parsing circadian rhythm genes from genes driven by feeding behaviors.
 
 <br>
 
 
 ## Data
 
-The data you will be utilizing today were processed using the Nextflow RNA-seq pipeline utilizing Salmon and then normalized using a variance-stabilizing transformation in DESeq2. You will be downloading a table of transformed gene expression values with one row per gene and one column per sample replicate (7 tissues x 3 replicates for 21 colunns).
-
-To get the data, download them from [here](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/lab/unsupervised_learning/extra_data/read_matrix.tsv.gz). You can use the following commands to download and unpack the data:
-
-```bash
-wget https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/lab/unsupervised_learning/extra_data/read_matrix.tsv.gz
-gunzip read_matrix.tsv.gz
-```
+The data you will be utilizing today are transformed read counts (log10 transformed with a pseudocount of one) from three conditions (WT_Ctrl: wild-type control, WT_Rapa: wild-type rapamycin-treated). Each condition consists of 6 time points, sampled every 4 hours and each timepoint consists of 3 replicates. You will use both the complete WT_Ctrl dataset including all of the replicates and datasets with the replicates averaged for WT_Ctrl and WT_Rapa. You also have a list of gene names corresponding to dataset rows and sample names corresponding to the replicate dataset columns.
 
 <br>
 
@@ -29,122 +20,165 @@ gunzip read_matrix.tsv.gz
 
 There are three exercises in this assignment:
 
-1. Use principle component analysis to investigate the variability and relationship between samples and replicates
-2. Use k-means clustering to find groups and genes with similar expression profiles across samples
-3. Perform gene-ontology analysis on these gene clusters to identify enriched molecular pathways in specific clusters
+1. Use principle component analysis (PCA) to investigate the variability and relationship between samples and replicates
+2. Filter and normalize data and then use PCA to look at the relationship of genes across timepoints
+3. Use the PCA results to organize and phase the expressions data followed by k-means clustering to find perturbation patterns from rapamycin treatment.
 
 <br>
 
 
 ## Submission
 
-Before you begin, create a `week6` folder in your `QBB2025-answers` repo. You will be expected to turn in 7 files for this assignment.
+Before you begin, create a `week5` folder in your `QBB2026-answers` repo. You will be expected to turn in 7 files for this assignment.
 
-1. A README.md file containing answers to questions from sections 1.3 and 3
-2. An R script for processing the gene counts and creating the required plots
-3. A PCA plot from section 1.3
-4. A scree plot (% variance explained) from section 1.3 
-5. A Heatmap plot from section 2.2
-6. 2 gene ontology reports from section 3
-
-<br>
-
-
-### Exercise 1: PCA analysis
-
-#### **Step 1.1**: Loading and filtering the data
-
-Begin by loading the data into R. You will want to make sure the data are in a matrix as opposed to a dataframe so you can use the `as.matrix` function to do this conversion.
-
-For the PCA analysis you will only want to use the most variable genes. You can use the function `rowSds` to find the standard deviation of each gene. Select the top 500 most variant genes for running the PCA. You will want to keep the whole dataset for downstream analysis so make a new copy of the data when filtering.
-
-#### **Step 1.2**: Run the PCA analysis
-
-To perform PCA, you will use the function `prcomp`. This function expects samples in rows so you will need to invert your matrix (you can use the transpose function `t` to do this).
-
-The returned PCA object has several types of information. The transformed data into PC coodinates are in a matrix `x` with samples corresponding to rows and principal components corresponding to columns (for example, to access the first and second PC coordinates for the first sample, you would use `data$x[1,1:2]` where `data` is the object returned by `prcomp`). The PCA object also contains the amount of variance explained by each principal component in the attribute `sdev` (i.e. `data$sdev`).
-
-#### **Step 1.3**: Plot the first two PCs and plot the amount of variance explained for each PC
-
-Plot each sample using its first two PC coordinates. To do this, you will need to create a new tibble (dataframe) with columns corresponding to the first and second PCs as well as the sample names. Make sure to include a legend and if you can, use color to denote tissue and point shapes to denote replicate number. To do this, you can use the function `tidyr::separate` to split the sample names into two columns, tissue and replicate.
-
-Save this plot to turn in.
-
-Examine the PCA plot. Does everything look okay (We wouldn't ask if it did)?
-
-**What does the PCA plot suggest to you about the data? Why?**
-
-Fix any problems that the PCA reveals.
-
-**What feature explains the first principal component (simply saying "tissue" is not sufficient)?**
-
-Also plot the amount of variance explained by each PC as a bar chart. As always, remember to label your axes.
-
-Save this plot to turn in.
-
-### Exercise 2: K-means clustering
-
-#### **Step 2.1**: Averaging and filtering genes by variance
-
-You are now going to create a version of the data with each set of replicates averaged. This can be accomplished with the following code that cycles through all 21 samples, selecting every third sample:
-
-```R
-combined = data[,seq(1, 21, 3)]
-combined = combined + data[,seq(2, 21, 3)]
-combined = combined + data[,seq(3, 21, 3)]
-combined = combined / 3
-```
-
- You can now find the standard deviation for each replicate-averaged gene (row). Using these standard deviations, keep only genes with a standard deviation greater than 1. This should ensure that you are not looking at genes with consistent (or absent) expression across all of the samples.
-
-#### **Step 2.2**: K-means clustering genes
-
-Using your gene-filtered data, you will be clustering the genes into 12 clusters using k-means clustering. To ensure it is replicable, first set the seed to 42 (`set.seed`), then perform the clustering. Use the argument `nstart=100` to select the best result out of 100 random starting configurations. To get the cluster labels from the cluster object returned by `kmeans`, use `$cluster`.
-
-Using the cluster labels, sort the rows of your gene-filtered data matrix and then the cluster labels themselves. Now visualize your clusters by plotting the data as a heatmap, using the labels to color each cluster.
-
-```R
-heatmap(data, Rowv=NA, Colv=NA, RowSideColors=RColorBrewer::brewer.pal(12,"Paired")[labels], ylab="Gene")
-```
-
-Save this plot to turn in.
-
-### Exercise 3: Gene ontology enrichment analysis
-
- Select two clusters to investigate. For each, get the gene names using `rownames` , filtering for only genes within the cluster you have selected. Copy these and paste them into the web tool [Panther](https://geneontology.org/) to perform a gene ontology enrichment analysis. Make sure "biological process" is selected and select the correct genome. If your cluster does not have any significant enrichments, select a different cluster.
-
- From the export options on the results page, click "Table" to download the results and submit this file.
-
- **Do the categories of enrichments make sense? Why?**
+1. A python script with comments explaining your code
+2. Replicate PCA plot from step 1.3
+3. Filtered replicate PCA plot from step 2.1
+4. Gene PCA plot from step 2.3
+5. Ordered gene expression heatmap from step 3.1
+6. Phased gene expression heatmap from step 3.2
+7. Clustered gene expression heatmap from step 3.4
 
 <br>
 
+
+### Exercise 1: Replicate PCA analysis
+
+#### **Step 1.1**: Acquiring the data
+
+To begin, you should download the gzipped file containing all of the data for this assignment. You can do this with the following commands:
+
+```
+wget https://github.com/bxlab/cmdb-quantbio/raw/refs/heads/main/assignments/lab/unsupervised_learning/extra_data/unsupervised_learning_data.tgz
+tar xzf unsupervised_learning_data.tgz
+```
+
+You should have 6 files unpacked:
+
+1. WT_NF_Ctrl_rep_counts.tsv
+2. WT_NF_Ctrl_counts.tsv
+3. WT_NF_Rapa_counts.tsv
+4. gene_names.txt
+5. samples.txt
+6. unsupervised_framework.py
+
+The first three files are the data you will be working with. The two text files contain labels of the data columns and rows. The last file is a python script containing code to load the data and three helper functions for you to use in the assignmente.
+
+#### **Step 1.2**: Write the PCA analysis (2 points)
+
+To perform PCA, you will use the function `PCA` from the `sklearn.decomposition` module to create a PCA model object. This object can then be trained on your data and provide transformed coordinates for your data. You will then need to plot the first two principal components of your PCA. For this section, you will be using the replicate data as you should see how the timepoints and replicates relate to each other.
+
+ - Create a function that takes in rep data, does a PCA transformation, and plots the first two principal components.
+ - Check out documentation for the PCA function https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html
+ - the PCA should use sample replicates as the x-axis (samples) and gene expression as the y-axis (features)
+ - you may need to transpose the matrix, i.e. flip the axes, which you can do using `.T` at the end of your data matrix variable
+ - in the PCA function, include the argument `random_state=42`. This will make sure you get the same answer each time
+ - to train fit the PCA model and get back the principal components in one command, use the PCA method `.fit_transform`
+ - plot the first and second PCs as a scatterplot
+ - color the points by the sampling time (`c=times, cmap='Set1'`)
+ - size the points by the replicate (`s=reps*15`)
+ - it may also be useful to have an argument for a plot title so you can label each plot correctly
+
+#### **Step 1.3**: Plot the first two PCs (0.5 points)
+
+Use the function you wrote to plot the first two PCs for the replicate data. How similar do the replicates look to each other? Would you expect them to be more or less similar than samples from different time points?
+
+Save this plot to turn in.
+
+### Exercise 2: Data filtering and more PCA
+
+#### **Step 2.1**: Filtering data by mean expression and scaled standard deviation (1 point)
+
+Because you don't want to look at every gene, let's limit the data to only genes with sufficient expression and high-enough variation across time. To do this, first find the mean and standard deviation of data for each sample using `numpy.mean` and `numpy.std` and the argument `axis=1` to apply these metrics to each row.
+
+You should now have two 1D arrays of data equal in length to the number of samples (rows), one for means and one for standard deviations. To filter the data using these, you can make them into boolean arrays by putting them into a conditional statement. For example, we only want to keep genes with a mean expression about 0.85 and a scaled standard deviation (i.e. std / mean) greater than 0.115.   
+
+You can use the boolean arrays just like an index array for the data matrix to return only values for which the boolean array is True.
+
+```
+filter = value > cutoff
+filtered_data = data[:, filter]
+```
+
+Filter all three datasets. Once you have the filtered data, use your PCA function to plot the first to PCs of the filtered replicates. Do they look any different?
+
+Save this plot to turn in.
+
+#### **Step 2.2**: Write a function to perform PCA for each gene (1 point)
+
+Next, let's see how the genes you've selected relate to each other. To do this, you will use PCA to reduce the number of dimensions from 6 (the number of timepoints) to 2 (and easy number for plotting). Like in step 1.2, write a function that can find and plot the first two PCs of the WT_NF_Ctrl data. In order to give the plot some context, also accept an argument for specifying a color for each gene via a 1D array.
+
+ - use genes as the x-axis (samples) and timepoints as the y-axis (features)
+ - to train fit the PCA model and get back the principal components in one command, use the PCA method `.fit_transform`
+ - in the PCA function, include the argument `random_state=42`. This will make sure you get the same answer as us
+ - return the first two sets of PC coordinates as you will need them later
+
+#### **Step 2.3**: Normalize data and plot the gene PCA (1 point)
+
+Before using the function you wrote in step 2.2 to plot your filtered gene data for WT_NF_Ctrl, you need to normalize the gene expression across time for each gene. To do this, use the provided `normlize_data` function which returns a normalized matrix along the time axis. Since you've restricted genes to those that have some variation over time, let's identify points by when their peak expression is. This information can then be passed to the color argument. Now you're ready to plot.
+
+ - since you will use them later, normalize both the WT_NF_Ctrl and WT_NF_Rapa data
+ - to help understand what the data mean, color the points by their time of peak expression, which you can get using the syntax `peak = numpy.argmax(norm_nf_data, axis=1)`
+
+Save this plot to turn in.
+
+### Exercise 3: Transform and cluster data (1 point)
+
+If everything has gone correctly, you should see that your PCA plot looks like a circle with a relatively smooth color transition around the circle, almost like a clock. If we make the assumption that that is what is being represented, then the angle of each gene's point from the origin should be its expression timing.
+
+#### **Step 3.1**: Order expression times and plot data (1 point)
+
+Let's see what happens when you plot the data using the angle to order the genes. To do this, calculate the angle from the first two PC coordinates (remember that you returned the PC coordinate data from your plotting function) and use the provided `plot_hm` function to visualize the ordered expression data.
+
+ - to find the angles you can use the function `numpy.arctan2(y_coords, x_coords)`
+ - the `plot_hm` function has an argument `orderby` which will do the sorting based on an array of continuous or discrete values
+
+#### **Step 3.2**: Phase expression times and plot data (1 point)
+
+Now that you have a way of identify the expression timing offset, you can align the data so each gene is phased to the same timing. This will be important for seeing the different kinds of perturbations in the next step. To phase the data, you can use the provided function `align_times` which takes the data and angle arrays. Once data are aligned, plot the aligned WT_NF_Ctrl data to see that everything looks lined up.
+
+ - align both the WT_NF_Ctrl and WT_NF_Rapa data using the angles calculated from the WT_NF_Ctrl data
+ - you only need to plot the WT_NF_Ctrl data
+
+Save this plot to turn in.
+
+#### **Step 3.3**: Cluster data (1.5 points)
+
+Now that the data are aligned, you can finally explore how mTor repression affects the gene expression patterns of cyclicly-expressed genes. using the `KMeans` function from the `sklearn.cluster` module, divide the combined aligned WT_NF_Ctrl and aligned WT_NF_Rapa data into 6 groups.
+
+ - to do k-means clustering, use the function KMeans from sklearn.cluster (see documentation https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
+ - use `random_state=42` as an argument to KMeans to ensure your clustering is the same as ours
+ - use the method `.fit_predict` to fit the model and get predicted labels in a single step
+ - to combine the data for predicting groups, you can pass the data in the format `numpy.concatenate((aligned_WT_NF_Ctrl, aligned_WT_NF_Rapa), axis=1)` to the `.fit_predict` function
+
+#### **Step 3.4**: Plot clustered data (1 point) 
+
+Plot the data using these groups to order the data and annotate the groups using the `plot_hm` function provided.
+
+ - the `plot_hm` function accepts multiple positional arguments. Pass both the aligned WT_NF_Ctrl and WT_NF_Rapa matrices to be plotted
+ - the `plot_hm` function has an argument `orderby` which will do the sorting based on an array of continuous or discrete values
+ - the `plot_hm` function also has an argument `showgroups` which, when set to True, will annotate the groups on the plot
+
+Save this plot to turn in.
+
+<br>
 
 ## Grading
 
-1. R script for analysis and plotting **(4 points total)**
-  * Performs PCA **(1 point)**
-  * Fixes data issue with tissue labels correct **(1 point)**
-  * Performs k-means clustering and reordering based on clusters **(1 point)**
-  * Saves gene names from selected clusters **(1 points)**
-2. `README.md` file with answers to questions **(2 points total)**
-  * Answer to first question for part 1.3 **(0.5 points)**
-  * Answer to second question for part 1.3 **(0.5 points)**
-  * Answer to question for part 3 **(1 point)**
-3. Plots **(3 points total)**
-  * PCA plot with point shape and color denoting tissues/replicates **(1 point)**
-  * Scree plot **(1 point)**
-  * Heatmap showing 12 clusters denoted by color **(1 point)**
-4. GO analysis reports **(1 point total)**
-
+1. Function for running PCA on replicates **(2 points)**
+2. Plotting replicate PCs **(0.5 points)**
+3. Filtering data **(1 point)**
+4. Function for running PCA on genes **(1 point)**
+5. Normalized data plot of gene PCA **(1 point)**
+6. Ordered expression times gene heatmap **(1 point)**
+7. Phased expression times gene heatmap **(1 point)**
+8. Kmeans clustering **(1.5 points)**
+9. Clustered gene heatmap **(1 point)**
 
 **Total Points: 10**
 
 <br>
 
+## Advanced Exercise:
 
-## Advanced Exercises:
-
-Different clustering methods are suited for different types of problems. Run PCA on the filtered set of data that you used for K-means clusting and apply the k-means cluster labels as colors. How well do the clusters partition the data when viewed this way?
-
-Alternatively, you can use a hierarchical clustering approach to performed an unsupervised analysis (creating a tree). This is done automatically with the `heatmap` function but you turned it off using `Rowv=NA`. Run the heatmap plotting again but include the dendrogram (tree) to see how these 2 approaches differ in their clustering of the data. Which one visually makes more sense?
+To investigate what the different clusters might mean, use the group labels to extract gene names for each cluster. Don't forget that to do this, the gene names need to filtered in the same way as the genes themselves. To explore what the gene sets may represent, perform a gene ontology enrichment analysis using the website (https://geneontology.org/)[https://geneontology.org/]. Remember that these data are from mouse. You can explore enrichment in three different categories, biological process, molecular function, and cellular component. 
