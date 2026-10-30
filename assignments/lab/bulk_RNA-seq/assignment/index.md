@@ -13,7 +13,7 @@ The most popular software packages for performing differential expression analys
 
 As part of this week's lecture, we also introduced the concepts of *false positives*, *false negatives*, *true positives*, *true negatives*, and *statistical power* in hypothesis testing. Keep these in mind as you interpret your differential expression results, especially when deciding on thresholds for p-values or FDR. Throughout the assignment, you will reflect on how these quantities relate to the types of genes that appear significant or not significant in your analysis.
 
-This assignment is an R Markdown notebook. Write your code in the empty code chunks and your answers where you see *Your answer:*.
+This assignment is an R Markdown notebook. Write your code in the empty code chunks and your answers where you see *Your answer:*. Download [this file](https://raw.githubusercontent.com/bxlab/cmdb-quantbio/refs/heads/main/assignments/lab/bulk_RNA-seq/assignment/index.md) as a rmd file (rename to .rmd).
 
 ## Data
 
