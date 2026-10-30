@@ -1,17 +1,16 @@
-# QuantLab Week 7 - Unsupervised learning
+# QuantLab Week 7 - Bulk RNA-seq
 
-Assignment Date: Friday, Oct. 24, 2025
+Assignment Date: Friday, Oct. 30, 2026
 
-Due Date: Friday, Oct. 31, 2025
+Due Date: Friday, Nov. 6, 2026
 
-## Lecture -- Michael Sauria
+## Lecture -- Rajiv McCoy
 
-[Lecture Slides](https://docs.google.com/presentation/d/1HfJwwHprSNN5v7QMiNTjthtAyz_aKtLhfeWlcqeNjCc/edit?usp=sharing)
-
-[Live Coding](../assignments/lab/unsupervised_learning/extra_data/live_coding.R)
+[Lecture Slides]()
 
 ## Homework Assignment
 
-Complete the homework assignment in your `week7` submission directory in your `qbb2025-answers`.
+Complete the homework assignment in your `week7` submission directory in your `qbb2026-answers`.
 
-[Homework Assignment](../assignments/lab/unsupervised_learning/assignment/)
+[Homework Assignment](../assignments/lab/bulk_RNA-seq/assignment/)
+

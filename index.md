@@ -23,7 +23,7 @@ layout: default
 | 4     | 10/9  | Frederick Tan   | Project Work + [HPC Demo](https://docs.google.com/presentation/d/1RlAVvlnJbndR5l4bedRaYeba-Tbq3mQWkrC2G3cL-Eg)                         |          |       |
 | 5     | 10/16 | Mike Sauria     | [Unsupervised Learning](webpages/week5.html)                           | 10/26    | 11/6  |
 | 6     | 10/23 |                 | Departmental Retreat                            |          |       |
-| 7     | 10/30 | Rajiv McCoy     | Bulk RNA-seq                                    | 11/6     | 11/20 |
+| 7     | 10/30 | Rajiv McCoy     | [Bulk RNA-seq](webpages/week7.html)             | 11/6     | 11/20 |
 | 8     | 11/6  | Frederick Tan   | Single cell RNA-seq                             | 11/13    | 11/30 |
 | 9     | 11/13 | Rajiv McCoy     | Project Work + Bootstrap and Permutation Demo   |          |       |
 | 10    | 11/20 | Mike Sauria     | Sequence Search                                 | 11/30    | 12/11 |
