@@ -6,7 +6,7 @@ Due Date: Friday, Nov. 6, 2026
 
 ## Lecture -- Rajiv McCoy
 
-[Lecture Slides]()
+[Lecture Slides](https://www.dropbox.com/scl/fi/jmj3w5vj4rwetxpcth36i/20261030_qblab_rnaseq.pptx?rlkey=h9yur07lqperuyqeg3rza97et&dl=0)
 
 ## Live-coding Resources
 
