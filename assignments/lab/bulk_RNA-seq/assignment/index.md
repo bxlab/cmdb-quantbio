@@ -214,7 +214,7 @@ Now repeat your analysis from Step 2.3 above, but focusing on death classificati
 
 #### **Step 2.5 — Estimating a false positive rate under the null hypothesis**
 
-To better understand what a *false positive* looks like in practice, repeat your differential expression analysis but first randomly permute (i.e., shuffle) the sex column from the metadata. Then rerun the DESeq2 analysis using this permuted variable. Before shuffling, call `set.seed()` with any number you like (e.g., `set.seed(42)`), so that you get the same permutation, and therefore the same results, each time you knit your notebook.
+To better understand what a *false positive* looks like in practice, repeat your differential expression analysis but first randomly permute (i.e., shuffle) the sex column from the metadata. Then rerun the DESeq2 analysis using this permuted variable. Run `set.seed(42)` immediately before shuffling, so that everyone gets the same permutation, and you get the same results each time you knit your notebook.
 
 ```{r}
 ```
