@@ -154,7 +154,7 @@ Results of this differential expression analysis can be extracted using the `res
 
 ```r
 res <- results(dds, name = "CONDITION_treatment_vs_control")  %>%
-  as_tibble(rownames = "GENE_ID")
+  as_tibble(rownames = "GENE_NAME")
 ```
 
 Extract the differential expression results for the variable SEX.
@@ -171,7 +171,7 @@ The `padj` column of `results` reports the FDR-adjusted p-value (i.e., "q-value"
 
     *Your answer:*
 
-Now load the mappings of genes to chromosomes, which you have already downloaded from Dropbox (see top of page). Merge these data with your differential expression results using the `left_join()` function, setting `by = "GENE_ID"` (i.e., the shared column on which you want to join). Order the merged tibble by `padj`, from smallest to largest.
+Now load the mappings of genes to chromosomes, which you have already downloaded from Dropbox (see top of page). Merge these data with your differential expression results using the `left_join()` function, setting `by = "GENE_NAME"` (i.e., the shared column on which you want to join). Order the merged tibble by `padj`, from smallest to largest.
 
 ```{r}
 ```
