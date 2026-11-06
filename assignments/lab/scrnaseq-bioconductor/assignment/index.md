@@ -66,6 +66,7 @@ Load Kidney data from CELLxGENE
 
 - Go to the [Tabula Muris Senis collection](https://cellxgene.cziscience.com/collections/0b9d8a04-bb9d-44da-aa27-705bb65b54eb), find "Kidney - A single-cell transcriptomic atlas characterizes ageing tissues in the mouse - 10x", and download the H5AD file (should be 343 MB).  Rename it to `kidney_10x.h5ad`
 - Create a SingleCellExperiment object named `kidney` by loading `kidney_10x.h5ad` using `readH5AD()` from zellkonverter and setting `reader="R"`
+    - You may need to install zellkonverter using `BiocManager::install( "zellkonverter" )`
 - The `X` assay contains values that were normalized and scaled by the authors.  Replace it with the raw counts, which are stored inside the H5AD file at `raw/X`, and rename the assay to `counts`
 
 ```
@@ -88,7 +89,7 @@ assayNames(kidney) <- "counts"
 
 - How many columns are there in `colData(kidney)`?
 - Which three column names reported by `colnames()` seem most interesting?  Briefly explain why.
-- Plot cells according to `X_umap` using `plotReducedDim()` and colouring by `cell_type`
+- Plot cells according to `X_umap` using `plotReducedDim()` and colouring by `cell_type` and **submit this plot**
 
 ### 2. Explore data
 
@@ -160,7 +161,8 @@ head(ordered[,1:4])
 **Question 6b**: Gene set analysis (2 pt)
 
 - Create a vector `goi` that contains the names of the top 200 genes of interest by `rownames(ordered)[1:200]`
-- Test for enriched Gene Ontology biological processes using the following code
+- Test for enriched Gene Ontology biological processes using the following code and **submit this plot**
+    - You may need to install org.Mm.eg.db using `BiocManager::install( "org.Mm.eg.db" )`
 
 ```
 ego <- enrichGO( goi, OrgDb=org.Mm.eg.db, keyType="SYMBOL", ont="BP", universe=rownames(kidney) )
@@ -168,7 +170,6 @@ head( ego )
 dotplot( ego )
 ```
 
-- **Submit the dotplot**
 - What are the top three GO terms?  Based on these terms and the functions of the top six marker genes at [NCBI Gene](https://www.ncbi.nlm.nih.gov/gene), what class of molecules does the proximal convoluted tubule appear to specialize in metabolizing?
 
 #### Analyze the thick ascending limb (3 pt)
@@ -189,12 +190,13 @@ Repeat the analysis for the thick ascending limb of the loop of Henle
 
 Submit an R script with your code and answers to questions for
 
-  - Loading data (1 pt)
+  - Loading data (0.5 pt)
   - Exploring data (2.5 pt)
   - Identifying marker genes (3 pt)
 
 Be sure to include the following plots
 
+  - UMAP of cells coloured by cell_type (0.5 pt)
   - Cell type vs % stress gene reads (0.5 pt)
   - Expression plot of top marker gene in the proximal convoluted tubule according to cell type (1 pt)
   - GO enrichment dotplot for the proximal convoluted tubule (1 pt)
