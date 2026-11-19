@@ -1,8 +1,8 @@
 # QuantLab Week 10 - Sequence Alignment
 
-Assignment Date: Friday, Nov. 14, 2025
+Assignment Date: Friday, Nov. 20, 2026
 
-Due Date: Monday, Nov. 21, 2025
+Due Date: Monday, Nov. 30, 2026
 
 ## Lecture -- Mike Sauria
 
@@ -25,6 +25,6 @@ You can also download the live-coding script we will be writing [here](https://r
 
 ## Homework Assignment
 
-Complete the homework assignment in your `week10` submission directory in your `qbb2025-answers`.
+Complete the homework assignment in your `week10` submission directory in your `qbb2026-answers`.
 
 [Homework Assignment](../assignments/lab/alignment/assignment/)
