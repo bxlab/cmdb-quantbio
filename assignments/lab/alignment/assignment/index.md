@@ -38,7 +38,7 @@ There are five parts to the exercise in this assignment:
 
 ## Submission
 
-Before you begin, create a `week10` folder in your `QBB2025-answers` repo. You will be expected to turn in 4 files for this assignment.
+Before you begin, create a `week10` folder in your `QBB2026-answers` repo. You will be expected to turn in 4 files for this assignment.
 
 1. Python script that performs alignment based on user input
 2. DNA alignment file

@@ -37,50 +37,6 @@ sequence2 = 'GGTTGACTA'
 
 
 
-
-#============================#
-# Playing around with arrays #
-#============================#
-
-# Numpy is a Python package built around matrices (arrays).
-# You can think of an array as a (potentially)
-# multi-dimensional list. In fact, a 2D numpy array is
-# essentially a list of lists. We can create a numpy
-# array using the `np.array()` function.
-
-
-
-# If we want to know what the dimensions of our array
-# are, we can check the `.shape` attribute
-
-
-
-# Just like we can index lists, we can also index numpy
-# arrays. When we index a 2D numpy array, we first index
-# the rows, then the columns.
-
-
-
-# Like with lists, numpy arrays also support item assignment.
-
-
-
-# We can also loop through numpy arrays. When we loop through
-# a 2D array, we loop through the rows
-
-
-
-# Because each row is just a 1D numpy array, we can also loop
-# through the row itself
-
-
-
-# We can also use the range() function to loop through each
-# value in the array
-
-
-
-
 #=====================#
 # Initialize F-matrix #
 #=====================#
