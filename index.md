@@ -25,7 +25,7 @@ layout: default
 | 6     | 10/23 |                 | Departmental Retreat                            |          |       |
 | 7     | 10/30 | Rajiv McCoy     | [Bulk RNA-seq](webpages/week7.html)             | 11/6     | 11/20 |
 | 8     | 11/6  | Frederick Tan   | [Single cell RNA-seq](webpages/week8.html)      | 11/13    | 11/30 |
-| 9     | 11/13 | Rajiv McCoy     | Project Work + Bootstrap and Permutation Demo   |          |       |
+| 9     | 11/13 | Rajiv McCoy     | Project Work + [Bootstrap and Permutation Demo](webpages/bootstrap.html)    |          |       |
 | 10    | 11/20 | Mike Sauria     | [Sequence Alignment](webpages/week10.html)      | 11/30    | 12/11 |
 | 11    | 11/27 |                 | Thanksgiving                                    |          |       |
 | 12    | 12/4  | Mike Sauria     | Genome Assembly                                 | 12/14    | 12/23 |
