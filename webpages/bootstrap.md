@@ -1,3 +1,4 @@
+```
 library(tidyverse)
 library(palmerpenguins)
 
@@ -134,3 +135,5 @@ ggplot(power_sim, aes(x = prob_ref, y = power, color = factor(num_reads))) +
   labs(x = "Simulated allelic ratio (effect size)",
        y = "Power to detect allele-specific expression") +
   scale_color_brewer(palette = "Dark2", name = "Depth of coverage\n(total aligned reads)")
+
+```
